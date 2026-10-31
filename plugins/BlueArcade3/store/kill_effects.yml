@@ -1,0 +1,206 @@
+# =============================================================================================
+# WARNING: DO NOT ADD NEW ENTRIES HERE
+# This file only accepts the built-in kill effect types shipped with the plugin.
+# Adding new keys will NOT register new effects and may be ignored on load.
+# =============================================================================================
+file_version: "1"
+category:
+  id: kill_effects
+  enabled: true
+  display_name: "<gold>Kill Effects</gold>"
+  icon: DIAMOND_SWORD
+  description:
+    - "<gray>Show off every elimination with a custom flourish.</gray>"
+    - "<gray>Particles and props that trigger when you land the final hit.</gray>"
+  sort_order: 3
+  selection_enabled: true
+  type: selection
+  parent_id: ""
+  random_selection_enabled: true
+  random_item:
+    display_name: "<yellow>Random Kill Effect</yellow>"
+    icon: ENDER_CHEST
+    description:
+      - "<gray>Play one of your unlocked kill effects at random.</gray>"
+
+effects:
+  default_spark:
+    enabled: true
+    type: particle_burst
+    display_name: "<gray>Spark Pop</gray>"
+    icon: FIREWORK_ROCKET
+    description:
+      - "<gray>A simple spark burst.</gray>"
+    price: 0
+    default_unlocked: true
+    settings:
+      particle: FIREWORKS_SPARK
+      count: 10
+      spread: 0.25
+      speed: 0.02
+      offset_y: 0.2
+
+  color_aura:
+    enabled: true
+    type: particle_ring
+    display_name: "<rainbow>Color Aura</rainbow>"
+    icon: AMETHYST_SHARD
+    description:
+      - "<gray>A brief colorful ring.</gray>"
+    price: 300
+    default_unlocked: false
+    settings:
+      particle: REDSTONE
+      color: 0,255,255
+      color_size: 1.4
+      points: 32
+      radius: 1.5
+      offset_y: 0.15
+      duration_ticks: 40
+      interval_ticks: 4
+
+  glow_pulse:
+    enabled: true
+    type: glow
+    display_name: "<yellow>Glow Pulse</yellow>"
+    icon: GLOW_INK_SAC
+    description:
+      - "<gray>A quick glow highlight.</gray>"
+    price: 300
+    default_unlocked: false
+    settings:
+      glow_ticks: 50
+      pulse_interval_ticks: 8
+      duration_ticks: 50
+      interval_ticks: 8
+
+  vertical_pulse:
+    enabled: true
+    type: particle_column
+    display_name: "<aqua>Vertical Pulse</aqua>"
+    icon: LIGHTNING_ROD
+    description:
+      - "<gray>Particles rise from your feet.</gray>"
+    price: 280
+    default_unlocked: false
+    settings:
+      particle: END_ROD
+      steps: 10
+      height: 3.4
+      offset_y: 0.1
+      duration_ticks: 40
+      interval_ticks: 3
+
+  halo:
+    enabled: true
+    type: particle_halo
+    display_name: "<white>Halo</white>"
+    icon: BEACON
+    description:
+      - "<gray>A glowing halo above your head.</gray>"
+    price: 320
+    default_unlocked: false
+    settings:
+      particle: END_ROD
+      points: 24
+      radius: 0.9
+      offset_y: 2.3
+      duration_ticks: 40
+      interval_ticks: 4
+
+  confetti:
+    enabled: true
+    type: particle_burst
+    display_name: "<light_purple>Confetti</light_purple>"
+    icon: FIREWORK_STAR
+    description:
+      - "<gray>Celebration sparkles.</gray>"
+    price: 260
+    default_unlocked: false
+    settings:
+      particle: HAPPY_VILLAGER
+      count: 32
+      spread: 0.6
+      speed: 0.05
+      offset_y: 0.3
+
+  totem_flash:
+    enabled: true
+    type: particle_burst
+    display_name: "<gold>Totem Flash</gold>"
+    icon: TOTEM_OF_UNDYING
+    description:
+      - "<gray>A totem burst on kill.</gray>"
+    price: 280
+    default_unlocked: false
+    settings:
+      particle: TOTEM
+      count: 26
+      spread: 0.5
+      speed: 0.05
+      offset_y: 0.25
+
+  heart_pop:
+    enabled: true
+    type: particle_burst
+    display_name: "<red>Heart Pop</red>"
+    icon: HEART_OF_THE_SEA
+    description:
+      - "<gray>Hearts burst with joy.</gray>"
+    price: 240
+    default_unlocked: false
+    settings:
+      particle: HEART
+      count: 10
+      spread: 0.25
+      speed: 0.02
+      offset_y: 0.3
+
+  crit_burst:
+    enabled: true
+    type: particle_burst
+    display_name: "<white>Critical Burst</white>"
+    icon: IRON_SWORD
+    description:
+      - "<gray>A classic critical hit pop.</gray>"
+    price: 220
+    default_unlocked: false
+    settings:
+      particle: CRIT
+      count: 30
+      spread: 0.5
+      speed: 0.1
+      offset_y: 0.2
+
+  note_pop:
+    enabled: true
+    type: particle_burst
+    display_name: "<yellow>Note Pop</yellow>"
+    icon: NOTE_BLOCK
+    description:
+      - "<gray>Musical notes rise up.</gray>"
+    price: 220
+    default_unlocked: false
+    settings:
+      particle: NOTE
+      count: 8
+      spread: 0.2
+      speed: 0.02
+      offset_y: 0.4
+
+  star_trail:
+    enabled: true
+    type: particle_ring
+    display_name: "<aqua>Star Trail</aqua>"
+    icon: NETHER_STAR
+    description:
+      - "<gray>Electric sparks in a ring.</gray>"
+    price: 320
+    default_unlocked: false
+    settings:
+      particle: ELECTRIC_SPARK
+      points: 28
+      radius: 1.4
+      offset_y: 0.15
+      duration_ticks: 40
+      interval_ticks: 4

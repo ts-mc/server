@@ -1,0 +1,57 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+replay:
+  opened: '{prefix} <green>Abriendo repetición <white>{id}</white>...</green>'
+  processing: '{prefix} <yellow>Esa repetición todavía se está grabando. Serás teletransportado automáticamente cuando termine.</yellow>'
+  closed: '{prefix} <yellow>Has salido de la repetición.</yellow>'
+  deleted: '{prefix} <green>Repetición eliminada.</green>'
+  delete_failed: '{prefix} <red>No se pudo eliminar esa repetición (puede que la esté viendo alguien).</red>'
+  cleanup: '{prefix} <green>Se eliminaron <white>{count}</white> repetición(es) caducada(s).</green>'
+  usage:
+    player: '{prefix} <red>Uso: /ba replay [module_id] [replay_id] o /ba replay leave</red>'
+    admin: '{prefix} <red>Uso: /baa replay (list|delete <id>|cleanup|open <id>)</red>'
+  errors:
+    unavailable: '{prefix} <red>El sistema de repeticiones no está disponible ahora mismo.</red>'
+    disabled: '{prefix} <red>El sistema de repeticiones está desactivado en este servidor.</red>'
+    not_found: '{prefix} <red>No se encontró ninguna repetición con id <white>{id}</white>.</red>'
+    no_permission: '{prefix} <red>No tienes permiso para ver esa repetición.</red>'
+    only_players_open: '{prefix} <red>Solo los jugadores pueden abrir una repetición.</red>'
+    only_players_leave: '{prefix} <red>Solo los jugadores pueden salir de una repetición.</red>'
+    module_mismatch: '{prefix} <red>Esa repetición no pertenece al módulo <white>{module}</white>.</red>'
+    current_unavailable: '{prefix} <red>Esta arena no tiene una repetición disponible.</red>'
+    no_segments: '{prefix} <red>Esta repetición no tiene grabación disponible.</red>'
+    load_failed: '{prefix} <red>No se pudo cargar esa repetición. Revisa la consola del servidor para más detalles.</red>'
+  list:
+    empty: '{prefix} <yellow>No hay repeticiones disponibles.</yellow>'
+    module_empty: '{prefix} <yellow>No hay repeticiones disponibles para el módulo <white>{module}</white>.</yellow>'
+    header: '{prefix} <yellow>Repeticiones disponibles:</yellow>'
+    module_header: '{prefix} <yellow>Repeticiones disponibles para <white>{module}</white>:</yellow>'
+    item: '  <light_purple>{id}</light_purple> <dark_gray>-</dark_gray> <gray>arena {arena} • {date} • {duration}</gray>'
+    showing: '{prefix} <gray>Mostrando {shown}/{total}.</gray>'
+    module_showing: '{prefix} <gray>Mostrando {shown}/{total}. Usa /ba replay {module} <id> para abrir una en concreto.</gray>'
+  playback:
+    chat: '<gray>[Repetición]</gray> <white>{player}</white><gray>:</gray> {message}'
+    actionbar: '<gray>Repetición</gray> <dark_gray>|</dark_gray> <white>{elapsed}</white><gray>/</gray><white>{total}</white> <dark_gray>|</dark_gray> {status} <dark_gray>|</dark_gray> <yellow>{speed}x</yellow>'
+    status:
+      paused: '<red>Pausado</red>'
+      playing: '<green>Reproduciendo</green>'
+    teleport_menu:
+      title: 'Teletransportarse a un jugador'
+      player: '<aqua>{player}</aqua>'
+      no_targets: '{prefix} <red>No hay participantes disponibles en la repetición.</red>'
+      not_visible: '{prefix} <red>Ese jugador no es visible en este punto de la repetición.</red>'
+    controls:
+      teleport: 'Teletransportarse a un jugador'
+      slower: 'Más lento'
+      back: 'Retroceder 10s'
+      play: 'Reproducir'
+      pause: 'Pausar'
+      forward: 'Avanzar 10s'
+      faster: 'Más rápido'
+      leave: 'Salir de la repetición'

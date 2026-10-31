@@ -1,0 +1,292 @@
+npcs:
+  4f796da9-4144-4c28-826e-0d729f0d5f83:
+    name: discord
+    creator: 2cba55a8-acb3-4402-9319-a65a02474cd0
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -156.5
+      y: -47.0
+      z: -134.5
+      yaw: -135.0
+      pitch: 0.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: blue
+    turnToPlayer: true
+    turnToPlayerDistance: 10
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    visibility: ALL
+    skin:
+      identifier: discorb
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: message
+          value: <gradient:#5865F2:#8EA7FF>✦ DISCORD ✦</gradient> <gray>Join our community:</gray>
+            <click:open_url:'https://discord.gg/theysix'><hover:show_text:'<aqua>Click
+            to join Discord!</aqua>'><aqua><underlined>https://discord.gg/theysix</underlined></aqua></click>
+  leaderboard_1:
+    name: leaderboard_1
+    creator: 2cba55a8-acb3-4402-9319-a65a02474cd0
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -130.5
+      y: -47.0
+      z: -170.5
+      yaw: 0.0
+      pitch: 0.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: red
+    turnToPlayer: true
+    turnToPlayerDistance: 10
+    interactionCooldown: 1.5
+    scale: 1.0
+    visibility_distance: 2147483647
+    visibility: ALL
+    skin:
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: ba tops kills alltime
+  leaderboard_2:
+    name: leaderboard_2
+    creator: 2cba55a8-acb3-4402-9319-a65a02474cd0
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -138.5
+      y: -47.0
+      z: -172.5
+      yaw: 0.0
+      pitch: 0.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: gold
+    turnToPlayer: true
+    turnToPlayerDistance: 10
+    interactionCooldown: 1.5
+    scale: 1.0
+    visibility_distance: 2147483647
+    visibility: ALL
+    skin:
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: vote top
+  leaderboard_3:
+    name: leaderboard_3
+    creator: 2cba55a8-acb3-4402-9319-a65a02474cd0
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -142.5
+      y: -47.0
+      z: -171.5
+      yaw: 0.0
+      pitch: 0.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: aqua
+    turnToPlayer: true
+    turnToPlayerDistance: 10
+    interactionCooldown: 1.5
+    scale: 1.0
+    visibility_distance: 2147483647
+    visibility: ALL
+    skin:
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: ba tops games_played alltime
+  leaderboard_4:
+    name: leaderboard_4
+    creator: 2cba55a8-acb3-4402-9319-a65a02474cd0
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -146.5
+      y: -47.0
+      z: -170.5
+      yaw: 0.0
+      pitch: 0.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: green
+    turnToPlayer: true
+    turnToPlayerDistance: 10
+    interactionCooldown: 1.5
+    scale: 1.0
+    visibility_distance: 2147483647
+    visibility: ALL
+    skin:
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: ba tops wins alltime
+  leaderboard_5:
+    name: leaderboard_5
+    creator: 2cba55a8-acb3-4402-9319-a65a02474cd0
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -134.5
+      y: -47.0
+      z: -171.5
+      yaw: 0.0
+      pitch: 0.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: dark_purple
+    turnToPlayer: true
+    turnToPlayerDistance: 10
+    interactionCooldown: 1.5
+    scale: 1.0
+    visibility_distance: 2147483647
+    visibility: ALL
+    skin:
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: ba tops deaths alltime
+  kotw:
+    name: kotw
+    creator: 2cba55a8-acb3-4402-9319-a65a02474cd0
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -121.5
+      y: -47.0
+      z: -160.5
+      yaw: 0.0
+      pitch: 0.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: yellow
+    turnToPlayer: true
+    turnToPlayerDistance: 10
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    visibility: ALL
+    skin:
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: message
+          value: <gradient:#FFD700:#FFA500><bold>👑 KOTW 👑</bold></gradient> <gray>The
+            current King of the Week!</gray>
+  minigame_menu_selector:
+    name: minigame_menu_selector
+    creator: 2cba55a8-acb3-4402-9319-a65a02474cd0
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -138.5
+      y: -48.0
+      z: -158.5
+      yaw: 0.0
+      pitch: 0.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: aqua
+    turnToPlayer: true
+    turnToPlayerDistance: 10
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    visibility: ALL
+    skin:
+      identifier: 6fy2
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: message
+          value: <gradient:#00FFFF:#00BFFF><bold>✦ MINIGAMES ✦</bold></gradient> <gray>Select
+            a minigame to play!</gray>
+        '2':
+          action: player_command
+          value: tsmenu
+  youtube:
+    name: youtube
+    creator: 2cba55a8-acb3-4402-9319-a65a02474cd0
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -121.5
+      y: -47.0
+      z: -135.5
+      yaw: 135.0
+      pitch: 0.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: dark_red
+    turnToPlayer: true
+    turnToPlayerDistance: 10
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    visibility: ALL
+    skin:
+      identifier: skipthetutorial
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: message
+          value: <gradient:#aa3b3b:#ff4848>✦ YOUTUBE ✦</gradient> <gray>Watch videos:</gray>
+            <click:open_url:'https://www.youtube.com/@TheySix'><hover:show_text:'<red>Click
+            to discover the channel!</red>'><red><underlined>https://www.youtube.com/@TheySix</underlined></red></click>

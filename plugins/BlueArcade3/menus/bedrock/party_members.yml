@@ -1,0 +1,37 @@
+buttons:
+  previous_page:
+    text: "{language:menus.common.bedrock.pagination.previous}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
+    visibleIf: "{page_has_previous}"
+    actions:
+      - "PLAYER;/ba party members {page_previous}"
+  next_page:
+    text: "{language:menus.common.bedrock.pagination.next}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
+    visibleIf: "{page_has_next}"
+    actions:
+      - "PLAYER;/ba party members {page_next}"
+templates:
+  dynamic:
+    text: "{language:menus.party.members.bedrock.templates.dynamic.text}"
+    image: "https://cravatar.eu/helmhead/{member_name}"
+    actions:
+      - "PLAYER;/ba party leader {member_name}"
+  empty:
+    text: "{language:menus.party.members.bedrock.templates.empty.text}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_gray_stained_glass_pane.png"
+    actions: 
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+type: SIMPLE
+menuName: "{language:menus.party.members.bedrock.title}"
+openCommand: /ba party members
+buttonsPerPage: 10
+content:
+  - "{language:menus.party.members.bedrock.content}"

@@ -1,0 +1,201 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+# Curated reusable Core menu language text.
+
+menus:
+  party:
+    invite:
+      bedrock:
+        title: "<aqua>Invite players <gray>(Page {page}/{page_total})</gray>"
+        content:
+          - "<white>Leader:</white> <white>{party_leader}</white>"
+          - "<white>Privacy:</white> <white>{party_type}</white>"
+          - "<white>Players:</white> <white>{party_size}</white>"
+          - "<white>Page:</white> <white>{page}</white>/<white>{page_total}</white>"
+        templates:
+          dynamic:
+            text: "<yellow>{player}</yellow>"
+          empty:
+            text: "<white>No players to invite.</white>"
+      java:
+        title: "<aqua>Invite players <gray>(Page {page}/{page_total})</gray>"
+        dynamic:
+          name: "<aqua>{player}</aqua>"
+          lore:
+            - "<gray>Click to invite this player.</gray>"
+            - "<dark_gray>Command:</dark_gray> <white>/ba party invite {player}</white>"
+        empty:
+          name: "<dark_gray>No players found</dark_gray>"
+          lore:
+            - "<gray>Everyone online is already in a party.</gray>"
+        items:
+          info_item:
+            name: "<aqua>Party</aqua>"
+            lore:
+              - "<gray>Leader:</gray> <white>{party_leader}</white>"
+              - "<gray>Type:</gray> <white>{party_type}</white>"
+              - "<gray>Players:</gray> <white>{party_size}</white>"
+    leader:
+      bedrock:
+        title: "<aqua>Your party <gray>({party_size} players)</gray>"
+        content:
+          - "<white>Leader:</white> <white>{party_leader}</white>"
+          - "<white>Privacy:</white> <white>{party_type}</white>"
+          - "<white>Players:</white> <white>{party_size}</white>"
+        buttons:
+          set_public:
+            text: "<green>Set public</green>"
+          set_private:
+            text: "<yellow>Set private</yellow>"
+          invite:
+            text: "<aqua>Invite players <gray>(Page {page}/{page_total})</gray>"
+      java:
+        title: "<aqua>Your party <gray>({party_size} players)</gray>"
+        items:
+          info:
+            name: "<yellow>Party overview</yellow>"
+            lore:
+              - "<gray>Leader:</gray> <white>{party_leader}</white>"
+              - "<gray>Type:</gray> <white>{party_type}</white>"
+              - "<gray>Players:</gray> <white>{party_size}</white>"
+          members:
+            lore:
+              - "<gray>View members and manage roles.</gray>"
+              - "<dark_gray>Command:</dark_gray> <white>/ba party members</white>"
+          privacy:
+            name: "<yellow>Privacy</yellow>"
+            lore:
+              - "<gray>Current:</gray> <white>{party_type}</white>"
+              - "<gold>Left click:</gold> <white>Public</white>"
+              - "<gold>Right click:</gold> <white>Private</white>"
+              - "<dark_gray>Command:</dark_gray> <white>/ba party type <mode></white>"
+          invite:
+            name: "<green>Invite players</green>"
+            lore:
+              - "<gray>Send an invite to anyone online.</gray>"
+              - "<dark_gray>Command:</dark_gray> <white>/ba party invite</white>"
+          leave:
+            lore:
+              - "<gray>You will promote another member automatically.</gray>"
+              - "<dark_gray>Command:</dark_gray> <white>/ba party leave</white>"
+    common:
+      members:
+        name: "<aqua>Members</aqua>"
+      leave:
+        name: "<red>Leave party</red>"
+    main:
+      bedrock:
+        title: "<aqua>Party menu</aqua>"
+        content:
+          - "<white>Find a public party or start your own.</white>"
+        buttons:
+          search_public:
+            text: "<yellow>Browse public parties</yellow>"
+          create_party:
+            text: "<aqua>Create a party</aqua>"
+      java:
+        title: "<aqua>Party menu</aqua>"
+        items:
+          search_public:
+            name: "<yellow>Browse public parties</yellow>"
+            lore:
+              - "<gray>Find an open party and join instantly.</gray>"
+              - "<dark_gray>Command:</dark_gray> <white>/ba party search</white>"
+          create_party:
+            name: "<aqua>Create a party</aqua>"
+            lore:
+              - "<gray>Start a new party as the leader.</gray>"
+              - "<dark_gray>Command:</dark_gray> <white>/ba party create</white>"
+    member:
+      bedrock:
+        title: "<aqua>Party overview</aqua>"
+        content:
+          - "<white>Leader:</white> <white>{party_leader}</white>"
+          - "<white>Privacy:</white> <white>{party_type}</white>"
+          - "<white>Players:</white> <white>{party_size}</white>"
+      java:
+        title: "<aqua>Party overview</aqua>"
+        items:
+          info:
+            name: "<yellow>Party info</yellow>"
+            lore:
+              - "<gray>Leader:</gray> <white>{party_leader}</white>"
+              - "<gray>Privacy:</gray> <white>{party_type}</white>"
+              - "<gray>Players:</gray> <white>{party_size}</white>"
+          members:
+            lore:
+              - "<gray>Preview who is inside the party.</gray>"
+              - "<dark_gray>Command:</dark_gray> <white>/ba party members</white>"
+          leave:
+            lore:
+              - "<gray>Return to the lobby alone.</gray>"
+              - "<dark_gray>Command:</dark_gray> <white>/ba party leave</white>"
+    members:
+      bedrock:
+        title: "<aqua>Party members <gray>(Page {page}/{page_total})</gray>"
+        content:
+          - "<white>Leader:</white> <white>{party_leader}</white>"
+          - "<white>Privacy:</white> <white>{party_type}</white>"
+          - "<white>Players:</white> <white>{party_size}</white>"
+          - "<white>Page:</white> <white>{page}</white>/<white>{page_total}</white>"
+          - "<white>Tap to promote. Use /ba party kick <name> to remove.</white>"
+        templates:
+          dynamic:
+            text: "<yellow>{member_name}</yellow> <white>-</white> {member_role}"
+          empty:
+            text: "<white>No members available.</white>"
+      java:
+        title: "<aqua>Party members <gray>(Page {page}/{page_total})</gray>"
+        dynamic:
+          name: "<aqua>{member_name}</aqua>"
+          lore:
+            - "<gray>Role:</gray> <white>{member_role}</white>"
+            - "<gray>Click to manage.</gray>"
+            - "<dark_gray>Left:</dark_gray> <white>Make leader</white>"
+            - "<dark_gray>Right:</dark_gray> <white>Kick member</white>"
+        empty:
+          name: "<dark_gray>Empty slot</dark_gray>"
+          lore:
+            - "<gray>This slot has no member.</gray>"
+        items:
+          info_item:
+            name: "<aqua>Party</aqua>"
+            lore:
+              - "<gray>Leader:</gray> <white>{party_leader}</white>"
+              - "<gray>Type:</gray> <white>{party_type}</white>"
+              - "<gray>Players:</gray> <white>{party_size}</white>"
+    search:
+      bedrock:
+        title: "<aqua>Public parties</aqua>"
+        content:
+          - "<white>Join any public party instantly.</white>"
+          - "<white>Page:</white> <white>{page}</white>/<white>{page_total}</white>"
+        templates:
+          dynamic:
+            text: "<yellow>{party_leader}</yellow> <white>-</white> {party_size} players"
+          empty:
+            text: "<white>No public parties.</white>"
+      java:
+        title: "<aqua>Public parties</aqua>"
+        dynamic:
+          name: "<yellow>{party_leader}</yellow>"
+          lore:
+            - "<gray>Privacy:</gray> <white>{party_type}</white>"
+            - "<gray>Players:</gray> <white>{party_size}</white>"
+            - "<dark_gray>Command:</dark_gray> <white>/ba party join {party_leader}</white>"
+        empty:
+          name: "<dark_gray>No public parties</dark_gray>"
+          lore:
+            - "<gray>There are no public parties at the moment.</gray>"
+        items:
+          info_item:
+            name: "<aqua>Public parties</aqua>"
+            lore:
+              - "<gray>Click a leader to join their party.</gray>"
+              - "<gray>Page:</gray> <white>{page}</white>/<white>{page_total}</white>"

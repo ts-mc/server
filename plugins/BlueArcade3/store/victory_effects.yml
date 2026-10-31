@@ -1,0 +1,294 @@
+# =============================================================================================
+# WARNING: DO NOT ADD NEW ENTRIES HERE
+# This file only accepts the built-in victory effect types shipped with the plugin.
+# Adding new keys will NOT register new effects and may be ignored on load.
+# =============================================================================================
+file_version: "1"
+category:
+  id: victory_effects
+  enabled: true
+  display_name: "<gold>Victory Effects</gold>"
+  icon: FIREWORK_ROCKET
+  description:
+    - "<gray>Celebrate every win with cinematic finales.</gray>"
+    - "<gray>Fireworks, meteors, and more play automatically.</gray>"
+  sort_order: 1
+  selection_enabled: true
+  type: selection
+  parent_id: ""
+  random_selection_enabled: true
+  random_item:
+    display_name: "<yellow>Random Victory Effect</yellow>"
+    icon: ENDER_CHEST
+    description:
+      - "<gray>Play one of your unlocked effects at random.</gray>"
+
+effects:
+  fireworks:
+    enabled: true
+    type: fireworks
+    display_name: "<green>Fireworks</green>"
+    icon: FIREWORK_ROCKET
+    description:
+      - "<gray>Classic fireworks burst.</gray>"
+    price: 0
+    default_unlocked: true
+    settings:
+      duration_seconds: 30
+      interval_ticks: 10
+
+  vulcanwool:
+    enabled: true
+    type: vulcan_wool
+    display_name: "<gold>Vulcan Wool</gold>"
+    icon: ORANGE_WOOL
+    description:
+      - "<gray>Launch colorful wool around you.</gray>"
+    price: 250
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 2
+      spread: 0.5
+      velocity_y: 0.75
+      spawn_offset_y: 2.5
+
+  vulcanfire:
+    enabled: true
+    type: vulcan_fire
+    display_name: "<red>Vulcan Fire</red>"
+    icon: MAGMA_BLOCK
+    description:
+      - "<gray>Explode with fiery magma bursts.</gray>"
+    price: 300
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 2
+      spread: 0.5
+      velocity_y: 0.75
+      spawn_offset_y: 2.5
+
+  icewalker:
+    enabled: true
+    type: ice_walker
+    display_name: "<aqua>Ice Walker</aqua>"
+    icon: ICE
+    description:
+      - "<gray>Freeze the ground beneath you.</gray>"
+    price: 300
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 5
+      radius: 2
+
+  notes:
+    enabled: true
+    type: notes
+    display_name: "<yellow>Notes</yellow>"
+    icon: MUSIC_DISC_CAT
+    description:
+      - "<gray>Play a shower of musical notes.</gray>"
+    price: 200
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 6
+
+  chicken:
+    enabled: true
+    type: chicken
+    display_name: "<yellow>Chicken Burst</yellow>"
+    icon: EGG
+    description:
+      - "<gray>Release a flock of chickens.</gray>"
+    price: 250
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 5
+
+  wardens:
+    enabled: true
+    type: wardens
+    display_name: "<dark_aqua>Warden Orbit</dark_aqua>"
+    icon: SCULK_SHRIEKER
+    description:
+      - "<gray>Summon wardens that circle you.</gray>"
+    price: 500
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 2
+      radius: 2
+
+  daredevil:
+    enabled: true
+    type: daredevil
+    display_name: "<gold>Daredevil Ride</gold>"
+    icon: SADDLE
+    description:
+      - "<gray>Ride in style on a fearless steed.</gray>"
+    price: 350
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 20
+
+  meteors:
+    enabled: true
+    type: meteors
+    display_name: "<red>Meteor Storm</red>"
+    icon: FIRE_CHARGE
+    description:
+      - "<gray>Call down blazing meteors.</gray>"
+    price: 450
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 2
+      height_above: 10.0
+      spread: 1.0
+
+  pigland:
+    enabled: true
+    type: pig_land
+    display_name: "<light_purple>Pig Land</light_purple>"
+    icon: PORKCHOP
+    description:
+      - "<gray>Let pigs rain from the sky.</gray>"
+    price: 300
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 5
+      pigs_per_tick: 4
+      radius: 5.0
+      min_height: 5.0
+      max_height: 10.0
+
+  wolfs:
+    enabled: true
+    type: wolfs
+    display_name: "<gray>Wolf Pack</gray>"
+    icon: BONE
+    description:
+      - "<gray>Summon loyal wolves around you.</gray>"
+    price: 350
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 20
+      wolf_count: 10
+      radius: 5.0
+      min_height: 5.0
+      max_height: 10.0
+
+  anvilland:
+    enabled: true
+    type: anvil_land
+    display_name: "<dark_gray>Anvil Rain</dark_gray>"
+    icon: ANVIL
+    description:
+      - "<gray>Bring down anvils from above.</gray>"
+    price: 450
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 5
+      anvils_per_tick: 3
+      radius: 5.0
+      min_height: 10.0
+      max_height: 20.0
+
+  twerkapocalypse:
+    enabled: true
+    type: twerk_apocalypse
+    display_name: "<light_purple>Twerk Apocalypse</light_purple>"
+    icon: PLAYER_HEAD
+    description:
+      - "<gray>Spawn dancing NPCs to celebrate.</gray>"
+    price: 600
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 10
+      npc_count: 10
+      spawn_radius: 7.0
+      requires_plugin: Citizens
+
+  titan:
+    enabled: true
+    type: titan
+    display_name: "<dark_red>Titan</dark_red>"
+    icon: NETHERITE_CHESTPLATE
+    description:
+      - "<gray>Grow to giant size.</gray>"
+    price: 500
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 20
+      scale: 3.5
+
+  witherrider:
+    enabled: true
+    type: wither_rider
+    display_name: "<dark_gray>Wither Rider</dark_gray>"
+    icon: WITHER_SKELETON_SKULL
+    description:
+      - "<gray>Ride a wither and shoot skulls.</gray>"
+    price: 650
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 2
+      speed: 0.5
+      skull_interval: 20
+
+  rainbowbeacon:
+    enabled: true
+    type: rainbow_beacon
+    display_name: "<rainbow>Rainbow Ray</rainbow>"
+    icon: BEACON
+    description:
+      - "<gray>Summon a spinning rainbow ray.</gray>"
+    price: 450
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 5
+      radius: 2.0
+      pillar_height: 5
+
+  starshower:
+    enabled: true
+    type: star_shower
+    display_name: "<yellow>Star Shower</yellow>"
+    icon: NETHER_STAR
+    description:
+      - "<gray>Let sparkling stars orbit you.</gray>"
+    price: 400
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 4
+      radius: 3.0
+
+  destroyisland:
+    enabled: true
+    type: destroy_island
+    display_name: "<red>Destroy Island</red>"
+    icon: TNT
+    description:
+      - "<gray>Summon TNT blasts without damage.</gray>"
+    price: 500
+    default_unlocked: false
+    settings:
+      duration_seconds: 30
+      interval_ticks: 20
+      radius: 2
+      tnt_count: 4
+      fuse_ticks: 15
+      spawn_height: 10.0

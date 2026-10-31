@@ -1,0 +1,186 @@
+# Hub Configuration
+
+pvp-region: pvp
+
+# Equipment given to players in  mode
+equipment:
+  helmet:
+    material: DIAMOND_HELMET
+    name: §x§e§f§1§a§1§8ᴘᴠᴘ ʜᴇʟᴍᴇᴛ
+    lore:
+    - '&8ᴇꞯᴜɪᴘᴍᴇɴᴛ ɪꜱ ʟᴏᴄᴋᴇᴅ ᴡʜɪʟᴇ ᴀᴄᴛɪᴠᴇ'
+    enchantments:
+      PROTECTION_ENVIRONMENTAL: 3
+      UNBREAKING: 3
+  
+  chestplate:
+    material: DIAMOND_CHESTPLATE
+    name: §x§e§f§1§a§1§8ᴘᴠᴘ ᴄʜᴇꜱᴛᴘʟᴀᴛᴇ
+    lore:
+    - '&8ᴇꞯᴜɪᴘᴍᴇɴᴛ ɪꜱ ʟᴏᴄᴋᴇᴅ ᴡʜɪʟᴇ ᴀᴄᴛɪᴠᴇ'
+    enchantments:
+      PROTECTION_ENVIRONMENTAL: 3
+      UNBREAKING: 3
+  
+  leggings:
+    material: DIAMOND_LEGGINGS
+    name: §x§e§f§1§a§1§8ᴘᴠᴘ ʟᴇɢɢɪɴɢs
+    lore:
+    - '&8ᴇꞯᴜɪᴘᴍᴇɴᴛ ɪꜱ ʟᴏᴄᴋᴇᴅ ᴡʜɪʟᴇ ᴀᴄᴛɪᴠᴇ'
+    enchantments:
+      PROTECTION_ENVIRONMENTAL: 3
+      UNBREAKING: 3
+  
+  boots:
+    material: DIAMOND_BOOTS
+    name: §x§e§f§1§a§1§8ᴘᴠᴘ ʙᴏᴏᴛs
+    lore:
+    - '&8ᴇꞯᴜɪᴘᴍᴇɴᴛ ɪꜱ ʟᴏᴄᴋᴇᴅ ᴡʜɪʟᴇ ᴀᴄᴛɪᴠᴇ'
+    enchantments:
+      PROTECTION_ENVIRONMENTAL: 3
+      UNBREAKING: 3
+  
+  sword:
+    material: NETHERITE_SWORD
+    name: §x§F§B§0§0§0§0&lᴘ§x§F§D§8§0§8§0&lᴠ§x§F§F§F§F§F§F&lᴘ §8| §7ʀɪɢʜᴛ-ᴄʟɪᴄᴋ
+    inactive-lore:
+    - §x§e§f§1§a§1§8▶ &fᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ ᴘᴠᴘ
+    active-lore:
+    - §x§e§f§1§a§1§8🗡 &fᴘᴠᴘ ɪꜱ ᴀᴄᴛɪᴠᴇ
+    - '&8ᴇꞯᴜɪᴘᴍᴇɴᴛ ɪꜱ ʟᴏᴄᴋᴇᴅ ᴡʜɪʟᴇ ᴀᴄᴛɪᴠᴇ'
+    slot: 4
+    enchantments:
+      DAMAGE_ALL: 5
+
+# How players activate and deactivate
+activation:
+  mode: RIGHT_CLICK # RIGHT_CLICK or HOLD
+  give-sword-on-join: true
+  show-sword-message: false
+  show-death-reset-message: false
+
+# Countdown timers for enabling and disabling
+countdown:
+  enable:
+    enabled: true
+    time: 3
+    title: §x§f§2§1§a§1§8&lᴀᴄᴛɪᴠᴀᴛɪɴɢ ᴘᴠᴘ
+    subtitle: '&fIn §x§f§2§1§a§1§8{time} &fseconds'
+    sound: BLOCK_NOTE_BLOCK_PLING
+    cancel-on-move: false
+    cancel-on-damage: true
+  
+  disable:
+    enabled: true
+    time: 5
+    title: §x§4§3§f§0§3§3&lᴅᴇᴀᴄᴛɪᴠᴀᴛɪɴɢ ᴘᴠᴘ
+    subtitle: '&fIn §x§4§3§f§0§3§3{time} &fseconds'
+    sound: BLOCK_NOTE_BLOCK_PLING
+    cancel-on-move: false
+    cancel-on-damage: true
+
+# Combat system and anti-combat logging
+combat:
+  time: 15
+  block--when-disabled: true
+  tag-enabled: true
+  tag-duration: 15
+  prevent--disable: true
+
+# Visual effects for  players
+effects:
+  glowing: true
+
+# Live scoreboard display
+scoreboard:
+  title: '&c&l'
+  enabled: false
+  update-interval: 20
+  lines:
+  - ''
+  - '&fStatus: %hub_status_color%%hub_status%'
+  - ''
+  - '&7Kills: &f%hub_kills%'
+  - '&7Streak: &f%hub_killstreak%'
+  - ''
+  - '&fLeaderboard:'
+  - '&e1. %hub_top_1_name% &7(&f%hub_top_1_kills%&7)'
+  - '&72. %hub_top_2_name% &7(&f%hub_top_2_kills%&7)'
+  - '&63. %hub_top_3_name% &7(&f%hub_top_3_kills%&7)'
+  - ''
+
+# Player messages
+messages:
+  -enabled: §x§e§f§1§a§1§8PvP &8→ &fPVP Enabled
+  -disabled: '&c disabled'
+  -already-enabled: '&c is already enabled'
+  -not-enabled: '&c is not enabled'
+  -disabled-world: '&c is disabled in this world'
+  equipment-locked: §x§e§f§1§a§1§8PvP &8→ &cCannot move PvP equipment
+  combat-entered: §x§e§f§1§a§1§8PvP &8→ &fYou are now in combat
+  combat-exited: §x§e§f§1§a§1§8PvP &8→ &fYou are no longer in combat
+  command-blocked: §x§e§f§1§a§1§8PvP &8→ &cCannot use commands in combat ({time}s
+    remaining)
+  flight-blocked: §x§e§f§1§a§1§8PvP &8→ &cCannot fly while in PvP mode
+  kill: '§x§e§f§1§a§1§8PvP &8→ §x§e§f§1§a§1§8{killer} &fkilled §x§e§f§1§a§1§8{victim}
+    &8(&fStreak: §x§e§f§1§a§1§8{killstreak}&8)'
+  countdown-enable-started: §x§e§f§1§a§1§8PvP &8→ &fActivating PvP in §x§e§f§1§a§1§8{time}
+    &fseconds
+  countdown-disable-started: §x§e§f§1§a§1§8PvP &8→ &fDeactivating PvP in §x§e§f§1§a§1§8{time}
+    &fseconds
+  countdown-cancelled: §x§e§f§1§a§1§8PvP &8→ &cCountdown cancelled
+  -blocked: '&cBoth players must have  enabled'
+  sword-received: '&7You received a  sword'
+  combat-tagged: §x§e§f§1§a§1§8PvP &8→ &cCannot disable while combat tagged &8({time}s
+    remaining&8)
+  death-reset: '&7 status reset - activate when ready'
+
+# Worlds where  is completely disabled
+disabled-worlds:
+- spawn
+- lobby
+
+# Commands executed automatically
+commands:
+  activation:
+  - say &§{player} §7PvP §aActivated
+  
+  deactivation:
+  - say &§{player} §7PvP §cDeactivated
+  
+  kill:
+  - give {killer} golden_apple 1
+  - cyberlevel addExp 50 {killer}
+  
+  # Commands blocked during combat
+  blocked:
+  - tp
+  - home
+  - spawn
+  - warp
+  - fly
+  
+  # Rewards for kill streaks
+  killstreak:
+    '2':
+    - cyberlevel addExp 50 {player}
+    
+    '5':
+    - give {player} golden_apple 2
+    - cyberlevel addExp 100 {player}
+    - ultracosmetics give key 1 {player}
+    
+    '10':
+    - give {player} enchanted_golden_apple 1
+    - cyberlevel addExp 200 {player}
+    - ultracosmetics give key 1 {player}
+    
+    '15':
+    - give {player} golden_apple 2
+    - cyberlevel addExp 300 {player}
+    - ultracosmetics give key 2 {player}
+    
+    '20':
+    - give {player} enchanted_golden_apple 1
+    - cyberlevel addExp 400 {player}
+    - ultracosmetics give key 3 {player}

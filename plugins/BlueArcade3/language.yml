@@ -1,0 +1,1076 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by TheySix | https://events.theysix.tech/wiki/arcade/ [!]
+
+# ========================================
+# File settings
+# ========================================
+file_version: '4'
+language: English (UK)
+prefix: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient></bold> <gray>»</gray>
+
+# ========================================
+# PLAYER EXPERIENCE
+# ========================================
+
+# ----------------------------------------
+# Player Messages
+# ----------------------------------------
+player:
+  lobby:
+    you_join: '{prefix} <yellow>You have joined the arena</yellow> <yellow>{arena_display_name}<yellow>.</yellow>'
+    player_joined: '{prefix} <gray>{player}</gray> <yellow>has joined the arena. (</yellow><yellow>{players}<dark_gray>/<yellow>{max_players}<yellow>)</yellow>'
+    you_left: '{prefix} <yellow>You have left the arena</yellow> <yellow>{arena_display_name}<yellow>.</yellow>'
+    player_leaves: '{prefix} <gray>{player}</gray> <red>has left the arena. (</red><yellow>{players}<dark_gray>/<yellow>{max_players}<red>)</red>'
+  
+  game:
+    lobby_countdown: '{prefix} <yellow>The arena will start in</yellow> <yellow>{time} <yellow>seconds.</yellow>'
+    arena_almost_full: '{prefix} <gold>The arena is almost </gold><bold><red>FULL</red></bold><gold>! The countdown has been reduced to {time} seconds.</gold>'
+    player_voted: '{prefix} <yellow>{player_name}</yellow> <yellow>has voted for the mini game</yellow> <yellow>{game}</yellow><yellow>.</yellow> <gold>+1 Vote</gold>'
+    no_winner_timeout: '{prefix} <yellow>The game did not finish in time, so there are no winners.</yellow>'
+    team_assignment: '{prefix} <yellow>Your team:</yellow> <white>{team}</white>'
+  
+  # Player errors (things they might encounter)
+  errors:
+    already_in_game: '{prefix} <red>You are already in the game. To leave use /ba leave</red>'
+    not_in_game: '{prefix} <red>You are not currently in any game.</red>'
+    no_arena: '{prefix} <red>No arena is available at this time. Please try again later.</red>'
+    arena_started: '{prefix} <red>The arena</red> <yellow>{arena_display_name}</yellow> <red>has already started.</red>'
+    arena_full: '{prefix} <red>The arena</red> <yellow>{arena_display_name}</yellow> <red>is full.</red>'
+    arena_starting_full: '{prefix} <red>The arena</red> <yellow>{arena_display_name}</yellow> <red>is starting and is already full.</red>'
+    arena_stopped: '{prefix} <red>The arena has been stopped due to lack of players. At least</red> <yellow>{min_players}</yellow> <red>players are needed.</red>'
+    chat_muted: '{prefix} <red>The chat is muted. You will be able to talk in a few seconds.</red>'
+    not_allowed_command: '{prefix} <red>You cannot use this command while you are in a game. Use /leave to leave.</red>'
+    stats_disabled: '{prefix} <red>The stats system is currently disabled.</red>'
+    achievements_disabled: '{prefix} <red>The achievements system is currently disabled.</red>'
+    achievements_menu_disabled: '{prefix} <red>The achievements menu is currently disabled.</red>'
+    levels_disabled: '{prefix} <red>The levels system is currently disabled.</red>'
+    stats_empty: '{prefix} <yellow>No stats available yet. Play some games first!</yellow>'
+    no_votes: '{prefix} <red>You have no votes available. Try increasing your rank.</red>'
+    item_cooldown: '{prefix} <yellow>Please wait {seconds}s before using that item.</yellow>'
+    arena_in_game: '{prefix} <red>The arena</red> <yellow>{arena_display_name}</yellow> <red>is currently in-game.</red>'
+    searching: '{prefix} <yellow>No arena is available right now.</yellow>'
+    voting_unavailable: '{prefix} <red>Voting is not available at this moment.</red>'
+    minigame_not_available: '{prefix} <red>That minigame cannot be voted right now.</red>'
+
+# ----------------------------------------
+# Game Items
+# ----------------------------------------
+items:
+  game:
+    vote_game: <yellow>Vote for mini-games</yellow>
+    leave_game: <red>Leave the game</red>
+
+# ----------------------------------------
+# Player Commands Help
+# ----------------------------------------
+player_commands:
+  help:
+  - <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <reset> <dark_gray>-</dark_gray> <gray>Help Command for users</gray>
+  - <yellow>[] Requiered</yellow> <gray>-</gray> <green>() Optional</green>
+  - ' '
+  - <gold>/ba quickjoin (player)</gold> <dark_gray>-</dark_gray> <gray>Enter a random game</gray>
+  - <gold>/ba join [name/id] (player)</gold> <dark_gray>-</dark_gray> <gray>Enter a specific game</gray>
+  - <gold>/ba leave (player)</gold> <dark_gray>-</dark_gray> <gray>Leave the current game</gray>
+  - <gold>/ba party <gray>...</gray></gold> <dark_gray>-</dark_gray> <gray>Manage your party</gray>
+  - <gold>/ba stats (category) (alltime/monthly/yearly) (page)</gold> <dark_gray>-</dark_gray> <gray>Check your stats</gray>
+  - <gold>/ba tops (category) (alltime/monthly/yearly) (page)</gold> <dark_gray>-</dark_gray> <gray>Browse top stats</gray>
+  - <gold>/ba tops <stat> <alltime/monthly/yearly> (page)</gold> <dark_gray>-</dark_gray> <gray>View top players for a stat</gray>
+  - <gold>/ba achievements (category) (achievement) (page)</gold> <dark_gray>-</dark_gray> <gray>View achievements</gray>
+  - <gold>/ba level</gold> <dark_gray>-</dark_gray> <gray>View your current level</gray>
+  - <gold>/ba store</gold> <dark_gray>-</dark_gray> <gray>Open the store</gray>
+  - <gold>/ba credits pay <player> <amount></gold> <dark_gray>-</dark_gray> <gray>Pay credits to another player</gray>
+  - <gold>/baa help</gold> <dark_gray>-</dark_gray> <gray>Help for administrators</gray>
+  
+  usage:
+    join: '{prefix} <red>Use: /ba join [arena|(filter [page])] (player)</red>'
+    quickjoin: '{prefix} <red>Use: /ba quickjoin (player)</red>'
+    leave: '{prefix} <red>Use: /ba leave [player]</red>'
+    vote: '{prefix} <red>Use: /ba vote [minigame|page <number>]</red>'
+    party: '{prefix} <red>Use: /ba party <list|type|create|members|invite|search|join|accept|reject|kick|leader|leave> (player)</red>'
+    stats: '{prefix} <red>Use: /ba stats (category) (alltime/monthly/yearly) (page)</red>'
+    tops: '{prefix} <red>Use: /ba tops (category) (alltime/monthly/yearly) (page) or /ba tops <stat|module:stat> <alltime/monthly/yearly> (page)</red>'
+    achievements: '{prefix} <red>Use: /ba achievements (category) (achievement) (page)</red>'
+    level: '{prefix} <red>Use: /ba level</red>'
+    credits: '{prefix} <red>Use: /ba credits [pay] <player> <amount></red>'
+    store: '{prefix} <red>Use: /ba store (page <number>|category <id> [page]|module <id> [page]|buy <category> <item> [page]|confirm <category> <item> [page]|purchase <category> <item> [page]|select <category> <item>)</red>'
+    team: '{prefix} <red>Use: /ba team (join <team_id>)</red>'
+  
+  credits:
+    balance: '{prefix} <yellow>You have <gold>{amount}</gold> credits.</yellow>'
+    balance_unavailable: '{prefix} <red>Credits provider "{provider}" is not available right now.</red>'
+    sent: '{prefix} <green>You paid {amount} credits to {player}.</green>'
+    received: '{prefix} <green>You received {amount} credits from {player}.</green>'
+    reward: '  <gold>⛁</gold> <yellow>+{amount} credits</yellow>'
+    invalid_amount: '{prefix} <red>Invalid credits amount: {amount}</red>'
+    player_not_found: '{prefix} <red>Player ''{player}'' not found.</red>'
+    insufficient_funds: '{prefix} <red>You don''t have enough credits.</red>'
+    self_payment: '{prefix} <red>You cannot pay yourself.</red>'
+    transfer_failed: '{prefix} <red>Unable to transfer credits right now. Try again later.</red>'
+  
+  party:
+    created: '{prefix} <green>Party created. Invite players to start playing together.</green>'
+    already_in_party: '{prefix} <red>You are already in a party.</red>'
+    no_available_arenas: '{prefix} <red>There are no arenas that support party size right now.</red>'
+    not_in_party: '{prefix} <red>You are not in a party.</red>'
+    not_leader: '{prefix} <red>Only the party leader can do that.</red>'
+    cannot_invite_self: '{prefix} <red>You cannot invite yourself.</red>'
+    target_in_party: '{prefix} <red>{player} is already in a party.</red>'
+    target_not_in_party: '{prefix} <red>That player is not in your party.</red>'
+    type_changed: '{prefix} <green>Party type updated to <white>{type}</white>.</green>'
+    invalid_type: '{prefix} <red>Invalid party type. Use public/private.</red>'
+    exceeds_max_size: '{prefix} <red>The party cannot exceed <white>{max}</white> players (max arena size).</red>'
+    member_busy: '{prefix} <red>{player} is busy in another game.</red>'
+    not_enough_slots: '{prefix} <red>Not enough available slots for the whole party (<white>{available}</white> free).</red>'
+    only_leader_join: '{prefix} <red>Only the leader can join arenas for the party.</red>'
+    left: '{prefix} <yellow>You left the party.</yellow>'
+    leader_left: '{prefix} <yellow>The new leader is <white>{leader}</white>.</yellow>'
+    new_leader: '{prefix} <green><white>{leader}</white> is now the party leader.</green>'
+    kicked: '{prefix} <red>{player} was removed from the party.</red>'
+    kicked_target: '{prefix} <red>You were removed from the party by {leader}.</red>'
+    join:
+      joined: '{prefix} <green>{player} joined the party.</green>'
+      not_found: '{prefix} <red>No public party found for that leader.</red>'
+      not_public: '{prefix} <red>That party is not public.</red>'
+    roles:
+      leader: Leader
+      member: Member
+    invite:
+      sent: '{prefix} <green>Invitation sent to <white>{player}</white>.</green>'
+      received: '{prefix} <yellow>You received a party invite from <white>{leader}</white>. Use /ba party accept {leader}.</yellow>'
+      already_sent: '{prefix} <red>You already invited {player}.</red>'
+      not_found: '{prefix} <red>You have no invite from that player.</red>'
+      rejected: '{prefix} <red>{player} rejected your party invitation.</red>'
+      you_rejected: '{prefix} <yellow>You rejected the invitation from <white>{leader}</white>.</yellow>'
+      accepted: '{prefix} <green>{player} joined the party.</green>'
+    list:
+    - <bold><gradient:yellow:gold>Party</gradient>
+    - <white>Type:</white> <yellow>{type}
+    - <white>Leader:</white> <yellow>{leader}
+    - <white>Members:</white> <gray>{members}
+    types:
+      public: Public
+      private: Private
+  
+  team:
+    unavailable: '{prefix} <red>Team selection is not available for this game.</red>'
+    not_available_phase: '{prefix} <red>Team selection is only available while waiting.</red>'
+    invalid: '{prefix} <red>That team does not exist.</red>'
+    full: '{prefix} <red>That team is full.</red>'
+    selected: '{prefix} <green>You joined {team}.</green>'
+  
+  stats:
+    text:
+      header:
+      - <dark_gray><strikethrough>--------------------------</dark_gray><reset>
+      - <gradient:#4CADD0:#B2F9FF><bold>TheySix Events</bold></gradient> <gray>-</gray> <yellow>Your Stats</yellow> <gray>({period_label})</gray> <gray>(Page {page}/{page_total})</gray>
+      - ' '
+      global_title: <gold>Global Stats</gold>
+      module_title: <gold>{module_name}</gold>
+      entry: '<gray>• {stat}</gray>: <white>{stat_value}</white>'
+      module_entry: '<gray>• {stat}</gray>: <white>{stat_value}</white>'
+      footer:
+      - ' '
+      - <gray>Total tracked:</gray> <white>{stat_total}</white>
+    errors:
+      invalid_period: '{prefix} <red>Unknown period:</red> <yellow>{period}</yellow><red>. Use:</red> <white>{valid_periods}</white><red>.</red>'
+      category_not_found: '{prefix} <red>Unknown stats category:</red> <yellow>{category}</yellow><red>.</red>'
+  
+  tops:
+    text:
+      header:
+      - <dark_gray><strikethrough>--------------------------</dark_gray><reset>
+      - <gradient:#4CADD0:#B2F9FF><bold>TheySix Events</bold></gradient> <gray>-</gray> <yellow>Top {stat_display}</yellow> <gray>(Page {page}/{page_total})</gray>
+      - <gray>Scope:</gray> <white>{scope}</white> <gray>•</gray> <gray>Module:</gray> <white>{module_name}</white>
+      - <gray>Period:</gray> <white>{period_label}</white>
+      - ' '
+      entry: <gray>#{position}</gray> <white>{player}</white> <gray>-</gray> <yellow>{stat_value}</yellow>
+      footer:
+      - ' '
+      - <gray>Total entries:</gray> <white>{entry_total}</white>
+      - <dark_gray><strikethrough>--------------------------</dark_gray><reset>
+      empty: '{prefix} <yellow>No players have results for</yellow> <white>{stat_display}</white> <yellow>in</yellow> <white>{period_label}</white><yellow> yet.</yellow>'
+    errors:
+      unknown_stat: '{prefix} <red>Unknown stat:</red> <yellow>{stat_input}</yellow><red>. Use /ba stats to view available stats.</red>'
+      ambiguous_stat: '{prefix} <red>That stat exists in multiple modules.</red> <yellow>Use /ba tops <module:stat> <alltime/monthly/yearly></yellow> <red>for:</red> <gray>{modules}</gray>'
+      invalid_period: '{prefix} <red>Unknown period:</red> <yellow>{period}</yellow><red>. Use:</red> <white>{valid_periods}</white><red>.</red>'
+      category_not_found: '{prefix} <red>Unknown stats category:</red> <yellow>{category}</yellow><red>.</red>'
+    scope:
+      global: Global
+      module: Module
+    unknown_player: Unknown
+
+# ----------------------------------------
+# Achievements
+# ----------------------------------------
+achievements:
+  empty: '{prefix} <yellow>No achievements are available yet.</yellow>'
+  phase_unlocked:
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  - <gray> </gray>
+  - '  <yellow><bold>PARTY <gold>GAMES</gold></bold> <gray>-</gray> <yellow>Achievement</yellow> <gray>-</gray> <green>Unlocked</green>'
+  - <gray> </gray>
+  - '  <white>{achievement_name}</white> <gray>({achievement_phase}/{achievement_phase_total})</gray>'
+  - '  <gray>{achievement_description}</gray>'
+  - <gray> </gray>
+  - '  <gray>Progress:</gray> {achievement_progress_bar} <gray>({achievement_progress})</gray>'
+  - '  <gray>Remaining:</gray> {achievement_remaining_bar} <gray>({achievement_remaining})</gray>'
+  - <gray> </gray>
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  completed:
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  - <gray> </gray>
+  - '  <yellow><bold>PARTY <gold>GAMES</gold></bold> <gray>-</gray> <yellow>Achievement</yellow> <gray>-</gray> <green>Completed</green>'
+  - <gray> </gray>
+  - '  <white>{achievement_name}</white> <gray>({achievement_phase}/{achievement_phase_total})</gray>'
+  - '  <gray>{achievement_description}</gray>'
+  - <gray> </gray>
+  - '  <gray>Progress:</gray> {achievement_progress_bar} <gray>({achievement_progress})</gray>'
+  - '  <gray>Remaining:</gray> {achievement_remaining_bar} <gray>({achievement_remaining})</gray>'
+  - <gray> </gray>
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  phase_default_name: Phase {phase_index}
+  requirements:
+    none: No requirements listed.
+  status:
+    completed: Completed
+    current: In progress
+    locked: Locked
+  errors:
+    category_not_found: '{prefix} <red>Unknown achievements category:</red> <yellow>{category}</yellow><red>.</red>'
+    achievement_not_found: '{prefix} <red>Unknown achievement:</red> <yellow>{achievement}</yellow><red>.</red>'
+
+# ----------------------------------------
+# Levels
+# ----------------------------------------
+levels:
+  status: '{prefix} <gray>Level</gray> <white>{level}</white> <dark_gray>-</dark_gray> <yellow>{level_title}</yellow> <dark_gray>•</dark_gray> <gold>{exp_current}</gold><gray>/</gray><gold>{exp_required}</gold> <gray>XP</gray> {exp_bar} <gray>({exp_remaining} to go)</gray>'
+  titles:
+    default: Novice
+  messages:
+    exp_reward: '  <gold>✹</gold> <gold>+{amount} XP</gold>'
+    level_up:
+    - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+    - <gray> </gray>
+    - '  <yellow><bold>PARTY <gold>GAMES</gold></bold> <gray>-</gray> <yellow>Level</yellow> <gray>-</gray> <green>Up</green>'
+    - <gray> </gray>
+    - '  <white>Level {level}</white> <gray>({level_title})</gray>'
+    - '  <gray>Next level requires</gray> <gold>{exp_required}</gold> <gray>XP</gray>'
+    - <gray> </gray>
+    - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+
+# ----------------------------------------
+# Store
+# ----------------------------------------
+store:
+  currency_label: credits
+  status:
+    selected: <green>Selected</green>
+    owned: <yellow>Owned</yellow>
+    locked: <red>Locked</red>
+  messages:
+    purchased: '{prefix} <green>You purchased <white>{item}</white> for <white>{price}</white> credits.</green>'
+    selected: '{prefix} <green>You selected <white>{item}</white>.</green>'
+  hints:
+    select: <dark_gray>Left-click to select.</dark_gray>
+    select_or_purchase: <dark_gray>Left-click to select, right-click to purchase.</dark_gray>
+    purchase: <dark_gray>Click to purchase.</dark_gray>
+    random: <dark_gray>Select to roll a random unlocked item.</dark_gray>
+    random_locked: <red>Unlock at least one item to use random.</red>
+  errors:
+    disabled: '{prefix} <red>The store is currently disabled.</red>'
+    category_not_found: '{prefix} <red>Unknown store category:</red> <yellow>{category}</yellow><red>.</red>'
+    item_not_found: '{prefix} <red>Unknown store item:</red> <yellow>{item}</yellow><red>.</red>'
+    insufficient_funds: '{prefix} <red>You need <white>{price}</white> credits to buy this.</red>'
+    already_owned: '{prefix} <yellow>You already own <white>{item}</white>.</yellow>'
+    purchase_failed: '{prefix} <red>Unable to purchase <white>{item}</white> right now.</red>'
+    not_unlocked: '{prefix} <red>You haven''t unlocked <white>{item}</white> yet.</red>'
+    victory_effect_requires_plugin: '{prefix} <red>This victory effect requires</red> <yellow>{plugin}</yellow><red> to be installed.</red>'
+    random_requires_unlocked: '{prefix} <red>Unlock at least one item to use the random option.</red>'
+
+# ----------------------------------------
+# Scoreboards
+# ----------------------------------------
+scoreboards:
+  lobby:
+    waiting:
+      title: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <gold>★</gold>
+      list:
+      - ''
+      - '<white>Arena: <yellow>{arena}'
+      - '<white>Players: <yellow>{players}<gray>/<yellow>{max_players}'
+      - ''
+      - <yellow>Waiting...
+      - ''
+      - <yellow>events.theysix.tech</yellow>
+    starting:
+      title: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <gold>★</gold>
+      list:
+      - ''
+      - '<white>Arena: <yellow>{arena}'
+      - '<white>Players: <yellow>{players}/<yellow>{max_players}'
+      - ''
+      - <yellow>Starting in <gold>{time}</gold>
+      - ''
+      - <yellow>events.theysix.tech</yellow>
+  limbo:
+    title: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <gold>★</gold></bold>
+    list:
+    - ''
+    - <white>Arena:</white> <yellow>{arena}</yellow>
+    - <white>Players:</white> <yellow>{players}</yellow>
+    - <white>Round:</white> <yellow>{round}/{round_max}</yellow>
+    - ''
+    - <green>➊</green> <white>{place_1}</white> <gray>✯ {stars_1}</gray>
+    - <gold>➋</gold> <white>{place_2}</white> <gray>✯ {stars_2}</gray>
+    - <red>➌</red> <white>{place_3}</white> <gray>✯ {stars_3}</gray>
+    - <dark_gray>➍</dark_gray> <gray>{place_4}</gray> <dark_gray>✯ {stars_4}</dark_gray>
+    - <dark_gray>➎</dark_gray> <gray>{place_5}</gray> <dark_gray>✯ {stars_5}</dark_gray>
+    - ''
+    - <gold>♛</gold> <yellow>Your Position:</yellow> <white>{place_player}</white> <gold>✯ {stars_player}</gold>
+    - ''
+    - <yellow>events.theysix.tech</yellow>
+  in_game:
+    starting:
+      title: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <gold>★</gold>
+      list:
+      - ''
+      - '<white>Arena: <yellow>{arena}'
+      - '<white>Game: <yellow>{game_display_name}'
+      - '<white>Players: <yellow>{players}'
+      - ''
+      - <yellow>Starting in <gold>{time}</gold>
+      - ''
+      - <yellow>events.theysix.tech</yellow>
+  finish:
+    title: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <gold>★</gold></bold>
+    list:
+    - ''
+    - <white>Arena:</white> <yellow>{arena}</yellow>
+    - <white>Players:</white> <yellow>{players}</yellow>
+    - ''
+    - <green>➊</green> <white>{place_1}</white> <gray>✯ {stars_1}</gray>
+    - <gold>➋</gold> <white>{place_2}</white> <gray>✯ {stars_2}</gray>
+    - <red>➌</red> <white>{place_3}</white> <gray>✯ {stars_3}</gray>
+    - <dark_gray>➍</dark_gray> <gray>{place_4}</gray> <dark_gray>✯ {stars_4}</dark_gray>
+    - <dark_gray>➎</dark_gray> <gray>{place_5}</gray> <dark_gray>✯ {stars_5}</dark_gray>
+    - ''
+    - <gold>♛</gold> <yellow>Your Position:</yellow> <white>{place_player}</white> <gold>✯ {stars_player}</gold>
+    - ''
+    - <yellow>events.theysix.tech</yellow>
+
+# ----------------------------------------
+# Action Bar Messages
+# ----------------------------------------
+action_bar:
+  lobby:
+    starting: <yellow>Starting in</yellow> <gold>{time}</gold>
+  in_game:
+    global: <yellow>Time:</yellow> <white>{time}</white> <dark_gray>| <yellow>Round:</yellow> <white>{round}</white><gray>/</gray><white>{round_max}</white>
+
+# ----------------------------------------
+# Titles
+# ----------------------------------------
+titles:
+  join:
+    title: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient>
+    subtitle: events.theysix.tech
+  starting_arena:
+    title: <yellow><bold>{time}</yellow><reset>
+    subtitle: ''
+  upcoming_game:
+    title: ''
+    subtitle: <gray>the next game will be...</gray>
+  next_game:
+    title: <bold><gradient:yellow:gold>{game_display_name}</gradient><reset>
+    subtitle: events.theysix.tech
+  starting_game:
+    title: <bold><gradient:yellow:gold>{game_display_name}</gradient><reset>
+    subtitle: The game will start in <gold>{time}</gold>s
+  game_started:
+    title: <bold><gradient:yellow:gold>{game_display_name}</gradient><reset>
+    subtitle: <green><bold>LET'S GO!</green>
+  you_died:
+    title: <bold><gradient:red:dark_red>YOU DIED!</gradient><reset>
+    subtitle: <white>You have been placed</white> <yellow>#{place}</yellow><white>.</white>
+  classified:
+    title: <bold><gradient:dark_green:green>CLASSIFIED!</gradient><reset>
+    subtitle: <white>You have been placed</white> <yellow>#{place}</yellow><white>.</white>
+
+# ----------------------------------------
+# Signs
+# ----------------------------------------
+signs:
+  join:
+    line1: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient>
+    line2: <yellow>{arena_status}</yellow>
+    line3: '{arena_displayname}'
+    line4: <gold>{players}</gold><gray>/</gray><gold>{players_max}</gold>
+  auto:
+    line1: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient>
+    line2: <yellow>{arena_status}</yellow>
+    line3: '{arena_displayname}'
+    line4: <gold>{players}</gold><gray>/</gray><gold>{players_max}</gold>
+  quickjoin:
+    line1: ''
+    line2: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient>
+    line3: <yellow><bold>Quick Join</yellow><reset>
+    line4: ''
+  top:
+    line1: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient>
+    line2: <yellow>{top_module}</yellow>
+    line3: <yellow>#{top_position} {top_player}</yellow>
+    line4: <gold>{top_stat}</gold> <gray>|</gray> <white>{top_value}</white> <gray>|</gray> <gray>{top_period}</gray>
+    empty_player: No entries
+  leave:
+    line1: ''
+    line2: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient>
+    line3: <red><bold>Leave</red><reset>
+    line4: ''
+
+# ----------------------------------------
+# Game Results & Summary
+# ----------------------------------------
+summary:
+  # Generic summary for most games
+  mini_game:
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  - ' '
+  - '     <green>➀ <bold>{place_1}</green> <gray>✯ +3</gray>'
+  - '     <gold>➁ <bold>{place_2}</gold> <gray>✯ +2</gray>'
+  - '     <red>➂ <bold>{place_3}</red> <gray>✯ +1</gray>'
+  - ' '
+  - '  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <gold>✹</gold> <gold>{xp_earned}</gold>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}  <gray>|</gray>  <green>Your place:</green> <gold>{place_player}</gold>'
+  - ' '
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  
+  # Team-based summary for a single game
+  mini_game_team:
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  - ' '
+  - '  <green>Winning team:</green> <yellow>{team_winners}</yellow>'
+  - '  <gray>Your team:</gray> <white>{team_player}</white> <gray>({team_player_count}/{team_size})</gray>'
+  - ' '
+  - '  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <gold>✹</gold> <gold>{xp_earned}</gold>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}</yellow>'
+  - ' '
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  
+  # Final results across all rounds
+  final:
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  - ' '
+  - '  <yellow><bold>PARTY <gold>GAMES</gold></bold> <gray>-</gray> <yellow>End of Game <gray>-</gray> <green>Results:</green>'
+  - ' '
+  - '     <green>➊ <bold>{place_1_stars}</green>'
+  - '     <gold>➋ <bold>{place_2_stars}</gold>'
+  - '     <red>➌ <bold>{place_3_stars}</red>'
+  - ' '
+  - '  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <gold>✹</gold> <gold>{xp_earned}</gold>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}  <gray>|</gray>  <green>You placed:</green> <gold>{place_player}</gold>'
+  - ' '
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  
+  # Final summary for standalone team games
+  final_team:
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  - ' '
+  - '  <yellow><bold>PARTY <gold>GAMES</gold></bold> <gray>-</gray> <yellow>Team Results</yellow>'
+  - ' '
+  - '  <green>Winning team:</green> <yellow>{team_winners}</yellow>'
+  - '  <gray>Your team:</gray> <white>{team_player}</white> <gray>({team_player_count}/{team_size})</gray>'
+  - ' '
+  - '  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <gold>✹</gold> <gold>{xp_earned}</gold>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}</yellow>'
+  - ' '
+  - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+  
+  stats:
+    java:
+      header:
+      - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+      - ' '
+      - '  <yellow><bold>PARTY <gold>GAMES</gold></bold> <gray>-</gray> <yellow>Stats Progress</yellow>'
+      - ' '
+      entry: '    <gray>• {stat}</gray> <white>+{delta}</white> <dark_gray>(Total: {total})'
+      module_entry: '    <gray>•</gray> <yellow>[{module}]</yellow> <white>{stat}</white> <green>+{delta}</green> <dark_gray>(Total: {total})'
+      footer:
+      - ' '
+      - <dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>
+    bedrock:
+      title: Stat progress
+      content_header: 'Stats gained this match:'
+      entry: '• {stat}: +{delta} (Total: {total})'
+      empty: No new stats this round.
+      buttons:
+        play_again: Play again
+        lobby: Return to Lobby
+    invalid_period: '{prefix} <yellow>Invalid summary stats period ''{period}''. Using all-time.</yellow>'
+
+# ----------------------------------------
+# Economy
+# ----------------------------------------
+economy:
+  errors:
+    invalid_provider: '{prefix} <red>Invalid economy provider ''{provider}''. Falling back to built-in credits.</red>'
+    vault_missing: '{prefix} <red>Vault is enabled in settings, but no economy provider was found. Falling back to built-in credits.</red>'
+    custom_missing_config: '{prefix} <red>Custom economy is enabled but configuration is incomplete. Check that give_command, take_command, and get_placeholder are all set in settings.yml. Credits operations will fail until custom economy is fully configured.</red>'
+    custom_papi_missing: '{prefix} <red>Custom economy requires PlaceholderAPI to read balances. Balance checks will return 0 until PlaceholderAPI is installed.</red>'
+
+stats:
+  periods:
+    alltime: All-time
+    monthly: Monthly
+    yearly: Yearly
+  periods_list: alltime, monthly, yearly
+  labels:
+    global: Global
+    wins: Wins
+    games_played: Games Played
+    mini_games_played: Mini games played
+    first_place: First Places
+    second_place: Second Places
+    third_place: Third Places
+    stars: Stars
+    credits: Credits
+    kills: Kills
+    deaths: Deaths
+    current_win_streak: Current Win Streak
+    best_win_streak: Best Win Streak
+    time_played: Time Played
+    modules: {}
+
+# ----------------------------------------
+# Plugin Info
+# ----------------------------------------
+plugin_info:
+- <dark_gray><strikethrough>--------------------------</dark_gray><reset>
+- ' '
+- <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <gray>-</gray> <yellow>{plugin_version}</yellow>
+- <gray>Created by TheySix (events.theysix.tech)</gray>
+- ' '
+- <gray>Use</gray> <gold>/ba help</gold> <gray>to get help.</gray>
+- ' '
+- <dark_gray><strikethrough>--------------------------</dark_gray><reset>
+
+# ========================================
+# ADMINISTRATOR EXPERIENCE
+# ========================================
+
+# ----------------------------------------
+# Admin Messages (Commands & Management)
+# ----------------------------------------
+admin_commands:
+  
+  # ====================================
+  # Magic Stick (Selection Tool)
+  # ====================================
+  stick:
+    given: '{prefix} <green>Magic Stick obtained! Left click = pos1, Right click = pos2</green>'
+    already_have: '{prefix} <yellow>You already have the Magic Stick in your inventory.</yellow>'
+    pos1_set: '{prefix} <green>Position 1 set at X:{x}, Y:{y}, Z:{z}</green>'
+    pos2_set: '{prefix} <green>Position 2 set at X:{x}, Y:{y}, Z:{z}</green>'
+    selection_cleared: '{prefix} <yellow>Selection cleared.</yellow>'
+    no_selection: '{prefix} <red>You don''t have an active selection. Use the Magic Stick first.</red>'
+    incomplete_selection: '{prefix} <red>Incomplete selection. Set both positions with the Magic Stick.</red>'
+    different_worlds: '{prefix} <red>Both positions must be in the same world.</red>'
+    selection_info: '{prefix} <gray>Selection: {blocks} blocks ({x}×{y}×{z})</gray>'
+  
+  # ====================================
+  # Arena CRUD Operations
+  # ====================================
+  create:
+    success: '{prefix} <green>Arena {arena_id} created successfully in {mode} mode.</green>'
+    already_exists: '{prefix} <red>Arena {arena_id} already exists.</red>'
+    invalid_mode: '{prefix} <red>Invalid mode. Use ''standalone'' or ''party''.</red>'
+  
+  delete:
+    success: '{prefix} <green>Arena {arena_id} deleted successfully.</green>'
+    not_found: '{prefix} <red>Arena {arena_id} does not exist.</red>'
+    confirm: '{prefix} <yellow>Type ''/baa delete {arena_id} confirm'' to confirm deletion.</yellow>'
+  
+  enable:
+    success: '{prefix} <green>Arena {arena_id} enabled.</green>'
+    already_enabled: '{prefix} <yellow>Arena {arena_id} is already enabled.</yellow>'
+    incomplete_config: '{prefix} <red>Cannot enable arena {arena_id}. Complete the configuration first.</red>'
+  
+  disable:
+    success: '{prefix} <green>Arena {arena_id} disabled.</green>'
+    already_disabled: '{prefix} <yellow>Arena {arena_id} is already disabled.</yellow>'
+  
+  list:
+    header: '{prefix} <green>Available arenas:</green>'
+    item: ' <gray>#{arena_id} - {name} [{mode}] [{status}] - {players}/{max_players}</gray>'
+    empty: '{prefix} <yellow>No arenas created yet.</yellow>'
+  
+  info:
+    header: '{prefix} <green>Arena {arena_id} information:</green>'
+    name: ' <gray>Name: <white>{name}</white></gray>'
+    mode: ' <gray>Mode: <white>{mode}</white></gray>'
+    status: ' <gray>Status: <white>{status}</white></gray>'
+    players: ' <gray>Players: <white>{min_players}-{max_players}</white></gray>'
+    rounds: ' <gray>Rounds: <white>{rounds}</white></gray>'
+    games: ' <gray>Minigames: <white>{games}</white></gray>'
+    lobby: ' <gray>Lobby: <white>{world} ({x}, {y}, {z})</white></gray>'
+    not_configured: ' <red>Not configured yet</red>'
+  
+  # ====================================
+  # Credits
+  # ====================================
+  credits:
+    given: '{prefix} <green>Gave {amount} credits to {player} ({provider}).</green>'
+    player_not_found: '{prefix} <red>Player ''{player}'' not found.</red>'
+    invalid_amount: '{prefix} <red>Invalid credits amount: {amount}</red>'
+    provider_unavailable: '{prefix} <red>Credits provider "{provider}" is not available right now.</red>'
+  
+  # ====================================
+  # Experience
+  # ====================================
+  xp:
+    given: '{prefix} <green>Gave {amount} XP to {player}.</green>'
+    player_not_found: '{prefix} <red>Player ''{player}'' not found.</red>'
+    invalid_amount: '{prefix} <red>Invalid XP amount: {amount}</red>'
+    disabled: '{prefix} <red>The levels system is currently disabled.</red>'
+  
+  # ====================================
+  # Lobby Configuration
+  # ====================================
+
+  lobby:
+    set_main:
+      success: '{prefix} <green>Main lobby set at X:{ml_x}, Y:{ml_y}, Z:{ml_z} in world {ml_world}</green>'
+    
+    create:
+      success: '{prefix} <green>Lobby ''{lobby_id}'' created successfully.</green>'
+      already_exists: '{prefix} <red>Lobby ''{lobby_id}'' already exists.</red>'
+    
+    delete:
+      success: '{prefix} <green>Lobby ''{lobby_id}'' deleted successfully.</green>'
+      not_found: '{prefix} <red>Lobby ''{lobby_id}'' does not exist.</red>'
+      confirm: '{prefix} <yellow>Type ''/baa lobby delete {lobby_id} confirm'' to confirm deletion.</yellow>'
+    
+    list:
+      header: '{prefix} <green>Available lobbies:</green>'
+      item: ' <gray>- {lobby_id} ({world} at {x}, {y}, {z})</gray>'
+      empty: '{prefix} <yellow>No lobbies configured yet.</yellow>'
+    
+    info:
+      header: '{prefix} <green>Lobby ''{lobby_id}'' information:</green>'
+      world: ' <gray>World: <white>{world}</white></gray>'
+      location: ' <gray>Location: <white>{x}, {y}, {z}</white></gray>'
+      restrictions: ' <gray>Restrictions: <white>{restrictions}</white></gray>'
+      not_found: '{prefix} <red>Lobby ''{lobby_id}'' does not exist.</red>'
+    
+    teleport:
+      success: '{prefix} <green>Teleported {player} to lobby ''{lobby_id}''.</green>'
+      player_not_found: '{prefix} <red>Player ''{player}'' not found.</red>'
+    
+    reload:
+      success: '{prefix} <green>Lobbies reloaded successfully.</green>'
+  
+  # ====================================
+  # Arena Configuration
+  # ====================================
+  arena:
+    setlobby:
+      success: '{prefix} <green>Waiting lobby set at X:{x}, Y:{y}, Z:{z}</green>'
+    
+    setname:
+      success: '{prefix} <green>Arena name set to: {name}</green>'
+      invalid_colors: '{prefix} <red>Invalid color codes in name.</red>'
+    
+    setmode:
+      success: '{prefix} <green>Arena mode changed to: {mode}</green>'
+      invalid_mode: '{prefix} <red>Invalid mode. Use ''standalone'' or ''party''.</red>'
+      has_multiple_games: '{prefix} <red>Cannot change to standalone mode. This arena has multiple minigames configured. Remove them first.</red>'
+      standalone_warning: '{prefix} <yellow>Arena changed to standalone mode. You can only configure 1 minigame.</yellow>'
+      party_warning: '{prefix} <yellow>Arena changed to party mode. Configure at least 3 minigames and set rounds.</yellow>'
+    
+    setrounds:
+      success: '{prefix} <green>Number of rounds set to: {rounds}</green>'
+      invalid_range: '{prefix} <red>Rounds must be between 3 and 15.</red>'
+      standalone_warning: '{prefix} <yellow>Rounds are mainly designed for party mode. In standalone mode, the same minigame will repeat {rounds} times.</yellow>'
+    
+    minplayers:
+      success: '{prefix} <green>Minimum players set to: {amount}</green>'
+      invalid_range: '{prefix} <red>Amount must be between 2 and 64.</red>'
+      greater_than_max: '{prefix} <red>Minimum players cannot be greater than maximum players.</red>'
+    
+    maxplayers:
+      success: '{prefix} <green>Maximum players set to: {amount}</green>'
+      invalid_range: '{prefix} <red>Amount must be between 2 and 64.</red>'
+      less_than_min: '{prefix} <red>Maximum players cannot be less than minimum players.</red>'
+  
+  # ====================================
+  # Minigame Management
+  # ====================================
+  game:
+    add:
+      success: '{prefix} <green>Minigame {game} added to arena {arena_id}.</green>'
+      already_exists: '{prefix} <red>This minigame is already configured in this arena.</red>'
+      registered: '{prefix} <yellow>Minigame registered. Now configure it with game commands.</yellow>'
+      standalone_limit: '{prefix} <red>Standalone arenas can only have 1 minigame. Remove the existing one first or change to party mode.</red>'
+      standalone_micro_warning: '{prefix} <yellow>{game} is a micro-game designed for party mode, but it can still be used in standalone.</yellow>'
+      party_mini_warning: '{prefix} <yellow>{game} is a minigame designed for standalone, but it can still be used in party mode.</yellow>'
+      list_header: '{prefix} <green>Available {type} games:</green>'
+      list_item: ' <gray>- {game}</gray>'
+      list_empty: '{prefix} <yellow>No {type} games are currently available.</yellow>'
+    
+    remove:
+      success: '{prefix} <green>Minigame {game} removed from arena {arena_id}.</green>'
+      not_found: '{prefix} <red>This minigame is not configured in this arena.</red>'
+      confirm: '{prefix} <yellow>Type ''/baa game {arena_id} remove {game} confirm'' to confirm.</yellow>'
+    
+    list:
+      header: '{prefix} <green>Minigames in arena {arena_id}:</green>'
+      item: ' <gray>- {game} [{status}] - {type}</gray>'
+      empty: '{prefix} <yellow>No minigames configured yet.</yellow>'
+    
+    enable:
+      success: '{prefix} <green>Minigame {game} enabled.</green>'
+      incomplete_config: '{prefix} <red>Cannot enable {game}. Complete its configuration first.</red>'
+    
+    disable:
+      success: '{prefix} <green>Minigame {game} disabled.</green>'
+    
+    # Common minigame configuration
+    bounds:
+      set_success: '{prefix} <green>Bounds set for {game}: {blocks} blocks ({x}×{y}×{z})</green>'
+      must_use_stick: '{prefix} <red>Use the Magic Stick to select an area first.</red>'
+    
+    spawn:
+      add_success: '{prefix} <green>Spawn #{number} added at X:{x}, Y:{y}, Z:{z}</green>'
+      remove_success: '{prefix} <green>Spawn #{number} removed.</green>'
+      remove_not_found: '{prefix} <red>Spawn #{number} does not exist.</red>'
+      teleport_success: '{prefix} <green>Teleported to spawn #{number}.</green>'
+      list_header: '{prefix} <green>Spawns for {game} in arena {arena_id}:</green>'
+      list_item: ' <gray>#{number}: X:{x}, Y:{y}, Z:{z}</gray>'
+      list_empty: '{prefix} <yellow>No spawns configured yet.</yellow>'
+      need_bounds: '{prefix} <red>Set the bounds before adding spawns.</red>'
+      min_spawns_warning: '{prefix} <yellow>Add at least {min_spawns} spawns (current: {current}).</yellow>'
+    
+    time:
+      success: '{prefix} <green>Game duration set to {minutes} minutes.</green>'
+      invalid: '{prefix} <red>Time must be between 1 and 60 minutes.</red>'
+    
+    deathblock:
+      success: '{prefix} <green>Death block set to: {material}</green>'
+      invalid_material: '{prefix} <red>Invalid material: {material}</red>'
+  
+  # ====================================
+  # Module Management
+  # ====================================
+  module:
+    list:
+      minigames:
+        header: '{prefix} <green>Available minigame modules:</green>'
+        empty: '{prefix} <yellow>No minigame modules found.</yellow>'
+      microgames:
+        header: '{prefix} <green>Available microgame modules:</green>'
+        empty: '{prefix} <yellow>No microgame modules found.</yellow>'
+      item: ' <gray>- {name} ({id}) v{version}</gray> <dark_gray>-</dark_gray> {status}'
+    info:
+      header: '{prefix} <green>Module {module} information:</green>'
+      name: ' <gray>Name: <white>{name}</white></gray>'
+      version: ' <gray>Version: <white>{version}</white></gray>'
+      type: ' <gray>Type: <white>{type}</white></gray>'
+      api_version: ' <gray>API Version: <white>{api_version}</white></gray>'
+      authors: ' <gray>Authors: <white>{authors}</white></gray>'
+      description: ' <gray>Description: <white>{description}</white></gray>'
+      website: ' <gray>Website: <white>{website}</white></gray>'
+    load:
+      success: '{prefix} <green>Module {module} loaded successfully.</green>'
+      failed: '{prefix} <red>Failed to load module {module}. Check console for details.</red>'
+    reload:
+      success: '{prefix} <green>Module {module} reloaded successfully.</green>'
+      failed: '{prefix} <red>Failed to reload module {module}. Check console for details.</red>'
+    unload:
+      success: '{prefix} <green>Module {module} unloaded successfully.</green>'
+    delete:
+      success: '{prefix} <green>Module {module} deleted successfully.</green>'
+      failed: '{prefix} <red>Failed to delete module {module}. Check file permissions.</red>'
+      confirm: '{prefix} <yellow>Type ''/baa module delete {module} confirm'' to confirm deletion.</yellow>'
+    store:
+      invalid_internal_id: '{prefix} <red>Invalid internal id: {value}</red>'
+      invalid_upload: '{prefix} <red>Module {module} is not properly uploaded to the store. Please notify the module developer.</red>'
+      search:
+        header: '{prefix} <yellow><bold>Store search results</bold></yellow><gray>:</gray>'
+        page_info: '{prefix} <gray>Page <white>{page}</white>/<white>{total_pages}</white> <dark_gray>|</dark_gray> Showing <white>{count}</white> of <white>{total}</white></gray>'
+        invalid_page: '{prefix} <yellow>Page {page} is out of range. Showing page {safe_page} instead.</yellow>'
+        filters: '{prefix} <gray>Filters: {filters}</gray>'
+        item: ' <yellow>{name}</yellow> <dark_gray>(id: <white>{id}</white>, page <white>#{resource_id}</white>)</dark_gray> <green>v{version}</green> <gray>|</gray> <gold>{downloads}</gold> <gray>downloads</gray> <gray>|</gray> <gold>{rating}</gold> <gray>rating</gray> <gray>|</gray> <white>{compatibility}</white> <dark_gray>-</dark_gray> <gray>{description}</gray>'
+        separator: ' '
+        empty: '{prefix} <yellow>No store results found.</yellow>'
+        error: '{prefix} <red>Store search failed: {error}</red>'
+      download:
+        success: '{prefix} <green>Downloaded resource #{resource_id} to {file}.</green>'
+        loaded: '{prefix} <green>Module {module} ({id}) is now enabled.</green>'
+        load_failed: '{prefix} <red>Downloaded module {module} ({id}) but failed to enable it. Check console for details.</red>'
+        failed: '{prefix} <red>Failed to download resource #{resource_id}: {error}</red>'
+      update:
+        up_to_date: '{prefix} <green>Module {module} is already up to date (v{version}).</green>'
+        requires_core: '{prefix} <yellow>Module {module} has updates available, but TheySix Events must be updated to v{core_version} before auto-updating modules.</yellow>'
+        arena_in_use: '{prefix} <red>Module {module} is currently running in arenas: {arenas}. Stop them before updating.</red>'
+        incompatible_api: '{prefix} <red>Module {module} requires API version {module_api} but the core runs API version {core_api}. Update cancelled.</red>'
+        downloaded: '{prefix} <green>Downloaded latest release (v{version}) for resource #{resource_id} to {file}.</green>'
+        applied: '{prefix} <green>Module {module} was reloaded to apply the update.</green>'
+        apply_failed: '{prefix} <red>Module {module} was updated but failed to reload. Check console for details.</red>'
+        failed: '{prefix} <red>Failed to update resource #{resource_id}: {error}</red>'
+    not_loaded: '{prefix} <red>Module {module} is not loaded.</red>'
+    already_loaded: '{prefix} <yellow>Module {module} is already loaded.</yellow>'
+  
+  # ====================================
+  # Signs Management
+  # ====================================
+  signs:
+    deprecated: '{prefix} <yellow>Sign text creation is deprecated. Use /baa signs set instead.</yellow>'
+    create:
+      join_mode: '{prefix} <yellow>Click on an empty sign to create a JOIN sign for arena {arena_id}.</yellow>'
+      join_mode_info: '{prefix} <gray>Left click the sign within 30 seconds or type ''cancel'' to abort.</gray>'
+      quickjoin_mode: '{prefix} <yellow>Click on an empty sign to create a QUICKJOIN sign.</yellow>'
+      quickjoin_mode_info: '{prefix} <gray>Left click the sign within 30 seconds or type ''cancel'' to abort.</gray>'
+      success: '{prefix} <green>Sign created successfully at X:{s_x}, Y:{s_y}, Z:{s_z}</green>'
+      cancelled: '{prefix} <yellow>Sign creation cancelled.</yellow>'
+      timeout: '{prefix} <red>Sign creation timed out. Try again.</red>'
+      not_sign: '{prefix} <red>You must click on a sign block (OAK_SIGN or OAK_WALL_SIGN).</red>'
+      already_registered: '{prefix} <red>This sign is already registered.</red>'
+    set:
+      not_sign: '{prefix} <red>You must be looking at an empty sign (OAK_SIGN or OAK_WALL_SIGN).</red>'
+      not_empty: '{prefix} <red>This sign is not empty.</red>'
+      already_registered: '{prefix} <red>This sign is already registered.</red>'
+      invalid_type: '{prefix} <red>Unknown sign type: {type}. Use join, quickjoin, auto, or top.</red>'
+      invalid_arena: '{prefix} <red>Invalid arena id: {arena_id}.</red>'
+      invalid_server: '{prefix} <red>Unknown bungee server: {server}.</red>'
+      invalid_position: '{prefix} <red>Invalid top position: {position}. Use a number greater than 0.</red>'
+      invalid_stat: '{prefix} <red>Unknown stat: {stat_input}.</red>'
+      ambiguous_stat: '{prefix} <red>That stat exists in multiple modules.</red> <yellow>Use module:stat.</yellow> <gray>{modules}</gray>'
+      invalid_period: '{prefix} <red>Invalid period: {period}. Use {valid_periods}.</red>'
+      failed: '{prefix} <red>Failed to register the sign. Check console for details.</red>'
+    
+    remove:
+      mode: '{prefix} <yellow>Click on a registered sign to remove it.</yellow>'
+      mode_info: '{prefix} <gray>Left click the sign within 30 seconds or type ''cancel'' to abort.</gray>'
+      success: '{prefix} <green>Sign removed successfully at X:{s_x}, Y:{s_y}, Z:{s_z}</green>'
+      not_registered: '{prefix} <red>This sign is not registered.</red>'
+      cancelled: '{prefix} <yellow>Sign removal cancelled.</yellow>'
+      timeout: '{prefix} <red>Sign removal timed out. Try again.</red>'
+    
+    list:
+      header: '{prefix} <green>Registered signs:</green>'
+      item: ' <gray>- {type} | {info} | {world} ({x}, {y}, {z})</gray>'
+      empty: '{prefix} <yellow>No signs registered yet.</yellow>'
+  
+  # ====================================
+  # Global Configuration
+  # ====================================
+  setmainlobby:
+    success: '{prefix} <green>Main lobby set at X:{x}, Y:{y}, Z:{z} in world {world}</green>'
+  
+  reload:
+    reloading: '{prefix} <yellow>Reloading {file}...</yellow>'
+    success: '{prefix} <green>Reloaded {file} successfully.</green>'
+    all_success: '{prefix} <green>All files reloaded successfully.</green>'
+    error: '{prefix} <red>Error reloading {file}. Check console for details.</red>'
+    warning: '{prefix} <yellow>Some configurations may require a server restart to take full effect.</yellow>'
+  
+  # ====================================
+  # Utilities
+  # ====================================
+  goto:
+    success: '{prefix} <green>Teleported to spawn #1 of {game} in arena {arena_id}.</green>'
+    no_spawns: '{prefix} <red>No spawns configured for this minigame yet.</red>'
+    game_not_configured: '{prefix} <red>Minigame {game} is not configured in arena {arena_id}.</red>'
+  
+  teleport:
+    success: '{prefix} <green>Player {player} teleported to arena {arena_id}.</green>'
+    player_not_found: '{prefix} <red>Player {player} not found or is offline.</red>'
+    player_in_game: '{prefix} <yellow>Player {player} is currently in a game. They will be removed.</yellow>'
+  
+  forcestart:
+    success: '{prefix} <green>Force starting arena {arena_id}...</green>'
+    broadcast: '{prefix} <gold>Arena {arena_id} has been force started by an administrator.</gold>'
+    countdown_reduced: '{prefix} <green>Arena {arena_id} countdown reduced to {time} seconds!</green>'
+    countdown_reduced_broadcast: '{prefix} <gold>Countdown reduced to {time} seconds by an administrator!</gold>'
+    already_reduced: '{prefix} <yellow>Arena {arena_id} countdown is already at {time} seconds or less.</yellow>'
+    cannot_start: '{prefix} <red>Cannot force start arena {arena_id}. Status: {status}</red>'
+    not_enough_players: '{prefix} <red>At least {min_players} players are required. Current: {current}</red>'
+    already_started: '{prefix} <red>Arena {arena_id} has already started.</red>'
+    already_starting: '{prefix} <red>Arena {arena_id} is already starting. Please wait.</red>'
+  
+  forcestop:
+    success: '{prefix} <green>Force stopping arena {arena_id}...</green>'
+    broadcast: '{prefix} <gold>Arena {arena_id} has been force stopped by an administrator.</gold>'
+    not_running: '{prefix} <red>Arena {arena_id} is not currently running.</red>'
+    players_kicked: '{prefix} <yellow>{count} players were kicked from the arena.</yellow>'
+  
+  # ====================================
+  # Common Errors
+  # ====================================
+  errors:
+    arena_not_found: '{prefix} <red>Arena {arena_id} not found.</red>'
+    arena_in_use: '{prefix} <red>Cannot modify arena {arena_id} while players are in it.</red>'
+    game_not_configured: '{prefix} <red>Minigame {game} is not configured in arena {arena_id}.</red>'
+    invalid_game: '{prefix} <red>Unknown minigame: {game}</red>'
+    must_be_player: '{prefix} <red>You must be a player to execute this command.</red>'
+    incomplete_setup: '{prefix} <red>Complete the basic arena setup first:</red>'
+    incomplete_setup_list: ' <red>- Set waiting lobby (/baa arena {arena_id} setlobby)</red>'
+    incomplete_setup_list2: ' <red>- Set arena name (/baa arena {arena_id} setname <name>)</red>'
+    incomplete_setup_list3: ' <red>- Set min/max players</red>'
+    incomplete_setup_list4: ' <red>- Add and configure at least one minigame</red>'
+    no_permission: '{prefix} <red>You don''t have permission to use this command.</red>'
+    invalid_number: '{prefix} <red>Invalid number: {value}</red>'
+    invalid_boolean: '{prefix} <red>Invalid value. Use ''true'' or ''false''.</red>'
+    invalid_game_type: '{prefix} <red>Invalid game type: {type}. Use ''micro'' or ''mini''.</red>'
+    game_type_mismatch: '{prefix} <red>Game {game} is a {type}. Use the correct type when adding it.</red>'
+    unknown_subcommand: '{prefix} <red>Unknown subcommand. Use ''/baa help'' for available commands.</red>'
+    console_not_supported: '{prefix} <red>This command can only be executed by a player.</red>'
+  
+  # ====================================
+  # Usage Messages
+  # ====================================
+  usage:
+    main: '{prefix} <yellow>Usage: /baa <command> [args]</yellow>'
+    help: '{prefix} <yellow>Available commands:</yellow>'
+    create: '{prefix} <yellow>Usage: /baa create <id> <standalone|party></yellow>'
+    delete: '{prefix} <yellow>Usage: /baa delete <id> [confirm]</yellow>'
+    enable: '{prefix} <yellow>Usage: /baa enable <id></yellow>'
+    disable: '{prefix} <yellow>Usage: /baa disable <id></yellow>'
+    list: '{prefix} <yellow>Usage: /baa list</yellow>'
+    info: '{prefix} <yellow>Usage: /baa info <id></yellow>'
+    stick: '{prefix} <yellow>Usage: /baa stick</yellow>'
+    pos: '{prefix} <yellow>Usage: /baa pos1 | /baa pos2 | /baa clearselection</yellow>'
+    arena_setlobby: '{prefix} <yellow>Usage: /baa arena <id> setlobby</yellow>'
+    arena_setname: '{prefix} <yellow>Usage: /baa arena <id> setname <name></yellow>'
+    arena_setmode: '{prefix} <yellow>Usage: /baa arena <id> setmode <standalone|party></yellow>'
+    arena_setrounds: '{prefix} <yellow>Usage: /baa arena <id> setrounds <number></yellow>'
+    arena_players: '{prefix} <yellow>Usage: /baa arena <id> minplayers|maxplayers <amount></yellow>'
+    credits: '{prefix} <yellow>Usage: /baa credits give <player> <amount></yellow>'
+    xp: '{prefix} <yellow>Usage: /baa xp give <player> <amount></yellow>'
+    game_add: '{prefix} <yellow>Usage: /baa game <id> add <micro|mini> <minigame|list></yellow>'
+    game_remove: '{prefix} <yellow>Usage: /baa game <id> remove <minigame> [confirm]</yellow>'
+    game_list: '{prefix} <yellow>Usage: /baa game <id> list</yellow>'
+    game_enable: '{prefix} <yellow>Usage: /baa game <id> <minigame> enable</yellow>'
+    game_disable: '{prefix} <yellow>Usage: /baa game <id> <minigame> disable</yellow>'
+    game_bounds: '{prefix} <yellow>Usage: /baa game <id> <minigame> bounds set</yellow>'
+    game_spawn: '{prefix} <yellow>Usage: /baa game <id> <minigame> spawn <add|remove|list|teleport> [number]</yellow>'
+    game_time: '{prefix} <yellow>Usage: /baa game <id> <minigame> time <minutes></yellow>'
+    game_deathblock: '{prefix} <yellow>Usage: /baa game <id> <minigame> deathblock <material></yellow>'
+    game_finishline: '{prefix} <yellow>Usage: /baa game <id> <minigame> finishline set</yellow>'
+    game_floor: '{prefix} <yellow>Usage: /baa game <id> <minigame> floor set</yellow>'
+    module: '{prefix} <yellow>Usage: /baa module <info|list|reload|load|unload|delete|store> [args]</yellow>'
+    module_info: '{prefix} <yellow>Usage: /baa module info <module_id></yellow>'
+    module_list: '{prefix} <yellow>Usage: /baa module list</yellow>'
+    module_reload: '{prefix} <yellow>Usage: /baa module reload <module_id></yellow>'
+    module_load: '{prefix} <yellow>Usage: /baa module load <module_id></yellow>'
+    module_unload: '{prefix} <yellow>Usage: /baa module unload <module_id></yellow>'
+    module_delete: '{prefix} <yellow>Usage: /baa module delete <module_id> [confirm]</yellow>'
+    module_store: '{prefix} <yellow>Usage: /baa module store <search|originals|download|update> [args]</yellow>'
+    module_store_search: '{prefix} <yellow>Usage: /baa module store search [query] [page <number>]</yellow>'
+    module_store_originals: '{prefix} <yellow>Usage: /baa module store originals [query] [page <number>]</yellow>'
+    module_store_download: '{prefix} <yellow>Usage: /baa module store download <internal_id></yellow>'
+    module_store_update: '{prefix} <yellow>Usage: /baa module store update <internal_id> [--force]</yellow>'
+    setmainlobby: '{prefix} <yellow>Usage: /baa setmainlobby</yellow>'
+    signs: '{prefix} <yellow>Usage: /baa signs set <join|quickjoin|auto|top> ...</yellow>'
+    signs_join: '{prefix} <yellow>Usage: /baa signs set join <arena_id|server></yellow>'
+    signs_top: '{prefix} <yellow>Usage: /baa signs set top <stat|module:stat> <position> <alltime|monthly|yearly></yellow>'
+    goto: '{prefix} <yellow>Usage: /baa goto <id> <minigame></yellow>'
+    teleport: '{prefix} <yellow>Usage: /baa teleport <player> <id></yellow>'
+    forcestart: '{prefix} <yellow>Usage: /baa forcestart <id></yellow>'
+    forcestop: '{prefix} <yellow>Usage: /baa forcestop <id></yellow>'
+    reload: '{prefix} <yellow>Usage: /baa reload <all|settings|rewards|sounds|lang|achievements|arenas|games|users|signs|global|data></yellow>'
+  
+  # ====================================
+  # Help Command
+  # ====================================
+  help:
+    lines:
+    - <bold><gradient:#4CADD0:#B2F9FF>TheySix Events Admin</gradient></bold> <gray>» Help</gray>
+    - <dark_gray><strikethrough>----------------------------------------</strikethrough></dark_gray>
+    - ' <yellow><bold>Basic Commands:</bold></yellow>'
+    - '  <gold>/baa create <id> <mode></gold> <dark_gray>-</dark_gray> <gray>Create new arena</gray>'
+    - '  <gold>/baa delete <id></gold> <dark_gray>-</dark_gray> <gray>Delete arena</gray>'
+    - '  <gold>/baa enable <id></gold> <dark_gray>-</dark_gray> <gray>Enable arena</gray>'
+    - '  <gold>/baa disable <id></gold> <dark_gray>-</dark_gray> <gray>Disable arena</gray>'
+    - '  <gold>/baa list</gold> <dark_gray>-</dark_gray> <gray>List all arenas</gray>'
+    - '  <gold>/baa info <id></gold> <dark_gray>-</dark_gray> <gray>Arena information</gray>'
+    - ' '
+    - ' <yellow><bold>Selection Tool:</bold></yellow>'
+    - '  <gold>/baa stick</gold> <dark_gray>-</dark_gray> <gray>Get Magic Stick</gray>'
+    - '  <gold>/baa pos1</gold> <dark_gray>-</dark_gray> <gray>Set position 1</gray>'
+    - '  <gold>/baa pos2</gold> <dark_gray>-</dark_gray> <gray>Set position 2</gray>'
+    - '  <gold>/baa clearselection</gold> <dark_gray>-</dark_gray> <gray>Clear selection</gray>'
+    - ' '
+    - ' <yellow><bold>Arena Configuration:</bold></yellow>'
+    - '  <gold>/baa arena <id> setlobby</gold> <dark_gray>-</dark_gray> <gray>Set waiting lobby</gray>'
+    - '  <gold>/baa arena <id> setname <name></gold> <dark_gray>-</dark_gray> <gray>Set name</gray>'
+    - '  <gold>/baa arena <id> setmode <mode></gold> <dark_gray>-</dark_gray> <gray>Change mode</gray>'
+    - '  <gold>/baa arena <id> setrounds <n></gold> <dark_gray>-</dark_gray> <gray>Set rounds (party)</gray>'
+    - '  <gold>/baa arena <id> minplayers/maxplayers <n></gold> <dark_gray>-</dark_gray> <gray>Set players</gray>'
+    - ' '
+    - ' <yellow><bold>Minigame Management:</bold></yellow>'
+    - '  <gold>/baa game <id> add <micro|mini> <game></gold> <dark_gray>-</dark_gray> <gray>Add minigame</gray>'
+    - '  <gold>/baa game <id> remove <game></gold> <dark_gray>-</dark_gray> <gray>Remove minigame</gray>'
+    - '  <gold>/baa game <id> list</gold> <dark_gray>-</dark_gray> <gray>List minigames</gray>'
+    - '  <gold>/baa game <id> <game> ...</gold> <dark_gray>-</dark_gray> <gray>Configure minigame</gray>'
+    - '  <gray>See wiki for game-specific commands</gray>'
+    - ' '
+    - ' <yellow><bold>Utilities:</bold></yellow>'
+    - '  <gold>/baa goto <id> <game></gold> <dark_gray>-</dark_gray> <gray>Teleport to game</gray>'
+    - '  <gold>/baa teleport <player> <id></gold> <dark_gray>-</dark_gray> <gray>TP player to arena</gray>'
+    - '  <gold>/baa module <action> <module></gold> <dark_gray>-</dark_gray> <gray>Manage modules</gray>'
+    - '  <gold>/baa module store <action></gold> <dark_gray>-</dark_gray> <gray>Search/download module store</gray>'
+    - '  <gold>/baa credits give <player> <amount></gold> <dark_gray>-</dark_gray> <gray>Give credits</gray>'
+    - '  <gold>/baa setmainlobby</gold> <dark_gray>-</dark_gray> <gray>Set main lobby</gray>'
+    - '  <gold>/baa signs set <type></gold> <dark_gray>-</dark_gray> <gray>Register a sign (join/quickjoin/auto/top)</gray>'
+    - '  <gold>/baa reload <file|all></gold> <dark_gray>-</dark_gray> <gray>Reload config</gray>'
+    - ' '
+    - ' <gray>For detailed help:</gray> <yellow>https://events.theysix.tech</yellow>'
+    - <dark_gray><strikethrough>----------------------------------------</strikethrough></dark_gray>
+
+
+
+# MESSAGES FROM THE LEGACY SETUP SYSTEM. WILL BE REMOVED SOON.
+# Kept for reference. Some internal code still needs to be updated.
+
+# ----------------------------------------
+# Admin Messages (Setup & Management)
+# ----------------------------------------
+admin:
+  errors:
+    id_taken: '{prefix} <red>That ID is already in use.</red>'
+    unknown_id: '{prefix} <red>The ID you have entered does not match any arena created.</red>'
+    only_numbers: '{prefix} <red>You must enter a number.</red>'
+    only_numbers_arena: '{prefix} <red>You must enter a number. You can set the name of the arena later.</red>'
+    only_players: '{prefix} <red>You must be a player to be able to execute this command</red>'
+    error_deleting_file: '{prefix} <red>An error occurred while trying to delete the file {file}</red>'
+    no_mini_game: '{prefix} <red>The introduced mini-game does not exist.</red>'
+    arena_disabled: '{prefix} <red>The arena {arena_id} is currently disabled.</red>'
+    bounds_same_world: '{prefix} <red>Both bounds must have the same world.</red>'
+    at_least_one_game: '{prefix} <red>Set up at least one mini-game before continuing.</red>'
+    minimum_spawns: '{prefix} <red>You must set at least {minimum_spawns} spawn to continue.</red>'
+    finish_first: '{prefix} <red>Finish the previous step first.</red>'
+    no_setup_pause: '{prefix} <red>There is no active arena creation process to pause.</red>'
+    no_setup_cancel: '{prefix} <red>There is no active arena creation process to cancel.</red>'
+    air_selection_error: '{prefix} <red>In this particular step, you cannot select air, you must select a block.</red>'
+    process_cancelled: '{prefix} <red>Process cancelled...</red>'
+    player_offline: '{prefix} <red>The specified player is not online.</red>'
+    error_sign: '{prefix} <red>An error occurred while registering the sign. Check that you have typed everything correctly.</red>'
+    error_reloading: '{prefix} <red>An error occurred reloading the {file}.yml file</red>'
+    insufficient_permissions: '{prefix} <red>You do not have sufficient permissions to execute this command.</red>'
+    unknown_command: '{prefix} <red>That command does not exist, check that you have typed it correctly.</red>'
+  
+  info:
+    sets_spawn: '{prefix} <red>There is no spawn configured for TheySix Events. Do it now with /ba setmainlobby</red>'
+    no_modules:
+    - '{prefix} <red>No modules detected...</red>'
+    - '{prefix} <yellow>Download them with: <white>/baa module store download <id></white></yellow>'
+    - '{prefix} <yellow>The ID is obtained from:</yellow>'
+    - '{prefix} <yellow>  Original modules: <white>/baa module store originals</white></yellow>'
+    - '{prefix} <yellow>  Or search (originals or community): <white>/baa module store search <query></white></yellow>'
+    cancelled_setup: '{prefix} <yellow>Arena creation process cancelled.</yellow>'
+    paused_setup: '{prefix} <yellow>Paused arena creation process.</yellow>'
+    selected_mini_game_setup: '{prefix} <yellow>You have selected the mini-game {mini_game}.</yellow>'
+    selection_eliminated_setup: '{prefix} <yellow>You have removed the selection. You can now continue to the next step without setting up a mini-game.</yellow>'
+    set_display_name: '{prefix} <gray>Type in the chat the name of the arena that will be shown to the players. You can include colors. Type `</gray><red>cancel</red><gray>` to cancel.</gray>'
+    reloading_file: '{prefix} <yellow>Reloading the {file}.yml file</yellow>'

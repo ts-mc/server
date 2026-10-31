@@ -1,0 +1,193 @@
+# =============================================================================================
+# WARNING: DO NOT ADD NEW ENTRIES HERE
+# This file only accepts the built-in death effect types shipped with the plugin.
+# Adding new keys will NOT register new effects and may be ignored on load.
+# =============================================================================================
+file_version: "1"
+category:
+  id: death_effects
+  enabled: true
+  display_name: "<red>Death Effects</red>"
+  icon: WITHER_SKELETON_SKULL
+  description:
+    - "<gray>Choose how you vanish when you are eliminated.</gray>"
+    - "<gray>Purely visual flourishes that never affect gameplay.</gray>"
+  sort_order: 2
+  selection_enabled: true
+  type: selection
+  parent_id: ""
+  random_selection_enabled: true
+  random_item:
+    display_name: "<yellow>Random Death Effect</yellow>"
+    icon: ENDER_CHEST
+    description:
+      - "<gray>Play one of your unlocked death effects at random.</gray>"
+
+effects:
+  default_puff:
+    enabled: true
+    type: particle_burst
+    display_name: "<gray>Dust Puff</gray>"
+    icon: GRAY_DYE
+    description:
+      - "<gray>A tiny puff on elimination.</gray>"
+    price: 0
+    default_unlocked: true
+    settings:
+      particle: ASH
+      count: 8
+      spread: 0.2
+      speed: 0.01
+      offset_y: 0.1
+
+  explosion:
+    enabled: true
+    type: explosion
+    display_name: "<red>Explosion</red>"
+    icon: TNT
+    description:
+      - "<gray>Big boom without damage.</gray>"
+    price: 250
+    default_unlocked: false
+    settings:
+      particle: EXPLOSION_EMITTER
+
+  lightning:
+    enabled: true
+    type: lightning
+    display_name: "<yellow>Lightning Strike</yellow>"
+    icon: LIGHTNING_ROD
+    description:
+      - "<gray>A dramatic lightning flash.</gray>"
+    price: 250
+    default_unlocked: false
+
+  soul_heads:
+    enabled: true
+    type: allay_spirits
+    display_name: "<dark_aqua>Souls</dark_aqua>"
+    icon: ALLAY_SPAWN_EGG
+    description:
+      - "<gray>Gentle spirits drift away.</gray>"
+    price: 350
+    default_unlocked: false
+    settings:
+      count: 3
+      spread: 0.6
+      offset_y: 0.4
+      rise_velocity: 0.08
+      duration_ticks: 50
+
+  blood_splatter:
+    enabled: true
+    type: particle_burst
+    display_name: "<dark_red>Blood Splatter</dark_red>"
+    icon: RED_DYE
+    description:
+      - "<gray>Redstone splash particles.</gray>"
+    price: 300
+    default_unlocked: false
+    settings:
+      particle: REDSTONE
+      color: 255,0,0
+      color_size: 1.5
+      count: 48
+      spread: 0.6
+      speed: 0.08
+      offset_y: 0.25
+
+  anvil_drop:
+    enabled: true
+    type: anvil_drop
+    display_name: "<dark_gray>Anvil Drop</dark_gray>"
+    icon: ANVIL
+    description:
+      - "<gray>A falling anvil visual.</gray>"
+    price: 300
+    default_unlocked: false
+    settings:
+      height: 6.0
+      fall_speed: 0.6
+      max_ticks: 40
+
+  disintegration:
+    enabled: true
+    type: particle_column
+    display_name: "<gray>Disintegration</gray>"
+    icon: GRAVEL
+    description:
+      - "<gray>Ash rising from the body.</gray>"
+    price: 280
+    default_unlocked: false
+    settings:
+      particle: ASH
+      steps: 10
+      height: 3.3
+      offset_y: 0.1
+      duration_ticks: 40
+      interval_ticks: 2
+
+  sculk_spores:
+    enabled: true
+    type: particle_burst
+    display_name: "<dark_aqua>Sculk Spores</dark_aqua>"
+    icon: SCULK
+    description:
+      - "<gray>Sculk souls burst outward.</gray>"
+    price: 300
+    default_unlocked: false
+    settings:
+      particle: SCULK_SOUL
+      count: 16
+      spread: 0.3
+      speed: 0.02
+      offset_y: 0.2
+
+  ghost_flame:
+    enabled: true
+    type: particle_ring
+    display_name: "<aqua>Ghost Flame</aqua>"
+    icon: SOUL_TORCH
+    description:
+      - "<gray>A ring of soul fire.</gray>"
+    price: 320
+    default_unlocked: false
+    settings:
+      particle: SOUL_FIRE_FLAME
+      points: 20
+      radius: 1.0
+      offset_y: 0.1
+      duration_ticks: 20
+      interval_ticks: 4
+
+  smoke_cloud:
+    enabled: true
+    type: particle_burst
+    display_name: "<gray>Smoke Cloud</gray>"
+    icon: CAMPFIRE
+    description:
+      - "<gray>Thick smoke on death.</gray>"
+    price: 240
+    default_unlocked: false
+    settings:
+      particle: LARGE_SMOKE
+      count: 20
+      spread: 0.35
+      speed: 0.02
+      offset_y: 0.2
+
+  ender_shatter:
+    enabled: true
+    type: particle_burst
+    display_name: "<dark_purple>Ender Shatter</dark_purple>"
+    icon: ENDER_PEARL
+    description:
+      - "<gray>Portal sparks scatter.</gray>"
+    price: 260
+    default_unlocked: false
+    settings:
+      particle: PORTAL
+      count: 24
+      spread: 0.4
+      speed: 0.05
+      offset_y: 0.2

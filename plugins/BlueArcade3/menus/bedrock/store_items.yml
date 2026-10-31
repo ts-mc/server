@@ -1,0 +1,41 @@
+buttons:
+  back:
+    text: "{language:menus.common.bedrock.actions.back_to_categories}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
+    actions:
+      - "PLAYER;{store_back_command}"
+  previous_page:
+    text: "{language:menus.common.bedrock.pagination.previous}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
+    visibleIf: "{page_has_previous}"
+    actions:
+      - "PLAYER;/ba store category {category_id} {page_previous}"
+  next_page:
+    text: "{language:menus.common.bedrock.pagination.next}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
+    visibleIf: "{page_has_next}"
+    actions:
+      - "PLAYER;/ba store category {category_id} {page_next}"
+templates:
+  item:
+    text: "{language:menus.store.items.bedrock.templates.item.text}"
+    actions:
+      - "PLAYER;/ba store detail {category_id} {item_id} {page}"
+  empty:
+    text: "{language:menus.store.items.bedrock.templates.empty.text}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_gray_stained_glass_pane.png"
+    actions: 
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+type: SIMPLE
+menuName: "{language:menus.store.items.bedrock.title}"
+openCommand: /ba store
+buttonsPerPage: 10
+content:
+  - "{language:menus.store.items.bedrock.content}"

@@ -1,0 +1,43 @@
+#-----------------------------------------------------------------------------------------------------------#
+#							MyCommand Anti TAB feature (last update v5.7.0)									#
+#  					Hide commands from being listed in the chat prompt as suggestion						#
+#  				Enable TAB_SUGGESTION_BLOCKER_LISTENER in config.yml to use this feature					#
+#-----------------------------------------------------------------------------------------------------------#
+
+#Choose if display only the commands in the list (WHITELIST) or remove desidered commands from it (BLACKLIST)
+MODE: WHITELIST
+
+#Admins can use the permission "mycommand.antitab.admin" and be exempt from the filter.
+
+#Custom groups permissions is mycommand.antitab.<group_name> . default is applied to all. Current example list is WHITELIST mode.
+COMMAND_LIST:
+  # TheySix Events player commands + essentials-style basics.
+  # In WHITELIST mode players ONLY see what is listed for their group.
+  default:
+  - /ts
+  - /tse
+  - /ts-menu
+  - /tse-menu
+  - /tsmenu
+  - /ba
+  - /spawn
+  - /hub
+  - /msg
+  - /reply
+  - /help
+  - /rules
+  vips:
+  - /fly
+  - /warp
+  moderator:
+  # Admins bypass the filter entirely via "mycommand.antitab.admin",
+  # so this group is only a fallback for staff without that bypass.
+  - /tsa
+  - /baa
+  - /kick
+  - /mute
+  - /tempmute
+  - /ban
+
+#If you're using the BLACKLIST mode, you can easily remove all commands who contains : (colon) characters.
+REMOVE_COLONS_IF_BLACKLIST_MODE: true

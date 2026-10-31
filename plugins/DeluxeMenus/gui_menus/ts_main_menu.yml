@@ -1,0 +1,118 @@
+# TheySix Events — main navigation menu
+# Opened with /tsmenu (registered by DeluxeMenus) — reachable from the
+# ItemJoin/BlueArcade compass and from /tse-menu via MyCommand.
+# Style matches the server's gradient: #4CADD0 -> #B2F9FF.
+menu_title: '&#4CADD0&lT&#54B3D4&lh&#5CB9D7&le&#64BFDB&ly&#6BC4DE&lS&#73CAE2&li&#7BD0E6&lx &#8BDCED&lE&#93E2F1&lv&#9AE7F4&le&#A2EDF8&ln&#AAF3FB&lt&#B2F9FF&ls'
+open_command: tsmenu
+size: 27
+register: true
+
+items:
+  # ---------------- Play ----------------
+  'play':
+    material: EMERALD
+    slot: 9
+    amount: 1
+    display_name: '&#4CADD0&lP&#6EC6E0&ll&#90E0EF&la&#B2F9FF&ly'
+    lore:
+      - '&7Join a random minigame right away,'
+      - '&7or browse every available mode.'
+      - ''
+      - '&fLeft-click &7» &fQuickjoin'
+      - '&fRight-click &7» &fGame selector'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴘʟᴀʏ'
+    left_click_commands:
+      - '[player] ba quickjoin'
+      - '[close]'
+    left_click_requirement:
+      expression: '%checkitem_mat:emerald_amt:%playername% == false%'
+    right_click_commands:
+      - '[player] ba join'
+      - '[close]'
+
+  # ---------------- Store ----------------
+  'store':
+    material: EMERALD_BLOCK
+    slot: 11
+    amount: 1
+    display_name: '&#4CADD0&lS&#6EC6E0&lt&#90E0EF&lo&#B2F9FF&lr&#B2F9FF&le'
+    lore:
+      - '&7Spend your credits on kill effects,'
+      - '&7victory effects, music and more.'
+      - ''
+      - '&7Earn credits by playing events.'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+    left_click_commands:
+      - '[player] ba store'
+      - '[close]'
+
+  # ---------------- Stats ----------------
+  'stats':
+    material: PLAYER_HEAD
+    slot: 13
+    amount: 1
+    display_name: '&#4CADD0&lS&#6EC6E0&lt&#90E0EF&la&#B2F9FF&lt&#B2F9FF&ls'
+    lore:
+      - '&7Check your level, credits and'
+      - '&7per-minigame records.'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+    left_click_commands:
+      - '[player] ba stats'
+      - '[close]'
+
+  # ---------------- Party ----------------
+  'party':
+    material: CAKE
+    slot: 15
+    amount: 1
+    display_name: '&#4CADD0&lP&#6EC6E0&la&#90E0EF&lr&#B2F9FF&lt&#B2F9FF&ly'
+    lore:
+      - '&7Create a party, invite friends'
+      - '&7and queue together.'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴍᴀɴᴀɢᴇ'
+    left_click_commands:
+      - '[player] ba party'
+      - '[close]'
+
+  # ---------------- Close ----------------
+  'close':
+    material: BARRIER
+    slot: 17
+    amount: 1
+    display_name: '&#FF5555&lC&#FF7755&ll&#FF9955&lo&#FFBB55&ls&#FFDD55&le'
+    lore:
+      - '&7Close this menu.'
+    left_click_commands:
+      - '[close]'
+
+  # ---------------- Filler ----------------
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 10
+      - 12
+      - 14
+      - 16
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+    display_name: '&r'

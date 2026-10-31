@@ -1,0 +1,712 @@
+menu_title: '     §x§6§1§6§1§6§1ᴍ§x§6§2§5§A§6§1ᴏ§x§6§4§5§4§6§1ᴅ§x§6§5§4§D§6§0ᴀ§x§6§6§4§7§6§0ɪ§x§6§8§4§0§6§0ᴅ§x§6§9§3§9§6§0ᴀ§x§6§A§3§3§6§0ᴅ§x§6§B§2§C§5§Fᴅ§x§6§D§2§6§5§Fᴇ§x§6§E§1§F§5§Fꜱ'
+open_command: selector
+size: 54
+update_interval: 1
+items:
+  'title':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFjMjA2YWIwNWNiYWM0YTIyZjU0Zjg3NzhjM2JmYmQ4NzBmMTljMzgwMTc2ZjI4ODYxNGM3N2QxOWI1ZDEyMiJ9fX0=
+    slot: 4
+    priority: 1
+    update: true
+    display_name: '§x§6§1§6§1§6§1ᴍ§x§6§2§5§A§6§1ᴏ§x§6§4§5§4§6§1ᴅ§x§6§5§4§D§6§0ᴀ§x§6§6§4§7§6§0ɪ§x§6§8§4§0§6§0ᴅ§x§6§9§3§9§6§0ᴀ§x§6§A§3§3§6§0ᴅ§x§6§B§2§C§5§Fᴅ§x§6§D§2§6§5§Fᴇ§x§6§E§1§F§5§Fꜱ'
+    lore:
+    - ''
+    - '&7✦ &fꜱᴇʟᴇᴄᴛ ᴜɴ ᴍᴏᴅᴏ 괴ᴘʟᴀʏ ᴅᴇ ɴᴏ́ʀᴍᴀs'
+    - '&7✦ &fplay in a team of minigames'
+    - ''
+    left_click_commands:
+    - '[close]'
+
+  'vip_benefits':
+    material: GOLD_INGOT
+    slot: 10
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &fvip &7benefits'
+    lore:
+    - ''
+    - '&6• &f20% &7ʙᴏɴᴜs ᴇxᴘ & ᴄʀᴇᴅɪᴛs'
+    - '&6• &fadditional &5% &7bonus with discord link'
+    - '&6• &ғʀᴏʟ ᴅɪsᴄᴏʀᴅ & ɪɴ-ɢᴀᴍᴇ ʀᴏʟᴇ'
+    - ''
+    - '&7§lCOᴍᴏ &fᴘᴇʀᴛɪɴᴇɴᴄɪᴀs:'
+    - '  &7ᴇxᴘ: &f%lp_meta_thesixevents_xp_multiplier%'
+    - '  &7ᴄʀᴇᴅɪᴛs: &f%lp_meta_thesixevents_credits_multiplier%'
+    - ''
+    - '&7ѕᴛᴀᴛᴜs: &f%lp_parents%'
+    - '&7ʟɪɴᴋ ᴅɪsᴄᴏʀᴅ: &b/discord link'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[message] &7ᴠɪᴘ &7ʀᴏʟᴇ: &f20% &7ʙᴏɴᴜs ᴇxᴘ/ᴄʀᴇᴅɪᴛs &7ᴘᴇʀ ᴍᴀᴛᴄʜ'
+    - '[message] &7link on Discord: &5% &7additional bonus'
+
+  'npc_info':
+    material: COMPASS
+    slot: 12
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &fnpcs &7spawn'
+    lore:
+    - ''
+    - '&7⊚ &fᴘʀᴀᴄᴛɪᴄᴇ &7- &dᴍɪɴɪɢᴀᴍᴇs'
+    - '&7⊚ &ғᴘᴠᴘ &7- &cʜᴜʙ ᴘᴠᴘ'
+    - '&7⊚ &ғʙᴇᴅᴡᴀʀs &7- &6ʙᴇᴅᴡᴀʀs'
+    - '&7⊚ &ғsᴋʏʙʟᴏᴄᴋ &7- &2ꜱᴋʏʙʟᴏᴄᴋ'
+    - '&7⊚ &ғsᴜʀᴠɪᴠᴀʟ &7- &ᴀꜱᴜʀᴠɪᴑαℓ'
+    - ''
+    - '&7use /selector for menu'
+    - ''
+    left_click_commands:
+    - '[close]'
+
+  'quick_join':
+    material: BOW
+    slot: 14
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &fǫᴜɪᴄᴋ & &fᴊᴏɪɴ'
+    lore:
+    - ''
+    - '&7↺ &fᴜɴɪʀ ᴘᴇʀᴛᴜʀᴀ ᴀʟᴇᴀᴛᴏʀɪᴀ'
+    - '&7↺ &fto play in a match'
+    - ''
+    - '&7ѕᴛᴀᴛᴜs: &d%ba_status%'
+    - '&7ᴀʀᴇɴᴀ: &f%ba_arena%'
+    - '&7ᴊᴏɢᴀᴅᴏʀᴇs: &f%ba_players%&7/&f%ba_max_players%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba quickjoin'
+
+  'stats':
+    material: BOOK
+    slot: 16
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ʀ̷ᴇ̷ɢ̷ɪ̷s̷ᴛ̷ʀ̷o̷s̷'
+    lore:
+    - ''
+    - '&7↺ &fsee to check'
+    - '&7↺ &ғᴘᴏᴅ̷ᴇ̷s̷̷, ᴇsᴛᴀ̷t̷i̷s̷t̷i̷q̷u̷e̷s̷'
+    - ''
+    - '&7ᴏɴʟɪɴᴇ: &f%ba_online%'
+    - '&7ᴘᴀʀᴛɪᴅᴀs: &f%ba_games_played%'
+    - '&7ᴠɪᴛᴏʀɪᴀs: &f%ba_wins%'
+    - '&7xᴘ: &f%ba_xp%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba stats'
+
+  'all_against_all':
+    material: RED_DYE
+    slot: 18
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ғᴀʟʟ & &ғᴀɢᴀɪɴsᴛ ᴀʟʟ'
+    lore:
+    - ''
+    - '&7↺ &fᴜɴᴀ ᴀʟᴀ &fᴛᴏᴅᴏs'
+    - '&7↺ &ғᴘʟᴀʏᴇʀs: &f%ba_players%'
+    - ''
+    - '&7ѕᴛᴀᴛᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join all_against_all'
+
+  'block_party':
+    material: NOTE_BLOCK
+    slot: 19
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ʙʟᴏᴄᴋ & &fᴘᴀʀᴛʏ'
+    lore:
+    - ''
+    - '&7↺ &fᴅᴀɴᴄᴇ ᴘᴀʀᴀ́ᴅᴏ'
+    - '&7↺ &fpractice in a match'
+    - ''
+    - '&7ѕᴛᴀᴛᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join block_party'
+
+  'bridge_race':
+    material: OAK_BOAT
+    slot: 20
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ʙʀɪᴅɢᴇ & &ғʀᴀᴄᴇ'
+    lore:
+    - ''
+    - '&7↺ &fconnect to build'
+    - '&7↺ &fearn to progress'
+    - ''
+    - '&7ѕᴛᴀᴛᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join bridge_race'
+
+  'chairs':
+    material: BLACK_BED
+    slot: 21
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ᴄʜᴀɪʀs'
+    lore:
+    - ''
+    - '&7↺ &fplace to stack'
+    - '&7↺ &ғᴇsᴄᴀᴘᴇ ᴅᴏ ᴜ́ʟᴛɪᴍᴏ'
+    - ''
+    - '&7ѕᴛᴀᴛᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join chairs'
+
+  'exploding_sheep':
+    material: GREEN_SHEEP_SPAWN_EGG
+    slot: 22
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ᴇxᴘʟᴏᴅɪɴɢ & &ғsʜᴇᴇᴘ'
+    lore:
+    - ''
+    - '&7↺ &fᴏ ᴜʟᴛɪᴍᴏ ᴇxᴘʟᴏsɪᴠᴇʟ'
+    - '&7↺ &ffight for points'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join exploding_sheep'
+
+  'fast_zone':
+    material: YELLOW_DYE
+    slot: 23
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ꜰᴀsᴛ & &ғᴢᴏɴᴇ'
+    lore:
+    - ''
+    - '&7↺ &fᴘʀᴏᴄᴜʀᴀ ᴇᴍ ᴠᴇʟᴏᴄɪᴅᴀᴅᴇ'
+    - '&7↺ &fsurvive for points'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join fast_zone'
+
+  'knockback':
+    material: STICK
+    slot: 24
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ᴋɴᴏᴄᴋʙᴀᴄᴋ'
+    lore:
+    - ''
+    - '&7↺ &fᴇᴍᴘᴏʀᴛᴀʟ ᴘᴏɴᴛᴏs'
+    - '&7↺ &ғᴍᴀɴᴛᴇɴ̧̂ᴀ ᴘᴀʀᴀ ᴅɪsᴛᴀɴᴛɪᴀ'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join knockback'
+
+  'minefield':
+    material: GRAY_CONCRETE
+    slot: 27
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ᴍɪɴᴇғɪᴇʟᴅ'
+    lore:
+    - ''
+    - '&7↺ &fɴᴀ̃ᴏ ʴᴘᴏssɪʙʟᴇ ᴛᴇɴᴛᴀʀ'
+    - '&7↺ &fexplore the cave in paranoia'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join minefield'
+
+  'one_in_the_chamber':
+    material: BOW
+    slot: 28
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ᴏɴᴇ ɪɴ & &fᴛʜᴇ & &ᴄʜᴀᴍʙᴇʀ'
+    lore:
+    - ''
+    - '&7↺ &ғᴜɴᴀ ᴄᴏᴍ ᴜᴍ &ғᴀʀᴄᴏ'
+    - '&7↺ &ғsᴏᴍᴇɴᴛᴇ ғᴀʟʜᴀ ᴘᴏɴᴛᴏ'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join one_in_the_chamber'
+
+  'race':
+    material: FEATHER
+    slot: 29
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ʀᴀᴄᴇ'
+    lore:
+    - ''
+    - '&7↺ &fkey fast to start'
+    - '&7↺ &ғᴅᴇsᴀꜱᴛᴇ ᴇ̴ᴘᴏɴʜᴀ'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join race'
+
+  'red_alert':
+    material: REDSTONE
+    slot: 30
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ʀᴇᴅ & &ғᴀʟᴇʀᴛ'
+    lore:
+    - ''
+    - '&7↺ &ғᴇxᴘʟᴏsᴀ̃o ᴄᴏᴍ ᴘʀᴏᴘᴏ́ʀᴄισɴ'
+    - '&7↺ &ffight for time'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join red_alert'
+
+  'run_from_the_beast':
+    material: BONE
+    slot: 31
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ʀᴜɴ & &ғᴍᴇᴍ & &ғʙᴇᴀsᴛ'
+    lore:
+    - ''
+    - '&7↺ &ffight to escape'
+    - '&7↺ &ғɴᴀ̃o ᴘᴏssɪʙʟᴇ ᴘᴀʀᴀ sᴏʙʀᴇ'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join run_from_the_beast'
+
+  'snowball_fight':
+    material: SNOWBALL
+    slot: 32
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ꜱɴᴏᴡʙᴀʟʟ & &ғꜰɪɢʜᴛ'
+    lore:
+    - ''
+    - '&7↺ &ғғɪɢʜᴛ ᴄᴏᴍ ɴᴇᴇᴇᴅʟᴇs'
+    - '&7↺ &ғᴇxᴘʟᴏsᴀ̃o ᴄᴏᴍ sɴᴏᴡʙᴀʟʟs'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join snowball_fight'
+
+  'spleef':
+    material: WOODEN_SHOVEL
+    slot: 33
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ꜱᴘʟᴇᴇғ'
+    lore:
+    - ''
+    - '&7↺ &fkɛ points to explore'
+    - '&7↺ &fbreak to discover'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join spleef'
+
+  'splegg':
+    material: EGG
+    slot: 34
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ꜱᴘʟᴇɢɢ'
+    lore:
+    - ''
+    - '&7↺ &ғᴍᴀᴛᴀᴘʟʏ ᴄᴏᴍ ᴏᴠᴏs'
+    - '&7↺ &ғᴇxᴘʟᴏsᴀ̃o ᴄᴏᴍ ᴇɢɢs'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join splegg'
+
+  'tnt_run':
+    material: TNT
+    slot: 36
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ᴛɴᴛ & &ғʀᴜɴ'
+    lore:
+    - ''
+    - '&7↺ &ғᴇxᴘʟᴏsᴀ̃o ᴄᴏᴍ ᴘʟᴀᴛᴀᴅᴀs'
+    - '&7↺ &ffight to escape'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join tnt_run'
+
+  'tnt_tag':
+    material: RED_DYE
+    slot: 37
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ᴛɴᴛ & &ғᴛᴀɢ'
+    lore:
+    - ''
+    - '&7↺ &ftag for explosion'
+    - '&7↺ &ffight to escape'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join tnt_tag'
+
+  'traffic_light':
+    material: REDSTONE_LAMP
+    slot: 38
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ᴛʀᴀꜰꜰɪᴄ & &ғʟɪɢʜᴛ'
+    lore:
+    - ''
+    - '&7↺ &ffor points speed'
+    - '&7↺ &ғᴇ̴xpᴀ̃o ᴄᴏᴍ sɪɢɴᴀɪs'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join traffic_light'
+
+  'water_well':
+    material: WATER_BUCKET
+    slot: 39
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ᴡᴀᴛᴇʀ & &ғᴡᴇʟʟ'
+    lore:
+    - ''
+    - '&7↺ &ғɴᴀ̃o ᴘᴏssɪʙʟᴇ ᴘᴀʀᴀ wᴀᴛᴇʀ'
+    - '&7↺ &fplay first to discoverʳ'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%ba_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /ba join water_well'
+
+  'hub_pvp':
+    material: DIAMOND_SWORD
+    slot: 41
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ʜᴜʙ & &ғᴘᴠᴘ'
+    lore:
+    - ''
+    - '&7↺ &ffight in space'
+    - '&7↺ &ғᴋɪʟʟs: &f%hub_kills%'
+    - '&7↺ &ғꜱᴛʀᴇᴀᴋ: &f%hub_killstreak%'
+    - ''
+    - '&7ѕᴛᴀᴜs: &%hub_status%'
+    - ''
+    left_click_commands:
+    - '[player_command] /pvp'
+
+  'lobby_fighting':
+    material: STONE_SWORD
+    slot: 42
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ʟᴏʙʙʏ & &ғғɪɢʜᴛɪɴɢ'
+    lore:
+    - ''
+    - '&7↺ &ғᴀᴄᴛɪᴠᴇ pᴠᴘ ɴᴏ ʟᴏʙʙʏ'
+    - '&7↺ &fuse /lf to activate'
+    - ''
+    - '&7ѕᴛᴀᴜs: &ғ%lp_meta_lobbyfighting_mode%'
+    - ''
+    left_click_commands:
+    - '[player_command] /lf'
+
+  'skyblock':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFjMjA2YWIwNWNiYWM0YTIyZjU0Zjg3NzhjM2JmYmQ4NzBmMTljMzgwMTc2ZjI4ODYxNGM3N2QxOWI1ZDEyMiJ9fX0=
+    slot: 45
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ꜱᴋʏʙʟᴏᴄᴋ'
+    lore:
+    - ''
+    - '&7↺ &ғɪꜱʟᴀɴᴅ ɴᴏ ᴛᴇꜱᴛᴇ'
+    - '&7↺ &ғɢᴜᴇʀᴀ ꜱᴏʙʀᴇ ᴘʟᴀᴛᴀᴅᴀs'
+    - ''
+    - '&7ѕᴛᴀᴜs: &cᴏғғʟɪɴᴇ'
+    - ''
+    left_click_commands:
+    - '[connect] skyblock'
+
+  'survival':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWE0ODgzNDBjM2Q5MTMxYjZlOTdiYWU2Mjc5YWFjODUyMDM3MzY3Y2I5M2E2YjUwYzYwYTdkMzI4YWVjMTczZSJ9fX0=
+    slot: 46
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ꜱᴜʀᴠɪᴠᴀʟ'
+    lore:
+    - ''
+    - '&7↺ &fworld of adventure'
+    - '&7↺ &ғʙᴜɪʟᴅ & &ғᴘʟᴀʏ ᴄᴏ ᴀᴍɪɢᴏs'
+    - ''
+    - '&7ѕᴛᴀᴜs: &aᴏɴʟɪɴᴇ'
+    - ''
+    left_click_commands:
+    - '[connect] survival'
+
+  'bedwars':
+    material: NETHER_STAR
+    slot: 47
+    priority: 2
+    update: true
+    display_name: '§x§6§2§0§0§8§A✧ &ʙᴇᴅᴡᴀʀs'
+    lore:
+    - ''
+    - '&7↺ &ғᴅᴇsᴛʀᴏɪ̧ ̧ʙᴀɴᴅᴀs'
+    - '&7↺ &fplay first to start'
+    - ''
+    - '&7ѕᴛᴀᴜs: &cᴏғғʟɪɴᴇ'
+    - ''
+    left_click_commands:
+    - '[connect] bedwars'
+
+  'close_button':
+    material: BARRIER
+    slot: 53
+    priority: 2
+    update: true
+    display_name: '§c✧ &ғғᴇxᴀʀ'
+    lore:
+    - ''
+    - '&7click to interact'
+    - ''
+    left_click_commands:
+    - '[close]'
+
+  'glass_border_top':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 0
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_top2':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 1
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_top3':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 2
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_top4':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 3
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_top5':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 5
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_top6':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 6
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_top7':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 7
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_top8':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 8
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row2':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 9
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row2_2':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 11
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row2_3':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 13
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row2_4':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 15
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row2_5':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 17
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row4':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 25
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row4_2':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 26
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row5':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 35
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row5_2':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 40
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row5_3':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 43
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row5_4':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 44
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row6_1':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 48
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row6_2':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 49
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row6_3':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 50
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row6_4':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 51
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''
+
+  'glass_border_row6_5':
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 52
+    priority: 1
+    update: true
+    display_name: ' '
+    lore:
+    - ''

@@ -1,0 +1,14 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+economy:
+  errors:
+    invalid_provider: "{prefix} <red>Invalid economy provider '{provider}'. Using built-in credits.</red>"
+    vault_missing: "{prefix} <red>Vault is selected in settings, but no Vault economy provider was found. Credits operations will fail until Vault is available.</red>"
+    custom_missing_config: "{prefix} <red>Custom economy is enabled but configuration is incomplete. Check that give_command, take_command, and get_placeholder are all set in settings.yml. Credits operations will fail until custom economy is fully configured.</red>"
+    custom_papi_missing: "{prefix} <red>Custom economy requires PlaceholderAPI to read balances. Balance checks will return 0 until PlaceholderAPI is installed.</red>"

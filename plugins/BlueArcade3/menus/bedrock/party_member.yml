@@ -1,0 +1,26 @@
+buttons:
+  members:
+    text: "{language:menus.party.common.members.name}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_player_head.png"
+    actions:
+      - PLAYER;/ba party members
+  leave:
+    text: "{language:menus.party.common.leave.name}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_barrier.png"
+    actions:
+      - PLAYER;/ba party leave
+      - CLOSE
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+type: SIMPLE
+menuName: "{language:menus.party.member.bedrock.title}"
+openCommand: /ba party
+buttonsPerPage: 5
+content:
+  - "{language:menus.party.member.bedrock.content}"

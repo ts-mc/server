@@ -1,0 +1,183 @@
+# ==========================================
+# Minecraft server - runtime/generated files
+# ==========================================
+
+# Worlds
+world/
+world_nether/
+world_the_end/
+world_lobby/
+event_arena/
+event_lobby/
+# Generated minigame worlds (including future PG-XX worlds, at any depth)
+PG-*/
+
+# Server/runtime JARs
+*.jar
+
+# Logs
+logs/
+*.log
+*.log.gz
+
+# Minecraft/Paper downloaded runtime
+cache/
+cache/**
+libraries/
+libraries/**
+versions/
+versions/**
+
+# Panel/runtime internals
+.apollo/
+.apollo/**
+.cache/
+.cache/**
+.trash/
+.trash/**
+
+# Backups / archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Temporary server dumps
+server-data-dump/
+server-data-dump/**
+
+# Crash reports
+crash-reports/
+crash-reports/**
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Embedded databases and their journals / temporary files
+*.db
+*.sqlite
+*.sqlite3
+*.mv.db
+*.trace.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# ==========================================
+# Runtime/player-generated data
+# ==========================================
+
+usercache.json
+version_history.json
+
+# Plugin-generated caches, backups, logs, and player state (keep plugin config)
+**/.bluefoundation/config-cache/
+**/.bluefoundation/config-backups/
+plugins/BlueArcade3/data/cache/
+plugins/BlueArcade3/data/users/
+plugins/BlueArcade3/data/global.json
+plugins/BlueArcade3/data/signs.json
+plugins/BlueArcade3/data/migrations/
+plugins/BlueArcade3/backup/
+plugins/DeluxeTags/userdata/
+plugins/DankVotes/votes-data.json
+plugins/DiscordSRV/discord-console-logs/
+plugins/DiscordSRV/accounts.aof
+plugins/DiscordSRV-Staff-Chat/data/
+plugins/DeluxeHub/data.yml
+plugins/Essentials/userdata/
+plugins/Essentials/usermap.bin
+plugins/Essentials/uuids.bin
+plugins/Essentials/upgrades-done.yml
+plugins/bStats/config.yml
+plugins/FancyAnalytics/config.json
+plugins/FancyNpcs/.data/uuids.json
+plugins/FastAsyncWorldEdit/clipboard/
+plugins/LibsDisguises/internal/
+plugins/LuckPerms/contexts.json
+plugins/LuckPerms/hub.json.gz
+plugins/LuckPerms/paper-backup.json.gz*
+plugins/LuckPerms/translations/repository/
+plugins/Maintenance/WhitelistedPlayers.yml
+plugins/MyCommand/playerdata.yml
+plugins/MyCommand/playerevents.yml
+plugins/ProtocolLib/lastupdate
+plugins/SkinsRestorer/skins/
+plugins/SkinsRestorer/archive/
+plugins/SkinsRestorer/legacy/skins/
+plugins/SkinsRestorer/locales/repository/
+plugins/SkinsRestorer/recommendations.json
+plugins/TAB/playerdata.yml
+plugins/TAB/skincache.yml
+plugins/TAB/users.yml
+plugins/TSEvent/assets/reports/
+plugins/nightcore/userdata.yml
+plugins/UltraCosmetics/data/
+plugins/Votifier/rsa/
+plugins/VotifierPlus/rsa/
+plugins/VotingPlugin/ServerData.yml
+plugins/WorldServer/players/
+plugins/FancyNpcs/.data/skins/
+plugins/FancyNpcs/version.yml
+plugins/spark/tmp/
+plugins/spark/tmp-client/
+
+# Generated plugin backup files
+*.backup
+*.bak
+
+# Private/generated credentials; retain non-secret plugin configuration
+plugins/AdvancedBan/config.yml
+plugins/AdvancedBanZ/config.yml
+plugins/BanWebhook/config.yml
+plugins/DankVotes/config.yml
+plugins/DiscordSRV/config.yml
+plugins/FancyNpcs/config.yml
+plugins/MyCommand/config.yml
+plugins/Votifier/config.yml
+plugins/VotingPlugin/BungeeSettings.yml
+plugins/VotingPlugin/Config.yml
+plugins/VotifierPlus/config.yml
+plugins/Votifier/rsa/private.key
+plugins/VotifierPlus/rsa/private.key
+
+# Local credential-bearing configuration; commit the matching *.example template.
+plugins/BlueArcade3/settings.yml
+plugins/LibsDisguises/configs/libsdisguises.yml
+plugins/LuckPerms/config.yml
+plugins/LuckPerms/editor-keystore.json
+plugins/SkinsRestorer/config.yml
+plugins/TAB/config.yml
+plugins/UltraCosmetics/config.yml
+plugins/Updater/config.yml
+plugins/floodgate/key.pem
+
+# ==========================================
+# Local development/sync
+# ==========================================
+
+.remote-sync/
+.remote-sync/**
+.backups/
+
+# VS Code SFTP credentials!
+.vscode/sftp.json
+.vscode/settings.json
+
+# Local agent guidance is intentionally workspace-specific.
+AGENTS.md
+
+# Generated/trash data preserved under documentation snapshots
+.docs/dot-apollo/
+.docs/dot-cache/
+.docs/dot-trash/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db

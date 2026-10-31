@@ -1,0 +1,43 @@
+{
+  "arena": {
+    "basic": {
+      "id": 3,
+      "state": "ENABLED",
+      "display_name": "PG-03",
+      "min_players": 2,
+      "max_players": 24,
+      "rounds": 8,
+      "force_empty_inventory": false,
+      "mode": "party"
+    },
+    "waiting_lobby": {
+      "world": "PG-03",
+      "x": 0.40123031132473064,
+      "y": 66.0625,
+      "z": 0.4851135672641284,
+      "yaw": 89.70008,
+      "pitch": -1.6500174
+    },
+    "games": [
+      "race",
+      "spleef",
+      "snowball_fight",
+      "all_against_all",
+      "one_in_the_chamber",
+      "traffic_light",
+      "minefield",
+      "exploding_sheep",
+      "tnt_run",
+      "tnt_tag",
+      "red_alert",
+      "knockback",
+      "fast_zone",
+      "run_from_the_beast",
+      "block_party",
+      "chairs",
+	  "water_well",
+	  "bridge_race",
+	  "splegg"
+    ]
+  }
+}

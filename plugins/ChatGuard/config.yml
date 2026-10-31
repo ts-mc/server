@@ -1,0 +1,91 @@
+# ==============================================================================
+# ChatGuard — chat filter for TheySix Events (Paper 1.21+)
+# Admin command: /chatguard reload  (aliases: /cg, /chatg)
+# Bypass perms: chatguard.bypass (all) or chatguard.bypass.<category>
+# ==============================================================================
+warn-then-block:
+  warn-message: "&e&lWARNING: &r&eThis type of message is not allowed. Next time you will be blocked."
+  window-seconds: 60
+# ==============================================================================
+filters:
+  # ---------------------------------------------------------------------------
+  # PROFANITY — censors with stars (matches word length after "****" default).
+  # Master word list — KEEP IN SYNC with plugins/DiscordSRV/alerts.yml regex
+  # and docs/guides/chat-filter-setup.md.
+  # ---------------------------------------------------------------------------
+  profanity:
+    enabled: true
+    punishment: CENSOR            # BLOCK | CENSOR | WARN_THEN_BLOCK
+    word-list:
+      - "damn"
+      - "hell"
+      - "crap"
+      - "ass"
+      - "jackass"
+      - "dumbass"
+      - "shit"
+      - "fuck"
+      - "fucking"
+      - "fucker"
+      - "motherfucker"
+      - "bitch"
+      - "bastard"
+      - "dick"
+      - "cock"
+      - "penis"
+      - "pussy"
+      - "cunt"
+      - "retard"
+      - "retarded"
+      - "whore"
+      - "slut"
+      - "nigger"
+      - "faggot"
+      - "wtf"
+      - "stfu"
+      - "piss"
+    censor-replacement: ""
+    messages:
+      censor: "&cPlease don't use profanity. Your message was censored."
+      block:  "&cYour message was blocked for profanity."
+  # ---------------------------------------------------------------------------
+  # SPAM — repeated messages, excessive caps, punctuation spam.
+  # ---------------------------------------------------------------------------
+  spam:
+    enabled: true
+    punishment: BLOCK
+    max-repeats: 3
+    repeat-window-seconds: 10
+    caps-percentage: 0.7
+    caps-min-letters: 8
+    symbol-spam-length: 5
+    messages:
+      block: "&cYour message was blocked for spam."
+  # ---------------------------------------------------------------------------
+  # LINKS / IPs — blocks advertising. Our own links are whitelisted.
+  # ---------------------------------------------------------------------------
+  links:
+    enabled: true
+    punishment: BLOCK
+    url-regex: "(?i)\\b((https?://|www\\.)[\\w\\-]+(\\.[\\w\\-]+)+[/#?\\w\\-?=&%.,~]*)\\b"
+    ip-regex: "\\b(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)(?::\\d{1,5})?\\b"
+    whitelist:
+      - "discord.gg/theysix"
+      - "events.theysix.tech"
+      - "play.theysix.tech"
+    censor-replacement: "[redacted]"
+    messages:
+      censor: "&cLinks are not allowed. Your link was censored."
+      block:  "&cYour message was blocked for containing a link or IP address."
+  # ---------------------------------------------------------------------------
+  # PERSONAL INFO — phone numbers / emails redacted.
+  # ---------------------------------------------------------------------------
+  personalinfo:
+    enabled: true
+    punishment: CENSOR
+    phone-regex: "(?i)(?:\\+?\\d{1,3}[\\s.-]?)?(?:\\(?\\d{2,4}\\)?[\\s.-]?){2,3}\\d{3,4}"
+    email-regex: "(?i)\\b[A-Za-z0-9._%+\\-]+@[A-Za-z0-9.\\-]+\\.[A-Za-z]{2,}\\b"
+    censor-replacement: "[redacted]"
+    messages:
+      censor: "&cSharing personal info is not allowed. It was censored."
+      block:  "&cYour message was blocked for containing personal information."

@@ -1,0 +1,198 @@
+menu_title: 'Cosmetics'
+open_command: cosmetics
+size: 45 #Needs to be a multiple of 9 (9, 18, 27, ...) and max. 54.
+update_interval: 1
+items:
+#############################################################################################
+# INFO ITEM
+#############################################################################################
+'info_item':
+material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODg1MDA3N2YwMGZkN2EzOWRmZGRmNTA2MzQ3N2JlYmYyN2EyN2MxMGM5YmIyYTE2ZWQxNjA0MTJhZmJiMTM2MSJ9fX0=
+slot: 4
+update: true
+display_name: '&#A569FF&lᴄ&#A76DFF&lᴏ&#AA71FF&ls&#AC74FF&lᴍ&#AE78FF&lᴇ&#B07CFF&lᴛ&#B380FF&lɪ&#B583FF&lᴄ&#B787FF&ls &#BC8FFF&lʜ&#BE92FF&lᴜ&#C096FF&lʙ'
+lore:
+- '&8ᴄᴏsᴍᴇᴛɪᴄs'
+- ''
+- '&#A569FF| &#FFEFC5ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴄᴏsᴍᴇᴛɪᴄs ʜᴜʙ!'
+- '&#A569FF| &#FFEFC5ᴄᴜsᴛᴏᴍɪᴢᴇ ʏᴏᴜʀ ᴇxᴘᴇʀɪᴇɴᴄᴇ ᴡɪᴛʜ'
+- '&#A569FF| &#FFEFC5ᴀ ᴡɪᴅᴇ ᴠᴀʀɪᴇᴛʏ ᴏꜰ ꜰᴜɴ ᴇꜰꜰᴇᴄᴛs.'
+- ''
+- '&#A569FF&lʏ&#A76CFF&lᴏ&#A970FF&lᴜ&#AB73FF&lʀ &#AF7AFF&lᴇ&#B17EFF&lǫ&#B481FF&lᴜ&#B685FF&lɪ&#B888FF&lᴘ&#BA8CFF&lᴍ&#BC8FFF&lᴇ&#BE93FF&lɴ&#C096FF&lᴛ'
+- '&#A569FF| &#FFEFC5ᴘᴇᴛ: &#C096FF%ultracosmetics_current_pet%'
+- '&#A569FF| &#FFEFC5ᴘᴀʀᴛɪᴄʟᴇs: &#C096FF%ultracosmetics_current_particleeffect%'
+- '&#A569FF| &#FFEFC5ᴘʀᴏᴊᴇᴄᴛɪʟᴇs: &#C096FF%ultracosmetics_current_projectileeffect%'
+- '&#A569FF| &#FFEFC5ᴅᴇᴀᴛʜ ᴇꜰꜰᴇᴄᴛ: &#C096FF%ultracosmetics_current_deatheffect%'
+- ''
+- '&#A569FF➥ &#A96FFFᴄ&#AA72FFʟ&#AC75FFɪ&#AE78FFᴄ&#B07BFFᴋ'
+#############################################################################################
+# CLOSE BUTTON
+#############################################################################################
+'close':
+material: BARRIER
+slot: 40
+display_name: '&#FF2A2A&lᴄ&#FF3333&lʟ&#FF3C3C&lᴏ&#FF4444&ls&#FF4D4D&lᴇ'
+lore:
+- '&8ᴄᴏsᴍᴇᴛɪᴄs'
+- ''
+- '&#FF2A2A| &#FFEFC5ᴄʟᴏsᴇ ᴛʜɪs ᴍᴇɴᴜ!'
+- ''
+- '&#FF2A2A➥ &#FF2F2Fᴄ&#FF3131ʟ&#FF3333ɪ&#FF3636ᴄ&#FF3838ᴋ'
+click_commands:
+- '[close]'
+##############################################################################################
+# START OF COSMETIC CATEGORY ITEMS
+##############################################################################################
+'PETS':
+material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVkNjAwZGJiM2FkN2RiNDk3OGU0Y2NiNmI3NGVmOGJjNjBmZTJhMjU5MDc4N2QzMjgxMDUyYmNlZTMyZTlkMCJ9fX0=
+slot: 12
+item_flags:
+- HIDE_ATTRIBUTES
+display_name: '&#A9FF36&lᴘ&#B3FF4F&lᴇ&#BEFF67&lᴛ&#C8FF80&ls'
+lore:
+- '&8ᴄᴏsᴍᴇᴛɪᴄs'
+- ''
+- '&#A9FF36| &#FFEFC5ᴛᴀᴋᴇ ᴀ ꜰʀɪᴇɴᴅʟʏ ᴄᴏᴍᴘᴀɴɪᴏɴ'
+- '&#A9FF36| &#FFEFC5ᴏɴ ʏᴏᴜʀ sᴇʀᴠᴇʀ ᴀᴅᴠᴇɴᴛᴜʀᴇs!'
+- ''
+- '&#A9FF36| &#FFEFC5ɪɴᴄʟᴜᴅᴇs ᴅᴏɢ, ᴘɪɢʟᴇᴛ, ᴡᴀʀᴅᴇɴ,'
+- '&#A9FF36| &#FFEFC5ᴀɴᴅ ᴍᴀɴʏ ᴍᴏʀᴇ!'
+- ''
+- '&#A9FF36➥ &#ADFF3Fᴄ&#AFFF44ʟ&#B1FF49ɪ&#B3FF4Dᴄ&#B5FF52ᴋ'
+click_commands:
+- '[openguimenu] CoinShop-Cosmetics-Pets-1'
+- '[sound] UI_BUTTON_CLICK 0.5 0.9'
+#############################################################
+'PARTICLE_EFFECTS':
+material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTA2Y2M4MjkzODU1M2QzOTU0MzQzYTU3NGE5NzliMjIzMmUzYzBkOWIzMGYxNzE3OWQxYjJiODkwOWUwNTViZCJ9fX0=
+item_flags:
+- HIDE_ATTRIBUTES
+slot: 14
+display_name: '&#D369FF&lᴘ&#D96BF3&lᴀ&#DE6CE8&lʀ&#E46EDC&lᴛ&#E96FD1&lɪ&#EF71C5&lᴄ&#F472B9&lʟ&#FA74AE&lᴇ&#FF75A2&ls'
+lore:
+- '&8ᴄᴏsᴍᴇᴛɪᴄs'
+- ''
+- '&#D369FF| &#FFEFC5sᴜʀʀᴏᴜɴᴅ ʏᴏᴜʀsᴇʟꜰ ᴡɪᴛʜ ɪɴᴄʀᴇᴅɪʙʟᴇ'
+- '&#D369FF| &#FFEFC5ᴘᴀʀᴛɪᴄʟᴇ ᴛʀᴀɪʟs ᴀɴᴅ ᴀᴜʀᴀs!'
+- ''
+- '&#D369FF| &#FFEFC5ᴄʜᴏᴏsᴇ ʙᴇᴛᴡᴇᴇɴ ᴀɴɢᴇʟ ᴡɪɴɢs, ʜᴇʟʟ,'
+- '&#D369FF| &#FFEFC5ʀᴀɪɴʙᴏᴡ ᴡɪɴɢs ᴀɴᴅ ᴍᴜᴄʜ ᴍᴏʀᴇ!'
+- ''
+- '&#D369FF➥ &#D96BF3ᴄ&#DB6BEEʟ&#DE6CE8ɪ&#E16DE2ᴄ&#E46EDCᴋ'
+click_commands:
+- '[openguimenu] CoinShop-Cosmetics-ParticleEffects-1'
+- '[sound] UI_BUTTON_CLICK 0.5 0.9'
+###############################################################
+'PROJECTILE_EFFECTS':
+material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU1MDNhOTNmZDA4ZDY1MjZlYmQwZmZjZmMwNWMyNTc2ODNmZjJlNDgzMTg3ZDUzODVkOWYwYmE5MzVlMzIwOCJ9fX0=
+item_flags:
+- HIDE_ATTRIBUTES
+slot: 20
+display_name: '&#FEC530&lᴄ&#FEC83C&lᴏ&#FECC48&lᴍ&#FECF53&lɪ&#FED25F&lɴ&#FFD66B&lɢ &#FFD977&ls&#FFDC83&lᴏ&#FFDF8E&lᴏ&#FFE39A&lɴ'
+lore:
+- '&8ᴄᴏsᴍᴇᴛɪᴄs'
+- ''
+- '&#FEC530| &#FFEFC5ᴄᴏᴍɪɴɢ sᴏᴏɴ ᴡᴇ ᴡɪʟʟ ᴀᴅᴅ'
+- '&#FEC530| &#FFEFC5ᴍᴏʀᴇ ᴄᴏsᴍᴇᴛɪᴄs ᴀɴᴅ ᴇꜰꜰᴇᴄᴛs!'
+- ''
+- '&#FEC530| &#FFEFC5ɴᴇᴡ ᴘᴀʀᴛɪᴄʟᴇs, ᴛʀᴀɪʟs'
+- '&#FEC530| &#FFEFC5ᴀɴᴅ ᴍᴀɴʏ ᴍᴏʀᴇ sᴜʀᴘʀɪsᴇs!'
+- ''
+- '&#FEC530➥ &#FEC93Fᴄ&#FECB46ʟ&#FECD4Eɪ&#FECF55ᴄ&#FED15Cᴋ'
+click_commands:
+- '[openguimenu] CoinShop-Cosmetics-ProjectileEffects-1'
+- '[sound] UI_BUTTON_CLICK 0.5 0.9'
+###############################################################
+'DEATH_EFFECTS':
+material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU1MDNhOTNmZDA4ZDY1MjZlYmQwZmZjZmMwNWMyNTc2ODNmZjJlNDgzMTg3ZDUzODVkOWYwYmE5MzVlMzIwOCJ9fX0=
+slot: 24
+display_name: '&#FEC530&lᴄ&#FEC83C&lᴏ&#FECC48&lᴍ&#FECF53&lɪ&#FED25F&lɴ&#FFD66B&lɢ &#FFD977&ls&#FFDC83&lᴏ&#FFDF8E&lᴏ&#FFE39A&lɴ'
+lore:
+- '&8ᴄᴏsᴍᴇᴛɪᴄs'
+- ''
+- '&#FEC530| &#FFEFC5ᴄᴏᴍɪɴɢ sᴏᴏɴ ᴡᴇ ᴡɪʟʟ ᴀᴅᴅ'
+- '&#FEC530| &#FFEFC5ᴍᴏʀᴇ ᴄᴏsᴍᴇᴛɪᴄs ᴀɴᴅ ᴇꜰꜰᴇᴄᴛs!'
+- ''
+- '&#FEC530| &#FFEFC5ɴᴇᴡ ᴘᴀʀᴛɪᴄʟᴇs, ᴛʀᴀɪʟs'
+- '&#FEC530| &#FFEFC5ᴀɴᴅ ᴍᴀɴʏ ᴍᴏʀᴇ sᴜʀᴘʀɪsᴇs!'
+- ''
+- '&#FEC530➥ &#FEC93Fᴄ&#FECB46ʟ&#FECD4Eɪ&#FECF55ᴄ&#FED15Cᴋ'
+click_commands:
+- '[openguimenu] CoinShop-Cosmetics-DeathEffects'
+- '[sound] UI_BUTTON_CLICK 0.5 0.9'
+###############################################################
+'KILL_EFFECTS':
+material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU1MDNhOTNmZDA4ZDY1MjZlYmQwZmZjZmMwNWMyNTc2ODNmZjJlNDgzMTg3ZDUzODVkOWYwYmE5MzVlMzIwOCJ9fX0=
+item_flags:
+  - HIDE_ATTRIBUTES
+  - HIDE_ADDITIONAL_TOOLTIP
+  - HIDE_ENCHANTS
+slot: 30
+display_name: '&#FEC530&lᴄ&#FEC83C&lᴏ&#FECC48&lᴍ&#FECF53&lɪ&#FED25F&lɴ&#FFD66B&lɢ &#FFD977&ls&#FFDC83&lᴏ&#FFDF8E&lᴏ&#FFE39A&lɴ'
+lore:
+- '&8ᴄᴏsᴍᴇᴛɪᴄs'
+- ''
+- '&#FEC530| &#FFEFC5ᴄᴏᴍɪɴɢ sᴏᴏɴ ᴡᴇ ᴡɪʟʟ ᴀᴅᴅ'
+- '&#FEC530| &#FFEFC5ᴍᴏʀᴇ ᴄᴏsᴍᴇᴛɪᴄs ᴀɴᴅ ᴇꜰꜰᴇᴄᴛs!'
+- ''
+- '&#FEC530| &#FFEFC5ɴᴇᴡ ᴘᴀʀᴛɪᴄʟᴇs, ᴛʀᴀɪʟs'
+- '&#FEC530| &#FFEFC5ᴀɴᴅ ᴍᴀɴʏ ᴍᴏʀᴇ sᴜʀᴘʀɪsᴇs!'
+- ''
+- '&#FEC530➥ &#FEC93Fᴄ&#FECB46ʟ&#FECD4Eɪ&#FECF55ᴄ&#FED15Cᴋ'
+click_commands:
+- '[openguimenu] CoinShop-Cosmetics-KillEffects'
+- '[sound] UI_BUTTON_CLICK 0.5 0.9'
+###############################################################
+'KILL_MESSAGES':
+material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU1MDNhOTNmZDA4ZDY1MjZlYmQwZmZjZmMwNWMyNTc2ODNmZjJlNDgzMTg3ZDUzODVkOWYwYmE5MzVlMzIwOCJ9fX0=
+item_flags:
+  - HIDE_ATTRIBUTES
+  - HIDE_ADDITIONAL_TOOLTIP
+  - HIDE_ENCHANTS
+slot: 32
+display_name: '&#FEC530&lᴄ&#FEC83C&lᴏ&#FECC48&lᴍ&#FECF53&lɪ&#FED25F&lɴ&#FFD66B&lɢ &#FFD977&ls&#FFDC83&lᴏ&#FFDF8E&lᴏ&#FFE39A&lɴ'
+lore:
+- '&8ᴄᴏsᴍᴇᴛɪᴄs'
+- ''
+- '&#FEC530| &#FFEFC5ᴄᴏᴍɪɴɢ sᴏᴏɴ ᴡᴇ ᴡɪʟʟ ᴀᴅᴅ'
+- '&#FEC530| &#FFEFC5ᴍᴏʀᴇ ᴄᴏsᴍᴇᴛɪᴄs ᴀɴᴅ ᴇꜰꜰᴇᴄᴛs!'
+- ''
+- '&#FEC530| &#FFEFC5ɴᴇᴡ ᴘᴀʀᴛɪᴄʟᴇs, ᴛʀᴀɪʟs'
+- '&#FEC530| &#FFEFC5ᴀɴᴅ ᴍᴀɴʏ ᴍᴏʀᴇ sᴜʀᴘʀɪsᴇs!'
+- ''
+- '&#FEC530➥ &#FEC93Fᴄ&#FECB46ʟ&#FECD4Eɪ&#FECF55ᴄ&#FED15Cᴋ'
+click_commands:
+- '[openguimenu] CoinShop-Cosmetics-KillMessages'
+- '[sound] UI_BUTTON_CLICK 0.5 0.9'
+###############################################################
+# FILLER ITEMS
+###############################################################
+GLASS-FILLER:
+material: gray_stained_glass_pane
+display_name: '&f'
+slots:
+- 10
+- 11
+- 13
+- 15
+- 16
+- 19
+- 21
+- 22
+- 23
+- 25
+- 28
+- 29
+- 31
+- 33
+- 34
+GLASS-BORDER:
+material: black_stained_glass_pane
+display_name: '&f'
+slots:
+- 0-3
+- 5-9
+- 17-18
+- 26-27
+- 35-39
+- 41-44

@@ -1,0 +1,45 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+admin:
+  errors:
+    id_taken: '{prefix} <red>Ese ID ya está en uso.</red>'
+    unknown_id: '{prefix} <red>El ID que ingresó no coincide con ninguna arena creada.</red>'
+    only_numbers: '{prefix} <red>Debes ingresar un número.</red>'
+    only_numbers_arena: '{prefix} <red>Debes ingresar un número. Puedes establecer el nombre de la arena más tarde.</red>'
+    only_players: '{prefix} <red>Debes ser un jugador para poder ejecutar este comando</red>'
+    error_deleting_file: '{prefix} <red>Se produjo un error al intentar eliminar el archivo {file}</red>'
+    no_mini_game: '{prefix} <red>El minijuego introducido no existe.</red>'
+    arena_disabled: '{prefix} <red>La arena {arena_id} está actualmente deshabilitada.</red>'
+    bounds_same_world: '{prefix} <red>Ambos límites deben tener el mismo mundo.</red>'
+    at_least_one_game: '{prefix} <red>Configura al menos un minijuego antes de continuar.</red>'
+    minimum_spawns: '{prefix} <red>Debes configurar al menos {minimum_spawns} spawn para continuar.</red>'
+    finish_first: '{prefix} <red>Termina primero el paso anterior.</red>'
+    no_setup_pause: '{prefix} <red>No hay ningún proceso de creación de arena activo para pausar.</red>'
+    no_setup_cancel: '{prefix} <red>No hay ningún proceso de creación de arena activo para cancelar.</red>'
+    air_selection_error: '{prefix} <red>En este paso en particular, no puedes seleccionar aire, debes seleccionar un bloque.</red>'
+    process_cancelled: '{prefix} <red>Proceso cancelado...</red>'
+    player_offline: '{prefix} <red>El jugador especificado no está en línea.</red>'
+    error_sign: '{prefix} <red>Se produjo un error al registrar el signo. Comprueba que has escrito todo correctamente.</red>'
+    error_reloading: '{prefix} <red>Se produjo un error al recargar el archivo {file}.yml</red>'
+    insufficient_permissions: '{prefix} <red>No tienes permisos suficientes para ejecutar este comando.</red>'
+    unknown_command: '{prefix} <red>Ese comando no existe, verifica que lo hayas escrito correctamente.</red>'
+  info:
+    sets_spawn: '{prefix} <red>No hay ningún spawn configurado para {server_name}. Hazlo ahora con /baa mainlobby set</red>'
+    no_modules:
+      - '{prefix} <red>No se detectaron módulos...</red>'
+      - '{prefix} <yellow>Descárgalos con: <white>/baa module store download <id></white></yellow>'
+      - '{prefix} <yellow>El ID se obtiene de:</yellow>'
+      - '{prefix} <yellow> Módulos originales: <white>/baa module store originals</white></yellow>'
+      - '{prefix} <yellow> O buscar (originales o comunidad): <white>/baa module store search <query></white></yellow>'
+    cancelled_setup: '{prefix} <yellow>Proceso de creación de arena cancelado.</yellow>'
+    paused_setup: '{prefix} <yellow>Proceso de creación de arena en pausa.</yellow>'
+    selected_mini_game_setup: '{prefix} <yellow>Has seleccionado el minijuego {mini_game}.</yellow>'
+    selection_eliminated_setup: '{prefix} <yellow>Has eliminado la selección. Ahora puedes continuar con el siguiente paso sin configurar un minijuego.</yellow>'
+    set_display_name: '{prefix} <gray>Escribe en el chat el nombre de la arena que se mostrará a los jugadores. Puedes incluir colores. Escriba `</gray><red>cancel</red><gray>` para cancelar.</gray>'
+    reloading_file: '{prefix} <yellow>Recargando el archivo {file}.yml</yellow>'

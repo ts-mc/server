@@ -1,0 +1,16 @@
+# Visual representation in menus
+menus:
+  vote:
+    item: WATER_BUCKET
+
+# Game items (optional)
+items:
+  starting_items: 
+
+# Potion effects (optional)
+effects:
+  starting_effects: 
+  respawn_effects: 
+# Water Well Module Settings
+
+file_version: 1

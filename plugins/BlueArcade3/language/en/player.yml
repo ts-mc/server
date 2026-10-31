@@ -1,0 +1,59 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+player:
+  lobby:
+    you_join: "{prefix} <yellow>You have joined the arena</yellow> <aqua>{arena_display_name}<yellow>.</yellow>"
+    you_join_spectator: "{prefix} <yellow>You have joined</yellow> <aqua>{arena_display_name}</aqua> <yellow>as a</yellow> <gray>spectator</gray><yellow>.</yellow>"
+    you_join_in_progress: "{prefix} <yellow>You have joined the match already in progress in</yellow> <aqua>{arena_display_name}<yellow>.</yellow>"
+    player_joined: "{prefix} <gray>{player}</gray> <yellow>has joined the arena. (</yellow><aqua>{players}<dark_gray>/<aqua>{max_players}<yellow>)</yellow>"
+    admin_managed: "{prefix} <yellow>This arena requires an admin to start it.</yellow>"
+    you_left: "{prefix} <yellow>You have left the arena</yellow> <aqua>{arena_display_name}<yellow>.</yellow>"
+    player_leaves: "{prefix} <gray>{player}</gray> <red>has left the arena. (</red><aqua>{players}<dark_gray>/<aqua>{max_players}<red>)</red>"
+  game:
+    lobby_countdown: "{prefix} <yellow>The arena will start in</yellow> <aqua>{time} <yellow>seconds.</yellow>"
+    arena_almost_full: "{prefix} <gold>The arena is almost </gold><bold><red>FULL</red></bold><gold>! The countdown has been reduced to {time} seconds.</gold>"
+    player_voted: "{prefix} <aqua>{player_name}</aqua> <yellow>has voted for the minigame</yellow> <aqua>{game}</aqua><yellow>.</yellow> <gold>+1 Vote</gold>"
+    no_winner_timeout: "{prefix} <yellow>The game did not finish in time, so there are no winners.</yellow>"
+    team_assignment: "{prefix} <yellow>Your team:</yellow> <white>{team}</white>"
+    leave_cancelled: "{prefix} <green>You decided to stay in the arena.</green>"
+  spectator_teleport:
+    menu_title: "<dark_gray>Teleport to a player</dark_gray> <gray>({page}/{page_total})</gray>"
+    no_targets: "{prefix} <red>No active players are available to teleport to.</red>"
+    target_unavailable: "{prefix} <red>That player is no longer available.</red>"
+    success: "{prefix} <green>Teleported to</green> <aqua>{target}</aqua><green>.</green>"
+    player_item:
+      name: "<aqua>{target}</aqua>"
+      lore: "<gray>Click to teleport to this player.</gray>"
+  errors:
+    already_in_game: "{prefix} <red>You are already in the game. To leave use /ba leave</red>"
+    target_already_in_game: "{prefix} <yellow>{player} is already in an arena.</yellow>"
+    not_in_game: "{prefix} <red>You are not currently in any game.</red>"
+    no_arena: "{prefix} <red>No arena is available at this time. Please try again later.</red>"
+    arena_started: "{prefix} <red>The arena</red> <yellow>{arena_display_name}</yellow> <red>has already started.</red>"
+    arena_started_spectator: "{prefix} <gold>The arena</gold> <yellow>{arena_display_name}</yellow> <gold>is already running. Join again to enter as a spectator.</gold>"
+    join_in_progress_rejected: "{prefix} <red>Could not join the match already in progress in</red> <yellow>{arena_display_name}</yellow><red>. Please wait for it to finish.</red>"
+    arena_restarting: "{prefix} <red>The arena</red> <yellow>{arena_display_name}</yellow> <red>is restarting. Please wait.</red>"
+    arena_full: "{prefix} <red>The arena</red> <yellow>{arena_display_name}</yellow> <red>is full.</red>"
+    arena_starting_full: "{prefix} <red>The arena</red> <yellow>{arena_display_name}</yellow> <red>is starting and is already full.</red>"
+    arena_stopped: "{prefix} <red>The arena has been stopped due to lack of players. At least</red> <yellow>{min_players}</yellow> <red>players are needed.</red>"
+    chat_muted: "{prefix} <red>The chat is muted. You will be able to talk in a few seconds.</red>"
+    not_allowed_command: "{prefix} <red>You cannot use this command while you are in a game. Use /leave to leave.</red>"
+    stats_disabled: "{prefix} <red>The stats system is currently disabled.</red>"
+    achievements_disabled: "{prefix} <red>The achievements system is currently disabled.</red>"
+    achievements_menu_disabled: "{prefix} <red>The achievements menu is currently disabled.</red>"
+    levels_disabled: "{prefix} <red>The levels system is currently disabled.</red>"
+    stats_empty: "{prefix} <yellow>No stats available yet. Play some games first!</yellow>"
+    no_votes: "{prefix} <red>You have no votes available. Try increasing your rank.</red>"
+    item_cooldown: "{prefix} <yellow>Please wait {seconds}s before using that item.</yellow>"
+    arena_in_game: "{prefix} <red>The arena</red> <yellow>{arena_display_name}</yellow> <red>is currently in-game.</red>"
+    searching: "{prefix} <yellow>No arena is available right now.</yellow>"
+    voting_unavailable: "{prefix} <red>Voting is not available at this moment.</red>"
+    minigame_not_available: "{prefix} <red>That minigame cannot be voted right now.</red>"
+    join_error: "{prefix} <red>Error joining arena. Check the console for details.</red>"
+    leave_error: "{prefix} <red>Error leaving arena. Check the console for details.</red>"

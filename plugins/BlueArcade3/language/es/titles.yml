@@ -1,0 +1,35 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+titles:
+  join:
+    title: '<bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient>'
+    subtitle: '{server_website}'
+  starting_arena:
+    title: '<aqua><bold>{time}</aqua><reset>'
+    subtitle: ''
+  upcoming_game:
+    title: ''
+    subtitle: '<gray>el próximo juego será...</gray>'
+  next_game:
+    title: '<bold><gradient:aqua:dark_aqua>{game_display_name}</gradient><reset>'
+    subtitle: '{server_website}'
+  starting_game:
+    title: '<bold><gradient:aqua:dark_aqua>{game_display_name}</gradient><reset>'
+    subtitle: 'El juego comenzará en <light_purple>{time}</light_purple>s'
+  loading_arena:
+    subtitle: '<gray>Cargando arena...</gray>'
+  game_started:
+    title: '<bold><gradient:aqua:dark_aqua>{game_display_name}</gradient><reset>'
+    subtitle: '<green><bold>¡VAMOS!</green>'
+  you_died:
+    title: '<bold><gradient:red:dark_red>¡HAS MUERTO!</gradient><reset>'
+    subtitle: '<white>Has quedado en el puesto</white> <yellow>#{place}</yellow><white>.</white>'
+  classified:
+    title: '<bold><gradient:dark_green:green>¡CLASIFICADO!</gradient><reset>'
+    subtitle: '<white>Has quedado en el puesto</white> <yellow>#{place}</yellow><white>.</white>'

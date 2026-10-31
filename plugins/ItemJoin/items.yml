@@ -1,0 +1,78 @@
+# ItemJoin Custom Items - TheySix Events
+items-Version: 8
+
+items-Delay: 2
+items-Overwrite: false
+items-Spamming: false
+items-RestrictCount: false
+
+items:
+
+  # ---------------- Vote Menu (Slot 8) ----------------
+  item_1:
+    id: DIAMOND
+    slot: 8
+    name: '&#4CADD0&lᴠ&#6EC6E0&lᴏ&#90E0EF&lᴛ&#B2F9FF&lᴇ &7| ʀɪɢʜᴛ-ᴄʟɪᴄᴋ'
+    lore:
+      - ''
+      - '&7Open the vote menu'
+      - '&7and support TheySix Events!'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+    interact:
+      - 'player: tsvotes'
+    triggers: join
+    itemflags:
+      - self-drops
+      - death-drops
+      - inventory-modify
+      - hide-attributes
+
+  # ---------------- Main Menu Selector (Slot 0) ----------------
+  item_2:
+    id: COMPASS
+    slot: 0
+    name: '&#4CADD0&lT&#5BB7D6&lh&#6AC3DD&le&#79CFE3&ly&#88DBEA&lS&#97E7F0&li&#A6F3F7&lx &#B2F9FF&lE&#A6F3F7&lv&#97E7F0&le&#88DBEA&ln&#79CFE3&lt&#6AC3DD&ls'
+    lore:
+      - ''
+      - '&7Open the main navigation menu'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+    interact:
+      - 'player: tsmenu'
+    triggers: join, respawn, world-change
+    cooldown: 3
+    cooldown-message: '&cPlease wait %time%s before opening the menu again.'
+    itemflags:
+      - self-drops
+      - death-drops
+      - inventory-modify
+      - hide-attributes
+
+  # ---------------- Staff Tools (Slot 7) ----------------
+  item_3:
+    id: NETHER_STAR
+    slot: 7
+    name: '&c&lStaff &7| &fTools'
+    lore:
+      - ''
+      - '&7Click to open the Staff Menu'
+      - ''
+      - '&8Only for staff members'
+    commands:
+      - 'dm open staff'
+    permission: itemjoin.staff
+    permission-message: '&cYou do not have permission to use this item.'
+    triggers: join, respawn, world-change
+    itemflags:
+      - self-drops
+      - death-drops
+      - inventory-modify
+      - hide-attributes
+      - hide-enchants
+    enchants:
+      DURABILITY: 1
+    enabled-worlds:
+      - world
+      - world_nether
+      - world_the_end

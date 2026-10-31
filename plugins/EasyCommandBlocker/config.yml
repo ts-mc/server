@@ -1,0 +1,80 @@
+tab:
+  default:
+    priority: 0
+    commands:
+      - /msg
+      - /reply
+      - /hub
+      - /spawn
+blocked_command_default_actions:
+  - 'message: &8[&c&l!&8] &cYou do not have permission to use that command.'
+  - 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+  - 'title: 20;40;20;&cAccess Denied;&7Command not recognized or blocked.'
+use_commands_as_whitelist: false
+commands:
+  - /velocity
+  - /v
+  - /server
+  - /glist
+  - /find
+  - /send
+  - /bungee
+  - /lpv
+  - /luckpermsvelocity
+  - /plugins
+  - /pl
+  - /?
+  - /help
+  - /about
+  - /version
+  - /ver
+  - /icanhasbukkit
+  - /me
+  # TheySix Events — hide the upstream command names so players never see the
+  # old "Blue Arcade" branding. Everything is reached through /ts, /tse and the
+  # GUI items instead; /ba stays available as a fallback for staff and signs.
+  - /arcade
+  - /arcadeadmin
+  - /barcade
+  - /bluearcade
+  - /barcadea
+  - /bluearcadeadmin
+  - /baa
+  # MyCommand's own admin commands — players have no reason to see or run these.
+  - /mycommand
+  - /mycmd
+  - /mycmd-reload
+  - /mycmd-edit
+  - /mycmd-runas
+  - /mycmd-itemset
+  - /mycmd-blockset
+  - /mycmd-signset
+  - /mycmd-scheduler
+  - /mycmd-variables
+  - /mycmd-playerdata
+  - /mycmd-npcs
+block_colon_commands: true
+custom_commands_actions:
+  hide_version:
+    commands:
+      - /velocity
+      - /v
+      - /version
+      - /ver
+      - /about
+    actions:
+      - 'message: &8[&c&l!&8] &cThe network''s technical information is protected for security.'
+  hide_server:
+    commands:
+      - /server
+    actions:
+      - 'message: &8[&c&l!&8] &cPlease use the main menu (compass) or the NPCs to switch modes.'
+  hide_permissions:
+    commands:
+      - /lpv
+      - /luckpermsvelocity
+    actions:
+      - 'message: &8[&c&l!&8] &cYou do not have the required administration privileges.'
+legacy_support: false
+update_notify: true
+is_network: false

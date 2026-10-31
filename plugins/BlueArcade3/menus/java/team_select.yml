@@ -1,0 +1,50 @@
+dynamicItem:
+  name: "{language:menus.team.select.java.dynamic.name}"
+  lore:
+    - "{language:menus.team.select.java.dynamic.lore}"
+  actions:
+    - "[LEFT_CLICK] PLAYER;/ba team join {team_id}"
+    - "[RIGHT_CLICK] PLAYER;/ba team join {team_id}"
+emptyItem:
+  name: "{language:menus.team.select.java.empty.name}"
+  itemStack:
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+  actions: 
+items:
+  info_item:
+    slot: 4
+    name: "{language:menus.team.select.java.items.info_item.name}"
+    itemStack:
+      material: BOOK
+      amount: 1
+    lore:
+      - "{language:menus.team.select.java.items.info_item.lore}"
+    actions: 
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+menuName: "{language:menus.team.select.java.title}"
+menuSize: 27
+type: CHEST
+openCommand: /ba team
+dynamicSlots:
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25

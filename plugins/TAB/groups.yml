@@ -1,0 +1,39 @@
+# Rank prefix comes from LuckPerms. The selected cosmetic tag comes from DeluxeTags and
+# animates in the same colours as the rank prefix in the player list. Nametags above
+# heads use the rank's first colour without animation to keep packet traffic low.
+_DEFAULT_:
+  tabprefix: "%luckperms-prefix%"
+  tagprefix: "%luckperms-prefix%%fancyglow_color%"
+  customtabname: "%player%"
+  tabsuffix: "%animation:tag-default%"
+  tagsuffix: "&7%condition:tag-default%"
+owner:
+  tabsuffix: "%animation:tag-owner%"
+  tagsuffix: "&#D78C39%condition:tag-owner%"
+manager:
+  tabsuffix: "%animation:tag-manager%"
+  tagsuffix: "&#F858AD%condition:tag-manager%"
+admin:
+  tabsuffix: "%animation:tag-admin%"
+  tagsuffix: "&#FF0000%condition:tag-admin%"
+headmoderator:
+  tabsuffix: "%animation:tag-headmoderator%"
+  tagsuffix: "&#7F3AFF%condition:tag-headmoderator%"
+moderator:
+  tabsuffix: "%animation:tag-moderator%"
+  tagsuffix: "&#6186EB%condition:tag-moderator%"
+helper:
+  tabsuffix: "%animation:tag-helper%"
+  tagsuffix: "&#4CADD0%condition:tag-helper%"
+staffteam:
+  tabsuffix: "%animation:tag-staffteam%"
+  tagsuffix: "&#FFFFFF%condition:tag-staffteam%"
+vip:
+  tabsuffix: "%animation:tag-vip%"
+  tagsuffix: "&#F47FFF%condition:tag-vip%"
+voter:
+  tabsuffix: "%animation:tag-voter%"
+  tagsuffix: "&#98E0A3%condition:tag-voter%"
+trusted:
+  tabsuffix: "%animation:tag-trusted%"
+  tagsuffix: "&#AAAAAA%condition:tag-trusted%"

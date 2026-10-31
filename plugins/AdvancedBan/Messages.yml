@@ -1,0 +1,454 @@
+General:
+  Prefix: "&6 Moderation &8▸"
+  NoPerms: "&cYou don't have perms for that!"
+  LayoutNotFound: "&cThere is no layout called &e%NAME%"
+  TimeLayoutD: "%D%day(s) %H%h %M%min and %S%sec"
+  TimeLayoutH: "%H%hour(s) %M%min and %S%sec"
+  TimeLayoutM: "%M%min and %S%sec"
+  TimeLayoutS: "%S% seconds"
+  FailedFetch: "&cCould not fetch the UUID of &e%NAME%&c! See console for details."
+
+
+Ban:
+  Usage: "&fUsage: &e/ban &7(-s) &d[name] <reason>"
+  Done: "&e%NAME% &cwas successfully banned!"
+  AlreadyDone: "&e%NAME% &chas already been banned!"
+  Exempt: "&cYou are not able to ban &e%NAME%!"
+  Layout:
+  - ""
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&r"
+  - "&c&lYOU ARE PERMANENTLY BANNED FROM THE SERVER!"
+  - ""
+  - "&cReason &8▸ &7%REASON%"
+  - "&cStaff &8▸ &7%OPERATOR%"
+  - ""
+  - "&7If you think there is a problem with your ban,"
+  - "&7you can reach us via our contact addresses."
+  - ""
+  - "&cTime Remaining &8▸ &cIndefinite"
+  - ""
+  - "&6www.requlogia.com &8| &6discord.requlogia.com"
+  Notification:
+  - ""
+  - "&6 %NAME% &chas been banned from the server!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - "&8  ▪ &eReason &8▸ &7%REASON%"
+  - "&8  ▪ &eDuration &8▸ &7Indefinite"
+  - ""
+  UndoNotification:
+  - "&cUnbanned &e%NAME%"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - ""
+
+Ipban:
+  Usage: "&fUsage: &e/banip &7(-s) &d[name/IP] <reason>"
+  Layout:
+  - ""
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&r"
+  - "&c&lYOU ARE PERMANENTLY BANNED FROM THE SERVER!"
+  - ""
+  - "&cReason &8▸ &7%REASON%"
+  - "&cStaff &8▸ &7%OPERATOR%"
+  - ""
+  - "&7If you think there is a problem with your ban,"
+  - "&7you can reach us via our contact addresses."
+  - ""
+  - "&cTime Remaining &8▸ &cIndefinite"
+  - ""
+  - "&6www.requlogia.com &8| &6discord.requlogia.com"
+  Notification:
+  - ""
+  - "&6 %NAME% &chas been banned from the server!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - "&8  ▪ &eReason &8▸ &7%REASON%"
+  - "&8  ▪ &eDuration &8▸ &7Indefinite"
+  - ""
+  IpNotCashed: "&cThere is no saved IP for &e%NAME%&c!"
+
+Tempban:
+  Usage: "&fUsage: &e/tempban &7(-s) &d[name] [time (mo, d, h, m, s)] <reason>"
+  MaxDuration: "&cYou are not able to ban more than &e%MAX%sec&c!"
+  Layout:
+  - ""
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&r"
+  - "&c&lYOU HAVE BEEN BANNED FROM THE SERVER!"
+  - ""
+  - "&cReason &8▸ &7%REASON%"
+  - "&cStaff &8▸ &7%OPERATOR%"
+  - ""
+  - "&7If you think there is a problem with your ban,"
+  - "&7you can reach us via our contact addresses."
+  - ""
+  - "&cTime Remaining &8▸ &7%DURATION%"
+  - ""
+  - "&6www.requlogia.com &8| &6discord.requlogia.com"
+  Notification:
+  - ""
+  - "&6 %NAME% &chas been banned from the server!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - "&8  ▪ &eReason &8▸ &7%REASON%"
+  - "&8  ▪ &eDuration &8▸ &7%DURATION%"
+  - ""
+
+Tempipban:
+  Usage: "&fUsage: &e/tempipban &7(-s) &d[name] [time (mo, d, h, m, s)] <reason>"
+  MaxDuration: "&cYou are not able to ban more than &e%MAX%sec&c!"
+  Layout:
+  - ""
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&r"
+  - "&c&lYOU HAVE BEEN BANNED FROM THE SERVER!"
+  - ""
+  - "&cReason &8▸ &7%REASON%"
+  - "&cStaff &8▸ &7%OPERATOR%"
+  - ""
+  - "&7If you think there is a problem with your ban,"
+  - "&7you can reach us via our contact addresses."
+  - ""
+  - "&cTime Remaining &8▸ &7%DURATION%"
+  - ""
+  - "&6www.requlogia.com &8| &6discord.requlogia.com"
+  Notification:
+  - ""
+  - "&6 %NAME% &chas been banned from the server!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - "&8  ▪ &eReason &8▸ &7%REASON%"
+  - "&8  ▪ &eDuration &8▸ &7%DURATION%"
+  - ""
+
+Mute:
+  Usage: "&fUsage: &e/mute &7(-s) &d[name] <reason>"
+  Done: "&e%NAME% &cwas successfully muted!"
+  AlreadyDone: "&e%NAME% &chas already been muted!"
+  Exempt: "&cYou are not able to mute &e%NAME%&c!"
+  Layout:
+  - ""
+  - "&c&l         YOU ARE PERMANENTLY MUTED!"
+  - ""
+  - "&c                      Reason &8▸ &7%REASON%"
+  - "&c                     Staff &8▸ &7%OPERATOR%"
+  - ""
+  - "&7    If you think there is a problem with your mute,"
+  - "&7    you can reach us via our contact addresses."
+  - ""
+  - "&6       www.requlogia.com &8| &6discord.requlogia.com"
+  Notification:
+  - ""
+  - "&6 %NAME% &cis permanently muted!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - "&8  ▪ &eReason &8▸ &7%REASON%"
+  - ""
+  UndoNotification:
+  - "&c Removed mute for &e%NAME%&c!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - ""
+
+Tempmute:
+  Usage: "&fUsage: &e/tempmute &7(-s) &d[name] [time (mo, d, h, m, s)] <reason>"
+  MaxDuration: "&cYou are not able to mute more than &e%MAX%sec&c!"
+  Layout:
+  - "&c&l         YOU ARE TEMPORARILY MUTED!"
+  - ""
+  - "&c                      Reason &8▸ &7%REASON%"
+  - "&c                      Staff &8▸ &7%OPERATOR%"
+  - "&c               Time Remaining &8▸ &7%DURATION%"
+  - ""
+  - "&7    If you think there is a problem with your mute,"
+  - "&7    you can reach us via our contact addresses."
+  - ""
+  - "&6       www.requlogia.com &8| &6discord.requlogia.com"
+  Notification:
+  - ""
+  - "&6 %NAME% &chas been muted temporarily!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - "&8  ▪ &eReason &8▸ &7%REASON%"
+  - "&8  ▪ &eDuration &8▸ &7%DURATION%"
+  - ""
+
+Warn:
+  Usage: "&fUsage: &e/warn &7(-s) &d[name] <reason>"
+  Done: "&cwas successfully warned &e%NAME%&c!"
+  Exempt: "&cYou are not able to warn &e%NAME%&c!"
+  Layout:
+  - ""
+  - "&c&l                 YOU ARE WARNED!"
+  - ""
+  - "&c                      Reason &8▸ &7%REASON%"
+  - "&c                      Staff &8▸ &7%OPERATOR%"
+  - ""
+  - "&7    If you think there is a problem with your warn,"
+  - "&7    you can reach us via our contact addresses."
+  - ""
+  - "&6       www.requlogia.com &8| &6discord.requlogia.com"
+  Notification:
+  - ""
+  - "&6 %NAME% &chas been warned!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - "&8  ▪ &eReason &8▸ &7%REASON%"
+  - ""
+
+Note:
+  Usage: "&fUsage: &e/note &7(-s) &d[name] <reason>"
+  Done: "&e%NAME% &cwas successfully noted!"
+  Exempt: "&cYou are not able to note &e%NAME%&c!"
+  Notification:
+  - ""
+  - "&6 %NAME% &chas been noted!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - "&8  ▪ &eReason &8▸ &7%REASON%"
+  - ""
+
+Tempwarn:
+  Usage: "&fUsage: &e/tempwarn &7(-s) &d[name] [time (mo, d, h, m, s)] <reason>"
+  MaxDuration: "&cYou are not able to warn more than &e%MAX%sec&c!"
+  Layout:
+  - ""
+  - "&c&l        YOU ARE TEMPORARILY WARNED!"
+  - ""
+  - "&c                      Reason &8▸ &7%REASON%"
+  - "&c                      Staff &8▸ &7%OPERATOR%"
+  - "&c              Time Remaining &8▸ &7%DURATION%"
+  - ""
+  - "&7    If you think there is a problem with your warn,"
+  - "&7    you can reach us via our contact addresses."
+  - ""
+  - "&6       www.requlogia.com &8| &6discord.requlogia.com"
+  Notification:
+  - ""
+  - "&6 %NAME% &chas been temporarily warned!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - "&8  ▪ &eReason &8▸ &7%REASON%"
+  - "&8  ▪ &eDuration &8▸ &7%DURATION%"
+  - ""
+
+Kick:
+  Usage: "&fUsage: &e/kick &7(-s) &d[name] <reason>"
+  Done: "&e%NAME% &cwas successfully kicked!"
+  NotOnline: "&e%NAME% &cis not online!"
+  Exempt: "&cYou are not able to kick &e%NAME%&c!"
+  Layout:
+  - ""
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&c▉▉▉&8▉▉&c▉▉▉"
+  - "&c▉▉▉▉▉▉▉▉"
+  - "&r"
+  - "&c&lYOU HAVE BEEN KICKED FROM THE SERVER!"
+  - ""
+  - "&cReason &8▸ &7%REASON%"
+  - "&cStaff &8▸ &7%OPERATOR%"
+  - ""
+  - "&6www.requlogia.com &8| &6discord.requlogia.com"
+  Notification:
+  - ""
+  - "&6 %NAME% &chas been kicked the server!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - "&8  ▪ &eReason &8▸ &7%REASON%"
+  - ""
+
+
+UnBan:
+  Usage: "&fUsage: &e/unban &d[name/IP]"
+  NotPunished: "&e%NAME% &cis not banned!"
+  Done: "&e%NAME% &awas successfully unbanned!"
+  Notification:
+  - ""
+  - "&6 %NAME% &cwas successfully unbanned!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - ""
+
+UnMute:
+  Usage: "&fUsage: &e/unmute &d[name]"
+  NotPunished: "&e%NAME% &cis not muted!"
+  Done: "&e%NAME% &awas successfully unmuted!"
+  Notification:
+  - ""
+  - "&6 %NAME% &cwas successfully unmuted!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - ""
+
+UnWarn:
+  Usage: "&fUsage: &e/unwarn &d[ID] &7or &e/unwarn clear &d[name]"
+  NotFound: "&cCould not find warning &e#%ID%&c!"
+  Done: "&e#%ID% &cwas successfully deleted!"
+  Notification:
+  - ""
+  - "&6 %NAME% &cwas successfully unwarned!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - ""
+  Clear:
+    Empty: "&e%NAME% &chas no warnings!"
+    Done: "&cCleared &e%COUNT% &cwarnings!"
+
+UnNote:
+  Usage: "&fUsage: &e/unnote &d[ID] &7or &e/unnote clear &d[name]"
+  NotFound: "&cCould not find note &e#%ID%&c!"
+  Done: "&e#%ID% &cwas successfully deleted!"
+  Notification:
+  - ""
+  - "&6 %NAME% &cwas successfully unnoted!"
+  - "&8  ▪ &eStaff &8▸ &7%OPERATOR%"
+  - ""
+  Clear:
+    Empty: "&e%NAME% &chas no notes!"
+    Done: "&cCleared &e%COUNT% &c7notes!"
+
+UnPunish:
+  Usage: "&fUsage: &e/unpunish &d[ID]"
+  NotFound: "&cCould not find punishment &e#%ID%&c!"
+  Done: "&e#%ID% &cwas successfully deleted!"
+
+
+Banlist:
+  Usage: "&fUsage: &e/banlist &d<page>"
+  OutOfIndex: "&cThere is no page &e%PAGE%&c!"
+  NoEntries: "&cThere are no entries!"
+  Header:
+  - "%PREFIX% &fBanlist:"
+  - " &cPlayer/IP &8| &eDuration &8| &7Staff"
+  - " &cType &8▸ &7Reason"
+  - ""
+  Entry:
+  - "&8[&e%DATE%&8]"
+  - "&c%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
+  - "&c%TYPE% &8▸ &7%REASON%"
+  - ""
+  Footer: "&7Page &e%CURRENT_PAGE% &7- &e%TOTAL_PAGES% &8| &7Listed Bans: &e%COUNT%"
+  PageFooter: "&7Use &e/banlist %NEXT_PAGE% &7to see the next page"
+
+History:
+  Usage: "&fUsage: &e/history &d[name/IP] <page>"
+  OutOfIndex: "&cThere is no page &e%PAGE%&c!"
+  NoEntries: "&cThere are no entries!"
+  Header:
+  - "%PREFIX% &fHistory for &e%NAME%&f:"
+  - " &cPlayer/IP &8| &eDuration &8| &7Staff"
+  - " &cType &8▸ &7Reason"
+  - ""
+  Entry:
+  - "&8[&e%DATE%&8]"
+  - "&c%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
+  - "&c%TYPE% &8▸ &7%REASON%"
+  - ""
+  Footer: "&7Page &e%CURRENT_PAGE% &7- &e%TOTAL_PAGES% &8| &7Listed History: &e%COUNT%"
+  PageFooter: "&7Use &e/history %NAME% %NEXT_PAGE% &7to see the next page"
+
+Warns:
+  Usage: "&fUsage: &e/warns &d[name] <page> &7or /warns <page>"
+  OutOfIndex: "&cThere is no page &e%PAGE%&c!"
+  NoEntries: "&cThere are no entries!"
+  Header:
+  - "%PREFIX% &fWarnings for &e%NAME%&f:"
+  - " &cPlayer &8| &eDuration &8| &7Staff"
+  - " &cType &8▸ &7Reason"
+  - ""
+  Entry:
+  - "&8[&e%DATE%&8]"
+  - "&c%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
+  - "&c#%ID% &8▸ &7%REASON%"
+  - ""
+  Footer: "&7Page &e%CURRENT_PAGE% &7- &e%TOTAL_PAGES% &8| &7Listed Warns: &e%COUNT%"
+  PageFooter: "&7Use &e/warns %NAME% %NEXT_PAGE% &7to see the next page"
+
+WarnsOwn:
+  OutOfIndex: "&cThere is no page &e%PAGE%&c!"
+  NoEntries: "&cThere are no entries!"
+  Header:
+  - "%PREFIX% Your warnings:"
+  - " &eDuration &8| &7Staff"
+  - " &c#ID &8▸ &7Reason"
+  - ""
+  Entry:
+  - "&8[&e%DATE%&8]"
+  - "&e%DURATION% &8| &7%OPERATOR%"
+  - "&c#%ID% &8▸ &7%REASON%"
+  - ""
+  Footer: "&7Page &e%CURRENT_PAGE% &7- &e%TOTAL_PAGES% &8| &7Active Warnings: &e%COUNT%"
+  PageFooter: "&7Use &e/warns %NEXT_PAGE% &7to see the next page"
+  
+Notes:
+  Usage: "&fUsage: &e/notes &d[name] <page> &7or /notes <page>"
+  OutOfIndex: "&cThere is no page &e%PAGE%&c!"
+  NoEntries: "&cThere are no entries!"
+  Header:
+    - ""
+    - "%PREFIX% &fNotes for &e%NAME%&f:"
+    - ""
+  Entry:
+    - "&7%DATE% &8| &7%OPERATOR% &7(&c#%ID%&7)"
+    - "&8▸ &e%REASON%"
+    - ""
+  Footer: "&7Page &e%CURRENT_PAGE% &7- &e%TOTAL_PAGES% &8| &7Listed Notes: &e%COUNT%"
+  PageFooter: "&e/notes %NAME% %NEXT_PAGE% &7to see the next page"
+
+NotesOwn:
+  OutOfIndex: "&cThere is no page &e%PAGE%&c!"
+  NoEntries: "&cThere are no entries!"
+  Header:
+    - ""
+    - "%PREFIX% &7Your notes:"
+    - ""
+  Entry:
+    - "&7%DATE% &8| &7%OPERATOR% &7(&c#%ID%&7)"
+    - "&8▸ &e%REASON%"
+    - ""
+  Footer: "&7Page &e%CURRENT_PAGE% &7- &e%TOTAL_PAGES% &8| &7Active Notes: &e%COUNT%"
+  PageFooter: "&e/notes %NEXT_PAGE% &7to see the next page"
+
+ChangeReason:
+  Usage: "&fUsage: &e/change-reason &d[ID or ban/mute Player] [New Reason]"
+  Done: "&aPunishment &e#%ID% &ahas successfully been updated!"
+  NotFound: "&cSorry we have not been able to find this punishment"
+
+Check:
+  Usage: "&fUsage: &e/check &d[name]"
+  Header: "&aChecking &e%NAME% &8(%CACHED%&8)"
+  UUID: "&8  ▪ &cUUID &8▸ &7%UUID% &8(%CACHED%&8)"
+  IP: "&8  ▪ &cIP &8▸ &7%IP% &8(%CACHED%&8)"
+  Geo: "&8  ▪ &cCountry &8▸ &7%LOCATION%"
+  Mute: "&8  ▪ &cMute &8▸ &7%DURATION%"
+  MuteReason: "&8  ▪   &cReason &8▸ &7%REASON%"
+  Ban: "&8  ▪ &cBanned &8▸ &7%DURATION%"
+  BanReason: "&8  ▪   &cReason &8▸ &7%REASON%"
+  Warn: "&8  ▪ &cWarns &8▸ &7%COUNT%"
+  Note: "&8  ▪ &cNotes &8▸ &7%COUNT%"
+  NotFound: "&cSorry we have not been able to find &e%NAME%"
+  Cached: "&acached"
+  NotCached: "&cnot cached"
+
+# 1311B8YG2MY3557HHDIZZY

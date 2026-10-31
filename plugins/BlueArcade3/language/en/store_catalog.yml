@@ -1,0 +1,349 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+store_catalog:
+  categories:
+    death_effects:
+      display_name: "<red>Death Effects</red>"
+      description:
+        - "<gray>Choose how you vanish when you are eliminated.</gray>"
+        - "<gray>Purely visual flourishes that never affect gameplay.</gray>"
+      random_item:
+        display_name: "<yellow>Random Death Effect</yellow>"
+        description:
+          - "<gray>Play one of your unlocked death effects at random.</gray>"
+      items:
+        default_puff:
+          display_name: "<gray>Dust Puff</gray>"
+          description:
+            - "<gray>A tiny puff on elimination.</gray>"
+
+        explosion:
+          display_name: "<red>Explosion</red>"
+          description:
+            - "<gray>Big boom without damage.</gray>"
+
+        lightning:
+          display_name: "<yellow>Lightning Strike</yellow>"
+          description:
+            - "<gray>A dramatic lightning flash.</gray>"
+
+        soul_heads:
+          display_name: "<dark_aqua>Souls</dark_aqua>"
+          description:
+            - "<gray>Gentle spirits drift away.</gray>"
+
+        blood_splatter:
+          display_name: "<dark_red>Blood Splatter</dark_red>"
+          description:
+            - "<gray>Redstone splash particles.</gray>"
+
+        anvil_drop:
+          display_name: "<dark_gray>Anvil Drop</dark_gray>"
+          description:
+            - "<gray>A falling anvil visual.</gray>"
+
+        disintegration:
+          display_name: "<gray>Disintegration</gray>"
+          description:
+            - "<gray>Ash rising from the body.</gray>"
+
+        sculk_spores:
+          display_name: "<dark_aqua>Sculk Spores</dark_aqua>"
+          description:
+            - "<gray>Sculk souls burst outward.</gray>"
+
+        ghost_flame:
+          display_name: "<aqua>Ghost Flame</aqua>"
+          description:
+            - "<gray>A ring of soul fire.</gray>"
+
+        smoke_cloud:
+          display_name: "<gray>Smoke Cloud</gray>"
+          description:
+            - "<gray>Thick smoke on death.</gray>"
+
+        ender_shatter:
+          display_name: "<dark_purple>Ender Shatter</dark_purple>"
+          description:
+            - "<gray>Portal sparks scatter.</gray>"
+
+    kill_effects:
+      display_name: "<gold>Kill Effects</gold>"
+      description:
+        - "<gray>Show off every elimination with a custom flourish.</gray>"
+        - "<gray>Particles and props that trigger when you land the final hit.</gray>"
+      random_item:
+        display_name: "<yellow>Random Kill Effect</yellow>"
+        description:
+          - "<gray>Play one of your unlocked kill effects at random.</gray>"
+      items:
+        default_spark:
+          display_name: "<gray>Spark Pop</gray>"
+          description:
+            - "<gray>A simple spark burst.</gray>"
+
+        color_aura:
+          display_name: "<rainbow>Color Aura</rainbow>"
+          description:
+            - "<gray>A brief colorful ring.</gray>"
+
+        glow_pulse:
+          display_name: "<yellow>Glow Pulse</yellow>"
+          description:
+            - "<gray>A quick glow highlight.</gray>"
+
+        vertical_pulse:
+          display_name: "<aqua>Vertical Pulse</aqua>"
+          description:
+            - "<gray>Particles rise from your feet.</gray>"
+
+        halo:
+          display_name: "<white>Halo</white>"
+          description:
+            - "<gray>A glowing halo above your head.</gray>"
+
+        confetti:
+          display_name: "<light_purple>Confetti</light_purple>"
+          description:
+            - "<gray>Celebration sparkles.</gray>"
+
+        totem_flash:
+          display_name: "<gold>Totem Flash</gold>"
+          description:
+            - "<gray>A totem burst on kill.</gray>"
+
+        heart_pop:
+          display_name: "<red>Heart Pop</red>"
+          description:
+            - "<gray>Hearts burst with joy.</gray>"
+
+        crit_burst:
+          display_name: "<white>Critical Burst</white>"
+          description:
+            - "<gray>A classic critical hit pop.</gray>"
+
+        note_pop:
+          display_name: "<yellow>Note Pop</yellow>"
+          description:
+            - "<gray>Musical notes rise up.</gray>"
+
+        star_trail:
+          display_name: "<aqua>Star Trail</aqua>"
+          description:
+            - "<gray>Electric sparks in a ring.</gray>"
+
+    victory_effects:
+      display_name: "<gold>Victory Effects</gold>"
+      description:
+        - "<gray>Celebrate every win with cinematic finales.</gray>"
+        - "<gray>Fireworks, meteors, and more play automatically.</gray>"
+      random_item:
+        display_name: "<yellow>Random Victory Effect</yellow>"
+        description:
+          - "<gray>Play one of your unlocked effects at random.</gray>"
+      items:
+        fireworks:
+          display_name: "<green>Fireworks</green>"
+          description:
+            - "<gray>Classic fireworks burst.</gray>"
+
+        vulcanwool:
+          display_name: "<gold>Vulcan Wool</gold>"
+          description:
+            - "<gray>Launch colorful wool around you.</gray>"
+
+        vulcanfire:
+          display_name: "<red>Vulcan Fire</red>"
+          description:
+            - "<gray>Explode with fiery magma bursts.</gray>"
+
+        icewalker:
+          display_name: "<aqua>Ice Walker</aqua>"
+          description:
+            - "<gray>Freeze the ground beneath you.</gray>"
+
+        notes:
+          display_name: "<yellow>Notes</yellow>"
+          description:
+            - "<gray>Play a shower of musical notes.</gray>"
+
+        chicken:
+          display_name: "<yellow>Chicken Burst</yellow>"
+          description:
+            - "<gray>Release a flock of chickens.</gray>"
+
+        wardens:
+          display_name: "<dark_aqua>Warden Orbit</dark_aqua>"
+          description:
+            - "<gray>Summon wardens that circle you.</gray>"
+
+        daredevil:
+          display_name: "<gold>Daredevil Ride</gold>"
+          description:
+            - "<gray>Ride in style on a fearless steed.</gray>"
+
+        meteors:
+          display_name: "<red>Meteor Storm</red>"
+          description:
+            - "<gray>Call down blazing meteors.</gray>"
+
+        pigland:
+          display_name: "<light_purple>Pig Land</light_purple>"
+          description:
+            - "<gray>Let pigs rain from the sky.</gray>"
+
+        wolfs:
+          display_name: "<gray>Wolf Pack</gray>"
+          description:
+            - "<gray>Summon loyal wolves around you.</gray>"
+
+        anvilland:
+          display_name: "<dark_gray>Anvil Rain</dark_gray>"
+          description:
+            - "<gray>Bring down anvils from above.</gray>"
+
+        twerkapocalypse:
+          display_name: "<light_purple>Twerk Apocalypse</light_purple>"
+          description:
+            - "<gray>Spawn dancing NPCs to celebrate.</gray>"
+
+        titan:
+          display_name: "<dark_red>Titan</dark_red>"
+          description:
+            - "<gray>Grow to giant size.</gray>"
+
+        witherrider:
+          display_name: "<dark_gray>Wither Rider</dark_gray>"
+          description:
+            - "<gray>Ride a wither and shoot skulls.</gray>"
+
+        rainbowbeacon:
+          display_name: "<rainbow>Rainbow Ray</rainbow>"
+          description:
+            - "<gray>Summon a spinning rainbow ray.</gray>"
+
+        starshower:
+          display_name: "<yellow>Star Shower</yellow>"
+          description:
+            - "<gray>Let sparkling stars orbit you.</gray>"
+
+        destroyisland:
+          display_name: "<red>Destroy Island</red>"
+          description:
+            - "<gray>Summon TNT blasts without damage.</gray>"
+
+    victory_music:
+      display_name: "<gold>Victory Music</gold>"
+      description:
+        - "<gray>Play a custom anthem every time you place first.</gray>"
+        - "<gray>Collect songs and swap them whenever you like.</gray>"
+      random_item:
+        display_name: "<yellow>Random Victory Song</yellow>"
+        description:
+          - "<gray>Play one of your unlocked songs at random.</gray>"
+      items:
+        we_are_the_champions:
+          display_name: "<gold>We Are the Champions</gold>"
+          description:
+            - "<gray>Celebrate with a classic victory anthem.</gray>"
+
+        bohemian_rhapsody:
+          display_name: "<yellow>Bohemian Rhapsody</yellow>"
+          description:
+            - "<gray>Operatic energy for legendary wins.</gray>"
+
+        happy:
+          display_name: "<yellow>Happy</yellow>"
+          description:
+            - "<gray>Bright, upbeat vibes for your win.</gray>"
+
+        levels:
+          display_name: "<aqua>Levels</aqua>"
+          description:
+            - "<gray>Raise the energy after a victory.</gray>"
+
+        believer:
+          display_name: "<red>Believer</red>"
+          description:
+            - "<gray>Turn a win into a statement.</gray>"
+
+        faded:
+          display_name: "<blue>Faded</blue>"
+          description:
+            - "<gray>Atmospheric and cinematic victory music.</gray>"
+
+        billie_jean:
+          display_name: "<aqua>Billie Jean</aqua>"
+          description:
+            - "<gray>Iconic pop groove to seal the win.</gray>"
+
+        let_it_be:
+          display_name: "<gold>Let It Be</gold>"
+          description:
+            - "<gray>Timeless calm for a graceful victory.</gray>"
+
+        never_gonna_give_you_up:
+          display_name: "<light_purple>Never Gonna Give You Up</light_purple>"
+          description:
+            - "<gray>A playful anthem to celebrate the win.</gray>"
+
+        africa:
+          display_name: "<green>Africa</green>"
+          description:
+            - "<gray>Sing-along nostalgia for champions.</gray>"
+
+        dancing_queen:
+          display_name: "<yellow>Dancing Queen</yellow>"
+          description:
+            - "<gray>Disco joy for a shining victory.</gray>"
+
+        take_on_me:
+          display_name: "<aqua>Take On Me</aqua>"
+          description:
+            - "<gray>Retro synth energy for big wins.</gray>"
+
+        smells_like_teen_spirit:
+          display_name: "<dark_gray>Smells Like Teen Spirit</dark_gray>"
+          description:
+            - "<gray>Grunge power for a bold victory.</gray>"
+
+        stairway_to_heaven:
+          display_name: "<gold>Stairway to Heaven</gold>"
+          description:
+            - "<gray>Epic rock for legendary moments.</gray>"
+
+        blinding_lights:
+          display_name: "<red>Blinding Lights</red>"
+          description:
+            - "<gray>Modern pop glow for a fresh win.</gray>"
+
+        despacito:
+          display_name: "<gold>Despacito</gold>"
+          description:
+            - "<gray>Global hit to spice up the victory.</gray>"
+
+        shake_it_off:
+          display_name: "<light_purple>Shake It Off</light_purple>"
+          description:
+            - "<gray>Shake away the loss and celebrate.</gray>"
+
+        hotel_california:
+          display_name: "<gold>Hotel California</gold>"
+          description:
+            - "<gray>Classic rock vibes for the podium.</gray>"
+
+        sweet_child_o_mine:
+          display_name: "<red>Sweet Child o' Mine</red>"
+          description:
+            - "<gray>Guitar-driven celebration music.</gray>"
+
+        get_lucky:
+          display_name: "<green>Get Lucky</green>"
+          description:
+            - "<gray>Funky victory groove to keep it cool.</gray>"

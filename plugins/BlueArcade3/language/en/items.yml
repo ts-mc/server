@@ -1,0 +1,94 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+# Localized Core item names and inventory item text.
+
+items:
+  game:
+    vote_game: "<aqua>Vote for mini-games</aqua>"
+    leave_game: "<red>Leave the game</red>"
+  ui:
+    main_lobby_items:
+      play:
+        display_name: "<green>Play</green>"
+        lore:
+          - "<gray>Quickly join the next available game.</gray>"
+      maps:
+        display_name: "<aqua>Maps</aqua>"
+        lore:
+          - "<gray>Browse the available arenas and games.</gray>"
+      stats:
+        display_name: "<yellow>Your stats</yellow>"
+        lore:
+          - "<gray>Open your personal statistics panel.</gray>"
+      party:
+        display_name: "<light_purple>Party</light_purple>"
+        lore:
+          - "<gray>Manage your party before entering a game.</gray>"
+      leave:
+        display_name: "<red>Leave</red>"
+        lore:
+          - "<gray>This button is only a placeholder by default.</gray>"
+          - "<gray>Customize its action in items.yml if needed.</gray>"
+        actions:
+          message_0: "<yellow>Customize this action in items.yml if you want this button to send players somewhere else.</yellow>"
+    waiting_room_items:
+      store:
+        display_name: "<green>Open the store</green>"
+      vote:
+        display_name: "<aqua>Vote for mini-games</aqua>"
+      team_select:
+        display_name: "<yellow>Select a team</yellow>"
+        lore:
+          - "<gray>Choose your team before the game starts.</gray>"
+      leave:
+        display_name: "<red>Leave the game</red>"
+    end_items:
+      play_again:
+        display_name: "<green>Play again</green>"
+      view_stats:
+        display_name: "<yellow>View all stats</yellow>"
+      exit_arena:
+        display_name: "<red>Leave the game</red>"
+    spectator_items:
+      teleport_player:
+        display_name: "<aqua>Teleport to a player</aqua>"
+        lore:
+          - "<gray>Open a menu with active players in this arena.</gray>"
+      view_stats:
+        display_name: "<yellow>View stats</yellow>"
+      play_again:
+        display_name: "<green>Play again</green>"
+      exit_arena:
+        display_name: "<red>Leave the game</red>"
+    party_spectator_items:
+      teleport_player:
+        display_name: "<aqua>Teleport to a player</aqua>"
+        lore:
+          - "<gray>Open a menu with active players in this arena.</gray>"
+      store:
+        display_name: "<green>Open the store</green>"
+      view_stats:
+        display_name: "<yellow>View stats</yellow>"
+    replay_controls:
+      teleport:
+        display_name: "<aqua>Teleport to a player</aqua>"
+      slower:
+        display_name: "<red>Slower</red>"
+      back:
+        display_name: "<yellow>Back 10s</yellow>"
+      play:
+        display_name: "<green>Play</green>"
+      pause:
+        display_name: "<white>Pause</white>"
+      forward:
+        display_name: "<yellow>Forward 10s</yellow>"
+      faster:
+        display_name: "<green>Faster</green>"
+      leave:
+        display_name: "<red>Leave replay</red>"

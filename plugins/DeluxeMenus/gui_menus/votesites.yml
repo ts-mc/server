@@ -1,0 +1,177 @@
+# TheySix Events — Vote menu
+# Opened with /tsvotes
+# Style matches the server's gradient: #4CADD0 -> #B2F9FF
+
+menu_title: '&#4CADD0&lT&#5BB7D6&lh&#6AC3DD&le&#79CFE3&ly&#88DBEA&lS&#97E7F0&li&#A6F3F7&lx &#B2F9FF&l| &#B2F9FF&lV&#A6F3F7&lo&#97E7F0&lt&#88DBEA&le'
+open_command: tsvotes
+size: 27
+register: true
+
+items:
+
+  # ---------------- Server Stats (top left) ----------------
+  'server_stats':
+    material: NETHER_STAR
+    slot: 0
+    amount: 1
+    display_name: '&#4CADD0&lS&#60BCD9&lE&#75CBE3&lR&#89DBEC&lV&#9EEAF6&lE&#B2F9FF&lR'
+    lore:
+      - '&7Total votes received:'
+      - '&#FFEFC5%dankvotes_total_votes%'
+      - ''
+      - '&7Keep voting to support'
+      - '&7TheySix Events!'
+
+  # ---------------- Player Stats ----------------
+  'player_stats':
+    material: PLAYER_HEAD
+    slot: 4
+    amount: 1
+    display_name: '&#4CADD0&lY&#57B5D5&lo&#63BEDA&lu&#6EC6E0&lr &#85D7EA&lS&#90E0EF&lt&#9BE8F5&la&#A7F1FA&lt&#B2F9FF&ls'
+    lore:
+      - '&7Votes: &#FFEFC5%dankvotes_votes%'
+      - '&7Current streak: &#FFEFC5%dankvotes_streak% &7days'
+      - '&7Best streak: &#FFEFC5%dankvotes_best_streak% &7days'
+      - ''
+      - '&7Thank you for supporting'
+      - '&7TheySix Events!'
+
+  # ---------------- Vote Sites (middle row) ----------------
+  'dankminecraftservers':
+    material: DIAMOND
+    slot: 10
+    amount: 1
+    display_name: '&#4CADD0&lD&#5DBAD8&la&#6EC6E0&ln&#7FD3E8&lk &#A1ECF7&lM&#B2F9FF&lS'
+    lore:
+      - '&7Vote on DankMinecraftServers.com'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+    left_click_commands:
+      - '[message] &8Sending vote link...'
+      - '[message] &7https://dankminecraftservers.com/server/theysix-events'
+      - '[close]'
+    right_click_commands:
+      - '[message] &8Sending vote link...'
+      - '[message] &7https://dankminecraftservers.com/server/theysix-events'
+      - '[close]'
+
+  'minecraftservers':
+    material: EMERALD
+    slot: 11
+    amount: 1
+    display_name: '&#4CADD0&lM&#53B2D3&li&#5AB7D6&ln&#60BCD9&le&#67C1DD&lc&#6EC6E0&lr&#75CBE3&la&#7CD0E6&lf&#82D6E9&lt&#89DBEC&lS&#90E0EF&le&#97E5F2&lr&#9EEAF6&lv&#A4EFF9&le&#ABF4FC&lr&#B2F9FF&ls'
+    lore:
+      - '&7Vote on MinecraftServers.org'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+    left_click_commands:
+      - '[message] &8Sending vote link...'
+      - '[message] &7https://minecraftservers.org/vote/694846'
+      - '[close]'
+    right_click_commands:
+      - '[message] &8Sending vote link...'
+      - '[message] &7https://minecraftservers.org/vote/694846'
+      - '[close]'
+
+  'topg':
+    material: GOLD_INGOT
+    slot: 12
+    amount: 1
+    display_name: '&#4CADD0&lT&#6EC6E0&lo&#90E0EF&lp&#B2F9FF&lG'
+    lore:
+      - '&7Vote on TopG.org'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+    left_click_commands:
+      - '[message] &8Sending vote link...'
+      - '[message] &7https://topg.org/minecraft-servers/server-687301'
+      - '[close]'
+    right_click_commands:
+      - '[message] &8Sending vote link...'
+      - '[message] &7https://topg.org/minecraft-servers/server-687301'
+      - '[close]'
+
+  'minecraftbuzz':
+    material: HONEYCOMB
+    slot: 13
+    amount: 1
+    display_name: '&#4CADD0&lM&#55B3D4&li&#5DBAD8&ln&#66C0DC&le&#6EC6E0&lc&#77CDE4&lr&#7FD3E8&la&#88D9EB&lf&#90E0EF&lt&#99E6F3&lB&#A1ECF7&lu&#AAF3FB&lz&#B2F9FF&lz'
+    lore:
+      - '&7Vote on Minecraft.Buzz'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+    left_click_commands:
+      - '[message] &8Sending vote link...'
+      - '[message] &7https://minecraft.buzz/vote/theysix-events'
+      - '[close]'
+    right_click_commands:
+      - '[message] &8Sending vote link...'
+      - '[message] &7https://minecraft.buzz/vote/theysix-events'
+      - '[close]'
+
+  'minecraftmp':
+    material: IRON_INGOT
+    slot: 14
+    amount: 1
+    display_name: '&#4CADD0&lM&#55B4D4&li&#5FBBD9&ln&#68C2DD&le&#71C9E1&lc&#7AD0E5&lr&#84D6EA&la&#8DDDEE&lf&#96E4F2&lt&#9FEBF6&l-&#A9F2FB&lM&#B2F9FF&lP'
+    lore:
+      - '&7Vote on Minecraft-MP.com'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+    left_click_commands:
+      - '[message] &8Sending vote link...'
+      - '[message] &7https://minecraft-mp.com/server/365557/vote'
+      - '[close]'
+    right_click_commands:
+      - '[message] &8Sending vote link...'
+      - '[message] &7https://minecraft-mp.com/server/365557/vote'
+      - '[close]'
+
+  # ---------------- All Links (runs /vote) ----------------
+  'all_links':
+    material: BOOK
+    slot: 16
+    amount: 1
+    display_name: '&#4CADD0&lA&#59B7D6&ll&#66C0DC&ll &#7FD3E8&lS&#8CDDED&li&#99E6F3&lt&#A5F0F9&le&#B2F9FF&ls'
+    lore:
+      - '&7Get every vote link'
+      - '&7sent to your chat.'
+      - ''
+      - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ʀᴇᴄᴇɪᴠᴇ'
+    left_click_commands:
+      - '[player] vote'
+      - '[close]'
+    right_click_commands:
+      - '[player] vote'
+      - '[close]'
+
+  # ---------------- Close / Filler ----------------
+  'close':
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+      - 1
+      - 2
+      - 3
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 15
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+    display_name: '&7Close | TheySix Events'
+    lore:
+      - '&7Click to close this menu.'
+    left_click_commands:
+      - '[close]'
+    right_click_commands:
+      - '[close]'

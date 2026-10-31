@@ -1,0 +1,15 @@
+# TSHide - /hide info
+# Masks only what other players see (tab list, overhead nametag, ping). Your real account name, UUID,
+# permissions, chat name, console and staff logs never change.
+
+username:
+  # How often the scrambled name changes in /hide info username (capped at 4 per second).
+  changes-per-second: 2
+
+all:
+  # Tab-list name shown in /hide info all.
+  tab-name: '&8Hidden'
+
+# The overhead name is your real account name and can't be renamed safely, so it is hidden in
+# "all" and "username" modes.
+hide-overhead-name: true

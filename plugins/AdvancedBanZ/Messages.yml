@@ -1,0 +1,452 @@
+# AdvancedBanZ - Converted from your old AdvancedBan Messages.yml
+# MiniMessage format only (no & or § codes)
+
+General:
+  Prefix: "<gold> Moderation <dark_gray>▸</dark_gray></gold>"
+  NoPerms: "<red>You don't have perms for that!</red>"
+  LayoutNotFound: "<red>There is no layout called <yellow>%NAME%</yellow></red>"
+  TimeLayoutD: "%D%day(s) %H%h %M%min and %S%sec"
+  TimeLayoutH: "%H%hour(s) %M%min and %S%sec"
+  TimeLayoutM: "%M%min and %S%sec"
+  TimeLayoutS: "%S% seconds"
+  FailedFetch: "<red>Could not fetch the UUID of <yellow>%NAME%</yellow>! See console for details.</red>"
+
+Ban:
+  Usage: "<white>Usage: <yellow>/ban <gray>(-s) <light_purple>[name] <reason></light_purple></gray></yellow></white>"
+  Done: "<yellow>%NAME%</yellow> <red>was successfully banned!</red>"
+  AlreadyDone: "<yellow>%NAME%</yellow> <red>has already been banned!</red>"
+  Exempt: "<red>You are not able to ban <yellow>%NAME%</yellow>!</red>"
+  Layout:
+    - ""
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - ""
+    - "<red><bold>YOU ARE PERMANENTLY BANNED FROM THE SERVER!</bold></red>"
+    - ""
+    - "<red>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red>"
+    - "<red>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></red>"
+    - ""
+    - "<gray>If you think there is a problem with your ban,</gray>"
+    - "<gray>you can reach us via our contact addresses.</gray>"
+    - ""
+    - "<red>Time Remaining <dark_gray>▸</dark_gray> <red>Indefinite</red></red>"
+    - ""
+    - "<gold>www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>has been banned from the server!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Duration <dark_gray>▸</dark_gray> <gray>Indefinite</gray></yellow></dark_gray>"
+    - ""
+  UndoNotification:
+    - "<red>Unbanned <yellow>%NAME%</yellow></red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - ""
+
+Ipban:
+  Usage: "<white>Usage: <yellow>/banip <gray>(-s) <light_purple>[name/IP] <reason></light_purple></gray></yellow></white>"
+  Layout:
+    - ""
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - ""
+    - "<red><bold>YOU ARE PERMANENTLY BANNED FROM THE SERVER!</bold></red>"
+    - ""
+    - "<red>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red>"
+    - "<red>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></red>"
+    - ""
+    - "<gray>If you think there is a problem with your ban,</gray>"
+    - "<gray>you can reach us via our contact addresses.</gray>"
+    - ""
+    - "<red>Time Remaining <dark_gray>▸</dark_gray> <red>Indefinite</red></red>"
+    - ""
+    - "<gold>www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>has been banned from the server!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Duration <dark_gray>▸</dark_gray> <gray>Indefinite</gray></yellow></dark_gray>"
+    - ""
+  IpNotCashed: "<red>There is no saved IP for <yellow>%NAME%</yellow>!</red>"
+
+Tempban:
+  Usage: "<white>Usage: <yellow>/tempban <gray>(-s) <light_purple>[name] [time (mo, d, h, m, s)] <reason></light_purple></gray></yellow></white>"
+  MaxDuration: "<red>You are not able to ban more than <yellow>%MAX%sec</yellow>!</red>"
+  Layout:
+    - ""
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - ""
+    - "<red><bold>YOU HAVE BEEN BANNED FROM THE SERVER!</bold></red>"
+    - ""
+    - "<red>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red>"
+    - "<red>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></red>"
+    - ""
+    - "<gray>If you think there is a problem with your ban,</gray>"
+    - "<gray>you can reach us via our contact addresses.</gray>"
+    - ""
+    - "<red>Time Remaining <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></red>"
+    - ""
+    - "<gold>www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>has been banned from the server!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Duration <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></yellow></dark_gray>"
+    - ""
+
+Tempipban:
+  Usage: "<white>Usage: <yellow>/tempipban <gray>(-s) <light_purple>[name] [time (mo, d, h, m, s)] <reason></light_purple></gray></yellow></white>"
+  MaxDuration: "<red>You are not able to ban more than <yellow>%MAX%sec</yellow>!</red>"
+  Layout:
+    - ""
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - ""
+    - "<red><bold>YOU HAVE BEEN BANNED FROM THE SERVER!</bold></red>"
+    - ""
+    - "<red>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red>"
+    - "<red>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></red>"
+    - ""
+    - "<gray>If you think there is a problem with your ban,</gray>"
+    - "<gray>you can reach us via our contact addresses.</gray>"
+    - ""
+    - "<red>Time Remaining <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></red>"
+    - ""
+    - "<gold>www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>has been banned from the server!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Duration <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></yellow></dark_gray>"
+    - ""
+
+Mute:
+  Usage: "<white>Usage: <yellow>/mute <gray>(-s) <light_purple>[name] <reason></light_purple></gray></yellow></white>"
+  Done: "<yellow>%NAME%</yellow> <red>was successfully muted!</red>"
+  AlreadyDone: "<yellow>%NAME%</yellow> <red>has already been muted!</red>"
+  Exempt: "<red>You are not able to mute <yellow>%NAME%</yellow>!</red>"
+  Layout:
+    - ""
+    - "<red><bold> YOU ARE PERMANENTLY MUTED!</bold></red>"
+    - ""
+    - "<red> Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red>"
+    - "<red> Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></red>"
+    - ""
+    - "<gray> If you think there is a problem with your mute,</gray>"
+    - "<gray> you can reach us via our contact addresses.</gray>"
+    - ""
+    - "<gold> www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>is permanently muted!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></yellow></dark_gray>"
+    - ""
+  UndoNotification:
+    - "<red> Removed mute for <yellow>%NAME%</yellow>!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - ""
+
+Tempmute:
+  Usage: "<white>Usage: <yellow>/tempmute <gray>(-s) <light_purple>[name] [time (mo, d, h, m, s)] <reason></light_purple></gray></yellow></white>"
+  MaxDuration: "<red>You are not able to mute more than <yellow>%MAX%sec</yellow>!</red>"
+  Layout:
+    - "<red><bold> YOU ARE TEMPORARILY MUTED!</bold></red>"
+    - ""
+    - "<red> Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red>"
+    - "<red> Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></red>"
+    - "<red> Time Remaining <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></red>"
+    - ""
+    - "<gray> If you think there is a problem with your mute,</gray>"
+    - "<gray> you can reach us via our contact addresses.</gray>"
+    - ""
+    - "<gold> www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>has been muted temporarily!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Duration <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></yellow></dark_gray>"
+    - ""
+
+Warn:
+  Usage: "<white>Usage: <yellow>/warn <gray>(-s) <light_purple>[name] <reason></light_purple></gray></yellow></white>"
+  Done: "<red>was successfully warned <yellow>%NAME%</yellow>!</red>"
+  Exempt: "<red>You are not able to warn <yellow>%NAME%</yellow>!</red>"
+  Layout:
+    - ""
+    - "<red><bold> YOU ARE WARNED!</bold></red>"
+    - ""
+    - "<red> Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red>"
+    - "<red> Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></red>"
+    - ""
+    - "<gray> If you think there is a problem with your warn,</gray>"
+    - "<gray> you can reach us via our contact addresses.</gray>"
+    - ""
+    - "<gold> www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>has been warned!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></yellow></dark_gray>"
+    - ""
+
+Note:
+  Usage: "<white>Usage: <yellow>/note <gray>(-s) <light_purple>[name] <reason></light_purple></gray></yellow></white>"
+  Done: "<yellow>%NAME%</yellow> <red>was successfully noted!</red>"
+  Exempt: "<red>You are not able to note <yellow>%NAME%</yellow>!</red>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>has been noted!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></yellow></dark_gray>"
+    - ""
+
+Tempwarn:
+  Usage: "<white>Usage: <yellow>/tempwarn <gray>(-s) <light_purple>[name] [time (mo, d, h, m, s)] <reason></light_purple></gray></yellow></white>"
+  MaxDuration: "<red>You are not able to warn more than <yellow>%MAX%sec</yellow>!</red>"
+  Layout:
+    - ""
+    - "<red><bold> YOU ARE TEMPORARILY WARNED!</bold></red>"
+    - ""
+    - "<red> Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red>"
+    - "<red> Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></red>"
+    - "<red> Time Remaining <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></red>"
+    - ""
+    - "<gray> If you think there is a problem with your warn,</gray>"
+    - "<gray> you can reach us via our contact addresses.</gray>"
+    - ""
+    - "<gold> www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>has been temporarily warned!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Duration <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></yellow></dark_gray>"
+    - ""
+
+Kick:
+  Usage: "<white>Usage: <yellow>/kick <gray>(-s) <light_purple>[name] <reason></light_purple></gray></yellow></white>"
+  Done: "<yellow>%NAME%</yellow> <red>was successfully kicked!</red>"
+  NotOnline: "<yellow>%NAME%</yellow> <red>is not online!</red>"
+  Exempt: "<red>You are not able to kick <yellow>%NAME%</yellow>!</red>"
+  Layout:
+    - ""
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - "<red>▉▉▉</red><dark_gray>▉▉</dark_gray><red>▉▉▉</red>"
+    - "<red>▉▉▉▉▉▉▉▉</red>"
+    - ""
+    - "<red><bold>YOU HAVE BEEN KICKED FROM THE SERVER!</bold></red>"
+    - ""
+    - "<red>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red>"
+    - "<red>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></red>"
+    - ""
+    - "<gold>www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>has been kicked the server!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - "<dark_gray> ▪ <yellow>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></yellow></dark_gray>"
+    - ""
+
+UnBan:
+  Usage: "<white>Usage: <yellow>/unban <light_purple>[name/IP]</light_purple></yellow></white>"
+  NotPunished: "<yellow>%NAME%</yellow> <red>is not banned!</red>"
+  Done: "<yellow>%NAME%</yellow> <green>was successfully unbanned!</green>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>was successfully unbanned!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - ""
+
+UnMute:
+  Usage: "<white>Usage: <yellow>/unmute <light_purple>[name]</light_purple></yellow></white>"
+  NotPunished: "<yellow>%NAME%</yellow> <red>is not muted!</red>"
+  Done: "<yellow>%NAME%</yellow> <green>was successfully unmuted!</green>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>was successfully unmuted!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - ""
+
+UnWarn:
+  Usage: "<white>Usage: <yellow>/unwarn <light_purple>[ID]</light_purple> <gray>or</gray> <yellow>/unwarn clear <light_purple>[name]</light_purple></yellow></white>"
+  NotFound: "<red>Could not find warning <yellow>#%ID%</yellow>!</red>"
+  Done: "<yellow>#%ID%</yellow> <red>was successfully deleted!</red>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>was successfully unwarned!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - ""
+  Clear:
+    Empty: "<yellow>%NAME%</yellow> <red>has no warnings!</red>"
+    Done: "<red>Cleared <yellow>%COUNT%</yellow> warnings!</red>"
+
+UnNote:
+  Usage: "<white>Usage: <yellow>/unnote <light_purple>[ID]</light_purple> <gray>or</gray> <yellow>/unnote clear <light_purple>[name]</light_purple></yellow></white>"
+  NotFound: "<red>Could not find note <yellow>#%ID%</yellow>!</red>"
+  Done: "<yellow>#%ID%</yellow> <red>was successfully deleted!</red>"
+  Notification:
+    - ""
+    - "<gold> %NAME% </gold><red>was successfully unnoted!</red>"
+    - "<dark_gray> ▪ <yellow>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></yellow></dark_gray>"
+    - ""
+  Clear:
+    Empty: "<yellow>%NAME%</yellow> <red>has no notes!</red>"
+    Done: "<red>Cleared <yellow>%COUNT%</yellow> notes!</red>"
+
+UnPunish:
+  Usage: "<white>Usage: <yellow>/unpunish <light_purple>[ID]</light_purple></yellow></white>"
+  NotFound: "<red>Could not find punishment <yellow>#%ID%</yellow>!</red>"
+  Done: "<yellow>#%ID%</yellow> <red>was successfully deleted!</red>"
+
+Banlist:
+  Usage: "<white>Usage: <yellow>/banlist <light_purple><page></light_purple></yellow></white>"
+  OutOfIndex: "<red>There is no page <yellow>%PAGE%</yellow>!</red>"
+  NoEntries: "<red>There are no entries!</red>"
+  Header:
+    - "%PREFIX% <white>Banlist:</white>"
+    - " <red>Player/IP</red> <dark_gray>|</dark_gray> <yellow>Duration</yellow> <dark_gray>|</dark_gray> <gray>Staff</gray>"
+    - " <red>Type</red> <dark_gray>▸</dark_gray> <gray>Reason</gray>"
+    - ""
+  Entry:
+    - "<dark_gray>[<yellow>%DATE%</yellow>]</dark_gray>"
+    - "<red>%NAME%</red> <dark_gray>|</dark_gray> <yellow>%DURATION%</yellow> <dark_gray>|</dark_gray> <gray>%OPERATOR%</gray>"
+    - "<red>%TYPE%</red> <dark_gray>▸</dark_gray> <gray>%REASON%</gray>"
+    - ""
+  Footer: "<gray>Page <yellow>%CURRENT_PAGE%</yellow> - <yellow>%TOTAL_PAGES%</yellow> <dark_gray>|</dark_gray> Listed Bans: <yellow>%COUNT%</yellow></gray>"
+  PageFooter: "<gray>Use <yellow>/banlist %NEXT_PAGE%</yellow> to see the next page</gray>"
+
+History:
+  Usage: "<white>Usage: <yellow>/history <light_purple>[name/IP] <page></light_purple></yellow></white>"
+  OutOfIndex: "<red>There is no page <yellow>%PAGE%</yellow>!</red>"
+  NoEntries: "<red>There are no entries!</red>"
+  Header:
+    - "%PREFIX% <white>History for <yellow>%NAME%</yellow>:</white>"
+    - " <red>Player/IP</red> <dark_gray>|</dark_gray> <yellow>Duration</yellow> <dark_gray>|</dark_gray> <gray>Staff</gray>"
+    - " <red>Type</red> <dark_gray>▸</dark_gray> <gray>Reason</gray>"
+    - ""
+  Entry:
+    - "<dark_gray>[<yellow>%DATE%</yellow>]</dark_gray>"
+    - "<red>%NAME%</red> <dark_gray>|</dark_gray> <yellow>%DURATION%</yellow> <dark_gray>|</dark_gray> <gray>%OPERATOR%</gray>"
+    - "<red>%TYPE%</red> <dark_gray>▸</dark_gray> <gray>%REASON%</gray>"
+    - ""
+  Footer: "<gray>Page <yellow>%CURRENT_PAGE%</yellow> - <yellow>%TOTAL_PAGES%</yellow> <dark_gray>|</dark_gray> Listed History: <yellow>%COUNT%</yellow></gray>"
+  PageFooter: "<gray>Use <yellow>/history %NAME% %NEXT_PAGE%</yellow> to see the next page</gray>"
+
+Warns:
+  Usage: "<white>Usage: <yellow>/warns <light_purple>[name] <page></light_purple> <gray>or</gray> /warns <page></yellow></white>"
+  OutOfIndex: "<red>There is no page <yellow>%PAGE%</yellow>!</red>"
+  NoEntries: "<red>There are no entries!</red>"
+  Header:
+    - "%PREFIX% <white>Warnings for <yellow>%NAME%</yellow>:</white>"
+    - " <red>Player</red> <dark_gray>|</dark_gray> <yellow>Duration</yellow> <dark_gray>|</dark_gray> <gray>Staff</gray>"
+    - " <red>Type</red> <dark_gray>▸</dark_gray> <gray>Reason</gray>"
+    - ""
+  Entry:
+    - "<dark_gray>[<yellow>%DATE%</yellow>]</dark_gray>"
+    - "<red>%NAME%</red> <dark_gray>|</dark_gray> <yellow>%DURATION%</yellow> <dark_gray>|</dark_gray> <gray>%OPERATOR%</gray>"
+    - "<red>#%ID%</red> <dark_gray>▸</dark_gray> <gray>%REASON%</gray>"
+    - ""
+  Footer: "<gray>Page <yellow>%CURRENT_PAGE%</yellow> - <yellow>%TOTAL_PAGES%</yellow> <dark_gray>|</dark_gray> Listed Warns: <yellow>%COUNT%</yellow></gray>"
+  PageFooter: "<gray>Use <yellow>/warns %NAME% %NEXT_PAGE%</yellow> to see the next page</gray>"
+
+WarnsOwn:
+  OutOfIndex: "<red>There is no page <yellow>%PAGE%</yellow>!</red>"
+  NoEntries: "<red>There are no entries!</red>"
+  Header:
+    - "%PREFIX% Your warnings:"
+    - " <yellow>Duration</yellow> <dark_gray>|</dark_gray> <gray>Staff</gray>"
+    - " <red>#ID</red> <dark_gray>▸</dark_gray> <gray>Reason</gray>"
+    - ""
+  Entry:
+    - "<dark_gray>[<yellow>%DATE%</yellow>]</dark_gray>"
+    - "<yellow>%DURATION%</yellow> <dark_gray>|</dark_gray> <gray>%OPERATOR%</gray>"
+    - "<red>#%ID%</red> <dark_gray>▸</dark_gray> <gray>%REASON%</gray>"
+    - ""
+  Footer: "<gray>Page <yellow>%CURRENT_PAGE%</yellow> - <yellow>%TOTAL_PAGES%</yellow> <dark_gray>|</dark_gray> Active Warnings: <yellow>%COUNT%</yellow></gray>"
+  PageFooter: "<gray>Use <yellow>/warns %NEXT_PAGE%</yellow> to see the next page</gray>"
+
+Notes:
+  Usage: "<white>Usage: <yellow>/notes <light_purple>[name] <page></light_purple> <gray>or</gray> /notes <page></yellow></white>"
+  OutOfIndex: "<red>There is no page <yellow>%PAGE%</yellow>!</red>"
+  NoEntries: "<red>There are no entries!</red>"
+  Header:
+    - ""
+    - "%PREFIX% <white>Notes for <yellow>%NAME%</yellow>:</white>"
+    - ""
+  Entry:
+    - "<gray>%DATE% <dark_gray>|</dark_gray> %OPERATOR% (<red>#%ID%</red>)</gray>"
+    - "<dark_gray>▸</dark_gray> <yellow>%REASON%</yellow>"
+    - ""
+  Footer: "<gray>Page <yellow>%CURRENT_PAGE%</yellow> - <yellow>%TOTAL_PAGES%</yellow> <dark_gray>|</dark_gray> Listed Notes: <yellow>%COUNT%</yellow></gray>"
+  PageFooter: "<yellow>/notes %NAME% %NEXT_PAGE%</yellow> <gray>to see the next page</gray>"
+
+NotesOwn:
+  OutOfIndex: "<red>There is no page <yellow>%PAGE%</yellow>!</red>"
+  NoEntries: "<red>There are no entries!</red>"
+  Header:
+    - ""
+    - "%PREFIX% <gray>Your notes:</gray>"
+    - ""
+  Entry:
+    - "<gray>%DATE% <dark_gray>|</dark_gray> %OPERATOR% (<red>#%ID%</red>)</gray>"
+    - "<dark_gray>▸</dark_gray> <yellow>%REASON%</yellow>"
+    - ""
+  Footer: "<gray>Page <yellow>%CURRENT_PAGE%</yellow> - <yellow>%TOTAL_PAGES%</yellow> <dark_gray>|</dark_gray> Active Notes: <yellow>%COUNT%</yellow></gray>"
+  PageFooter: "<yellow>/notes %NEXT_PAGE%</yellow> <gray>to see the next page</gray>"
+
+ChangeReason:
+  Usage: "<white>Usage: <yellow>/change-reason <light_purple>[ID or ban/mute Player] [New Reason]</light_purple></yellow></white>"
+  Done: "<green>Punishment <yellow>#%ID%</yellow> has successfully been updated!</green>"
+  NotFound: "<red>Sorry we have not been able to find this punishment</red>"
+
+Check:
+  Usage: "<white>Usage: <yellow>/check <light_purple>[name]</light_purple></yellow></white>"
+  Header: "<green>Checking <yellow>%NAME%</yellow> <dark_gray>(%CACHED%)</dark_gray></green>"
+  UUID: "<dark_gray> ▪ <red>UUID <dark_gray>▸</dark_gray> <gray>%UUID% <dark_gray>(%CACHED%)</dark_gray></gray></red></dark_gray>"
+  IP: "<dark_gray> ▪ <red>IP <dark_gray>▸</dark_gray> <gray>%IP% <dark_gray>(%CACHED%)</dark_gray></gray></red></dark_gray>"
+  Geo: "<dark_gray> ▪ <red>Country <dark_gray>▸</dark_gray> <gray>%LOCATION%</gray></red></dark_gray>"
+  Mute: "<dark_gray> ▪ <red>Mute <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></red></dark_gray>"
+  MuteReason: "<dark_gray> ▪ <red>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red></dark_gray>"
+  Ban: "<dark_gray> ▪ <red>Banned <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></red></dark_gray>"
+  BanReason: "<dark_gray> ▪ <red>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red></dark_gray>"
+  Warn: "<dark_gray> ▪ <red>Warns <dark_gray>▸</dark_gray> <gray>%COUNT%</gray></red></dark_gray>"
+  Note: "<dark_gray> ▪ <red>Notes <dark_gray>▸</dark_gray> <gray>%COUNT%</gray></red></dark_gray>"
+  NotFound: "<red>Sorry we have not been able to find <yellow>%NAME%</yellow></red>"
+  Cached: "<green>cached</green>"
+  NotCached: "<red>not cached</red>"

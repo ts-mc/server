@@ -1,0 +1,59 @@
+# ========================================
+# Rewards
+# ========================================
+
+# Reward your players for placing higher or just for participating.
+# This will help players want to play more.
+# 
+# Please note: reward commands are executed on the console, not from the player.
+# 
+# Rewards use BlueArcade's built-in credits (spent in /ba store) and XP.
+# `-s` keeps the console-issued reward commands from spamming player chat.
+
+rewards:
+  round:
+    # Enables (true) or disables (false) the rewards in every round.
+    enabled: true
+
+    # List of rewards for first place in each round.
+    first:
+      - "baa credits give -s {player} 20"
+      - "baa xp give -s {player} 35"
+
+    # List of rewards for second place in each round.
+    second:
+      - "baa credits give -s {player} 10"
+      - "baa xp give -s {player} 25"
+
+    # List of rewards for third place in each round.
+    third:
+      - "baa credits give -s {player} 5"
+      - "baa xp give -s {player} 18"
+
+    # List of rewards for participating in each round.
+    participation:
+      - "baa credits give -s {player} 1"
+      - "baa xp give -s {player} 10"
+  final:
+    # Enables (true) or disables (false) the rewards in the game final.
+    enabled: true
+
+    # List of rewards for first place at the game final.
+    first:
+      - "baa credits give -s {player} 100"
+      - "baa xp give -s {player} 140"
+
+    # List of rewards for second place at the game final.
+    second:
+      - "baa credits give -s {player} 50"
+      - "baa xp give -s {player} 95"
+
+    # List of rewards for third place at the game final.
+    third:
+      - "baa credits give -s {player} 25"
+      - "baa xp give -s {player} 70"
+
+    # List of rewards for participating at the game final.
+    participation:
+      - "baa credits give -s {player} 5"
+      - "baa xp give -s {player} 35"

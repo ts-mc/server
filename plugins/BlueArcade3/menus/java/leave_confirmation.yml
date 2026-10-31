@@ -1,0 +1,35 @@
+items:
+  confirm_leave:
+    name: "{language:menus.leave.confirmation.java.items.confirm_leave.name}"
+    slot: 11
+    itemStack:
+      material: LIME_CONCRETE
+      amount: 1
+    lore:
+      - "{language:menus.leave.confirmation.java.items.confirm_leave.lore}"
+    actions:
+      - "[LEFT_CLICK] PLAYER;/ba leave confirm"
+      - "[RIGHT_CLICK] PLAYER;/ba leave confirm"
+  cancel_leave:
+    name: "{language:menus.leave.confirmation.java.items.cancel_leave.name}"
+    slot: 15
+    itemStack:
+      material: RED_CONCRETE
+      amount: 1
+    lore:
+      - "{language:menus.leave.confirmation.java.items.cancel_leave.lore}"
+    actions:
+      - "[LEFT_CLICK] PLAYER;/ba leave cancel"
+      - "[RIGHT_CLICK] PLAYER;/ba leave cancel"
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+menuName: "{language:menus.leave.confirmation.java.title}"
+menuSize: 27
+type: CHEST
+openCommand: /ba leave

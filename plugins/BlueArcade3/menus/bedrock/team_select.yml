@@ -1,0 +1,22 @@
+templates:
+  dynamic:
+    text: "{language:menus.team.select.bedrock.templates.dynamic.text}"
+    actions:
+      - "PLAYER;/ba team join {team_id}"
+  empty:
+    text: "{language:menus.team.select.bedrock.templates.empty.text}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_gray_stained_glass_pane.png"
+    actions: 
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+type: SIMPLE
+menuName: "{language:menus.team.select.bedrock.title}"
+openCommand: /ba team
+content:
+  - "{language:menus.team.select.bedrock.content}"

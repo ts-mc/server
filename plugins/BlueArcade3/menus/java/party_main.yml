@@ -1,0 +1,33 @@
+items:
+  search_public:
+    slot: 11
+    name: "{language:menus.party.main.java.items.search_public.name}"
+    lore:
+      - "{language:menus.party.main.java.items.search_public.lore}"
+    itemStack:
+      material: COMPASS
+      amount: 1
+    actions:
+      - PLAYER;/ba party search
+  create_party:
+    slot: 15
+    name: "{language:menus.party.main.java.items.create_party.name}"
+    lore:
+      - "{language:menus.party.main.java.items.create_party.lore}"
+    itemStack:
+      material: TOTEM_OF_UNDYING
+      amount: 1
+    actions:
+      - PLAYER;/ba party create
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+menuName: "{language:menus.party.main.java.title}"
+menuSize: 27
+type: CHEST
+openCommand: /ba party

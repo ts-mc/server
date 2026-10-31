@@ -1,0 +1,245 @@
+menu_title: 'Cosmetics » Effects [2/2]'
+size: 54
+items:
+
+#############################################################################################
+# FILLERS
+#############################################################################################	
+  'BORDER':
+    material: BLACK_STAINED_GLASS_PANE
+    item_flags: 
+      - HIDE_ATTRIBUTES
+      - HIDE_ADDITIONAL_TOOLTIP
+      - HIDE_ENCHANTS
+    priority: 999
+    display_name: '&r'
+    slots: 
+      - 0-9
+      - 17-18
+      - 26-27
+      - 35-36
+      - 44-48
+      - 50-53
+
+  'GRAY-FILLER':
+    material: GRAY_STAINED_GLASS_PANE
+    item_flags: 
+      - HIDE_ATTRIBUTES
+      - HIDE_ADDITIONAL_TOOLTIP
+      - HIDE_ENCHANTS
+    priority: 999
+    display_name: '&r'
+    slots: 
+      - 10-16
+      - 19-25
+      - 28-34
+      - 37-43
+
+#############################################################################################
+# NAVIGATION BUTTONS
+#############################################################################################	
+
+  'BACK-TO-COSMETICS':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0=
+    item_flags: 
+      - HIDE_ATTRIBUTES
+      - HIDE_ADDITIONAL_TOOLTIP
+      - HIDE_ENCHANTS
+    slot: 49
+    display_name: '&#FF2A2A&lB&#FF3636&lA&#FF4141&lC&#FF4D4D&lK'
+    lore:
+    - '&8ᴇꜰꜰᴇᴄᴛs'
+    - ''
+    - '&#FF2A2A| &#FFEFC5ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴠᴏʟᴠᴇʀ ᴀ'
+    - '&#FF2A2A| &#FFEFC5ʟᴀ ᴛɪᴇɴᴅᴀ ᴅᴇ ᴄᴏꜱᴍᴇᴛɪᴄᴏꜱ!'
+    - ''
+    - '&#FF2A2A➥ &#FF2E2EC&#FF3030l&#FF3232i&#FF3434c&#FF3636k &#FF3A3At&#FF3D3Do &#FF4141g&#FF4343o &#FF4747b&#FF4949a&#FF4B4Bc&#FF4D4Dk'
+    click_commands:
+    - '[openguimenu] CoinShop-Cosmetics'
+
+  'PREVIOUS-PAGE':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjllYTFkODYyNDdmNGFmMzUxZWQxODY2YmNhNmEzMDQwYTA2YzY4MTc3Yzc4ZTQyMzE2YTEwOThlNjBmYjdkMyJ9fX0=
+    item_flags: 
+      - HIDE_ATTRIBUTES
+      - HIDE_ADDITIONAL_TOOLTIP
+      - HIDE_ENCHANTS
+    slot: 46
+    display_name: '&#FFB52A&lP&#FFB832&lR&#FFBA3A&lE&#FFBD42&lV&#FFC049&lI&#FFC251&lO&#FFC559&lU&#FFC559&lS &#FFC559&lP&#FFC559&lA&#FFC559&lG&#FFC559&lE'
+    lore:
+    - '&8ᴇꜰꜰᴇᴄᴛs'
+    - ''
+    - '&#FFB52A| &#FFEFC5Click to go'
+    - '&#FFB52A| &#FFEFC5to page &#FFC5591'
+    - ''
+    - '&#FFB52A➥ &#FFB934C&#FFBA3Al&#FFBC3Fi&#FFBE44c&#FFC049k &#FFC354t&#FFC559o &#FFC559n&#FFC559a&#FFC559v&#FFC559i&#FFC559g&#FFC559a&#FFC559t&#FFC559e'
+    click_commands:
+    - '[openguimenu] CoinShop-Cosmetics-ParticleEffects-1'
+
+#############################################################################################
+# PURCHASABLE ITEMS
+#############################################################################################	
+
+  'ARCANE_FLAME':
+    material: 'SOUL_TORCH'
+    
+    item_flags: 
+      - HIDE_ATTRIBUTES
+      - HIDE_ADDITIONAL_TOOLTIP
+      - HIDE_ENCHANTS
+    slot: 10
+    display_name: '&#9932CC&lARCANE FLAME &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.particleeffects.arcaneflame}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴇꜰꜰᴇᴄᴛ'
+    - ''
+    - '&#9932CC• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#9932CC| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#9932CC| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.particleeffects.arcaneflame}_matcher:yes_ifmatch:&#9932CC➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#9932CC➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.particleeffects.arcaneflame"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ effect unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this effect!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.particleeffects.arcaneflame"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this effect unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.particleeffects.arcaneflame true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#9932CC&lARCANE FLAME &#FFEFC5effect!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle effects arcaneflame'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'DIVINE_HALO':
+    material: 'GLOWSTONE_DUST'
+    
+    item_flags: 
+      - HIDE_ATTRIBUTES
+      - HIDE_ADDITIONAL_TOOLTIP
+      - HIDE_ENCHANTS
+    slot: 11
+    display_name: '&#FFD700&lDIVINE HALO &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.particleeffects.divinehalo}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴇꜰꜰᴇᴄᴛ'
+    - ''
+    - '&#FFD700• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#FFD700| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#FFD700| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.particleeffects.divinehalo}_matcher:yes_ifmatch:&#FFD700➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#FFD700➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.particleeffects.divinehalo"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ effect unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this effect!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.particleeffects.divinehalo"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this effect unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.particleeffects.divinehalo true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#FFD700&lDIVINE HALO &#FFEFC5effect!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle effects divinehalo'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'SNOW_FOOTPRINTS':
+    material: 'SNOW_BLOCK'
+    
+    item_flags: 
+      - HIDE_ATTRIBUTES
+      - HIDE_ADDITIONAL_TOOLTIP
+      - HIDE_ENCHANTS
+    slot: 12
+    display_name: '&#FFFFFF&lSNOW FOOTPRINTS &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.particleeffects.snowfootprints}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴇꜰꜰᴇᴄᴛ'
+    - ''
+    - '&#FFFFFF• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#FFFFFF| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#FFFFFF| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.particleeffects.snowfootprints}_matcher:yes_ifmatch:&#FFFFFF➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#FFFFFF➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.particleeffects.snowfootprints"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ effect unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this effect!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.particleeffects.snowfootprints"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this effect unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.particleeffects.snowfootprints true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#FFFFFF&lSNOW FOOTPRINTS &#FFEFC5effect!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle effects snowfootprints'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'

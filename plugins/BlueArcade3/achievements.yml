@@ -1,0 +1,2675 @@
+file_version: 1
+category:
+  id: global
+  name: "Global"
+  description:
+    - "Achievements shared across every arena."
+  icon: NETHER_STAR
+  sort_order: 0
+
+achievements:
+  matchmaker:
+    name: "Matchmaker"
+    description:
+      - "Play matches across any arena."
+    icon: PAPER
+    phases:
+      1:
+        name: "First match"
+        description:
+          - "Play your first game."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 1"
+        rewards:
+          commands:
+            - "baa credits give {player} 10"
+            - "baa xp give {player} 20"
+          messages: []
+      2:
+        name: "Regular player"
+        description:
+          - "Play 10 games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 25"
+            - "baa xp give {player} 50"
+          messages: []
+      3:
+        name: "Dedicated player"
+        description:
+          - "Play 25 games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 50"
+            - "baa xp give {player} 100"
+          messages: []
+      4:
+        name: "Seasoned player"
+        description:
+          - "Play 50 games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 80"
+            - "baa xp give {player} 160"
+          messages: []
+      5:
+        name: "Match veteran"
+        description:
+          - "Play 100 games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 100"
+        rewards:
+          commands:
+            - "baa credits give {player} 120"
+            - "baa xp give {player} 240"
+          messages: []
+
+  time_spent:
+    name: "Always Around"
+    description:
+      - "Spend time playing TheySix Events."
+    icon: CLOCK
+    phases:
+      1:
+        name: "Ten minutes"
+        description:
+          - "Accumulate 10 minutes of playtime."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 600"
+        rewards:
+          commands:
+            - "baa credits give {player} 15"
+            - "baa xp give {player} 30"
+          messages: []
+      2:
+        name: "One hour"
+        description:
+          - "Accumulate 1 hour of playtime."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 3600"
+        rewards:
+          commands:
+            - "baa credits give {player} 35"
+            - "baa xp give {player} 70"
+          messages: []
+      3:
+        name: "Two hours"
+        description:
+          - "Accumulate 2 hours of playtime."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 7200"
+        rewards:
+          commands:
+            - "baa credits give {player} 60"
+            - "baa xp give {player} 120"
+          messages: []
+      4:
+        name: "Four hours"
+        description:
+          - "Accumulate 4 hours of playtime."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 14400"
+        rewards:
+          commands:
+            - "baa credits give {player} 90"
+            - "baa xp give {player} 180"
+          messages: []
+      5:
+        name: "Eight hours"
+        description:
+          - "Accumulate 8 hours of playtime."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 28800"
+        rewards:
+          commands:
+            - "baa credits give {player} 130"
+            - "baa xp give {player} 260"
+          messages: []
+
+  contender:
+    name: "Contender"
+    description:
+      - "Win matches and keep playing."
+    icon: GOLDEN_HELMET
+    phases:
+      1:
+        name: "First win"
+        description:
+          - "Win at least one match."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 1"
+        rewards:
+          commands:
+            - "baa credits give {player} 25"
+            - "baa xp give {player} 50"
+          messages: []
+      2:
+        name: "Ten wins"
+        description:
+          - "Win 10 matches."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 55"
+            - "baa xp give {player} 110"
+          messages: []
+      3:
+        name: "Twenty-five wins"
+        description:
+          - "Win 25 matches."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 85"
+            - "baa xp give {player} 170"
+          messages: []
+      4:
+        name: "Fifty wins"
+        description:
+          - "Win 50 matches."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 120"
+            - "baa xp give {player} 240"
+          messages: []
+      5:
+        name: "Hundred wins"
+        description:
+          - "Win 100 matches."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 100"
+        rewards:
+          commands:
+            - "baa credits give {player} 170"
+            - "baa xp give {player} 340"
+          messages: []
+
+  podium_chaser:
+    name: "Podium Chaser"
+    description:
+      - "Claim first place finishes."
+    icon: GOLD_BLOCK
+    phases:
+      1:
+        name: "First podium"
+        description:
+          - "Finish first once."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 1"
+        rewards:
+          commands:
+            - "baa credits give {player} 20"
+            - "baa xp give {player} 40"
+          messages: []
+      2:
+        name: "Podium regular"
+        description:
+          - "Finish first 5 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 45"
+            - "baa xp give {player} 90"
+          messages: []
+      3:
+        name: "Podium mainstay"
+        description:
+          - "Finish first 12 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 12"
+        rewards:
+          commands:
+            - "baa credits give {player} 70"
+            - "baa xp give {player} 140"
+          messages: []
+      4:
+        name: "Podium leader"
+        description:
+          - "Finish first 25 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 100"
+            - "baa xp give {player} 200"
+          messages: []
+      5:
+        name: "Podium star"
+        description:
+          - "Finish first 50 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 140"
+            - "baa xp give {player} 280"
+          messages: []
+
+  silver_seeker:
+    name: "Silver Seeker"
+    description:
+      - "Reach second place finishes."
+    icon: IRON_BLOCK
+    phases:
+      1:
+        name: "Runner-up"
+        description:
+          - "Finish second once."
+        conditions:
+          - "{theysixevents_stat_global_second_place} >= 1"
+        rewards:
+          commands:
+            - "baa credits give {player} 15"
+            - "baa xp give {player} 30"
+          messages: []
+      2:
+        name: "Silver streak"
+        description:
+          - "Finish second 5 times."
+        conditions:
+          - "{theysixevents_stat_global_second_place} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 35"
+            - "baa xp give {player} 70"
+          messages: []
+      3:
+        name: "Silver regular"
+        description:
+          - "Finish second 12 times."
+        conditions:
+          - "{theysixevents_stat_global_second_place} >= 12"
+        rewards:
+          commands:
+            - "baa credits give {player} 55"
+            - "baa xp give {player} 110"
+          messages: []
+      4:
+        name: "Silver fixture"
+        description:
+          - "Finish second 25 times."
+        conditions:
+          - "{theysixevents_stat_global_second_place} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 80"
+            - "baa xp give {player} 160"
+          messages: []
+      5:
+        name: "Silver legend"
+        description:
+          - "Finish second 45 times."
+        conditions:
+          - "{theysixevents_stat_global_second_place} >= 45"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+
+  bronze_seeker:
+    name: "Bronze Seeker"
+    description:
+      - "Secure third place finishes."
+    icon: COPPER_BLOCK
+    phases:
+      1:
+        name: "First bronze"
+        description:
+          - "Finish third once."
+        conditions:
+          - "{theysixevents_stat_global_third_place} >= 1"
+        rewards:
+          commands:
+            - "baa credits give {player} 15"
+            - "baa xp give {player} 30"
+          messages: []
+      2:
+        name: "Bronze collector"
+        description:
+          - "Finish third 5 times."
+        conditions:
+          - "{theysixevents_stat_global_third_place} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 35"
+            - "baa xp give {player} 70"
+          messages: []
+      3:
+        name: "Bronze regular"
+        description:
+          - "Finish third 12 times."
+        conditions:
+          - "{theysixevents_stat_global_third_place} >= 12"
+        rewards:
+          commands:
+            - "baa credits give {player} 55"
+            - "baa xp give {player} 110"
+          messages: []
+      4:
+        name: "Bronze fixture"
+        description:
+          - "Finish third 25 times."
+        conditions:
+          - "{theysixevents_stat_global_third_place} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 80"
+            - "baa xp give {player} 160"
+          messages: []
+      5:
+        name: "Bronze legend"
+        description:
+          - "Finish third 45 times."
+        conditions:
+          - "{theysixevents_stat_global_third_place} >= 45"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+
+  star_collector:
+    name: "Star Collector"
+    description:
+      - "Gather stars from your matches."
+    icon: NETHER_STAR
+    phases:
+      1:
+        name: "Shining start"
+        description:
+          - "Collect 10 stars."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 20"
+            - "baa xp give {player} 40"
+          messages: []
+      2:
+        name: "Star hoarder"
+        description:
+          - "Collect 50 stars."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 45"
+            - "baa xp give {player} 90"
+          messages: []
+      3:
+        name: "Star gatherer"
+        description:
+          - "Collect 120 stars."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 120"
+        rewards:
+          commands:
+            - "baa credits give {player} 70"
+            - "baa xp give {player} 140"
+          messages: []
+      4:
+        name: "Star collector"
+        description:
+          - "Collect 250 stars."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 250"
+        rewards:
+          commands:
+            - "baa credits give {player} 100"
+            - "baa xp give {player} 200"
+          messages: []
+      5:
+        name: "Star master"
+        description:
+          - "Collect 500 stars."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 500"
+        rewards:
+          commands:
+            - "baa credits give {player} 140"
+            - "baa xp give {player} 280"
+          messages: []
+
+  credit_earner:
+    name: "Credit Earner"
+    description:
+      - "Earn credits from gameplay."
+    icon: EMERALD
+    phases:
+      1:
+        name: "First payout"
+        description:
+          - "Earn 100 credits."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 100"
+        rewards:
+          commands:
+            - "baa credits give {player} 20"
+            - "baa xp give {player} 40"
+          messages: []
+      2:
+        name: "Growing balance"
+        description:
+          - "Earn 500 credits."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 500"
+        rewards:
+          commands:
+            - "baa credits give {player} 45"
+            - "baa xp give {player} 90"
+          messages: []
+      3:
+        name: "Healthy savings"
+        description:
+          - "Earn 1200 credits."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 1200"
+        rewards:
+          commands:
+            - "baa credits give {player} 70"
+            - "baa xp give {player} 140"
+          messages: []
+      4:
+        name: "Strong balance"
+        description:
+          - "Earn 2500 credits."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 2500"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+      5:
+        name: "Credit powerhouse"
+        description:
+          - "Earn 5000 credits."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 5000"
+        rewards:
+          commands:
+            - "baa credits give {player} 160"
+            - "baa xp give {player} 320"
+          messages: []
+
+  eliminator:
+    name: "Eliminator"
+    description:
+      - "Eliminate players during matches."
+    icon: IRON_SWORD
+    phases:
+      1:
+        name: "First elimination"
+        description:
+          - "Score 5 eliminations."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 20"
+            - "baa xp give {player} 40"
+          messages: []
+      2:
+        name: "Skilled fighter"
+        description:
+          - "Score 25 eliminations."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 50"
+            - "baa xp give {player} 100"
+          messages: []
+      3:
+        name: "Arena threat"
+        description:
+          - "Score 60 eliminations."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 80"
+            - "baa xp give {player} 160"
+          messages: []
+      4:
+        name: "Arena menace"
+        description:
+          - "Score 120 eliminations."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 120"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+      5:
+        name: "Arena executioner"
+        description:
+          - "Score 250 eliminations."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 250"
+        rewards:
+          commands:
+            - "baa credits give {player} 160"
+            - "baa xp give {player} 320"
+          messages: []
+
+  battle_scarred:
+    name: "Battle Scarred"
+    description:
+      - "Learn from defeats in the arena."
+    icon: SKELETON_SKULL
+    phases:
+      1:
+        name: "Tough start"
+        description:
+          - "Experience 5 defeats."
+        conditions:
+          - "{theysixevents_stat_global_deaths} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 10"
+            - "baa xp give {player} 20"
+          messages: []
+      2:
+        name: "Battle tested"
+        description:
+          - "Experience 25 defeats."
+        conditions:
+          - "{theysixevents_stat_global_deaths} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 30"
+            - "baa xp give {player} 60"
+          messages: []
+      3:
+        name: "Battle hardened"
+        description:
+          - "Experience 60 defeats."
+        conditions:
+          - "{theysixevents_stat_global_deaths} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 50"
+            - "baa xp give {player} 100"
+          messages: []
+      4:
+        name: "Battle survivor"
+        description:
+          - "Experience 120 defeats."
+        conditions:
+          - "{theysixevents_stat_global_deaths} >= 120"
+        rewards:
+          commands:
+            - "baa credits give {player} 75"
+            - "baa xp give {player} 150"
+          messages: []
+      5:
+        name: "Battle legend"
+        description:
+          - "Experience 250 defeats."
+        conditions:
+          - "{theysixevents_stat_global_deaths} >= 250"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+
+  win_streaker:
+    name: "Win Streaker"
+    description:
+      - "Build your best win streak."
+    icon: DIAMOND
+    phases:
+      1:
+        name: "Three in a row"
+        description:
+          - "Reach a best win streak of 3."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 3"
+        rewards:
+          commands:
+            - "baa credits give {player} 30"
+            - "baa xp give {player} 60"
+          messages: []
+      2:
+        name: "Five in a row"
+        description:
+          - "Reach a best win streak of 5."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 55"
+            - "baa xp give {player} 110"
+          messages: []
+      3:
+        name: "Eight in a row"
+        description:
+          - "Reach a best win streak of 8."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 8"
+        rewards:
+          commands:
+            - "baa credits give {player} 85"
+            - "baa xp give {player} 170"
+          messages: []
+      4:
+        name: "Twelve in a row"
+        description:
+          - "Reach a best win streak of 12."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 12"
+        rewards:
+          commands:
+            - "baa credits give {player} 120"
+            - "baa xp give {player} 240"
+          messages: []
+      5:
+        name: "Twenty in a row"
+        description:
+          - "Reach a best win streak of 20."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 20"
+        rewards:
+          commands:
+            - "baa credits give {player} 170"
+            - "baa xp give {player} 340"
+          messages: []
+
+  hot_streak:
+    name: "Hot Streak"
+    description:
+      - "Keep the current win streak alive."
+    icon: BLAZE_POWDER
+    phases:
+      1:
+        name: "Two straight"
+        description:
+          - "Hold a current win streak of 2."
+        conditions:
+          - "{theysixevents_stat_global_current_win_streak} >= 2"
+        rewards:
+          commands:
+            - "baa credits give {player} 25"
+            - "baa xp give {player} 50"
+          messages: []
+      2:
+        name: "Four straight"
+        description:
+          - "Hold a current win streak of 4."
+        conditions:
+          - "{theysixevents_stat_global_current_win_streak} >= 4"
+        rewards:
+          commands:
+            - "baa credits give {player} 50"
+            - "baa xp give {player} 100"
+          messages: []
+      3:
+        name: "Six straight"
+        description:
+          - "Hold a current win streak of 6."
+        conditions:
+          - "{theysixevents_stat_global_current_win_streak} >= 6"
+        rewards:
+          commands:
+            - "baa credits give {player} 80"
+            - "baa xp give {player} 160"
+          messages: []
+      4:
+        name: "Ten straight"
+        description:
+          - "Hold a current win streak of 10."
+        conditions:
+          - "{theysixevents_stat_global_current_win_streak} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+      5:
+        name: "Fifteen straight"
+        description:
+          - "Hold a current win streak of 15."
+        conditions:
+          - "{theysixevents_stat_global_current_win_streak} >= 15"
+        rewards:
+          commands:
+            - "baa credits give {player} 150"
+            - "baa xp give {player} 300"
+          messages: []
+
+  mini_game_fan:
+    name: "Mini-game Fan"
+    description:
+      - "Finish lots of mini-game rounds."
+    icon: SLIME_BALL
+    phases:
+      1:
+        name: "Round warm-up"
+        description:
+          - "Finish 5 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_mini_games_played} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 15"
+            - "baa xp give {player} 30"
+          messages: []
+      2:
+        name: "Round grinder"
+        description:
+          - "Finish 20 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_mini_games_played} >= 20"
+        rewards:
+          commands:
+            - "baa credits give {player} 40"
+            - "baa xp give {player} 80"
+          messages: []
+      3:
+        name: "Round finisher"
+        description:
+          - "Finish 40 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_mini_games_played} >= 40"
+        rewards:
+          commands:
+            - "baa credits give {player} 60"
+            - "baa xp give {player} 120"
+          messages: []
+      4:
+        name: "Round veteran"
+        description:
+          - "Finish 80 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_mini_games_played} >= 80"
+        rewards:
+          commands:
+            - "baa credits give {player} 90"
+            - "baa xp give {player} 180"
+          messages: []
+      5:
+        name: "Round legend"
+        description:
+          - "Finish 150 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_mini_games_played} >= 150"
+        rewards:
+          commands:
+            - "baa credits give {player} 130"
+            - "baa xp give {player} 260"
+          messages: []
+
+  arena_regular:
+    name: "Arena Regular"
+    description:
+      - "Show up often and stay in the action."
+    icon: MAP
+    phases:
+      1:
+        name: "Getting comfortable"
+        description:
+          - "Play 5 games and 30 minutes total."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 5 && {theysixevents_stat_global_time_played} >= 1800"
+        rewards:
+          commands:
+            - "baa credits give {player} 25"
+            - "baa xp give {player} 50"
+          messages: []
+      2:
+        name: "At home"
+        description:
+          - "Play 25 games and 2 hours total."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 25 && {theysixevents_stat_global_time_played} >= 7200"
+        rewards:
+          commands:
+            - "baa credits give {player} 60"
+            - "baa xp give {player} 120"
+          messages: []
+      3:
+        name: "Local fixture"
+        description:
+          - "Play 50 games and 4 hours total."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 50 && {theysixevents_stat_global_time_played} >= 14400"
+        rewards:
+          commands:
+            - "baa credits give {player} 90"
+            - "baa xp give {player} 180"
+          messages: []
+      4:
+        name: "Arena resident"
+        description:
+          - "Play 80 games and 6 hours total."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 80 && {theysixevents_stat_global_time_played} >= 21600"
+        rewards:
+          commands:
+            - "baa credits give {player} 130"
+            - "baa xp give {player} 260"
+          messages: []
+      5:
+        name: "Arena staple"
+        description:
+          - "Play 120 games and 8 hours total."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 120 && {theysixevents_stat_global_time_played} >= 28800"
+        rewards:
+          commands:
+            - "baa credits give {player} 180"
+            - "baa xp give {player} 360"
+          messages: []
+
+  victory_lap:
+    name: "Victory Lap"
+    description:
+      - "Win consistently as you play."
+    icon: DIAMOND_SWORD
+    phases:
+      1:
+        name: "Rising winner"
+        description:
+          - "Win 3 matches and play 10 games."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 3 && {theysixevents_stat_global_games_played} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 35"
+            - "baa xp give {player} 70"
+          messages: []
+      2:
+        name: "Seasoned winner"
+        description:
+          - "Win 15 matches and play 50 games."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 15 && {theysixevents_stat_global_games_played} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 70"
+            - "baa xp give {player} 140"
+          messages: []
+      3:
+        name: "Proven winner"
+        description:
+          - "Win 30 matches and play 90 games."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 30 && {theysixevents_stat_global_games_played} >= 90"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+      4:
+        name: "Dominant winner"
+        description:
+          - "Win 50 matches and play 140 games."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 50 && {theysixevents_stat_global_games_played} >= 140"
+        rewards:
+          commands:
+            - "baa credits give {player} 160"
+            - "baa xp give {player} 320"
+          messages: []
+      5:
+        name: "Victory ace"
+        description:
+          - "Win 80 matches and play 200 games."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 80 && {theysixevents_stat_global_games_played} >= 200"
+        rewards:
+          commands:
+            - "baa credits give {player} 220"
+            - "baa xp give {player} 440"
+          messages: []
+
+  podium_regular:
+    name: "Podium Regular"
+    description:
+      - "Earn all podium places."
+    icon: GOLDEN_BOOTS
+    phases:
+      1:
+        name: "Triple finish"
+        description:
+          - "Reach first, second, and third place twice."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 2 && {theysixevents_stat_global_second_place} >= 2 && {theysixevents_stat_global_third_place} >= 2"
+        rewards:
+          commands:
+            - "baa credits give {player} 35"
+            - "baa xp give {player} 70"
+          messages: []
+      2:
+        name: "Podium mix"
+        description:
+          - "Reach first, second, and third place 10 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 10 && {theysixevents_stat_global_second_place} >= 10 && {theysixevents_stat_global_third_place} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 75"
+            - "baa xp give {player} 150"
+          messages: []
+      3:
+        name: "Podium rotation"
+        description:
+          - "Reach first, second, and third place 20 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 20 && {theysixevents_stat_global_second_place} >= 20 && {theysixevents_stat_global_third_place} >= 20"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+      4:
+        name: "Podium staple"
+        description:
+          - "Reach first, second, and third place 35 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 35 && {theysixevents_stat_global_second_place} >= 35 && {theysixevents_stat_global_third_place} >= 35"
+        rewards:
+          commands:
+            - "baa credits give {player} 160"
+            - "baa xp give {player} 320"
+          messages: []
+      5:
+        name: "Podium veteran"
+        description:
+          - "Reach first, second, and third place 50 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 50 && {theysixevents_stat_global_second_place} >= 50 && {theysixevents_stat_global_third_place} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 220"
+            - "baa xp give {player} 440"
+          messages: []
+
+  star_runner:
+    name: "Star Runner"
+    description:
+      - "Collect stars while racing through games."
+    icon: GLOWSTONE_DUST
+    phases:
+      1:
+        name: "Bright start"
+        description:
+          - "Collect 25 stars across 10 games."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 25 && {theysixevents_stat_global_games_played} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 35"
+            - "baa xp give {player} 70"
+          messages: []
+      2:
+        name: "Shining path"
+        description:
+          - "Collect 100 stars across 50 games."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 100 && {theysixevents_stat_global_games_played} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 70"
+            - "baa xp give {player} 140"
+          messages: []
+      3:
+        name: "Radiant run"
+        description:
+          - "Collect 200 stars across 90 games."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 200 && {theysixevents_stat_global_games_played} >= 90"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+      4:
+        name: "Bright trail"
+        description:
+          - "Collect 350 stars across 140 games."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 350 && {theysixevents_stat_global_games_played} >= 140"
+        rewards:
+          commands:
+            - "baa credits give {player} 160"
+            - "baa xp give {player} 320"
+          messages: []
+      5:
+        name: "Star marathon"
+        description:
+          - "Collect 500 stars across 200 games."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 500 && {theysixevents_stat_global_games_played} >= 200"
+        rewards:
+          commands:
+            - "baa credits give {player} 220"
+            - "baa xp give {player} 440"
+          messages: []
+
+  credit_magnet:
+    name: "Credit Magnet"
+    description:
+      - "Grow your balance with steady play."
+    icon: GOLD_NUGGET
+    phases:
+      1:
+        name: "Pocket change"
+        description:
+          - "Earn 250 credits across 10 games."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 250 && {theysixevents_stat_global_games_played} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 30"
+            - "baa xp give {player} 60"
+          messages: []
+      2:
+        name: "Credit stack"
+        description:
+          - "Earn 1000 credits across 50 games."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 1000 && {theysixevents_stat_global_games_played} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 65"
+            - "baa xp give {player} 130"
+          messages: []
+      3:
+        name: "Credit stride"
+        description:
+          - "Earn 2000 credits across 90 games."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 2000 && {theysixevents_stat_global_games_played} >= 90"
+        rewards:
+          commands:
+            - "baa credits give {player} 100"
+            - "baa xp give {player} 200"
+          messages: []
+      4:
+        name: "Credit climb"
+        description:
+          - "Earn 3500 credits across 140 games."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 3500 && {theysixevents_stat_global_games_played} >= 140"
+        rewards:
+          commands:
+            - "baa credits give {player} 150"
+            - "baa xp give {player} 300"
+          messages: []
+      5:
+        name: "Credit titan"
+        description:
+          - "Earn 5000 credits across 200 games."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 5000 && {theysixevents_stat_global_games_played} >= 200"
+        rewards:
+          commands:
+            - "baa credits give {player} 210"
+            - "baa xp give {player} 420"
+          messages: []
+
+  marathoner:
+    name: "Marathoner"
+    description:
+      - "Play long sessions of mini-games."
+    icon: LEATHER_BOOTS
+    phases:
+      1:
+        name: "Long night"
+        description:
+          - "Play 1 hour and finish 5 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 3600 && {theysixevents_stat_global_mini_games_played} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 30"
+            - "baa xp give {player} 60"
+          messages: []
+      2:
+        name: "Endurance run"
+        description:
+          - "Play 4 hours and finish 25 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 14400 && {theysixevents_stat_global_mini_games_played} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 70"
+            - "baa xp give {player} 140"
+          messages: []
+      3:
+        name: "Endurance racer"
+        description:
+          - "Play 8 hours and finish 60 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 28800 && {theysixevents_stat_global_mini_games_played} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+      4:
+        name: "Endurance grinder"
+        description:
+          - "Play 12 hours and finish 100 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 43200 && {theysixevents_stat_global_mini_games_played} >= 100"
+        rewards:
+          commands:
+            - "baa credits give {player} 160"
+            - "baa xp give {player} 320"
+          messages: []
+      5:
+        name: "Endurance legend"
+        description:
+          - "Play 20 hours and finish 160 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 72000 && {theysixevents_stat_global_mini_games_played} >= 160"
+        rewards:
+          commands:
+            - "baa credits give {player} 220"
+            - "baa xp give {player} 440"
+          messages: []
+
+  slayer:
+    name: "Slayer"
+    description:
+      - "Combine eliminations with victories."
+    icon: NETHERITE_SWORD
+    phases:
+      1:
+        name: "Sharp blade"
+        description:
+          - "Score 10 eliminations and win 3 matches."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 10 && {theysixevents_stat_global_wins} >= 3"
+        rewards:
+          commands:
+            - "baa credits give {player} 40"
+            - "baa xp give {player} 80"
+          messages: []
+      2:
+        name: "Arena slayer"
+        description:
+          - "Score 50 eliminations and win 15 matches."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 50 && {theysixevents_stat_global_wins} >= 15"
+        rewards:
+          commands:
+            - "baa credits give {player} 80"
+            - "baa xp give {player} 160"
+          messages: []
+      3:
+        name: "Arena hunter"
+        description:
+          - "Score 120 eliminations and win 30 matches."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 120 && {theysixevents_stat_global_wins} >= 30"
+        rewards:
+          commands:
+            - "baa credits give {player} 120"
+            - "baa xp give {player} 240"
+          messages: []
+      4:
+        name: "Arena reaper"
+        description:
+          - "Score 200 eliminations and win 50 matches."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 200 && {theysixevents_stat_global_wins} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 170"
+            - "baa xp give {player} 340"
+          messages: []
+      5:
+        name: "Arena executioner"
+        description:
+          - "Score 350 eliminations and win 80 matches."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 350 && {theysixevents_stat_global_wins} >= 80"
+        rewards:
+          commands:
+            - "baa credits give {player} 240"
+            - "baa xp give {player} 480"
+          messages: []
+
+  comeback_kid:
+    name: "Comeback Kid"
+    description:
+      - "Win despite setbacks."
+    icon: TOTEM_OF_UNDYING
+    phases:
+      1:
+        name: "Bounce back"
+        description:
+          - "Win 3 matches after 10 defeats."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 3 && {theysixevents_stat_global_deaths} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 30"
+            - "baa xp give {player} 60"
+          messages: []
+      2:
+        name: "Never give up"
+        description:
+          - "Win 15 matches after 50 defeats."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 15 && {theysixevents_stat_global_deaths} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 65"
+            - "baa xp give {player} 130"
+          messages: []
+      3:
+        name: "Comeback master"
+        description:
+          - "Win 30 matches after 100 defeats."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 30 && {theysixevents_stat_global_deaths} >= 100"
+        rewards:
+          commands:
+            - "baa credits give {player} 100"
+            - "baa xp give {player} 200"
+          messages: []
+      4:
+        name: "Relentless"
+        description:
+          - "Win 50 matches after 160 defeats."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 50 && {theysixevents_stat_global_deaths} >= 160"
+        rewards:
+          commands:
+            - "baa credits give {player} 150"
+            - "baa xp give {player} 300"
+          messages: []
+      5:
+        name: "Never broken"
+        description:
+          - "Win 80 matches after 240 defeats."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 80 && {theysixevents_stat_global_deaths} >= 240"
+        rewards:
+          commands:
+            - "baa credits give {player} 210"
+            - "baa xp give {player} 420"
+          messages: []
+
+  risk_taker:
+    name: "Risk Taker"
+    description:
+      - "Fight often, win or lose."
+    icon: SHIELD
+    phases:
+      1:
+        name: "In the mix"
+        description:
+          - "Reach 20 eliminations and 20 defeats."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 20 && {theysixevents_stat_global_deaths} >= 20"
+        rewards:
+          commands:
+            - "baa credits give {player} 35"
+            - "baa xp give {player} 70"
+          messages: []
+      2:
+        name: "Seasoned fighter"
+        description:
+          - "Reach 100 eliminations and 100 defeats."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 100 && {theysixevents_stat_global_deaths} >= 100"
+        rewards:
+          commands:
+            - "baa credits give {player} 80"
+            - "baa xp give {player} 160"
+          messages: []
+      3:
+        name: "Battle-hardened"
+        description:
+          - "Reach 200 eliminations and 200 defeats."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 200 && {theysixevents_stat_global_deaths} >= 200"
+        rewards:
+          commands:
+            - "baa credits give {player} 120"
+            - "baa xp give {player} 240"
+          messages: []
+      4:
+        name: "War-torn"
+        description:
+          - "Reach 350 eliminations and 350 defeats."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 350 && {theysixevents_stat_global_deaths} >= 350"
+        rewards:
+          commands:
+            - "baa credits give {player} 170"
+            - "baa xp give {player} 340"
+          messages: []
+      5:
+        name: "Battle veteran"
+        description:
+          - "Reach 500 eliminations and 500 defeats."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 500 && {theysixevents_stat_global_deaths} >= 500"
+        rewards:
+          commands:
+            - "baa credits give {player} 240"
+            - "baa xp give {player} 480"
+          messages: []
+
+  rising_star:
+    name: "Rising Star"
+    description:
+      - "Win matches and earn stars."
+    icon: AMETHYST_SHARD
+    phases:
+      1:
+        name: "Spark"
+        description:
+          - "Collect 30 stars and win 5 matches."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 30 && {theysixevents_stat_global_wins} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 40"
+            - "baa xp give {player} 80"
+          messages: []
+      2:
+        name: "Glow"
+        description:
+          - "Collect 150 stars and win 20 matches."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 150 && {theysixevents_stat_global_wins} >= 20"
+        rewards:
+          commands:
+            - "baa credits give {player} 85"
+            - "baa xp give {player} 170"
+          messages: []
+      3:
+        name: "Radiate"
+        description:
+          - "Collect 300 stars and win 40 matches."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 300 && {theysixevents_stat_global_wins} >= 40"
+        rewards:
+          commands:
+            - "baa credits give {player} 130"
+            - "baa xp give {player} 260"
+          messages: []
+      4:
+        name: "Shine bright"
+        description:
+          - "Collect 500 stars and win 60 matches."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 500 && {theysixevents_stat_global_wins} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 180"
+            - "baa xp give {player} 360"
+          messages: []
+      5:
+        name: "Stellar"
+        description:
+          - "Collect 750 stars and win 90 matches."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 750 && {theysixevents_stat_global_wins} >= 90"
+        rewards:
+          commands:
+            - "baa credits give {player} 250"
+            - "baa xp give {player} 500"
+          messages: []
+
+  golden_hand:
+    name: "Golden Hand"
+    description:
+      - "Earn credits and victories together."
+    icon: GOLD_INGOT
+    phases:
+      1:
+        name: "Profitable wins"
+        description:
+          - "Earn 300 credits and win 5 matches."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 300 && {theysixevents_stat_global_wins} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 35"
+            - "baa xp give {player} 70"
+          messages: []
+      2:
+        name: "Golden streak"
+        description:
+          - "Earn 1500 credits and win 20 matches."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 1500 && {theysixevents_stat_global_wins} >= 20"
+        rewards:
+          commands:
+            - "baa credits give {player} 75"
+            - "baa xp give {player} 150"
+          messages: []
+      3:
+        name: "Golden charge"
+        description:
+          - "Earn 3000 credits and win 40 matches."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 3000 && {theysixevents_stat_global_wins} >= 40"
+        rewards:
+          commands:
+            - "baa credits give {player} 120"
+            - "baa xp give {player} 240"
+          messages: []
+      4:
+        name: "Golden surge"
+        description:
+          - "Earn 5000 credits and win 60 matches."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 5000 && {theysixevents_stat_global_wins} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 170"
+            - "baa xp give {player} 340"
+          messages: []
+      5:
+        name: "Golden legacy"
+        description:
+          - "Earn 8000 credits and win 90 matches."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 8000 && {theysixevents_stat_global_wins} >= 90"
+        rewards:
+          commands:
+            - "baa credits give {player} 240"
+            - "baa xp give {player} 480"
+          messages: []
+
+  full_house:
+    name: "Full House"
+    description:
+      - "Play consistently across rounds."
+    icon: CHEST
+    phases:
+      1:
+        name: "Room warmed"
+        description:
+          - "Play 10 games and finish 10 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 10 && {theysixevents_stat_global_mini_games_played} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 30"
+            - "baa xp give {player} 60"
+          messages: []
+      2:
+        name: "House full"
+        description:
+          - "Play 50 games and finish 50 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 50 && {theysixevents_stat_global_mini_games_played} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 70"
+            - "baa xp give {player} 140"
+          messages: []
+      3:
+        name: "Packed house"
+        description:
+          - "Play 90 games and finish 90 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 90 && {theysixevents_stat_global_mini_games_played} >= 90"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+      4:
+        name: "Grand house"
+        description:
+          - "Play 140 games and finish 140 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 140 && {theysixevents_stat_global_mini_games_played} >= 140"
+        rewards:
+          commands:
+            - "baa credits give {player} 160"
+            - "baa xp give {player} 320"
+          messages: []
+      5:
+        name: "Hall of play"
+        description:
+          - "Play 200 games and finish 200 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 200 && {theysixevents_stat_global_mini_games_played} >= 200"
+        rewards:
+          commands:
+            - "baa credits give {player} 220"
+            - "baa xp give {player} 440"
+          messages: []
+
+  podium_legend:
+    name: "Podium Legend"
+    description:
+      - "Win and secure first place finishes."
+    icon: EMERALD_BLOCK
+    phases:
+      1:
+        name: "Leading"
+        description:
+          - "Win 5 matches and finish first 3 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 5 && {theysixevents_stat_global_first_place} >= 3"
+        rewards:
+          commands:
+            - "baa credits give {player} 45"
+            - "baa xp give {player} 90"
+          messages: []
+      2:
+        name: "Legendary"
+        description:
+          - "Win 20 matches and finish first 15 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 20 && {theysixevents_stat_global_first_place} >= 15"
+        rewards:
+          commands:
+            - "baa credits give {player} 90"
+            - "baa xp give {player} 180"
+          messages: []
+      3:
+        name: "Elite leader"
+        description:
+          - "Win 40 matches and finish first 30 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 40 && {theysixevents_stat_global_first_place} >= 30"
+        rewards:
+          commands:
+            - "baa credits give {player} 130"
+            - "baa xp give {player} 260"
+          messages: []
+      4:
+        name: "Podium icon"
+        description:
+          - "Win 60 matches and finish first 45 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 60 && {theysixevents_stat_global_first_place} >= 45"
+        rewards:
+          commands:
+            - "baa credits give {player} 180"
+            - "baa xp give {player} 360"
+          messages: []
+      5:
+        name: "Podium royalty"
+        description:
+          - "Win 90 matches and finish first 70 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 90 && {theysixevents_stat_global_first_place} >= 70"
+        rewards:
+          commands:
+            - "baa credits give {player} 250"
+            - "baa xp give {player} 500"
+          messages: []
+
+  steady_climber:
+    name: "Steady Climber"
+    description:
+      - "Build streaks over time."
+    icon: LADDER
+    phases:
+      1:
+        name: "Climbing"
+        description:
+          - "Reach a best streak of 3 after 15 games."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 3 && {theysixevents_stat_global_games_played} >= 15"
+        rewards:
+          commands:
+            - "baa credits give {player} 35"
+            - "baa xp give {player} 70"
+          messages: []
+      2:
+        name: "Above the rest"
+        description:
+          - "Reach a best streak of 6 after 50 games."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 6 && {theysixevents_stat_global_games_played} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 75"
+            - "baa xp give {player} 150"
+          messages: []
+      3:
+        name: "On the rise"
+        description:
+          - "Reach a best streak of 9 after 90 games."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 9 && {theysixevents_stat_global_games_played} >= 90"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+      4:
+        name: "Skyline"
+        description:
+          - "Reach a best streak of 12 after 140 games."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 12 && {theysixevents_stat_global_games_played} >= 140"
+        rewards:
+          commands:
+            - "baa credits give {player} 160"
+            - "baa xp give {player} 320"
+          messages: []
+      5:
+        name: "Peak climber"
+        description:
+          - "Reach a best streak of 16 after 200 games."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 16 && {theysixevents_stat_global_games_played} >= 200"
+        rewards:
+          commands:
+            - "baa credits give {player} 220"
+            - "baa xp give {player} 440"
+          messages: []
+
+  crowd_favorite:
+    name: "Crowd Favorite"
+    description:
+      - "Lead the podium with star power."
+    icon: FIREWORK_ROCKET
+    phases:
+      1:
+        name: "Fan glow"
+        description:
+          - "Collect 40 stars and finish first 2 times."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 40 && {theysixevents_stat_global_first_place} >= 2"
+        rewards:
+          commands:
+            - "baa credits give {player} 40"
+            - "baa xp give {player} 80"
+          messages: []
+      2:
+        name: "Fan favorite"
+        description:
+          - "Collect 120 stars and finish first 10 times."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 120 && {theysixevents_stat_global_first_place} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 85"
+            - "baa xp give {player} 170"
+          messages: []
+      3:
+        name: "Fan legend"
+        description:
+          - "Collect 220 stars and finish first 20 times."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 220 && {theysixevents_stat_global_first_place} >= 20"
+        rewards:
+          commands:
+            - "baa credits give {player} 130"
+            - "baa xp give {player} 260"
+          messages: []
+      4:
+        name: "Crowd icon"
+        description:
+          - "Collect 350 stars and finish first 30 times."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 350 && {theysixevents_stat_global_first_place} >= 30"
+        rewards:
+          commands:
+            - "baa credits give {player} 180"
+            - "baa xp give {player} 360"
+          messages: []
+      5:
+        name: "Arena favorite"
+        description:
+          - "Collect 500 stars and finish first 45 times."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 500 && {theysixevents_stat_global_first_place} >= 45"
+        rewards:
+          commands:
+            - "baa credits give {player} 250"
+            - "baa xp give {player} 500"
+          messages: []
+
+  shining_champion:
+    name: "Shining Champion"
+    description:
+      - "Place high and win matches."
+    icon: SEA_LANTERN
+    phases:
+      1:
+        name: "Bright result"
+        description:
+          - "Win 10 matches with 5 second and third places."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 10 && {theysixevents_stat_global_second_place} >= 5 && {theysixevents_stat_global_third_place} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 50"
+            - "baa xp give {player} 100"
+          messages: []
+      2:
+        name: "Radiant champion"
+        description:
+          - "Win 30 matches with 15 second and third places."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 30 && {theysixevents_stat_global_second_place} >= 15 && {theysixevents_stat_global_third_place} >= 15"
+        rewards:
+          commands:
+            - "baa credits give {player} 95"
+            - "baa xp give {player} 190"
+          messages: []
+      3:
+        name: "Shining leader"
+        description:
+          - "Win 50 matches with 25 second and third places."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 50 && {theysixevents_stat_global_second_place} >= 25 && {theysixevents_stat_global_third_place} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 140"
+            - "baa xp give {player} 280"
+          messages: []
+      4:
+        name: "Radiant hero"
+        description:
+          - "Win 80 matches with 40 second and third places."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 80 && {theysixevents_stat_global_second_place} >= 40 && {theysixevents_stat_global_third_place} >= 40"
+        rewards:
+          commands:
+            - "baa credits give {player} 200"
+            - "baa xp give {player} 400"
+          messages: []
+      5:
+        name: "Luminous champion"
+        description:
+          - "Win 120 matches with 60 second and third places."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 120 && {theysixevents_stat_global_second_place} >= 60 && {theysixevents_stat_global_third_place} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 280"
+            - "baa xp give {player} 560"
+          messages: []
+
+  total_domination:
+    name: "Total Domination"
+    description:
+      - "Rule the arena with wins, stars, and podiums."
+    icon: NETHERITE_INGOT
+    phases:
+      1:
+        name: "Dominant"
+        description:
+          - "Win 15 matches, collect 80 stars, and finish first 5 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 15 && {theysixevents_stat_global_stars} >= 80 && {theysixevents_stat_global_first_place} >= 5"
+        rewards:
+          commands:
+            - "baa credits give {player} 80"
+            - "baa xp give {player} 160"
+          messages: []
+      2:
+        name: "Unstoppable"
+        description:
+          - "Win 40 matches, collect 200 stars, and finish first 20 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 40 && {theysixevents_stat_global_stars} >= 200 && {theysixevents_stat_global_first_place} >= 20"
+        rewards:
+          commands:
+            - "baa credits give {player} 130"
+            - "baa xp give {player} 260"
+          messages: []
+      3:
+        name: "Overwhelming"
+        description:
+          - "Win 70 matches, collect 350 stars, and finish first 35 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 70 && {theysixevents_stat_global_stars} >= 350 && {theysixevents_stat_global_first_place} >= 35"
+        rewards:
+          commands:
+            - "baa credits give {player} 180"
+            - "baa xp give {player} 360"
+          messages: []
+      4:
+        name: "Supreme"
+        description:
+          - "Win 110 matches, collect 500 stars, and finish first 55 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 110 && {theysixevents_stat_global_stars} >= 500 && {theysixevents_stat_global_first_place} >= 55"
+        rewards:
+          commands:
+            - "baa credits give {player} 240"
+            - "baa xp give {player} 480"
+          messages: []
+      5:
+        name: "Total ruler"
+        description:
+          - "Win 160 matches, collect 700 stars, and finish first 80 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 160 && {theysixevents_stat_global_stars} >= 700 && {theysixevents_stat_global_first_place} >= 80"
+        rewards:
+          commands:
+            - "baa credits give {player} 320"
+            - "baa xp give {player} 640"
+          messages: []
+
+  arena_explorer:
+    name: "Arena Explorer"
+    description:
+      - "Finish plenty of matches and mini-games."
+    icon: COMPASS
+    phases:
+      1:
+        name: "Exploring"
+        description:
+          - "Play 15 games and finish 15 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 15 && {theysixevents_stat_global_mini_games_played} >= 15"
+        rewards:
+          commands:
+            - "baa credits give {player} 35"
+            - "baa xp give {player} 70"
+          messages: []
+      2:
+        name: "World tour"
+        description:
+          - "Play 60 games and finish 60 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 60 && {theysixevents_stat_global_mini_games_played} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 75"
+            - "baa xp give {player} 150"
+          messages: []
+      3:
+        name: "Globe trek"
+        description:
+          - "Play 110 games and finish 110 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 110 && {theysixevents_stat_global_mini_games_played} >= 110"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+      4:
+        name: "World circuit"
+        description:
+          - "Play 170 games and finish 170 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 170 && {theysixevents_stat_global_mini_games_played} >= 170"
+        rewards:
+          commands:
+            - "baa credits give {player} 160"
+            - "baa xp give {player} 320"
+          messages: []
+      5:
+        name: "Planet explorer"
+        description:
+          - "Play 240 games and finish 240 mini-games."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 240 && {theysixevents_stat_global_mini_games_played} >= 240"
+        rewards:
+          commands:
+            - "baa credits give {player} 220"
+            - "baa xp give {player} 440"
+          messages: []
+
+  iron_will:
+    name: "Iron Will"
+    description:
+      - "Keep playing through defeats."
+    icon: ANVIL
+    phases:
+      1:
+        name: "Unshaken"
+        description:
+          - "Experience 40 defeats and play 20 games."
+        conditions:
+          - "{theysixevents_stat_global_deaths} >= 40 && {theysixevents_stat_global_games_played} >= 20"
+        rewards:
+          commands:
+            - "baa credits give {player} 30"
+            - "baa xp give {player} 60"
+          messages: []
+      2:
+        name: "Unbreakable"
+        description:
+          - "Experience 120 defeats and play 80 games."
+        conditions:
+          - "{theysixevents_stat_global_deaths} >= 120 && {theysixevents_stat_global_games_played} >= 80"
+        rewards:
+          commands:
+            - "baa credits give {player} 70"
+            - "baa xp give {player} 140"
+          messages: []
+      3:
+        name: "Steel will"
+        description:
+          - "Experience 220 defeats and play 140 games."
+        conditions:
+          - "{theysixevents_stat_global_deaths} >= 220 && {theysixevents_stat_global_games_played} >= 140"
+        rewards:
+          commands:
+            - "baa credits give {player} 110"
+            - "baa xp give {player} 220"
+          messages: []
+      4:
+        name: "Iron resolve"
+        description:
+          - "Experience 320 defeats and play 200 games."
+        conditions:
+          - "{theysixevents_stat_global_deaths} >= 320 && {theysixevents_stat_global_games_played} >= 200"
+        rewards:
+          commands:
+            - "baa credits give {player} 160"
+            - "baa xp give {player} 320"
+          messages: []
+      5:
+        name: "Unyielding"
+        description:
+          - "Experience 450 defeats and play 280 games."
+        conditions:
+          - "{theysixevents_stat_global_deaths} >= 450 && {theysixevents_stat_global_games_played} >= 280"
+        rewards:
+          commands:
+            - "baa credits give {player} 220"
+            - "baa xp give {player} 440"
+          messages: []
+
+  star_guardian:
+    name: "Star Guardian"
+    description:
+      - "Stack stars with steady wins."
+    icon: END_CRYSTAL
+    phases:
+      1:
+        name: "Guardian"
+        description:
+          - "Collect 60 stars and win 10 matches."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 60 && {theysixevents_stat_global_wins} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 45"
+            - "baa xp give {player} 90"
+          messages: []
+      2:
+        name: "Star keeper"
+        description:
+          - "Collect 180 stars and win 30 matches."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 180 && {theysixevents_stat_global_wins} >= 30"
+        rewards:
+          commands:
+            - "baa credits give {player} 90"
+            - "baa xp give {player} 180"
+          messages: []
+      3:
+        name: "Star warden"
+        description:
+          - "Collect 320 stars and win 50 matches."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 320 && {theysixevents_stat_global_wins} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 130"
+            - "baa xp give {player} 260"
+          messages: []
+      4:
+        name: "Star protector"
+        description:
+          - "Collect 500 stars and win 75 matches."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 500 && {theysixevents_stat_global_wins} >= 75"
+        rewards:
+          commands:
+            - "baa credits give {player} 180"
+            - "baa xp give {player} 360"
+          messages: []
+      5:
+        name: "Star sentinel"
+        description:
+          - "Collect 750 stars and win 110 matches."
+        conditions:
+          - "{theysixevents_stat_global_stars} >= 750 && {theysixevents_stat_global_wins} >= 110"
+        rewards:
+          commands:
+            - "baa credits give {player} 250"
+            - "baa xp give {player} 500"
+          messages: []
+
+  victory_credit:
+    name: "Victory Credit"
+    description:
+      - "Earn credits while stacking wins."
+    icon: SUNFLOWER
+    phases:
+      1:
+        name: "Paid off"
+        description:
+          - "Earn 600 credits and win 10 matches."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 600 && {theysixevents_stat_global_wins} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 50"
+            - "baa xp give {player} 100"
+          messages: []
+      2:
+        name: "Rich winner"
+        description:
+          - "Earn 2000 credits and win 30 matches."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 2000 && {theysixevents_stat_global_wins} >= 30"
+        rewards:
+          commands:
+            - "baa credits give {player} 100"
+            - "baa xp give {player} 200"
+          messages: []
+      3:
+        name: "Wealthy winner"
+        description:
+          - "Earn 3500 credits and win 50 matches."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 3500 && {theysixevents_stat_global_wins} >= 50"
+        rewards:
+          commands:
+            - "baa credits give {player} 150"
+            - "baa xp give {player} 300"
+          messages: []
+      4:
+        name: "Victory fortune"
+        description:
+          - "Earn 5500 credits and win 80 matches."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 5500 && {theysixevents_stat_global_wins} >= 80"
+        rewards:
+          commands:
+            - "baa credits give {player} 210"
+            - "baa xp give {player} 420"
+          messages: []
+      5:
+        name: "Victory tycoon"
+        description:
+          - "Earn 8000 credits and win 120 matches."
+        conditions:
+          - "{theysixevents_stat_global_credits} >= 8000 && {theysixevents_stat_global_wins} >= 120"
+        rewards:
+          commands:
+            - "baa credits give {player} 280"
+            - "baa xp give {player} 560"
+          messages: []
+
+  champion_stride:
+    name: "Champion Stride"
+    description:
+      - "Keep progressing with time and wins."
+    icon: DIAMOND_BOOTS
+    phases:
+      1:
+        name: "Focused"
+        description:
+          - "Play 2 hours and win 8 matches."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 7200 && {theysixevents_stat_global_wins} >= 8"
+        rewards:
+          commands:
+            - "baa credits give {player} 40"
+            - "baa xp give {player} 80"
+          messages: []
+      2:
+        name: "Relentless"
+        description:
+          - "Play 6 hours and win 25 matches."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 21600 && {theysixevents_stat_global_wins} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 85"
+            - "baa xp give {player} 170"
+          messages: []
+      3:
+        name: "Unwavering"
+        description:
+          - "Play 10 hours and win 45 matches."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 36000 && {theysixevents_stat_global_wins} >= 45"
+        rewards:
+          commands:
+            - "baa credits give {player} 130"
+            - "baa xp give {player} 260"
+          messages: []
+      4:
+        name: "Driven"
+        description:
+          - "Play 15 hours and win 70 matches."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 54000 && {theysixevents_stat_global_wins} >= 70"
+        rewards:
+          commands:
+            - "baa credits give {player} 180"
+            - "baa xp give {player} 360"
+          messages: []
+      5:
+        name: "Unstoppable"
+        description:
+          - "Play 20 hours and win 100 matches."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 72000 && {theysixevents_stat_global_wins} >= 100"
+        rewards:
+          commands:
+            - "baa credits give {player} 250"
+            - "baa xp give {player} 500"
+          messages: []
+
+  relentless_play:
+    name: "Relentless Play"
+    description:
+      - "Win and play with high volume."
+    icon: OBSIDIAN
+    phases:
+      1:
+        name: "Dedicated"
+        description:
+          - "Play 30 games and win 10 matches."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 30 && {theysixevents_stat_global_wins} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 45"
+            - "baa xp give {player} 90"
+          messages: []
+      2:
+        name: "Unstoppable"
+        description:
+          - "Play 100 games and win 35 matches."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 100 && {theysixevents_stat_global_wins} >= 35"
+        rewards:
+          commands:
+            - "baa credits give {player} 95"
+            - "baa xp give {player} 190"
+          messages: []
+      3:
+        name: "Relentless"
+        description:
+          - "Play 180 games and win 60 matches."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 180 && {theysixevents_stat_global_wins} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 140"
+            - "baa xp give {player} 280"
+          messages: []
+      4:
+        name: "Endless"
+        description:
+          - "Play 260 games and win 85 matches."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 260 && {theysixevents_stat_global_wins} >= 85"
+        rewards:
+          commands:
+            - "baa credits give {player} 200"
+            - "baa xp give {player} 400"
+          messages: []
+      5:
+        name: "Tireless"
+        description:
+          - "Play 360 games and win 120 matches."
+        conditions:
+          - "{theysixevents_stat_global_games_played} >= 360 && {theysixevents_stat_global_wins} >= 120"
+        rewards:
+          commands:
+            - "baa credits give {player} 280"
+            - "baa xp give {player} 560"
+          messages: []
+
+  podium_mix:
+    name: "Podium Mix"
+    description:
+      - "Earn a balanced spread of podium finishes."
+    icon: ARMOR_STAND
+    phases:
+      1:
+        name: "Balanced"
+        description:
+          - "Reach each podium place 3 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 3 && {theysixevents_stat_global_second_place} >= 3 && {theysixevents_stat_global_third_place} >= 3"
+        rewards:
+          commands:
+            - "baa credits give {player} 40"
+            - "baa xp give {player} 80"
+          messages: []
+      2:
+        name: "Master of podiums"
+        description:
+          - "Reach each podium place 12 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 12 && {theysixevents_stat_global_second_place} >= 12 && {theysixevents_stat_global_third_place} >= 12"
+        rewards:
+          commands:
+            - "baa credits give {player} 85"
+            - "baa xp give {player} 170"
+          messages: []
+      3:
+        name: "Podium balancer"
+        description:
+          - "Reach each podium place 25 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 25 && {theysixevents_stat_global_second_place} >= 25 && {theysixevents_stat_global_third_place} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 130"
+            - "baa xp give {player} 260"
+          messages: []
+      4:
+        name: "Podium handler"
+        description:
+          - "Reach each podium place 40 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 40 && {theysixevents_stat_global_second_place} >= 40 && {theysixevents_stat_global_third_place} >= 40"
+        rewards:
+          commands:
+            - "baa credits give {player} 180"
+            - "baa xp give {player} 360"
+          messages: []
+      5:
+        name: "Podium architect"
+        description:
+          - "Reach each podium place 60 times."
+        conditions:
+          - "{theysixevents_stat_global_first_place} >= 60 && {theysixevents_stat_global_second_place} >= 60 && {theysixevents_stat_global_third_place} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 250"
+            - "baa xp give {player} 500"
+          messages: []
+
+  seasoned_veteran:
+    name: "Seasoned Veteran"
+    description:
+      - "Combine wins with long playtime."
+    icon: EXPERIENCE_BOTTLE
+    phases:
+      1:
+        name: "Experienced"
+        description:
+          - "Play 3 hours and win 12 matches."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 10800 && {theysixevents_stat_global_wins} >= 12"
+        rewards:
+          commands:
+            - "baa credits give {player} 45"
+            - "baa xp give {player} 90"
+          messages: []
+      2:
+        name: "Veteran"
+        description:
+          - "Play 8 hours and win 30 matches."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 28800 && {theysixevents_stat_global_wins} >= 30"
+        rewards:
+          commands:
+            - "baa credits give {player} 95"
+            - "baa xp give {player} 190"
+          messages: []
+      3:
+        name: "Seasoned"
+        description:
+          - "Play 12 hours and win 55 matches."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 45000 && {theysixevents_stat_global_wins} >= 55"
+        rewards:
+          commands:
+            - "baa credits give {player} 140"
+            - "baa xp give {player} 280"
+          messages: []
+      4:
+        name: "Experienced"
+        description:
+          - "Play 18 hours and win 80 matches."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 64800 && {theysixevents_stat_global_wins} >= 80"
+        rewards:
+          commands:
+            - "baa credits give {player} 200"
+            - "baa xp give {player} 400"
+          messages: []
+      5:
+        name: "Legendary"
+        description:
+          - "Play 25 hours and win 120 matches."
+        conditions:
+          - "{theysixevents_stat_global_time_played} >= 90000 && {theysixevents_stat_global_wins} >= 120"
+        rewards:
+          commands:
+            - "baa credits give {player} 280"
+            - "baa xp give {player} 560"
+          messages: []
+
+  crowd_control:
+    name: "Crowd Control"
+    description:
+      - "Pair eliminations with steady wins."
+    icon: CROSSBOW
+    phases:
+      1:
+        name: "Controlled"
+        description:
+          - "Score 30 eliminations and win 8 matches."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 30 && {theysixevents_stat_global_wins} >= 8"
+        rewards:
+          commands:
+            - "baa credits give {player} 45"
+            - "baa xp give {player} 90"
+          messages: []
+      2:
+        name: "In command"
+        description:
+          - "Score 80 eliminations and win 20 matches."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 80 && {theysixevents_stat_global_wins} >= 20"
+        rewards:
+          commands:
+            - "baa credits give {player} 90"
+            - "baa xp give {player} 180"
+          messages: []
+      3:
+        name: "Battle commander"
+        description:
+          - "Score 140 eliminations and win 40 matches."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 140 && {theysixevents_stat_global_wins} >= 40"
+        rewards:
+          commands:
+            - "baa credits give {player} 130"
+            - "baa xp give {player} 260"
+          messages: []
+      4:
+        name: "Arena commander"
+        description:
+          - "Score 220 eliminations and win 60 matches."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 220 && {theysixevents_stat_global_wins} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 180"
+            - "baa xp give {player} 360"
+          messages: []
+      5:
+        name: "Warlord"
+        description:
+          - "Score 320 eliminations and win 85 matches."
+        conditions:
+          - "{theysixevents_stat_global_kills} >= 320 && {theysixevents_stat_global_wins} >= 85"
+        rewards:
+          commands:
+            - "baa credits give {player} 250"
+            - "baa xp give {player} 500"
+          messages: []
+
+  arena_icon:
+    name: "Arena Icon"
+    description:
+      - "Mix wins, stars, and credits."
+    icon: DRAGON_HEAD
+    phases:
+      1:
+        name: "Iconic"
+        description:
+          - "Win 12 matches, collect 90 stars, and earn 800 credits."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 12 && {theysixevents_stat_global_stars} >= 90 && {theysixevents_stat_global_credits} >= 800"
+        rewards:
+          commands:
+            - "baa credits give {player} 70"
+            - "baa xp give {player} 140"
+          messages: []
+      2:
+        name: "Legendary icon"
+        description:
+          - "Win 30 matches, collect 220 stars, and earn 2500 credits."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 30 && {theysixevents_stat_global_stars} >= 220 && {theysixevents_stat_global_credits} >= 2500"
+        rewards:
+          commands:
+            - "baa credits give {player} 120"
+            - "baa xp give {player} 240"
+          messages: []
+      3:
+        name: "Arena celebrity"
+        description:
+          - "Win 60 matches, collect 400 stars, and earn 5000 credits."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 60 && {theysixevents_stat_global_stars} >= 400 && {theysixevents_stat_global_credits} >= 5000"
+        rewards:
+          commands:
+            - "baa credits give {player} 180"
+            - "baa xp give {player} 360"
+          messages: []
+      4:
+        name: "Arena legend"
+        description:
+          - "Win 90 matches, collect 600 stars, and earn 8000 credits."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 90 && {theysixevents_stat_global_stars} >= 600 && {theysixevents_stat_global_credits} >= 8000"
+        rewards:
+          commands:
+            - "baa credits give {player} 250"
+            - "baa xp give {player} 500"
+          messages: []
+      5:
+        name: "Arena myth"
+        description:
+          - "Win 130 matches, collect 900 stars, and earn 12000 credits."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 130 && {theysixevents_stat_global_stars} >= 900 && {theysixevents_stat_global_credits} >= 12000"
+        rewards:
+          commands:
+            - "baa credits give {player} 320"
+            - "baa xp give {player} 640"
+          messages: []
+
+  unstoppable_force:
+    name: "Unstoppable Force"
+    description:
+      - "Reach high win streaks and victories."
+    icon: NETHERITE_AXE
+    phases:
+      1:
+        name: "Charging"
+        description:
+          - "Reach a best streak of 4 and win 12 matches."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 4 && {theysixevents_stat_global_wins} >= 12"
+        rewards:
+          commands:
+            - "baa credits give {player} 50"
+            - "baa xp give {player} 100"
+          messages: []
+      2:
+        name: "Unstoppable"
+        description:
+          - "Reach a best streak of 8 and win 30 matches."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 8 && {theysixevents_stat_global_wins} >= 30"
+        rewards:
+          commands:
+            - "baa credits give {player} 100"
+            - "baa xp give {player} 200"
+          messages: []
+      3:
+        name: "Unbreakable"
+        description:
+          - "Reach a best streak of 12 and win 60 matches."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 12 && {theysixevents_stat_global_wins} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 150"
+            - "baa xp give {player} 300"
+          messages: []
+      4:
+        name: "Overpowering"
+        description:
+          - "Reach a best streak of 16 and win 85 matches."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 16 && {theysixevents_stat_global_wins} >= 85"
+        rewards:
+          commands:
+            - "baa credits give {player} 210"
+            - "baa xp give {player} 420"
+          messages: []
+      5:
+        name: "Unrivaled"
+        description:
+          - "Reach a best streak of 22 and win 120 matches."
+        conditions:
+          - "{theysixevents_stat_global_best_win_streak} >= 22 && {theysixevents_stat_global_wins} >= 120"
+        rewards:
+          commands:
+            - "baa credits give {player} 280"
+            - "baa xp give {player} 560"
+          messages: []
+
+  all_rounder:
+    name: "All-Rounder"
+    description:
+      - "Blend wins, eliminations, and podiums."
+    icon: NETHER_STAR
+    phases:
+      1:
+        name: "Balanced skill"
+        description:
+          - "Win 8 matches, score 20 eliminations, and finish first twice."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 8 && {theysixevents_stat_global_kills} >= 20 && {theysixevents_stat_global_first_place} >= 2"
+        rewards:
+          commands:
+            - "baa credits give {player} 45"
+            - "baa xp give {player} 90"
+          messages: []
+      2:
+        name: "All-rounder"
+        description:
+          - "Win 20 matches, score 60 eliminations, and finish first 8 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 20 && {theysixevents_stat_global_kills} >= 60 && {theysixevents_stat_global_first_place} >= 8"
+        rewards:
+          commands:
+            - "baa credits give {player} 95"
+            - "baa xp give {player} 190"
+          messages: []
+      3:
+        name: "All-around"
+        description:
+          - "Win 40 matches, score 120 eliminations, and finish first 16 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 40 && {theysixevents_stat_global_kills} >= 120 && {theysixevents_stat_global_first_place} >= 16"
+        rewards:
+          commands:
+            - "baa credits give {player} 140"
+            - "baa xp give {player} 280"
+          messages: []
+      4:
+        name: "All-skilled"
+        description:
+          - "Win 70 matches, score 180 eliminations, and finish first 25 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 70 && {theysixevents_stat_global_kills} >= 180 && {theysixevents_stat_global_first_place} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 200"
+            - "baa xp give {player} 400"
+          messages: []
+      5:
+        name: "All-round legend"
+        description:
+          - "Win 100 matches, score 260 eliminations, and finish first 35 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 100 && {theysixevents_stat_global_kills} >= 260 && {theysixevents_stat_global_first_place} >= 35"
+        rewards:
+          commands:
+            - "baa credits give {player} 280"
+            - "baa xp give {player} 560"
+          messages: []
+
+  grand_slam:
+    name: "Grand Slam"
+    description:
+      - "Achieve big results across the board."
+    icon: DRAGON_EGG
+    phases:
+      1:
+        name: "Major win"
+        description:
+          - "Win 25 matches, collect 150 stars, and finish first 10 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 25 && {theysixevents_stat_global_stars} >= 150 && {theysixevents_stat_global_first_place} >= 10"
+        rewards:
+          commands:
+            - "baa credits give {player} 95"
+            - "baa xp give {player} 190"
+          messages: []
+      2:
+        name: "Grand slam"
+        description:
+          - "Win 60 matches, collect 300 stars, and finish first 25 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 60 && {theysixevents_stat_global_stars} >= 300 && {theysixevents_stat_global_first_place} >= 25"
+        rewards:
+          commands:
+            - "baa credits give {player} 150"
+            - "baa xp give {player} 300"
+          messages: []
+      3:
+        name: "Major sweep"
+        description:
+          - "Win 100 matches, collect 500 stars, and finish first 40 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 100 && {theysixevents_stat_global_stars} >= 500 && {theysixevents_stat_global_first_place} >= 40"
+        rewards:
+          commands:
+            - "baa credits give {player} 210"
+            - "baa xp give {player} 420"
+          messages: []
+      4:
+        name: "Grand sweep"
+        description:
+          - "Win 150 matches, collect 700 stars, and finish first 60 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 150 && {theysixevents_stat_global_stars} >= 700 && {theysixevents_stat_global_first_place} >= 60"
+        rewards:
+          commands:
+            - "baa credits give {player} 280"
+            - "baa xp give {player} 560"
+          messages: []
+      5:
+        name: "Ultimate slam"
+        description:
+          - "Win 220 matches, collect 1000 stars, and finish first 90 times."
+        conditions:
+          - "{theysixevents_stat_global_wins} >= 220 && {theysixevents_stat_global_stars} >= 1000 && {theysixevents_stat_global_first_place} >= 90"
+        rewards:
+          commands:
+            - "baa credits give {player} 360"
+            - "baa xp give {player} 720"
+          messages: []

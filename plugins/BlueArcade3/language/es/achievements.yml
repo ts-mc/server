@@ -1,0 +1,1090 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+achievement_definitions:
+  categories:
+    global:
+      name: 'Global'
+      description:
+        - 'Logros compartidas en todos los ámbitos.'
+  achievements:
+    matchmaker:
+      name: 'Casamentero'
+      description:
+        - 'Juega partidas en cualquier arena.'
+      phases:
+        1:
+          name: 'primer partida'
+          description:
+            - 'Juega tu primer juego.'
+        2:
+          name: 'Jugador habitual'
+          description:
+            - 'Juega 10 juegos.'
+        3:
+          name: 'Jugador dedicado'
+          description:
+            - 'Juega 25 juegos.'
+        4:
+          name: 'jugador experimentado'
+          description:
+            - 'Juega 50 juegos.'
+        5:
+          name: 'veterano del grupo'
+          description:
+            - 'Juega 100 juegos.'
+    time_spent:
+      name: 'Siempre alrededor'
+      description:
+        - 'Pasa tiempo jugando TheySix Events.'
+      phases:
+        1:
+          name: 'diez minutos'
+          description:
+            - 'Acumula 10 minutos de juego.'
+        2:
+          name: 'Una hora'
+          description:
+            - 'Acumula 1 hora de juego.'
+        3:
+          name: 'dos horas'
+          description:
+            - 'Acumula 2 horas de juego.'
+        4:
+          name: 'cuatro horas'
+          description:
+            - 'Acumula 4 horas de juego.'
+        5:
+          name: 'Ocho horas'
+          description:
+            - 'Acumula 8 horas de juego.'
+    contender:
+      name: 'Contendiente'
+      description:
+        - 'Gana partidas y sigue jugando.'
+      phases:
+        1:
+          name: 'Primera victoria'
+          description:
+            - 'Gana al menos un partida.'
+        2:
+          name: 'Diez victorias'
+          description:
+            - 'Gana 10 partidas.'
+        3:
+          name: 'veinticinco victorias'
+          description:
+            - 'Gana 25 partidas.'
+        4:
+          name: 'Cincuenta victorias'
+          description:
+            - 'Gana 50 partidas.'
+        5:
+          name: 'Cien victorias'
+          description:
+            - 'Gana 100 partidas.'
+    podium_chaser:
+      name: 'Cazador de podio'
+      description:
+        - 'Reclama el primer puesto.'
+      phases:
+        1:
+          name: 'Primer podio'
+          description:
+            - 'Termina primero una vez.'
+        2:
+          name: 'Podio regular'
+          description:
+            - 'Termina las primeras 5 veces.'
+        3:
+          name: 'Pilar del podio'
+          description:
+            - 'Termina primero 12 veces.'
+        4:
+          name: 'Líder del podio'
+          description:
+            - 'Termina primero 25 veces.'
+        5:
+          name: 'estrella del podio'
+          description:
+            - 'Termina primero 50 veces.'
+    silver_seeker:
+      name: 'Buscador de plata'
+      description:
+        - 'Llegar al segundo puesto.'
+      phases:
+        1:
+          name: 'Subcampeón'
+          description:
+            - 'Termina segundo una vez.'
+        2:
+          name: 'Racha plateada'
+          description:
+            - 'Termina segundo 5 veces.'
+        3:
+          name: 'Plata normal'
+          description:
+            - 'Termina segundo 12 veces.'
+        4:
+          name: 'Accesorio de plata'
+          description:
+            - 'Termina segundo 25 veces.'
+        5:
+          name: 'Leyenda de plata'
+          description:
+            - 'Termina segundo 45 veces.'
+    bronze_seeker:
+      name: 'Buscador de bronce'
+      description:
+        - 'Asegure el tercer puesto.'
+      phases:
+        1:
+          name: 'Primer bronce'
+          description:
+            - 'Termina tercero una vez.'
+        2:
+          name: 'Coleccionista de bronce'
+          description:
+            - 'Termina tercero 5 veces.'
+        3:
+          name: 'Bronce regular'
+          description:
+            - 'Termina tercero 12 veces.'
+        4:
+          name: 'Accesorio de bronce'
+          description:
+            - 'Termina tercero 25 veces.'
+        5:
+          name: 'Leyenda de bronce'
+          description:
+            - 'Termina tercero 45 veces.'
+    star_collector:
+      name: 'Coleccionista de Estrellas'
+      description:
+        - 'Reúne Estrellas de tus partidas.'
+      phases:
+        1:
+          name: 'comienzo brillante'
+          description:
+            - 'Recoge 10 Estrellas.'
+        2:
+          name: 'acaparador de Estrellas'
+          description:
+            - 'Recoge 50 Estrellas.'
+        3:
+          name: 'recolector de Estrellas'
+          description:
+            - 'Recoge 120 Estrellas.'
+        4:
+          name: 'Coleccionista de Estrellas'
+          description:
+            - 'Recoge 250 Estrellas.'
+        5:
+          name: 'Maestro estelar'
+          description:
+            - 'Recoge 500 Estrellas.'
+    credit_earner:
+      name: 'Ganador de crédito'
+      description:
+        - 'Gana créditos del juego.'
+      phases:
+        1:
+          name: 'Primer pago'
+          description:
+            - 'Gana 100 créditos.'
+        2:
+          name: 'Equilibrio creciente'
+          description:
+            - 'Gana 500 créditos.'
+        3:
+          name: 'Ahorro saludable'
+          description:
+            - 'Gana 1200 créditos.'
+        4:
+          name: 'Fuerte equilibrio'
+          description:
+            - 'Gana 2500 créditos.'
+        5:
+          name: 'Potencia crediticia'
+          description:
+            - 'Gana 5000 créditos.'
+    eliminator:
+      name: 'Eliminador'
+      description:
+        - 'Elimina jugadores durante los partidas.'
+      phases:
+        1:
+          name: 'Primera eliminación'
+          description:
+            - 'Consigue 5 eliminaciones.'
+        2:
+          name: 'luchador experto'
+          description:
+            - 'Consigue 25 eliminaciones.'
+        3:
+          name: 'amenaza de arena'
+          description:
+            - 'Consigue 60 eliminaciones.'
+        4:
+          name: 'amenaza arena'
+          description:
+            - 'Consigue 120 eliminaciones.'
+        5:
+          name: 'verdugo de arena'
+          description:
+            - 'Consigue 250 eliminaciones.'
+    battle_scarred:
+      name: 'Marcado por la batalla'
+      description:
+        - 'Aprende de las derrotas en la arena.'
+      phases:
+        1:
+          name: 'comienzo difícil'
+          description:
+            - 'Experimenta 5 derrotas.'
+        2:
+          name: 'Batalla probada'
+          description:
+            - 'Experimenta 25 derrotas.'
+        3:
+          name: 'endurecido por la batalla'
+          description:
+            - 'Experimenta 60 derrotas.'
+        4:
+          name: 'Superviviente de la batalla'
+          description:
+            - 'Experimenta 120 derrotas.'
+        5:
+          name: 'Leyenda de batalla'
+          description:
+            - 'Experimenta 250 derrotas.'
+    win_streaker:
+      name: 'Racha Victoriasdora'
+      description:
+        - 'Construye tu mejor racha de victorias.'
+      phases:
+        1:
+          name: 'Tres seguidos'
+          description:
+            - 'Alcanza una mejor racha de victorias de 3.'
+        2:
+          name: 'Cinco seguidos'
+          description:
+            - 'Alcanza una mejor racha de victorias de 5.'
+        3:
+          name: 'Ocho seguidos'
+          description:
+            - 'Alcanza una mejor racha de victorias de 8.'
+        4:
+          name: 'Doce seguidos'
+          description:
+            - 'Alcanza una mejor racha de victorias de 12.'
+        5:
+          name: 'Veinte seguidos'
+          description:
+            - 'Alcanza una mejor racha de victorias de 20.'
+    hot_streak:
+      name: 'Buena racha'
+      description:
+        - 'Mantenga viva la actual racha de victorias.'
+      phases:
+        1:
+          name: 'dos seguidos'
+          description:
+            - 'Mantenga una racha Victoriasdora actual de 2.'
+        2:
+          name: 'Cuatro seguidos'
+          description:
+            - 'Mantenga una racha Victoriasdora actual de 4.'
+        3:
+          name: 'Seis seguidos'
+          description:
+            - 'Mantenga una racha Victoriasdora actual de 6.'
+        4:
+          name: 'Diez seguidos'
+          description:
+            - 'Mantén una racha Victoriasdora actual de 10.'
+        5:
+          name: 'quince seguidos'
+          description:
+            - 'Mantenga una racha Victoriasdora actual de 15.'
+    mini_game_fan:
+      name: 'Fanático de los minijuegos'
+      description:
+        - 'Completa muchas rondas de minijuegos.'
+      phases:
+        1:
+          name: 'Calentamiento redondo'
+          description:
+            - 'Termina 5 minijuegos.'
+        2:
+          name: 'Molinillo redondo'
+          description:
+            - 'Completa 20 minijuegos.'
+        3:
+          name: 'Finalizador redondo'
+          description:
+            - 'Completa 40 minijuegos.'
+        4:
+          name: 'veterano redondo'
+          description:
+            - 'Completa 80 minijuegos.'
+        5:
+          name: 'Leyenda redonda'
+          description:
+            - 'Completa 150 minijuegos.'
+    arena_regular:
+      name: 'Arena Regular'
+      description:
+        - 'Preséntese con frecuencia y permanezca en la acción.'
+      phases:
+        1:
+          name: 'Ponerse cómodo'
+          description:
+            - 'Juega 5 partidas y 30 minutos en total.'
+        2:
+          name: 'En casa'
+          description:
+            - 'Juega 25 juegos y 2 horas en total.'
+        3:
+          name: 'Partida local'
+          description:
+            - 'Juega 50 juegos y 4 horas en total.'
+        4:
+          name: 'residente de la arena'
+          description:
+            - 'Juega 80 juegos y 6 horas en total.'
+        5:
+          name: 'Grapa de arena'
+          description:
+            - 'Juega 120 juegos y 8 horas en total.'
+    victory_lap:
+      name: 'Vuelta de la victoria'
+      description:
+        - 'Gana consistentemente mientras juegas.'
+      phases:
+        1:
+          name: 'Ganador en ascenso'
+          description:
+            - 'Gana 3 partidas y juega 10 juegos.'
+        2:
+          name: 'Ganador experimentado'
+          description:
+            - 'Gana 15 partidas y juega 50 juegos.'
+        3:
+          name: 'Ganador probado'
+          description:
+            - 'Gana 30 partidas y juega 90 juegos.'
+        4:
+          name: 'Ganador dominante'
+          description:
+            - 'Gana 50 partidas y juega 140 juegos.'
+        5:
+          name: 'as de la victoria'
+          description:
+            - 'Gana 80 partidas y juega 200 juegos.'
+    podium_regular:
+      name: 'Podio Regular'
+      description:
+        - 'Gana todos los lugares del podio.'
+      phases:
+        1:
+          name: 'triple final'
+          description:
+            - 'Alcanza el primer, segundo y tercer lugar dos veces.'
+        2:
+          name: 'Mezcla de podio'
+          description:
+            - 'Alcanza el primer, segundo y tercer lugar 10 veces.'
+        3:
+          name: 'Rotación del podio'
+          description:
+            - 'Alcanza el primer, segundo y tercer lugar 20 veces.'
+        4:
+          name: 'Grapa del podio'
+          description:
+            - 'Alcanza el primer, segundo y tercer lugar 35 veces.'
+        5:
+          name: 'veterano del podio'
+          description:
+            - 'Alcanza el primer, segundo y tercer lugar 50 veces.'
+    star_runner:
+      name: 'Corredor estrella'
+      description:
+        - 'Recoge Estrellas mientras corres en los juegos.'
+      phases:
+        1:
+          name: 'comienzo brillante'
+          description:
+            - 'Recoge 25 Estrellas en 10 juegos.'
+        2:
+          name: 'camino luminoso'
+          description:
+            - 'Recoge 100 Estrellas en 50 juegos.'
+        3:
+          name: 'carrera radiante'
+          description:
+            - 'Recoge 200 Estrellas en 90 juegos.'
+        4:
+          name: 'rastro brillante'
+          description:
+            - 'Recoge 350 Estrellas en 140 juegos.'
+        5:
+          name: 'Maratón de Estrellas'
+          description:
+            - 'Recoge 500 Estrellas en 200 juegos.'
+    credit_magnet:
+      name: 'Imán de crédito'
+      description:
+        - 'Haz crecer tu equilibrio con un juego constante.'
+      phases:
+        1:
+          name: 'cambio de bolsillo'
+          description:
+            - 'Gana 250 créditos en 10 juegos.'
+        2:
+          name: 'Pila de crédito'
+          description:
+            - 'Gana 1000 créditos en 50 juegos.'
+        3:
+          name: 'Paso crediticio'
+          description:
+            - 'Gana 2000 créditos en 90 juegos.'
+        4:
+          name: 'Subida de crédito'
+          description:
+            - 'Gana 3500 créditos en 140 juegos.'
+        5:
+          name: 'Titán del crédito'
+          description:
+            - 'Gana 5000 créditos en 200 juegos.'
+    marathoner:
+      name: 'Maratoniano'
+      description:
+        - 'Juega largas sesiones de minijuegos.'
+      phases:
+        1:
+          name: 'larga noche'
+          description:
+            - 'Juega 1 hora y termina 5 minijuegos.'
+        2:
+          name: 'carrera de resistencia'
+          description:
+            - 'Juega 4 horas y termina 25 minijuegos.'
+        3:
+          name: 'corredor de resistencia'
+          description:
+            - 'Juega 8 horas y termina 60 minijuegos.'
+        4:
+          name: 'Molinillo de resistencia'
+          description:
+            - 'Juega 12 horas y termina 100 minijuegos.'
+        5:
+          name: 'Leyenda de la resistencia'
+          description:
+            - 'Juega 20 horas y completa 160 minijuegos.'
+    slayer:
+      name: 'Asesino'
+      description:
+        - 'Combina eliminaciones con victorias.'
+      phases:
+        1:
+          name: 'hoja afilada'
+          description:
+            - 'Consigue 10 eliminaciones y Victorias 3 partidas.'
+        2:
+          name: 'asesino de arena'
+          description:
+            - 'Consigue 50 eliminaciones y Victorias 15 partidas.'
+        3:
+          name: 'cazador de arena'
+          description:
+            - 'Consigue 120 eliminaciones y Victorias 30 partidas.'
+        4:
+          name: 'segador de arena'
+          description:
+            - 'Consigue 200 eliminaciones y Victorias 50 partidas.'
+        5:
+          name: 'verdugo de arena'
+          description:
+            - 'Consigue 350 eliminaciones y Victorias 80 partidas.'
+    comeback_kid:
+      name: 'Niño de regreso'
+      description:
+        - 'Gana a pesar de los reveses.'
+      phases:
+        1:
+          name: 'Recuperarse'
+          description:
+            - 'Gana 3 partidas después de 10 derrotas.'
+        2:
+          name: 'No rendirse nunca'
+          description:
+            - 'Gana 15 partidas después de 50 derrotas.'
+        3:
+          name: 'Maestro del regreso'
+          description:
+            - 'Gana 30 partidas después de 100 derrotas.'
+        4:
+          name: 'Implacable'
+          description:
+            - 'Gana 50 partidas después de 160 derrotas.'
+        5:
+          name: 'Nunca roto'
+          description:
+            - 'Gana 80 partidas después de 240 derrotas.'
+    risk_taker:
+      name: 'Tomador de riesgos'
+      description:
+        - 'Pelea a menudo, gane o pierda.'
+      phases:
+        1:
+          name: 'en la mezcla'
+          description:
+            - 'Llega a 20 eliminaciones y 20 derrotas.'
+        2:
+          name: 'luchador experimentado'
+          description:
+            - 'Llega a 100 eliminaciones y 100 derrotas.'
+        3:
+          name: 'Curtido en batalla'
+          description:
+            - 'Llega a 200 eliminaciones y 200 derrotas.'
+        4:
+          name: 'Destrozado por la guerra'
+          description:
+            - 'Llega a 350 eliminaciones y 350 derrotas.'
+        5:
+          name: 'veterano de batalla'
+          description:
+            - 'Llega a 500 eliminaciones y 500 derrotas.'
+    rising_star:
+      name: 'Estrella en ascenso'
+      description:
+        - 'Gana partidas y Victorias Estrellas.'
+      phases:
+        1:
+          name: 'Chispa'
+          description:
+            - 'Recoge 30 Estrellas y Victorias 5 partidas.'
+        2:
+          name: 'Brillo'
+          description:
+            - 'Recoge 150 Estrellas y Victorias 20 partidas.'
+        3:
+          name: 'Irradiar'
+          description:
+            - 'Recoge 300 Estrellas y Victorias 40 partidas.'
+        4:
+          name: 'brillar'
+          description:
+            - 'Recoge 500 Estrellas y Victorias 60 partidas.'
+        5:
+          name: 'Estelar'
+          description:
+            - 'Recoge 750 Estrellas y Victorias 90 partidas.'
+    golden_hand:
+      name: 'mano dorada'
+      description:
+        - 'Gana créditos y victorias juntos.'
+      phases:
+        1:
+          name: 'Victorias rentables'
+          description:
+            - 'Gana 300 créditos y Victorias 5 partidas.'
+        2:
+          name: 'Racha dorada'
+          description:
+            - 'Gana 1500 créditos y Victorias 20 partidas.'
+        3:
+          name: 'carga dorada'
+          description:
+            - 'Gana 3000 créditos y Victorias 40 partidas.'
+        4:
+          name: 'Oleada dorada'
+          description:
+            - 'Gana 5000 créditos y Victorias 60 partidas.'
+        5:
+          name: 'Legado dorado'
+          description:
+            - 'Gana 8000 créditos y Victorias 90 partidas.'
+    full_house:
+      name: 'Casa llena'
+      description:
+        - 'Juega consistentemente en todas las rondas.'
+      phases:
+        1:
+          name: 'Habitación calentada'
+          description:
+            - 'Juega 10 juegos y termina 10 minijuegos.'
+        2:
+          name: 'Casa llena'
+          description:
+            - 'Juega 50 juegos y termina 50 minijuegos.'
+        3:
+          name: 'casa llena'
+          description:
+            - 'Juega 90 juegos y termina 90 minijuegos.'
+        4:
+          name: 'gran casa'
+          description:
+            - 'Juega 140 juegos y termina 140 minijuegos.'
+        5:
+          name: 'salón de juego'
+          description:
+            - 'Juega 200 juegos y termina 200 minijuegos.'
+    podium_legend:
+      name: 'Leyenda del podio'
+      description:
+        - 'Gana y asegura el primer puesto.'
+      phases:
+        1:
+          name: 'Principal'
+          description:
+            - 'Gana 5 partidas y termina primero 3 veces.'
+        2:
+          name: 'Legendario'
+          description:
+            - 'Gana 20 partidas y termina primero 15 veces.'
+        3:
+          name: 'Líder de élite'
+          description:
+            - 'Gana 40 partidas y termina primero 30 veces.'
+        4:
+          name: 'Icono de podio'
+          description:
+            - 'Gana 60 partidas y termina primero 45 veces.'
+        5:
+          name: 'Realeza del podio'
+          description:
+            - 'Gana 90 partidas y termina primero 70 veces.'
+    steady_climber:
+      name: 'Escalador constante'
+      description:
+        - 'Construye rachas con el tiempo.'
+      phases:
+        1:
+          name: 'Escalada'
+          description:
+            - 'Alcanza una mejor racha de 3 después de 15 partidas.'
+        2:
+          name: 'Por encima del resto'
+          description:
+            - 'Alcanza una mejor racha de 6 después de 50 partidas.'
+        3:
+          name: 'En aumento'
+          description:
+            - 'Alcanza una mejor racha de 9 después de 90 partidas.'
+        4:
+          name: 'Horizonte'
+          description:
+            - 'Alcanzar una mejor racha de 12 después de 140 partidas.'
+        5:
+          name: 'escalador de picos'
+          description:
+            - 'Alcanzar una mejor racha de 16 después de 200 partidas.'
+    crowd_favorite:
+      name: 'Favorito del público'
+      description:
+        - 'Lidera el podio con el poder de las Estrellas.'
+      phases:
+        1:
+          name: 'Resplandor del ventilador'
+          description:
+            - 'Recoge 40 Estrellas y termina primero 2 veces.'
+        2:
+          name: 'Favorito de los fans'
+          description:
+            - 'Recoge 120 Estrellas y termina primero 10 veces.'
+        3:
+          name: 'Leyenda de los fanáticos'
+          description:
+            - 'Recoge 220 Estrellas y termina primero 20 veces.'
+        4:
+          name: 'icono de multitud'
+          description:
+            - 'Recoge 350 Estrellas y termina primero 30 veces.'
+        5:
+          name: 'Favorito de la arena'
+          description:
+            - 'Recoge 500 Estrellas y termina primero 45 veces.'
+    shining_champion:
+      name: 'Campeón brillante'
+      description:
+        - 'Colócate alto y Victorias partidas.'
+      phases:
+        1:
+          name: 'Resultado brillante'
+          description:
+            - 'Gana 10 partidas con 5 segundos y terceros lugares.'
+        2:
+          name: 'Campeón radiante'
+          description:
+            - 'Gana 30 partidas con 15 segundos y terceros lugares.'
+        3:
+          name: 'líder brillante'
+          description:
+            - 'Gana 50 partidas con 25 segundos y terceros lugares.'
+        4:
+          name: 'héroe radiante'
+          description:
+            - 'Gana 80 partidas con 40 segundos y terceros lugares.'
+        5:
+          name: 'Campeón luminoso'
+          description:
+            - 'Gana 120 partidas con 60 segundos y terceros lugares.'
+    total_domination:
+      name: 'Dominación total'
+      description:
+        - 'Domina la arena con victorias, Estrellas y podios.'
+      phases:
+        1:
+          name: 'Dominante'
+          description:
+            - 'Gana 15 partidas, recoge 80 Estrellas y termina primero 5 veces.'
+        2:
+          name: 'Imparable'
+          description:
+            - 'Gana 40 partidas, recoge 200 Estrellas y termina primero 20 veces.'
+        3:
+          name: 'Abrumador'
+          description:
+            - 'Gana 70 partidas, recoge 350 Estrellas y termina primero 35 veces.'
+        4:
+          name: 'Supremo'
+          description:
+            - 'Gana 110 partidas, recoge 500 Estrellas y termina primero 55 veces.'
+        5:
+          name: 'gobernante total'
+          description:
+            - 'Gana 160 partidas, recoge 700 Estrellas y termina primero 80 veces.'
+    arena_explorer:
+      name: 'Explorador de arenas'
+      description:
+        - 'Termina muchos partidas y minijuegos.'
+      phases:
+        1:
+          name: 'Explorador'
+          description:
+            - 'Juega 15 juegos y termina 15 minijuegos.'
+        2:
+          name: 'gira mundial'
+          description:
+            - 'Juega 60 juegos y termina 60 minijuegos.'
+        3:
+          name: 'Caminata por el globo terráqueo'
+          description:
+            - 'Juega 110 juegos y termina 110 minijuegos.'
+        4:
+          name: 'circuito mundial'
+          description:
+            - 'Juega 170 juegos y termina 170 minijuegos.'
+        5:
+          name: 'explorador de planetas'
+          description:
+            - 'Juega 240 juegos y termina 240 minijuegos.'
+    iron_will:
+      name: 'Voluntad de hierro'
+      description:
+        - 'Sigue jugando a pesar de las derrotas.'
+      phases:
+        1:
+          name: 'Impertérrito'
+          description:
+            - 'Experimenta 40 derrotas y juega 20 juegos.'
+        2:
+          name: 'Irrompible'
+          description:
+            - 'Experimenta 120 derrotas y juega 80 juegos.'
+        3:
+          name: 'voluntad de acero'
+          description:
+            - 'Experimenta 220 derrotas y juega 140 juegos.'
+        4:
+          name: 'Resolución de hierro'
+          description:
+            - 'Experimenta 320 derrotas y juega 200 juegos.'
+        5:
+          name: 'Inflexible'
+          description:
+            - 'Experimenta 450 derrotas y juega 280 juegos.'
+    star_guardian:
+      name: 'guardián estelar'
+      description:
+        - 'Apila Estrellas con victorias constantes.'
+      phases:
+        1:
+          name: 'Guardián'
+          description:
+            - 'Recoge 60 Estrellas y Victorias 10 partidas.'
+        2:
+          name: 'guardián de la estrella'
+          description:
+            - 'Recoge 180 Estrellas y Victorias 30 partidas.'
+        3:
+          name: 'Guardián estelar'
+          description:
+            - 'Recoge 320 Estrellas y Victorias 50 partidas.'
+        4:
+          name: 'Protector de Estrellas'
+          description:
+            - 'Recoge 500 Estrellas y Victorias 75 partidas.'
+        5:
+          name: 'Centinela estelar'
+          description:
+            - 'Recoge 750 Estrellas y Victorias 110 partidas.'
+    victory_credit:
+      name: 'Crédito de victoria'
+      description:
+        - 'Gana créditos mientras acumulas Victoriasncias.'
+      phases:
+        1:
+          name: 'Pagado'
+          description:
+            - 'Gana 600 créditos y Victorias 10 partidas.'
+        2:
+          name: 'rico Victoriasdor'
+          description:
+            - 'Gana 2000 créditos y Victorias 30 partidas.'
+        3:
+          name: 'Ganador rico'
+          description:
+            - 'Gana 3500 créditos y Victorias 50 partidas.'
+        4:
+          name: 'fortuna de la victoria'
+          description:
+            - 'Gana 5500 créditos y Victorias 80 partidas.'
+        5:
+          name: 'magnate de la victoria'
+          description:
+            - 'Gana 8000 créditos y Victorias 120 partidas.'
+    champion_stride:
+      name: 'Paso campeón'
+      description:
+        - 'Sigue progresando con el tiempo y Victorias.'
+      phases:
+        1:
+          name: 'enfocado'
+          description:
+            - 'Juega 2 horas y Victorias 8 partidas.'
+        2:
+          name: 'Implacable'
+          description:
+            - 'Juega 6 horas y Victorias 25 partidas.'
+        3:
+          name: 'Inquebrantable'
+          description:
+            - 'Juega 10 horas y Victorias 45 partidas.'
+        4:
+          name: 'Impulsado'
+          description:
+            - 'Juega 15 horas y Victorias 70 partidas.'
+        5:
+          name: 'Imparable'
+          description:
+            - 'Juega 20 horas y Victorias 100 partidas.'
+    relentless_play:
+      name: 'Juego implacable'
+      description:
+        - 'Gana y juega con volumen alto.'
+      phases:
+        1:
+          name: 'Dedicado'
+          description:
+            - 'Juega 30 juegos y Victorias 10 partidas.'
+        2:
+          name: 'Imparable'
+          description:
+            - 'Juega 100 juegos y Victorias 35 partidas.'
+        3:
+          name: 'Implacable'
+          description:
+            - 'Juega 180 juegos y Victorias 60 partidas.'
+        4:
+          name: 'Sin fin'
+          description:
+            - 'Juega 260 juegos y Victorias 85 partidas.'
+        5:
+          name: 'Incansable'
+          description:
+            - 'Juega 360 juegos y Victorias 120 partidas.'
+    podium_mix:
+      name: 'Mezcla de podio'
+      description:
+        - 'Obtenga una distribución equilibrada de podios.'
+      phases:
+        1:
+          name: 'Equilibrado'
+          description:
+            - 'Llega a cada lugar del podio 3 veces.'
+        2:
+          name: 'Maestro de podios'
+          description:
+            - 'Llega a cada lugar del podio 12 veces.'
+        3:
+          name: 'equilibrador de podio'
+          description:
+            - 'Llega a cada lugar del podio 25 veces.'
+        4:
+          name: 'Manejador del podio'
+          description:
+            - 'Llega a cada lugar del podio 40 veces.'
+        5:
+          name: 'Arquitecto podio'
+          description:
+            - 'Llega a cada lugar del podio 60 veces.'
+    seasoned_veteran:
+      name: 'Veterano experimentado'
+      description:
+        - 'Combina victorias con un largo tiempo de juego.'
+      phases:
+        1:
+          name: 'Experimentado'
+          description:
+            - 'Juega 3 horas y Victorias 12 partidas.'
+        2:
+          name: 'Veterano'
+          description:
+            - 'Juega 8 horas y Victorias 30 partidas.'
+        3:
+          name: 'Sazonado'
+          description:
+            - 'Juega 12 horas y Victorias 55 partidas.'
+        4:
+          name: 'Experimentado'
+          description:
+            - 'Juega 18 horas y Victorias 80 partidas.'
+        5:
+          name: 'Legendario'
+          description:
+            - 'Juega 25 horas y Victorias 120 partidas.'
+    crowd_control:
+      name: 'Control de multitudes'
+      description:
+        - 'Empareja eliminaciones con victorias constantes.'
+      phases:
+        1:
+          name: 'Revisado'
+          description:
+            - 'Consigue 30 eliminaciones y Victorias 8 partidas.'
+        2:
+          name: 'al mando'
+          description:
+            - 'Consigue 80 eliminaciones y Victorias 20 partidas.'
+        3:
+          name: 'Comandante de batalla'
+          description:
+            - 'Consigue 140 eliminaciones y Victorias 40 partidas.'
+        4:
+          name: 'Comandante de la arena'
+          description:
+            - 'Consigue 220 eliminaciones y Victorias 60 partidas.'
+        5:
+          name: 'Jefe militar'
+          description:
+            - 'Consigue 320 eliminaciones y Victorias 85 partidas.'
+    arena_icon:
+      name: 'Icono de arena'
+      description:
+        - 'Mezcla premios, Estrellas y créditos.'
+      phases:
+        1:
+          name: 'Icónico'
+          description:
+            - 'Gana 12 partidas, recoge 90 Estrellas y Victorias 800 créditos.'
+        2:
+          name: 'Icono legendario'
+          description:
+            - 'Gana 30 partidas, recoge 220 Estrellas y Victorias 2500 créditos.'
+        3:
+          name: 'celebridad de la arena'
+          description:
+            - 'Gana 60 partidas, recoge 400 Estrellas y Victorias 5000 créditos.'
+        4:
+          name: 'leyenda de la arena'
+          description:
+            - 'Gana 90 partidas, recoge 600 Estrellas y Victorias 8000 créditos.'
+        5:
+          name: 'Mito de la arena'
+          description:
+            - 'Gana 130 partidas, recoge 900 Estrellas y Victorias 12000 créditos.'
+    unstoppable_force:
+      name: 'Fuerza imparable'
+      description:
+        - 'Alcanza altas rachas de victorias y victorias.'
+      phases:
+        1:
+          name: 'Cargando'
+          description:
+            - 'Alcanza una mejor racha de 4 y Victorias 12 partidas.'
+        2:
+          name: 'Imparable'
+          description:
+            - 'Alcanza una mejor racha de 8 y Victorias 30 partidas.'
+        3:
+          name: 'Irrompible'
+          description:
+            - 'Alcanza una mejor racha de 12 y Victorias 60 partidas.'
+        4:
+          name: 'Abrumador'
+          description:
+            - 'Alcanza una mejor racha de 16 y Victorias 85 partidas.'
+        5:
+          name: 'Sin rivalidad'
+          description:
+            - 'Alcanza una mejor racha de 22 y Victorias 120 partidas.'
+    all_rounder:
+      name: 'Todo terreno'
+      description:
+        - 'Combina victorias, eliminaciones y podios.'
+      phases:
+        1:
+          name: 'habilidad equilibrada'
+          description:
+            - 'Gana 8 partidas, consigue 20 eliminaciones y termina primero dos veces.'
+        2:
+          name: 'Todo terreno'
+          description:
+            - 'Gana 20 partidas, consigue 60 eliminaciones y termina primero 8 veces.'
+        3:
+          name: 'Todo alrededor'
+          description:
+            - 'Gana 40 partidas, consigue 120 eliminaciones y termina primero 16 veces.'
+        4:
+          name: 'Todo calificado'
+          description:
+            - 'Gana 70 partidas, consigue 180 eliminaciones y termina primero 25 veces.'
+        5:
+          name: 'Leyenda integral'
+          description:
+            - 'Gana 100 partidas, consigue 260 eliminaciones y termina primero 35 veces.'
+    grand_slam:
+      name: 'gran slam'
+      description:
+        - 'Logre grandes resultados en todos los ámbitos.'
+      phases:
+        1:
+          name: 'Gran victoria'
+          description:
+            - 'Gana 25 partidas, recoge 150 Estrellas y termina primero 10 veces.'
+        2:
+          name: 'gran golpe'
+          description:
+            - 'Gana 60 partidas, recoge 300 Estrellas y termina primero 25 veces.'
+        3:
+          name: 'Gran barrido'
+          description:
+            - 'Gana 100 partidas, recoge 500 Estrellas y termina primero 40 veces.'
+        4:
+          name: 'Gran barrido'
+          description:
+            - 'Gana 150 partidas, recoge 700 Estrellas y termina primero 60 veces.'
+        5:
+          name: 'Golpe definitivo'
+          description:
+            - 'Gana 220 partidas, recoge 1000 Estrellas y termina primero 90 veces.'

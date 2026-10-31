@@ -1,0 +1,119 @@
+#-------------------------------------------------------------------------------------------------------------------#
+#  TheySix Events — vote leaderboard period toggle (daily / weekly / monthly)
+#
+#  FancyNpcs leaderboard NPCs and FancyHolograms entries are stacked in three
+#  period sets. Only one set is visible at a time via LuckPerms groups:
+#    votelb-daily, votelb-weekly, votelb-monthly
+#
+#  Clicking any visible #1–#5 NPC cycles to the next period.
+#
+#  FIRST-TIME SETUP (console or /tsa holder):
+#    1. /npc reload && /hologram reload
+#    2. /votelb-install
+#    3. Place monthly NPCs (leaderboard_1 … leaderboard_5), then copy each to
+#       the matching _daily / _weekly NPC at the same coordinates.
+#    4. /mycmd-reload
+#-------------------------------------------------------------------------------------------------------------------#
+
+votelb_install:
+  command: /votelb-install
+  type: RUN_CONSOLE
+  register: true
+  permission-required: true
+  permission-node: theysixevents.admin
+  permission-error: '&8[&c&l!&8] &cYou do not have permission to use that command.'
+  runcmd:
+    - lp creategroup votelb-daily
+    - lp group votelb-daily setweight 1
+    - lp group votelb-daily permission set fancynpcs.npc.leaderboard_1_daily.see true
+    - lp group votelb-daily permission set fancyholograms.viewhologram.leaderboard_1_hologram_daily true
+    - lp group votelb-daily permission set fancynpcs.npc.leaderboard_2_daily.see true
+    - lp group votelb-daily permission set fancyholograms.viewhologram.leaderboard_2_hologram_daily true
+    - lp group votelb-daily permission set fancynpcs.npc.leaderboard_3_daily.see true
+    - lp group votelb-daily permission set fancyholograms.viewhologram.leaderboard_3_hologram_daily true
+    - lp group votelb-daily permission set fancynpcs.npc.leaderboard_4_daily.see true
+    - lp group votelb-daily permission set fancyholograms.viewhologram.leaderboard_4_hologram_daily true
+    - lp group votelb-daily permission set fancynpcs.npc.leaderboard_5_daily.see true
+    - lp group votelb-daily permission set fancyholograms.viewhologram.leaderboard_5_hologram_daily true
+    - lp creategroup votelb-weekly
+    - lp group votelb-weekly setweight 1
+    - lp group votelb-weekly permission set fancynpcs.npc.leaderboard_1_weekly.see true
+    - lp group votelb-weekly permission set fancyholograms.viewhologram.leaderboard_1_hologram_weekly true
+    - lp group votelb-weekly permission set fancynpcs.npc.leaderboard_2_weekly.see true
+    - lp group votelb-weekly permission set fancyholograms.viewhologram.leaderboard_2_hologram_weekly true
+    - lp group votelb-weekly permission set fancynpcs.npc.leaderboard_3_weekly.see true
+    - lp group votelb-weekly permission set fancyholograms.viewhologram.leaderboard_3_hologram_weekly true
+    - lp group votelb-weekly permission set fancynpcs.npc.leaderboard_4_weekly.see true
+    - lp group votelb-weekly permission set fancyholograms.viewhologram.leaderboard_4_hologram_weekly true
+    - lp group votelb-weekly permission set fancynpcs.npc.leaderboard_5_weekly.see true
+    - lp group votelb-weekly permission set fancyholograms.viewhologram.leaderboard_5_hologram_weekly true
+    - lp creategroup votelb-monthly
+    - lp group votelb-monthly setweight 1
+    - lp group votelb-monthly permission set fancynpcs.npc.leaderboard_1.see true
+    - lp group votelb-monthly permission set fancyholograms.viewhologram.leaderboard_1_hologram true
+    - lp group votelb-monthly permission set fancynpcs.npc.leaderboard_2.see true
+    - lp group votelb-monthly permission set fancyholograms.viewhologram.leaderboard_2_hologram true
+    - lp group votelb-monthly permission set fancynpcs.npc.leaderboard_3.see true
+    - lp group votelb-monthly permission set fancyholograms.viewhologram.leaderboard_3_hologram true
+    - lp group votelb-monthly permission set fancynpcs.npc.leaderboard_4.see true
+    - lp group votelb-monthly permission set fancyholograms.viewhologram.leaderboard_4_hologram true
+    - lp group votelb-monthly permission set fancynpcs.npc.leaderboard_5.see true
+    - lp group votelb-monthly permission set fancyholograms.viewhologram.leaderboard_5_hologram true
+    - $text$&aVote leaderboard groups installed. Players get monthly view on join.
+
+votelb_ensure:
+  command: /votelb-ensure
+  type: RUN_CONSOLE
+  register: true
+  permission-required: false
+  runcmd:
+    - $Script$%if%$PlayerData%votelb_period%==weekly
+    - lp user $player parent remove votelb-daily
+    - lp user $player parent remove votelb-monthly
+    - lp user $player parent add votelb-weekly
+    - $Script$%stop%
+    - $Script$%if%$PlayerData%votelb_period%==daily
+    - lp user $player parent remove votelb-weekly
+    - lp user $player parent remove votelb-monthly
+    - lp user $player parent add votelb-daily
+    - $Script$%stop%
+    - lp user $player parent remove votelb-daily
+    - lp user $player parent remove votelb-weekly
+    - lp user $player parent add votelb-monthly
+    - $Script$%PlayerData%votelb_period%monthly
+
+votelb_daily:
+  command: /votelb-daily
+  type: RUN_CONSOLE
+  register: true
+  permission-required: false
+  runcmd:
+    - lp user $player parent remove votelb-weekly
+    - lp user $player parent remove votelb-monthly
+    - lp user $player parent add votelb-daily
+    - $Script$%PlayerData%votelb_period%daily
+    - $text$&a&l✦ DAILY TOP VOTERS &7Click again to show weekly.
+
+votelb_weekly:
+  command: /votelb-weekly
+  type: RUN_CONSOLE
+  register: true
+  permission-required: false
+  runcmd:
+    - lp user $player parent remove votelb-daily
+    - lp user $player parent remove votelb-monthly
+    - lp user $player parent add votelb-weekly
+    - $Script$%PlayerData%votelb_period%weekly
+    - $text$&b&l✦ WEEKLY TOP VOTERS &7Click again to show monthly.
+
+votelb_monthly:
+  command: /votelb-monthly
+  type: RUN_CONSOLE
+  register: true
+  permission-required: false
+  runcmd:
+    - lp user $player parent remove votelb-daily
+    - lp user $player parent remove votelb-weekly
+    - lp user $player parent add votelb-monthly
+    - $Script$%PlayerData%votelb_period%monthly
+    - $text$&6&l✦ MONTHLY TOP VOTERS &7Click again to show daily.

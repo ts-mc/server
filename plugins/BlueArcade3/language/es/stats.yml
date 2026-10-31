@@ -1,0 +1,29 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+stats:
+  periods:
+    alltime: 'Histórico'
+    monthly: 'Mensual'
+    yearly: 'Anual'
+  periods_list: 'alltime, monthly, yearly'
+  labels:
+    global: 'Global'
+    wins: 'Victorias'
+    games_played: 'Partidas jugadas'
+    mini_games_played: 'Minijuegos jugados'
+    first_place: 'Primeros puestos'
+    second_place: 'Segundos puestos'
+    third_place: 'Terceros puestos'
+    stars: 'Estrellas'
+    credits: 'Créditos'
+    kills: 'Asesinatos'
+    deaths: 'Muertes'
+    current_win_streak: 'Racha de victorias actual'
+    best_win_streak: 'Mejor racha de victorias'
+    time_played: 'Tiempo jugado'

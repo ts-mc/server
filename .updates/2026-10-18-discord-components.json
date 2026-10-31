@@ -1,0 +1,53 @@
+{
+  "content": "",
+  "tts": false,
+  "flags": 32768,
+  "embeds": [],
+  "components": [
+    {
+      "id": 517989594,
+      "type": 17,
+      "accent_color": 5763719,
+      "components": [
+        {
+          "id": 634394982,
+          "type": 12,
+          "items": [
+            {
+              "media": {
+                "url": "https://message.style/app/templates/update.webp"
+              }
+            }
+          ]
+        },
+        {
+          "id": 817452689,
+          "type": 10,
+          "content": "## Update — October 18, 2026\nMenus, hotbar and command rework — everything is config, no downtime expected.\n-# Requires a restart on the server side; `/ts` and `/tse` are live afterwards."
+        },
+        {
+          "id": 781799321,
+          "type": 14,
+          "divider": true,
+          "spacing": 1
+        },
+        {
+          "id": 351934745,
+          "type": 10,
+          "content": "### ✨ New\n- **Games Menu** — the compass (slot 0) in the main lobby now opens a hub menu (`/tsmenu`) with:\n  - ▶️ Play (left-click quick join · right-click map browser)\n  - 🛒 Store · 🗳️ Vote · 📊 Stats · 🎉 Party · ✖ Close\n- **New aliases** — `/ts-menu` and `/tse-menu` also open the Games Menu."
+        },
+        {
+          "id": 221917423,
+          "type": 10,
+          "content": "### 🛠️ Changed\n- **Hotbar rework** (main lobby):\n  - Slot 0: `EMERALD Play again` → 🧭 **Games Menu**\n  - Slot 1: `BOOK Maps` → 🟩 **Quick Join** (`/ba quickjoin`)\n  - Slots 4 / 7 / 8 (Profile · Party · Leave) unchanged in behaviour\n- **Arena commands** — `/ts`, `/tse` and `/tsmenu` are now whitelisted, so the compass and menus work while waiting inside an arena.\n- **NPCs** — every player-type NPC (Discord, leaderboards 1–5, KOTW, minigame selector) is pinned to a fixed spawn point in `world` instead of drifting to wherever they last stood."
+        },
+        {
+          "id": 598772320,
+          "type": 10,
+          "content": "### 🐛 Fixed\n- `/ts` and `/tse` no longer fail with `Not enough arguments` — subcommands and arguments are forwarded correctly (`/ts join PG-01` works now)."
+        }
+      ]
+    }
+  ],
+  "actions": {}
+}

@@ -1,0 +1,154 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+player_commands:
+  help:
+    - '<bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient> <reset> <dark_gray>-</dark_gray> <gray>Comando de ayuda para usuarios</gray>'
+    - '<yellow>[] Obligatorio</yellow> <gray>-</gray> <green>() Opcional</green>'
+    - ' '
+    - '<light_purple>/ba quickjoin (player)</light_purple> <dark_gray>-</dark_gray> <gray>Entrar en una partida aleatoria</gray>'
+    - '<light_purple>/ba join [name/id] (player)</light_purple> <dark_gray>-</dark_gray> <gray>Entrar en una partida concreta</gray>'
+    - '<light_purple>/ba leave (player)</light_purple> <dark_gray>-</dark_gray> <gray>Salir de la partida actual</gray>'
+    - '<light_purple>/ba party <gray>...</gray></light_purple> <dark_gray>-</dark_gray> <gray>Gestionar tu grupo</gray>'
+    - '<light_purple>/ba stats (category) (alltime/monthly/yearly) (page)</light_purple> <dark_gray>-</dark_gray> <gray>Consultar tus estadísticas</gray>'
+    - '<light_purple>/ba tops (category) (alltime/monthly/yearly) (page)</light_purple> <dark_gray>-</dark_gray> <gray>Ver los tops de estadísticas</gray>'
+    - '<light_purple>/ba tops <stat> <alltime/monthly/yearly> (page)</light_purple> <dark_gray>-</dark_gray> <gray>Ver los mejores jugadores de una estadística</gray>'
+    - '<light_purple>/ba achievements (category) (achievement) (page)</light_purple> <dark_gray>-</dark_gray> <gray>Ver logros</gray>'
+    - '<light_purple>/ba level</light_purple> <dark_gray>-</dark_gray> <gray>Ver tu nivel actual</gray>'
+    - '<light_purple>/ba lang (locale|auto)</light_purple> <dark_gray>-</dark_gray> <gray>Cambiar tu idioma</gray>'
+    - '<light_purple>/ba store</light_purple> <dark_gray>-</dark_gray> <gray>Abrir la tienda</gray>'
+    - '<light_purple>/ba replay <module_id> (<replay_id>)</light_purple> <dark_gray>-</dark_gray> <gray>Ver una partida grabada</gray>'
+    - '<light_purple>/ba credits pay <player> <amount></light_purple> <dark_gray>-</dark_gray> <gray>Pagar créditos a otro jugador</gray>'
+    - '<light_purple>/baa help</light_purple> <dark_gray>-</dark_gray> <gray>Ayuda para administradores</gray>'
+  usage:
+    join: '{prefix} <red>Uso: /ba join [arena_id|server:arena_id|(filter [page])] (player)</red>'
+    quickjoin: '{prefix} <red>Uso: /ba quickjoin (player)</red>'
+    leave: '{prefix} <red>Uso: /ba leave [player]</red>'
+    vote: '{prefix} <red>Uso: /ba vote [minigame|page <number>]</red>'
+    party: '{prefix} <red>Uso: /ba party <list|type|create|members|invite|search|join|accept|reject|kick|leader|leave> (player)</red>'
+    stats: '{prefix} <red>Uso: /ba stats (category) (alltime/monthly/yearly) (page)</red>'
+    tops: '{prefix} <red>Uso: /ba tops (category) (alltime/monthly/yearly) (page) o /ba tops <stat|module:stat> <alltime/monthly/yearly> (page)</red>'
+    achievements: '{prefix} <red>Uso: /ba achievements (category) (achievement) (page)</red>'
+    level: '{prefix} <red>Uso: /ba level</red>'
+    lang: '{prefix} <red>Uso: /ba lang (locale|auto)</red>'
+    credits: '{prefix} <red>Uso: /ba credits [pay] <player> <amount></red>'
+    store: '{prefix} <red>Uso: /ba store (page <number>|category <id> [page]|module <id> [page]|buy <category> <item> [page]|confirm <category> <item> [page]|purchase <category> <item> [page]|select <category> <item>)</red>'
+    team: '{prefix} <red>Uso: /ba team (join <team_id>)</red>'
+  credits:
+    balance: '{prefix} <yellow>Tienes <gold>{amount}</gold> créditos.</yellow>'
+    balance_unavailable: '{prefix} <red>El proveedor de créditos "{provider}" no está disponible en este momento.</red>'
+    sent: '{prefix} <green>Pagaste {amount} créditos a {player}.</green>'
+    received: '{prefix} <green>Recibiste {amount} créditos de {player}.</green>'
+    reward: '<gold>⛁</gold> <yellow>+{amount} créditos</yellow>'
+    invalid_amount: '{prefix} <red>Cantidad de créditos no válidos: {amount}</red>'
+    player_not_found: '{prefix} <red>Jugador ''{player}'' no encontrado.</red>'
+    insufficient_funds: '{prefix} <red>No tienes suficientes créditos.</red>'
+    self_payment: '{prefix} <red>No puedes pagarte a ti mismo.</red>'
+    transfer_failed: '{prefix} <red>No se pueden transferir créditos en este momento. Vuelve a intentarlo más tarde.</red>'
+  rewards:
+    summary: '<gold>⛁</gold> <yellow>+{credits} créditos</yellow> <dark_gray>|</dark_gray> <dark_purple>✹</dark_purple> <light_purple>+{exp} XP</light_purple>'
+    summary_credits: '<gold>⛁</gold> <yellow>+{credits} créditos</yellow>'
+    summary_exp: '<dark_purple>✹</dark_purple> <light_purple>+{exp} XP</light_purple>'
+  language:
+    current_auto: '{prefix} <yellow>Tu idioma es</yellow> <aqua>{locale}</aqua> <gray>(automático desde tu cliente: {detected_locale})</gray><yellow>.</yellow>'
+    current_manual: '{prefix} <yellow>Tu idioma es</yellow> <aqua>{locale}</aqua> <gray>(selección manual)</gray><yellow>.</yellow>'
+    changed: '{prefix} <green>Tu idioma ha cambiado a</green> <aqua>{locale}</aqua><green>.</green>'
+    automatic: '{prefix} <green>Tu idioma se detectará automáticamente.</green> <gray>Actual: {locale}</gray>'
+    disabled: '{prefix} <red>La selección de idioma está deshabilitada en este servidor.</red>'
+    invalid: '{prefix} <red>Idioma no compatible:</red> <yellow>{locale}</yellow><red>.</red> <gray>Disponible:</gray> <aqua>{available}</aqua>'
+  party:
+    created: '{prefix} <green>Grupo creado. Invita jugadores para empezar a jugar juntos.</green>'
+    already_in_party: '{prefix} <red>Ya estás en un grupo.</red>'
+    no_available_arenas: '{prefix} <red>No hay arenas que admitan el tamaño del grupo en este momento.</red>'
+    not_in_party: '{prefix} <red>No estás en un grupo.</red>'
+    not_leader: '{prefix} <red>Solo el líder del grupo puede hacer eso.</red>'
+    cannot_invite_self: '{prefix} <red>No puedes invitarte a ti mismo.</red>'
+    target_in_party: '{prefix} <red>{player} ya está en un grupo.</red>'
+    target_not_in_party: '{prefix} <red>Ese jugador no está en tu grupo.</red>'
+    type_changed: '{prefix} <green>Tipo de grupo actualizado a <white>{type}</white>.</green>'
+    invalid_type: '{prefix} <red>Tipo de grupo no válido. Usa public/private.</red>'
+    exceeds_max_size: '{prefix} <red>El grupo no puede exceder <white>{max}</white> jugadores (tamaño máximo de arena).</red>'
+    member_busy: '{prefix} <red>{player} está ocupado en otro juego.</red>'
+    not_enough_slots: '{prefix} <red>No hay suficientes espacios disponibles para todo el grupo (<white>{available}</white> libres).</red>'
+    only_leader_join: '{prefix} <red>Solo el líder puede unirse a las arenas del grupo.</red>'
+    left: '{prefix} <yellow>Has salido del grupo.</yellow>'
+    leader_left: '{prefix} <yellow>El nuevo líder es <white>{leader}</white>.</yellow>'
+    leader_disconnected: '{prefix} <yellow>El líder del grupo se desconectó. El grupo se disolverá en <white>{seconds}</white> segundos si no vuelve.</yellow>'
+    leader_reconnected: '{prefix} <green>El líder del grupo se ha vuelto a conectar.</green>'
+    disbanded_leader_absent: '{prefix} <red>El grupo se disolvió porque el líder no volvió a tiempo.</red>'
+    new_leader: '{prefix} <green><white>{leader}</white> ahora es el líder del grupo.</green>'
+    kicked: '{prefix} <red>{player} fue eliminado del grupo.</red>'
+    kicked_target: '{prefix} <red>Fuiste eliminado del grupo por {leader}.</red>'
+    join:
+      joined: '{prefix} <green>{player} se unió al grupo.</green>'
+      not_found: '{prefix} <red>No se encontró ningún grupo público para ese líder.</red>'
+      not_public: '{prefix} <red>Ese grupo no es público.</red>'
+    roles:
+      leader: 'Líder'
+      member: 'Miembro'
+    invite:
+      sent: '{prefix} <green>Invitación enviada a <white>{player}</white>.</green>'
+      received: '{prefix} <yellow>Recibiste una invitación a un grupo de <white>{leader}</white>. Usa /ba party accept {leader}.</yellow>'
+      already_sent: '{prefix} <red>Ya invitaste a {player}.</red>'
+      not_found: '{prefix} <red>No tienes invitación de ese jugador.</red>'
+      rejected: '{prefix} <red>{player} rechazó la invitación a tu grupo.</red>'
+      you_rejected: '{prefix} <yellow>Rechazaste la invitación de <white>{leader}</white>.</yellow>'
+      accepted: '{prefix} <green>{player} se unió al grupo.</green>'
+    list:
+      - '<bold><gradient:aqua:light_purple>Grupo</gradient>'
+      - '<white>Tipo:</white> <aqua>{type}'
+      - '<white>Líder:</white> <aqua>{leader}'
+      - '<white>Miembros:</white> <gray>{members}'
+    types:
+      public: 'Pública'
+      private: 'Privada'
+  team:
+    unavailable: '{prefix} <red>La selección de equipo no está disponible para este juego.</red>'
+    not_available_phase: '{prefix} <red>La selección de equipo solo está disponible mientras se espera.</red>'
+    invalid: '{prefix} <red>Ese equipo no existe.</red>'
+    full: '{prefix} <red>Ese equipo está completo.</red>'
+    selected: '{prefix} <green>Te uniste a {team}.</green>'
+  stats:
+    text:
+      header:
+        - '{line_separator}'
+        - '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Tus estadísticas</yellow> <gray>({period_label})</gray> <gray>(Página {page}/{page_total})</gray>'
+        - ' '
+      global_title: '<gold>Estadísticas globales</gold>'
+      module_title: '<gold>{module_name}</gold>'
+      entry: '<gray>• {stat}</gray>: <white>{stat_value}</white>'
+      module_entry: '<gray>• {stat}</gray>: <white>{stat_value}</white>'
+      footer:
+        - ' '
+        - '<gray>Total rastreado:</gray> <white>{stat_total}</white>'
+    errors:
+      invalid_period: '{prefix} <red>Periodo desconocido:</red> <yellow>{period}</yellow><red>. Uso:</red> <white>{valid_periods}</white><red>.</red>'
+      category_not_found: '{prefix} <red>Categoría de estadísticas desconocida:</red> <yellow>{category}</yellow><red>.</red>'
+  tops:
+    text:
+      header:
+        - '{line_separator}'
+        - '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Top {stat_display}</yellow> <gray>(Página {page}/{page_total})</gray>'
+        - '<gray>Alcance:</gray> <white>{scope}</white> <gray>•</gray> <gray>Módulo:</gray> <white>{module_name}</white>'
+        - '<gray>Período:</gray> <white>{period_label}</white>'
+        - ' '
+      entry: '<gray>#{position}</gray> <white>{player}</white> <gray>-</gray> <aqua>{stat_value}</aqua>'
+      footer:
+        - ' '
+        - '<gray>Total de entradas:</gray> <white>{entry_total}</white>'
+        - '{line_separator}'
+      empty: '{prefix} <yellow>Ningún jugador tiene resultados para</yellow> <white>{stat_display}</white> <yellow>en</yellow> <white>{period_label}</white><yellow> todavía.</yellow>'
+    errors:
+      unknown_stat: '{prefix} <red>Estadística desconocida:</red> <yellow>{stat_input}</yellow><red>. Usa /ba stats para ver las estadísticas disponibles.</red>'
+      ambiguous_stat: '{prefix} <red>Esa estadística existe en varios módulos.</red> <yellow>Usa /ba tops <module:stat> <alltime/monthly/yearly></yellow> <red>para:</red> <gray>{modules}</gray>'
+      invalid_period: '{prefix} <red>Periodo desconocido:</red> <yellow>{period}</yellow><red>. Uso:</red> <white>{valid_periods}</white><red>.</red>'
+      category_not_found: '{prefix} <red>Categoría de estadísticas desconocida:</red> <yellow>{category}</yellow><red>.</red>'
+    scope:
+      global: 'Global'
+      module: 'Módulo'
+    unknown_player: 'Desconocido'

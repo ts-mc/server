@@ -1,0 +1,154 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+player_commands:
+  help:
+    - "<bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient> <reset> <dark_gray>-</dark_gray> <gray>Help Command for users</gray>"
+    - "<yellow>[] Required</yellow> <gray>-</gray> <green>() Optional</green>"
+    - " "
+    - "<light_purple>/ba quickjoin (player)</light_purple> <dark_gray>-</dark_gray> <gray>Enter a random game</gray>"
+    - "<light_purple>/ba join [name/id] (player)</light_purple> <dark_gray>-</dark_gray> <gray>Enter a specific game</gray>"
+    - "<light_purple>/ba leave (player)</light_purple> <dark_gray>-</dark_gray> <gray>Leave the current game</gray>"
+    - "<light_purple>/ba party <gray>...</gray></light_purple> <dark_gray>-</dark_gray> <gray>Manage your party</gray>"
+    - "<light_purple>/ba stats (category) (alltime/monthly/yearly) (page)</light_purple> <dark_gray>-</dark_gray> <gray>Check your stats</gray>"
+    - "<light_purple>/ba tops (category) (alltime/monthly/yearly) (page)</light_purple> <dark_gray>-</dark_gray> <gray>Browse top stats</gray>"
+    - "<light_purple>/ba tops <stat> <alltime/monthly/yearly> (page)</light_purple> <dark_gray>-</dark_gray> <gray>View top players for a stat</gray>"
+    - "<light_purple>/ba achievements (category) (achievement) (page)</light_purple> <dark_gray>-</dark_gray> <gray>View achievements</gray>"
+    - "<light_purple>/ba level</light_purple> <dark_gray>-</dark_gray> <gray>View your current level</gray>"
+    - "<light_purple>/ba lang (locale|auto)</light_purple> <dark_gray>-</dark_gray> <gray>Change your language</gray>"
+    - "<light_purple>/ba store</light_purple> <dark_gray>-</dark_gray> <gray>Open the store</gray>"
+    - "<light_purple>/ba replay <module_id> (<replay_id>)</light_purple> <dark_gray>-</dark_gray> <gray>Watch a recorded match</gray>"
+    - "<light_purple>/ba credits pay <player> <amount></light_purple> <dark_gray>-</dark_gray> <gray>Pay credits to another player</gray>"
+    - "<light_purple>/baa help</light_purple> <dark_gray>-</dark_gray> <gray>Help for administrators</gray>"
+  usage:
+    join: "{prefix} <red>Use: /ba join [arena_id|server:arena_id|(filter [page])] (player)</red>"
+    quickjoin: "{prefix} <red>Use: /ba quickjoin (player)</red>"
+    leave: "{prefix} <red>Use: /ba leave [player]</red>"
+    vote: "{prefix} <red>Use: /ba vote [minigame|page <number>]</red>"
+    party: "{prefix} <red>Use: /ba party <list|type|create|members|invite|search|join|accept|reject|kick|leader|leave> (player)</red>"
+    stats: "{prefix} <red>Use: /ba stats (category) (alltime/monthly/yearly) (page)</red>"
+    tops: "{prefix} <red>Use: /ba tops (category) (alltime/monthly/yearly) (page) or /ba tops <stat|module:stat> <alltime/monthly/yearly> (page)</red>"
+    achievements: "{prefix} <red>Use: /ba achievements (category) (achievement) (page)</red>"
+    level: "{prefix} <red>Use: /ba level</red>"
+    lang: "{prefix} <red>Use: /ba lang (locale|auto)</red>"
+    credits: "{prefix} <red>Use: /ba credits [pay] <player> <amount></red>"
+    store: "{prefix} <red>Use: /ba store (page <number>|category <id> [page]|module <id> [page]|buy <category> <item> [page]|confirm <category> <item> [page]|purchase <category> <item> [page]|select <category> <item>)</red>"
+    team: "{prefix} <red>Use: /ba team (join <team_id>)</red>"
+  credits:
+    balance: "{prefix} <yellow>You have <gold>{amount}</gold> credits.</yellow>"
+    balance_unavailable: "{prefix} <red>Credits provider \"{provider}\" is not available right now.</red>"
+    sent: "{prefix} <green>You paid {amount} credits to {player}.</green>"
+    received: "{prefix} <green>You received {amount} credits from {player}.</green>"
+    reward: "  <gold>⛁</gold> <yellow>+{amount} credits</yellow>"
+    invalid_amount: "{prefix} <red>Invalid credits amount: {amount}</red>"
+    player_not_found: "{prefix} <red>Player '{player}' not found.</red>"
+    insufficient_funds: "{prefix} <red>You don't have enough credits.</red>"
+    self_payment: "{prefix} <red>You cannot pay yourself.</red>"
+    transfer_failed: "{prefix} <red>Unable to transfer credits right now. Try again later.</red>"
+  rewards:
+    summary: "  <gold>⛁</gold> <yellow>+{credits} credits</yellow> <dark_gray>|</dark_gray> <dark_purple>✹</dark_purple> <light_purple>+{exp} XP</light_purple>"
+    summary_credits: "  <gold>⛁</gold> <yellow>+{credits} credits</yellow>"
+    summary_exp: "  <dark_purple>✹</dark_purple> <light_purple>+{exp} XP</light_purple>"
+  language:
+    current_auto: "{prefix} <yellow>Your language is</yellow> <aqua>{locale}</aqua> <gray>(automatic from your client: {detected_locale})</gray><yellow>.</yellow>"
+    current_manual: "{prefix} <yellow>Your language is</yellow> <aqua>{locale}</aqua> <gray>(manual selection)</gray><yellow>.</yellow>"
+    changed: "{prefix} <green>Your language has been changed to</green> <aqua>{locale}</aqua><green>.</green>"
+    automatic: "{prefix} <green>Your language will now be detected automatically.</green> <gray>Current: {locale}</gray>"
+    disabled: "{prefix} <red>Language selection is disabled on this server.</red>"
+    invalid: "{prefix} <red>Unsupported language:</red> <yellow>{locale}</yellow><red>.</red> <gray>Available:</gray> <aqua>{available}</aqua>"
+  party:
+    created: "{prefix} <green>Party created. Invite players to start playing together.</green>"
+    already_in_party: "{prefix} <red>You are already in a party.</red>"
+    no_available_arenas: "{prefix} <red>There are no arenas that support party size right now.</red>"
+    not_in_party: "{prefix} <red>You are not in a party.</red>"
+    not_leader: "{prefix} <red>Only the party leader can do that.</red>"
+    cannot_invite_self: "{prefix} <red>You cannot invite yourself.</red>"
+    target_in_party: "{prefix} <red>{player} is already in a party.</red>"
+    target_not_in_party: "{prefix} <red>That player is not in your party.</red>"
+    type_changed: "{prefix} <green>Party type updated to <white>{type}</white>.</green>"
+    invalid_type: "{prefix} <red>Invalid party type. Use public/private.</red>"
+    exceeds_max_size: "{prefix} <red>The party cannot exceed <white>{max}</white> players (max arena size).</red>"
+    member_busy: "{prefix} <red>{player} is busy in another game.</red>"
+    not_enough_slots: "{prefix} <red>Not enough available slots for the whole party (<white>{available}</white> free).</red>"
+    only_leader_join: "{prefix} <red>Only the leader can join arenas for the party.</red>"
+    left: "{prefix} <yellow>You left the party.</yellow>"
+    leader_left: "{prefix} <yellow>The new leader is <white>{leader}</white>.</yellow>"
+    leader_disconnected: "{prefix} <yellow>The party leader disconnected. The party will be dissolved in <white>{seconds}</white> seconds if they do not return.</yellow>"
+    leader_reconnected: "{prefix} <green>The party leader has reconnected.</green>"
+    disbanded_leader_absent: "{prefix} <red>The party was dissolved because the leader did not return in time.</red>"
+    new_leader: "{prefix} <green><white>{leader}</white> is now the party leader.</green>"
+    kicked: "{prefix} <red>{player} was removed from the party.</red>"
+    kicked_target: "{prefix} <red>You were removed from the party by {leader}.</red>"
+    join:
+      joined: "{prefix} <green>{player} joined the party.</green>"
+      not_found: "{prefix} <red>No public party found for that leader.</red>"
+      not_public: "{prefix} <red>That party is not public.</red>"
+    roles:
+      leader: Leader
+      member: Member
+    invite:
+      sent: "{prefix} <green>Invitation sent to <white>{player}</white>.</green>"
+      received: "{prefix} <yellow>You received a party invite from <white>{leader}</white>. Use /ba party accept {leader}.</yellow>"
+      already_sent: "{prefix} <red>You already invited {player}.</red>"
+      not_found: "{prefix} <red>You have no invite from that player.</red>"
+      rejected: "{prefix} <red>{player} rejected your party invitation.</red>"
+      you_rejected: "{prefix} <yellow>You rejected the invitation from <white>{leader}</white>.</yellow>"
+      accepted: "{prefix} <green>{player} joined the party.</green>"
+    list:
+      - "<bold><gradient:aqua:light_purple>Party</gradient>"
+      - "<white>Type:</white> <aqua>{type}"
+      - "<white>Leader:</white> <aqua>{leader}"
+      - "<white>Members:</white> <gray>{members}"
+    types:
+      public: Public
+      private: Private
+  team:
+    unavailable: "{prefix} <red>Team selection is not available for this game.</red>"
+    not_available_phase: "{prefix} <red>Team selection is only available while waiting.</red>"
+    invalid: "{prefix} <red>That team does not exist.</red>"
+    full: "{prefix} <red>That team is full.</red>"
+    selected: "{prefix} <green>You joined {team}.</green>"
+  stats:
+    text:
+      header:
+        - "{line_separator}"
+        - "<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Your Stats</yellow> <gray>({period_label})</gray> <gray>(Page {page}/{page_total})</gray>"
+        - " "
+      global_title: "<gold>Global Stats</gold>"
+      module_title: "<gold>{module_name}</gold>"
+      entry: "<gray>• {stat}</gray>: <white>{stat_value}</white>"
+      module_entry: "<gray>• {stat}</gray>: <white>{stat_value}</white>"
+      footer:
+        - " "
+        - "<gray>Total tracked:</gray> <white>{stat_total}</white>"
+    errors:
+      invalid_period: "{prefix} <red>Unknown period:</red> <yellow>{period}</yellow><red>. Use:</red> <white>{valid_periods}</white><red>.</red>"
+      category_not_found: "{prefix} <red>Unknown stats category:</red> <yellow>{category}</yellow><red>.</red>"
+  tops:
+    text:
+      header:
+        - "{line_separator}"
+        - "<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Top {stat_display}</yellow> <gray>(Page {page}/{page_total})</gray>"
+        - "<gray>Scope:</gray> <white>{scope}</white> <gray>•</gray> <gray>Module:</gray> <white>{module_name}</white>"
+        - "<gray>Period:</gray> <white>{period_label}</white>"
+        - " "
+      entry: "<gray>#{position}</gray> <white>{player}</white> <gray>-</gray> <aqua>{stat_value}</aqua>"
+      footer:
+        - " "
+        - "<gray>Total entries:</gray> <white>{entry_total}</white>"
+        - "{line_separator}"
+      empty: "{prefix} <yellow>No players have results for</yellow> <white>{stat_display}</white> <yellow>in</yellow> <white>{period_label}</white><yellow> yet.</yellow>"
+    errors:
+      unknown_stat: "{prefix} <red>Unknown stat:</red> <yellow>{stat_input}</yellow><red>. Use /ba stats to view available stats.</red>"
+      ambiguous_stat: "{prefix} <red>That stat exists in multiple modules.</red> <yellow>Use /ba tops <module:stat> <alltime/monthly/yearly></yellow> <red>for:</red> <gray>{modules}</gray>"
+      invalid_period: "{prefix} <red>Unknown period:</red> <yellow>{period}</yellow><red>. Use:</red> <white>{valid_periods}</white><red>.</red>"
+      category_not_found: "{prefix} <red>Unknown stats category:</red> <yellow>{category}</yellow><red>.</red>"
+    scope:
+      global: Global
+      module: Module
+    unknown_player: Unknown

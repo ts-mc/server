@@ -1,0 +1,864 @@
+menu_title: 'Cosmetics » Pets [3/3]'
+size: 54
+items:
+
+#############################################################################################
+# FILLERS
+#############################################################################################	
+  'BORDER':
+    material: BLACK_STAINED_GLASS_PANE
+    priority: 999
+    display_name: '&r'
+    slots: 
+      - 0-9
+      - 17-18
+      - 26-27
+      - 35-36
+      - 44-48
+      - 50-53
+
+  'GRAY-FILLER':
+    material: GRAY_STAINED_GLASS_PANE
+    priority: 999
+    display_name: '&r'
+    slots: 
+      - 10-16
+      - 19-25
+      - 28-34
+      - 37-43
+
+#############################################################################################
+# NAVIGATION BUTTONS
+#############################################################################################	
+
+  'BACK-TO-COSMETICS':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0=
+    slot: 49
+    display_name: '&#FF2A2A&lB&#FF3636&lA&#FF4141&lC&#FF4D4D&lK'
+    lore:
+    - '&8ᴘᴇᴛs'
+    - ''
+    - '&#FF2A2A| &#FFEFC5ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴠᴏʟᴠᴇʀ ᴀ'
+    - '&#FF2A2A| &#FFEFC5ʟᴀ ᴛɪᴇɴᴅᴀ ᴅᴇ ᴄᴏꜱᴍᴇᴛɪᴄᴏꜱ!'
+    - ''
+    - '&#FF2A2A➥ &#FF2E2EC&#FF3030l&#FF3232i&#FF3434c&#FF3636k &#FF3A3At&#FF3D3Do &#FF4141g&#FF4343o &#FF4747b&#FF4949a&#FF4B4Bc&#FF4D4Dk'
+    click_commands:
+    - '[openguimenu] CoinShop-Cosmetics'
+
+  'PREVIOUS-PAGE':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjllYTFkODYyNDdmNGFmMzUxZWQxODY2YmNhNmEzMDQwYTA2YzY4MTc3Yzc4ZTQyMzE2YTEwOThlNjBmYjdkMyJ9fX0=
+    slot: 46
+    display_name: '&#FFB52A&lP&#FFB832&lR&#FFBA3A&lE&#FFBD42&lV&#FFC049&lI&#FFC251&lO&#FFC559&lU&#FFC559&lS &#FFC559&lP&#FFC559&lA&#FFC559&lG&#FFC559&lE'
+    lore:
+    - '&8ᴘᴇᴛs'
+    - ''
+    - '&#FFB52A| &#FFEFC5ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ɪʀ'
+    - '&#FFB52A| &#FFEFC5ᴀ ʟᴀ ᴘᴀ́ɢɪɴᴀ &#FFC5592'
+    - ''
+    - '&#FFB52A➥ &#FFB934C&#FFBA3Al&#FFBC3Fi&#FFBE44c&#FFC049k &#FFC354t&#FFC559o &#FFC559n&#FFC559a&#FFC559v&#FFC559i&#FFC559g&#FFC559a&#FFC559t&#FFC559e'
+    click_commands:
+    - '[openguimenu] CoinShop-Cosmetics-Pets-2'
+
+#############################################################################################
+# PURCHASABLE ITEMS
+#############################################################################################	
+
+  'ILLUSIONER':
+    material: 'VINDICATOR_SPAWN_EGG'
+    slot: 10
+    display_name: '&#4DA6FF&lILLUSIONER &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.illusioner}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#4DA6FF• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#4DA6FF| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#4DA6FF| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.illusioner}_matcher:yes_ifmatch:&#4DA6FF➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#4DA6FF➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.illusioner"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.illusioner"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.illusioner true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#4DA6FF&lILLUSIONER &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets illusioner'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'LLAMA':
+    material: 'LLAMA_SPAWN_EGG'
+    slot: 11
+    display_name: '&#D4B48C&lLLAMA &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.llama}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#D4B48C• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#D4B48C| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#D4B48C| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.llama}_matcher:yes_ifmatch:&#D4B48C➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#D4B48C➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.llama"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.llama"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.llama true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#D4B48C&lLLAMA &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets llama'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'VEX':
+    material: 'VEX_SPAWN_EGG'
+    slot: 12
+    display_name: '&#A0C0C0&lVEX &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.vex}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#A0C0C0• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#A0C0C0| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#A0C0C0| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.vex}_matcher:yes_ifmatch:&#A0C0C0➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#A0C0C0➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.vex"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.vex"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.vex true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#A0C0C0&lVEX &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets vex'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'EVOKER':
+    material: 'EVOKER_SPAWN_EGG'
+    slot: 13
+    display_name: '&#8E8E9E&lEVOKER &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.evoker}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#8E8E9E• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#8E8E9E| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#8E8E9E| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.evoker}_matcher:yes_ifmatch:&#8E8E9E➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#8E8E9E➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.evoker"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.evoker"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.evoker true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#8E8E9E&lEVOKER &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets evoker'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'VINDICATOR':
+    material: 'VINDICATOR_SPAWN_EGG'
+    slot: 14
+    display_name: '&#9A9A9A&lVINDICATOR &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.vindicator}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#9A9A9A• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#9A9A9A| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#9A9A9A| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.vindicator}_matcher:yes_ifmatch:&#9A9A9A➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#9A9A9A➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.vindicator"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.vindicator"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.vindicator true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#9A9A9A&lVINDICATOR &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets vindicator'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'DONKEY':
+    material: 'DONKEY_SPAWN_EGG'
+    slot: 15
+    display_name: '&#A59B8B&lDONKEY &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.donkey}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#A59B8B• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#A59B8B| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#A59B8B| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.donkey}_matcher:yes_ifmatch:&#A59B8B➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#A59B8B➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.donkey"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.donkey"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.donkey true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#A59B8B&lDONKEY &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets donkey'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'MULE':
+    material: 'MULE_SPAWN_EGG'
+    slot: 16
+    display_name: '&#7A6A53&lMULE &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.mule}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#7A6A53• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#7A6A53| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#7A6A53| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.mule}_matcher:yes_ifmatch:&#7A6A53➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#7A6A53➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.mule"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.mule"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.mule true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#7A6A53&lMULE &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets mule'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'SKELETON_HORSE':
+    material: 'SKELETON_HORSE_SPAWN_EGG'
+    slot: 19
+    display_name: '&#D8D8D8&lSKELETON HORSE &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.skeletonhorse}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#D8D8D8• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#D8D8D8| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#D8D8D8| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.skeletonhorse}_matcher:yes_ifmatch:&#D8D8D8➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#D8D8D8➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.skeletonhorse"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.skeletonhorse"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.skeletonhorse true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#D8D8D8&lSKELETON HORSE &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets skeletonhorse'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'ZOMBIE_HORSE':
+    material: 'ZOMBIE_HORSE_SPAWN_EGG'
+    slot: 20
+    display_name: '&#82A560&lZOMBIE HORSE &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.zombiehorse}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#82A560• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#82A560| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#82A560| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.zombiehorse}_matcher:yes_ifmatch:&#82A560➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#82A560➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.zombiehorse"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.zombiehorse"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.zombiehorse true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#82A560&lZOMBIE HORSE &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets zombiehorse'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'ELDER_GUARDIAN':
+    material: 'ELDER_GUARDIAN_SPAWN_EGG'
+    slot: 21
+    display_name: '&#AEADAD&lELDER GUARDIAN &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.elderguardian}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#AEADAD• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#AEADAD| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#AEADAD| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.elderguardian}_matcher:yes_ifmatch:&#AEADAD➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#AEADAD➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.elderguardian"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.elderguardian"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.elderguardian true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#AEADAD&lELDER GUARDIAN &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets elderguardian'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'WITHER_SKELETON':
+    material: 'WITHER_SKELETON_SPAWN_EGG'
+    slot: 22
+    display_name: '&#5B5B5B&lWITHER SKELETON &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.witherskeleton}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#5B5B5B• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#5B5B5B| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#5B5B5B| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.witherskeleton}_matcher:yes_ifmatch:&#5B5B5B➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#5B5B5B➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.witherskeleton"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.witherskeleton"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.witherskeleton true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#5B5B5B&lWITHER SKELETON &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets witherskeleton'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'ZOMBIE_VILLAGER':
+    material: 'ZOMBIE_VILLAGER_SPAWN_EGG'
+    slot: 23
+    display_name: '&#8E7A5B&lZOMBIE VILLAGER &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.zombievillager}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#8E7A5B• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#8E7A5B| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#8E7A5B| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.zombievillager}_matcher:yes_ifmatch:&#8E7A5B➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#8E7A5B➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.zombievillager"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.zombievillager"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.zombievillager true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#8E7A5B&lZOMBIE VILLAGER &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets zombievillager'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'HUSK':
+    material: 'HUSK_SPAWN_EGG'
+    slot: 24
+    display_name: '&#C6B084&lHUSK &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.husk}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#C6B084• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#C6B084| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#C6B084| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.husk}_matcher:yes_ifmatch:&#C6B084➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#C6B084➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.husk"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.husk"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.husk true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#C6B084&lHUSK &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets husk'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'STRAY':
+    material: 'STRAY_SPAWN_EGG'
+    slot: 25
+    display_name: '&#AAB2B2&lSTRAY &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.stray}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#AAB2B2• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#AAB2B2| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#AAB2B2| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.stray}_matcher:yes_ifmatch:&#AAB2B2➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#AAB2B2➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.stray"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.stray"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.stray true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#AAB2B2&lSTRAY &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets stray'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'POLAR_BEAR':
+    material: 'POLAR_BEAR_SPAWN_EGG'
+    slot: 28
+    display_name: '&#F0F0F0&lPOLAR BEAR &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.polarbear}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#F0F0F0• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#F0F0F0| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#F0F0F0| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.polarbear}_matcher:yes_ifmatch:&#F0F0F0➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#F0F0F0➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.polarbear"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.polarbear"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.polarbear true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#F0F0F0&lPOLAR BEAR &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets polarbear'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'SHULKER':
+    material: 'SHULKER_SPAWN_EGG'
+    slot: 29
+    display_name: '&#8E6A8E&lSHULKER &8| %changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.shulker}_matcher:yes_ifmatch:&#A7FC44ᴜɴʟᴏᴄᴋᴇᴅ_else:&#FC4444ʟᴏᴄᴋᴇᴅ%'
+    lore:
+    - '&8ᴘᴇᴛ'
+    - ''
+    - '&#8E6A8E• &#FFEFC5ʀᴀɴɢᴏ: &#7ecd0e&lᴠɪᴘ'
+    - ''
+    - '&#8E6A8E| &#FFEFC5ᴏʙᴛᴇɴ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ'
+    - '&#8E6A8E| &#FFEFC5ᴛɪᴇɴᴅᴀ &#FF4141ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ '
+    - ''
+    - '%changeoutput_equals_input:{luckperms_has_permission_ultracosmetics.pets.shulker}_matcher:yes_ifmatch:&#8E6A8E➥ ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ_else:&#8E6A8E➥ ʜᴀᴢ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ%'
+    left_click_requirement:
+      minimum_requirements: 2
+      requirements:
+        already:
+          type: "!has permission"
+          permission: "ultracosmetics.pets.shulker"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444ʏᴀ ᴛɪᴇɴᴇꜱ ᴇꜱᴛᴏ pet unlocked!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ ᴘᴀʀᴀ ᴇQᴜɪᴘᴀʀ this pet!'
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have enough coins for this!'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5ᴄᴏᴍᴘʀᴀ ᴍᴏɴᴇᴅᴀꜱ ᴇɴ &#FFDF55ꜱᴛᴏʀᴇ.ᴘɪxᴇʟꜱᴛᴜᴅɪᴏꜱ.ʟᴀᴛ &#FFEFC5!'
+    right_click_requirement:
+      requirements:
+        check_permission:
+          type: "has permission"
+          permission: "ultracosmetics.pets.shulker"
+          deny_commands:
+          - '[sound] ENTITY_VILLAGER_NO'
+          - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FC4444You don''t have this pet unlocked!'
+    left_click_commands:
+    - '[console] lp user %player_name% permission set ultracosmetics.pets.shulker true'
+    - '[console] points take %player_name% 300'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You have successfully purchased the &#8E6A8E&lSHULKER &#FFEFC5pet!'
+    - '[message]&8[&#FFDB40&lCOIN SHOP&8] &#FFEFC5You can Right-Click on it to equip!'
+    - '[close]'
+    right_click_commands:
+    - '[player] uc toggle pets shulker'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'

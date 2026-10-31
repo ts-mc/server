@@ -1,0 +1,225 @@
+waiting_room_items:
+  store:
+    enabled: true
+    material: EMERALD
+    slot: 0
+    display_name: "<green>Open the store</green>"
+    actions:
+      - PLAYER;/ba store
+
+  vote:
+    enabled: true
+    material: DIAMOND
+    slot: 1
+    display_name: "<aqua>Vote for mini-games</aqua>"
+    actions:
+      - PLAYER;/ba vote
+
+  team_select:
+    enabled: true
+    material: WHITE_BANNER
+    slot: 7
+    display_name: "<yellow>Select a team</yellow>"
+    lore:
+      - "<gray>Choose your team before the game starts.</gray>"
+    actions:
+      - PLAYER;/ba team
+
+  leave:
+    enabled: true
+    material: RED_BED
+    slot: 8
+    display_name: "<red>Leave the game</red>"
+    actions:
+      - PLAYER;/ba leave
+
+end_items:
+  play_again:
+    enabled: true
+    material: SLIME_BALL
+    slot: 0
+    display_name: "<green>Play again</green>"
+    actions:
+      - PLAYER;/ba quickjoin
+
+  view_stats:
+    enabled: true
+    material: BOOK
+    slot: 4
+    display_name: "<yellow>View all stats</yellow>"
+    actions:
+      - PLAYER;/ba stats
+
+  exit_arena:
+    enabled: true
+    material: RED_BED
+    slot: 8
+    display_name: "<red>Leave the game</red>"
+    actions:
+      - PLAYER;/ba leave
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+main_lobby_items:
+  # Slot 0 is the server hub menu (DeluxeMenus /tsmenu). Quickjoin and the game
+  # selector are reachable from inside that menu, so this item no longer
+  # duplicates them on the hotbar.
+  menu:
+    enabled: true
+    material: COMPASS
+    slot: 0
+    display_name: "<gradient:#4CADD0:#B2F9FF><bold>Games Menu</bold></gradient>"
+    lore:
+      - "<gray>Open the server hub: play, store, vote,</gray>"
+      - "<gray>stats and party — all in one place.</gray>"
+      - ""
+      - "<#FFEFC5>➥ Click to open</#FFEFC5>"
+    actions:
+      - PLAYER;/tsmenu
+  maps:
+    enabled: true
+    material: BOOK
+    slot: 1
+    display_name: "{language:items.ui.main_lobby_items.maps.display_name}"
+    lore:
+      - "{language:items.ui.main_lobby_items.maps.lore}"
+    actions:
+      - PLAYER;/ba join
+  stats:
+    enabled: true
+    material: PLAYER_HEAD
+    value: "{player}"
+    slot: 4
+    display_name: "{language:items.ui.main_lobby_items.stats.display_name}"
+    lore:
+      - "{language:items.ui.main_lobby_items.stats.lore}"
+    actions:
+      - PLAYER;/ba stats
+  party:
+    enabled: true
+    material: CAKE
+    slot: 7
+    display_name: "{language:items.ui.main_lobby_items.party.display_name}"
+    lore:
+      - "{language:items.ui.main_lobby_items.party.lore}"
+    actions:
+      - PLAYER;/ba party
+  leave:
+    enabled: true
+    material: RED_BED
+    slot: 8
+    display_name: "{language:items.ui.main_lobby_items.leave.display_name}"
+    lore:
+      - "{language:items.ui.main_lobby_items.leave.lore}"
+    actions:
+      - "MESSAGE;{language:items.ui.main_lobby_items.leave.actions.message_0}"
+  play:
+    enabled: true
+    material: EMERALD
+    slot: 0
+    display_name: "{language:items.ui.main_lobby_items.play.display_name}"
+    lore:
+      - "{language:items.ui.main_lobby_items.play.lore}"
+    actions:
+      - PLAYER;/ba quickjoin
+spectator_items:
+  teleport_player:
+    enabled: true
+    material: COMPASS
+    slot: 0
+    display_name: "{language:items.ui.spectator_items.teleport_player.display_name}"
+    lore:
+      - "{language:items.ui.spectator_items.teleport_player.lore}"
+    actions:
+      - SPECTATOR;TELEPORT_PLAYER
+  view_stats:
+    enabled: true
+    material: BOOK
+    slot: 3
+    display_name: "{language:items.ui.spectator_items.view_stats.display_name}"
+    actions:
+      - PLAYER;/ba stats
+  play_again:
+    enabled: true
+    material: SLIME_BALL
+    slot: 5
+    display_name: "{language:items.ui.spectator_items.play_again.display_name}"
+    actions:
+      - PLAYER;/ba quickjoin
+  exit_arena:
+    enabled: true
+    material: RED_BED
+    slot: 8
+    display_name: "{language:items.ui.spectator_items.exit_arena.display_name}"
+    actions:
+      - PLAYER;/ba leave
+party_spectator_items:
+  teleport_player:
+    enabled: true
+    material: COMPASS
+    slot: 0
+    display_name: "{language:items.ui.party_spectator_items.teleport_player.display_name}"
+    lore:
+      - "{language:items.ui.party_spectator_items.teleport_player.lore}"
+    actions:
+      - SPECTATOR;TELEPORT_PLAYER
+  store:
+    enabled: true
+    material: EMERALD
+    slot: 4
+    display_name: "{language:items.ui.party_spectator_items.store.display_name}"
+    actions:
+      - PLAYER;/ba store
+  view_stats:
+    enabled: true
+    material: BOOK
+    slot: 8
+    display_name: "{language:items.ui.party_spectator_items.view_stats.display_name}"
+    actions:
+      - PLAYER;/ba stats
+replay_controls:
+  teleport:
+    enabled: true
+    material: PLAYER_HEAD
+    slot: 0
+    display_name: "{language:items.ui.replay_controls.teleport.display_name}"
+  slower:
+    enabled: true
+    material: RED_DYE
+    slot: 2
+    display_name: "{language:items.ui.replay_controls.slower.display_name}"
+  back:
+    enabled: true
+    material: ARROW
+    slot: 3
+    display_name: "{language:items.ui.replay_controls.back.display_name}"
+  play:
+    enabled: true
+    material: LIME_DYE
+    slot: 4
+    display_name: "{language:items.ui.replay_controls.play.display_name}"
+  pause:
+    enabled: true
+    material: WHITE_DYE
+    slot: 4
+    display_name: "{language:items.ui.replay_controls.pause.display_name}"
+  forward:
+    enabled: true
+    material: ARROW
+    slot: 5
+    display_name: "{language:items.ui.replay_controls.forward.display_name}"
+  faster:
+    enabled: true
+    material: GREEN_DYE
+    slot: 6
+    display_name: "{language:items.ui.replay_controls.faster.display_name}"
+  leave:
+    enabled: true
+    material: BARRIER
+    slot: 8
+    display_name: "{language:items.ui.replay_controls.leave.display_name}"

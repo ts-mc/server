@@ -1,0 +1,44 @@
+templates:
+  global:
+    text: "{language:menus.stats.main.bedrock.templates.global.text}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_paper.png"
+    actions: 
+  module:
+    text: "{language:menus.stats.main.bedrock.templates.module.text}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_paper.png"
+    actions: 
+  default:
+    text: "{language:menus.stats.main.bedrock.templates.default.text}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_paper.png"
+    actions: 
+  empty:
+    text: "{language:menus.stats.main.bedrock.templates.empty.text}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_gray_stained_glass_pane.png"
+    actions: 
+buttons:
+  previous:
+    text: "{language:menus.common.bedrock.pagination.previous}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
+    visibleIf: "{page_has_previous}"
+    actions:
+      - "PLAYER;/ba stats {period} page {page_previous}"
+  next:
+    text: "{language:menus.common.bedrock.pagination.next}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
+    visibleIf: "{page_has_next}"
+    actions:
+      - "PLAYER;/ba stats {period} page {page_next}"
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+type: SIMPLE
+menuName: "{language:menus.stats.main.bedrock.title}"
+openCommand: /ba stats
+buttonsPerPage: 6
+content:
+  - "{language:menus.stats.main.bedrock.content}"

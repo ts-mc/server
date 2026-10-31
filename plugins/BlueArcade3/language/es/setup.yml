@@ -1,0 +1,73 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+admin_commands:
+  setup:
+    bossbar_lobby: '<gradient:#f7971e:#ffd200>✦ Modo de configuración</gradient> <dark_gray>»</dark_gray> <gold>Arena <white><bold>{arena_id}</bold></white></gold> <dark_gray>|</dark_gray> <yellow>🏛 Vestíbulo</yellow>'
+    bossbar_game: '<gradient:#00c6ff:#0072ff>✦ Modo de configuración</gradient> <dark_gray>»</dark_gray> <aqua>Arena <white><bold>{arena_id}</bold></white></aqua> <dark_gray>|</dark_gray> <bold><white>🎮 {game}</white></bold>'
+    bossbar_pending_enable: '<gradient:#56ab2f:#a8e063>✔ Arena <bold>{arena_id}</bold> ¡está listo!</gradient> <dark_gray>»</dark_gray> <white>Ejecutar <green><bold>/baa enable {arena_id}</bold></green> para lanzar</white>'
+    scoreboard:
+      title: '<bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient></bold>'
+      blank: ''
+      arena: '<white>Configuración:</white> <aqua>Arena {arena_id}</aqua>'
+      phase: '<white>Fase:</white> <light_purple>{phase}</light_purple>'
+      common_header: '<aqua><bold>Arena</bold></aqua>'
+      game_header: '<light_purple><bold>{game}</bold></light_purple>'
+      footer: '<yellow>{server_website}</yellow>'
+      formats:
+        done: '<green> ✓</green> <white>{label}:</white> <aqua>{value}</aqua>'
+        required: '<red>✗</red> <white>{label}:</white> <gray>{value}</gray>'
+        optional: '<yellow>•</yellow> <white>{label}:</white> <gray>{value}</gray>'
+      labels:
+        name: 'Nombre'
+        min_players: 'jugadores mínimos'
+        max_players: 'Jugadores máximos'
+        lobby: 'Vestíbulo'
+        games: 'Juegos'
+        bounds: 'Límites'
+        spawns: 'Engendra'
+        time: 'Tiempo'
+      values:
+        text: 'Texto'
+        number: 'Número'
+        location_type: 'Ubicación'
+        skipped: 'Saltado'
+        bounds_type: 'Pos1 / Pos2'
+        locations_type: 'Ubicaciones'
+        seconds_type: 'Objetos de segunda clase'
+        add_game: 'Añadir un juego'
+        phase_lobby: 'Vestíbulo'
+        phase_game: 'Juego'
+        location: '{x} {y} {z}'
+        bounds: '{x}x{y}x{z}'
+        spawns: '{count} establecido'
+        time: '{time}s'
+        games: '{count} configurado'
+        configured: 'Configurado'
+        custom_required: 'Requerido'
+    lobby_setup_started: '{prefix} <green>Se creó el mundo del lobby temporal. Construye el lobby, luego ejecuta <white>/baa arena {arena_id} setlobby</white> para guardar tu posición.</green>'
+    lobby_saved: '{prefix} <green>¡Posición del lobby guardada! Ahora agrega un minijuego con <white>/baa game {arena_id} add</white>.</green>'
+    lobby_skipped: '{prefix} <yellow>Lobby omitido. Configure el área de espera dentro del mundo del minijuego, luego configúrelo con /baa arena {arena_id} setlobby.</yellow>'
+    saving_lobby: '{prefix} <yellow>Guardando el mundo del lobby, por favor espera...</yellow>'
+    game_setup_started: '{prefix} <green>Mundo temporal creado para <white>{game}</white>. Construya el mapa y habilítelo con <white>/baa game {arena_id} {game} enable</white>.</green>'
+    saving_game: '{prefix} <yellow>Guardando {game} mundo, por favor espera...</yellow>'
+    world_save_completed: '{prefix} <green>Mundo <white>{world}</white> guardado en el disco.</green>'
+    game_saved: '{prefix} <green>Minijuego <white>{game}</white> ¡guardado y habilitado! Agregue más juegos con /baa game {arena_id} o habilite la arena con <white>/baa enable {arena_id}</white>.</green>'
+    edit_started: '{prefix} <green>Modo de edición abierto para el lobby de la arena {arena_id}. Usa <white>/baa arena {arena_id} setlobby</white> cuando haya terminado, luego vuelva a habilitar con /baa enable {arena_id}.</green>'
+    game_edit_started: '{prefix} <green>Modo de edición abierto para <white>{game}</white> en la arena {arena_id}. Usa <white>/baa game {arena_id} {game} enable</white> cuando haya terminado.</green>'
+    already_editing: '{prefix} <red>Ya estás editando una arena. Finaliza la configuración actual, guarda tu progreso con /baa arena <id> save (o /baa game <id> <game> save), o habilita la arena.</red>'
+    arena_already_being_edited: '{prefix} <red>Arena {arena_id} ya está siendo editado por otro administrador.</red>'
+    arena_not_dynamic: '{prefix} <red>Este comando solo está disponible para arenas dinámicas.</red>'
+    lobby_zip_not_found: '{prefix} <red>No se puede editar el lobby para la arena {arena_id}: no se encontró ninguna plantilla de lobby. Primero crea y configura la arena.</red>'
+    game_zip_not_found: '{prefix} <red>No se puede editar <white>{game}</white> en la arena {arena_id}: no se encontró ninguna plantilla. Agrega el juego con /baa game {arena_id}, agrégalo y configúralo primero.</red>'
+    world_creation_failed: '{prefix} <red>No se pudo crear el mundo temporal. Consulte la consola para obtener más detalles.</red>'
+    cannot_exit_world: '{prefix} <red>No puedes abandonar este mundo mientras editas la arena. Finaliza el paso de configuración actual, o guarda tu progreso y sal con /baa arena <id> save (lobby) / /baa game <id> <game> save (mapa).</red>'
+    no_active_lobby_session: '{prefix} <red>Actualmente no estás configurando el lobby de esta arena. Si estás editando el mapa de un juego, usa <white>/baa game <id> <game> save</white>.</red>'
+    no_active_game_session: '{prefix} <red>Actualmente no estás configurando <white>{game}</white> para esta arena. Si estás editando el lobby, usa <white>/baa arena <id> save</white>.</red>'
+    lobby_saved_exit: '{prefix} <green>Progreso del lobby guardado. Reanuda cuando quieras con <white>/baa arena {arena_id} edit</white>, o añade un juego con <white>/baa game {arena_id} add</white>.</green>'
+    game_saved_exit: '{prefix} <green>Progreso de <white>{game}</white> guardado. Reanuda cuando quieras con <white>/baa game {arena_id} {game} edit</white>, o habilítalo cuando esté listo con <white>/baa game {arena_id} {game} enable</white>.</green>'

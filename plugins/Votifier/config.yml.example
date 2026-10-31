@@ -1,0 +1,9 @@
+host: 0.0.0.0
+port: 8192
+disable-v1-protocol: false
+tokens:
+  default: YOUR_VOTIFIER_TOKEN
+forwarding:
+  method: none
+  pluginMessaging:
+    channel: nuvotifier:votes

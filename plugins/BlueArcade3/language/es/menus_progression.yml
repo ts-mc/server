@@ -1,0 +1,312 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+menus:
+  achievements:
+    categories:
+      bedrock:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Logros</yellow> <gray>({page}/{page_total})</gray>'
+        content:
+          - '<white>Selecciona una categoría de logros.</white>'
+          - '<white>Categorías:</white> <white>{category_total}</white>'
+          - '<white>Página:</white> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          category:
+            text: '<aqua>{category_name}</aqua> <white>({category_progress})</white>'
+          empty:
+            text: '<white>No hay logros disponibles.</white>'
+      java:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Logros</yellow> <gray>({page}/{page_total})</gray>'
+        templates:
+          category:
+            name: '<aqua>{category_name}</aqua>'
+            lore:
+              - '<gray>{category_description}</gray>'
+              - '<gray>Logros:</gray> <white>{category_achievement_total}</white>'
+              - '<gray>Completado:</gray> <white>{category_progress}</white>'
+        empty:
+          name: '<dark_gray>Sin categoría</dark_gray>'
+          lore:
+            - '<gray>Aún no hay logros para mostrar.</gray>'
+        items:
+          info:
+            name: '<aqua>Logros</aqua>'
+            lore:
+              - '<gray>Categorías:</gray> <white>{category_total}</white>'
+              - '<gray>Página:</gray> <white>{page}</white>/<white>{page_total}</white>'
+    list:
+      bedrock:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>{category_name}</yellow> <gray>({page}/{page_total})</gray>'
+        content:
+          - '<white>{category_description}</white>'
+          - '<white>Completado:</white> <white>{achievement_completed}</white>/<white>{achievement_total}</white>'
+          - '<white>Página:</white> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          achievement:
+            text: '<aqua>{achievement_name}</aqua> <white>- {achievement_status}</white> <white>({achievement_phase}/{achievement_phase_total})</white>'
+          empty:
+            text: '<white>No se encontraron logros.</white>'
+      java:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>{category_name}</yellow> <gray>({page}/{page_total})</gray>'
+        templates:
+          achievement:
+            name: '<aqua>{achievement_name}</aqua>'
+            lore:
+              - '<gray>{achievement_description}</gray>'
+              - '<gray>Estado:</gray> <white>{achievement_status}</white>'
+              - '<gray>Fase:</gray> <white>{achievement_phase}</white>/<white>{achievement_phase_total}</white>'
+              - '<gray>Progreso:</gray> <white>{achievement_progress}</white>'
+              - '<gray>{achievement_phase_name}</gray>'
+              - '<gray>Haz clic para ver las fases.</gray>'
+        empty:
+          name: '<dark_gray>Sin logro</dark_gray>'
+          lore:
+            - '<gray>Sigue jugando para desbloquear más.</gray>'
+        items:
+          info:
+            name: '<aqua>{category_name}</aqua>'
+            lore:
+              - '<gray>Logros:</gray> <white>{achievement_total}</white>'
+              - '<gray>Completado:</gray> <white>{achievement_completed}</white>'
+              - '<gray>Página:</gray> <white>{page}</white>/<white>{page_total}</white>'
+          back:
+            name: '<gray>← Categorías</gray>'
+            lore:
+              - '<gray>Volver a categorías.</gray>'
+    phases:
+      bedrock:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>{achievement_name}</yellow> <gray>({page}/{page_total})</gray>'
+        content:
+          - '<white>{achievement_description}</white>'
+          - '<white>Progreso:</white> <white>{achievement_progress_bar}</white> <white>({achievement_progress})</white>'
+          - '<white>Restante:</white> <white>{achievement_remaining_bar}</white> <white>({achievement_remaining})</white>'
+          - '<white>Página:</white> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          phase:
+            text: '<aqua>Fase {phase_index}</aqua> <white>- {phase_status}</white>'
+          empty:
+            text: '<white>No se encontraron fases.</white>'
+      java:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>{achievement_name}</yellow> <gray>({page}/{page_total})</gray>'
+        templates:
+          phase:
+            name: '<aqua>Fase {phase_index}:</aqua> <white>{phase_name}</white>'
+            lore:
+              - '<gray>{phase_description}</gray>'
+              - '<gray> </gray>'
+              - '<gray>Estado:</gray> <white>{phase_status}</white>'
+              - '<gray>Progreso:</gray> {achievement_progress_bar} <gray>({achievement_progress})</gray>'
+              - '<gray>Restante:</gray> {achievement_remaining_bar} <gray>({achievement_remaining})</gray>'
+        empty:
+          name: '<dark_gray>Sin fases</dark_gray>'
+          lore:
+            - '<gray>Este logro no tiene fases.</gray>'
+        items:
+          info:
+            name: '<aqua>{achievement_name}</aqua>'
+            lore:
+              - '<gray>{achievement_description}</gray>'
+              - '<gray> </gray>'
+              - '<gray>Progreso:</gray> {achievement_progress_bar} <gray>({achievement_progress})</gray>'
+              - '<gray>Restante:</gray> {achievement_remaining_bar} <gray>({achievement_remaining})</gray>'
+              - '<gray>Página:</gray> <white>{page}</white>/<white>{page_total}</white>'
+          back:
+            name: '<gray>← Logros</gray>'
+            lore:
+              - '<gray>Volver a logros.</gray>'
+  stats:
+    main:
+      bedrock:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Estadísticas</yellow> <gray>({category_name})</gray> <gray>({period_label})</gray> <gray>({page}/{page_total})</gray>'
+        content:
+          - '<white>Revisa tus estadísticas actuales.</white>'
+          - '<white>Total rastreado:</white> <white>{stat_total}</white>'
+          - '<white>Módulos:</white> <white>{module_count}</white>'
+          - '<white>Período:</white> <white>{period_label}</white>'
+          - '<white>Página:</white> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          global:
+            text: '<aqua>{stat_display}</aqua> <white>- {stat_value}</white>'
+          module:
+            text: '<aqua>[{module_name}]</aqua> <white>{stat_display}: {stat_value}</white>'
+          default:
+            text: '<aqua>{stat_display}</aqua> <white>- {stat_value}</white>'
+          empty:
+            text: '<white>Aún no hay estadísticas disponibles.</white>'
+      java:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Estadísticas</yellow> <gray>({category_name})</gray> <gray>({period_label})</gray> <gray>({page}/{page_total})</gray>'
+        templates:
+          global:
+            name: '<aqua>{stat_display}</aqua>'
+            lore:
+              - '<gray>Total:</gray> <white>{stat_value}</white>'
+              - '<gray>Alcance:</gray> <white>{scope}</white>'
+          module:
+            name: '<yellow>[{module_name}]</yellow> <aqua>{stat_display}</aqua>'
+            lore:
+              - '<gray>Total:</gray> <white>{stat_value}</white>'
+              - '<gray>Juego:</gray> <white>{module_name}</white>'
+          default:
+            name: '<aqua>{stat_display}</aqua>'
+            lore:
+              - '<gray>Total:</gray> <white>{stat_value}</white>'
+        empty:
+          name: '<dark_gray>Sin estadística</dark_gray>'
+          lore:
+            - '<gray>Sigue jugando para desbloquear más estadísticas.</gray>'
+        items:
+          info:
+            name: '<aqua>Tus estadísticas</aqua>'
+            lore:
+              - '<gray>Estadísticas rastreadas:</gray> <white>{stat_total}</white>'
+              - '<gray>Módulos:</gray> <white>{module_count}</white>'
+              - '<gray>Categoría:</gray> <white>{category_name}</white>'
+              - '<gray>Período:</gray> <white>{period_label}</white>'
+              - '<gray>Página:</gray> <white>{page}</white>/<white>{page_total}</white>'
+          back:
+            lore:
+              - '<gray>Volver a categorías.</gray>'
+    categories:
+      java:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Estadísticas</yellow> <gray>({period_label})</gray> <gray>({page}/{page_total})</gray>'
+        templates:
+          category:
+            name: '<aqua>{category_name}</aqua>'
+            lore:
+              - '<gray>Estadísticas:</gray> <white>{category_stat_total}</white>'
+              - '<gray>Alcance:</gray> <white>{category_scope}</white>'
+        empty:
+          name: '<dark_gray>Sin categoría</dark_gray>'
+          lore:
+            - '<gray>Aún no hay categorías de estadísticas para mostrar.</gray>'
+        items:
+          info:
+            name: '<aqua>Categorías de estadísticas</aqua>'
+            lore:
+              - '<gray>Categorías:</gray> <white>{category_total}</white>'
+              - '<gray>Período:</gray> <white>{period_label}</white>'
+              - '<gray>Página:</gray> <white>{page}</white>/<white>{page_total}</white>'
+  tops:
+    list_menu:
+      bedrock:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Top {stat_display}</yellow> <gray>({period_label})</gray> <gray>({page}/{page_total})</gray>'
+        content:
+          - '<white>Alcance:</white> <white>{scope_label}</white>'
+          - '<white>Módulo:</white> <white>{module_name}</white>'
+          - '<white>Período:</white> <white>{period_label}</white>'
+          - '<white>Entradas:</white> <white>{entry_total}</white>'
+          - '<white>Página:</white> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          entry:
+            text: '<aqua>#{position}</aqua> <white>{player}:</white> <white>{stat_value}</white>'
+          default:
+            text: '<aqua>#{position}</aqua> <white>{player}:</white> <white>{stat_value}</white>'
+          empty:
+            text: '<white>Aún no hay resultados disponibles.</white>'
+        buttons:
+          back:
+            text: '<white>← Volver a estadísticas</white>'
+      java:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Top {stat_display}</yellow> <gray>({period_label})</gray> <gray>({page}/{page_total})</gray>'
+        templates:
+          entry:
+            name: '<gold>#{position}</gold> <white>{player}</white>'
+            lore:
+              - '<gray>{stat_display}:</gray> <aqua>{stat_value}</aqua>'
+          default:
+            name: '<gold>#{position}</gold> <white>{player}</white>'
+            lore:
+              - '<gray>{stat_display}:</gray> <aqua>{stat_value}</aqua>'
+        empty:
+          name: '<dark_gray>Sin resultados</dark_gray>'
+          lore:
+            - '<gray>Ningún jugador tiene resultados aún.</gray>'
+        items:
+          info:
+            name: '<aqua>Tabla de clasificación</aqua>'
+            lore:
+              - '<gray>Estadística:</gray> <white>{stat_display}</white>'
+              - '<gray>Alcance:</gray> <white>{scope_label}</white>'
+              - '<gray>Módulo:</gray> <white>{module_name}</white>'
+              - '<gray>Período:</gray> <white>{period_label}</white>'
+              - '<gray>Entradas:</gray> <white>{entry_total}</white>'
+              - '<gray>Página:</gray> <white>{page}</white>/<white>{page_total}</white>'
+          back:
+            lore:
+              - '<gray>Volver a la lista de estadísticas.</gray>'
+    main:
+      bedrock:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Estadísticas principales</yellow> <gray>({category_name})</gray> <gray>({period_label})</gray> <gray>({page}/{page_total})</gray>'
+        content:
+          - '<white>Selecciona una estadística para ver la tabla de clasificación.</white>'
+          - '<white>Total rastreado:</white> <white>{stat_total}</white>'
+          - '<white>Módulos:</white> <white>{module_count}</white>'
+          - '<white>Período:</white> <white>{period_label}</white>'
+          - '<white>Página:</white> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          global:
+            text: '<aqua>{stat_display}</aqua> <white>- {stat_value}</white>'
+          module:
+            text: '<aqua>[{module_name}]</aqua> <white>{stat_display}: {stat_value}</white>'
+          default:
+            text: '<aqua>{stat_display}</aqua> <white>- {stat_value}</white>'
+          empty:
+            text: '<white>Aún no hay estadísticas disponibles.</white>'
+      java:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Estadísticas principales</yellow> <gray>({category_name})</gray> <gray>({period_label})</gray> <gray>({page}/{page_total})</gray>'
+        templates:
+          global:
+            name: '<aqua>{stat_display}</aqua>'
+            lore:
+              - '<gray>Tu total:</gray> <white>{stat_value}</white>'
+              - '<gray>Alcance:</gray> <white>{scope}</white>'
+          module:
+            name: '<yellow>[{module_name}]</yellow> <aqua>{stat_display}</aqua>'
+            lore:
+              - '<gray>Tu total:</gray> <white>{stat_value}</white>'
+              - '<gray>Juego:</gray> <white>{module_name}</white>'
+          default:
+            name: '<aqua>{stat_display}</aqua>'
+            lore:
+              - '<gray>Tu total:</gray> <white>{stat_value}</white>'
+        empty:
+          name: '<dark_gray>Sin estadística</dark_gray>'
+          lore:
+            - '<gray>Sigue jugando para desbloquear más estadísticas.</gray>'
+        items:
+          info:
+            name: '<aqua>Estadísticas principales</aqua>'
+            lore:
+              - '<gray>Estadísticas rastreadas:</gray> <white>{stat_total}</white>'
+              - '<gray>Módulos:</gray> <white>{module_count}</white>'
+              - '<gray>Categoría:</gray> <white>{category_name}</white>'
+              - '<gray>Período:</gray> <white>{period_label}</white>'
+              - '<gray>Página:</gray> <white>{page}</white>/<white>{page_total}</white>'
+          back:
+            lore:
+              - '<gray>Volver a categorías.</gray>'
+    categories:
+      java:
+        title: '<gradient:{color_primary}:{color_secondary}><bold>{server_name}</bold></gradient> <gray>-</gray> <yellow>Estadísticas principales</yellow> <gray>({period_label})</gray> <gray>({page}/{page_total})</gray>'
+        templates:
+          category:
+            name: '<aqua>{category_name}</aqua>'
+            lore:
+              - '<gray>Estadísticas:</gray> <white>{category_stat_total}</white>'
+              - '<gray>Alcance:</gray> <white>{category_scope}</white>'
+        empty:
+          name: '<dark_gray>Sin categoría</dark_gray>'
+          lore:
+            - '<gray>Aún no hay categorías de estadísticas para mostrar.</gray>'
+        items:
+          info:
+            name: '<aqua>Categorías de estadísticas principales</aqua>'
+            lore:
+              - '<gray>Categorías:</gray> <white>{category_total}</white>'
+              - '<gray>Período:</gray> <white>{period_label}</white>'
+              - '<gray>Página:</gray> <white>{page}</white>/<white>{page_total}</white>'

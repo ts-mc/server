@@ -1,0 +1,44 @@
+menu:
+  title: '             &#64ADFF&lAquaSpawn'
+  size: 5
+
+# * Tip: Don't touch the name 'close'
+# * If you can modify the name, material, slot, lore
+
+# Actions:
+#  + [MESSAGE] - Send message to player (PlaceholderAPI & Hex supported)
+#  + [SOUND] - Play sounds to the player (https://github.com/CryptoMorin/XSeries)
+#  + [CLOSE] - Action to close the menu
+#  + [TELEPORT] - Teleports to the indicated coordinates
+#  + [COMMAND] - Commands that the player executes
+
+items:
+  close:
+    name: '&#FF5E5E   ✉ ᴄʟᴏѕᴇ ✉'
+    slot: 40
+    material: BARRIER
+    lore:
+    - '&fᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏѕᴇ'
+    multi-click:
+    - '[CLOSE]'
+  spawn:
+    name: '&#5E9DFFSpawn #1'
+    world: world
+    slot: 11
+    material: MAP
+    cord: -138.5,-43.0,-113.5,-179.69987,0.59999055
+    lore:
+    - '&r'
+    - '&8        ℹ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ℹ'
+    - '&r'
+    - '   &6⭐ &fName: &6spawn'
+    - '   &e☄ &fCreated by: &eKingzStudios'
+    - '&r'
+    - '   &#BAFF89🌎 &fWorld: &#BAFF89world'
+    - '   &#FFA7EF☀ &fCoordinates: &#FFA7EF-139, -114'
+    - '&r'
+    - '    &#5E9DFF ⏏ ᴄʟɪᴄᴋ ᴛᴏ ᴛᴇʟᴇᴘᴏʀᴛ ⏏   '
+    multi-click:
+    - '[SOUND] BLOCK_LAVA_POP:5:5'
+    - '[TELEPORT] -138.5,-43.0,-113.5,-179.69987,0.59999055'
+    - '[CLOSE]'

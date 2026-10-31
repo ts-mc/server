@@ -1,0 +1,25 @@
+buttons:
+  search_public:
+    text: "{language:menus.party.main.bedrock.buttons.search_public.text}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_compass.png"
+    actions:
+      - PLAYER;/ba party search
+  create_party:
+    text: "{language:menus.party.main.bedrock.buttons.create_party.text}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_crafting_table.png"
+    actions:
+      - PLAYER;/ba party create
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+type: SIMPLE
+menuName: "{language:menus.party.main.bedrock.title}"
+openCommand: /ba party
+buttonsPerPage: 5
+content:
+  - "{language:menus.party.main.bedrock.content}"

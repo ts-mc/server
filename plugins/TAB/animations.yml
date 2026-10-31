@@ -1,0 +1,184 @@
+ServerName:
+  change-interval: 300
+  texts:
+  - '&c&lServerName'
+  - '&c&n&lServerName'
+  - '&b&lServerName'
+  - '&b&l&nServerName'
+  - '&e&lServerName'
+  - '&e&n&lServerName'
+web:
+  change-interval: 200
+  texts:
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&6w&eww.domain.com'
+  - '&ew&6w&ew.domain.com'
+  - '&eww&6w&e.domain.com'
+  - '&ewww&6.&edomain.com'
+  - '&ewww.&6d&eomain.com'
+  - '&ewww.d&6o&emain.com'
+  - '&ewww.do&6m&eain.com'
+  - '&ewww.dom&6a&ein.com'
+  - '&ewww.doma&6i&en.com'
+  - '&ewww.domai&6n&e.com'
+  - '&ewww.domain&6.&ecom'
+  - '&ewww.domain.&6c&eom'
+  - '&ewww.domain.c&6o&em'
+  - '&ewww.domain.co&6m'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+vote:
+  change-interval: 1000
+  texts:
+  - '&avote.domain.com'
+  - '&a&nvote.domain.com'
+  - '&5vote.domain.com'
+  - '&5&nvote.domain.com'
+Welcome:
+  change-interval: 400
+  texts:
+  - '&7&lW_'
+  - '&7&lW_'
+  - '&7&lWe_'
+  - '&7&lWel_'
+  - '&7&lWelc_'
+  - '&7&lWelco_'
+  - '&7&lWelcom_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcom_'
+  - '&7&lWelco_'
+  - '&7&lWelc_'
+  - '&7&lWel_'
+  - '&7&lWe_'
+  - '&7&lW_'
+  - '&7&lW_'
+time:
+  change-interval: 3000
+  texts:
+    - '&7Time &b%time%'
+    - '&7Date &b%date%'
+barcolors:
+  change-interval: 1000
+  texts:
+    - RED
+    - BLUE
+    - GREEN
+    - YELLOW
+killsDeaths:
+  change-interval: 5000
+  texts:
+    - "  &#bcd4e6🗡 &f%customfont_style:1,Kills% &#bcd4e6%statistic_player_kills%"
+    - "  &#e3dac9☠ &f%customfont_style:1,Deaths% &#e3dac9%statistic_deaths%"
+# Animated DeluxeTags tag in each LuckPerms group's prefix colours (2026-10-29).
+tag-owner:
+  change-interval: 250
+  texts:
+    - '<gradient:#D78C39:#FEF801:#D78C39:-1.0>%condition:tag-owner%</gradient>'
+    - '<gradient:#D78C39:#FEF801:#D78C39:-0.75>%condition:tag-owner%</gradient>'
+    - '<gradient:#D78C39:#FEF801:#D78C39:-0.5>%condition:tag-owner%</gradient>'
+    - '<gradient:#D78C39:#FEF801:#D78C39:-0.25>%condition:tag-owner%</gradient>'
+    - '<gradient:#D78C39:#FEF801:#D78C39:0.0>%condition:tag-owner%</gradient>'
+    - '<gradient:#D78C39:#FEF801:#D78C39:0.25>%condition:tag-owner%</gradient>'
+    - '<gradient:#D78C39:#FEF801:#D78C39:0.5>%condition:tag-owner%</gradient>'
+    - '<gradient:#D78C39:#FEF801:#D78C39:0.75>%condition:tag-owner%</gradient>'
+tag-manager:
+  change-interval: 250
+  texts:
+    - '<gradient:#F858AD:#F85882:#F858AD:-1.0>%condition:tag-manager%</gradient>'
+    - '<gradient:#F858AD:#F85882:#F858AD:-0.75>%condition:tag-manager%</gradient>'
+    - '<gradient:#F858AD:#F85882:#F858AD:-0.5>%condition:tag-manager%</gradient>'
+    - '<gradient:#F858AD:#F85882:#F858AD:-0.25>%condition:tag-manager%</gradient>'
+    - '<gradient:#F858AD:#F85882:#F858AD:0.0>%condition:tag-manager%</gradient>'
+    - '<gradient:#F858AD:#F85882:#F858AD:0.25>%condition:tag-manager%</gradient>'
+    - '<gradient:#F858AD:#F85882:#F858AD:0.5>%condition:tag-manager%</gradient>'
+    - '<gradient:#F858AD:#F85882:#F858AD:0.75>%condition:tag-manager%</gradient>'
+tag-admin:
+  change-interval: 250
+  texts:
+    - '<gradient:#FF0000:#FFA3CB:#FF0000:-1.0>%condition:tag-admin%</gradient>'
+    - '<gradient:#FF0000:#FFA3CB:#FF0000:-0.75>%condition:tag-admin%</gradient>'
+    - '<gradient:#FF0000:#FFA3CB:#FF0000:-0.5>%condition:tag-admin%</gradient>'
+    - '<gradient:#FF0000:#FFA3CB:#FF0000:-0.25>%condition:tag-admin%</gradient>'
+    - '<gradient:#FF0000:#FFA3CB:#FF0000:0.0>%condition:tag-admin%</gradient>'
+    - '<gradient:#FF0000:#FFA3CB:#FF0000:0.25>%condition:tag-admin%</gradient>'
+    - '<gradient:#FF0000:#FFA3CB:#FF0000:0.5>%condition:tag-admin%</gradient>'
+    - '<gradient:#FF0000:#FFA3CB:#FF0000:0.75>%condition:tag-admin%</gradient>'
+tag-headmoderator:
+  change-interval: 250
+  texts:
+    - '<gradient:#7F3AFF:#F763F8:#7F3AFF:-1.0>%condition:tag-headmoderator%</gradient>'
+    - '<gradient:#7F3AFF:#F763F8:#7F3AFF:-0.75>%condition:tag-headmoderator%</gradient>'
+    - '<gradient:#7F3AFF:#F763F8:#7F3AFF:-0.5>%condition:tag-headmoderator%</gradient>'
+    - '<gradient:#7F3AFF:#F763F8:#7F3AFF:-0.25>%condition:tag-headmoderator%</gradient>'
+    - '<gradient:#7F3AFF:#F763F8:#7F3AFF:0.0>%condition:tag-headmoderator%</gradient>'
+    - '<gradient:#7F3AFF:#F763F8:#7F3AFF:0.25>%condition:tag-headmoderator%</gradient>'
+    - '<gradient:#7F3AFF:#F763F8:#7F3AFF:0.5>%condition:tag-headmoderator%</gradient>'
+    - '<gradient:#7F3AFF:#F763F8:#7F3AFF:0.75>%condition:tag-headmoderator%</gradient>'
+tag-moderator:
+  change-interval: 250
+  texts:
+    - '<gradient:#6186EB:#B2F9FF:#6186EB:-1.0>%condition:tag-moderator%</gradient>'
+    - '<gradient:#6186EB:#B2F9FF:#6186EB:-0.75>%condition:tag-moderator%</gradient>'
+    - '<gradient:#6186EB:#B2F9FF:#6186EB:-0.5>%condition:tag-moderator%</gradient>'
+    - '<gradient:#6186EB:#B2F9FF:#6186EB:-0.25>%condition:tag-moderator%</gradient>'
+    - '<gradient:#6186EB:#B2F9FF:#6186EB:0.0>%condition:tag-moderator%</gradient>'
+    - '<gradient:#6186EB:#B2F9FF:#6186EB:0.25>%condition:tag-moderator%</gradient>'
+    - '<gradient:#6186EB:#B2F9FF:#6186EB:0.5>%condition:tag-moderator%</gradient>'
+    - '<gradient:#6186EB:#B2F9FF:#6186EB:0.75>%condition:tag-moderator%</gradient>'
+tag-helper:
+  change-interval: 250
+  texts:
+    - '<gradient:#4CADD0:#B2F9FF:#4CADD0:-1.0>%condition:tag-helper%</gradient>'
+    - '<gradient:#4CADD0:#B2F9FF:#4CADD0:-0.75>%condition:tag-helper%</gradient>'
+    - '<gradient:#4CADD0:#B2F9FF:#4CADD0:-0.5>%condition:tag-helper%</gradient>'
+    - '<gradient:#4CADD0:#B2F9FF:#4CADD0:-0.25>%condition:tag-helper%</gradient>'
+    - '<gradient:#4CADD0:#B2F9FF:#4CADD0:0.0>%condition:tag-helper%</gradient>'
+    - '<gradient:#4CADD0:#B2F9FF:#4CADD0:0.25>%condition:tag-helper%</gradient>'
+    - '<gradient:#4CADD0:#B2F9FF:#4CADD0:0.5>%condition:tag-helper%</gradient>'
+    - '<gradient:#4CADD0:#B2F9FF:#4CADD0:0.75>%condition:tag-helper%</gradient>'
+tag-staffteam:
+  change-interval: 250
+  texts:
+    - '<#FFFFFF>%condition:tag-staffteam%</#FFFFFF>'
+tag-vip:
+  change-interval: 250
+  texts:
+    - '<gradient:#F47FFF:#B44CFF:#F47FFF:-1.0>%condition:tag-vip%</gradient>'
+    - '<gradient:#F47FFF:#B44CFF:#F47FFF:-0.75>%condition:tag-vip%</gradient>'
+    - '<gradient:#F47FFF:#B44CFF:#F47FFF:-0.5>%condition:tag-vip%</gradient>'
+    - '<gradient:#F47FFF:#B44CFF:#F47FFF:-0.25>%condition:tag-vip%</gradient>'
+    - '<gradient:#F47FFF:#B44CFF:#F47FFF:0.0>%condition:tag-vip%</gradient>'
+    - '<gradient:#F47FFF:#B44CFF:#F47FFF:0.25>%condition:tag-vip%</gradient>'
+    - '<gradient:#F47FFF:#B44CFF:#F47FFF:0.5>%condition:tag-vip%</gradient>'
+    - '<gradient:#F47FFF:#B44CFF:#F47FFF:0.75>%condition:tag-vip%</gradient>'
+tag-voter:
+  change-interval: 250
+  texts:
+    - '<gradient:#98E0A3:#00DB45:#98E0A3:-1.0>%condition:tag-voter%</gradient>'
+    - '<gradient:#98E0A3:#00DB45:#98E0A3:-0.75>%condition:tag-voter%</gradient>'
+    - '<gradient:#98E0A3:#00DB45:#98E0A3:-0.5>%condition:tag-voter%</gradient>'
+    - '<gradient:#98E0A3:#00DB45:#98E0A3:-0.25>%condition:tag-voter%</gradient>'
+    - '<gradient:#98E0A3:#00DB45:#98E0A3:0.0>%condition:tag-voter%</gradient>'
+    - '<gradient:#98E0A3:#00DB45:#98E0A3:0.25>%condition:tag-voter%</gradient>'
+    - '<gradient:#98E0A3:#00DB45:#98E0A3:0.5>%condition:tag-voter%</gradient>'
+    - '<gradient:#98E0A3:#00DB45:#98E0A3:0.75>%condition:tag-voter%</gradient>'
+tag-trusted:
+  change-interval: 250
+  texts:
+    - '<#AAAAAA>%condition:tag-trusted%</#AAAAAA>'
+tag-default:
+  change-interval: 250
+  texts:
+    - '<#AAAAAA>%condition:tag-default%</#AAAAAA>'

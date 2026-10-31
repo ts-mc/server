@@ -1,0 +1,146 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+menus:
+  store:
+    categories:
+      bedrock:
+        title: '<aqua>Tienda</aqua>'
+        content:
+          - '<white>Buscar categorías de tienda.</white>'
+          - '<white>Categorías:</white> <yellow>{total_categories}</yellow>'
+          - '<white>Saldo:</white> <yellow>{balance} {currency}</yellow>'
+          - '<yellow>Página:</yellow> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          category:
+            text: '<green>{category_name}</green> <yellow>({category_owned_count}/{category_item_count})</yellow>'
+          empty:
+            text: '<white>No hay categoría disponible.</white>'
+      java:
+        title: '<aqua>Tienda</aqua>'
+        templates:
+          category:
+            name: '<green>{category_name}</green>'
+            lore:
+              - '{category_description_multiline}'
+              - '<gray> </gray>'
+              - '<yellow>Progreso</yellow>'
+              - '<gray>• Objetos:</gray> <white>{category_item_count}</white>'
+              - '<gray>• Comprado:</gray> <white>{category_owned_count}</white>'
+              - '{category_selection_line}'
+              - '<gray> </gray>'
+              - '<gold>Haz clic para explorar.</gold>'
+        empty:
+          name: '<dark_gray>Sin categoría</dark_gray>'
+          lore:
+            - '<gray>Este espacio está vacío.</gray>'
+        items:
+          info:
+            name: '<aqua>Tienda</aqua>'
+            lore:
+              - '<gray>Categorías:</gray> <white>{total_categories}</white>'
+              - '<gray>Saldo:</gray> <white>{balance} {currency}</white>'
+              - '<gray>Página:</gray> <white>{page}/{page_total}</white>'
+    item_detail:
+      bedrock:
+        title: '<aqua>{category_name}</aqua>'
+        content:
+          - '<yellow>{item_name}</yellow>'
+          - '{item_description}'
+          - '<white>Estado:</white> <yellow>{item_status}</yellow>'
+          - '<white>Precio:</white> <yellow>{item_price} {currency}</yellow>'
+          - '{item_action_hint}'
+        buttons:
+          button1:
+            text: '{item_primary_label}'
+          button2:
+            text: '<white>Volver</white>'
+    items:
+      bedrock:
+        title: '<aqua>{category_name}</aqua>'
+        content:
+          - '<white>Saldo:</white> <yellow>{balance} {currency}</yellow>'
+          - '<white>Objetos:</white> <yellow>{total_items}</yellow>'
+          - '<yellow>Página:</yellow> <white>{page}</white>/<white>{page_total}</white>'
+          - '<aqua>Toca un objeto para ver los detalles.</aqua>'
+        templates:
+          item:
+            text: '<green>{item_name}</green> <yellow>({item_status})</yellow> <white>- {item_price} {currency}</white>'
+          empty:
+            text: '<white>No hay objetos disponibles.</white>'
+      java:
+        title: '<aqua>{category_name} <gray>(Página {page}/{page_total})</gray>'
+        templates:
+          item:
+            name: '<green>{item_name}</green>'
+            lore:
+              - '<gray>Descripción:</gray>'
+              - '<dark_gray>{item_description}</dark_gray>'
+              - '<gray> </gray>'
+              - '<yellow>Detalles</yellow>'
+              - '<gray>• Estado:</gray> <white>{item_status}</white>'
+              - '<gray>• Precio:</gray> <white>{item_price} {currency}</white>'
+              - '<gray> </gray>'
+              - '{item_action_hint}'
+        empty:
+          name: '<dark_gray>Sin objeto</dark_gray>'
+          lore:
+            - '<gray>Este espacio está vacío.</gray>'
+        items:
+          info:
+            name: '<aqua>{category_name}</aqua>'
+            lore:
+              - '<gray>Objetos:</gray> <white>{total_items}</white>'
+              - '<gray>Saldo:</gray> <white>{balance} {currency}</white>'
+              - '<gray>Página:</gray> <white>{page}/{page_total}</white>'
+          back:
+            name: '<gray>← Volver a categorías'
+            lore:
+              - '<gray>Regreso a la tienda.</gray>'
+    purchase_confirmation:
+      bedrock:
+        title: '<red>Confirmar compra</red>'
+        content:
+          - '<white>Objeto:</white> <yellow>{item_name}</yellow>'
+          - '<white>Precio:</white> <yellow>{item_price} {currency}</yellow>'
+          - '<white>Saldo:</white> <yellow>{balance} {currency}</yellow>'
+          - '<yellow>¿Quieres comprar este objeto?</yellow>'
+        buttons:
+          button1:
+            text: '<red>Cancelar</red>'
+          button2:
+            text: '<green>Comprar</green>'
+      java:
+        title: '<red>Confirmar compra</red>'
+        items:
+          cancel:
+            name: '<red>Cancelar</red>'
+            lore:
+              - '<gray>Regreso a la tienda.</gray>'
+          item:
+            name: '<green>{item_name}</green>'
+            lore:
+              - '<gray>Precio:</gray> <white>{item_price} {currency}</white>'
+              - '<gray>Saldo:</gray> <white>{balance} {currency}</white>'
+          confirm:
+            name: '<green>Comprar</green>'
+            lore:
+              - '<gray>Comprar este objeto.</gray>'
+    result_message:
+      bedrock:
+        title: '<aqua>Tienda</aqua>'
+        content:
+          - '{result_title}'
+          - '{result_message}'
+          - '<white>Objeto:</white> <yellow>{item_name}</yellow>'
+          - '<white>Saldo:</white> <yellow>{balance} {currency}</yellow>'
+        buttons:
+          button1:
+            text: '<white>Volver</white>'
+          button2:
+            text: '<green>Cerrar</green>'

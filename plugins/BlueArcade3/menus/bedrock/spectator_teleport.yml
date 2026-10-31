@@ -1,0 +1,32 @@
+buttons:
+  previous_page:
+    text: "{language:menus.common.bedrock.pagination.previous}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
+    visibleIf: "{page_has_previous}"
+    actions:
+      - "SPECTATOR;TELEPORT_PLAYER_PAGE;{page_previous}"
+  next_page:
+    text: "{language:menus.common.bedrock.pagination.next}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
+    visibleIf: "{page_has_next}"
+    actions:
+      - "SPECTATOR;TELEPORT_PLAYER_PAGE;{page_next}"
+templates:
+  player:
+    text: "{language:menus.spectator.teleport.bedrock.templates.player.text}"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_player_head.png"
+    actions:
+      - "SPECTATOR;TELEPORT_TARGET;{target_uuid}"
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+type: SIMPLE
+menuName: "{language:menus.spectator.teleport.bedrock.title}"
+buttonsPerPage: 10
+content:
+  - "{language:menus.spectator.teleport.bedrock.content}"

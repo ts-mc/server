@@ -1,0 +1,43 @@
+file_version: "1"
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+type: SIMPLE
+menuName: "<yellow>Vote for minigames</yellow>"
+openCommand: /ba vote
+buttonsPerPage: 10
+
+content:
+  - "<white>Choose the next minigame for the party.</white>"
+  - "<yellow>Available votes:</yellow> <white>{available_votes}</white>/<white>{max_votes}</white>"
+  - "<yellow>Page:</yellow> <white>{page}</white>/<white>{page_total}</white>"
+
+buttons:
+  previous_page:
+    text: "<white>← Page {page_previous}</white>"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
+    visibleIf: "{page_has_previous}"
+    actions:
+      - "PLAYER;/ba vote page {page_previous}"
+  next_page:
+    text: "<white>Page {page_next} →</white>"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
+    visibleIf: "{page_has_next}"
+    actions:
+      - "PLAYER;/ba vote page {page_next}"
+
+# Template definitions used by the dynamic vote builder
+templates:
+  dynamic:
+    text: "<yellow>{display_name}</yellow> <white>- {votes} votes</white>"
+    actions:
+      - "PLAYER;/ba vote {minigame}"
+  empty:
+    text: "<white>No minigames to vote.</white>"
+    image: "https://blueva.net/api/menu/items/1_21_10/minecraft_gray_stained_glass_pane.png"
+    actions: 

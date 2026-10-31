@@ -1,0 +1,297 @@
+menu_title: '&8» &c&lStaff Tools &8«'
+open_command: staff
+size: 45
+update_interval: 1
+items:
+
+  # ═══════════════════════════════════════
+  # FILLER
+  # ═══════════════════════════════════════
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 35
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+    priority: 1
+    update: true
+    display_name: ' '
+
+  # ═══════════════════════════════════════
+  # TOGGLEABLE TOOLS (Green / Red Dye)
+  # ═══════════════════════════════════════
+  'vanish':
+    material: LIME_DYE
+    slot: 10
+    priority: 2
+    update: true
+    display_name: '&a&lVanish'
+    lore:
+      - ''
+      - '&7Toggle vanish mode'
+      - '&7You become invisible to players'
+      - ''
+      - '&eClick to toggle'
+    left_click_commands:
+      - '[player] v'
+      - '[close]'
+    right_click_commands:
+      - '[player] v'
+      - '[close]'
+
+  'staffchat':
+    material: LIME_DYE
+    slot: 11
+    priority: 2
+    update: true
+    display_name: '&a&lStaff Chat'
+    lore:
+      - ''
+      - '&7Toggle staff chat'
+      - '&7Talk privately with other staff'
+      - ''
+      - '&eClick to toggle'
+    left_click_commands:
+      - '[player] staffchat'
+      - '[close]'
+
+  'fly':
+    material: LIME_DYE
+    slot: 12
+    priority: 2
+    update: true
+    display_name: '&a&lFly'
+    lore:
+      - ''
+      - '&7Toggle flight mode'
+      - ''
+      - '&eClick to toggle'
+    left_click_commands:
+      - '[player] fly'
+      - '[close]'
+
+  'god':
+    material: LIME_DYE
+    slot: 13
+    priority: 2
+    update: true
+    display_name: '&a&lGod Mode'
+    lore:
+      - ''
+      - '&7Toggle god mode'
+      - '&7You become invincible'
+      - ''
+      - '&eClick to toggle'
+    left_click_commands:
+      - '[player] god'
+      - '[close]'
+
+  'nightvision':
+    material: LIME_DYE
+    slot: 14
+    priority: 2
+    update: true
+    display_name: '&a&lNight Vision'
+    lore:
+      - ''
+      - '&7Toggle night vision'
+      - ''
+      - '&eClick to toggle'
+    left_click_commands:
+      - '[player] nv'
+      - '[close]'
+
+  'socialspy':
+    material: LIME_DYE
+    slot: 15
+    priority: 2
+    update: true
+    display_name: '&a&lSocial Spy'
+    lore:
+      - ''
+      - '&7Toggle social spy'
+      - '&7See private messages'
+      - ''
+      - '&eClick to toggle'
+    left_click_commands:
+      - '[player] socialspy'
+      - '[close]'
+
+  # ═══════════════════════════════════════
+  # GAMEMODE TOOLS
+  # ═══════════════════════════════════════
+  'gmc':
+    material: GRASS_BLOCK
+    slot: 19
+    priority: 2
+    update: true
+    display_name: '&a&lCreative'
+    lore:
+      - ''
+      - '&7Set gamemode to &aCreative'
+      - ''
+      - '&eClick to switch'
+    left_click_commands:
+      - '[player] gmc'
+      - '[close]'
+
+  'gms':
+    material: IRON_SWORD
+    slot: 20
+    priority: 2
+    update: true
+    display_name: '&e&lSurvival'
+    lore:
+      - ''
+      - '&7Set gamemode to &eSurvival'
+      - ''
+      - '&eClick to switch'
+    left_click_commands:
+      - '[player] gms'
+      - '[close]'
+
+  'gmsp':
+    material: ENDER_EYE
+    slot: 21
+    priority: 2
+    update: true
+    display_name: '&b&lSpectator'
+    lore:
+      - ''
+      - '&7Set gamemode to &bSpectator'
+      - ''
+      - '&eClick to switch'
+    left_click_commands:
+      - '[player] gmsp'
+      - '[close]'
+
+  'gma':
+    material: MAP
+    slot: 22
+    priority: 2
+    update: true
+    display_name: '&6&lAdventure'
+    lore:
+      - ''
+      - '&7Set gamemode to &6Adventure'
+      - ''
+      - '&eClick to switch'
+    left_click_commands:
+      - '[player] gma'
+      - '[close]'
+
+  # ═══════════════════════════════════════
+  # USEFUL STAFF TOOLS
+  # ═══════════════════════════════════════
+  'heal':
+    material: GOLDEN_APPLE
+    slot: 28
+    priority: 2
+    update: true
+    display_name: '&c&lHeal'
+    lore:
+      - ''
+      - '&7Fully heal yourself'
+      - ''
+      - '&eClick to heal'
+    left_click_commands:
+      - '[player] heal'
+      - '[message] &aYou have been healed!'
+
+  'feed':
+    material: COOKED_BEEF
+    slot: 29
+    priority: 2
+    update: true
+    display_name: '&6&lFeed'
+    lore:
+      - ''
+      - '&7Fully feed yourself'
+      - ''
+      - '&eClick to feed'
+    left_click_commands:
+      - '[player] feed'
+      - '[message] &aYou have been fed!'
+
+  'clear':
+    material: BARRIER
+    slot: 30
+    priority: 2
+    update: true
+    display_name: '&c&lClear Inventory'
+    lore:
+      - ''
+      - '&7Clear your entire inventory'
+      - ''
+      - '&c&lWarning: This cannot be undone!'
+      - ''
+      - '&eClick to clear'
+    left_click_commands:
+      - '[player] clear'
+      - '[message] &cYour inventory has been cleared!'
+
+  'tp_toggle':
+    material: ENDER_PEARL
+    slot: 31
+    priority: 2
+    update: true
+    display_name: '&d&lTP Toggle'
+    lore:
+      - ''
+      - '&7Toggle teleport requests'
+      - ''
+      - '&eClick to toggle'
+    left_click_commands:
+      - '[player] tptoggle'
+      - '[close]'
+
+  'speed':
+    material: SUGAR
+    slot: 32
+    priority: 2
+    update: true
+    display_name: '&b&lSpeed'
+    lore:
+      - ''
+      - '&7Toggle speed boost'
+      - ''
+      - '&eClick to toggle'
+    left_click_commands:
+      - '[player] speed'
+      - '[close]'
+
+  # ═══════════════════════════════════════
+  # CLOSE
+  # ═══════════════════════════════════════
+  'close':
+    material: RED_STAINED_GLASS_PANE
+    slot: 40
+    priority: 2
+    update: true
+    display_name: '&c&lClose'
+    lore:
+      - ''
+      - '&7Click to close this menu'
+    left_click_commands:
+      - '[close]'

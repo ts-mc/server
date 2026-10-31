@@ -1,0 +1,39 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+store:
+  currency_label: credits
+  selection_line: "<white>Selected:</white> <yellow>{item}</yellow>"
+  actions:
+    buy: "<green>Buy</green>"
+    select: "<aqua>Select</aqua>"
+    selected: "<yellow>Selected</yellow>"
+    owned: "<yellow>Owned</yellow>"
+  status:
+    selected: "<green>Selected</green>"
+    owned: "<aqua>Owned</aqua>"
+    locked: "<red>Locked</red>"
+  messages:
+    purchased: "{prefix} <green>You purchased <white>{item}</white> for <white>{price}</white> credits.</green>"
+    selected: "{prefix} <green>You selected <white>{item}</white>.</green>"
+  hints:
+    select: "<dark_gray>Left-click to select.</dark_gray>"
+    select_or_purchase: "<dark_gray>Left-click to select, right-click to purchase.</dark_gray>"
+    purchase: "<dark_gray>Click to purchase.</dark_gray>"
+    random: "<dark_gray>Select to roll a random unlocked item.</dark_gray>"
+    random_locked: "<red>Unlock at least one item to use random.</red>"
+  errors:
+    disabled: "{prefix} <red>The store is currently disabled.</red>"
+    category_not_found: "{prefix} <red>Unknown store category:</red> <yellow>{category}</yellow><red>.</red>"
+    item_not_found: "{prefix} <red>Unknown store item:</red> <yellow>{item}</yellow><red>.</red>"
+    insufficient_funds: "{prefix} <red>You need <white>{price}</white> credits to buy this.</red>"
+    already_owned: "{prefix} <yellow>You already own <white>{item}</white>.</yellow>"
+    purchase_failed: "{prefix} <red>Unable to purchase <white>{item}</white> right now.</red>"
+    not_unlocked: "{prefix} <red>You haven't unlocked <white>{item}</white> yet.</red>"
+    victory_effect_requires_plugin: "{prefix} <red>This victory effect requires</red> <yellow>{plugin}</yellow><red> to be installed.</red>"
+    random_requires_unlocked: "{prefix} <red>Unlock at least one item to use the random option.</red>"

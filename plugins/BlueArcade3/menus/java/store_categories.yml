@@ -1,0 +1,87 @@
+templates:
+  category:
+    name: "{language:menus.store.categories.java.templates.category.name}"
+    itemStack:
+      material: CHEST
+      amount: 1
+    lore:
+      - "{language:menus.store.categories.java.templates.category.lore}"
+emptyItem:
+  name: "{language:menus.store.categories.java.empty.name}"
+  itemStack:
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+  lore:
+    - "{language:menus.store.categories.java.empty.lore}"
+  actions: 
+items:
+  info:
+    slot: 4
+    name: "{language:menus.store.categories.java.items.info.name}"
+    itemStack:
+      material: EMERALD
+      amount: 1
+    lore:
+      - "{language:menus.store.categories.java.items.info.lore}"
+    actions: 
+  previous_page:
+    slot: 45
+    name: "{language:menus.common.java.pagination.previous.name}"
+    itemStack:
+      material: ARROW
+      amount: 1
+    lore:
+      - "{language:menus.common.java.pagination.previous.lore}"
+    actions:
+      - "PLAYER;{store_page_command} {page_previous}"
+  next_page:
+    slot: 53
+    name: "{language:menus.common.java.pagination.next.name}"
+    itemStack:
+      material: ARROW
+      amount: 1
+    lore:
+      - "{language:menus.common.java.pagination.next.lore}"
+    actions:
+      - "PLAYER;{store_page_command} {page_next}"
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+menuName: "{language:menus.store.categories.java.title}"
+menuSize: 54
+type: CHEST
+openCommand: /ba store
+dynamicSlots:
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43

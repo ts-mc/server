@@ -1,0 +1,199 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+menus:
+  party:
+    invite:
+      bedrock:
+        title: '<aqua>Invitar jugadores <gray>(Página {page}/{page_total})</gray>'
+        content:
+          - '<white>Líder:</white> <white>{party_leader}</white>'
+          - '<white>Privacidad:</white> <white>{party_type}</white>'
+          - '<white>Jugadores:</white> <white>{party_size}</white>'
+          - '<white>Página:</white> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          dynamic:
+            text: '<yellow>{player}</yellow>'
+          empty:
+            text: '<white>No hay jugadores para invitar.</white>'
+      java:
+        title: '<aqua>Invitar jugadores <gray>(Página {page}/{page_total})</gray>'
+        dynamic:
+          name: '<aqua>{player}</aqua>'
+          lore:
+            - '<gray>Haz clic para invitar a este jugador.</gray>'
+            - '<dark_gray>Comando:</dark_gray> <white>/ba party invite {player}</white>'
+        empty:
+          name: '<dark_gray>No se encontraron jugadores</dark_gray>'
+          lore:
+            - '<gray>Todos los que están conectados ya están en un grupo.</gray>'
+        items:
+          info_item:
+            name: '<aqua>Partida</aqua>'
+            lore:
+              - '<gray>Líder:</gray> <white>{party_leader}</white>'
+              - '<gray>Tipo:</gray> <white>{party_type}</white>'
+              - '<gray>Jugadores:</gray> <white>{party_size}</white>'
+    leader:
+      bedrock:
+        title: '<aqua>Tu grupo <gray>({party_size} jugadores)</gray>'
+        content:
+          - '<white>Líder:</white> <white>{party_leader}</white>'
+          - '<white>Privacidad:</white> <white>{party_type}</white>'
+          - '<white>Jugadores:</white> <white>{party_size}</white>'
+        buttons:
+          set_public:
+            text: '<green>Establecer público</green>'
+          set_private:
+            text: '<yellow>Establecer privado</yellow>'
+          invite:
+            text: '<aqua>Invitar jugadores <gray>(Página {page}/{page_total})</gray>'
+      java:
+        title: '<aqua>Tu grupo <gray>({party_size} jugadores)</gray>'
+        items:
+          info:
+            name: '<yellow>Resumen del grupo</yellow>'
+            lore:
+              - '<gray>Líder:</gray> <white>{party_leader}</white>'
+              - '<gray>Tipo:</gray> <white>{party_type}</white>'
+              - '<gray>Jugadores:</gray> <white>{party_size}</white>'
+          members:
+            lore:
+              - '<gray>Ver miembros y administrar roles.</gray>'
+              - '<dark_gray>Comando:</dark_gray> <white>/ba party members</white>'
+          privacy:
+            name: '<yellow>Privacidad</yellow>'
+            lore:
+              - '<gray>Actual:</gray> <white>{party_type}</white>'
+              - '<gold>Clic izquierdo:</gold> <white>Público</white>'
+              - '<gold>Clic derecho:</gold> <white>Privado</white>'
+              - '<dark_gray>Comando:</dark_gray> <white>/ba party type <mode></white>'
+          invite:
+            name: '<green>Invitar jugadores</green>'
+            lore:
+              - '<gray>Enviar una invitación a cualquier persona en línea.</gray>'
+              - '<dark_gray>Comando:</dark_gray> <white>/ba party invite</white>'
+          leave:
+            lore:
+              - '<gray>Promocionarás a otro miembro automáticamente.</gray>'
+              - '<dark_gray>Comando:</dark_gray> <white>/ba party leave</white>'
+    common:
+      members:
+        name: '<aqua>Miembros</aqua>'
+      leave:
+        name: '<red>Salir del grupo</red>'
+    main:
+      bedrock:
+        title: '<aqua>Menú de grupo</aqua>'
+        content:
+          - '<white>Encuentra un grupo pública o inicia la tuya propia.</white>'
+        buttons:
+          search_public:
+            text: '<yellow>Buscar grupos públicos</yellow>'
+          create_party:
+            text: '<aqua>Crear un grupo</aqua>'
+      java:
+        title: '<aqua>Menú de grupo</aqua>'
+        items:
+          search_public:
+            name: '<yellow>Buscar grupos públicos</yellow>'
+            lore:
+              - '<gray>Encuentra un grupo abierto y únete al instante.</gray>'
+              - '<dark_gray>Comando:</dark_gray> <white>/ba party search</white>'
+          create_party:
+            name: '<aqua>Crear un grupo</aqua>'
+            lore:
+              - '<gray>Inicia un nuevo grupo como líder.</gray>'
+              - '<dark_gray>Comando:</dark_gray> <white>/ba party create</white>'
+    member:
+      bedrock:
+        title: '<aqua>Resumen del grupo</aqua>'
+        content:
+          - '<white>Líder:</white> <white>{party_leader}</white>'
+          - '<white>Privacidad:</white> <white>{party_type}</white>'
+          - '<white>Jugadores:</white> <white>{party_size}</white>'
+      java:
+        title: '<aqua>Resumen del grupo</aqua>'
+        items:
+          info:
+            name: '<yellow>Información del grupo</yellow>'
+            lore:
+              - '<gray>Líder:</gray> <white>{party_leader}</white>'
+              - '<gray>Privacidad:</gray> <white>{party_type}</white>'
+              - '<gray>Jugadores:</gray> <white>{party_size}</white>'
+          members:
+            lore:
+              - '<gray>Vista previa de quién está dentro del grupo.</gray>'
+              - '<dark_gray>Comando:</dark_gray> <white>/ba party members</white>'
+          leave:
+            lore:
+              - '<gray>Regresa solo al lobby.</gray>'
+              - '<dark_gray>Comando:</dark_gray> <white>/ba party leave</white>'
+    members:
+      bedrock:
+        title: '<aqua>Miembros del grupo <gray>(Página {page}/{page_total})</gray>'
+        content:
+          - '<white>Líder:</white> <white>{party_leader}</white>'
+          - '<white>Privacidad:</white> <white>{party_type}</white>'
+          - '<white>Jugadores:</white> <white>{party_size}</white>'
+          - '<white>Página:</white> <white>{page}</white>/<white>{page_total}</white>'
+          - '<white>Toca para ascender. Usa /ba party kick <name> para expulsar.</white>'
+        templates:
+          dynamic:
+            text: '<yellow>{member_name}</yellow> <white>-</white> {member_role}'
+          empty:
+            text: '<white>No hay miembros disponibles.</white>'
+      java:
+        title: '<aqua>Miembros del grupo <gray>(Página {page}/{page_total})</gray>'
+        dynamic:
+          name: '<aqua>{member_name}</aqua>'
+          lore:
+            - '<gray>Rol:</gray> <white>{member_role}</white>'
+            - '<gray>Haz clic para administrar.</gray>'
+            - '<dark_gray>Izquierda:</dark_gray> <white>Hacer líder</white>'
+            - '<dark_gray>Derecha:</dark_gray> <white>Miembro de patada</white>'
+        empty:
+          name: '<dark_gray>Espacio vacía</dark_gray>'
+          lore:
+            - '<gray>Este espacio no tiene ningún miembro.</gray>'
+        items:
+          info_item:
+            name: '<aqua>Partida</aqua>'
+            lore:
+              - '<gray>Líder:</gray> <white>{party_leader}</white>'
+              - '<gray>Tipo:</gray> <white>{party_type}</white>'
+              - '<gray>Jugadores:</gray> <white>{party_size}</white>'
+    search:
+      bedrock:
+        title: '<aqua>Grupos públicas</aqua>'
+        content:
+          - '<white>Únete a cualquier grupo público al instante.</white>'
+          - '<white>Página:</white> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          dynamic:
+            text: '<yellow>{party_leader}</yellow> <white>-</white> {party_size} jugadores'
+          empty:
+            text: '<white>No hay grupos públicas.</white>'
+      java:
+        title: '<aqua>Grupos públicas</aqua>'
+        dynamic:
+          name: '<yellow>{party_leader}</yellow>'
+          lore:
+            - '<gray>Privacidad:</gray> <white>{party_type}</white>'
+            - '<gray>Jugadores:</gray> <white>{party_size}</white>'
+            - '<dark_gray>Comando:</dark_gray> <white>/ba party join {party_leader}</white>'
+        empty:
+          name: '<dark_gray>No hay grupos públicas</dark_gray>'
+          lore:
+            - '<gray>No hay grupos públicas en este momento.</gray>'
+        items:
+          info_item:
+            name: '<aqua>Grupos públicas</aqua>'
+            lore:
+              - '<gray>Haz clic en un líder para unirte a su grupo.</gray>'
+              - '<gray>Página:</gray> <white>{page}</white>/<white>{page_total}</white>'

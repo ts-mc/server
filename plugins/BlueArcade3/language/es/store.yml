@@ -1,0 +1,39 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+store:
+  currency_label: 'créditos'
+  selection_line: '<white>Seleccionado:</white> <yellow>{item}</yellow>'
+  actions:
+    buy: '<green>Comprar</green>'
+    select: '<aqua>Seleccionar</aqua>'
+    selected: '<yellow>Seleccionado</yellow>'
+    owned: '<yellow>Comprado</yellow>'
+  status:
+    selected: '<green>Seleccionado</green>'
+    owned: '<aqua>Comprado</aqua>'
+    locked: '<red>Bloqueado</red>'
+  messages:
+    purchased: '{prefix} <green>Compraste <white>{item}</white> por <white>{price}</white> créditos.</green>'
+    selected: '{prefix} <green>Has seleccionado <white>{item}</white>.</green>'
+  hints:
+    select: '<dark_gray>Clic izquierdo para seleccionar.</dark_gray>'
+    select_or_purchase: '<dark_gray>Clic izquierdo para seleccionar, clic derecho para comprar.</dark_gray>'
+    purchase: '<dark_gray>Haz clic para comprar.</dark_gray>'
+    random: '<dark_gray>Selecciona para usar un objeto desbloqueado aleatorio.</dark_gray>'
+    random_locked: '<red>Desbloquea al menos un objeto para usar la opción aleatoria.</red>'
+  errors:
+    disabled: '{prefix} <red>La tienda está actualmente deshabilitada.</red>'
+    category_not_found: '{prefix} <red>Categoría de tienda desconocida:</red> <yellow>{category}</yellow><red>.</red>'
+    item_not_found: '{prefix} <red>Objeto de tienda desconocido:</red> <yellow>{item}</yellow><red>.</red>'
+    insufficient_funds: '{prefix} <red>Necesitas <white>{price}</white> créditos para comprar esto.</red>'
+    already_owned: '{prefix} <yellow>Ya posees <white>{item}</white>.</yellow>'
+    purchase_failed: '{prefix} <red>No se puede comprar <white>{item}</white> en este momento.</red>'
+    not_unlocked: '{prefix} <red>Aún no has desbloqueado <white>{item}</white>.</red>'
+    victory_effect_requires_plugin: '{prefix} <red>Este efecto de victoria requiere que</red> <yellow>{plugin}</yellow><red> esté instalado.</red>'
+    random_requires_unlocked: '{prefix} <red>Desbloquea al menos un objeto para usar la opción aleatoria.</red>'

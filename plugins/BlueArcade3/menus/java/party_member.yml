@@ -1,0 +1,41 @@
+items:
+  info:
+    slot: 22
+    name: "{language:menus.party.member.java.items.info.name}"
+    lore:
+      - "{language:menus.party.member.java.items.info.lore}"
+    itemStack:
+      material: NETHER_STAR
+    actions: 
+  members:
+    slot: 21
+    name: "{language:menus.party.common.members.name}"
+    lore:
+      - "{language:menus.party.member.java.items.members.lore}"
+    itemStack:
+      material: PLAYER_HEAD
+      value: "{party_leader}"
+    actions:
+      - PLAYER;/ba party members
+  leave:
+    slot: 23
+    name: "{language:menus.party.common.leave.name}"
+    lore:
+      - "{language:menus.party.member.java.items.leave.lore}"
+    itemStack:
+      material: OAK_DOOR
+    actions:
+      - PLAYER;/ba party leave
+      - CLOSE
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+menuName: "{language:menus.party.member.java.title}"
+menuSize: 45
+type: CHEST
+openCommand: /ba party

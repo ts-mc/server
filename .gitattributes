@@ -1,0 +1,4 @@
+# Preserve legacy server-file line endings and whitespace as-is. These server
+# assets predate Git and contain intentional/inherited whitespace noise; do
+# not turn the initial baseline into a formatting rewrite.
+* -text whitespace=-trailing-space,-blank-at-eof,cr-at-eol

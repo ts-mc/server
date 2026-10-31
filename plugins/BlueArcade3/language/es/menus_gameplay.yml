@@ -1,0 +1,286 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+menus:
+  play:
+    categories:
+      bedrock:
+        title: '<aqua>Selecciona un minijuego <gray>(Página {page}/{page_total})</gray>'
+        content:
+          - '<white>Buscar minijuegos disponibles.</white>'
+          - '<white>Categorías:</white> <white>{game_total}</white>'
+          - '<yellow>Página:</yellow> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          game:
+            text: '<aqua>{game_name}</aqua> <white>({arena_count} arenas)</white>'
+          empty:
+            text: '<white>No hay minijuegos disponibles.</white>'
+      java:
+        title: '<aqua>Selecciona un minijuego <gray>(Página {page}/{page_total})</gray>'
+        templates:
+          game:
+            name: '<aqua>{game_name}</aqua>'
+            lore:
+              - '<gray>Arenas:</gray> <white>{arena_count}</white>'
+              - ''
+              - '<yellow>¡Haz clic para explorar arenas!</yellow>'
+        empty:
+          name: '<dark_gray>No hay minijuegos disponibles</dark_gray>'
+          lore:
+            - '<gray>Aún no hay categorías de minijuegos para mostrar.</gray>'
+        items:
+          info_item:
+            name: '<aqua>Navegador de minijuegos</aqua>'
+            lore:
+              - '<gray>Categorías:</gray> <white>{game_total}</white>'
+              - '<gray>Página:</gray> <white>{page}</white>/<white>{page_total}</white>'
+    main:
+      bedrock:
+        title: '<aqua>Selecciona una arena <gray>(Página {page}/{page_total})</gray>'
+        content:
+          - '<white>Buscar arenas disponibles.</white>'
+          - '<white>Filtro:</white> <white>{filter_label}</white>'
+          - '<white>Arenas:</white> <white>{total_arenas}</white>'
+          - '<yellow>Página:</yellow> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          waiting:
+            text: '<green>{arena_displayname}</green> <white>- {players}/{players_max}</white>'
+          starting:
+            text: '<yellow>{arena_displayname}</yellow> <white>- {countdown}s</white>'
+          running:
+            text: '<red>{arena_displayname}</red> <white>- {status}</white>'
+          restarting:
+            text: '<gold>{arena_displayname}</gold> <white>- {status}</white>'
+          fallback:
+            text: '<aqua>{arena_displayname}</aqua> <white>- {players}/{players_max}</white>'
+          empty:
+            text: '<white>No hay arenas disponibles.</white>'
+      java:
+        title: '<aqua>Selecciona una arena <gray>(Página {page}/{page_total})</gray>'
+        dynamic:
+          waiting:
+            name: '<green>{arena_displayname}'
+            lore:
+              - '<gray>Estado:</gray> {status}'
+              - '<gray>Jugadores:</gray> <white>{players}</white>/<white>{players_max}</white>'
+              - '<gray>Modo:</gray> <white>{mode}</white>'
+              - '<gray>Juego:</gray> <white>{current_game}</white>'
+          starting:
+            name: '<yellow>{arena_displayname}'
+            lore:
+              - '<gray>Estado:</gray> {status}'
+              - '<gray>Cuenta atrás:</gray> <white>{countdown}</white>s'
+              - '<gray>Jugadores:</gray> <white>{players}</white>/<white>{players_max}</white>'
+          running:
+            name: '<red>{arena_displayname}'
+            lore:
+              - '<gray>Estado:</gray> {status}'
+              - '<gray>Jugando ahora:</gray> <white>{current_game}</white>'
+              - '<gray>Jugadores:</gray> <white>{players}</white>/<white>{players_max}</white>'
+          restarting:
+            name: '<gold>{arena_displayname}'
+            lore:
+              - '<gray>Estado:</gray> {status}'
+              - '<gray>Regenerando arena...</gray>'
+              - '<gray>Jugadores:</gray> <white>{players}</white>/<white>{players_max}</white>'
+          fallback:
+            name: '<aqua>{arena_displayname}'
+            lore:
+              - '<gray>Estado:</gray> {status}'
+              - '<gray>Jugadores:</gray> <white>{players}</white>/<white>{players_max}</white>'
+        empty:
+          name: '<dark_gray>No hay arenas disponibles</dark_gray>'
+          lore:
+            - '<gray>Este espacio no tiene arena.</gray>'
+        items:
+          info_item:
+            name: '<aqua>Navegador de arenas</aqua>'
+            lore:
+              - '<gray>Filtro:</gray> <white>{filter_label}</white>'
+              - '<gray>Filtro de modo:</gray> <white>{filter_mode}</white>'
+              - '<gray>Filtro de juego:</gray> <white>{filter_game}</white>'
+              - '<gray>Arenas:</gray> <white>{total_arenas}</white>'
+              - '<gray>Página:</gray> <white>{page}</white>/<white>{page_total}</white>'
+          back_categories:
+            name: '<gray>← Volver a minijuegos'
+            lore:
+              - '<gray>Volver a las categorías de minijuegos.</gray>'
+  vote:
+    main:
+      bedrock:
+        title: '<aqua>Vota por minijuegos <gray>(Página {page}/{page_total})</gray>'
+        content:
+          - '<white>Elige el próximo minijuego para el grupo.</white>'
+          - '<yellow>Votos disponibles:</yellow> <white>{available_votes}</white>/<white>{max_votes}</white>'
+          - '<yellow>Página:</yellow> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          dynamic:
+            text: '<yellow>{display_name}</yellow> <white>- {votes} votos</white>'
+          empty:
+            text: '<white>No hay minijuegos para votar.</white>'
+      java:
+        title: '<aqua>Vota por minijuegos <gray>(Página {page}/{page_total})</gray>'
+        dynamic:
+          name: '<yellow>{display_name}'
+          lore:
+            - '<gray>Votos:</gray> <aqua>{votes}</aqua>'
+            - '<gray>Votos disponibles:</gray> <white>{available_votes}</white>/<white>{max_votes}</white>'
+            - '<green>¡Haz clic para votar!</green>'
+        empty:
+          name: '<dark_gray>No hay minijuegos disponibles para votar</dark_gray>'
+          lore:
+            - '<gray>No hay minijuegos registrados en este espacio.</gray>'
+        items:
+          info_item:
+            name: '<aqua>Información de votación</aqua>'
+            lore:
+              - '<gray>Vota por el próximo minijuego.</gray>'
+              - '<yellow>Votos disponibles:</yellow> <white>{available_votes}</white>/<white>{max_votes}</white>'
+              - '<yellow>Página:</yellow> <white>{page}</white>/<white>{page_total}</white>'
+  team:
+    select:
+      bedrock:
+        title: '<yellow>Selecciona un equipo</yellow>'
+        content:
+          - '<white>Elige tu equipo antes de que comience el juego.</white>'
+          - '<gray>Tu equipo:</gray> <white>{player_team}</white>'
+          - '<gray>Total de equipos:</gray> <white>{team_count}</white>'
+        templates:
+          dynamic:
+            text: '{team_name} <gray>({team_players}/{team_size})</gray>'
+          empty:
+            text: '<gray>No hay equipos disponibles.</gray>'
+      java:
+        title: '<yellow>Selecciona un equipo</yellow>'
+        dynamic:
+          name: '{team_name}'
+          lore:
+            - '<gray>Jugadores:</gray> <white>{team_players}</white>/<white>{team_size}</white>'
+            - '<gray>Espacios disponibles:</gray> <yellow>{team_slots}</yellow>'
+            - '<green>Haz clic para unirte a este equipo.</green>'
+        empty:
+          name: '<dark_gray>Sin equipo</dark_gray>'
+        items:
+          info_item:
+            name: '<aqua>Selección de equipo</aqua>'
+            lore:
+              - '<gray>Tu equipo:</gray> <white>{player_team}</white>'
+              - '<gray>Total de equipos:</gray> <white>{team_count}</white>'
+  leave:
+    confirmation:
+      bedrock:
+        title: '<gray>¿Estás seguro?'
+        content:
+          - '<white>Estás a punto de abandonar la arena actual.</white>'
+          - '<yellow>Regresarás al lobby.</yellow>'
+        buttons:
+          button1:
+            text: '<green>Confirmar salida</green>'
+          button2:
+            text: '<red>Permanecer en la arena</red>'
+      java:
+        title: '<gray>¿Estás seguro?'
+        items:
+          confirm_leave:
+            name: '<green>Confirmar salida'
+            lore:
+              - '<gray>Regresa al lobby y finaliza tu partida actual.'
+              - '<yellow>Esto se ejecuta</yellow> <white>/ba leave confirm</white><yellow>.</yellow>'
+          cancel_leave:
+            name: '<red>Permanecer en la arena'
+            lore:
+              - '<gray>Sigue jugando e ignora la solicitud de salida.'
+              - '<yellow>Esto se ejecuta</yellow> <white>/ba leave cancel</white><yellow>.</yellow>'
+  spectator:
+    teleport:
+      bedrock:
+        title: '<aqua>Teletransportarse a un jugador</aqua> <gray>({page}/{page_total})</gray>'
+        content:
+          - '<white>Selecciona un jugador activo para observar.</white>'
+          - '<yellow>Página:</yellow> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          player:
+            text: '<aqua>{target}</aqua>'
+      java:
+        title: '<aqua>Teletransportarse a un jugador</aqua> <gray>({page}/{page_total})</gray>'
+        dynamic:
+          name: '<aqua>{target}</aqua>'
+          lore:
+            - '<gray>Haz clic para teletransportarte a este jugador.</gray>'
+  replay:
+    modules:
+      java:
+        title: '<aqua>Repeticiones</aqua> <gray>({page}/{page_total})</gray>'
+        templates:
+          module:
+            name: '<aqua>{module_name}</aqua>'
+            lore:
+              - '<gray>{replay_count} repetición(es) disponible(s)</gray>'
+              - '<yellow>Haz clic para verlas.</yellow>'
+        items:
+          info:
+            name: '<aqua>Explorador de repeticiones</aqua>'
+            lore:
+              - '<gray>Selecciona un módulo de juego.</gray>'
+              - '<gray>Módulos: <white>{module_count}</white></gray>'
+      bedrock:
+        title: '<aqua>Repeticiones</aqua> <gray>({page}/{page_total})</gray>'
+        content:
+          - '<white>Selecciona un módulo de juego.</white>'
+          - '<yellow>Página:</yellow> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          module:
+            text:
+              - '<aqua>{module_name}</aqua>'
+              - '<gray>{replay_count} repetición(es)</gray>'
+    list:
+      java:
+        title: '<aqua>Repeticiones de {module_name}</aqua> <gray>({page}/{page_total})</gray>'
+        templates:
+          replay:
+            name: '<light_purple>Replay {replay_number}</light_purple>'
+            lore:
+              - '<gray>Arena: <white>{arena}</white></gray>'
+              - '<gray>Fecha: <white>{date}</white></gray>'
+              - '<gray>Duración: <white>{duration}</white></gray>'
+              - '<gray>Jugadores: <white>{participants}</white></gray>'
+              - ''
+              - '<yellow>Haz clic para verla.</yellow>'
+        items:
+          info:
+            name: '<aqua>{module_name}</aqua>'
+            lore:
+              - '<gray>Repeticiones disponibles: <white>{replay_count}</white></gray>'
+          back:
+            lore:
+              - '<gray>Volver a la lista de módulos.</gray>'
+      bedrock:
+        title: '<aqua>Repeticiones de {module_name}</aqua> <gray>({page}/{page_total})</gray>'
+        content:
+          - '<white>Selecciona una repetición para verla.</white>'
+          - '<yellow>Página:</yellow> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          replay:
+            text:
+              - '<light_purple>Replay {replay_number}</light_purple>'
+              - '<gray>{date} • {duration} • {participants} jugadores</gray>'
+    teleport:
+      bedrock:
+        title: '<aqua>Participantes de la repetición</aqua> <gray>({page}/{page_total})</gray>'
+        content:
+          - '<white>Selecciona un participante para teletransportarte.</white>'
+          - '<yellow>Página:</yellow> <white>{page}</white>/<white>{page_total}</white>'
+        templates:
+          player:
+            text: '<aqua>{target}</aqua>'
+      java:
+        title: '<aqua>Participantes de la repetición</aqua> <gray>({page}/{page_total})</gray>'
+        dynamic:
+          name: '<aqua>{target}</aqua>'
+          lore:
+            - '<gray>Haz clic para teletransportarte a este participante.</gray>'

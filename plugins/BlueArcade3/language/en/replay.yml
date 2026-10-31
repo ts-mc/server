@@ -1,0 +1,57 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+replay:
+  opened: "{prefix} <green>Opening replay <white>{id}</white>...</green>"
+  processing: "{prefix} <yellow>That replay is still being recorded. You will be teleported automatically once it finishes.</yellow>"
+  closed: "{prefix} <yellow>You left the replay.</yellow>"
+  deleted: "{prefix} <green>Replay deleted.</green>"
+  delete_failed: "{prefix} <red>Could not delete that replay (it may be in use by a viewer).</red>"
+  cleanup: "{prefix} <green>Deleted <white>{count}</white> expired replay(s).</green>"
+  usage:
+    player: "{prefix} <red>Use: /ba replay [module_id] [replay_id] or /ba replay leave</red>"
+    admin: "{prefix} <red>Use: /baa replay (list|delete <id>|cleanup|open <id>)</red>"
+  errors:
+    unavailable: "{prefix} <red>The replay system is not available right now.</red>"
+    disabled: "{prefix} <red>The replay system is disabled on this server.</red>"
+    not_found: "{prefix} <red>No replay found with id <white>{id}</white>.</red>"
+    no_permission: "{prefix} <red>You don't have permission to view that replay.</red>"
+    only_players_open: "{prefix} <red>Only players can open a replay.</red>"
+    only_players_leave: "{prefix} <red>Only players can leave a replay.</red>"
+    module_mismatch: "{prefix} <red>That replay does not belong to module <white>{module}</white>.</red>"
+    current_unavailable: "{prefix} <red>This arena does not have a replay available.</red>"
+    no_segments: "{prefix} <red>This replay has no recorded footage.</red>"
+    load_failed: "{prefix} <red>Could not load that replay. Check the server console for details.</red>"
+  list:
+    empty: "{prefix} <yellow>No replays are available.</yellow>"
+    module_empty: "{prefix} <yellow>No replays are available for module <white>{module}</white>.</yellow>"
+    header: "{prefix} <yellow>Available replays:</yellow>"
+    module_header: "{prefix} <yellow>Available replays for <white>{module}</white>:</yellow>"
+    item: "  <light_purple>{id}</light_purple> <dark_gray>-</dark_gray> <gray>arena {arena} • {date} • {duration}</gray>"
+    showing: "{prefix} <gray>Showing {shown}/{total}.</gray>"
+    module_showing: "{prefix} <gray>Showing {shown}/{total}. Use /ba replay {module} <id> to open a specific one.</gray>"
+  playback:
+    chat: "<gray>[Replay]</gray> <white>{player}</white><gray>:</gray> {message}"
+    actionbar: "<gray>Replay</gray> <dark_gray>|</dark_gray> <white>{elapsed}</white><gray>/</gray><white>{total}</white> <dark_gray>|</dark_gray> {status} <dark_gray>|</dark_gray> <yellow>{speed}x</yellow>"
+    status:
+      paused: "<red>Paused</red>"
+      playing: "<green>Playing</green>"
+    teleport_menu:
+      title: Teleport to player
+      player: "<aqua>{player}</aqua>"
+      no_targets: "{prefix} <red>No replay participants are available.</red>"
+      not_visible: "{prefix} <red>That player is not visible at this point in the replay.</red>"
+    controls:
+      teleport: Teleport to player
+      slower: Slower
+      back: Back 10s
+      play: Play
+      pause: Pause
+      forward: Forward 10s
+      faster: Faster
+      leave: Leave replay

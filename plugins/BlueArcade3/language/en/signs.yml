@@ -1,0 +1,55 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+signs:
+  join:
+    line1: "<bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient>"
+    line2: "<yellow>{arena_status}</yellow>"
+    line3: "{arena_displayname}"
+    line4: "<dark_aqua>{players}</dark_aqua><gray>/</gray><dark_aqua>{players_max}</dark_aqua>"
+  auto:
+    line1: "<bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient>"
+    line2: "<yellow>{arena_status}</yellow>"
+    line3: "{arena_displayname}"
+    line4: "<dark_aqua>{players}</dark_aqua><gray>/</gray><dark_aqua>{players_max}</dark_aqua>"
+  quickjoin:
+    line1: ""
+    line2: "<bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient>"
+    line3: "<yellow><bold>Quick Join</yellow><reset>"
+    line4: ""
+  top:
+    line1: "<bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient>"
+    line2: "<yellow>{top_module}</yellow>"
+    line3: "<aqua>#{top_position} {top_player}</aqua>"
+    line4: "<dark_aqua>{top_stat}</dark_aqua> <gray>|</gray> <white>{top_value}</white> <gray>|</gray> <gray>{top_period}</gray>"
+    empty_player: No entries
+  leave:
+    line1: ""
+    line2: "<bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient>"
+    line3: "<red><bold>Leave</red><reset>"
+    line4: ""
+  statuses:
+    waiting:
+      name: "<green>Waiting</green>"
+    starting:
+      name: "<yellow>Starting</yellow>"
+    running:
+      name: "<red>In Game</red>"
+    finishing:
+      name: "<blue>Finishing</blue>"
+    restarting:
+      name: "<gold>Restarting</gold>"
+    disabled:
+      name: "<dark_red>Disabled</dark_red>"
+    searching:
+      name: "<white>Searching</white>"
+      animation:
+        frames:
+          - "<white>Searching.</white>"
+          - "<white>Searching..</white>"
+          - "<white>Searching...</white>"

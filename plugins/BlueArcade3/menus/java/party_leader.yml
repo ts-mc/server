@@ -1,0 +1,65 @@
+items:
+  info:
+    slot: 4
+    name: "{language:menus.party.leader.java.items.info.name}"
+    lore:
+      - "{language:menus.party.leader.java.items.info.lore}"
+    itemStack:
+      material: NETHER_STAR
+      amount: 1
+    actions: 
+  members:
+    slot: 20
+    name: "{language:menus.party.common.members.name}"
+    lore:
+      - "{language:menus.party.leader.java.items.members.lore}"
+    itemStack:
+      material: PLAYER_HEAD
+      amount: 1
+      value: "{party_leader}"
+    actions:
+      - PLAYER;/ba party members
+  privacy:
+    slot: 22
+    name: "{language:menus.party.leader.java.items.privacy.name}"
+    lore:
+      - "{language:menus.party.leader.java.items.privacy.lore}"
+    itemStack:
+      material: DAYLIGHT_DETECTOR
+      amount: 1
+    actions:
+      - "[LEFT_CLICK];PLAYER;/ba party type public"
+      - "[RIGHT_CLICK];PLAYER;/ba party type private"
+  invite:
+    slot: 24
+    name: "{language:menus.party.leader.java.items.invite.name}"
+    lore:
+      - "{language:menus.party.leader.java.items.invite.lore}"
+    itemStack:
+      material: WRITABLE_BOOK
+      amount: 1
+    actions:
+      - PLAYER;/ba party invite
+  leave:
+    slot: 40
+    name: "{language:menus.party.common.leave.name}"
+    lore:
+      - "{language:menus.party.leader.java.items.leave.lore}"
+    itemStack:
+      material: RED_BED
+      amount: 1
+    actions:
+      - PLAYER;/ba party leave
+      - CLOSE
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+menuName: "{language:menus.party.leader.java.title}"
+menuSize: 45
+type: CHEST
+openCommand: /ba party

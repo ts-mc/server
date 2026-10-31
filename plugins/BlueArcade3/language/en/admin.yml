@@ -1,0 +1,45 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+admin:
+  errors:
+    id_taken: "{prefix} <red>That ID is already in use.</red>"
+    unknown_id: "{prefix} <red>The ID you have entered does not match any arena created.</red>"
+    only_numbers: "{prefix} <red>You must enter a number.</red>"
+    only_numbers_arena: "{prefix} <red>You must enter a number. You can set the name of the arena later.</red>"
+    only_players: "{prefix} <red>You must be a player to be able to execute this command</red>"
+    error_deleting_file: "{prefix} <red>An error occurred while trying to delete the file {file}</red>"
+    no_mini_game: "{prefix} <red>The introduced mini-game does not exist.</red>"
+    arena_disabled: "{prefix} <red>The arena {arena_id} is currently disabled.</red>"
+    bounds_same_world: "{prefix} <red>Both bounds must have the same world.</red>"
+    at_least_one_game: "{prefix} <red>Set up at least one mini-game before continuing.</red>"
+    minimum_spawns: "{prefix} <red>You must set at least {minimum_spawns} spawn to continue.</red>"
+    finish_first: "{prefix} <red>Finish the previous step first.</red>"
+    no_setup_pause: "{prefix} <red>There is no active arena creation process to pause.</red>"
+    no_setup_cancel: "{prefix} <red>There is no active arena creation process to cancel.</red>"
+    air_selection_error: "{prefix} <red>In this particular step, you cannot select air, you must select a block.</red>"
+    process_cancelled: "{prefix} <red>Process cancelled...</red>"
+    player_offline: "{prefix} <red>The specified player is not online.</red>"
+    error_sign: "{prefix} <red>An error occurred while registering the sign. Check that you have typed everything correctly.</red>"
+    error_reloading: "{prefix} <red>An error occurred reloading the {file}.yml file</red>"
+    insufficient_permissions: "{prefix} <red>You do not have sufficient permissions to execute this command.</red>"
+    unknown_command: "{prefix} <red>That command does not exist, check that you have typed it correctly.</red>"
+  info:
+    sets_spawn: "{prefix} <red>There is no spawn configured for {server_name}. Do it now with /baa mainlobby set</red>"
+    no_modules:
+      - "{prefix} <red>No modules detected...</red>"
+      - "{prefix} <yellow>Download them with: <white>/baa module store download <id></white></yellow>"
+      - "{prefix} <yellow>The ID is obtained from:</yellow>"
+      - "{prefix} <yellow>  Original modules: <white>/baa module store originals</white></yellow>"
+      - "{prefix} <yellow>  Or search (originals or community): <white>/baa module store search <query></white></yellow>"
+    cancelled_setup: "{prefix} <yellow>Arena creation process cancelled.</yellow>"
+    paused_setup: "{prefix} <yellow>Paused arena creation process.</yellow>"
+    selected_mini_game_setup: "{prefix} <yellow>You have selected the mini-game {mini_game}.</yellow>"
+    selection_eliminated_setup: "{prefix} <yellow>You have removed the selection. You can now continue to the next step without setting up a mini-game.</yellow>"
+    set_display_name: "{prefix} <gray>Type in the chat the name of the arena that will be shown to the players. You can include colors. Type `</gray><red>cancel</red><gray>` to cancel.</gray>"
+    reloading_file: "{prefix} <yellow>Reloading the {file}.yml file</yellow>"

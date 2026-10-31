@@ -1,0 +1,42 @@
+items:
+  cancel:
+    slot: 11
+    name: "{language:menus.store.purchase_confirmation.java.items.cancel.name}"
+    itemStack:
+      material: BARRIER
+      amount: 1
+    lore:
+      - "{language:menus.store.purchase_confirmation.java.items.cancel.lore}"
+    actions:
+      - "PLAYER;/ba store category {category_id} {category_page}"
+  item:
+    slot: 13
+    name: "{language:menus.store.purchase_confirmation.java.items.item.name}"
+    itemStack:
+      material: PAPER
+      amount: 1
+    useStoreIcon: true
+    lore:
+      - "{language:menus.store.purchase_confirmation.java.items.item.lore}"
+  confirm:
+    slot: 15
+    name: "{language:menus.store.purchase_confirmation.java.items.confirm.name}"
+    itemStack:
+      material: EMERALD
+      amount: 1
+    lore:
+      - "{language:menus.store.purchase_confirmation.java.items.confirm.lore}"
+    actions:
+      - "PLAYER;/ba store purchase {category_id} {item_id} {category_page}"
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+menuName: "{language:menus.store.purchase_confirmation.java.title}"
+menuSize: 27
+type: CHEST
+openCommand: /ba store confirm

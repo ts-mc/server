@@ -1,0 +1,14 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+economy:
+  errors:
+    invalid_provider: '{prefix} <red>Proveedor de economía no válido ''{provider}''. Usando créditos integrados.</red>'
+    vault_missing: '{prefix} <red>Vault está seleccionado en la configuración, pero no se encontró ningún proveedor de economía Vault. Las operaciones de créditos fallarán hasta que Vault esté disponible.</red>'
+    custom_missing_config: '{prefix} <red>La economía personalizada está habilitada pero la configuración está incompleta. Compruebe que Give_command, take_command y get_placeholder estén configurados en settings.yml. Las operaciones de créditos fallarán hasta que la economía personalizada esté completamente configurada.</red>'
+    custom_papi_missing: '{prefix} <red>La economía personalizada requiere PlaceholderAPI para leer los saldos. Las comprobaciones de saldo devolverán 0 hasta que se instale PlaceholderAPI.</red>'

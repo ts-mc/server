@@ -1,0 +1,59 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+player:
+  lobby:
+    you_join: '{prefix} <yellow>Te has unido a la arena</yellow> <aqua>{arena_display_name}<yellow>.</yellow>'
+    you_join_spectator: '{prefix} <yellow>Te has unido</yellow> <aqua>{arena_display_name}</aqua> <yellow>como</yellow> <gray>espectador</gray><yellow>.</yellow>'
+    you_join_in_progress: '{prefix} <yellow>Te has unido a la partida que ya está en marcha en</yellow> <aqua>{arena_display_name}<yellow>.</yellow>'
+    player_joined: '{prefix} <gray>{player}</gray> <yellow>se ha unido a la arena. (</yellow><aqua>{players}<dark_gray>/<aqua>{max_players}<yellow>)</yellow>'
+    admin_managed: '{prefix} <yellow>Esta arena requiere un administrador para iniciarla.</yellow>'
+    you_left: '{prefix} <yellow>Has abandonado la arena</yellow> <aqua>{arena_display_name}<yellow>.</yellow>'
+    player_leaves: '{prefix} <gray>{player}</gray> <red>ha abandonado la arena. (</red><aqua>{players}<dark_gray>/<aqua>{max_players}<red>)</red>'
+  game:
+    lobby_countdown: '{prefix} <yellow>La arena comenzará en</yellow> <aqua>{time} <yellow>segundos.</yellow>'
+    arena_almost_full: '{prefix} <gold>¡La arena está casi </gold><bold><red>LLENA</red></bold><gold>! La cuenta atrás se ha reducido a {time} segundos.</gold>'
+    player_voted: '{prefix} <aqua>{player_name}</aqua> <yellow>ha votado por el minijuego</yellow> <aqua>{game}</aqua><yellow>.</yellow> <gold>+1 Voto</gold>'
+    no_winner_timeout: '{prefix} <yellow>La partida no terminó a tiempo, así que no hay ganadores.</yellow>'
+    team_assignment: '{prefix} <yellow>Tu equipo:</yellow> <white>{team}</white>'
+    leave_cancelled: '{prefix} <green>Decidiste quedarte en la arena.</green>'
+  spectator_teleport:
+    menu_title: '<dark_gray>Teletransportarse a un jugador</dark_gray> <gray>({page}/{page_total})</gray>'
+    no_targets: '{prefix} <red>No hay jugadores activos disponibles para teletransportarse.</red>'
+    target_unavailable: '{prefix} <red>Ese jugador ya no está disponible.</red>'
+    success: '{prefix} <green>Teletransportado a</green> <aqua>{target}</aqua><green>.</green>'
+    player_item:
+      name: '<aqua>{target}</aqua>'
+      lore: '<gray>Haz clic para teletransportarte a este jugador.</gray>'
+  errors:
+    already_in_game: '{prefix} <red>Ya estás en una partida. Para salir usa /ba leave</red>'
+    target_already_in_game: '{prefix} <yellow>{player} ya está en una arena.</yellow>'
+    not_in_game: '{prefix} <red>No estás actualmente en ningún juego.</red>'
+    no_arena: '{prefix} <red>No hay ninguna arena disponible en este momento. Inténtalo de nuevo más tarde.</red>'
+    arena_started: '{prefix} <red>La arena</red> <yellow>{arena_display_name}</yellow> <red>ya ha comenzado.</red>'
+    arena_started_spectator: '{prefix} <gold>La arena</gold> <yellow>{arena_display_name}</yellow> <gold>ya está en marcha. Únete de nuevo para entrar como espectador.</gold>'
+    join_in_progress_rejected: '{prefix} <red>No se pudo unir a la partida ya en marcha en</red> <yellow>{arena_display_name}</yellow><red>. Espera a que termine.</red>'
+    arena_restarting: '{prefix} <red>La arena</red> <yellow>{arena_display_name}</yellow> <red>se está reiniciando. Espera un momento.</red>'
+    arena_full: '{prefix} <red>La arena</red> <yellow>{arena_display_name}</yellow> <red>está llena.</red>'
+    arena_starting_full: '{prefix} <red>La arena</red> <yellow>{arena_display_name}</yellow> <red>está iniciando y ya está llena.</red>'
+    arena_stopped: '{prefix} <red>La arena se ha detenido por falta de jugadores. Se necesitan al menos</red> <yellow>{min_players}</yellow> <red>jugadores.</red>'
+    chat_muted: '{prefix} <red>El chat está silenciado. Podrás hablar en unos segundos.</red>'
+    not_allowed_command: '{prefix} <red>No puedes usar este comando mientras estás en una partida. Usa /ba leave para salir.</red>'
+    stats_disabled: '{prefix} <red>El sistema de estadísticas está actualmente deshabilitado.</red>'
+    achievements_disabled: '{prefix} <red>El sistema de logros está actualmente deshabilitado.</red>'
+    achievements_menu_disabled: '{prefix} <red>El menú de logros está actualmente deshabilitado.</red>'
+    levels_disabled: '{prefix} <red>El sistema de niveles está actualmente deshabilitado.</red>'
+    stats_empty: '{prefix} <yellow>Aún no hay estadísticas disponibles. ¡Juega algunas partidas primero!</yellow>'
+    no_votes: '{prefix} <red>No tienes votos disponibles. Intenta aumentar tu rango.</red>'
+    item_cooldown: '{prefix} <yellow>Espera {seconds}s antes de usar ese objeto.</yellow>'
+    arena_in_game: '{prefix} <red>La arena</red> <yellow>{arena_display_name}</yellow> <red>está en partida ahora mismo.</red>'
+    searching: '{prefix} <yellow>No hay ninguna arena disponible en este momento.</yellow>'
+    voting_unavailable: '{prefix} <red>La votación no está disponible en este momento.</red>'
+    minigame_not_available: '{prefix} <red>Ese minijuego no se puede votar en este momento.</red>'
+    join_error: '{prefix} <red>Error al unirse a la arena. Consulte la consola para obtener más detalles.</red>'
+    leave_error: '{prefix} <red>Error al salir de la arena. Consulte la consola para obtener más detalles.</red>'

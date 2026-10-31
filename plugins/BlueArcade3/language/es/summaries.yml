@@ -1,0 +1,97 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+summary:
+  mini_game:
+    - '{wide_line_separator}'
+    - ' '
+    - '     <green>➀ <bold>{place_1}</green> <gray>✯ +3</gray>'
+    - '     <gold>➁ <bold>{place_2}</gold> <gray>✯ +2</gray>'
+    - '     <red>➂ <bold>{place_3}</red> <gray>✯ +1</gray>'
+    - ' '
+    - '  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <dark_purple>✹</dark_purple> <light_purple>{xp_earned}</light_purple>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}  <gray>|</gray>  <green>Tu posición:</green> <gold>{place_player}</gold>'
+    - ' '
+    - '{wide_line_separator}'
+  mini_game_team:
+    - '{wide_line_separator}'
+    - ' '
+    - '  <green>Equipo ganador:</green> <yellow>{team_winners}</yellow>'
+    - '  <gray>Tu equipo:</gray> <white>{team_player}</white> <gray>({team_player_count}/{team_size})</gray>'
+    - ' '
+    - '  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <dark_purple>✹</dark_purple> <light_purple>{xp_earned}</light_purple>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}</yellow>'
+    - ' '
+    - '{wide_line_separator}'
+  final:
+    - '{wide_line_separator}'
+    - ' '
+    - '  <bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient></bold> <gray>-</gray> <yellow>Fin del juego <gray>-</gray> <green>Resultados:</green>'
+    - ' '
+    - '     <green>➊ <bold>{place_1_stars}</green>'
+    - '     <gold>➋ <bold>{place_2_stars}</gold>'
+    - '     <red>➌ <bold>{place_3_stars}</red>'
+    - ' '
+    - '  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <dark_purple>✹</dark_purple> <light_purple>{xp_earned}</light_purple>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}  <gray>|</gray>  <green>Tu posición:</green> <gold>{place_player}</gold>'
+    - ' '
+    - '{wide_line_separator}'
+  final_team:
+    - '{wide_line_separator}'
+    - ' '
+    - '  <bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient></bold> <gray>-</gray> <yellow>Resultados por equipos</yellow>'
+    - ' '
+    - '  <green>Equipo ganador:</green> <yellow>{team_winners}</yellow>'
+    - '  <gray>Tu equipo:</gray> <white>{team_player}</white> <gray>({team_player_count}/{team_size})</gray>'
+    - ' '
+    - '  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <dark_purple>✹</dark_purple> <light_purple>{xp_earned}</light_purple>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}</yellow>'
+    - ' '
+    - '{wide_line_separator}'
+  final_standalone:
+    - '{wide_line_separator}'
+    - ' '
+    - '  <bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient></bold> <gray>-</gray> <yellow>Resultados</yellow>'
+    - ' '
+    - '     <green>➊ <bold>{place_1}</green>'
+    - '     <gold>➋ <bold>{place_2}</gold>'
+    - '     <red>➌ <bold>{place_3}</red>'
+    - ' '
+    - '  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <dark_purple>✹</dark_purple> <light_purple>{xp_earned}</light_purple>  <gray>|</gray>  <green>Tu posición:</green> <gold>{place_player}</gold>'
+    - ' '
+    - '{wide_line_separator}'
+  java_summary_actions:
+    - '{wide_line_separator}'
+    - '<gray> </gray>'
+    - '<gray>   </gray><click:run_command:''{play_again_command}''><green><bold>Jugar de nuevo</bold></green></click> <gray> - </gray> <click:run_command:''{leave_command}''><red><bold>Salir</bold></red></click> <gray> - </gray> <click:run_command:''/ba achievements progress''><yellow><bold>Ver progreso</bold></yellow></click>'
+    - '<gray> </gray>'
+    - '{wide_line_separator}'
+  stats:
+    java:
+      header:
+        - '{wide_line_separator}'
+        - ' '
+        - '  <bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient></bold> <gray>-</gray> <yellow>Progreso de estadísticas</yellow>'
+        - ' '
+      entry: '    <gray>• {stat}</gray> <white>+{delta}</white> <dark_gray>(Total: {total})'
+      module_entry: '    <gray>•</gray> <yellow>[{module}]</yellow> <white>{stat}</white> <green>+{delta}</green> <dark_gray>(Total: {total})'
+      footer:
+        - ' '
+        - '{wide_line_separator}'
+    bedrock:
+      title: 'Progreso de estadísticas'
+      content_header: 'Estadísticas obtenidas en este partida:'
+      entry: '• {stat}: +{delta} (Total: {total})'
+      empty: 'No hay nuevas estadísticas en esta ronda.'
+      buttons:
+        play_again: 'jugar de nuevo'
+        lobby: 'Regresar al vestíbulo'
+    invalid_period: '{prefix} <yellow>Período de estadísticas resumidas no válidas ''{period}''. Usando todo el tiempo.</yellow>'
+  replay_recorded:
+    - '{wide_line_separator}'
+    - '<gray> </gray>'
+    - '<gray>   </gray><green>Esta partida ha sido grabada.</green>'
+    - '<gray>   </gray><click:run_command:''/ba replay {module_id} {replay_id}''><gold><bold>Haz clic aquí</bold></gold></click> <gray>para ver la repetición.</gray>'
+    - '<gray> </gray>'
+    - '{wide_line_separator}'

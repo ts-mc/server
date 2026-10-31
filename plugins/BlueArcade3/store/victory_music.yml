@@ -1,0 +1,226 @@
+# ====================================================================================================
+# VICTORY MUSIC NOTICE
+# You may add your own songs by creating new entries under `songs`.
+# Each entry must point `file` to a .nbs stored in /plugins/BlueArcade/sounds/victory.
+# Keep only victory songs in that folder so they stay aligned with win screens and rewards.
+# ====================================================================================================
+file_version: "1"
+category:
+  id: victory_music
+  enabled: true
+  display_name: "<gold>Victory Music</gold>"
+  icon: MUSIC_DISC_11
+  description:
+    - "<gray>Play a custom anthem every time you place first.</gray>"
+    - "<gray>Collect songs and swap them whenever you like.</gray>"
+  sort_order: 2
+  selection_enabled: true
+  type: selection
+  parent_id: ""
+  random_selection_enabled: true
+  random_item:
+    display_name: "<yellow>Random Victory Song</yellow>"
+    icon: ENDER_CHEST
+    description:
+      - "<gray>Play one of your unlocked songs at random.</gray>"
+
+songs:
+  we_are_the_champions:
+    enabled: true
+    file: victory/Queen - We Are the Champions.nbs
+    display_name: "<gold>We Are the Champions</gold>"
+    icon: MUSIC_DISC_PIGSTEP
+    description:
+      - "<gray>Celebrate with a classic victory anthem.</gray>"
+    price: 0
+    default_unlocked: true
+
+  bohemian_rhapsody:
+    enabled: true
+    file: victory/Queen - Bohemian Rhapsody.nbs
+    display_name: "<yellow>Bohemian Rhapsody</yellow>"
+    icon: MUSIC_DISC_CAT
+    description:
+      - "<gray>Operatic energy for legendary wins.</gray>"
+    price: 150
+    default_unlocked: false
+
+  happy:
+    enabled: true
+    file: victory/Pharrell Williams - Happy.nbs
+    display_name: "<yellow>Happy</yellow>"
+    icon: MUSIC_DISC_STRAD
+    description:
+      - "<gray>Bright, upbeat vibes for your win.</gray>"
+    price: 50
+    default_unlocked: false
+
+  levels:
+    enabled: true
+    file: victory/Avicii - Levels.nbs
+    display_name: "<aqua>Levels</aqua>"
+    icon: MUSIC_DISC_STAL
+    description:
+      - "<gray>Raise the energy after a victory.</gray>"
+    price: 75
+    default_unlocked: false
+
+  believer:
+    enabled: true
+    file: victory/Imagine Dragons - Believer.nbs
+    display_name: "<red>Believer</red>"
+    icon: MUSIC_DISC_CHIRP
+    description:
+      - "<gray>Turn a win into a statement.</gray>"
+    price: 75
+    default_unlocked: false
+
+  faded:
+    enabled: true
+    file: victory/Alan Walker - Faded.nbs
+    display_name: "<blue>Faded</blue>"
+    icon: MUSIC_DISC_MELLOHI
+    description:
+      - "<gray>Atmospheric and cinematic victory music.</gray>"
+    price: 75
+    default_unlocked: false
+
+  billie_jean:
+    enabled: true
+    file: victory/Michael Jackson - Billie Jean.nbs
+    display_name: "<aqua>Billie Jean</aqua>"
+    icon: MUSIC_DISC_BLOCKS
+    description:
+      - "<gray>Iconic pop groove to seal the win.</gray>"
+    price: 125
+    default_unlocked: false
+
+  let_it_be:
+    enabled: true
+    file: victory/The Beatles - Let It Be.nbs
+    display_name: "<gold>Let It Be</gold>"
+    icon: MUSIC_DISC_FAR
+    description:
+      - "<gray>Timeless calm for a graceful victory.</gray>"
+    price: 125
+    default_unlocked: false
+
+  never_gonna_give_you_up:
+    enabled: true
+    file: victory/Rick Astley - Never Gonna Give You Up.nbs
+    display_name: "<light_purple>Never Gonna Give You Up</light_purple>"
+    icon: MUSIC_DISC_WAIT
+    description:
+      - "<gray>A playful anthem to celebrate the win.</gray>"
+    price: 125
+    default_unlocked: false
+
+  africa:
+    enabled: true
+    file: victory/Toto - Africa.nbs
+    display_name: "<green>Africa</green>"
+    icon: MUSIC_DISC_WARD
+    description:
+      - "<gray>Sing-along nostalgia for champions.</gray>"
+    price: 120
+    default_unlocked: false
+
+  dancing_queen:
+    enabled: true
+    file: victory/ABBA - Dancing Queen.nbs
+    display_name: "<yellow>Dancing Queen</yellow>"
+    icon: MUSIC_DISC_11
+    description:
+      - "<gray>Disco joy for a shining victory.</gray>"
+    price: 120
+    default_unlocked: false
+
+  take_on_me:
+    enabled: true
+    file: victory/a-ha - Take On Me.nbs
+    display_name: "<aqua>Take On Me</aqua>"
+    icon: MUSIC_DISC_MALL
+    description:
+      - "<gray>Retro synth energy for big wins.</gray>"
+    price: 120
+    default_unlocked: false
+
+  smells_like_teen_spirit:
+    enabled: true
+    file: victory/Nirvana - Smells Like Teen Spirit.nbs
+    display_name: "<dark_gray>Smells Like Teen Spirit</dark_gray>"
+    icon: MUSIC_DISC_5
+    description:
+      - "<gray>Grunge power for a bold victory.</gray>"
+    price: 130
+    default_unlocked: false
+
+  stairway_to_heaven:
+    enabled: true
+    file: victory/Led Zeppelin - Stairway to Heaven.nbs
+    display_name: "<gold>Stairway to Heaven</gold>"
+    icon: MUSIC_DISC_PIGSTEP
+    description:
+      - "<gray>Epic rock for legendary moments.</gray>"
+    price: 140
+    default_unlocked: false
+
+  blinding_lights:
+    enabled: true
+    file: victory/The Weeknd - Blinding Lights.nbs
+    display_name: "<red>Blinding Lights</red>"
+    icon: MUSIC_DISC_13
+    description:
+      - "<gray>Modern pop glow for a fresh win.</gray>"
+    price: 130
+    default_unlocked: false
+
+  despacito:
+    enabled: true
+    file: victory/Luis Fonsi - Despacito.nbs
+    display_name: "<gold>Despacito</gold>"
+    icon: MUSIC_DISC_PIGSTEP
+    description:
+      - "<gray>Global hit to spice up the victory.</gray>"
+    price: 130
+    default_unlocked: false
+
+  shake_it_off:
+    enabled: true
+    file: victory/Taylor Swift - Shake It Off.nbs
+    display_name: "<light_purple>Shake It Off</light_purple>"
+    icon: MUSIC_DISC_RELIC
+    description:
+      - "<gray>Shake away the loss and celebrate.</gray>"
+    price: 120
+    default_unlocked: false
+
+  hotel_california:
+    enabled: true
+    file: victory/Eagles - Hotel California.nbs
+    display_name: "<gold>Hotel California</gold>"
+    icon: MUSIC_DISC_MELLOHI
+    description:
+      - "<gray>Classic rock vibes for the podium.</gray>"
+    price: 140
+    default_unlocked: false
+
+  sweet_child_o_mine:
+    enabled: true
+    file: victory/Guns N' Roses - Sweet Child o' Mine.nbs
+    display_name: "<red>Sweet Child o' Mine</red>"
+    icon: MUSIC_DISC_OTHERSIDE
+    description:
+      - "<gray>Guitar-driven celebration music.</gray>"
+    price: 140
+    default_unlocked: false
+
+  get_lucky:
+    enabled: true
+    file: victory/Daft Punk - Get Lucky.nbs
+    display_name: "<green>Get Lucky</green>"
+    icon: MUSIC_DISC_WAIT
+    description:
+      - "<gray>Funky victory groove to keep it cool.</gray>"
+    price: 110
+    default_unlocked: false

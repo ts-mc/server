@@ -1,0 +1,59 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+achievements:
+  empty: "{prefix} <yellow>No achievements are available yet.</yellow>"
+  phase_unlocked:
+    - "{wide_line_separator}"
+    - "<gray> </gray>"
+    - "  <bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient></bold> <gray>-</gray> <yellow>Achievement</yellow> <gray>-</gray> <green>Unlocked</green>"
+    - "<gray> </gray>"
+    - "  <white>{achievement_name}</white> <gray>({achievement_phase}/{achievement_phase_total})</gray>"
+    - "  <gray>{achievement_description}</gray>"
+    - "<gray> </gray>"
+    - "  <gray>Progress:</gray> {achievement_progress_bar} <gray>({achievement_progress})</gray>"
+    - "  <gray>Remaining:</gray> {achievement_remaining_bar} <gray>({achievement_remaining})</gray>"
+    - "<gray> </gray>"
+    - "{wide_line_separator}"
+  completed:
+    - "{wide_line_separator}"
+    - "<gray> </gray>"
+    - "  <bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient></bold> <gray>-</gray> <yellow>Achievement</yellow> <gray>-</gray> <green>Completed</green>"
+    - "<gray> </gray>"
+    - "  <white>{achievement_name}</white> <gray>({achievement_phase}/{achievement_phase_total})</gray>"
+    - "  <gray>{achievement_description}</gray>"
+    - "<gray> </gray>"
+    - "  <gray>Progress:</gray> {achievement_progress_bar} <gray>({achievement_progress})</gray>"
+    - "  <gray>Remaining:</gray> {achievement_remaining_bar} <gray>({achievement_remaining})</gray>"
+    - "<gray> </gray>"
+    - "{wide_line_separator}"
+  phase_default_name: "Phase {phase_index}"
+  requirements:
+    none: No requirements listed.
+  status:
+    completed: Completed
+    current: In progress
+    locked: Locked
+  errors:
+    category_not_found: "{prefix} <red>Unknown achievements category:</red> <yellow>{category}</yellow><red>.</red>"
+    achievement_not_found: "{prefix} <red>Unknown achievement:</red> <yellow>{achievement}</yellow><red>.</red>"
+levels:
+  status: "{prefix} <gray>Level</gray> <white>{level}</white> <dark_gray>-</dark_gray> <aqua>{level_title}</aqua> <dark_gray>•</dark_gray> <light_purple>{exp_current}</light_purple><gray>/</gray><light_purple>{exp_required}</light_purple> <gray>XP</gray> {exp_bar} <gray>({exp_remaining} to go)</gray>"
+  titles:
+    default: Novice
+  messages:
+    exp_reward: "  <dark_purple>✹</dark_purple> <light_purple>+{amount} XP</light_purple>"
+    level_up:
+      - "{wide_line_separator}"
+      - "<gray> </gray>"
+      - "  <bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient></bold> <gray>-</gray> <yellow>Level</yellow> <gray>-</gray> <green>Up</green>"
+      - "<gray> </gray>"
+      - "  <white>Level {level}</white> <gray>({level_title})</gray>"
+      - "  <gray>Next level requires</gray> <light_purple>{exp_required}</light_purple> <gray>XP</gray>"
+      - "<gray> </gray>"
+      - "{wide_line_separator}"

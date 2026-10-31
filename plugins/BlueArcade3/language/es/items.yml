@@ -1,0 +1,92 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+items:
+  game:
+    vote_game: '<aqua>Vota por minijuegos</aqua>'
+    leave_game: '<red>Salir de la partida</red>'
+  ui:
+    main_lobby_items:
+      play:
+        display_name: '<green>Jugar</green>'
+        lore:
+          - '<gray>Únete rápidamente al siguiente juego disponible.</gray>'
+      maps:
+        display_name: '<aqua>Mapas</aqua>'
+        lore:
+          - '<gray>Explora las arenas y juegos disponibles.</gray>'
+      stats:
+        display_name: '<yellow>Tus estadísticas</yellow>'
+        lore:
+          - '<gray>Abre tu panel de estadísticas personales.</gray>'
+      party:
+        display_name: '<light_purple>Grupo</light_purple>'
+        lore:
+          - '<gray>Administra tu grupo antes de ingresar a un juego.</gray>'
+      leave:
+        display_name: '<red>Salir</red>'
+        lore:
+          - '<gray>Este botón es solo un marcador de posición por defecto.</gray>'
+          - '<gray>Personaliza su acción en items.yml si es necesario.</gray>'
+        actions:
+          message_0: '<yellow>Personaliza esta acción en items.yml si quieres que este botón envíe jugadores a otro lugar.</yellow>'
+    waiting_room_items:
+      store:
+        display_name: '<green>Abrir la tienda</green>'
+      vote:
+        display_name: '<aqua>Vota por minijuegos</aqua>'
+      team_select:
+        display_name: '<yellow>Selecciona un equipo</yellow>'
+        lore:
+          - '<gray>Elige tu equipo antes de que comience el juego.</gray>'
+      leave:
+        display_name: '<red>Salir de la partida</red>'
+    end_items:
+      play_again:
+        display_name: '<green>Jugar de nuevo</green>'
+      view_stats:
+        display_name: '<yellow>Ver todas las estadísticas</yellow>'
+      exit_arena:
+        display_name: '<red>Salir de la partida</red>'
+    spectator_items:
+      teleport_player:
+        display_name: '<aqua>Teletransportarse a un jugador</aqua>'
+        lore:
+          - '<gray>Abre un menú con jugadores activos en esta arena.</gray>'
+      view_stats:
+        display_name: '<yellow>Ver estadísticas</yellow>'
+      play_again:
+        display_name: '<green>Jugar de nuevo</green>'
+      exit_arena:
+        display_name: '<red>Salir de la partida</red>'
+    party_spectator_items:
+      teleport_player:
+        display_name: '<aqua>Teletransportarse a un jugador</aqua>'
+        lore:
+          - '<gray>Abre un menú con jugadores activos en esta arena.</gray>'
+      store:
+        display_name: '<green>Abrir la tienda</green>'
+      view_stats:
+        display_name: '<yellow>Ver estadísticas</yellow>'
+    replay_controls:
+      teleport:
+        display_name: '<aqua>Teletransportarse a un jugador</aqua>'
+      slower:
+        display_name: '<red>Más lento</red>'
+      back:
+        display_name: '<yellow>Retroceder 10s</yellow>'
+      play:
+        display_name: '<green>Reproducir</green>'
+      pause:
+        display_name: '<white>Pausar</white>'
+      forward:
+        display_name: '<yellow>Avanzar 10s</yellow>'
+      faster:
+        display_name: '<green>Más rápido</green>'
+      leave:
+        display_name: '<red>Salir de la repetición</red>'

@@ -1,0 +1,854 @@
+# ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+# 
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+# ========================================
+# Metrics
+# ========================================
+
+# This plugin uses the bStats metrics system. If you want your data not to be collected, you can disable this system here.
+# The following information is collected and sent to bstats.org:
+# Whether the server is in offline or online mode
+# The plugin version
+# The server version
+# The java version
+# The OS version/name and architecture
+# The location of your server
+# The core count for the CPU
+# The number of players online
+# The Metrics version
+metrics: true
+
+# ========================================
+# Anonymous Error Reporting
+# ========================================
+
+# Send errors anonymously to help with active development and constant plugin improvement.
+# Keeping this enabled helps us identify and fix issues faster, improving your experience.
+# 
+# Privacy & Security:
+# - All data is 100% anonymous - no personal information is collected
+# - Only errors related to BlueArcade and Blueva plugins are reported
+# - Your server data and player information remain completely private and secure
+# - You can disable this at any time without affecting plugin functionality
+# 
+# What gets sent:
+# - Error messages and stack traces (only for BlueArcade/Blueva code)
+# - Timestamp of when the error occurred
+# - Plugin version information
+# - Server software and version (e.g. Paper 1.21.11, Spigot 1.21.3)
+# - Bukkit API version
+# - Java version and vendor
+# - Operating system name, version and architecture
+# 
+# We respect your privacy and only use this data to improve BlueArcade.
+anonymous_error_reporting: true
+
+# ========================================
+# Updates
+# ========================================
+
+updates:
+  # Check if your server is using the latest version of the plugin.
+  # We recommend always using the latest version of the plugin for the best experience.
+  check_for_updates: false
+
+  # Automatically check for module updates and download them.
+  # This only downloads updates for modules already installed on your server.
+  module_updates:
+    enabled: false
+    run_on_startup: false
+    check_interval_minutes: 30
+
+# ========================================
+# Spawn on Join
+# ========================================
+
+# Teleports players to the Blue Arcade lobby upon entering the server.
+spawn_on_join: false
+
+# ========================================
+# Language
+# ========================================
+
+language:
+  # Default locale used by Core, players, and modules when no player override applies.
+  # Core language files live under language/<locale>/.
+  default_locale: en
+
+  # Final fallback language. "en" is recommended because the Core is authored in English.
+  fallback_locale: en
+
+  # When enabled, players without a manual /ba lang selection use
+  # the locale reported by their Minecraft client for supported Core and module text.
+  auto_detect_player_locale: true
+
+# ========================================
+# Main Lobby
+# ========================================
+
+main_lobby:
+  dedicated:
+    # Save the player's state before Blue Arcade prepares them for the dedicated lobby
+    # and restore it automatically when they leave that world.
+    save_and_restore_state: true
+
+    # Give the configured main_lobby_items while the player is inside the dedicated lobby world.
+    give_items: true
+
+    # Show the dedicated lobby scoreboard in the dedicated lobby world.
+    scoreboard: true
+
+    # Protect the dedicated lobby world from damage, building, drops, and hunger loss.
+    protect_world: true
+
+    # Teleport players to the configured main lobby spawn when they enter the dedicated lobby world.
+    teleport_to_spawn:
+      on_join: true
+      on_world_enter: true
+      on_respawn: true
+
+# ========================================
+# Game
+# ========================================
+
+# Configures aspects of the plugin for when players are inside an arena.
+game:
+
+  # Global aspects for when a player is inside an arena.
+  global:
+
+    # Lobby countdown before the game starts.
+    lobby_countdown: 120
+
+    # Quick start settings when arena reaches a certain capacity
+    quick_start:
+      # Enable automatic countdown reduction when arena fills up
+      enabled: true
+
+      # Percentage of arena capacity to trigger faster countdown (0.0 to 1.0)
+      # Example: 0.9 = 90% full
+      fill_percentage: 0.8
+
+      # New countdown duration when fill_percentage is reached
+      reduced_countdown: 10
+
+    # The time it takes for a mini-game to start after it is chosen.
+    game_countdown: 10
+
+    # Time it takes to change mini-game. Useful to see the results of the mini-game.
+    limbo_countdown: 5
+
+    # Delay (in seconds) between showing the final summary and kicking players from the arena.
+    end_countdown: 30
+
+    # Notify players of the countdown at specific intervals
+    countdown_notifications:
+      - 240
+      - 120
+      - 60
+      - 30
+      - 15
+      - 10
+      - 5
+      - 4
+      - 3
+      - 2
+      - 1
+
+    # Shows and applies the automatically calculated border in dynamic arena worlds.
+    # Internal dynamic bounds are still calculated and saved when this is disabled.
+    automatic_dynamic_world_border: true
+
+    # Mini-games to be played in each arena
+    default_rounds_per_arena: 8
+
+    # Block that when a player steps on it will die (only step on, do not touch).
+    default_death_block: BARRIER
+
+    # Mutes chat for a few seconds when a minigame description is displayed.
+    # Prevents chat spam so players can read the game instructions clearly.
+    mute_chat_on_game_start: true
+
+    # Spectator mode: allows players to join a running arena as pure spectators.
+    # When enabled, a player who tries to join a running arena receives a warning
+    # message and can join again immediately to enter as a spectator.
+    # Spectators receive the scoreboard and in-arena messages but do not count
+    # as active players and cannot affect the game in any way.
+    spectator_mode:
+      enabled: true
+
+    # Activate the flight at the end of a mini-game. It is completely decorative.
+    flight_on_finish: true
+
+    # When enabled, all players in the arena will appear as ghosts (invisible with visible armour)
+    # during the end-of-game phase.
+    ghost_effect_on_finish: false
+
+    # Global UI visibility settings while players are in an arena.
+    # Set enabled to false to hide every supported UI component at once.
+    ui:
+      # Master toggle for all supported UI components.
+      enabled: true
+
+      # Individual UI component visibility.
+      scoreboard: true
+      titles: true
+      action_bar: true
+
+      # When enabled, players inside an arena will only see other players from the same arena
+      # in the tab list. Players in the lobby will only see other lobby players.
+      # Disable this to show all online players to everyone regardless of arena.
+      tab_list: true
+
+      # Prefix shown before the player name in the tab list when playing a team game.
+      # Supports full MiniMessage formatting. Use the special tag <team_color> to
+      # automatically insert the team's own color (derived from its display name).
+      # Example overrides:
+      # "<bold><team_color>█</bold> "   — bold block, team color
+      # "<red>■ "                        — always red, regardless of team
+      tab_list_team_prefix: "<team_color>█ "
+
+  # Prevents players from executing commands while in game.
+  cancel_commands:
+
+    # Enables or disables command cancellation.
+    enabled: true
+
+    # List of commands that are allowed to be used in an arena.
+    allowed_commands:
+      - /ba
+      - /barcade
+      - /bluearcade
+      - /arcade
+      - /ts
+      - /tse
+      - /tsmenu
+      - /msg
+      - /tell
+
+    # Bypass settings allow certain players to use commands even when cancel_commands is enabled
+    bypass:
+      # Enable or disable bypass functionality
+      enabled: true
+
+      # Permission required to bypass command restrictions
+      permission: bluearcade.admin
+
+# ========================================
+# Regeneration
+# ========================================
+
+# Controls how arena regions are restored between games.
+regeneration:
+
+  # Restoration mode.
+  # "native"  — Recommended. Throttled, tick-spread restoration that supports full block
+  # state (orientation, waterlogged flags, etc.). Block snapshots are stored in
+  # compact binary files under data/arenas/{id}/{gameId}/regeneration/, keeping
+  # game JSON files small and making load times fast.
+  # WorldEdit (if installed) is still used as a fallback when no snapshot exists.
+  # "legacy"  — Instant single-tick restoration using material-only data stored inside the
+  # game JSON. Provided for backward compatibility only; it causes TPS spikes on
+  # large regions and does not preserve block states.
+  mode: native
+
+  # Number of blocks to restore per server tick in native mode.
+  # Lower values reduce TPS impact but make restoration slower.
+  # Raise this value if you want faster regeneration and your server can handle it.
+  # Recommended range: 32–512.
+  blocks_per_tick: 500
+
+  # Number of ticks to wait between processing each batch of blocks.
+  # 1 = process a batch every tick (fastest). Increase to reduce server load further.
+  tick_delay: 1
+
+# ========================================
+# Signs
+# ========================================
+
+signs:
+
+  # Interval (in ticks) to refresh all registered signs.
+  # Lower values make the "searching" animation smoother.
+  update_interval: 20
+
+  # Sign status blocks are configured here.
+  # Status labels and animation frames are translated in language/<locale>/signs.yml.
+  # The name entries below are kept as legacy fallbacks for old/custom language files.
+  statuses:
+    waiting:
+      name: "&aWaiting"
+      block: LIME_STAINED_GLASS
+    starting:
+      name: "&eStarting"
+      block: YELLOW_STAINED_GLASS
+    running:
+      name: "&cIn Game"
+      block: RED_STAINED_GLASS
+    finishing:
+      name: "&9Finishing"
+      block: BLUE_STAINED_GLASS
+    restarting:
+      name: "&6Restarting"
+      block: ORANGE_STAINED_GLASS
+    disabled:
+      name: "&4Disabled"
+      block: RED_STAINED_GLASS
+    searching:
+      name: "&fSearching"
+      block: WHITE_STAINED_GLASS
+      animation:
+        # Frames used to animate the "searching" status.
+        frames:
+          - "&fSearching."
+          - "&fSearching.."
+          - "&fSearching..."
+
+# ========================================
+# Achievements
+# ========================================
+
+# Enables the achievements system.
+achievements:
+  enabled: true
+  notifications:
+    # When players are inside an arena, choose whether achievement notifications
+    # are shown immediately or deferred until they leave.
+    # Available: immediate, deferred
+    delivery_mode: immediate
+    # Delay after the stats summary before showing achievement notifications.
+    # 20 ticks = 1 second.
+    after_summary_delay_ticks: 100
+    # Delay between multiple achievement notifications.
+    multi_delay_ticks: 20
+    # Short grace period after leaving an arena before showing pending notifications.
+    leave_delay_ticks: 10
+
+# ========================================
+# Levels
+# ========================================
+
+# Configure the infinite experience-based level system.
+levels:
+  enabled: true
+
+  # Period for level progression: permanent, yearly, monthly
+  period: permanent
+
+  # Base XP required for level 1.
+  base_xp: 250
+
+  # Percentage increase for each next level requirement.
+  growth_percent: 10
+
+  # Progress bar styling for /ba level.
+  progress_bar:
+    length: 10
+    filled: "<green>█</green>"
+    empty: "<dark_gray>█</dark_gray>"
+
+  # Level titles (last range stays forever if max_level is -1).
+  titles:
+    novice:
+      name: Novice
+      min_level: 0
+      max_level: 5
+    wanderer:
+      name: Wanderer
+      min_level: 5
+      max_level: 15
+    scout:
+      name: Scout
+      min_level: 15
+      max_level: 30
+    pathfinder:
+      name: Pathfinder
+      min_level: 30
+      max_level: 50
+    challenger:
+      name: Challenger
+      min_level: 50
+      max_level: 75
+    vanguard:
+      name: Vanguard
+      min_level: 75
+      max_level: 110
+    elite:
+      name: Elite
+      min_level: 110
+      max_level: 150
+    champion:
+      name: Champion
+      min_level: 150
+      max_level: 200
+    mythic:
+      name: Mythic
+      min_level: 200
+      max_level: 260
+    ascendant:
+      name: Ascendant
+      min_level: 260
+      max_level: 330
+    paragon:
+      name: Paragon
+      min_level: 330
+      max_level: 420
+    legend:
+      name: Legend
+      min_level: 420
+      max_level: -1
+
+# ========================================
+# Economy
+# ========================================
+
+# Choose which economy provider to use for credits rewards.
+# Options:
+# - "builtin": Uses BlueArcade stats storage (default)
+# - "vault": Uses Vault economy provider (operations fail if Vault is unavailable)
+# - "custom": Uses custom commands/placeholders for any economy system
+economy:
+  provider: builtin
+
+  # Custom economy configuration (only used when provider is "custom")
+  # Requires PlaceholderAPI only for get_placeholder balance checks
+  custom:
+    # Command to give credits to a player
+    # Available placeholders: {player}, {amount}
+    # Example: "points give {player} {amount}"
+    give_command: ""
+
+    # Command to take credits from a player
+    # Available placeholders: {player}, {amount}, %player%, %amount%
+    # Example: "points take {player} {amount}"
+    take_command: ""
+
+    # PlaceholderAPI placeholder to get player's balance
+    # Example: "%playerpoints_points%"
+    get_placeholder: ""
+
+# ========================================
+# Store
+# ========================================
+
+# Enables the in-game store (/ba store) for cosmetics, music kits, etc.
+store:
+  enabled: true
+
+# ========================================
+# Items
+# ========================================
+
+# Global safety delay for interaction with tracked items (items.yml).
+# Prevents accidental clicks when inventories are refreshed (e.g., at game end).
+items:
+  global_interaction_cooldown_ticks: 40
+
+# ========================================
+# Summary Stats
+# ========================================
+
+# Delay and actions for the end-of-game stats recap.
+summary_stats:
+  delay_ticks: 200
+  # For Java Edition after the final summary, choose whether the stats recap
+  # is shown directly in chat or replaced by an interactive prompt.
+  # Bedrock keeps the existing progress modal flow.
+  # Available: chat, interactive
+  java_mode: interactive
+  # Which stat period to display totals for in the end-of-game progress recap.
+  # Options: alltime, monthly, yearly
+  period: alltime
+  actions:
+    play_again: ba quickjoin
+    lobby: ba leave
+
+# ========================================
+# Team Manager
+# ========================================
+
+# Global TeamManager defaults used for team ids, names and icons.
+# This section is only used by team-based games (games with teams enabled).
+# Solo/non-team games ignore this configuration.
+# Each game's `teams.count` controls how many teams are created.
+# `count` only limits how many custom definitions are used from the list below.
+# If a game needs more teams, uniquely named default teams fill the remaining slots.
+# 
+# Each team definition supports the following fields:
+# name     - MiniMessage display name shown in menus, scoreboards, etc.
+# color    - MiniMessage color tag used for the tab-list prefix and placeholders.
+# Accepts any MiniMessage color: <red>, <blue>, <#FF5555>, <gradient:red:blue>, etc.
+# If omitted, the color is derived automatically from the display name.
+# material - Bukkit Material name used as the team icon in menus.
+teams:
+  manager:
+    count: 16
+    definitions:
+      red:
+        name: "<red>Red Team</red>"
+        color: "<red>"
+        material: RED_WOOL
+      blue:
+        name: "<blue>Blue Team</blue>"
+        color: "<blue>"
+        material: BLUE_WOOL
+      green:
+        name: "<green>Green Team</green>"
+        color: "<green>"
+        material: GREEN_WOOL
+      yellow:
+        name: "<yellow>Yellow Team</yellow>"
+        color: "<yellow>"
+        material: YELLOW_WOOL
+      cyan:
+        name: "<aqua>Cyan Team</aqua>"
+        color: "<aqua>"
+        material: CYAN_WOOL
+      purple:
+        name: "<dark_purple>Purple Team</dark_purple>"
+        color: "<dark_purple>"
+        material: PURPLE_WOOL
+      orange:
+        name: "<gold>Orange Team</gold>"
+        color: "<gold>"
+        material: ORANGE_WOOL
+      pink:
+        name: "<light_purple>Pink Team</light_purple>"
+        color: "<light_purple>"
+        material: PINK_WOOL
+      white:
+        name: "<white>White Team</white>"
+        color: "<white>"
+        material: WHITE_WOOL
+      black:
+        name: "<gray>Black Team</gray>"
+        color: "<dark_gray>"
+        material: BLACK_WOOL
+      gray:
+        name: "<gray>Gray Team</gray>"
+        color: "<gray>"
+        material: GRAY_WOOL
+      lime:
+        name: "<green>Lime Team</green>"
+        color: "<green>"
+        material: LIME_WOOL
+      light_blue:
+        name: "<aqua>Light Blue Team</aqua>"
+        color: "<aqua>"
+        material: LIGHT_BLUE_WOOL
+      magenta:
+        name: "<light_purple>Magenta Team</light_purple>"
+        color: "<light_purple>"
+        material: MAGENTA_WOOL
+      brown:
+        name: "<gold>Brown Team</gold>"
+        color: "<gold>"
+        material: BROWN_WOOL
+      light_gray:
+        name: "<gray>Light Gray Team</gray>"
+        color: "<gray>"
+        material: LIGHT_GRAY_WOOL
+
+# ========================================
+# Menus
+# ========================================
+
+# Control how the built-in menus behave. You can disable them entirely
+# or point a specific menu to a custom command provided by another plugin
+# such as DeluxeMenus or BlueMenu.
+menus:
+
+  # Global toggle for every menu.
+  enabled: true
+
+  # Arena selector menu.
+  join_selector:
+    enabled: true
+    # When set, this command is executed instead of the internal selector menu.
+    # Use it to delegate the GUI to another plugin (include the leading / if desired).
+    external_command: ""
+
+  # Player stats overview (opened with /ba stats).
+  stats:
+    enabled: true
+    external_command: ""
+
+  # Top stats menu (opened with /ba tops).
+  tops:
+    enabled: true
+    external_command: ""
+
+  # Achievements menu (opened with /ba achievements).
+  achievements:
+    enabled: true
+    external_command: ""
+
+  # Store menu (opened with /ba store).
+  store:
+    enabled: true
+    external_command: ""
+
+  # Leave confirmation menu.
+  leave:
+    enabled: true
+    external_command: ""
+
+  # Party menus (main menu, members, invites, public search).
+  party:
+    enabled: true
+
+    # When the leader disconnects, wait this many seconds before disbanding the party.
+    # If the leader reconnects within this window they keep their role.
+    # Set to 0 to use the legacy behaviour (immediately transfer leadership).
+    leader_reconnect_timeout: 60
+
+    main:
+      enabled: true
+      external_command: ""
+
+    members:
+      enabled: true
+      external_command: ""
+
+    invite:
+      enabled: true
+      external_command: ""
+
+    search:
+      enabled: true
+      external_command: ""
+
+# ========================================
+# Database
+# ========================================
+
+# Shared database connection profiles used by features such as stats sync and
+# proxy SQL messaging. Features reference these profiles by name so the same
+# connection does not need to be configured twice.
+database:
+  default:
+    # Available: mysql, mariadb
+    type: mysql
+
+    # Optional advanced JDBC URL. Leave empty to build it from type, host, port, and name.
+    jdbc_url: ""
+
+    host: localhost
+    port: 3306
+    name: bluearcade
+    user: root
+    password: YOUR_PASSWORD
+
+    # Allows MySQL Connector/J to retrieve the server RSA public key.
+    # Required for MySQL 8 users with caching_sha2_password when SSL is disabled.
+    allow_public_key_retrieval: true
+
+# ========================================
+# Stats
+# ========================================
+
+# Enables the plugin statistics system.
+stats:
+  enabled: true
+
+  # Top lists configuration (/ba tops).
+  tops:
+    # Number of entries per page.
+    page_size: 10
+
+    # Minimum stat value required to appear on the leaderboard.
+    min_value: 1
+
+  # Enables the synchronization of stats with an external MySQL database.
+  sync:
+    enabled: false
+
+    # Database profile used for stat synchronization.
+    database: default
+
+    # Table prefix for stats tables.
+    table_prefix: bluearcade_
+
+# ========================================
+# Proxy Mode
+# ========================================
+
+# Proxy mode lets a lobby server discover arenas hosted on one or more game servers.
+# It works with BungeeCord and Velocity because player transfers still use the standard
+# proxy Connect plugin message.
+
+proxy_mode:
+
+  # Master toggle for proxy mode. Set to true to activate multi-server architecture.
+  enabled: false
+
+  # The type of server this is. Determines how the plugin behaves.
+  # - "lobby": server that shows remote arenas and sends players to game servers
+  # - "game" : server that hosts arenas and publishes status to lobby servers
+  server_type: game
+
+  # The name of this server, as defined in your proxy (BungeeCord/Velocity).
+  # Required if server_type is "game".
+  server_name: bagame1
+
+  # Lobby server(s) to send players to after a match ends.
+  # Required on game servers. These must match names in your proxy config.
+  lobby_servers:
+    - balobby1
+
+  # Game server(s) to send players to the arena.
+  # Required on lobby servers. These must match names in your proxy config.
+  game_servers:
+    - bagame1
+
+  # Game-server behaviour.
+  game_server:
+
+    # If true, players who join a game server without a queued lobby request are sent
+    # to the best available arena automatically.
+    auto_join_on_connect: true
+
+    # If true, the game server shuts down after an arena finishes.
+    # Keep this false for shared game servers that host several arenas.
+    shutdown_after_match: false
+
+    # Keeps at least one world loaded per enabled waiting arena on proxy game servers.
+    # This avoids a large world-loading spike when the first player is sent to a fresh arena.
+    preload_worlds:
+      enabled: true
+      initial_delay_ticks: 40
+      refresh_ticks: 100
+
+  # Whether to expose the current arena status in the server MOTD.
+  # Only applies if server_type is "game".
+  arena_status_motd: true
+
+  # ------------------------------------------------------------
+  # Messaging between lobby and game servers
+  # ------------------------------------------------------------
+  messaging:
+
+    # Enables or disables cross-server arena discovery and queued remote joins.
+    enabled: true
+
+    # Available methods:
+    # - socket: direct lobby -> game-server TCP requests. Best for simple/private networks.
+    # - redis : shared Redis keys. Best when servers are split across machines.
+    # - sql   : shared MySQL/MariaDB tables. Best when Redis is not available.
+    method: socket
+
+    # How often lobby servers refresh remote arena snapshots.
+    refresh_ticks: 60
+
+    # How often game servers publish their arena snapshot for redis/sql messaging.
+    publish_ticks: 60
+
+    # Redis/SQL snapshots and queued joins older than this are ignored and cleaned.
+    ttl_seconds: 30
+
+    socket:
+      # Game servers known to the lobby. Used for direct socket requests.
+      targets:
+        bagame1:
+          ip: 127.0.0.1
+          port: 5050
+        bagame2:
+          ip: 127.0.0.1
+          port: 5051
+
+      # Socket listener settings for game servers.
+      listener:
+        enabled: true
+        port: 5050
+        host: 127.0.0.1
+
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: ""
+      database: 0
+      key_prefix: "bluearcade:proxy:"
+      timeout_millis: 1500
+
+    sql:
+      database: default
+      table_prefix: bluearcade_proxy_
+
+# ========================================
+# Integrations
+# ========================================
+
+# Optional plugin integrations.
+# Set any option to true to force-disable that integration,
+# even if the dependency plugin is installed on the server.
+integrations:
+  # WorldEdit regeneration integration.
+  worldedit:
+    # When true, schematics are generated for registered regeneration regions at startup.
+    # Before each schematic is captured, BlueArcade first restores blocks from saved data as a safety step.
+    startup_generate_schematics: true
+
+    # Warn administrators when saving a very large regeneration region without WorldEdit installed.
+    # The value is measured as block volume (sizeX * sizeY * sizeZ).
+    large_region_warning_volume: 75000
+
+  force_disable:
+    placeholderapi: false
+    vault: false
+    floodgate_geyser: false
+    worldedit: false
+
+# ========================================
+# Replay System
+# ========================================
+
+# Records dynamic-arena matches so players can watch them back with /ba replay.
+replay:
+  enabled: true
+  # Days to keep a replay before it's automatically deleted. 0 or less disables cleanup.
+  retention_days: 7
+  max_duration_minutes: 60
+  max_events_per_replay: 500000
+  record_chat: true
+  record_plugin_messages: true
+  record_titles: true
+  record_world_border: true
+  record_victory_effects: true
+  record_item_drops: true
+  record_entities: true
+  # Records block changes a module makes through BlocksAPI (setBlock/setRegion/clearRegion/
+  # applyPattern) with exact timing and no polling cost. Prefer having modules route their
+  # block mutations through BlocksAPI over relying on block_scan below.
+  record_module_block_changes: true
+  # Safety net for block changes that bypass both normal events AND BlocksAPI (e.g. a module
+  # calling Block#setType directly from its own event handler, WorldEdit-style edits, etc) by
+  # periodically diffing the arena world's loaded chunks against their last known state. Only
+  # needed for modules that don't cooperate with BlocksAPI; has more detection latency and cost
+  # than the mechanisms above.
+  block_scan:
+    enabled: true
+    # How often (in ticks) a scan pass runs. Dynamic arena worlds are small/instanced, so
+    # scanning every tick is normally cheap - the empty-section skip keeps idle areas free.
+    interval_ticks: 1
+    # How many loaded chunks are diffed per pass. 0 or less means no limit (diff every
+    # currently loaded chunk each pass) - only cap this for arenas unusually large for a
+    # per-session dynamic world.
+    chunks_per_pass: 0
+  viewer:
+    default_speed: 1.0
+    seek_seconds: 10
+
+# ========================================
+# Debug Mode
+# ========================================
+
+# FOR DEVELOPMENT USE ONLY — disable in production.
+# Enables verbose logging that traces the full arena lifecycle.
+# When enabled, a large volume of log output will be generated.
+debug:
+  enabled: false

@@ -1,0 +1,13 @@
+#  ____  _               _                      _
+# | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
+# |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
+# | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
+# |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
+#
+# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+
+action_bar:
+  lobby:
+    starting: '<aqua>Comenzando en</aqua> <light_purple>{time}</light_purple>'
+  in_game:
+    global: '<aqua>Hora:</aqua> <white>{time}</white> <dark_gray>| <aqua>Ronda:</aqua> <white>{round}</white><gray>/</gray><white>{round_max}</white>'
