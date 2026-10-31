@@ -1,0 +1,22 @@
+{
+  "match": "2ee1794d-1daa-4626-ab08-883974bb98e6",
+  "status": "ABORTED",
+  "reason": "Administrator stopped the match",
+  "ranked": false,
+  "stage": 30,
+  "stageSkips": 30,
+  "elapsedSeconds": 165,
+  "pressureThrottles": 0,
+  "players": [
+    {
+      "id": "322a794a-b604-4023-a461-bd06643a7335",
+      "name": "TheySix",
+      "tie": 7790717270903019352,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 165,
+      "cause": ""
+    }
+  ]
+}

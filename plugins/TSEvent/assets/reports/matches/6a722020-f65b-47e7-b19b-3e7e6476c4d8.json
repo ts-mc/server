@@ -1,0 +1,23 @@
+{
+  "match": "6a722020-f65b-47e7-b19b-3e7e6476c4d8",
+  "status": "DRAW",
+  "reason": "Simultaneous final deaths",
+  "ranked": false,
+  "stage": 1,
+  "stageSkips": 0,
+  "elapsedSeconds": 156,
+  "pressureThrottles": 0,
+  "players": [
+    {
+      "id": "00000000-0000-0000-0009-01fba90876ee",
+      "name": "_TheySix6608",
+      "tie": 6173876992055442278,
+      "alive": false,
+      "kills": 0,
+      "place": 1,
+      "survived": 156,
+      "cause": "DISCONNECTED"
+    }
+  ],
+  "perks": {}
+}

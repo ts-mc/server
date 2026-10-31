@@ -1,0 +1,173 @@
+{
+  "match": "fb40415a-7cb7-424d-b64d-e74f4d08884c",
+  "status": "ABORTED",
+  "reason": "Administrator stopped the match",
+  "ranked": false,
+  "stage": 0,
+  "stageSkips": 0,
+  "elapsedSeconds": 0,
+  "pressureThrottles": 0,
+  "players": [
+    {
+      "id": "e178fd90-6ef5-4538-ab67-f82eefbf2bb1",
+      "name": "robiwolf10",
+      "tie": -7318017532374893922,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "03e29803-28ce-49c9-be2f-ede3d2264716",
+      "name": "RedasKG1959",
+      "tie": -6348096748065576236,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "00000000-0000-0000-0009-01f5e59d7b17",
+      "name": "_Savitar8823",
+      "tie": -5844364102506092912,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "4bfa1a1d-1b93-4572-914b-d13ef683d0f3",
+      "name": "ProAnti",
+      "tie": -2595592600184730219,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "15e4aa44-2666-4ca0-a3f5-e289f5562e4e",
+      "name": "Catrooper",
+      "tie": -2474034487898417469,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "846f9123-5d2b-4ab1-8456-4ff58a1d8618",
+      "name": "EpicJoJoJo",
+      "tie": -1458116480855273332,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "f326c122-9e56-453f-87fc-2be137519899",
+      "name": "Itz_sitian",
+      "tie": -1355020263766998627,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "ef75c3f8-24bf-4dab-9410-deb0c94a9d1e",
+      "name": "zamgames_",
+      "tie": 2410244684295097082,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "c752ef61-541c-4bea-90c3-e3733626edea",
+      "name": "REZN0VKA",
+      "tie": 3601815518795993398,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "2720db0d-5d01-4716-95de-3d8d20aef4eb",
+      "name": "harmiv",
+      "tie": 3749645657092892420,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "13ec60ae-2286-4770-ae88-0f771fbaaa5c",
+      "name": "LordRubberDuck",
+      "tie": 3936720140041479031,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "64c9ff90-9331-4528-be2b-847abbc9b635",
+      "name": "killermachine_13",
+      "tie": 6796614265171754251,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "fb1fd142-e125-4d93-83ab-0baea26f4308",
+      "name": "XeroDegreess",
+      "tie": 7702321773867246410,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "c4d8b246-d1cc-4284-9f8e-52a17f6c1036",
+      "name": "RedCrafterYT11",
+      "tie": 7781053549352097706,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "3cef13cf-34cc-44b5-950f-9740357569fb",
+      "name": "Immional",
+      "tie": 7946770947938400247,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    },
+    {
+      "id": "00000000-0000-0000-0009-01f20dde42c3",
+      "name": "_XTEY99",
+      "tie": 8282847188910759248,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 0,
+      "cause": ""
+    }
+  ],
+  "perks": {}
+}

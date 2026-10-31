@@ -1,0 +1,53 @@
+{
+  "match": "6005d4ef-0a9c-45b3-b963-d023ebe6c8e1",
+  "status": "ABORTED",
+  "reason": "Administrator stopped the match",
+  "ranked": false,
+  "stage": 0,
+  "stageSkips": 0,
+  "elapsedSeconds": 26,
+  "pressureThrottles": 0,
+  "players": [
+    {
+      "id": "64c9ff90-9331-4528-be2b-847abbc9b635",
+      "name": "killermachine_13",
+      "tie": -8750167878325738793,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 26,
+      "cause": ""
+    },
+    {
+      "id": "00000000-0000-0000-0009-01f5e59d7b17",
+      "name": "_Savitar8823",
+      "tie": 6127036371924726564,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 26,
+      "cause": ""
+    },
+    {
+      "id": "15e4aa44-2666-4ca0-a3f5-e289f5562e4e",
+      "name": "Catrooper",
+      "tie": 6429529703398070621,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 26,
+      "cause": ""
+    },
+    {
+      "id": "322a794a-b604-4023-a461-bd06643a7335",
+      "name": "TheySix",
+      "tie": 9129680095425383747,
+      "alive": true,
+      "kills": 0,
+      "place": 0,
+      "survived": 26,
+      "cause": ""
+    }
+  ],
+  "perks": {}
+}

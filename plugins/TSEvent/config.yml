@@ -5,8 +5,8 @@ integration:
   force-event-lobby-on-join: true
 minimum-players: 2
 countdown-seconds: 30
-loot-grace-seconds: 120
-stage-seconds: 60
+loot-grace-seconds: 60
+stage-seconds: 30
 refill-seconds: 60
 lobby:
   world: event_lobby
@@ -53,7 +53,7 @@ test-mode: false
 test-invulnerable-contestants: false
 horror:
   enabled: true
-  first-seconds: 180
+  first-seconds: 120
   interval-seconds: 180
   light-off-seconds: 10
   darkness-base-seconds: 40
@@ -74,3 +74,4 @@ resource-pack:
   local-server: true
   bind: 0.0.0.0
   port: 25665
+timing-version: 1

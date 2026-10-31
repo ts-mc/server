@@ -1,0 +1,317 @@
+header-footer:
+  enabled: true
+  designs:
+    world-world1:
+      display-condition: '%world%=world1'
+      header:
+        - an example of world with custom
+      footer:
+        - header/footer and prefix/suffix
+    world-world2;world3:
+      display-condition: '%world%=world2|%world%=world3'
+      header:
+        - This is a shared header for
+        - world2 and world3
+      footer: []
+    server-server1:
+      display-condition: '%server%=server1'
+      header:
+        - an example of server with custom header
+      footer: []
+    default:
+      display-condition: '%world%!=disabledworld'
+      header:
+        - '&f'
+        - '&#4CADD0&lᴛ&#54B3D4&lʜ&#5CB9D7&lᴇ&#64BFDB&lʏ&#6BC4DE&ls&#73CAE2&lɪ&#7BD0E6&lx &#8BDCED&lᴇ&#93E2F1&lᴠ&#9AE7F4&lᴇ&#A2EDF8&lɴ&#AAF3FB&lᴛ&#B2F9FF&ls'
+        - '&#4CADD0ᴛ&#51B1D2ʜ&#57B5D5ᴇ&#5CB9D7ʏ&#61BDDAs&#67C1DCɪ&#6CC5DFx&#72C9E1.&#77CDE4s&#7CD1E6ᴘ&#82D5E9ᴀ&#87D9EBʀ&#8CDDEEᴋ&#92E1F0ᴇ&#97E5F3ᴅ&#9DE9F5.&#A2EDF8ʜ&#A7F1FAᴏ&#ADF5FDs&#B2F9FFᴛ'
+        - '&r&7Online: &f%online%'
+        - ''
+      footer:
+        - ''
+        - '&7You can vote for our server'
+        - '&#4CADD0ᴇ&#50B0D2ᴠ&#54B3D3ᴇ&#57B5D5ɴ&#5BB8D7ᴛ&#5FBBD9s&#63BEDA-&#66C1DCᴛ&#6AC4DEʜ&#6EC6E0ᴇ&#72C9E1ʏ&#76CCE3s&#79CFE5ɪ&#7DD2E7x&#81D4E8.&#85D7EAʀ&#88DAECᴏ&#8CDDEE-&#90E0EFᴍ&#94E2F1ɪ&#98E5F3ʜ&#9BE8F5ᴀ&#9FEBF6ɪ&#A3EEF8ᴜ&#A7F1FA.&#AAF3FCx&#AEF6FDʏ&#B2F9FFᴢ'
+        - ''
+tablist-name-formatting:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  sorting-types:
+    - GROUPS:owner,manager,admin,headmoderator,moderator,helper,vip,voter,default
+    - PLACEHOLDER_A_TO_Z:%player%
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+  disable-condition: '%world%=disabledworld'
+playerlist-objective:
+  enabled: true
+  # TSHide: 0 / blank for players who hide their ping with /hide info
+  value: '%tshide_ping%'
+  fancy-value: ' &7%tshide_ping_display% &f'
+  disable-condition: '%world%=disabledworld'
+  title: TAB
+  render-type: INTEGER
+belowname-objective:
+  enabled: false
+  value: '%health%'
+  title: '&cHealth'
+  fancy-value: '&c%health%'
+  fancy-value-default: NPC
+  disable-condition: '%world%=disabledworld'
+  view-distance: 10
+prevent-spectator-effect:
+  enabled: false
+bossbar:
+  enabled: false
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: false
+  bars:
+    ServerInfo:
+      style: PROGRESS
+      color: '%animation:barcolors%'
+      progress: '100'
+      text: '&fWebsite: &bwww.domain.com'
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  delay-on-join-milliseconds: 0
+  scoreboards:
+    scoreboard-1.20.3+:
+      title: '&#4CADD0&lᴛ&#54B3D4&lʜ&#5CB9D7&lᴇ&#64BFDB&lʏ&#6BC4DE&ls&#73CAE2&lɪ&#7BD0E6&lx &#8BDCED&lᴇ&#93E2F1&lᴠ&#9AE7F4&lᴇ&#A2EDF8&lɴ&#AAF3FB&lᴛ&#B2F9FF&ls'
+      display-condition: '%player-version-id%>=765;%bedrock%=false;%world%!=event_lobby;%world%!=event_arena'
+      lines:
+        - '%time%'
+        - '&f'
+        - ' <gradient:#4cadd0:#b2f9ff>%player%</gradient>'
+        - ' &#deb887• &fʀᴀɴᴋ &7| &f%luckperms-prefix%'
+        - ' &#FFFF00• &fᴛᴀɢ &7| &f%deluxetags_tag%'
+        - ' &#FFFF00• &fɢʟᴏᴡ &7| &f%fancyglow_color%🖌'
+        - ''
+        - ' ꜱᴜʀᴠɪᴠᴀʟ &a%bungee_survival%'
+        - ' ᴘʀᴀᴄᴛɪᴄᴇ &5%bungee_minigames%'
+        - ' ɢʟᴏʙᴀʟ &b%bungee_total%'
+        - ''
+        - ' &7ɢᴀᴍᴇs &7ᴘʟᴀʏᴇᴅ: &f%bluearcade_stat_global_games_played%'
+        - ' &7ᴡɪɴs: &f%bluearcade_stat_global_wins%'
+        - ' &7ᴋɪʟʟs: &f%bluearcade_stat_global_kills%'
+        - ' &7ᴅᴇᴀᴛʜs: &f%bluearcade_stat_global_deaths%'
+        - ' &7ᴍᴏɴᴇʏ: &a%vault_eco_balance_formatted%'
+        - ' &7ᴠᴏᴛᴇs: &d%votingplugin_total%'
+        - ' &7ᴠᴏᴛᴇ sᴛʀᴇᴀᴋ: &d%votingplugin_dailyvotestreak%'
+        - ' &7ᴄʀᴇᴅɪᴛs: &f%bluearcade_stat_global_credits%'
+        - ' &7sᴛᴀʀs: &f%bluearcade_stat_global_stars%'
+        - ''
+        - '&#4CADD0ᴛ&#51B1D2ʜ&#57B5D5ᴇ&#5CB9D7ʏ&#61BDDAs&#67C1DCɪ&#6CC5DFx&#72C9E1.&#77CDE4s&#7CD1E6ᴘ&#82D5E9ᴀ&#87D9EBʀ&#8CDDEEᴋ&#92E1F0ᴇ&#97E5F3ᴅ&#9DE9F5.&#A2EDF8ʜ&#A7F1FAᴏ&#ADF5FDs&#B2F9FFᴛ'
+    scoreboard:
+      # Bedrock and older Java clients. Plain text only: no custom-font/gradient/math expansions are installed.
+      # Not shown in the event worlds, where the event plugin owns the sidebar.
+      title: '&6&lTheySix Events'
+      display-condition: '%world%!=event_lobby;%world%!=event_arena'
+      lines:
+        - ''
+        - '&7Player &f%player%'
+        - '&7Rank &f%luckperms-prefix%'
+        - '&7Ping &f%ping%ms'
+        - '&7Online &f%online%'
+        - ''
+        - '&btheysix.sparked.network'
+layout:
+  enabled: false
+  direction: COLUMNS
+  default-skin: mineskin:383747683
+  enable-remaining-players-text: true
+  remaining-players-text: '... and %s more'
+  empty-slot-ping-value: 1000
+  layouts:
+    default:
+      fixed-slots:
+        - '1|&3Website&f:'
+        - 2|&bmyserver.net
+        - '3|&8&m '
+        - '4|&3Name&f:'
+        - 5|&b%player%
+        - '7|&3Rank&f:'
+        - '8|Rank: %group%'
+        - '10|&3World&f:'
+        - 11|&b%world%
+        - '13|&3Time&f:'
+        - 14|&b%time%
+        - '21|&3Teamspeak&f:'
+        - 22|&bts.myserver.net
+        - '23|&8&m '
+        - '41|&3Store&f:'
+        - 42|&bshop.myserver.net
+        - '43|&8&m '
+      groups:
+        staff:
+          slots:
+            - 24-40
+          display-condition: permission:tab.staff
+        players:
+          slots:
+            - 44-80
+ping-spoof:
+  enabled: false
+  value: 0
+placeholders:
+  date-format: MMMM dd, yyyy
+  locale: en-US
+  time-format: ' &7MMMM dd, yyyy'
+  time-offset: 0
+  register-tab-expansion: false
+placeholder-output-replacements:
+  '%essentials_vanished%':
+    'yes': '&7| Vanished'
+    'no': ''
+conditions:
+  # Tab/nametag tag: the LuckPerms rank label, unless the player wears a special DeluxeTags tag (podium etc).
+  tag-owner:
+    conditions:
+    - '%deluxetags_tag%='
+    true: ' [ᴛʜᴇʏsɪx]'
+    false: '%deluxetags_tag%'
+  tag-manager:
+    conditions:
+    - '%deluxetags_tag%='
+    true: ' [ᴍᴀɴᴀɢᴇʀ]'
+    false: '%deluxetags_tag%'
+  tag-admin:
+    conditions:
+    - '%deluxetags_tag%='
+    true: ' [ᴀᴅᴍɪɴ]'
+    false: '%deluxetags_tag%'
+  tag-headmoderator:
+    conditions:
+    - '%deluxetags_tag%='
+    true: ' [ʜᴇᴀᴅ ᴍᴏᴅᴇʀᴀᴛᴏʀ]'
+    false: '%deluxetags_tag%'
+  tag-moderator:
+    conditions:
+    - '%deluxetags_tag%='
+    true: ' [ᴍᴏᴅᴇʀᴀᴛᴏʀ]'
+    false: '%deluxetags_tag%'
+  tag-helper:
+    conditions:
+    - '%deluxetags_tag%='
+    true: ' [ʜᴇʟᴘᴇʀ]'
+    false: '%deluxetags_tag%'
+  tag-staffteam:
+    conditions:
+    - '%deluxetags_tag%='
+    true: ' [sᴛᴀғғ ᴛᴇᴀᴍ]'
+    false: '%deluxetags_tag%'
+  tag-vip:
+    conditions:
+    - '%deluxetags_tag%='
+    true: ' [ᴠɪᴘ]'
+    false: '%deluxetags_tag%'
+  tag-voter:
+    conditions:
+    - '%deluxetags_tag%='
+    true: ' [ᴠᴏᴛᴇʀ]'
+    false: '%deluxetags_tag%'
+  tag-trusted:
+    conditions:
+    - '%deluxetags_tag%='
+    true: ' [ᴍᴇᴍʙᴇʀ]'
+    false: '%deluxetags_tag%'
+  tag-default:
+    conditions:
+    - '%deluxetags_tag%='
+    true: ' [ᴍᴇᴍʙᴇʀ]'
+    false: '%deluxetags_tag%'
+  nick:
+    conditions:
+      - '%player%=%essentials_nickname%'
+    true: '%player%'
+    false: ~%essentials_nickname%
+assign-groups-by-permissions: false
+primary-group-finding-list:
+  - owner
+  - manager
+  - admin
+  - headmoderator
+  - moderator
+  - helper
+  - vip
+  - voter
+  - default
+permission-refresh-interval: 1000
+debug: false
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password
+  useSSL: true
+per-world-playerlist:
+  enabled: false
+  allow-bypass-permission: false
+  ignore-effect-in-worlds:
+    - ignoredworld
+    - build
+  shared-playerlist-world-groups:
+    lobby:
+      - lobby1
+      - lobby2
+    minigames:
+      - paintball
+      - bedwars
+compensate-for-packetevents-bug: false
+global-playerlist:
+  enabled: false
+  display-others-as-spectators: false
+  display-vanished-players-as-spectators: true
+  isolate-unlisted-servers: false
+  update-latency: false
+  spy-servers:
+    - spyserver1
+    - spyserver2
+  server-groups:
+    lobbies:
+      - lobby1
+      - lobby2
+    group2:
+      - server1
+      - server2
+use-bukkit-permissions-manager: false
+use-online-uuid-in-tablist: true
+proxy-support:
+  enabled: true
+  type: PLUGIN
+  plugin:
+    name: RedisBungee
+  redis:
+    url: redis://:password@localhost:6379/0
+  rabbitmq:
+    exchange: plugin
+    url: amqp://guest:guest@localhost:5672/%2F
+  channel-name-suffix: custom
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+  '%server_uptime%': 1000
+  '%server_tps_1_colored%': 1000
+  '%server_unique_joins%': 5000
+  '%player_health%': 200
+  '%player_ping%': 1000
+  '%vault_prefix%': 1000
+  '%rel_factionsuuid_relation_color%': 1000
+  '%bluearcade_stat_global_games_played%': 1000
+  '%bluearcade_stat_global_wins%': 1000
+  '%bluearcade_stat_global_kills%': 1000
+  '%bluearcade_stat_global_deaths%': 1000
+  '%bluearcade_stat_global_credits%': 1000
+  '%bluearcade_stat_global_stars%': 1000
+  '%vault_eco_balance_formatted%': 1000
+  '%votingplugin_total%': 5000
+  '%votingplugin_dailyvotestreak%': 5000
+config-version: 7
+components:
+  minimessage-support: true
+  disable-shadow-for-heads: true

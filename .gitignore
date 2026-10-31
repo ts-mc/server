@@ -16,7 +16,6 @@ PG-*/
 *.jar
 
 # Logs
-logs/
 *.log
 *.log.gz
 
@@ -117,6 +116,18 @@ plugins/TAB/playerdata.yml
 plugins/TAB/skincache.yml
 plugins/TAB/users.yml
 plugins/TSEvent/assets/reports/
+!plugins/TSEvent/assets/reports/
+plugins/TSEvent/assets/reports/*
+!plugins/TSEvent/assets/reports/*.json
+!plugins/TSEvent/assets/reports/matches/
+plugins/TSEvent/assets/reports/matches/*
+!plugins/TSEvent/assets/reports/matches/*.json
+!plugins/TSEvent/assets/templates/
+!plugins/TSEvent/assets/templates/event_arena/
+!plugins/TSEvent/assets/templates/event_arena/geometry.json
+!plugins/TSEvent/assets/templates/event_arena/lights.json
+!plugins/TSEvent/assets/templates/event_lobby/
+!plugins/TSEvent/assets/templates/event_lobby/geometry.json
 plugins/nightcore/userdata.yml
 plugins/UltraCosmetics/data/
 plugins/Votifier/rsa/
@@ -132,16 +143,6 @@ plugins/spark/tmp-client/
 *.backup
 *.bak
 
-# Private/generated credentials; retain non-secret plugin configuration
-plugins/AdvancedBan/config.yml
-plugins/AdvancedBanZ/config.yml
-plugins/BanWebhook/config.yml
-plugins/DankVotes/config.yml
-plugins/DiscordSRV/config.yml
-plugins/FancyNpcs/config.yml
-plugins/MyCommand/config.yml
-plugins/Votifier/config.yml
-plugins/VotingPlugin/BungeeSettings.yml
 plugins/VotingPlugin/Config.yml
 plugins/VotifierPlus/config.yml
 plugins/Votifier/rsa/private.key
@@ -150,11 +151,7 @@ plugins/VotifierPlus/rsa/private.key
 # Local credential-bearing configuration; commit the matching *.example template.
 plugins/BlueArcade3/settings.yml
 plugins/LibsDisguises/configs/libsdisguises.yml
-plugins/LuckPerms/config.yml
 plugins/LuckPerms/editor-keystore.json
-plugins/SkinsRestorer/config.yml
-plugins/TAB/config.yml
-plugins/UltraCosmetics/config.yml
 plugins/Updater/config.yml
 plugins/floodgate/key.pem
 
@@ -181,3 +178,11 @@ AGENTS.md
 # OS/editor junk
 .DS_Store
 Thumbs.db
+
+# Sensitive plugin configs — keep real credentials out of Git
+plugins/BanWebhook/config.yml
+plugins/DiscordSRV/config.yml
+plugins/LuckPerms/config.yml
+plugins/SkinsRestorer/config.yml
+plugins/UltraCosmetics/config.yml
+plugins/Votifier/config.yml
