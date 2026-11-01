@@ -88,7 +88,7 @@ scoreboard:
         - '%time%'
         - '&f'
         - ' <gradient:#4cadd0:#b2f9ff>%player%</gradient>'
-        - ' &#deb887• &fʀᴀɴᴋ &7| &f%luckperms-prefix%'
+        - ' &#deb887• &fʀᴀɴᴋ &f%luckperms-prefix%'
         - ''
         - ' ꜱᴜʀᴠɪᴠᴀʟ &a%bungee_survival%'
         - ' ᴘʀᴀᴄᴛɪᴄᴇ &5%bungee_minigames%'
