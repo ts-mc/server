@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 achievements:
   empty: "{prefix} <yellow>No achievements are available yet.</yellow>"
@@ -43,17 +43,17 @@ achievements:
     category_not_found: "{prefix} <red>Unknown achievements category:</red> <yellow>{category}</yellow><red>.</red>"
     achievement_not_found: "{prefix} <red>Unknown achievement:</red> <yellow>{achievement}</yellow><red>.</red>"
 levels:
-  status: "{prefix} <gray>Level</gray> <white>{level}</white> <dark_gray>-</dark_gray> <aqua>{level_title}</aqua> <dark_gray>•</dark_gray> <light_purple>{exp_current}</light_purple><gray>/</gray><light_purple>{exp_required}</light_purple> <gray>XP</gray> {exp_bar} <gray>({exp_remaining} to go)</gray>"
+  status: "{prefix} <gray>Level</gray> <white>{level}</white> <dark_gray>-</dark_gray> <aqua>{level_title}</aqua> <dark_gray>•</dark_gray> <#4CADD0>{exp_current}</#4CADD0><gray>/</gray><#4CADD0>{exp_required}</#4CADD0> <gray>XP</gray> {exp_bar} <gray>({exp_remaining} to go)</gray>"
   titles:
     default: Novice
   messages:
-    exp_reward: "  <dark_purple>✹</dark_purple> <light_purple>+{amount} XP</light_purple>"
+    exp_reward: "  <#4CADD0>✹</#4CADD0> <#4CADD0>+{amount} XP</#4CADD0>"
     level_up:
       - "{wide_line_separator}"
       - "<gray> </gray>"
       - "  <bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient></bold> <gray>-</gray> <yellow>Level</yellow> <gray>-</gray> <green>Up</green>"
       - "<gray> </gray>"
       - "  <white>Level {level}</white> <gray>({level_title})</gray>"
-      - "  <gray>Next level requires</gray> <light_purple>{exp_required}</light_purple> <gray>XP</gray>"
+      - "  <gray>Next level requires</gray> <#4CADD0>{exp_required}</#4CADD0> <gray>XP</gray>"
       - "<gray> </gray>"
       - "{wide_line_separator}"

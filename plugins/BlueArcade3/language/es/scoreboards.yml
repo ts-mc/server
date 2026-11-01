@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 #
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 scoreboards:
   main_lobby:
@@ -39,7 +39,7 @@ scoreboards:
         - '<white>Arena: <aqua>{arena}'
         - '<white>Jugadores: <aqua>{players}/<aqua>{max_players}'
         - ''
-        - '<aqua>Comenzando en <light_purple>{time}</light_purple>'
+        - '<aqua>Comenzando en <#4CADD0>{time}</#4CADD0>'
         - ''
         - '<yellow>{server_website}</yellow>'
   limbo:
@@ -68,7 +68,7 @@ scoreboards:
         - '<white>Juego: <aqua>{game_display_name}'
         - '<white>Jugadores: <aqua>{players}'
         - ''
-        - '<aqua>Comenzando en <light_purple>{time}</light_purple>'
+        - '<aqua>Comenzando en <#4CADD0>{time}</#4CADD0>'
         - ''
         - '<yellow>{server_website}</yellow>'
   finish:

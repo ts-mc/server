@@ -4,39 +4,39 @@ buttons:
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_previous}"
     actions:
-      - "PLAYER;/ba join {filter_label} page {page_previous}"
+      - "PLAYER;/ts join {filter_label} page {page_previous}"
   next_page:
     text: "{language:menus.common.bedrock.pagination.next}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_next}"
     actions:
-      - "PLAYER;/ba join {filter_label} page {page_next}"
+      - "PLAYER;/ts join {filter_label} page {page_next}"
 templates:
   waiting:
     text: "{language:menus.play.main.bedrock.templates.waiting.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_lime_concrete.png"
     actions:
-      - "PLAYER;/ba join {arena}"
+      - "PLAYER;/ts join {arena}"
   starting:
     text: "{language:menus.play.main.bedrock.templates.starting.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_yellow_concrete.png"
     actions:
-      - "PLAYER;/ba join {arena}"
+      - "PLAYER;/ts join {arena}"
   running:
     text: "{language:menus.play.main.bedrock.templates.running.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_red_concrete.png"
     actions:
-      - "PLAYER;/ba join {arena}"
+      - "PLAYER;/ts join {arena}"
   restarting:
     text: "{language:menus.play.main.bedrock.templates.restarting.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_orange_concrete.png"
     actions:
-      - "PLAYER;/ba join {arena}"
+      - "PLAYER;/ts join {arena}"
   fallback:
     text: "{language:menus.play.main.bedrock.templates.fallback.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_light_blue_concrete.png"
     actions:
-      - "PLAYER;/ba join {arena}"
+      - "PLAYER;/ts join {arena}"
   empty:
     text: "{language:menus.play.main.bedrock.templates.empty.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_gray_stained_glass_pane.png"
@@ -47,11 +47,11 @@ templates:
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 type: SIMPLE
 menuName: "{language:menus.play.main.bedrock.title}"
-openCommand: /ba join
+openCommand: /ts join
 buttonsPerPage: 10
 use_categories: true
 content:

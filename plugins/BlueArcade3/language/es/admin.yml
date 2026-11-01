@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 #
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 admin:
   errors:
@@ -30,13 +30,13 @@ admin:
     insufficient_permissions: '{prefix} <red>No tienes permisos suficientes para ejecutar este comando.</red>'
     unknown_command: '{prefix} <red>Ese comando no existe, verifica que lo hayas escrito correctamente.</red>'
   info:
-    sets_spawn: '{prefix} <red>No hay ningún spawn configurado para {server_name}. Hazlo ahora con /baa mainlobby set</red>'
+    sets_spawn: '{prefix} <red>No hay ningún spawn configurado para {server_name}. Hazlo ahora con /tsa mainlobby set</red>'
     no_modules:
       - '{prefix} <red>No se detectaron módulos...</red>'
-      - '{prefix} <yellow>Descárgalos con: <white>/baa module store download <id></white></yellow>'
+      - '{prefix} <yellow>Descárgalos con: <white>/tsa module store download <id></white></yellow>'
       - '{prefix} <yellow>El ID se obtiene de:</yellow>'
-      - '{prefix} <yellow> Módulos originales: <white>/baa module store originals</white></yellow>'
-      - '{prefix} <yellow> O buscar (originales o comunidad): <white>/baa module store search <query></white></yellow>'
+      - '{prefix} <yellow> Módulos originales: <white>/tsa module store originals</white></yellow>'
+      - '{prefix} <yellow> O buscar (originales o comunidad): <white>/tsa module store search <query></white></yellow>'
     cancelled_setup: '{prefix} <yellow>Proceso de creación de arena cancelado.</yellow>'
     paused_setup: '{prefix} <yellow>Proceso de creación de arena en pausa.</yellow>'
     selected_mini_game_setup: '{prefix} <yellow>Has seleccionado el minijuego {mini_game}.</yellow>'

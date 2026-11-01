@@ -8,8 +8,8 @@ work.
 
 | File | Purpose |
 |------|---------|
-| `config.yml` | Maintenance settings (**empty = defaults**) |
-| `language-en.yml` | English kick-screen text (**empty = defaults**) |
+| `config.yml` | Maintenance mode and branded server-list messages |
+| `language-en.yml` | English kick-screen and command messages |
 | `language-ad.yml` | Advertisement text shown during maintenance (**empty = defaults**) |
 | `WhitelistedPlayers.yml` | Players allowed in during maintenance |
 
@@ -26,7 +26,7 @@ work.
 ## Notes
 
 - The shipped jar is `Maintenance-4.0.1.jar`.
-- Players without permission see the text from `language-en.yml`; edit it to use
-  the **TheySix Events** branding and `play.theysix.tech` address.
+- Players without permission see the TheySix Events branding and
+  `play.theysix.tech` address configured in these files.
 - Advertise scheduled maintenance in Discord — see
   [`docs/discord/announcements.md`](../../docs/discord/announcements.md).

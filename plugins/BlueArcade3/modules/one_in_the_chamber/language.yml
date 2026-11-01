@@ -75,7 +75,7 @@ scoreboard:
       - "<white>Alive:</white> <green>{alive}</green>"
       - "<white>Spectators:</white> <gray>{spectators}</gray>"
       - ""
-      - "<yellow>www.blueva.net</yellow>"
+      - "<yellow>https://events.theysix.tech</yellow>"
   most_kills:
     title: "<bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient></bold>"
     lines:
@@ -92,12 +92,12 @@ scoreboard:
       - ""
       - "<white>Your Kills:</white> <red>{kills}</red>"
       - ""
-      - "<yellow>www.blueva.net</yellow>"
+      - "<yellow>https://events.theysix.tech</yellow>"
 
 setup_messages:
-  usage: "{prefix} <yellow>Usage: /baa game <id> one_in_the_chamber <setmode|setregion> [...args]</yellow>"
+  usage: "{prefix} <yellow>Usage: /tsa game <id> one_in_the_chamber <setmode|setregion> [...args]</yellow>"
   mode_set: "{prefix} <green>One In The Chamber mode set to {mode}.</green>"
-  usage_setmode: "{prefix} <yellow>Usage: /baa game <id> <minigame> setmode <last_standing|most_kills></yellow>"
+  usage_setmode: "{prefix} <yellow>Usage: /tsa game <id> <minigame> setmode <last_standing|most_kills></yellow>"
   must_use_stick: "{prefix} <yellow>Select two corners with the setup tool first.</yellow>"
   region_set: "{prefix} <green>Play area saved.</green> <gray>Blocks:</gray> <white>{blocks}</white> <gray>({x}x{y}x{z})</gray>"
 # One In The Chamber Module - English (UK)

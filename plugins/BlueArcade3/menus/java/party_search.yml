@@ -7,7 +7,7 @@ dynamicItem:
   lore:
     - "{language:menus.party.search.java.dynamic.lore}"
   actions:
-    - "PLAYER;/ba party join {party_leader}"
+    - "PLAYER;/ts party join {party_leader}"
 emptyItem:
   name: "{language:menus.party.search.java.empty.name}"
   itemStack:
@@ -35,7 +35,7 @@ items:
     lore:
       - "{language:menus.common.java.pagination.previous.lore}"
     actions:
-      - "PLAYER;/ba party search {page_previous}"
+      - "PLAYER;/ts party search {page_previous}"
   next_page:
     slot: 53
     name: "{language:menus.common.java.pagination.next.name}"
@@ -45,19 +45,19 @@ items:
     lore:
       - "{language:menus.common.java.pagination.next.lore}"
     actions:
-      - "PLAYER;/ba party search {page_next}"
+      - "PLAYER;/ts party search {page_next}"
 # ____  _               _                      _
 # | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
 # |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 type: CHEST
 menuName: "{language:menus.party.search.java.title}"
 menuSize: 54
-openCommand: /ba party search
+openCommand: /ts party search
 dynamicSlots:
   - 10
   - 11

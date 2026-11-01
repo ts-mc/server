@@ -53,13 +53,13 @@ scoreboard:
     - ""
     - "<aqua>Your Position:</aqua> <white>#{bridge_race_position}</white>"
     - ""
-    - "<yellow>www.blueva.net</yellow>"
+    - "<yellow>https://events.theysix.tech</yellow>"
 
 setup_messages:
   set_success: "{prefix} <green>Finish line set: {blocks} blocks ({x}×{y}×{z})</green>"
   must_use_stick: "{prefix} <red>Use the Magic Stick to select the finish line area first.</red>"
-  not_configured: "{prefix} <red>Finish line is not configured! Use /baa game {arena_id} bridge_race finishline set</red>"
-  usage_finish_line: "{prefix} <yellow>Usage: /baa game <id> <minigame> finishline set</yellow>"
+  not_configured: "{prefix} <red>Finish line is not configured! Use /tsa game {arena_id} bridge_race finishline set</red>"
+  usage_finish_line: "{prefix} <yellow>Usage: /tsa game <id> <minigame> finishline set</yellow>"
 # Bridge Race Module - English (UK)
 # Only Bridge Race-specific content
 

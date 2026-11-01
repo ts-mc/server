@@ -2,7 +2,7 @@
 # MiniMessage format only (no & or § codes)
 
 General:
-  Prefix: "<gold> Moderation <dark_gray>▸</dark_gray></gold>"
+  Prefix: "<gradient:#4CADD0:#B2F9FF><bold>AdvancedBanZ</bold></gradient> <gray>|</gray>"
   NoPerms: "<red>You don't have perms for that!</red>"
   LayoutNotFound: "<red>There is no layout called <yellow>%NAME%</yellow></red>"
   TimeLayoutD: "%D%day(s) %H%h %M%min and %S%sec"
@@ -37,7 +37,7 @@ Ban:
     - ""
     - "<red>Time Remaining <dark_gray>▸</dark_gray> <red>Indefinite</red></red>"
     - ""
-    - "<gold>www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+    - "<gold>theysix.tech <dark_gray>|</dark_gray> events.theysix.tech</gold>"
   Notification:
     - ""
     - "<gold> %NAME% </gold><red>has been banned from the server!</red>"
@@ -73,7 +73,7 @@ Ipban:
     - ""
     - "<red>Time Remaining <dark_gray>▸</dark_gray> <red>Indefinite</red></red>"
     - ""
-    - "<gold>www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+    - "<gold>theysix.tech <dark_gray>|</dark_gray> events.theysix.tech</gold>"
   Notification:
     - ""
     - "<gold> %NAME% </gold><red>has been banned from the server!</red>"
@@ -107,7 +107,7 @@ Tempban:
     - ""
     - "<red>Time Remaining <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></red>"
     - ""
-    - "<gold>www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+    - "<gold>theysix.tech <dark_gray>|</dark_gray> events.theysix.tech</gold>"
   Notification:
     - ""
     - "<gold> %NAME% </gold><red>has been banned from the server!</red>"
@@ -140,7 +140,7 @@ Tempipban:
     - ""
     - "<red>Time Remaining <dark_gray>▸</dark_gray> <gray>%DURATION%</gray></red>"
     - ""
-    - "<gold>www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+    - "<gold>theysix.tech <dark_gray>|</dark_gray> events.theysix.tech</gold>"
   Notification:
     - ""
     - "<gold> %NAME% </gold><red>has been banned from the server!</red>"
@@ -164,7 +164,7 @@ Mute:
     - "<gray> If you think there is a problem with your mute,</gray>"
     - "<gray> you can reach us via our contact addresses.</gray>"
     - ""
-    - "<gold> www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+    - "<gold> theysix.tech <dark_gray>|</dark_gray> events.theysix.tech</gold>"
   Notification:
     - ""
     - "<gold> %NAME% </gold><red>is permanently muted!</red>"
@@ -189,7 +189,7 @@ Tempmute:
     - "<gray> If you think there is a problem with your mute,</gray>"
     - "<gray> you can reach us via our contact addresses.</gray>"
     - ""
-    - "<gold> www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+    - "<gold> theysix.tech <dark_gray>|</dark_gray> events.theysix.tech</gold>"
   Notification:
     - ""
     - "<gold> %NAME% </gold><red>has been muted temporarily!</red>"
@@ -212,7 +212,7 @@ Warn:
     - "<gray> If you think there is a problem with your warn,</gray>"
     - "<gray> you can reach us via our contact addresses.</gray>"
     - ""
-    - "<gold> www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+    - "<gold> theysix.tech <dark_gray>|</dark_gray> events.theysix.tech</gold>"
   Notification:
     - ""
     - "<gold> %NAME% </gold><red>has been warned!</red>"
@@ -245,7 +245,7 @@ Tempwarn:
     - "<gray> If you think there is a problem with your warn,</gray>"
     - "<gray> you can reach us via our contact addresses.</gray>"
     - ""
-    - "<gold> www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+    - "<gold> theysix.tech <dark_gray>|</dark_gray> events.theysix.tech</gold>"
   Notification:
     - ""
     - "<gold> %NAME% </gold><red>has been temporarily warned!</red>"
@@ -275,7 +275,7 @@ Kick:
     - "<red>Reason <dark_gray>▸</dark_gray> <gray>%REASON%</gray></red>"
     - "<red>Staff <dark_gray>▸</dark_gray> <gray>%OPERATOR%</gray></red>"
     - ""
-    - "<gold>www.requlogia.com <dark_gray>|</dark_gray> discord.requlogia.com</gold>"
+    - "<gold>theysix.tech <dark_gray>|</dark_gray> events.theysix.tech</gold>"
   Notification:
     - ""
     - "<gold> %NAME% </gold><red>has been kicked the server!</red>"

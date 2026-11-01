@@ -6,7 +6,7 @@ menus:
 
 gameplay:
   # Default gameplay values for this module.
-  # You can override these per arena with /baa game setup commands when available.
+  # You can override these per arena with /tsa game setup commands when available.
   initial_music_time: 6.0
   initial_sit_time: 8.0
   music_time_reduction: 0.35

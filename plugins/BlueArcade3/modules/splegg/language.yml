@@ -34,13 +34,13 @@ scoreboard:
     - "<white>Alive:</white> <green>{alive}</green>"
     - "<white>Spectators:</white> <gray>{spectators}</gray>"
     - ""
-    - "<yellow>www.blueva.net</yellow>"
+    - "<yellow>https://events.theysix.tech</yellow>"
 
 setup_messages:
   set_success: "{prefix} <green>Floor area set: {blocks} blocks ({x}×{y}×{z})</green>"
   must_use_stick: "{prefix} <red>Use the Magic Stick to select the floor region first.</red>"
-  not_configured: "{prefix} <red>Floor is not configured! Use /baa game {arena_id} splegg floor set</red>"
-  usage_floor: "{prefix} <yellow>Usage: /baa game <id> <minigame> floor set</yellow>"
+  not_configured: "{prefix} <red>Floor is not configured! Use /tsa game {arena_id} splegg floor set</red>"
+  usage_floor: "{prefix} <yellow>Usage: /tsa game <id> <minigame> floor set</yellow>"
 # Splegg Module - English (UK)
 # Only Splegg-specific content
 

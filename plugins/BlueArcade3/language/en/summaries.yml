@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 summary:
   mini_game:
@@ -14,7 +14,7 @@ summary:
     - "     <gold>➁ <bold>{place_2}</gold> <gray>✯ +2</gray>"
     - "     <red>➂ <bold>{place_3}</red> <gray>✯ +1</gray>"
     - " "
-    - "  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <dark_purple>✹</dark_purple> <light_purple>{xp_earned}</light_purple>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}  <gray>|</gray>  <green>Your place:</green> <gold>{place_player}</gold>"
+    - "  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <#4CADD0>✹</#4CADD0> <#4CADD0>{xp_earned}</#4CADD0>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}  <gray>|</gray>  <green>Your place:</green> <gold>{place_player}</gold>"
     - " "
     - "{wide_line_separator}"
   mini_game_team:
@@ -23,7 +23,7 @@ summary:
     - "  <green>Winning team:</green> <yellow>{team_winners}</yellow>"
     - "  <gray>Your team:</gray> <white>{team_player}</white> <gray>({team_player_count}/{team_size})</gray>"
     - " "
-    - "  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <dark_purple>✹</dark_purple> <light_purple>{xp_earned}</light_purple>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}</yellow>"
+    - "  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <#4CADD0>✹</#4CADD0> <#4CADD0>{xp_earned}</#4CADD0>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}</yellow>"
     - " "
     - "{wide_line_separator}"
   final:
@@ -35,7 +35,7 @@ summary:
     - "     <gold>➋ <bold>{place_2_stars}</gold>"
     - "     <red>➌ <bold>{place_3_stars}</red>"
     - " "
-    - "  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <dark_purple>✹</dark_purple> <light_purple>{xp_earned}</light_purple>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}  <gray>|</gray>  <green>You placed:</green> <gold>{place_player}</gold>"
+    - "  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <#4CADD0>✹</#4CADD0> <#4CADD0>{xp_earned}</#4CADD0>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}  <gray>|</gray>  <green>You placed:</green> <gold>{place_player}</gold>"
     - " "
     - "{wide_line_separator}"
   final_team:
@@ -46,7 +46,7 @@ summary:
     - "  <green>Winning team:</green> <yellow>{team_winners}</yellow>"
     - "  <gray>Your team:</gray> <white>{team_player}</white> <gray>({team_player_count}/{team_size})</gray>"
     - " "
-    - "  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <dark_purple>✹</dark_purple> <light_purple>{xp_earned}</light_purple>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}</yellow>"
+    - "  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <#4CADD0>✹</#4CADD0> <#4CADD0>{xp_earned}</#4CADD0>  <gray>|</gray>  <gold>✯</gold> <yellow>{stars_earned}</yellow>"
     - " "
     - "{wide_line_separator}"
   final_standalone:
@@ -58,13 +58,13 @@ summary:
     - "     <gold>➋ <bold>{place_2}</gold>"
     - "     <red>➌ <bold>{place_3}</red>"
     - " "
-    - "  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <dark_purple>✹</dark_purple> <light_purple>{xp_earned}</light_purple>  <gray>|</gray>  <green>You placed:</green> <gold>{place_player}</gold>"
+    - "  <gold>⛁</gold> <yellow>{credits_earned}  <gray>|</gray>  <#4CADD0>✹</#4CADD0> <#4CADD0>{xp_earned}</#4CADD0>  <gray>|</gray>  <green>You placed:</green> <gold>{place_player}</gold>"
     - " "
     - "{wide_line_separator}"
   java_summary_actions:
     - "{wide_line_separator}"
     - "<gray> </gray>"
-    - "<gray>   </gray><click:run_command:'{play_again_command}'><green><bold>Play Again</bold></green></click> <gray> - </gray> <click:run_command:'{leave_command}'><red><bold>Leave</bold></red></click> <gray> - </gray> <click:run_command:'/ba achievements progress'><yellow><bold>View Progress</bold></yellow></click>"
+    - "<gray>   </gray><click:run_command:'{play_again_command}'><green><bold>Play Again</bold></green></click> <gray> - </gray> <click:run_command:'{leave_command}'><red><bold>Leave</bold></red></click> <gray> - </gray> <click:run_command:'/ts achievements progress'><yellow><bold>View Progress</bold></yellow></click>"
     - "<gray> </gray>"
     - "{wide_line_separator}"
   stats:
@@ -92,6 +92,6 @@ summary:
     - "{wide_line_separator}"
     - "<gray> </gray>"
     - "<gray>   </gray><green>This match has been recorded.</green>"
-    - "<gray>   </gray><click:run_command:'/ba replay {module_id} {replay_id}'><gold><bold>Click here</bold></gold></click> <gray>to watch the replay.</gray>"
+    - "<gray>   </gray><click:run_command:'/ts replay {module_id} {replay_id}'><gold><bold>Click here</bold></gold></click> <gray>to watch the replay.</gray>"
     - "<gray> </gray>"
     - "{wide_line_separator}"

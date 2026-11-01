@@ -3,17 +3,17 @@ templates:
     text: "{language:menus.tops.main.bedrock.templates.global.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_paper.png"
     actions:
-      - "PLAYER;/ba tops {stat_full} {period}"
+      - "PLAYER;/ts tops {stat_full} {period}"
   module:
     text: "{language:menus.tops.main.bedrock.templates.module.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_paper.png"
     actions:
-      - "PLAYER;/ba tops {stat_full} {period}"
+      - "PLAYER;/ts tops {stat_full} {period}"
   default:
     text: "{language:menus.tops.main.bedrock.templates.default.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_paper.png"
     actions:
-      - "PLAYER;/ba tops {stat_full} {period}"
+      - "PLAYER;/ts tops {stat_full} {period}"
   empty:
     text: "{language:menus.tops.main.bedrock.templates.empty.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_gray_stained_glass_pane.png"
@@ -24,24 +24,24 @@ buttons:
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_previous}"
     actions:
-      - "PLAYER;/ba tops {period} page {page_previous}"
+      - "PLAYER;/ts tops {period} page {page_previous}"
   next:
     text: "{language:menus.common.bedrock.pagination.next}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_next}"
     actions:
-      - "PLAYER;/ba tops {period} page {page_next}"
+      - "PLAYER;/ts tops {period} page {page_next}"
 # ____  _               _                      _
 # | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
 # |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 type: SIMPLE
 menuName: "{language:menus.tops.main.bedrock.title}"
-openCommand: /ba tops
+openCommand: /ts tops
 buttonsPerPage: 6
 content:
   - "{language:menus.tops.main.bedrock.content}"

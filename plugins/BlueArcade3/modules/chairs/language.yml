@@ -39,17 +39,17 @@ scoreboard:
       - "<white>Alive:</white> <green>{alive}</green>"
       - "<white>Spectators:</white> <gray>{spectators}</gray>"
       - ""
-      - "<yellow>www.blueva.net</yellow>"
+      - "<yellow>https://events.theysix.tech</yellow>"
 
 action_bar:
-  music: "<aqua>Round:</aqua> <white>{chairs_round}</white> <gray>|</gray> <light_purple>Music playing...</light_purple>"
+  music: "<aqua>Round:</aqua> <white>{chairs_round}</white> <gray>|</gray> <#4CADD0>Music playing...</#4CADD0>"
   sit: "<aqua>Round:</aqua> <white>{chairs_round}</white> <gray>|</gray> <aqua>Sit in:</aqua> <white>{chairs_time}s</white>"
 
 setup_messages:
-  usage_music_time: "{prefix} <yellow>Usage: /baa game <id> chairs musictime <seconds></yellow>"
-  usage_sit_time: "{prefix} <yellow>Usage: /baa game <id> chairs sittime <seconds></yellow>"
-  usage_music_reduction: "{prefix} <yellow>Usage: /baa game <id> chairs musicreduction <seconds></yellow>"
-  usage_sit_reduction: "{prefix} <yellow>Usage: /baa game <id> chairs sitreduction <seconds></yellow>"
+  usage_music_time: "{prefix} <yellow>Usage: /tsa game <id> chairs musictime <seconds></yellow>"
+  usage_sit_time: "{prefix} <yellow>Usage: /tsa game <id> chairs sittime <seconds></yellow>"
+  usage_music_reduction: "{prefix} <yellow>Usage: /tsa game <id> chairs musicreduction <seconds></yellow>"
+  usage_sit_reduction: "{prefix} <yellow>Usage: /tsa game <id> chairs sitreduction <seconds></yellow>"
   time_updated: "{prefix} <green>Updated <yellow>{key}</yellow> to <yellow>{value}</yellow>.</green>"
 file_version: 1
 display_name: Chairs

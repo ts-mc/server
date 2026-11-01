@@ -3,28 +3,28 @@ templates:
     text: "{language:menus.replay.list.bedrock.templates.replay.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_clock.png"
     actions:
-      - "PLAYER;/ba replay {module_id} {replay_id}"
+      - "PLAYER;/ts replay {module_id} {replay_id}"
 buttons:
   previous:
     text: "{language:menus.common.bedrock.pagination.previous}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_previous}"
     actions:
-      - "PLAYER;/ba replay {module_id} page {page_previous}"
+      - "PLAYER;/ts replay {module_id} page {page_previous}"
   back:
     text: "{language:menus.common.actions.back.name}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_barrier.png"
     actions:
-      - PLAYER;/ba replay
+      - PLAYER;/ts replay
   next:
     text: "{language:menus.common.bedrock.pagination.next}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_next}"
     actions:
-      - "PLAYER;/ba replay {module_id} page {page_next}"
+      - "PLAYER;/ts replay {module_id} page {page_next}"
 type: SIMPLE
 menuName: "{language:menus.replay.list.bedrock.title}"
-openCommand: "/ba replay {module_id}"
+openCommand: "/ts replay {module_id}"
 buttonsPerPage: 6
 content:
   - "{language:menus.replay.list.bedrock.content}"

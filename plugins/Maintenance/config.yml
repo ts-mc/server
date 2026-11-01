@@ -18,7 +18,7 @@ maintenance-enabled: false
 # If you put in multiple entries, one of them will be chosen randomly on every ping.
 # If running an endtimer, the time left can be displayed by including '%TIMER%' in a pingmessage (also works in playercount(-hover) message).
 pingmessages:
-- '     <dark_gray>▪<gray>▪<dark_gray>▪ <gradient:#fb3838:#fde07a>Requlogia</gradient> <dark_gray>| <white>[1.8<gray>/<white>1.19] <dark_gray>| <gradient:#f783fe:#9800a1>requlogia.com</gradient> <dark_gray>▪<gray>▪<dark_gray>▪ <br>   <gradient:#FB0000:#FB8847>Server is under maintenance, will be up soon!</gradient>'
+- '<gradient:#4CADD0:#B2F9FF><bold>TheySix Events</bold></gradient> <dark_gray>•</dark_gray> <white>play.theysix.tech</white><br><yellow>Maintenance is in progress.</yellow> <gray>Updates: theysix.tech</gray>'
 enable-pingmessages: true
 
 # Any extra commands inside the arrays will be executed when maintenance is enabled/disabled.
@@ -30,7 +30,7 @@ commands-on-maintenance-disable: []
 # instead of the ones above, so you can have different messages for when an endtimer is running/not running.
 enable-timerspecific-messages: true
 timerspecific-pingmessages:
-- '      <dark_gray>▪<gray>▪<dark_gray>▪ <gradient:#fb3838:#fde07a>Requlogia</gradient> <dark_gray>| <white>[1.8<gray>/<white>1.19] <dark_gray>| <gradient:#f783fe:#9800a1>requlogia.com</gradient> <dark_gray>▪<gray>▪<dark_gray>▪ <br><gradient:#FB0000:#FB8847>Server is under maintenance,</gradient> <color:#9DFBD9>%TIMER% <gradient:#FB8847:#FB0000>will open later!</gradient>'
+- '<gradient:#4CADD0:#B2F9FF><bold>TheySix Events</bold></gradient> <dark_gray>•</dark_gray> <white>play.theysix.tech</white><br><yellow>Maintenance ends in %TIMER%.</yellow> <gray>Updates: theysix.tech</gray>'
 # - "Other entry"
 
 # If set to true, the message below will be shown in the top right corner of the server in the serverlist, where the playercount would normally be displayed.
@@ -44,7 +44,7 @@ playercountmessage: <dark_red>Maintenance!
 # Is shown when you move your mouse above the text in the top right corner of the server in the serverlist,
 # where the playercount would normally be displayed.
 # DOES NOT SUPPORT RGB!
-playercounthovermessage: '             <b><u><red>MAINTENANCE!</red></u></b><br><br><white>  Thank you for waiting as we try<br><white> to improve the gaming experience.<br><white>     Entries will open shortly.<br><br><br><light_purple>        For more information:<br><br>       <dark_gray>▸ <gold>discord.requlogia.com <dark_gray>◂<br>         <dark_gray>▸ <gold>www.requlogia.com <dark_gray>◂'
+playercounthovermessage: '<aqua><bold>TheySix Events maintenance</bold></aqua><br><white>play.theysix.tech</white><br><gray>Updates: theysix.tech</gray><br><gray>Events: events.theysix.tech</gray>'
 
 # If set to true, the server icon will be changed to the 'maintenance-icon.png' file in the plugin's folder during maintenance.
 custom-maintenance-icon: false

@@ -1,9 +1,5 @@
-NO_PERMISSIONS: '&9&lNetwork&8&l >> &cNot Permissions &fplease contact off administrator'
+NO_PERMISSIONS: '§x§4§C§A§D§D§0§lѕ§x§6§0§B§C§D§9§lᴇ§x§7§5§C§B§E§3§lʀ§x§8§9§D§B§E§C§lᴠ§x§9§E§E§A§F§6§lᴇ§x§B§2§F§9§F§F§lʀ §7| &cYou do not have permission to use that command.'
 BLOCK_COMMANDS:
-- /pl
-- /plugins
-- /bukkit:plugins
-- /bukkit:pl
 - /bukkit:help
 - /bukkit:ver
 - /bukkit:?

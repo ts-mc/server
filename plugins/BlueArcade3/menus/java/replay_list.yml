@@ -7,7 +7,7 @@ templates:
       material: CLOCK
       amount: 1
     actions:
-      - "PLAYER;/ba replay {module_id} {replay_id}"
+      - "PLAYER;/ts replay {module_id} {replay_id}"
 emptyItem:
   name: " "
   itemStack:
@@ -34,7 +34,7 @@ items:
       material: ARROW
       amount: 1
     actions:
-      - "PLAYER;/ba replay {module_id} page {page_previous}"
+      - "PLAYER;/ts replay {module_id} page {page_previous}"
   back:
     slot: 48
     name: "{language:menus.common.actions.back.name}"
@@ -44,7 +44,7 @@ items:
       material: BARRIER
       amount: 1
     actions:
-      - PLAYER;/ba replay
+      - PLAYER;/ts replay
   close:
     slot: 49
     name: "{language:menus.common.actions.close.name}"
@@ -63,11 +63,11 @@ items:
       material: ARROW
       amount: 1
     actions:
-      - "PLAYER;/ba replay {module_id} page {page_next}"
+      - "PLAYER;/ts replay {module_id} page {page_next}"
 menuName: "{language:menus.replay.list.java.title}"
 menuSize: 54
 type: CHEST
-openCommand: "/ba replay {module_id}"
+openCommand: "/ts replay {module_id}"
 dynamicSlots:
   - 10
   - 11

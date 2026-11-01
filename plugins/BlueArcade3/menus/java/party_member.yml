@@ -16,7 +16,7 @@ items:
       material: PLAYER_HEAD
       value: "{party_leader}"
     actions:
-      - PLAYER;/ba party members
+      - PLAYER;/ts party members
   leave:
     slot: 23
     name: "{language:menus.party.common.leave.name}"
@@ -25,7 +25,7 @@ items:
     itemStack:
       material: OAK_DOOR
     actions:
-      - PLAYER;/ba party leave
+      - PLAYER;/ts party leave
       - CLOSE
 # ____  _               _                      _
 # | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
@@ -33,9 +33,9 @@ items:
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menuName: "{language:menus.party.member.java.title}"
 menuSize: 45
 type: CHEST
-openCommand: /ba party
+openCommand: /ts party

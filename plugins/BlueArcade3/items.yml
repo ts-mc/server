@@ -5,7 +5,7 @@ waiting_room_items:
     slot: 0
     display_name: "<green>Open the store</green>"
     actions:
-      - PLAYER;/ba store
+      - PLAYER;/ts store
 
   vote:
     enabled: true
@@ -13,7 +13,7 @@ waiting_room_items:
     slot: 1
     display_name: "<aqua>Vote for mini-games</aqua>"
     actions:
-      - PLAYER;/ba vote
+      - PLAYER;/ts vote
 
   team_select:
     enabled: true
@@ -23,7 +23,7 @@ waiting_room_items:
     lore:
       - "<gray>Choose your team before the game starts.</gray>"
     actions:
-      - PLAYER;/ba team
+      - PLAYER;/ts team
 
   leave:
     enabled: true
@@ -31,7 +31,7 @@ waiting_room_items:
     slot: 8
     display_name: "<red>Leave the game</red>"
     actions:
-      - PLAYER;/ba leave
+      - PLAYER;/ts leave
 
 end_items:
   play_again:
@@ -40,7 +40,7 @@ end_items:
     slot: 0
     display_name: "<green>Play again</green>"
     actions:
-      - PLAYER;/ba quickjoin
+      - PLAYER;/ts quickjoin
 
   view_stats:
     enabled: true
@@ -48,7 +48,7 @@ end_items:
     slot: 4
     display_name: "<yellow>View all stats</yellow>"
     actions:
-      - PLAYER;/ba stats
+      - PLAYER;/ts stats
 
   exit_arena:
     enabled: true
@@ -56,14 +56,14 @@ end_items:
     slot: 8
     display_name: "<red>Leave the game</red>"
     actions:
-      - PLAYER;/ba leave
+      - PLAYER;/ts leave
 # ____  _               _                      _
 # | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
 # |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 main_lobby_items:
   # Slot 0 is the server hub menu (DeluxeMenus /tsmenu). Quickjoin and the game
@@ -89,7 +89,7 @@ main_lobby_items:
     lore:
       - "{language:items.ui.main_lobby_items.maps.lore}"
     actions:
-      - PLAYER;/ba join
+      - PLAYER;/ts join
   stats:
     enabled: true
     material: PLAYER_HEAD
@@ -99,7 +99,7 @@ main_lobby_items:
     lore:
       - "{language:items.ui.main_lobby_items.stats.lore}"
     actions:
-      - PLAYER;/ba stats
+      - PLAYER;/ts stats
   party:
     enabled: true
     material: CAKE
@@ -108,7 +108,7 @@ main_lobby_items:
     lore:
       - "{language:items.ui.main_lobby_items.party.lore}"
     actions:
-      - PLAYER;/ba party
+      - PLAYER;/ts party
   leave:
     enabled: true
     material: RED_BED
@@ -126,7 +126,7 @@ main_lobby_items:
     lore:
       - "{language:items.ui.main_lobby_items.play.lore}"
     actions:
-      - PLAYER;/ba quickjoin
+      - PLAYER;/ts quickjoin
 spectator_items:
   teleport_player:
     enabled: true
@@ -143,21 +143,21 @@ spectator_items:
     slot: 3
     display_name: "{language:items.ui.spectator_items.view_stats.display_name}"
     actions:
-      - PLAYER;/ba stats
+      - PLAYER;/ts stats
   play_again:
     enabled: true
     material: SLIME_BALL
     slot: 5
     display_name: "{language:items.ui.spectator_items.play_again.display_name}"
     actions:
-      - PLAYER;/ba quickjoin
+      - PLAYER;/ts quickjoin
   exit_arena:
     enabled: true
     material: RED_BED
     slot: 8
     display_name: "{language:items.ui.spectator_items.exit_arena.display_name}"
     actions:
-      - PLAYER;/ba leave
+      - PLAYER;/ts leave
 party_spectator_items:
   teleport_player:
     enabled: true
@@ -174,14 +174,14 @@ party_spectator_items:
     slot: 4
     display_name: "{language:items.ui.party_spectator_items.store.display_name}"
     actions:
-      - PLAYER;/ba store
+      - PLAYER;/ts store
   view_stats:
     enabled: true
     material: BOOK
     slot: 8
     display_name: "{language:items.ui.party_spectator_items.view_stats.display_name}"
     actions:
-      - PLAYER;/ba stats
+      - PLAYER;/ts stats
 replay_controls:
   teleport:
     enabled: true

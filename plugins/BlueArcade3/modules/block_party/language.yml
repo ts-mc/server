@@ -2,7 +2,7 @@
 description:
   default:
     - "<dark_gray><strikethrough>----------------------------------------------</strikethrough></dark_gray>"
-    - "<green>Game</green> <gray>-</gray> <light_purple><bold>Block Party</bold></light_purple>"
+    - "<green>Game</green> <gray>-</gray> <#4CADD0><bold>Block Party</bold></#4CADD0>"
     - " "
     - "<white>Description:</white>"
     - "<gray>Music plays, then a color is revealed.</gray>"
@@ -13,7 +13,7 @@ description:
 
 # Vote menu
 vote_menu:
-  name: "<light_purple>Block Party</light_purple>"
+  name: "<#4CADD0>Block Party</#4CADD0>"
   lore:
     - "<gray>Dance until the beat stops.</gray>"
     - "<gray>Find the right color or fall.</gray>"
@@ -57,7 +57,7 @@ scoreboard:
       - "<white>Alive:</white> <green>{alive}</green>"
       - "<white>Spectators:</white> <gray>{spectators}</gray>"
       - ""
-      - "<yellow>www.blueva.net</yellow>"
+      - "<yellow>https://events.theysix.tech</yellow>"
 
 action_bar:
   search: "<aqua>Time:</aqua> <white>{bp_time}s</white> <gray>|</gray> <aqua>Round:</aqua> <white>{bp_round}</white>"
@@ -65,12 +65,12 @@ action_bar:
 setup_messages:
   set_success: "{prefix} <green>Floor area set: {blocks} blocks ({x}×{y}×{z})</green>"
   must_use_stick: "{prefix} <red>Use the Magic Stick to select the floor region first.</red>"
-  not_configured: "{prefix} <red>Floor or patterns are not configured! Use /baa game {arena_id} block_party floor set</red>"
-  usage_floor: "{prefix} <yellow>Usage: /baa game <id> block_party floor set</yellow>"
-  usage_pattern_add: "{prefix} <yellow>Usage: /baa game <id> block_party pattern add <name></yellow>"
-  usage_pattern_remove: "{prefix} <yellow>Usage: /baa game <id> block_party pattern remove <name></yellow>"
-  usage_pattern_list: "{prefix} <yellow>Usage: /baa game <id> block_party pattern list</yellow>"
-  usage_pattern_initial: "{prefix} <yellow>Usage: /baa game <id> block_party pattern initial <name></yellow>"
+  not_configured: "{prefix} <red>Floor or patterns are not configured! Use /tsa game {arena_id} block_party floor set</red>"
+  usage_floor: "{prefix} <yellow>Usage: /tsa game <id> block_party floor set</yellow>"
+  usage_pattern_add: "{prefix} <yellow>Usage: /tsa game <id> block_party pattern add <name></yellow>"
+  usage_pattern_remove: "{prefix} <yellow>Usage: /tsa game <id> block_party pattern remove <name></yellow>"
+  usage_pattern_list: "{prefix} <yellow>Usage: /tsa game <id> block_party pattern list</yellow>"
+  usage_pattern_initial: "{prefix} <yellow>Usage: /tsa game <id> block_party pattern initial <name></yellow>"
   pattern_added: "{prefix} <green>Pattern <yellow>{name}</yellow> saved with {blocks} blocks.</green>"
   pattern_removed: "{prefix} <green>Pattern <yellow>{name}</yellow> removed.</green>"
   pattern_exists: "{prefix} <red>A pattern named <yellow>{name}</yellow> already exists.</red>"
@@ -79,10 +79,10 @@ setup_messages:
   pattern_list_entry: "{prefix} <gray>-</gray> <yellow>{name}</yellow>"
   pattern_initial_set: "{prefix} <green>Initial pattern set to <yellow>{name}</yellow>.</green>"
   pattern_required: "{prefix} <red>Create at least one pattern before starting the game.</red>"
-  usage_music_time: "{prefix} <yellow>Usage: /baa game <id> block_party musictime <seconds></yellow>"
-  usage_search_time: "{prefix} <yellow>Usage: /baa game <id> block_party searchtime <seconds></yellow>"
-  usage_decrease_time: "{prefix} <yellow>Usage: /baa game <id> block_party decreasetime <seconds></yellow>"
-  usage_min_time: "{prefix} <yellow>Usage: /baa game <id> block_party mintime <seconds></yellow>"
+  usage_music_time: "{prefix} <yellow>Usage: /tsa game <id> block_party musictime <seconds></yellow>"
+  usage_search_time: "{prefix} <yellow>Usage: /tsa game <id> block_party searchtime <seconds></yellow>"
+  usage_decrease_time: "{prefix} <yellow>Usage: /tsa game <id> block_party decreasetime <seconds></yellow>"
+  usage_min_time: "{prefix} <yellow>Usage: /tsa game <id> block_party mintime <seconds></yellow>"
   time_updated: "{prefix} <green>Updated <yellow>{key}</yellow> to <yellow>{value}</yellow>.</green>"
 
 powerup_names:

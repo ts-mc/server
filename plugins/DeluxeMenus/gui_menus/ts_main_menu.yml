@@ -23,12 +23,12 @@ items:
       - ''
       - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴘʟᴀʏ'
     left_click_commands:
-      - '[player] ba quickjoin'
+      - '[player] ts quickjoin'
       - '[close]'
     left_click_requirement:
       expression: '%checkitem_mat:emerald_amt:%playername% == false%'
     right_click_commands:
-      - '[player] ba join'
+      - '[player] ts join'
       - '[close]'
 
   # ---------------- Store ----------------
@@ -45,7 +45,7 @@ items:
       - ''
       - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
     left_click_commands:
-      - '[player] ba store'
+      - '[player] ts store'
       - '[close]'
 
   # ---------------- Stats ----------------
@@ -60,7 +60,7 @@ items:
       - ''
       - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
     left_click_commands:
-      - '[player] ba stats'
+      - '[player] ts stats'
       - '[close]'
 
   # ---------------- Party ----------------
@@ -75,7 +75,7 @@ items:
       - ''
       - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ᴍᴀɴᴀɢᴇ'
     left_click_commands:
-      - '[player] ba party'
+      - '[player] ts party'
       - '[close]'
 
   # ---------------- Close ----------------

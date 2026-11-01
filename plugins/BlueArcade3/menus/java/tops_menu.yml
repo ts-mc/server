@@ -7,7 +7,7 @@ templates:
       material: PAPER
       amount: 1
     actions:
-      - "PLAYER;/ba tops {stat_full} {period}"
+      - "PLAYER;/ts tops {stat_full} {period}"
   module:
     name: "{language:menus.tops.main.java.templates.module.name}"
     lore:
@@ -16,7 +16,7 @@ templates:
       material: BOOK
       amount: 1
     actions:
-      - "PLAYER;/ba tops {stat_full} {period}"
+      - "PLAYER;/ts tops {stat_full} {period}"
   default:
     name: "{language:menus.tops.main.java.templates.default.name}"
     lore:
@@ -25,7 +25,7 @@ templates:
       material: PAPER
       amount: 1
     actions:
-      - "PLAYER;/ba tops {stat_full} {period}"
+      - "PLAYER;/ts tops {stat_full} {period}"
 emptyItem:
   name: "{language:menus.tops.main.java.empty.name}"
   itemStack:
@@ -53,7 +53,7 @@ items:
     lore:
       - "{language:menus.common.java.pagination.previous.lore}"
     actions:
-      - "PLAYER;/ba tops {period} page {page_previous}"
+      - "PLAYER;/ts tops {period} page {page_previous}"
   next_page:
     slot: 53
     name: "{language:menus.common.java.pagination.next.name}"
@@ -63,7 +63,7 @@ items:
     lore:
       - "{language:menus.common.java.pagination.next.lore}"
     actions:
-      - "PLAYER;/ba tops {period} page {page_next}"
+      - "PLAYER;/ts tops {period} page {page_next}"
   close:
     slot: 49
     name: "{language:menus.common.actions.close.name}"
@@ -82,19 +82,19 @@ items:
     lore:
       - "{language:menus.tops.main.java.items.back.lore}"
     actions:
-      - "PLAYER;/ba tops {period}"
+      - "PLAYER;/ts tops {period}"
 # ____  _               _                      _
 # | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
 # |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menuName: "{language:menus.tops.main.java.title}"
 menuSize: 54
 type: CHEST
-openCommand: "/ba tops {period}"
+openCommand: "/ts tops {period}"
 dynamicSlots:
   - 10
   - 11

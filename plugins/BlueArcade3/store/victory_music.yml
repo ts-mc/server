@@ -108,7 +108,7 @@ songs:
   never_gonna_give_you_up:
     enabled: true
     file: victory/Rick Astley - Never Gonna Give You Up.nbs
-    display_name: "<light_purple>Never Gonna Give You Up</light_purple>"
+    display_name: "<#4CADD0>Never Gonna Give You Up</#4CADD0>"
     icon: MUSIC_DISC_WAIT
     description:
       - "<gray>A playful anthem to celebrate the win.</gray>"
@@ -188,7 +188,7 @@ songs:
   shake_it_off:
     enabled: true
     file: victory/Taylor Swift - Shake It Off.nbs
-    display_name: "<light_purple>Shake It Off</light_purple>"
+    display_name: "<#4CADD0>Shake It Off</#4CADD0>"
     icon: MUSIC_DISC_RELIC
     description:
       - "<gray>Shake away the loss and celebrate.</gray>"

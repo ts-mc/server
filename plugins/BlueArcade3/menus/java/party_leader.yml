@@ -18,7 +18,7 @@ items:
       amount: 1
       value: "{party_leader}"
     actions:
-      - PLAYER;/ba party members
+      - PLAYER;/ts party members
   privacy:
     slot: 22
     name: "{language:menus.party.leader.java.items.privacy.name}"
@@ -28,8 +28,8 @@ items:
       material: DAYLIGHT_DETECTOR
       amount: 1
     actions:
-      - "[LEFT_CLICK];PLAYER;/ba party type public"
-      - "[RIGHT_CLICK];PLAYER;/ba party type private"
+      - "[LEFT_CLICK];PLAYER;/ts party type public"
+      - "[RIGHT_CLICK];PLAYER;/ts party type private"
   invite:
     slot: 24
     name: "{language:menus.party.leader.java.items.invite.name}"
@@ -39,7 +39,7 @@ items:
       material: WRITABLE_BOOK
       amount: 1
     actions:
-      - PLAYER;/ba party invite
+      - PLAYER;/ts party invite
   leave:
     slot: 40
     name: "{language:menus.party.common.leave.name}"
@@ -49,7 +49,7 @@ items:
       material: RED_BED
       amount: 1
     actions:
-      - PLAYER;/ba party leave
+      - PLAYER;/ts party leave
       - CLOSE
 # ____  _               _                      _
 # | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
@@ -57,9 +57,9 @@ items:
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menuName: "{language:menus.party.leader.java.title}"
 menuSize: 45
 type: CHEST
-openCommand: /ba party
+openCommand: /ts party

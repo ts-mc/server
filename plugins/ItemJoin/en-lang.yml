@@ -5,7 +5,7 @@
 en-Version: 8
 
 # This is the prefix that will be sent at the beginning of every single message sent in the language file.
-Prefix: '&7[&eItemJoin&7]'
+Prefix: '§x§4§C§A§D§D§0§lѕ§x§6§0§B§C§D§9§lᴇ§x§7§5§C§B§E§3§lʀ§x§8§9§D§B§E§C§lᴠ§x§9§E§E§A§F§6§lᴇ§x§B§2§F§9§F§F§lʀ §7|'
 
 # These are simply general messages sent from the plugin item usages.
 general:

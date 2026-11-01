@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 # ========================================
 # Metrics
@@ -83,7 +83,7 @@ language:
   # Final fallback language. "en" is recommended because the Core is authored in English.
   fallback_locale: en
 
-  # When enabled, players without a manual /ba lang selection use
+  # When enabled, players without a manual /ts lang selection use
   # the locale reported by their Minecraft client for supported Core and module text.
   auto_detect_player_locale: true
 
@@ -221,10 +221,6 @@ game:
 
     # List of commands that are allowed to be used in an arena.
     allowed_commands:
-      - /ba
-      - /barcade
-      - /bluearcade
-      - /arcade
       - /ts
       - /tse
       - /tsmenu
@@ -346,7 +342,7 @@ levels:
   # Percentage increase for each next level requirement.
   growth_percent: 10
 
-  # Progress bar styling for /ba level.
+  # Progress bar styling for /ts level.
   progress_bar:
     length: 10
     filled: "<green>█</green>"
@@ -436,7 +432,7 @@ economy:
 # Store
 # ========================================
 
-# Enables the in-game store (/ba store) for cosmetics, music kits, etc.
+# Enables the in-game store (/ts store) for cosmetics, music kits, etc.
 store:
   enabled: true
 
@@ -573,22 +569,22 @@ menus:
     # Use it to delegate the GUI to another plugin (include the leading / if desired).
     external_command: ""
 
-  # Player stats overview (opened with /ba stats).
+  # Player stats overview (opened with /ts stats).
   stats:
     enabled: true
     external_command: ""
 
-  # Top stats menu (opened with /ba tops).
+  # Top stats menu (opened with /ts tops).
   tops:
     enabled: true
     external_command: ""
 
-  # Achievements menu (opened with /ba achievements).
+  # Achievements menu (opened with /ts achievements).
   achievements:
     enabled: true
     external_command: ""
 
-  # Store menu (opened with /ba store).
+  # Store menu (opened with /ts store).
   store:
     enabled: true
     external_command: ""
@@ -656,7 +652,7 @@ database:
 stats:
   enabled: true
 
-  # Top lists configuration (/ba tops).
+  # Top lists configuration (/ts tops).
   tops:
     # Number of entries per page.
     page_size: 10
@@ -807,7 +803,7 @@ integrations:
 # Replay System
 # ========================================
 
-# Records dynamic-arena matches so players can watch them back with /ba replay.
+# Records dynamic-arena matches so players can watch them back with /ts replay.
 replay:
   enabled: true
   # Days to keep a replay before it's automatically deleted. 0 or less disables cleanup.

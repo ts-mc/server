@@ -34,7 +34,7 @@ items:
     lore:
       - "{language:menus.achievements.phases.java.items.back.lore}"
     actions:
-      - "PLAYER;/ba achievements {category_id}"
+      - "PLAYER;/ts achievements {category_id}"
   previous_page:
     slot: 46
     name: "{language:menus.common.java.pagination.previous.name}"
@@ -44,7 +44,7 @@ items:
     lore:
       - "{language:menus.common.java.pagination.previous.lore}"
     actions:
-      - "PLAYER;/ba achievements {category_id} {achievement_id} page {page_previous}"
+      - "PLAYER;/ts achievements {category_id} {achievement_id} page {page_previous}"
   next_page:
     slot: 52
     name: "{language:menus.common.java.pagination.next.name}"
@@ -54,7 +54,7 @@ items:
     lore:
       - "{language:menus.common.java.pagination.next.lore}"
     actions:
-      - "PLAYER;/ba achievements {category_id} {achievement_id} page {page_next}"
+      - "PLAYER;/ts achievements {category_id} {achievement_id} page {page_next}"
   close:
     slot: 49
     name: "{language:menus.common.actions.close.name}"
@@ -70,12 +70,12 @@ items:
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menuName: "{language:menus.achievements.phases.java.title}"
 menuSize: 54
 type: CHEST
-openCommand: "/ba achievements {category_id} {achievement_id}"
+openCommand: "/ts achievements {category_id} {achievement_id}"
 dynamicSlots:
   - 10
   - 11

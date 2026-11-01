@@ -79,7 +79,7 @@ scoreboard:
       - "<white>Runners:</white> <aqua>{runners_alive}</aqua>"
       - "<white>Checkpoints:</white> <aqua>{checkpoint_uses}</aqua>"
       - ""
-      - "<yellow>www.blueva.net</yellow>"
+      - "<yellow>https://events.theysix.tech</yellow>"
   final:
     beast_won:
       title: "<bold><gradient:red:dark_red>Beast Victory</gradient></bold>"
@@ -88,7 +88,7 @@ scoreboard:
         - "<white>Winner:</white> <red>{beast}</red>"
         - "<white>Runners defeated:</white> <aqua>{runner_count}</aqua>"
         - ""
-        - "<yellow>www.blueva.net</yellow>"
+        - "<yellow>https://events.theysix.tech</yellow>"
     runners_won:
       title: "<bold><gradient:dark_green:green>Runners Victory</gradient></bold>"
       lines:
@@ -97,7 +97,7 @@ scoreboard:
         - "<white>Runners alive:</white> <aqua>{runner_count}</aqua>"
         - "<white>Team:</white> <aqua>{runners}</aqua>"
         - ""
-        - "<yellow>www.blueva.net</yellow>"
+        - "<yellow>https://events.theysix.tech</yellow>"
 
 menus:
   armory:
@@ -116,9 +116,9 @@ titles:
       subtitle: "<white>The runners have defeated the beast</white>"
 
 setup_messages:
-  usage: "{prefix} <yellow>Usage: /baa game [arena_id] run_from_the_beast <beastspawn|beastzone> set</yellow>"
-  usage_beast_spawn: "{prefix} <yellow>Usage: /baa game [arena_id] run_from_the_beast beastspawn set</yellow>"
-  usage_beast_zone: "{prefix} <yellow>Usage: /baa game [arena_id] run_from_the_beast beastzone set</yellow>"
+  usage: "{prefix} <yellow>Usage: /tsa game [arena_id] run_from_the_beast <beastspawn|beastzone> set</yellow>"
+  usage_beast_spawn: "{prefix} <yellow>Usage: /tsa game [arena_id] run_from_the_beast beastspawn set</yellow>"
+  usage_beast_zone: "{prefix} <yellow>Usage: /tsa game [arena_id] run_from_the_beast beastzone set</yellow>"
   must_use_stick: "{prefix} <red>Use the Magic Stick to select the area first.</red>"
   not_configured: "{prefix} <red>Run From The Beast still needs a beast spawn and beast zone in arena {arena_id}.</red>"
   beast_zone_set: "{prefix} <green>Beast zone saved: {blocks} blocks ({x}×{y}×{z})</green>"

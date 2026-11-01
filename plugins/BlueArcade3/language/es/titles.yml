@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 #
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 titles:
   join:
@@ -21,7 +21,7 @@ titles:
     subtitle: '{server_website}'
   starting_game:
     title: '<bold><gradient:aqua:dark_aqua>{game_display_name}</gradient><reset>'
-    subtitle: 'El juego comenzará en <light_purple>{time}</light_purple>s'
+    subtitle: 'El juego comenzará en <#4CADD0>{time}</#4CADD0>s'
   loading_arena:
     subtitle: '<gray>Cargando arena...</gray>'
   game_started:

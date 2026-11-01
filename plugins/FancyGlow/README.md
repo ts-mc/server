@@ -7,7 +7,7 @@ FancyGlow lets players apply a glowing outline colour to their name on
 
 | File | Purpose |
 |------|---------|
-| `config.yml` | FancyGlow settings (**empty = defaults**) |
+| `config.yml` | FancyGlow settings and TheySix themed color menu |
 
 ## How it is used here
 
@@ -24,6 +24,8 @@ FancyGlow lets players apply a glowing outline colour to their name on
 
 ## Notes
 
-- Permission nodes are `fancyglow.*` (e.g. `fancyglow.color.red`).
+- Permission nodes are `fancyglow.*`; `/glow` menu and all colors are intended
+  for the default group through LuckPerms (`fancyglow.command.gui` and
+  `fancyglow.all_colors`).
 - Colours offered depend on the permissions you grant; colour the tab entry by
   adding the matching `%fancyglow_color%` placeholder.

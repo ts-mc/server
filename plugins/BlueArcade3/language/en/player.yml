@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 player:
   lobby:
@@ -31,7 +31,7 @@ player:
       name: "<aqua>{target}</aqua>"
       lore: "<gray>Click to teleport to this player.</gray>"
   errors:
-    already_in_game: "{prefix} <red>You are already in the game. To leave use /ba leave</red>"
+    already_in_game: "{prefix} <red>You are already in the game. To leave use /ts leave</red>"
     target_already_in_game: "{prefix} <yellow>{player} is already in an arena.</yellow>"
     not_in_game: "{prefix} <red>You are not currently in any game.</red>"
     no_arena: "{prefix} <red>No arena is available at this time. Please try again later.</red>"

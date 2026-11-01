@@ -52,7 +52,7 @@ previously used four placeholders that **do not exist** in the BlueArcade
 expansion (`%bluearcade_active_games%`, `%bluearcade_votes_total%`,
 `%bluearcade_coins_earned%`, `%bluearcade_xp_earned%`), so those lines rendered as
 literal text. They were replaced, and **money** (ExcellentEconomy via Vault) and
-**votes** (VotingPlugin) lines were added:
+vote lines (DankVotes) were added:
 
 | Line | Placeholder | Source |
 |------|-------------|--------|
@@ -61,15 +61,15 @@ literal text. They were replaced, and **money** (ExcellentEconomy via Vault) and
 | Kills | `%bluearcade_stat_global_kills%` | BlueArcade |
 | Deaths | `%bluearcade_stat_global_deaths%` | BlueArcade |
 | Money | `%vault_eco_balance_formatted%` | Vault → ExcellentEconomy |
-| Votes | `%votingplugin_total%` | VotingPlugin (this month) |
-| Vote streak | `%votingplugin_dailyvotestreak%` | VotingPlugin |
+| Votes | `%dankvotes_votes%` | DankVotes |
+| Vote streak | `%dankvotes_streak%` | DankVotes |
 | Credits | `%bluearcade_stat_global_credits%` | BlueArcade (in-store currency) |
 | Stars | `%bluearcade_stat_global_stars%` | BlueArcade |
 
 Matching `placeholder-refresh-intervals` entries were added for the money and
 vote placeholders (5 s each — vote totals change rarely).
 
-See `plugins/PlaceholderAPI/README.md` for the full, verified placeholder lists.
+See `plugins/PlaceholderAPI/README.md` for the vote placeholder list.
 
 ## Regenerating typing-effect frames
 `animations.yml` uses a character-by-character typing animation. When the

@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 # Curated reusable Core menu language text.
 
@@ -29,7 +29,7 @@ menus:
           name: "<aqua>{player}</aqua>"
           lore:
             - "<gray>Click to invite this player.</gray>"
-            - "<dark_gray>Command:</dark_gray> <white>/ba party invite {player}</white>"
+            - "<dark_gray>Command:</dark_gray> <white>/ts party invite {player}</white>"
         empty:
           name: "<dark_gray>No players found</dark_gray>"
           lore:
@@ -67,23 +67,23 @@ menus:
           members:
             lore:
               - "<gray>View members and manage roles.</gray>"
-              - "<dark_gray>Command:</dark_gray> <white>/ba party members</white>"
+              - "<dark_gray>Command:</dark_gray> <white>/ts party members</white>"
           privacy:
             name: "<yellow>Privacy</yellow>"
             lore:
               - "<gray>Current:</gray> <white>{party_type}</white>"
               - "<gold>Left click:</gold> <white>Public</white>"
               - "<gold>Right click:</gold> <white>Private</white>"
-              - "<dark_gray>Command:</dark_gray> <white>/ba party type <mode></white>"
+              - "<dark_gray>Command:</dark_gray> <white>/ts party type <mode></white>"
           invite:
             name: "<green>Invite players</green>"
             lore:
               - "<gray>Send an invite to anyone online.</gray>"
-              - "<dark_gray>Command:</dark_gray> <white>/ba party invite</white>"
+              - "<dark_gray>Command:</dark_gray> <white>/ts party invite</white>"
           leave:
             lore:
               - "<gray>You will promote another member automatically.</gray>"
-              - "<dark_gray>Command:</dark_gray> <white>/ba party leave</white>"
+              - "<dark_gray>Command:</dark_gray> <white>/ts party leave</white>"
     common:
       members:
         name: "<aqua>Members</aqua>"
@@ -106,12 +106,12 @@ menus:
             name: "<yellow>Browse public parties</yellow>"
             lore:
               - "<gray>Find an open party and join instantly.</gray>"
-              - "<dark_gray>Command:</dark_gray> <white>/ba party search</white>"
+              - "<dark_gray>Command:</dark_gray> <white>/ts party search</white>"
           create_party:
             name: "<aqua>Create a party</aqua>"
             lore:
               - "<gray>Start a new party as the leader.</gray>"
-              - "<dark_gray>Command:</dark_gray> <white>/ba party create</white>"
+              - "<dark_gray>Command:</dark_gray> <white>/ts party create</white>"
     member:
       bedrock:
         title: "<aqua>Party overview</aqua>"
@@ -131,11 +131,11 @@ menus:
           members:
             lore:
               - "<gray>Preview who is inside the party.</gray>"
-              - "<dark_gray>Command:</dark_gray> <white>/ba party members</white>"
+              - "<dark_gray>Command:</dark_gray> <white>/ts party members</white>"
           leave:
             lore:
               - "<gray>Return to the lobby alone.</gray>"
-              - "<dark_gray>Command:</dark_gray> <white>/ba party leave</white>"
+              - "<dark_gray>Command:</dark_gray> <white>/ts party leave</white>"
     members:
       bedrock:
         title: "<aqua>Party members <gray>(Page {page}/{page_total})</gray>"
@@ -144,7 +144,7 @@ menus:
           - "<white>Privacy:</white> <white>{party_type}</white>"
           - "<white>Players:</white> <white>{party_size}</white>"
           - "<white>Page:</white> <white>{page}</white>/<white>{page_total}</white>"
-          - "<white>Tap to promote. Use /ba party kick <name> to remove.</white>"
+          - "<white>Tap to promote. Use /ts party kick <name> to remove.</white>"
         templates:
           dynamic:
             text: "<yellow>{member_name}</yellow> <white>-</white> {member_role}"
@@ -188,7 +188,7 @@ menus:
           lore:
             - "<gray>Privacy:</gray> <white>{party_type}</white>"
             - "<gray>Players:</gray> <white>{party_size}</white>"
-            - "<dark_gray>Command:</dark_gray> <white>/ba party join {party_leader}</white>"
+            - "<dark_gray>Command:</dark_gray> <white>/ts party join {party_leader}</white>"
         empty:
           name: "<dark_gray>No public parties</dark_gray>"
           lore:

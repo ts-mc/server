@@ -9,17 +9,17 @@ The server-facing branding lives in two places.
 |------|-------|-------|
 | `config.yml` | comment under `TAB_SUGGESTION_BLOCKER_LISTENER` | `Enabled for TheySix Events` |
 | `tabsuggestionblocker.yml` | comment under `COMMAND_LIST` | `TheySix Events player commands + essentials-style basics.` |
-| `commands/theysix-aliases.yml` | header / `tsa.permission` | `TheySix Events` / `theysixevents.admin` |
+| `plugins/BlueArcade3/plugin.yml` | native command declarations | `/ts`, `/tse`, `/tsa` |
 
-## Alias commands
+## BlueArcade commands
 
-`commands/theysix-aliases.yml` forwards the `TheySix Events` shorthand to the
-underlying `BlueArcade3` (`/ba`) commands:
+BlueArcade3 registers the player and admin commands itself. MyCommand does not
+forward these commands.
 
 | Alias | Forwards to | Permission |
 |-------|-------------|------------|
-| `/ts`, `/tse` | `/ba $args` | everyone |
-| `/tsa` | `/baa $args` | `theysixevents.admin` |
+| `/ts`, `/tse` | native BlueArcade3 player command | everyone |
+| `/tsa` | native BlueArcade3 admin command | `theysixevents.admin` |
 | `/votelb-install` | creates LuckPerms `votelb-*` groups | `theysixevents.admin` |
 | `/votelb-ensure` | applies saved daily/weekly/monthly view on join | everyone (not tab-listed) |
 | `/votelb-daily` `/votelb-weekly` `/votelb-monthly` | swap vote-leaderboard NPC/hologram set | everyone (NPC click) |

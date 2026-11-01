@@ -3,8 +3,8 @@ dynamicItem:
   lore:
     - "{language:menus.team.select.java.dynamic.lore}"
   actions:
-    - "[LEFT_CLICK] PLAYER;/ba team join {team_id}"
-    - "[RIGHT_CLICK] PLAYER;/ba team join {team_id}"
+    - "[LEFT_CLICK] PLAYER;/ts team join {team_id}"
+    - "[RIGHT_CLICK] PLAYER;/ts team join {team_id}"
 emptyItem:
   name: "{language:menus.team.select.java.empty.name}"
   itemStack:
@@ -27,12 +27,12 @@ items:
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menuName: "{language:menus.team.select.java.title}"
 menuSize: 27
 type: CHEST
-openCommand: /ba team
+openCommand: /ts team
 dynamicSlots:
   - 10
   - 11

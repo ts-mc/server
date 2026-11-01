@@ -8,7 +8,7 @@ items:
     lore:
       - "{language:menus.store.purchase_confirmation.java.items.cancel.lore}"
     actions:
-      - "PLAYER;/ba store category {category_id} {category_page}"
+      - "PLAYER;/ts store category {category_id} {category_page}"
   item:
     slot: 13
     name: "{language:menus.store.purchase_confirmation.java.items.item.name}"
@@ -27,16 +27,16 @@ items:
     lore:
       - "{language:menus.store.purchase_confirmation.java.items.confirm.lore}"
     actions:
-      - "PLAYER;/ba store purchase {category_id} {item_id} {category_page}"
+      - "PLAYER;/ts store purchase {category_id} {item_id} {category_page}"
 # ____  _               _                      _
 # | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
 # |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menuName: "{language:menus.store.purchase_confirmation.java.title}"
 menuSize: 27
 type: CHEST
-openCommand: /ba store confirm
+openCommand: /ts store confirm

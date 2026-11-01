@@ -59,16 +59,16 @@ scoreboard:
     - ""
     - "<aqua>Your Position:</aqua> <white>#{minefield_position}</white>"
     - ""
-    - "<yellow>www.blueva.net</yellow>"
+    - "<yellow>https://events.theysix.tech</yellow>"
 
 setup_messages:
-  usage: "{prefix} <yellow>Usage: /baa game <id> minefield <finishline|floor> set</yellow>"
+  usage: "{prefix} <yellow>Usage: /tsa game <id> minefield <finishline|floor> set</yellow>"
   set_success: "{prefix} <green>Finish line set: {blocks} blocks ({x}×{y}×{z})</green>"
   set_success_floor: "{prefix} <green>Floor set: {blocks} blocks ({x}×{y}×{z})</green>"
   must_use_stick: "{prefix} <red>Use the Magic Stick to select an area first.</red>"
-  not_configured: "{prefix} <red>Minefield is not fully configured! Use /baa game {arena_id} minefield finishline|floor set</red>"
-  usage_finish_line: "{prefix} <yellow>Usage: /baa game <id> minefield finishline set</yellow>"
-  usage_floor: "{prefix} <yellow>Usage: /baa game <id> minefield floor set</yellow>"
+  not_configured: "{prefix} <red>Minefield is not fully configured! Use /tsa game {arena_id} minefield finishline|floor set</red>"
+  usage_finish_line: "{prefix} <yellow>Usage: /tsa game <id> minefield finishline set</yellow>"
+  usage_floor: "{prefix} <yellow>Usage: /tsa game <id> minefield floor set</yellow>"
 # Minefield Module - English (UK)
 # Minefield-specific content
 

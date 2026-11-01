@@ -2,21 +2,21 @@ buttons:
   button1:
     text: "{language:menus.leave.confirmation.bedrock.buttons.button1.text}"
     actions:
-      - PLAYER;/ba leave confirm
+      - PLAYER;/ts leave confirm
   button2:
     text: "{language:menus.leave.confirmation.bedrock.buttons.button2.text}"
     actions:
-      - PLAYER;/ba leave cancel
+      - PLAYER;/ts leave cancel
 # ____  _               _                      _
 # | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
 # |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 type: MODAL
 menuName: "{language:menus.leave.confirmation.bedrock.title}"
-openCommand: /ba leave
+openCommand: /ts leave
 content:
   - "{language:menus.leave.confirmation.bedrock.content}"

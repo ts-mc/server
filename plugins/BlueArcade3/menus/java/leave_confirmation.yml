@@ -8,8 +8,8 @@ items:
     lore:
       - "{language:menus.leave.confirmation.java.items.confirm_leave.lore}"
     actions:
-      - "[LEFT_CLICK] PLAYER;/ba leave confirm"
-      - "[RIGHT_CLICK] PLAYER;/ba leave confirm"
+      - "[LEFT_CLICK] PLAYER;/ts leave confirm"
+      - "[RIGHT_CLICK] PLAYER;/ts leave confirm"
   cancel_leave:
     name: "{language:menus.leave.confirmation.java.items.cancel_leave.name}"
     slot: 15
@@ -19,17 +19,17 @@ items:
     lore:
       - "{language:menus.leave.confirmation.java.items.cancel_leave.lore}"
     actions:
-      - "[LEFT_CLICK] PLAYER;/ba leave cancel"
-      - "[RIGHT_CLICK] PLAYER;/ba leave cancel"
+      - "[LEFT_CLICK] PLAYER;/ts leave cancel"
+      - "[RIGHT_CLICK] PLAYER;/ts leave cancel"
 # ____  _               _                      _
 # | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
 # |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menuName: "{language:menus.leave.confirmation.java.title}"
 menuSize: 27
 type: CHEST
-openCommand: /ba leave
+openCommand: /ts leave

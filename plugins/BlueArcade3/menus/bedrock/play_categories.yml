@@ -4,19 +4,19 @@ buttons:
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_previous}"
     actions:
-      - "PLAYER;/ba join page {page_previous}"
+      - "PLAYER;/ts join page {page_previous}"
   next_page:
     text: "{language:menus.common.bedrock.pagination.next}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_next}"
     actions:
-      - "PLAYER;/ba join page {page_next}"
+      - "PLAYER;/ts join page {page_next}"
 templates:
   game:
     text: "{language:menus.play.categories.bedrock.templates.game.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_paper.png"
     actions:
-      - "PLAYER;/ba join {category_filter}"
+      - "PLAYER;/ts join {category_filter}"
   empty:
     text: "{language:menus.play.categories.bedrock.templates.empty.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_gray_stained_glass_pane.png"
@@ -27,11 +27,11 @@ templates:
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 type: SIMPLE
 menuName: "{language:menus.play.categories.bedrock.title}"
-openCommand: /ba join
+openCommand: /ts join
 buttonsPerPage: 10
 content:
   - "{language:menus.play.categories.bedrock.content}"

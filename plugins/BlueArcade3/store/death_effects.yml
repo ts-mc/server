@@ -179,7 +179,7 @@ effects:
   ender_shatter:
     enabled: true
     type: particle_burst
-    display_name: "<dark_purple>Ender Shatter</dark_purple>"
+    display_name: "<#4CADD0>Ender Shatter</#4CADD0>"
     icon: ENDER_PEARL
     description:
       - "<gray>Portal sparks scatter.</gray>"

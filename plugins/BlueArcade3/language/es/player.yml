@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 #
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 player:
   lobby:
@@ -31,7 +31,7 @@ player:
       name: '<aqua>{target}</aqua>'
       lore: '<gray>Haz clic para teletransportarte a este jugador.</gray>'
   errors:
-    already_in_game: '{prefix} <red>Ya estás en una partida. Para salir usa /ba leave</red>'
+    already_in_game: '{prefix} <red>Ya estás en una partida. Para salir usa /ts leave</red>'
     target_already_in_game: '{prefix} <yellow>{player} ya está en una arena.</yellow>'
     not_in_game: '{prefix} <red>No estás actualmente en ningún juego.</red>'
     no_arena: '{prefix} <red>No hay ninguna arena disponible en este momento. Inténtalo de nuevo más tarde.</red>'
@@ -43,7 +43,7 @@ player:
     arena_starting_full: '{prefix} <red>La arena</red> <yellow>{arena_display_name}</yellow> <red>está iniciando y ya está llena.</red>'
     arena_stopped: '{prefix} <red>La arena se ha detenido por falta de jugadores. Se necesitan al menos</red> <yellow>{min_players}</yellow> <red>jugadores.</red>'
     chat_muted: '{prefix} <red>El chat está silenciado. Podrás hablar en unos segundos.</red>'
-    not_allowed_command: '{prefix} <red>No puedes usar este comando mientras estás en una partida. Usa /ba leave para salir.</red>'
+    not_allowed_command: '{prefix} <red>No puedes usar este comando mientras estás en una partida. Usa /ts leave para salir.</red>'
     stats_disabled: '{prefix} <red>El sistema de estadísticas está actualmente deshabilitado.</red>'
     achievements_disabled: '{prefix} <red>El sistema de logros está actualmente deshabilitado.</red>'
     achievements_menu_disabled: '{prefix} <red>El menú de logros está actualmente deshabilitado.</red>'

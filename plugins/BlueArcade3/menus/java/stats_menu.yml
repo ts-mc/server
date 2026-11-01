@@ -5,12 +5,12 @@ file_version: "1"
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menuName: "<gradient:yellow:gold><bold>PARTY GAMES</bold></gradient> <gray>-</gray> <yellow>Stats</yellow> <gray>({category_name})</gray> <gray>({period_label})</gray> <gray>({page}/{page_total})</gray>"
 menuSize: 54
 type: CHEST
-openCommand: "/ba stats {period}"
+openCommand: "/ts stats {period}"
 dynamicSlots:
   - 10
   - 11
@@ -104,7 +104,7 @@ items:
     lore:
       - "<gray>Go to the previous page.</gray>"
     actions:
-      - "PLAYER;/ba stats {period} page {page_previous}"
+      - "PLAYER;/ts stats {period} page {page_previous}"
 
   next_page:
     slot: 53
@@ -115,7 +115,7 @@ items:
     lore:
       - "<gray>Go to the next page.</gray>"
     actions:
-      - "PLAYER;/ba stats {period} page {page_next}"
+      - "PLAYER;/ts stats {period} page {page_next}"
 
   close:
     slot: 49
@@ -136,7 +136,7 @@ items:
     lore:
       - "<gray>Return to categories.</gray>"
     actions:
-      - "PLAYER;/ba stats {period}"
+      - "PLAYER;/ts stats {period}"
 
   border_top_0:
     slot: 0

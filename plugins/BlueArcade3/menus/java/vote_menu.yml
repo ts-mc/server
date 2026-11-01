@@ -5,12 +5,12 @@ file_version: "1"
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menuName: "<yellow>Vote for minigames <gray>(Page {page}/{page_total})</gray>"
 menuSize: 54
 type: CHEST
-openCommand: /ba vote
+openCommand: /ts vote
 dynamicSlots:
   - 10
   - 11
@@ -48,8 +48,8 @@ dynamicItem:
     - "<gray>Available votes:</gray> <white>{available_votes}</white>/<white>{max_votes}</white>"
     - "<green>Click to vote!</green>"
   actions:
-    - "[LEFT_CLICK] PLAYER;/ba vote {minigame}"
-    - "[RIGHT_CLICK] PLAYER;/ba vote {minigame}"
+    - "[LEFT_CLICK] PLAYER;/ts vote {minigame}"
+    - "[RIGHT_CLICK] PLAYER;/ts vote {minigame}"
 
 emptyItem:
   name: "<dark_gray>No minigames available to vote</dark_gray>"
@@ -82,7 +82,7 @@ items:
     lore:
       - "<gray>Go to the previous page.</gray>"
     actions:
-      - "PLAYER;/ba vote page {page_previous}"
+      - "PLAYER;/ts vote page {page_previous}"
 
   next_page:
     slot: 53
@@ -93,7 +93,7 @@ items:
     lore:
       - "<gray>Go to the next page.</gray>"
     actions:
-      - "PLAYER;/ba vote page {page_next}"
+      - "PLAYER;/ts vote page {page_next}"
 
   # Decorative glass panes around the menu
   deco_top_0:

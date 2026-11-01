@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 # Localized Core item names and inventory item text.
 
@@ -27,7 +27,7 @@ items:
         lore:
           - "<gray>Open your personal statistics panel.</gray>"
       party:
-        display_name: "<light_purple>Party</light_purple>"
+        display_name: "<#4CADD0>Party</#4CADD0>"
         lore:
           - "<gray>Manage your party before entering a game.</gray>"
       leave:

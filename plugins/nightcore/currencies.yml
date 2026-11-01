@@ -13,13 +13,6 @@ Currencies:
       Icon:
         Material: minecraft:experience_bottle
         Lore: []
-  votingplugin:
-    Settings:
-      Name: Voting Points
-      Format: '%amount% %name%'
-      Icon:
-        Material: minecraft:sunflower
-        Lore: []
 Items:
   gold:
     Tag:

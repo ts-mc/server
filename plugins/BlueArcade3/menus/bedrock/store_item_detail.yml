@@ -13,10 +13,10 @@ buttons:
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 type: MODAL
 menuName: "{language:menus.store.item_detail.bedrock.title}"
-openCommand: /ba store detail
+openCommand: /ts store detail
 content:
   - "{language:menus.store.item_detail.bedrock.content}"

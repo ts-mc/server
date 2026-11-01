@@ -4,19 +4,19 @@ buttons:
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_previous}"
     actions:
-      - "PLAYER;/ba party invite {page_previous}"
+      - "PLAYER;/ts party invite {page_previous}"
   next_page:
     text: "{language:menus.common.bedrock.pagination.next}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_next}"
     actions:
-      - "PLAYER;/ba party invite {page_next}"
+      - "PLAYER;/ts party invite {page_next}"
 templates:
   dynamic:
     text: "{language:menus.party.invite.bedrock.templates.dynamic.text}"
     image: "https://cravatar.eu/helmhead/{player}"
     actions:
-      - "PLAYER;/ba party invite {player}"
+      - "PLAYER;/ts party invite {player}"
   empty:
     text: "{language:menus.party.invite.bedrock.templates.empty.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_gray_stained_glass_pane.png"
@@ -27,11 +27,11 @@ templates:
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 type: SIMPLE
 menuName: "{language:menus.party.invite.bedrock.title}"
-openCommand: /ba party invite
+openCommand: /ts party invite
 buttonsPerPage: 10
 content:
   - "{language:menus.party.invite.bedrock.content}"

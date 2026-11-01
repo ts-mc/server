@@ -7,8 +7,8 @@ dynamicItem:
   lore:
     - "{language:menus.party.members.java.dynamic.lore}"
   actions:
-    - "[LEFT_CLICK];PLAYER;/ba party leader {member_name}"
-    - "[RIGHT_CLICK];PLAYER;/ba party kick {member_name}"
+    - "[LEFT_CLICK];PLAYER;/ts party leader {member_name}"
+    - "[RIGHT_CLICK];PLAYER;/ts party kick {member_name}"
 emptyItem:
   name: "{language:menus.party.members.java.empty.name}"
   itemStack:
@@ -36,7 +36,7 @@ items:
     lore:
       - "{language:menus.common.java.pagination.previous.lore}"
     actions:
-      - "PLAYER;/ba party members {page_previous}"
+      - "PLAYER;/ts party members {page_previous}"
   next_page:
     slot: 53
     name: "{language:menus.common.java.pagination.next.name}"
@@ -46,19 +46,19 @@ items:
     lore:
       - "{language:menus.common.java.pagination.next.lore}"
     actions:
-      - "PLAYER;/ba party members {page_next}"
+      - "PLAYER;/ts party members {page_next}"
 # ____  _               _                      _
 # | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
 # |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 type: CHEST
 menuName: "{language:menus.party.members.java.title}"
 menuSize: 54
-openCommand: /ba party members
+openCommand: /ts party members
 dynamicSlots:
   - 10
   - 11

@@ -5,11 +5,11 @@ file_version: "1"
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 type: SIMPLE
 menuName: "<yellow>Vote for minigames</yellow>"
-openCommand: /ba vote
+openCommand: /ts vote
 buttonsPerPage: 10
 
 content:
@@ -23,20 +23,20 @@ buttons:
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_previous}"
     actions:
-      - "PLAYER;/ba vote page {page_previous}"
+      - "PLAYER;/ts vote page {page_previous}"
   next_page:
     text: "<white>Page {page_next} →</white>"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_arrow.png"
     visibleIf: "{page_has_next}"
     actions:
-      - "PLAYER;/ba vote page {page_next}"
+      - "PLAYER;/ts vote page {page_next}"
 
 # Template definitions used by the dynamic vote builder
 templates:
   dynamic:
     text: "<yellow>{display_name}</yellow> <white>- {votes} votes</white>"
     actions:
-      - "PLAYER;/ba vote {minigame}"
+      - "PLAYER;/ts vote {minigame}"
   empty:
     text: "<white>No minigames to vote.</white>"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_gray_stained_glass_pane.png"

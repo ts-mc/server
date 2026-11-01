@@ -19,7 +19,6 @@ COMMAND_LIST:
   - /ts-menu
   - /tse-menu
   - /tsmenu
-  - /ba
   - /spawn
   - /hub
   - /msg
@@ -33,7 +32,6 @@ COMMAND_LIST:
   # Admins bypass the filter entirely via "mycommand.antitab.admin",
   # so this group is only a fallback for staff without that bypass.
   - /tsa
-  - /baa
   - /kick
   - /mute
   - /tempmute

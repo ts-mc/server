@@ -7,7 +7,7 @@ templates:
       material: PAPER
       amount: 1
     actions:
-      - "PLAYER;/ba replay {module_id}"
+      - "PLAYER;/ts replay {module_id}"
 emptyItem:
   name: " "
   itemStack:
@@ -34,7 +34,7 @@ items:
       material: ARROW
       amount: 1
     actions:
-      - "PLAYER;/ba replay page {page_previous}"
+      - "PLAYER;/ts replay page {page_previous}"
   close:
     slot: 49
     name: "{language:menus.common.actions.close.name}"
@@ -53,11 +53,11 @@ items:
       material: ARROW
       amount: 1
     actions:
-      - "PLAYER;/ba replay page {page_next}"
+      - "PLAYER;/ts replay page {page_next}"
 menuName: "{language:menus.replay.modules.java.title}"
 menuSize: 54
 type: CHEST
-openCommand: /ba replay
+openCommand: /ts replay
 dynamicSlots:
   - 10
   - 11

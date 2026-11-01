@@ -19,12 +19,11 @@ to other plugins such as TAB, scoreboards and chat. It is installed on
 | `%server_online%` / `%server_max_players%` | built-in | TAB online line |
 | `%luckperms-prefix%` / `%luckperms-suffix%` | LuckPerms expansion | TAB groups and rank line |
 | `%luckperms_prefix%` | LuckPerms expansion | TAB staff scoreboard |
-| `%deluxetags_tag%` | DeluxeTags expansion | TAB tag line and tab suffix |
 | `%fancyglow_color%` | FancyGlow expansion | TAB glow line and tag prefix |
 | `%vault_eco_balance_formatted%` | Vault expansion (ExcellentEconomy "money") | TAB money line |
-| `%votingplugin_total%` / `%votingplugin_total_alltime%` | VotingPlugin expansion | TAB vote line, ItemJoin vote item |
-| `%votingplugin_dailyvotestreak%` / `%votingplugin_points%` | VotingPlugin expansion | ItemJoin vote item |
-| `%votingplugin_top_all_1%` | VotingPlugin expansion | ItemJoin vote item (top voter) |
+| `%dankvotes_votes%` / `%dankvotes_total_votes%` | DankVotes | TAB and vote menus |
+| `%dankvotes_streak%` / `%dankvotes_best_streak%` | DankVotes | TAB and vote menus |
+| `%dankvotes_top_name_<n>%` / `%dankvotes_top_votes_<n>%` | DankVotes | Vote leaderboard hologram |
 | `%statistic_player_kills%` / `%statistic_deaths%` | Statistic expansion | TAB kills/deaths animation |
 | `%server_tps_1_colored%` | built-in | TAB staff scoreboard (TPS) |
 | `%staffteam_chat%` / `%admin_chat%` | **external chat expansion** | TAB staff scoreboard |
@@ -66,7 +65,7 @@ Valid examples:
 > `%bluearcade_coins_earned%` or `%bluearcade_xp_earned%`.** Those keys were
 > never registered and rendered literally in TAB. Use `credits` for BlueArcade's
 > in-store currency, `games_played`/`wins`/`kills`/`deaths`/`stars` for stats, and
-> see below for **money** (Vault/ExcellentEconomy) and **votes** (VotingPlugin).
+> see below for **money** (Vault/ExcellentEconomy) and server-list votes (DankVotes).
 
 How to verify a BlueArcade placeholder yourself in game:
 
@@ -96,44 +95,28 @@ Players earn `money` for every match via `plugins/BlueArcade3/rewards.yml`
 > prefer the Vault placeholder above — it is guaranteed to work because Vault is
 > loaded and ExcellentEconomy is its economy provider.
 
-## Server-list voting (VotingPlugin + NuVotifier)
+## Server-list voting (DankVotes + VotifierPlus)
 
-Installed. VotingPlugin's expansion registers `%votingplugin_*%` — verified
-identifiers:
+DankVotes supplies vote totals, streaks, vote commands, and leaderboard
+placeholders. VotifierPlus is retained as the server's vote-receiving plugin.
+VotingPlugin and the standalone Votifier plugin are retired.
 
 | Placeholder | Meaning |
 |-------------|---------|
-| `%votingplugin_total%` | Votes this month |
-| `%votingplugin_total_alltime%` | All-time votes |
-| `%votingplugin_dailyvotestreak%` | Current daily vote streak |
-| `%votingplugin_points%` | Player's voting points |
-| `%votingplugin_top_all_1%` | Username of the #1 all-time voter |
-| `%votingplugin_top_all_<n>%` | Username of the #n all-time voter (verified up to rank 5 — used by `top_winner`) |
-| `%votingplugin_top_all_<n>_position%` | Rank position string of the #n all-time voter |
-| `%votingplugin_top_all_<n>_votes%` | All-time vote count of the #n all-time voter |
-| `%votingplugin_top_daily_<n>%` | Username of the #n daily voter (leaderboard `_daily` NPCs/holograms) |
-| `%votingplugin_top_week_<n>%` | Username of the #n weekly voter |
-| `%votingplugin_top_month_<n>%` | Username of the #n monthly voter (`leaderboard_1`–`5`) |
-| `%votingplugin_canvote%` | `true`/`false` if the player can vote now |
+| `%dankvotes_votes%` | Player's vote count |
+| `%dankvotes_total_votes%` | All-time vote count |
+| `%dankvotes_streak%` / `%dankvotes_best_streak%` | Current / best daily streak |
+| `%dankvotes_voted_today%` | Whether the player voted today |
+| `%dankvotes_rank%` | Player's voter rank |
+| `%dankvotes_top_name_<n>%` | Username at rank `<n>` |
+| `%dankvotes_top_votes_<n>%` | Vote count at rank `<n>` |
 
-> **Not PAPI keys:** `Top_Month_`, `Top_Week_` and `Top_Daily_` exist in the
-> VotingPlugin jar (`PlaceHolders` class) but are **only used internally to
-> format the `/vote top` command output**. They are not registered as
-> PlaceholderAPI placeholders and resolve literally if used. Only the
-> `top_all_<n>[_position|_votes]` forms (and `top_daily/top_week/top_month` if
-> registered at runtime) should be used in configs.
+These are the DankVotes PlaceholderAPI identifiers. Vote statistics and top
+voter values require the plugin's statistics feature to be enabled. `/vote`
+provides the configured vote links.
 
-> Ranks above 5 (`%votingplugin_top_all_6%` … `%votingplugin_top_all_10%`, used
-> by `leaderboard_3`–`5`) are expected to work since the expansion handles any
-> `n`, but have **not been confirmed** — verify in-game with
-> `/papi parse --null %votingplugin_top_all_6%` before relying on them.
-
-`/vote` opens the vote GUI (or lists sites). NuVotifier (`plugins/Votifier/`) is
-the listener that receives the votes.
-
-> BlueArcade's own `/ba vote` is a **different, in-arena** vote (minigame voting
-> while waiting in an arena). Do not confuse the two — the in-arena one is
-> provided by BlueArcade and is not usable from the hub.
+> BlueArcade's own `/ts vote` is a **different, in-arena** vote (minigame voting
+> while waiting in an arena). It is not server-list voting.
 
 ## Commands
 

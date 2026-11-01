@@ -2,7 +2,7 @@ templates:
   category:
     text: "{language:menus.store.categories.bedrock.templates.category.text}"
     actions:
-      - "PLAYER;/ba store category {category_id}"
+      - "PLAYER;/ts store category {category_id}"
   empty:
     text: "{language:menus.store.categories.bedrock.templates.empty.text}"
     image: "https://blueva.net/api/menu/items/1_21_10/minecraft_gray_stained_glass_pane.png"
@@ -26,11 +26,11 @@ buttons:
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 type: SIMPLE
 menuName: "{language:menus.store.categories.bedrock.title}"
-openCommand: /ba store
+openCommand: /ts store
 buttonsPerPage: 10
 content:
   - "{language:menus.store.categories.bedrock.content}"

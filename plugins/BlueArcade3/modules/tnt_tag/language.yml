@@ -47,7 +47,7 @@ scoreboard:
       - "<white>Round:</white> <yellow>{round}</yellow>"
       - "<white>Fuse:</white> <red>{time}s</red>"
       - ""
-      - "<yellow>www.blueva.net</yellow>"
+      - "<yellow>https://events.theysix.tech</yellow>"
 
 setup_messages:
   no_extra_steps: "{prefix} <yellow>TNT Tag does not require any extra setup steps.</yellow>"

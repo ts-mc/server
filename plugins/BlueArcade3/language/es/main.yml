@@ -4,15 +4,15 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 #
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 language: 'Español (España)'
 server:
   name: 'TheySix Events'
-  website: 'www.blueva.net'
+  website: https://events.theysix.tech
 colors:
-  primary: 'aqua'
-  secondary: 'light_purple'
+  primary: '#4CADD0'
+  secondary: '#B2F9FF'
   accent: 'yellow'
   success: 'green'
   warning: 'yellow'
@@ -22,13 +22,13 @@ colors:
 lines:
   separator: '<dark_gray><strikethrough>--------------------------</dark_gray><reset>'
   wide_separator: '<dark_gray><strikethrough>----------------------------------------------</dark_gray><reset>'
-prefix: '<bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient></bold> <gray>»</gray>'
+prefix: '<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray>'
 plugin_info:
   - '{line_separator}'
   - ' '
   - '<bold><gradient:{color_primary}:{color_secondary}>{server_name}</gradient> <gray>-</gray> <yellow>{plugin_version}</yellow>'
-  - '<gray>Creado por Blueva ({server_website})</gray>'
+  - '<gray>Web oficial: {server_website}</gray>'
   - ' '
-  - '<gray>Usa</gray> <light_purple>/ba help</light_purple> <gray>para obtener ayuda.</gray>'
+  - '<gray>Usa</gray> <#4CADD0>/ts help</#4CADD0> <gray>para obtener ayuda.</gray>'
   - ' '
   - '{line_separator}'

@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 #
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 items:
   game:
@@ -25,7 +25,7 @@ items:
         lore:
           - '<gray>Abre tu panel de estadísticas personales.</gray>'
       party:
-        display_name: '<light_purple>Grupo</light_purple>'
+        display_name: '<#4CADD0>Grupo</#4CADD0>'
         lore:
           - '<gray>Administra tu grupo antes de ingresar a un juego.</gray>'
       leave:

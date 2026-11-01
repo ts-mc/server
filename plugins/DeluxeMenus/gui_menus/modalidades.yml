@@ -76,7 +76,7 @@ items:
     - '&7ᴊᴏɢᴀᴅᴏʀᴇs: &f%ba_players%&7/&f%ba_max_players%'
     - ''
     left_click_commands:
-    - '[player_command] /ba quickjoin'
+    - '[player_command] /ts quickjoin'
 
   'stats':
     material: BOOK
@@ -95,7 +95,7 @@ items:
     - '&7xᴘ: &f%ba_xp%'
     - ''
     left_click_commands:
-    - '[player_command] /ba stats'
+    - '[player_command] /ts stats'
 
   'all_against_all':
     material: RED_DYE
@@ -111,7 +111,7 @@ items:
     - '&7ѕᴛᴀᴛᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join all_against_all'
+    - '[player_command] /ts join all_against_all'
 
   'block_party':
     material: NOTE_BLOCK
@@ -127,7 +127,7 @@ items:
     - '&7ѕᴛᴀᴛᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join block_party'
+    - '[player_command] /ts join block_party'
 
   'bridge_race':
     material: OAK_BOAT
@@ -143,7 +143,7 @@ items:
     - '&7ѕᴛᴀᴛᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join bridge_race'
+    - '[player_command] /ts join bridge_race'
 
   'chairs':
     material: BLACK_BED
@@ -159,7 +159,7 @@ items:
     - '&7ѕᴛᴀᴛᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join chairs'
+    - '[player_command] /ts join chairs'
 
   'exploding_sheep':
     material: GREEN_SHEEP_SPAWN_EGG
@@ -175,7 +175,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join exploding_sheep'
+    - '[player_command] /ts join exploding_sheep'
 
   'fast_zone':
     material: YELLOW_DYE
@@ -191,7 +191,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join fast_zone'
+    - '[player_command] /ts join fast_zone'
 
   'knockback':
     material: STICK
@@ -207,7 +207,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join knockback'
+    - '[player_command] /ts join knockback'
 
   'minefield':
     material: GRAY_CONCRETE
@@ -223,7 +223,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join minefield'
+    - '[player_command] /ts join minefield'
 
   'one_in_the_chamber':
     material: BOW
@@ -239,7 +239,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join one_in_the_chamber'
+    - '[player_command] /ts join one_in_the_chamber'
 
   'race':
     material: FEATHER
@@ -255,7 +255,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join race'
+    - '[player_command] /ts join race'
 
   'red_alert':
     material: REDSTONE
@@ -271,7 +271,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join red_alert'
+    - '[player_command] /ts join red_alert'
 
   'run_from_the_beast':
     material: BONE
@@ -287,7 +287,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join run_from_the_beast'
+    - '[player_command] /ts join run_from_the_beast'
 
   'snowball_fight':
     material: SNOWBALL
@@ -303,7 +303,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join snowball_fight'
+    - '[player_command] /ts join snowball_fight'
 
   'spleef':
     material: WOODEN_SHOVEL
@@ -319,7 +319,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join spleef'
+    - '[player_command] /ts join spleef'
 
   'splegg':
     material: EGG
@@ -335,7 +335,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join splegg'
+    - '[player_command] /ts join splegg'
 
   'tnt_run':
     material: TNT
@@ -351,7 +351,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join tnt_run'
+    - '[player_command] /ts join tnt_run'
 
   'tnt_tag':
     material: RED_DYE
@@ -367,7 +367,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join tnt_tag'
+    - '[player_command] /ts join tnt_tag'
 
   'traffic_light':
     material: REDSTONE_LAMP
@@ -383,7 +383,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join traffic_light'
+    - '[player_command] /ts join traffic_light'
 
   'water_well':
     material: WATER_BUCKET
@@ -399,7 +399,7 @@ items:
     - '&7ѕᴛᴀᴜs: &%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join water_well'
+    - '[player_command] /ts join water_well'
 
   'hub_pvp':
     material: DIAMOND_SWORD

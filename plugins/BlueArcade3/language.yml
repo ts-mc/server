@@ -11,7 +11,7 @@
 # ========================================
 file_version: '4'
 language: English (UK)
-prefix: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient></bold> <gray>»</gray>
+prefix: <b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray>
 
 # ========================================
 # PLAYER EXPERIENCE
@@ -36,7 +36,7 @@ player:
   
   # Player errors (things they might encounter)
   errors:
-    already_in_game: '{prefix} <red>You are already in the game. To leave use /ba leave</red>'
+    already_in_game: '{prefix} <red>You are already in the game. To leave use /ts leave</red>'
     not_in_game: '{prefix} <red>You are not currently in any game.</red>'
     no_arena: '{prefix} <red>No arena is available at this time. Please try again later.</red>'
     arena_started: '{prefix} <red>The arena</red> <yellow>{arena_display_name}</yellow> <red>has already started.</red>'
@@ -73,32 +73,32 @@ player_commands:
   - <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <reset> <dark_gray>-</dark_gray> <gray>Help Command for users</gray>
   - <yellow>[] Requiered</yellow> <gray>-</gray> <green>() Optional</green>
   - ' '
-  - <gold>/ba quickjoin (player)</gold> <dark_gray>-</dark_gray> <gray>Enter a random game</gray>
-  - <gold>/ba join [name/id] (player)</gold> <dark_gray>-</dark_gray> <gray>Enter a specific game</gray>
-  - <gold>/ba leave (player)</gold> <dark_gray>-</dark_gray> <gray>Leave the current game</gray>
-  - <gold>/ba party <gray>...</gray></gold> <dark_gray>-</dark_gray> <gray>Manage your party</gray>
-  - <gold>/ba stats (category) (alltime/monthly/yearly) (page)</gold> <dark_gray>-</dark_gray> <gray>Check your stats</gray>
-  - <gold>/ba tops (category) (alltime/monthly/yearly) (page)</gold> <dark_gray>-</dark_gray> <gray>Browse top stats</gray>
-  - <gold>/ba tops <stat> <alltime/monthly/yearly> (page)</gold> <dark_gray>-</dark_gray> <gray>View top players for a stat</gray>
-  - <gold>/ba achievements (category) (achievement) (page)</gold> <dark_gray>-</dark_gray> <gray>View achievements</gray>
-  - <gold>/ba level</gold> <dark_gray>-</dark_gray> <gray>View your current level</gray>
-  - <gold>/ba store</gold> <dark_gray>-</dark_gray> <gray>Open the store</gray>
-  - <gold>/ba credits pay <player> <amount></gold> <dark_gray>-</dark_gray> <gray>Pay credits to another player</gray>
-  - <gold>/baa help</gold> <dark_gray>-</dark_gray> <gray>Help for administrators</gray>
+  - <gold>/ts quickjoin (player)</gold> <dark_gray>-</dark_gray> <gray>Enter a random game</gray>
+  - <gold>/ts join [name/id] (player)</gold> <dark_gray>-</dark_gray> <gray>Enter a specific game</gray>
+  - <gold>/ts leave (player)</gold> <dark_gray>-</dark_gray> <gray>Leave the current game</gray>
+  - <gold>/ts party <gray>...</gray></gold> <dark_gray>-</dark_gray> <gray>Manage your party</gray>
+  - <gold>/ts stats (category) (alltime/monthly/yearly) (page)</gold> <dark_gray>-</dark_gray> <gray>Check your stats</gray>
+  - <gold>/ts tops (category) (alltime/monthly/yearly) (page)</gold> <dark_gray>-</dark_gray> <gray>Browse top stats</gray>
+  - <gold>/ts tops <stat> <alltime/monthly/yearly> (page)</gold> <dark_gray>-</dark_gray> <gray>View top players for a stat</gray>
+  - <gold>/ts achievements (category) (achievement) (page)</gold> <dark_gray>-</dark_gray> <gray>View achievements</gray>
+  - <gold>/ts level</gold> <dark_gray>-</dark_gray> <gray>View your current level</gray>
+  - <gold>/ts store</gold> <dark_gray>-</dark_gray> <gray>Open the store</gray>
+  - <gold>/ts credits pay <player> <amount></gold> <dark_gray>-</dark_gray> <gray>Pay credits to another player</gray>
+  - <gold>/tsa help</gold> <dark_gray>-</dark_gray> <gray>Help for administrators</gray>
   
   usage:
-    join: '{prefix} <red>Use: /ba join [arena|(filter [page])] (player)</red>'
-    quickjoin: '{prefix} <red>Use: /ba quickjoin (player)</red>'
-    leave: '{prefix} <red>Use: /ba leave [player]</red>'
-    vote: '{prefix} <red>Use: /ba vote [minigame|page <number>]</red>'
-    party: '{prefix} <red>Use: /ba party <list|type|create|members|invite|search|join|accept|reject|kick|leader|leave> (player)</red>'
-    stats: '{prefix} <red>Use: /ba stats (category) (alltime/monthly/yearly) (page)</red>'
-    tops: '{prefix} <red>Use: /ba tops (category) (alltime/monthly/yearly) (page) or /ba tops <stat|module:stat> <alltime/monthly/yearly> (page)</red>'
-    achievements: '{prefix} <red>Use: /ba achievements (category) (achievement) (page)</red>'
-    level: '{prefix} <red>Use: /ba level</red>'
-    credits: '{prefix} <red>Use: /ba credits [pay] <player> <amount></red>'
-    store: '{prefix} <red>Use: /ba store (page <number>|category <id> [page]|module <id> [page]|buy <category> <item> [page]|confirm <category> <item> [page]|purchase <category> <item> [page]|select <category> <item>)</red>'
-    team: '{prefix} <red>Use: /ba team (join <team_id>)</red>'
+    join: '{prefix} <red>Use: /ts join [arena|(filter [page])] (player)</red>'
+    quickjoin: '{prefix} <red>Use: /ts quickjoin (player)</red>'
+    leave: '{prefix} <red>Use: /ts leave [player]</red>'
+    vote: '{prefix} <red>Use: /ts vote [minigame|page <number>]</red>'
+    party: '{prefix} <red>Use: /ts party <list|type|create|members|invite|search|join|accept|reject|kick|leader|leave> (player)</red>'
+    stats: '{prefix} <red>Use: /ts stats (category) (alltime/monthly/yearly) (page)</red>'
+    tops: '{prefix} <red>Use: /ts tops (category) (alltime/monthly/yearly) (page) or /ts tops <stat|module:stat> <alltime/monthly/yearly> (page)</red>'
+    achievements: '{prefix} <red>Use: /ts achievements (category) (achievement) (page)</red>'
+    level: '{prefix} <red>Use: /ts level</red>'
+    credits: '{prefix} <red>Use: /ts credits [pay] <player> <amount></red>'
+    store: '{prefix} <red>Use: /ts store (page <number>|category <id> [page]|module <id> [page]|buy <category> <item> [page]|confirm <category> <item> [page]|purchase <category> <item> [page]|select <category> <item>)</red>'
+    team: '{prefix} <red>Use: /ts team (join <team_id>)</red>'
   
   credits:
     balance: '{prefix} <yellow>You have <gold>{amount}</gold> credits.</yellow>'
@@ -141,7 +141,7 @@ player_commands:
       member: Member
     invite:
       sent: '{prefix} <green>Invitation sent to <white>{player}</white>.</green>'
-      received: '{prefix} <yellow>You received a party invite from <white>{leader}</white>. Use /ba party accept {leader}.</yellow>'
+      received: '{prefix} <yellow>You received a party invite from <white>{leader}</white>. Use /ts party accept {leader}.</yellow>'
       already_sent: '{prefix} <red>You already invited {player}.</red>'
       not_found: '{prefix} <red>You have no invite from that player.</red>'
       rejected: '{prefix} <red>{player} rejected your party invitation.</red>'
@@ -195,8 +195,8 @@ player_commands:
       - <dark_gray><strikethrough>--------------------------</dark_gray><reset>
       empty: '{prefix} <yellow>No players have results for</yellow> <white>{stat_display}</white> <yellow>in</yellow> <white>{period_label}</white><yellow> yet.</yellow>'
     errors:
-      unknown_stat: '{prefix} <red>Unknown stat:</red> <yellow>{stat_input}</yellow><red>. Use /ba stats to view available stats.</red>'
-      ambiguous_stat: '{prefix} <red>That stat exists in multiple modules.</red> <yellow>Use /ba tops <module:stat> <alltime/monthly/yearly></yellow> <red>for:</red> <gray>{modules}</gray>'
+      unknown_stat: '{prefix} <red>Unknown stat:</red> <yellow>{stat_input}</yellow><red>. Use /ts stats to view available stats.</red>'
+      ambiguous_stat: '{prefix} <red>That stat exists in multiple modules.</red> <yellow>Use /ts tops <module:stat> <alltime/monthly/yearly></yellow> <red>for:</red> <gray>{modules}</gray>'
       invalid_period: '{prefix} <red>Unknown period:</red> <yellow>{period}</yellow><red>. Use:</red> <white>{valid_periods}</white><red>.</red>'
       category_not_found: '{prefix} <red>Unknown stats category:</red> <yellow>{category}</yellow><red>.</red>'
     scope:
@@ -306,7 +306,7 @@ scoreboards:
       - ''
       - <yellow>Waiting...
       - ''
-      - <yellow>events.theysix.tech</yellow>
+      - <yellow>https://events.theysix.tech</yellow>
     starting:
       title: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <gold>★</gold>
       list:
@@ -316,7 +316,7 @@ scoreboards:
       - ''
       - <yellow>Starting in <gold>{time}</gold>
       - ''
-      - <yellow>events.theysix.tech</yellow>
+      - <yellow>https://events.theysix.tech</yellow>
   limbo:
     title: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <gold>★</gold></bold>
     list:
@@ -333,7 +333,7 @@ scoreboards:
     - ''
     - <gold>♛</gold> <yellow>Your Position:</yellow> <white>{place_player}</white> <gold>✯ {stars_player}</gold>
     - ''
-    - <yellow>events.theysix.tech</yellow>
+    - <yellow>https://events.theysix.tech</yellow>
   in_game:
     starting:
       title: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <gold>★</gold>
@@ -345,7 +345,7 @@ scoreboards:
       - ''
       - <yellow>Starting in <gold>{time}</gold>
       - ''
-      - <yellow>events.theysix.tech</yellow>
+      - <yellow>https://events.theysix.tech</yellow>
   finish:
     title: <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <gold>★</gold></bold>
     list:
@@ -361,7 +361,7 @@ scoreboards:
     - ''
     - <gold>♛</gold> <yellow>Your Position:</yellow> <white>{place_player}</white> <gold>✯ {stars_player}</gold>
     - ''
-    - <yellow>events.theysix.tech</yellow>
+    - <yellow>https://events.theysix.tech</yellow>
 
 # ----------------------------------------
 # Action Bar Messages
@@ -550,7 +550,7 @@ plugin_info:
 - <bold><gradient:#4CADD0:#B2F9FF>TheySix Events</gradient> <gray>-</gray> <yellow>{plugin_version}</yellow>
 - <gray>Created by TheySix (events.theysix.tech)</gray>
 - ' '
-- <gray>Use</gray> <gold>/ba help</gold> <gray>to get help.</gray>
+- <gray>Use</gray> <gold>/ts help</gold> <gray>to get help.</gray>
 - ' '
 - <dark_gray><strikethrough>--------------------------</dark_gray><reset>
 
@@ -588,7 +588,7 @@ admin_commands:
   delete:
     success: '{prefix} <green>Arena {arena_id} deleted successfully.</green>'
     not_found: '{prefix} <red>Arena {arena_id} does not exist.</red>'
-    confirm: '{prefix} <yellow>Type ''/baa delete {arena_id} confirm'' to confirm deletion.</yellow>'
+    confirm: '{prefix} <yellow>Type ''/tsa delete {arena_id} confirm'' to confirm deletion.</yellow>'
   
   enable:
     success: '{prefix} <green>Arena {arena_id} enabled.</green>'
@@ -648,7 +648,7 @@ admin_commands:
     delete:
       success: '{prefix} <green>Lobby ''{lobby_id}'' deleted successfully.</green>'
       not_found: '{prefix} <red>Lobby ''{lobby_id}'' does not exist.</red>'
-      confirm: '{prefix} <yellow>Type ''/baa lobby delete {lobby_id} confirm'' to confirm deletion.</yellow>'
+      confirm: '{prefix} <yellow>Type ''/tsa lobby delete {lobby_id} confirm'' to confirm deletion.</yellow>'
     
     list:
       header: '{prefix} <green>Available lobbies:</green>'
@@ -720,7 +720,7 @@ admin_commands:
     remove:
       success: '{prefix} <green>Minigame {game} removed from arena {arena_id}.</green>'
       not_found: '{prefix} <red>This minigame is not configured in this arena.</red>'
-      confirm: '{prefix} <yellow>Type ''/baa game {arena_id} remove {game} confirm'' to confirm.</yellow>'
+      confirm: '{prefix} <yellow>Type ''/tsa game {arena_id} remove {game} confirm'' to confirm.</yellow>'
     
     list:
       header: '{prefix} <green>Minigames in arena {arena_id}:</green>'
@@ -790,7 +790,7 @@ admin_commands:
     delete:
       success: '{prefix} <green>Module {module} deleted successfully.</green>'
       failed: '{prefix} <red>Failed to delete module {module}. Check file permissions.</red>'
-      confirm: '{prefix} <yellow>Type ''/baa module delete {module} confirm'' to confirm deletion.</yellow>'
+      confirm: '{prefix} <yellow>Type ''/tsa module delete {module} confirm'' to confirm deletion.</yellow>'
     store:
       invalid_internal_id: '{prefix} <red>Invalid internal id: {value}</red>'
       invalid_upload: '{prefix} <red>Module {module} is not properly uploaded to the store. Please notify the module developer.</red>'
@@ -824,7 +824,7 @@ admin_commands:
   # Signs Management
   # ====================================
   signs:
-    deprecated: '{prefix} <yellow>Sign text creation is deprecated. Use /baa signs set instead.</yellow>'
+    deprecated: '{prefix} <yellow>Sign text creation is deprecated. Use /tsa signs set instead.</yellow>'
     create:
       join_mode: '{prefix} <yellow>Click on an empty sign to create a JOIN sign for arena {arena_id}.</yellow>'
       join_mode_info: '{prefix} <gray>Left click the sign within 30 seconds or type ''cancel'' to abort.</gray>'
@@ -914,8 +914,8 @@ admin_commands:
     invalid_game: '{prefix} <red>Unknown minigame: {game}</red>'
     must_be_player: '{prefix} <red>You must be a player to execute this command.</red>'
     incomplete_setup: '{prefix} <red>Complete the basic arena setup first:</red>'
-    incomplete_setup_list: ' <red>- Set waiting lobby (/baa arena {arena_id} setlobby)</red>'
-    incomplete_setup_list2: ' <red>- Set arena name (/baa arena {arena_id} setname <name>)</red>'
+    incomplete_setup_list: ' <red>- Set waiting lobby (/tsa arena {arena_id} setlobby)</red>'
+    incomplete_setup_list2: ' <red>- Set arena name (/tsa arena {arena_id} setname <name>)</red>'
     incomplete_setup_list3: ' <red>- Set min/max players</red>'
     incomplete_setup_list4: ' <red>- Add and configure at least one minigame</red>'
     no_permission: '{prefix} <red>You don''t have permission to use this command.</red>'
@@ -923,62 +923,62 @@ admin_commands:
     invalid_boolean: '{prefix} <red>Invalid value. Use ''true'' or ''false''.</red>'
     invalid_game_type: '{prefix} <red>Invalid game type: {type}. Use ''micro'' or ''mini''.</red>'
     game_type_mismatch: '{prefix} <red>Game {game} is a {type}. Use the correct type when adding it.</red>'
-    unknown_subcommand: '{prefix} <red>Unknown subcommand. Use ''/baa help'' for available commands.</red>'
+    unknown_subcommand: '{prefix} <red>Unknown subcommand. Use ''/tsa help'' for available commands.</red>'
     console_not_supported: '{prefix} <red>This command can only be executed by a player.</red>'
   
   # ====================================
   # Usage Messages
   # ====================================
   usage:
-    main: '{prefix} <yellow>Usage: /baa <command> [args]</yellow>'
+    main: '{prefix} <yellow>Usage: /tsa <command> [args]</yellow>'
     help: '{prefix} <yellow>Available commands:</yellow>'
-    create: '{prefix} <yellow>Usage: /baa create <id> <standalone|party></yellow>'
-    delete: '{prefix} <yellow>Usage: /baa delete <id> [confirm]</yellow>'
-    enable: '{prefix} <yellow>Usage: /baa enable <id></yellow>'
-    disable: '{prefix} <yellow>Usage: /baa disable <id></yellow>'
-    list: '{prefix} <yellow>Usage: /baa list</yellow>'
-    info: '{prefix} <yellow>Usage: /baa info <id></yellow>'
-    stick: '{prefix} <yellow>Usage: /baa stick</yellow>'
-    pos: '{prefix} <yellow>Usage: /baa pos1 | /baa pos2 | /baa clearselection</yellow>'
-    arena_setlobby: '{prefix} <yellow>Usage: /baa arena <id> setlobby</yellow>'
-    arena_setname: '{prefix} <yellow>Usage: /baa arena <id> setname <name></yellow>'
-    arena_setmode: '{prefix} <yellow>Usage: /baa arena <id> setmode <standalone|party></yellow>'
-    arena_setrounds: '{prefix} <yellow>Usage: /baa arena <id> setrounds <number></yellow>'
-    arena_players: '{prefix} <yellow>Usage: /baa arena <id> minplayers|maxplayers <amount></yellow>'
-    credits: '{prefix} <yellow>Usage: /baa credits give <player> <amount></yellow>'
-    xp: '{prefix} <yellow>Usage: /baa xp give <player> <amount></yellow>'
-    game_add: '{prefix} <yellow>Usage: /baa game <id> add <micro|mini> <minigame|list></yellow>'
-    game_remove: '{prefix} <yellow>Usage: /baa game <id> remove <minigame> [confirm]</yellow>'
-    game_list: '{prefix} <yellow>Usage: /baa game <id> list</yellow>'
-    game_enable: '{prefix} <yellow>Usage: /baa game <id> <minigame> enable</yellow>'
-    game_disable: '{prefix} <yellow>Usage: /baa game <id> <minigame> disable</yellow>'
-    game_bounds: '{prefix} <yellow>Usage: /baa game <id> <minigame> bounds set</yellow>'
-    game_spawn: '{prefix} <yellow>Usage: /baa game <id> <minigame> spawn <add|remove|list|teleport> [number]</yellow>'
-    game_time: '{prefix} <yellow>Usage: /baa game <id> <minigame> time <minutes></yellow>'
-    game_deathblock: '{prefix} <yellow>Usage: /baa game <id> <minigame> deathblock <material></yellow>'
-    game_finishline: '{prefix} <yellow>Usage: /baa game <id> <minigame> finishline set</yellow>'
-    game_floor: '{prefix} <yellow>Usage: /baa game <id> <minigame> floor set</yellow>'
-    module: '{prefix} <yellow>Usage: /baa module <info|list|reload|load|unload|delete|store> [args]</yellow>'
-    module_info: '{prefix} <yellow>Usage: /baa module info <module_id></yellow>'
-    module_list: '{prefix} <yellow>Usage: /baa module list</yellow>'
-    module_reload: '{prefix} <yellow>Usage: /baa module reload <module_id></yellow>'
-    module_load: '{prefix} <yellow>Usage: /baa module load <module_id></yellow>'
-    module_unload: '{prefix} <yellow>Usage: /baa module unload <module_id></yellow>'
-    module_delete: '{prefix} <yellow>Usage: /baa module delete <module_id> [confirm]</yellow>'
-    module_store: '{prefix} <yellow>Usage: /baa module store <search|originals|download|update> [args]</yellow>'
-    module_store_search: '{prefix} <yellow>Usage: /baa module store search [query] [page <number>]</yellow>'
-    module_store_originals: '{prefix} <yellow>Usage: /baa module store originals [query] [page <number>]</yellow>'
-    module_store_download: '{prefix} <yellow>Usage: /baa module store download <internal_id></yellow>'
-    module_store_update: '{prefix} <yellow>Usage: /baa module store update <internal_id> [--force]</yellow>'
-    setmainlobby: '{prefix} <yellow>Usage: /baa setmainlobby</yellow>'
-    signs: '{prefix} <yellow>Usage: /baa signs set <join|quickjoin|auto|top> ...</yellow>'
-    signs_join: '{prefix} <yellow>Usage: /baa signs set join <arena_id|server></yellow>'
-    signs_top: '{prefix} <yellow>Usage: /baa signs set top <stat|module:stat> <position> <alltime|monthly|yearly></yellow>'
-    goto: '{prefix} <yellow>Usage: /baa goto <id> <minigame></yellow>'
-    teleport: '{prefix} <yellow>Usage: /baa teleport <player> <id></yellow>'
-    forcestart: '{prefix} <yellow>Usage: /baa forcestart <id></yellow>'
-    forcestop: '{prefix} <yellow>Usage: /baa forcestop <id></yellow>'
-    reload: '{prefix} <yellow>Usage: /baa reload <all|settings|rewards|sounds|lang|achievements|arenas|games|users|signs|global|data></yellow>'
+    create: '{prefix} <yellow>Usage: /tsa create <id> <standalone|party></yellow>'
+    delete: '{prefix} <yellow>Usage: /tsa delete <id> [confirm]</yellow>'
+    enable: '{prefix} <yellow>Usage: /tsa enable <id></yellow>'
+    disable: '{prefix} <yellow>Usage: /tsa disable <id></yellow>'
+    list: '{prefix} <yellow>Usage: /tsa list</yellow>'
+    info: '{prefix} <yellow>Usage: /tsa info <id></yellow>'
+    stick: '{prefix} <yellow>Usage: /tsa stick</yellow>'
+    pos: '{prefix} <yellow>Usage: /tsa pos1 | /tsa pos2 | /tsa clearselection</yellow>'
+    arena_setlobby: '{prefix} <yellow>Usage: /tsa arena <id> setlobby</yellow>'
+    arena_setname: '{prefix} <yellow>Usage: /tsa arena <id> setname <name></yellow>'
+    arena_setmode: '{prefix} <yellow>Usage: /tsa arena <id> setmode <standalone|party></yellow>'
+    arena_setrounds: '{prefix} <yellow>Usage: /tsa arena <id> setrounds <number></yellow>'
+    arena_players: '{prefix} <yellow>Usage: /tsa arena <id> minplayers|maxplayers <amount></yellow>'
+    credits: '{prefix} <yellow>Usage: /tsa credits give <player> <amount></yellow>'
+    xp: '{prefix} <yellow>Usage: /tsa xp give <player> <amount></yellow>'
+    game_add: '{prefix} <yellow>Usage: /tsa game <id> add <micro|mini> <minigame|list></yellow>'
+    game_remove: '{prefix} <yellow>Usage: /tsa game <id> remove <minigame> [confirm]</yellow>'
+    game_list: '{prefix} <yellow>Usage: /tsa game <id> list</yellow>'
+    game_enable: '{prefix} <yellow>Usage: /tsa game <id> <minigame> enable</yellow>'
+    game_disable: '{prefix} <yellow>Usage: /tsa game <id> <minigame> disable</yellow>'
+    game_bounds: '{prefix} <yellow>Usage: /tsa game <id> <minigame> bounds set</yellow>'
+    game_spawn: '{prefix} <yellow>Usage: /tsa game <id> <minigame> spawn <add|remove|list|teleport> [number]</yellow>'
+    game_time: '{prefix} <yellow>Usage: /tsa game <id> <minigame> time <minutes></yellow>'
+    game_deathblock: '{prefix} <yellow>Usage: /tsa game <id> <minigame> deathblock <material></yellow>'
+    game_finishline: '{prefix} <yellow>Usage: /tsa game <id> <minigame> finishline set</yellow>'
+    game_floor: '{prefix} <yellow>Usage: /tsa game <id> <minigame> floor set</yellow>'
+    module: '{prefix} <yellow>Usage: /tsa module <info|list|reload|load|unload|delete|store> [args]</yellow>'
+    module_info: '{prefix} <yellow>Usage: /tsa module info <module_id></yellow>'
+    module_list: '{prefix} <yellow>Usage: /tsa module list</yellow>'
+    module_reload: '{prefix} <yellow>Usage: /tsa module reload <module_id></yellow>'
+    module_load: '{prefix} <yellow>Usage: /tsa module load <module_id></yellow>'
+    module_unload: '{prefix} <yellow>Usage: /tsa module unload <module_id></yellow>'
+    module_delete: '{prefix} <yellow>Usage: /tsa module delete <module_id> [confirm]</yellow>'
+    module_store: '{prefix} <yellow>Usage: /tsa module store <search|originals|download|update> [args]</yellow>'
+    module_store_search: '{prefix} <yellow>Usage: /tsa module store search [query] [page <number>]</yellow>'
+    module_store_originals: '{prefix} <yellow>Usage: /tsa module store originals [query] [page <number>]</yellow>'
+    module_store_download: '{prefix} <yellow>Usage: /tsa module store download <internal_id></yellow>'
+    module_store_update: '{prefix} <yellow>Usage: /tsa module store update <internal_id> [--force]</yellow>'
+    setmainlobby: '{prefix} <yellow>Usage: /tsa setmainlobby</yellow>'
+    signs: '{prefix} <yellow>Usage: /tsa signs set <join|quickjoin|auto|top> ...</yellow>'
+    signs_join: '{prefix} <yellow>Usage: /tsa signs set join <arena_id|server></yellow>'
+    signs_top: '{prefix} <yellow>Usage: /tsa signs set top <stat|module:stat> <position> <alltime|monthly|yearly></yellow>'
+    goto: '{prefix} <yellow>Usage: /tsa goto <id> <minigame></yellow>'
+    teleport: '{prefix} <yellow>Usage: /tsa teleport <player> <id></yellow>'
+    forcestart: '{prefix} <yellow>Usage: /tsa forcestart <id></yellow>'
+    forcestop: '{prefix} <yellow>Usage: /tsa forcestop <id></yellow>'
+    reload: '{prefix} <yellow>Usage: /tsa reload <all|settings|rewards|sounds|lang|achievements|arenas|games|users|signs|global|data></yellow>'
   
   # ====================================
   # Help Command
@@ -988,42 +988,42 @@ admin_commands:
     - <bold><gradient:#4CADD0:#B2F9FF>TheySix Events Admin</gradient></bold> <gray>» Help</gray>
     - <dark_gray><strikethrough>----------------------------------------</strikethrough></dark_gray>
     - ' <yellow><bold>Basic Commands:</bold></yellow>'
-    - '  <gold>/baa create <id> <mode></gold> <dark_gray>-</dark_gray> <gray>Create new arena</gray>'
-    - '  <gold>/baa delete <id></gold> <dark_gray>-</dark_gray> <gray>Delete arena</gray>'
-    - '  <gold>/baa enable <id></gold> <dark_gray>-</dark_gray> <gray>Enable arena</gray>'
-    - '  <gold>/baa disable <id></gold> <dark_gray>-</dark_gray> <gray>Disable arena</gray>'
-    - '  <gold>/baa list</gold> <dark_gray>-</dark_gray> <gray>List all arenas</gray>'
-    - '  <gold>/baa info <id></gold> <dark_gray>-</dark_gray> <gray>Arena information</gray>'
+    - '  <gold>/tsa create <id> <mode></gold> <dark_gray>-</dark_gray> <gray>Create new arena</gray>'
+    - '  <gold>/tsa delete <id></gold> <dark_gray>-</dark_gray> <gray>Delete arena</gray>'
+    - '  <gold>/tsa enable <id></gold> <dark_gray>-</dark_gray> <gray>Enable arena</gray>'
+    - '  <gold>/tsa disable <id></gold> <dark_gray>-</dark_gray> <gray>Disable arena</gray>'
+    - '  <gold>/tsa list</gold> <dark_gray>-</dark_gray> <gray>List all arenas</gray>'
+    - '  <gold>/tsa info <id></gold> <dark_gray>-</dark_gray> <gray>Arena information</gray>'
     - ' '
     - ' <yellow><bold>Selection Tool:</bold></yellow>'
-    - '  <gold>/baa stick</gold> <dark_gray>-</dark_gray> <gray>Get Magic Stick</gray>'
-    - '  <gold>/baa pos1</gold> <dark_gray>-</dark_gray> <gray>Set position 1</gray>'
-    - '  <gold>/baa pos2</gold> <dark_gray>-</dark_gray> <gray>Set position 2</gray>'
-    - '  <gold>/baa clearselection</gold> <dark_gray>-</dark_gray> <gray>Clear selection</gray>'
+    - '  <gold>/tsa stick</gold> <dark_gray>-</dark_gray> <gray>Get Magic Stick</gray>'
+    - '  <gold>/tsa pos1</gold> <dark_gray>-</dark_gray> <gray>Set position 1</gray>'
+    - '  <gold>/tsa pos2</gold> <dark_gray>-</dark_gray> <gray>Set position 2</gray>'
+    - '  <gold>/tsa clearselection</gold> <dark_gray>-</dark_gray> <gray>Clear selection</gray>'
     - ' '
     - ' <yellow><bold>Arena Configuration:</bold></yellow>'
-    - '  <gold>/baa arena <id> setlobby</gold> <dark_gray>-</dark_gray> <gray>Set waiting lobby</gray>'
-    - '  <gold>/baa arena <id> setname <name></gold> <dark_gray>-</dark_gray> <gray>Set name</gray>'
-    - '  <gold>/baa arena <id> setmode <mode></gold> <dark_gray>-</dark_gray> <gray>Change mode</gray>'
-    - '  <gold>/baa arena <id> setrounds <n></gold> <dark_gray>-</dark_gray> <gray>Set rounds (party)</gray>'
-    - '  <gold>/baa arena <id> minplayers/maxplayers <n></gold> <dark_gray>-</dark_gray> <gray>Set players</gray>'
+    - '  <gold>/tsa arena <id> setlobby</gold> <dark_gray>-</dark_gray> <gray>Set waiting lobby</gray>'
+    - '  <gold>/tsa arena <id> setname <name></gold> <dark_gray>-</dark_gray> <gray>Set name</gray>'
+    - '  <gold>/tsa arena <id> setmode <mode></gold> <dark_gray>-</dark_gray> <gray>Change mode</gray>'
+    - '  <gold>/tsa arena <id> setrounds <n></gold> <dark_gray>-</dark_gray> <gray>Set rounds (party)</gray>'
+    - '  <gold>/tsa arena <id> minplayers/maxplayers <n></gold> <dark_gray>-</dark_gray> <gray>Set players</gray>'
     - ' '
     - ' <yellow><bold>Minigame Management:</bold></yellow>'
-    - '  <gold>/baa game <id> add <micro|mini> <game></gold> <dark_gray>-</dark_gray> <gray>Add minigame</gray>'
-    - '  <gold>/baa game <id> remove <game></gold> <dark_gray>-</dark_gray> <gray>Remove minigame</gray>'
-    - '  <gold>/baa game <id> list</gold> <dark_gray>-</dark_gray> <gray>List minigames</gray>'
-    - '  <gold>/baa game <id> <game> ...</gold> <dark_gray>-</dark_gray> <gray>Configure minigame</gray>'
+    - '  <gold>/tsa game <id> add <micro|mini> <game></gold> <dark_gray>-</dark_gray> <gray>Add minigame</gray>'
+    - '  <gold>/tsa game <id> remove <game></gold> <dark_gray>-</dark_gray> <gray>Remove minigame</gray>'
+    - '  <gold>/tsa game <id> list</gold> <dark_gray>-</dark_gray> <gray>List minigames</gray>'
+    - '  <gold>/tsa game <id> <game> ...</gold> <dark_gray>-</dark_gray> <gray>Configure minigame</gray>'
     - '  <gray>See wiki for game-specific commands</gray>'
     - ' '
     - ' <yellow><bold>Utilities:</bold></yellow>'
-    - '  <gold>/baa goto <id> <game></gold> <dark_gray>-</dark_gray> <gray>Teleport to game</gray>'
-    - '  <gold>/baa teleport <player> <id></gold> <dark_gray>-</dark_gray> <gray>TP player to arena</gray>'
-    - '  <gold>/baa module <action> <module></gold> <dark_gray>-</dark_gray> <gray>Manage modules</gray>'
-    - '  <gold>/baa module store <action></gold> <dark_gray>-</dark_gray> <gray>Search/download module store</gray>'
-    - '  <gold>/baa credits give <player> <amount></gold> <dark_gray>-</dark_gray> <gray>Give credits</gray>'
-    - '  <gold>/baa setmainlobby</gold> <dark_gray>-</dark_gray> <gray>Set main lobby</gray>'
-    - '  <gold>/baa signs set <type></gold> <dark_gray>-</dark_gray> <gray>Register a sign (join/quickjoin/auto/top)</gray>'
-    - '  <gold>/baa reload <file|all></gold> <dark_gray>-</dark_gray> <gray>Reload config</gray>'
+    - '  <gold>/tsa goto <id> <game></gold> <dark_gray>-</dark_gray> <gray>Teleport to game</gray>'
+    - '  <gold>/tsa teleport <player> <id></gold> <dark_gray>-</dark_gray> <gray>TP player to arena</gray>'
+    - '  <gold>/tsa module <action> <module></gold> <dark_gray>-</dark_gray> <gray>Manage modules</gray>'
+    - '  <gold>/tsa module store <action></gold> <dark_gray>-</dark_gray> <gray>Search/download module store</gray>'
+    - '  <gold>/tsa credits give <player> <amount></gold> <dark_gray>-</dark_gray> <gray>Give credits</gray>'
+    - '  <gold>/tsa setmainlobby</gold> <dark_gray>-</dark_gray> <gray>Set main lobby</gray>'
+    - '  <gold>/tsa signs set <type></gold> <dark_gray>-</dark_gray> <gray>Register a sign (join/quickjoin/auto/top)</gray>'
+    - '  <gold>/tsa reload <file|all></gold> <dark_gray>-</dark_gray> <gray>Reload config</gray>'
     - ' '
     - ' <gray>For detailed help:</gray> <yellow>https://events.theysix.tech</yellow>'
     - <dark_gray><strikethrough>----------------------------------------</strikethrough></dark_gray>
@@ -1061,13 +1061,13 @@ admin:
     unknown_command: '{prefix} <red>That command does not exist, check that you have typed it correctly.</red>'
   
   info:
-    sets_spawn: '{prefix} <red>There is no spawn configured for TheySix Events. Do it now with /ba setmainlobby</red>'
+    sets_spawn: '{prefix} <red>There is no spawn configured for TheySix Events. Do it now with /ts setmainlobby</red>'
     no_modules:
     - '{prefix} <red>No modules detected...</red>'
-    - '{prefix} <yellow>Download them with: <white>/baa module store download <id></white></yellow>'
+    - '{prefix} <yellow>Download them with: <white>/tsa module store download <id></white></yellow>'
     - '{prefix} <yellow>The ID is obtained from:</yellow>'
-    - '{prefix} <yellow>  Original modules: <white>/baa module store originals</white></yellow>'
-    - '{prefix} <yellow>  Or search (originals or community): <white>/baa module store search <query></white></yellow>'
+    - '{prefix} <yellow>  Original modules: <white>/tsa module store originals</white></yellow>'
+    - '{prefix} <yellow>  Or search (originals or community): <white>/tsa module store search <query></white></yellow>'
     cancelled_setup: '{prefix} <yellow>Arena creation process cancelled.</yellow>'
     paused_setup: '{prefix} <yellow>Paused arena creation process.</yellow>'
     selected_mini_game_setup: '{prefix} <yellow>You have selected the mini-game {mini_game}.</yellow>'

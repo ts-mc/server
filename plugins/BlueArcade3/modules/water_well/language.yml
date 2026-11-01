@@ -35,10 +35,10 @@ scoreboard:
     - ""
     - "<aqua>Your Score:</aqua> <white>{player_score} pts</white>"
     - ""
-    - "<yellow>www.blueva.net</yellow>"
+    - "<yellow>https://events.theysix.tech</yellow>"
 
 setup_messages:
-  not_configured: "{prefix} <red>Bounds are not configured! Use /baa game {arena_id} water_well bounds set</red>"
+  not_configured: "{prefix} <red>Bounds are not configured! Use /tsa game {arena_id} water_well bounds set</red>"
 # Water Well Module - English (UK)
 # Only Water Well-specific content
 

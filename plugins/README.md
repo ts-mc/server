@@ -20,7 +20,6 @@ This folder contains every plugin on **TheySix Events**
 | [`Essentials/`](Essentials/README.md) | Spawn, kits, teleport, economy |
 | [`DeluxeHub/`](DeluxeHub/README.md) | Lobby join items and server selector |
 | [`DeluxeMenus/`](DeluxeMenus/README.md) | Inventory GUI menus |
-| [`DeluxeTags/`](DeluxeTags/README.md) | Chat tags |
 | [`UltraCosmetics/`](UltraCosmetics/README.md) | Hats, gadgets, pets, particles |
 | [`FancyNpcs/`](FancyNpcs/README.md) | Server-side NPCs |
 | [`FancyHolograms/`](FancyHolograms/README.md) | Floating text holograms |

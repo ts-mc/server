@@ -14,7 +14,6 @@ EasyCommandBlocker hides or blocks commands from players on **TheySix Events**
 
 | Command | Reason |
 |---------|--------|
-| `/plugins` | hide the plugin list |
 | `/version`, `/about` | hide server internals |
 | `/arcade`, `/bluearcade`, `/barcade` | upstream minigames branding |
 | `/arcadeadmin`, `/bluearcadeadmin`, `/barcadea` | upstream admin branding |

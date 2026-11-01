@@ -1,4 +1,4 @@
 # LPC chat format (2026-10-29). LPC is the only chat formatter on this server.
-# {prefix} = LuckPerms rank prefix. DeluxeTags tags are intentionally NOT shown in chat (owner request).
+# {prefix} = LuckPerms rank prefix. Rank labels come from LuckPerms; cosmetic tags are not shown in chat.
 chat-format: "{prefix}&f{name}&8: &f{message}"
 group-formats: {}

@@ -58,14 +58,14 @@ scoreboard:
       - "<white>Alive:</white> <green>{alive}</green>"
       - "<white>Spectators:</white> <gray>{spectators}</gray>"
       - ""
-      - "<yellow>www.blueva.net</yellow>"
+      - "<yellow>https://events.theysix.tech</yellow>"
 
 setup_messages:
   set_success: "{prefix} <green>Floor area set: {blocks} blocks ({x}×{y}×{z})</green>"
   must_use_stick: "{prefix} <red>Use the Magic Stick to select the floor region first.</red>"
-  not_configured: "{prefix} <red>Floor is not configured! Use /baa game {arena_id} red_alert floor set</red>"
-  usage_floor: "{prefix} <yellow>Usage: /baa game <id> <minigame> floor set</yellow>"
-  usage_setmode: "{prefix} <yellow>Usage: /baa game <id> red_alert setmode <chaos|trail></yellow>"
+  not_configured: "{prefix} <red>Floor is not configured! Use /tsa game {arena_id} red_alert floor set</red>"
+  usage_floor: "{prefix} <yellow>Usage: /tsa game <id> <minigame> floor set</yellow>"
+  usage_setmode: "{prefix} <yellow>Usage: /tsa game <id> red_alert setmode <chaos|trail></yellow>"
   mode_set: "{prefix} <green>Mode set to</green> <yellow>{mode}</yellow><green>.</green>"
 # Red Alert Module - English (UK)
 # Only Red Alert-specific content

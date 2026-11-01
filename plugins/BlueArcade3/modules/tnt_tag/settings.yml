@@ -5,7 +5,7 @@ menus:
 
 round:
   # Duration of each TNT Tag round in seconds when not overridden by the game setup.
-  # The /baa game <id> tnt_tag time <seconds> command controls the per-round timer.
+  # The /tsa game <id> tnt_tag time <seconds> command controls the per-round timer.
   default_seconds: 15
   convert_setup_time_from_minutes: true
   minutes_conversion_minimum_seconds: 60

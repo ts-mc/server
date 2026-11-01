@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 replay:
   opened: "{prefix} <green>Opening replay <white>{id}</white>...</green>"
@@ -14,8 +14,8 @@ replay:
   delete_failed: "{prefix} <red>Could not delete that replay (it may be in use by a viewer).</red>"
   cleanup: "{prefix} <green>Deleted <white>{count}</white> expired replay(s).</green>"
   usage:
-    player: "{prefix} <red>Use: /ba replay [module_id] [replay_id] or /ba replay leave</red>"
-    admin: "{prefix} <red>Use: /baa replay (list|delete <id>|cleanup|open <id>)</red>"
+    player: "{prefix} <red>Use: /ts replay [module_id] [replay_id] or /ts replay leave</red>"
+    admin: "{prefix} <red>Use: /tsa replay (list|delete <id>|cleanup|open <id>)</red>"
   errors:
     unavailable: "{prefix} <red>The replay system is not available right now.</red>"
     disabled: "{prefix} <red>The replay system is disabled on this server.</red>"
@@ -32,9 +32,9 @@ replay:
     module_empty: "{prefix} <yellow>No replays are available for module <white>{module}</white>.</yellow>"
     header: "{prefix} <yellow>Available replays:</yellow>"
     module_header: "{prefix} <yellow>Available replays for <white>{module}</white>:</yellow>"
-    item: "  <light_purple>{id}</light_purple> <dark_gray>-</dark_gray> <gray>arena {arena} • {date} • {duration}</gray>"
+    item: "  <#4CADD0>{id}</#4CADD0> <dark_gray>-</dark_gray> <gray>arena {arena} • {date} • {duration}</gray>"
     showing: "{prefix} <gray>Showing {shown}/{total}.</gray>"
-    module_showing: "{prefix} <gray>Showing {shown}/{total}. Use /ba replay {module} <id> to open a specific one.</gray>"
+    module_showing: "{prefix} <gray>Showing {shown}/{total}. Use /ts replay {module} <id> to open a specific one.</gray>"
   playback:
     chat: "<gray>[Replay]</gray> <white>{player}</white><gray>:</gray> {message}"
     actionbar: "<gray>Replay</gray> <dark_gray>|</dark_gray> <white>{elapsed}</white><gray>/</gray><white>{total}</white> <dark_gray>|</dark_gray> {status} <dark_gray>|</dark_gray> <yellow>{speed}x</yellow>"

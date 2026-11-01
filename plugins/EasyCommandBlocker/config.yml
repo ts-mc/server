@@ -7,7 +7,7 @@ tab:
       - /hub
       - /spawn
 blocked_command_default_actions:
-  - 'message: &8[&c&l!&8] &cYou do not have permission to use that command.'
+  - 'message: §x§4§C§A§D§D§0§lѕ§x§6§0§B§C§D§9§lᴇ§x§7§5§C§B§E§3§lʀ§x§8§9§D§B§E§C§lᴠ§x§9§E§E§A§F§6§lᴇ§x§B§2§F§9§F§F§lʀ §7| &cYou do not have permission to use that command.'
   - 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
   - 'title: 20;40;20;&cAccess Denied;&7Command not recognized or blocked.'
 use_commands_as_whitelist: false
@@ -21,8 +21,6 @@ commands:
   - /bungee
   - /lpv
   - /luckpermsvelocity
-  - /plugins
-  - /pl
   - /?
   - /help
   - /about
@@ -32,7 +30,7 @@ commands:
   - /me
   # TheySix Events — hide the upstream command names so players never see the
   # old "Blue Arcade" branding. Everything is reached through /ts, /tse and the
-  # GUI items instead; /ba stays available as a fallback for staff and signs.
+  # GUI items instead; use /ts for player actions and /tsa for administration.
   - /arcade
   - /arcadeadmin
   - /barcade
@@ -40,6 +38,7 @@ commands:
   - /barcadea
   - /bluearcadeadmin
   - /baa
+  - /ba
   # MyCommand's own admin commands — players have no reason to see or run these.
   - /mycommand
   - /mycmd

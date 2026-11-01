@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 #
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 store_catalog:
   categories:
@@ -59,7 +59,7 @@ store_catalog:
           description:
             - '<gray>Humo espeso al morir.</gray>'
         ender_shatter:
-          display_name: '<dark_purple>Ender Shatter</dark_purple>'
+          display_name: '<#4CADD0>Ender Shatter</#4CADD0>'
           description:
             - '<gray>Las chispas del portal se dispersan.</gray>'
     kill_effects:
@@ -93,7 +93,7 @@ store_catalog:
           description:
             - '<gray>Un halo brillante sobre tu cabeza.</gray>'
         confetti:
-          display_name: '<light_purple>Confeti</light_purple>'
+          display_name: '<#4CADD0>Confeti</#4CADD0>'
           description:
             - '<gray>La celebración brilla.</gray>'
         totem_flash:
@@ -163,7 +163,7 @@ store_catalog:
           description:
             - '<gray>Invoca meteoritos ardientes.</gray>'
         pigland:
-          display_name: '<light_purple>Tierra de cerdos</light_purple>'
+          display_name: '<#4CADD0>Tierra de cerdos</#4CADD0>'
           description:
             - '<gray>Que llueven cerdos del cielo.</gray>'
         wolfs:
@@ -175,7 +175,7 @@ store_catalog:
           description:
             - '<gray>Derriba yunques desde arriba.</gray>'
         twerkapocalypse:
-          display_name: '<light_purple>Twerk Apocalipsis</light_purple>'
+          display_name: '<#4CADD0>Twerk Apocalipsis</#4CADD0>'
           description:
             - '<gray>Engendra PNJs bailando para celebrar.</gray>'
         titan:
@@ -241,7 +241,7 @@ store_catalog:
           description:
             - '<gray>Calma eterna para una victoria elegante.</gray>'
         never_gonna_give_you_up:
-          display_name: '<light_purple>Nunca te rendiré</light_purple>'
+          display_name: '<#4CADD0>Nunca te rendiré</#4CADD0>'
           description:
             - '<gray>Un himno divertido para celebrar la victoria.</gray>'
         africa:
@@ -273,7 +273,7 @@ store_catalog:
           description:
             - '<gray>Golpe global para darle vida a la victoria.</gray>'
         shake_it_off:
-          display_name: '<light_purple>Sacúdelo</light_purple>'
+          display_name: '<#4CADD0>Sacúdelo</#4CADD0>'
           description:
             - '<gray>Libérate de la pérdida y celebra.</gray>'
         hotel_california:

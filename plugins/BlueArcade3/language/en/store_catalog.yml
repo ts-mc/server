@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 store_catalog:
   categories:
@@ -69,7 +69,7 @@ store_catalog:
             - "<gray>Thick smoke on death.</gray>"
 
         ender_shatter:
-          display_name: "<dark_purple>Ender Shatter</dark_purple>"
+          display_name: "<#4CADD0>Ender Shatter</#4CADD0>"
           description:
             - "<gray>Portal sparks scatter.</gray>"
 
@@ -109,7 +109,7 @@ store_catalog:
             - "<gray>A glowing halo above your head.</gray>"
 
         confetti:
-          display_name: "<light_purple>Confetti</light_purple>"
+          display_name: "<#4CADD0>Confetti</#4CADD0>"
           description:
             - "<gray>Celebration sparkles.</gray>"
 
@@ -194,7 +194,7 @@ store_catalog:
             - "<gray>Call down blazing meteors.</gray>"
 
         pigland:
-          display_name: "<light_purple>Pig Land</light_purple>"
+          display_name: "<#4CADD0>Pig Land</#4CADD0>"
           description:
             - "<gray>Let pigs rain from the sky.</gray>"
 
@@ -209,7 +209,7 @@ store_catalog:
             - "<gray>Bring down anvils from above.</gray>"
 
         twerkapocalypse:
-          display_name: "<light_purple>Twerk Apocalypse</light_purple>"
+          display_name: "<#4CADD0>Twerk Apocalypse</#4CADD0>"
           description:
             - "<gray>Spawn dancing NPCs to celebrate.</gray>"
 
@@ -289,7 +289,7 @@ store_catalog:
             - "<gray>Timeless calm for a graceful victory.</gray>"
 
         never_gonna_give_you_up:
-          display_name: "<light_purple>Never Gonna Give You Up</light_purple>"
+          display_name: "<#4CADD0>Never Gonna Give You Up</#4CADD0>"
           description:
             - "<gray>A playful anthem to celebrate the win.</gray>"
 
@@ -329,7 +329,7 @@ store_catalog:
             - "<gray>Global hit to spice up the victory.</gray>"
 
         shake_it_off:
-          display_name: "<light_purple>Shake It Off</light_purple>"
+          display_name: "<#4CADD0>Shake It Off</#4CADD0>"
           description:
             - "<gray>Shake away the loss and celebrate.</gray>"
 

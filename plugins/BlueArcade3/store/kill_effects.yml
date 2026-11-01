@@ -111,7 +111,7 @@ effects:
   confetti:
     enabled: true
     type: particle_burst
-    display_name: "<light_purple>Confetti</light_purple>"
+    display_name: "<#4CADD0>Confetti</#4CADD0>"
     icon: FIREWORK_STAR
     description:
       - "<gray>Celebration sparkles.</gray>"

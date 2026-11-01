@@ -26,7 +26,7 @@
 meta:
   config-version: 1.4.6
 placeholders:
-  prefix: '&d(&5&l&oStaff&d)'
+  prefix: '&b&lDiscord &7|'
   example: Define your own placeholders here!
 messages:
   in-game-formats:

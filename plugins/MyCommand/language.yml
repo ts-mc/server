@@ -4,14 +4,14 @@
 #						BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/					#
 #-----------------------------------------------------------------------------------------------------------#
 LANGUAGE:
- PREFIX: "&7MyCmd&8>&r "
+ PREFIX: "§x§4§C§A§D§D§0§lѕ§x§6§0§B§C§D§9§lᴇ§x§7§5§C§B§E§3§lʀ§x§8§9§D§B§E§C§lᴠ§x§9§E§E§A§F§6§lᴇ§x§B§2§F§9§F§F§lʀ §7| &r "
  ECONOMY_COST: "&6This command cost %s. New balance %s"
  ECONOMY_NO_MONEY: "&6You need &e%s&6$ for run this command."
  DEBUG_EXECUTE: "Executing: "
  COMMAND_ARGS_LINE1: "Not enough arguments... You typed "
  COMMAND_ARGS_LINE2: "-> Output command(s) :"
  ITEM_NOSET: "&dThere are no command(s) on this item"
- NO_PERMISSIONS: "&cYou can't do that. Insufficent permissions."
+ NO_PERMISSIONS: "§x§4§C§A§D§D§0§lѕ§x§6§0§B§C§D§9§lᴇ§x§7§5§C§B§E§3§lʀ§x§8§9§D§B§E§C§lᴠ§x§9§E§E§A§F§6§lᴇ§x§B§2§F§9§F§F§lʀ §7| &cYou do not have permission to do that."
  SIGN_REMOVED: "Sign removed!."
  SIGN_EMPTY: "All lines are empty."
  SIGN_CREATED: "&aSign created! &2Check /mycmd-signset for more options."

@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 #
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 replay:
   opened: '{prefix} <green>Abriendo repetición <white>{id}</white>...</green>'
@@ -14,8 +14,8 @@ replay:
   delete_failed: '{prefix} <red>No se pudo eliminar esa repetición (puede que la esté viendo alguien).</red>'
   cleanup: '{prefix} <green>Se eliminaron <white>{count}</white> repetición(es) caducada(s).</green>'
   usage:
-    player: '{prefix} <red>Uso: /ba replay [module_id] [replay_id] o /ba replay leave</red>'
-    admin: '{prefix} <red>Uso: /baa replay (list|delete <id>|cleanup|open <id>)</red>'
+    player: '{prefix} <red>Uso: /ts replay [module_id] [replay_id] o /ts replay leave</red>'
+    admin: '{prefix} <red>Uso: /tsa replay (list|delete <id>|cleanup|open <id>)</red>'
   errors:
     unavailable: '{prefix} <red>El sistema de repeticiones no está disponible ahora mismo.</red>'
     disabled: '{prefix} <red>El sistema de repeticiones está desactivado en este servidor.</red>'
@@ -32,9 +32,9 @@ replay:
     module_empty: '{prefix} <yellow>No hay repeticiones disponibles para el módulo <white>{module}</white>.</yellow>'
     header: '{prefix} <yellow>Repeticiones disponibles:</yellow>'
     module_header: '{prefix} <yellow>Repeticiones disponibles para <white>{module}</white>:</yellow>'
-    item: '  <light_purple>{id}</light_purple> <dark_gray>-</dark_gray> <gray>arena {arena} • {date} • {duration}</gray>'
+    item: '  <#4CADD0>{id}</#4CADD0> <dark_gray>-</dark_gray> <gray>arena {arena} • {date} • {duration}</gray>'
     showing: '{prefix} <gray>Mostrando {shown}/{total}.</gray>'
-    module_showing: '{prefix} <gray>Mostrando {shown}/{total}. Usa /ba replay {module} <id> para abrir una en concreto.</gray>'
+    module_showing: '{prefix} <gray>Mostrando {shown}/{total}. Usa /ts replay {module} <id> para abrir una en concreto.</gray>'
   playback:
     chat: '<gray>[Repetición]</gray> <white>{player}</white><gray>:</gray> {message}'
     actionbar: '<gray>Repetición</gray> <dark_gray>|</dark_gray> <white>{elapsed}</white><gray>/</gray><white>{total}</white> <dark_gray>|</dark_gray> {status} <dark_gray>|</dark_gray> <yellow>{speed}x</yellow>'

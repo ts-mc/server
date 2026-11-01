@@ -83,11 +83,11 @@ holograms:
     shadow_strength: 1.0
     text:
     - <gradient:#FFD700:#FFA500><bold>✦ TOP VOTERS ✦</bold></gradient>
-    - <gold>#1</gold> <white>%votingplugin_top_all_1%</white>
-    - <gold>#2</gold> <white>%votingplugin_top_all_2%</white>
-    - <gold>#3</gold> <white>%votingplugin_top_all_3%</white>
-    - <gold>#4</gold> <white>%votingplugin_top_all_4%</white>
-    - <gold>#5</gold> <white>%votingplugin_top_all_5%</white>
+    - <gold>#1</gold> <white>%dankvotes_top_name_1%</white>
+    - <gold>#2</gold> <white>%dankvotes_top_name_2%</white>
+    - <gold>#3</gold> <white>%dankvotes_top_name_3%</white>
+    - <gold>#4</gold> <white>%dankvotes_top_name_4%</white>
+    - <gold>#5</gold> <white>%dankvotes_top_name_5%</white>
     text_shadow: false
     see_through: false
     text_alignment: center

@@ -36,5 +36,5 @@ Vault exposes to other plugins.
 - The economy registered with Vault comes from EssentialsX — see
   [`../Vault/README.md`](../Vault/README.md).
 - Permission nodes are `essentials.*` (e.g. `essentials.spawn`).
-- The main lobby for the minigames is set with `/ba setmainlobby`, not with
+- The main lobby for the minigames is set with `/tsa setmainlobby`, not with
   EssentialsX.

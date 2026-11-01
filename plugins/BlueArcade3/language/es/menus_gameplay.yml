@@ -4,7 +4,7 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 #
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menus:
   play:
@@ -190,12 +190,12 @@ menus:
             name: '<green>Confirmar salida'
             lore:
               - '<gray>Regresa al lobby y finaliza tu partida actual.'
-              - '<yellow>Esto se ejecuta</yellow> <white>/ba leave confirm</white><yellow>.</yellow>'
+              - '<yellow>Esto se ejecuta</yellow> <white>/ts leave confirm</white><yellow>.</yellow>'
           cancel_leave:
             name: '<red>Permanecer en la arena'
             lore:
               - '<gray>Sigue jugando e ignora la solicitud de salida.'
-              - '<yellow>Esto se ejecuta</yellow> <white>/ba leave cancel</white><yellow>.</yellow>'
+              - '<yellow>Esto se ejecuta</yellow> <white>/ts leave cancel</white><yellow>.</yellow>'
   spectator:
     teleport:
       bedrock:
@@ -243,7 +243,7 @@ menus:
         title: '<aqua>Repeticiones de {module_name}</aqua> <gray>({page}/{page_total})</gray>'
         templates:
           replay:
-            name: '<light_purple>Replay {replay_number}</light_purple>'
+            name: '<#4CADD0>Replay {replay_number}</#4CADD0>'
             lore:
               - '<gray>Arena: <white>{arena}</white></gray>'
               - '<gray>Fecha: <white>{date}</white></gray>'
@@ -267,7 +267,7 @@ menus:
         templates:
           replay:
             text:
-              - '<light_purple>Replay {replay_number}</light_purple>'
+              - '<#4CADD0>Replay {replay_number}</#4CADD0>'
               - '<gray>{date} • {duration} • {participants} jugadores</gray>'
     teleport:
       bedrock:

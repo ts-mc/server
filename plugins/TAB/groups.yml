@@ -1,39 +1,37 @@
-# Rank prefix comes from LuckPerms. The selected cosmetic tag comes from DeluxeTags and
-# animates in the same colours as the rank prefix in the player list. Nametags above
-# heads use the rank's first colour without animation to keep packet traffic low.
+# Rank prefix comes from LuckPerms. TAB displays stable rank suffixes.
 _DEFAULT_:
   tabprefix: "%luckperms-prefix%"
   tagprefix: "%luckperms-prefix%%fancyglow_color%"
   customtabname: "%player%"
-  tabsuffix: "%animation:tag-default%"
-  tagsuffix: "&7%condition:tag-default%"
+  tabsuffix: "&7 [ᴍᴇᴍʙᴇʀ]"
+  tagsuffix: "&7 [ᴍᴇᴍʙᴇʀ]"
 owner:
-  tabsuffix: "%animation:tag-owner%"
-  tagsuffix: "&#D78C39%condition:tag-owner%"
+  tabsuffix: "&#D78C39 [ᴛʜᴇʏsɪx]"
+  tagsuffix: "&#D78C39 [ᴛʜᴇʏsɪx]"
 manager:
-  tabsuffix: "%animation:tag-manager%"
-  tagsuffix: "&#F858AD%condition:tag-manager%"
+  tabsuffix: "&#F858AD [ᴍᴀɴᴀɢᴇʀ]"
+  tagsuffix: "&#F858AD [ᴍᴀɴᴀɢᴇʀ]"
 admin:
-  tabsuffix: "%animation:tag-admin%"
-  tagsuffix: "&#FF0000%condition:tag-admin%"
+  tabsuffix: "&#FF0000 [ᴀᴅᴍɪɴ]"
+  tagsuffix: "&#FF0000 [ᴀᴅᴍɪɴ]"
 headmoderator:
-  tabsuffix: "%animation:tag-headmoderator%"
-  tagsuffix: "&#7F3AFF%condition:tag-headmoderator%"
+  tabsuffix: "&#7F3AFF [ʜᴇᴀᴅ ᴍᴏᴅᴇʀᴀᴛᴏʀ]"
+  tagsuffix: "&#7F3AFF [ʜᴇᴀᴅ ᴍᴏᴅᴇʀᴀᴛᴏʀ]"
 moderator:
-  tabsuffix: "%animation:tag-moderator%"
-  tagsuffix: "&#6186EB%condition:tag-moderator%"
+  tabsuffix: "&#6186EB [ᴍᴏᴅᴇʀᴀᴛᴏʀ]"
+  tagsuffix: "&#6186EB [ᴍᴏᴅᴇʀᴀᴛᴏʀ]"
 helper:
-  tabsuffix: "%animation:tag-helper%"
-  tagsuffix: "&#4CADD0%condition:tag-helper%"
+  tabsuffix: "&#4CADD0 [ʜᴇʟᴘᴇʀ]"
+  tagsuffix: "&#4CADD0 [ʜᴇʟᴘᴇʀ]"
 staffteam:
-  tabsuffix: "%animation:tag-staffteam%"
-  tagsuffix: "&#FFFFFF%condition:tag-staffteam%"
+  tabsuffix: "&#FFFFFF [sᴛᴀғғ ᴛᴇᴀᴍ]"
+  tagsuffix: "&#FFFFFF [sᴛᴀғғ ᴛᴇᴀᴍ]"
 vip:
-  tabsuffix: "%animation:tag-vip%"
-  tagsuffix: "&#F47FFF%condition:tag-vip%"
+  tabsuffix: "&#F47FFF [ᴠɪᴘ]"
+  tagsuffix: "&#F47FFF [ᴠɪᴘ]"
 voter:
-  tabsuffix: "%animation:tag-voter%"
-  tagsuffix: "&#98E0A3%condition:tag-voter%"
+  tabsuffix: "&#98E0A3 [ᴠᴏᴛᴇʀ]"
+  tagsuffix: "&#98E0A3 [ᴠᴏᴛᴇʀ]"
 trusted:
-  tabsuffix: "%animation:tag-trusted%"
-  tagsuffix: "&#AAAAAA%condition:tag-trusted%"
+  tabsuffix: "&#AAAAAA [ᴍᴇᴍʙᴇʀ]"
+  tagsuffix: "&#AAAAAA [ᴍᴇᴍʙᴇʀ]"

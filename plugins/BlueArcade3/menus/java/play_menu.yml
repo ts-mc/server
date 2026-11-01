@@ -7,7 +7,7 @@ dynamicItem:
     lore:
       - "{language:menus.play.main.java.dynamic.waiting.lore}"
     actions:
-      - "PLAYER;/ba join {arena}"
+      - "PLAYER;/ts join {arena}"
   starting:
     name: "{language:menus.play.main.java.dynamic.starting.name}"
     itemStack:
@@ -16,7 +16,7 @@ dynamicItem:
     lore:
       - "{language:menus.play.main.java.dynamic.starting.lore}"
     actions:
-      - "PLAYER;/ba join {arena}"
+      - "PLAYER;/ts join {arena}"
   running:
     name: "{language:menus.play.main.java.dynamic.running.name}"
     itemStack:
@@ -25,7 +25,7 @@ dynamicItem:
     lore:
       - "{language:menus.play.main.java.dynamic.running.lore}"
     actions:
-      - "PLAYER;/ba join {arena}"
+      - "PLAYER;/ts join {arena}"
   restarting:
     name: "{language:menus.play.main.java.dynamic.restarting.name}"
     itemStack:
@@ -34,7 +34,7 @@ dynamicItem:
     lore:
       - "{language:menus.play.main.java.dynamic.restarting.lore}"
     actions:
-      - "PLAYER;/ba join {arena}"
+      - "PLAYER;/ts join {arena}"
   fallback:
     name: "{language:menus.play.main.java.dynamic.fallback.name}"
     itemStack:
@@ -43,7 +43,7 @@ dynamicItem:
     lore:
       - "{language:menus.play.main.java.dynamic.fallback.lore}"
     actions:
-      - "PLAYER;/ba join {arena}"
+      - "PLAYER;/ts join {arena}"
 emptyItem:
   name: "{language:menus.play.main.java.empty.name}"
   itemStack:
@@ -71,7 +71,7 @@ items:
     lore:
       - "{language:menus.play.main.java.items.back_categories.lore}"
     actions:
-      - PLAYER;/ba join
+      - PLAYER;/ts join
   previous_page:
     slot: 46
     name: "{language:menus.common.java.pagination.previous.name}"
@@ -81,7 +81,7 @@ items:
     lore:
       - "{language:menus.common.java.pagination.previous.lore}"
     actions:
-      - "PLAYER;/ba join {filter_label} page {page_previous}"
+      - "PLAYER;/ts join {filter_label} page {page_previous}"
   next_page:
     slot: 53
     name: "{language:menus.common.java.pagination.next.name}"
@@ -91,19 +91,19 @@ items:
     lore:
       - "{language:menus.common.java.pagination.next.lore}"
     actions:
-      - "PLAYER;/ba join {filter_label} page {page_next}"
+      - "PLAYER;/ts join {filter_label} page {page_next}"
 # ____  _               _                      _
 # | __ )| |_   _  ___   / \   _ __ ___ __ _  __| | ___
 # |  _ \| | | | |/ _ \ / _ \ | '__/ __/ _` |/ _` |/ _ \
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menuName: "{language:menus.play.main.java.title}"
 menuSize: 54
 type: CHEST
-openCommand: /ba join
+openCommand: /ts join
 use_categories: true
 dynamicSlots:
   - 10

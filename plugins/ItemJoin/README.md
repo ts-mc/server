@@ -34,41 +34,15 @@ lobby-selector:
 | `/itemjoin get <item>` | give yourself an item (staff) |
 | `/itemjoin toggle` | toggle your items on/off |
 
-## Vote item and server-list voting
+## Vote navigation
 
-`items.yml` ships two items: `minigames-menu` (slot 0, opens the arena selector)
-and `vote-menu` (slot 8).
+Server-list vote links and vote statistics are provided by DankVotes. The
+vote menu is managed separately from ItemJoin; this plugin's active item
+configuration does not depend on VotingPlugin or Votifier. VotifierPlus remains
+installed for vote receiving.
 
-The vote item targets the **`/vote`** command, provided by
-[VotingPlugin](https://github.com/BenCodez/VotingPlugin) together with a vote
-listener (**NuVotifier**, data folder `plugins/Votifier/`).
-
-**Both are installed**, so the item ships enabled (no permission gate). If the
-voting stack is ever removed, the item becomes a dead slot — then either delete
-the `vote-menu:` block or set its `triggers: DISABLED`.
-
-Configuration lives in the voting plugins themselves:
-
-- `plugins/VotingPlugin/VoteSites.yml` — vote sites + per-site rewards
-- `plugins/VotingPlugin/Config.yml` — behaviour, messages, top voter
-- `plugins/Votifier/` — NuVotifier listener + port/keys
-
-The item lore uses **real** VotingPlugin placeholders
-([source](https://github.com/BenCodez/VotingPlugin/wiki/PlaceholderAPI-Placeholders)):
-
-| Placeholder | Meaning |
-|-------------|---------|
-| `%votingplugin_total%` | Player's month vote total |
-| `%votingplugin_total_alltime%` | Player's all-time vote total |
-| `%votingplugin_dailyvotestreak%` | Current daily vote streak |
-| `%votingplugin_points%` | Player's voting points |
-| `%votingplugin_top_all_1%` | Name of the #1 all-time voter |
-
-> **Do not** use `%bluearcade_votes_*%` for this: BlueArcade's expansion has no
-> vote keys at all. Its `/ba vote` command is an **in-arena** minigame vote and
-> only works while waiting in an arena lobby — it is not a server-list vote.
-> In-arena voting is already provided by BlueArcade itself via
-> `plugins/BlueArcade3/items.yml` → `waiting_room_items.vote`.
+BlueArcade's `/ts vote` is an **in-arena** minigame vote, available while
+waiting in an arena lobby. It is separate from server-list voting.
 
 ## Money
 

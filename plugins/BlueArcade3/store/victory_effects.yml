@@ -154,7 +154,7 @@ effects:
   pigland:
     enabled: true
     type: pig_land
-    display_name: "<light_purple>Pig Land</light_purple>"
+    display_name: "<#4CADD0>Pig Land</#4CADD0>"
     icon: PORKCHOP
     description:
       - "<gray>Let pigs rain from the sky.</gray>"
@@ -205,7 +205,7 @@ effects:
   twerkapocalypse:
     enabled: true
     type: twerk_apocalypse
-    display_name: "<light_purple>Twerk Apocalypse</light_purple>"
+    display_name: "<#4CADD0>Twerk Apocalypse</#4CADD0>"
     icon: PLAYER_HEAD
     description:
       - "<gray>Spawn dancing NPCs to celebrate.</gray>"

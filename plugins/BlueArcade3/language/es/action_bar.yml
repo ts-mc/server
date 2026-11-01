@@ -4,10 +4,10 @@
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 #
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 action_bar:
   lobby:
-    starting: '<aqua>Comenzando en</aqua> <light_purple>{time}</light_purple>'
+    starting: '<aqua>Comenzando en</aqua> <#4CADD0>{time}</#4CADD0>'
   in_game:
     global: '<aqua>Hora:</aqua> <white>{time}</white> <dark_gray>| <aqua>Ronda:</aqua> <white>{round}</white><gray>/</gray><white>{round_max}</white>'

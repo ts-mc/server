@@ -7,7 +7,7 @@
 # 
 # Please note: reward commands are executed on the console, not from the player.
 # 
-# Rewards use BlueArcade's built-in credits (spent in /ba store) and XP.
+# Rewards use BlueArcade's built-in credits (spent in /ts store) and XP.
 # `-s` keeps the console-issued reward commands from spamming player chat.
 
 rewards:

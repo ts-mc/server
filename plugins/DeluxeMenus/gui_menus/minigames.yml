@@ -115,7 +115,7 @@ items:
     - '&7Players: &f%ba_players%&7/&f%ba_max_players%'
     - ''
     left_click_commands:
-    - '[player_command] /ba quickjoin'
+    - '[player_command] /ts quickjoin'
   'stats':
     material: BOOK
     slot: 16
@@ -133,7 +133,7 @@ items:
     - '&7XP: &f%ba_xp%'
     - ''
     left_click_commands:
-    - '[player_command] /ba stats'
+    - '[player_command] /ts stats'
 
   # ═══════════════════════════════════════
   # MINIGAMES GRID
@@ -152,7 +152,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join all_against_all'
+    - '[player_command] /ts join all_against_all'
   'block_party':
     material: NOTE_BLOCK
     slot: 20
@@ -167,7 +167,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join block_party'
+    - '[player_command] /ts join block_party'
   'bridge_race':
     material: OAK_BOAT
     slot: 21
@@ -182,7 +182,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join bridge_race'
+    - '[player_command] /ts join bridge_race'
   'chairs':
     material: BLACK_BED
     slot: 22
@@ -197,9 +197,9 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join chairs'
+    - '[player_command] /ts join chairs'
   'exploding_sheep':
-    material: GREEN_SHEEP_SPAWN_EGG
+    material: SHEEP_SPAWN_EGG
     slot: 23
     priority: 2
     update: true
@@ -212,7 +212,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join exploding_sheep'
+    - '[player_command] /ts join exploding_sheep'
   'fast_zone':
     material: YELLOW_DYE
     slot: 24
@@ -227,7 +227,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join fast_zone'
+    - '[player_command] /ts join fast_zone'
   'knockback':
     material: STICK
     slot: 28
@@ -242,7 +242,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join knockback'
+    - '[player_command] /ts join knockback'
   'minefield':
     material: GRAY_CONCRETE
     slot: 29
@@ -257,7 +257,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join minefield'
+    - '[player_command] /ts join minefield'
   'one_in_the_chamber':
     material: BOW
     slot: 30
@@ -272,7 +272,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join one_in_the_chamber'
+    - '[player_command] /ts join one_in_the_chamber'
   'race':
     material: FEATHER
     slot: 31
@@ -287,7 +287,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join race'
+    - '[player_command] /ts join race'
   'red_alert':
     material: REDSTONE
     slot: 32
@@ -302,7 +302,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join red_alert'
+    - '[player_command] /ts join red_alert'
   'run_from_the_beast':
     material: BONE
     slot: 33
@@ -317,7 +317,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join run_from_the_beast'
+    - '[player_command] /ts join run_from_the_beast'
   'snowball_fight':
     material: SNOWBALL
     slot: 37
@@ -332,7 +332,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join snowball_fight'
+    - '[player_command] /ts join snowball_fight'
   'spleef':
     material: WOODEN_SHOVEL
     slot: 38
@@ -347,7 +347,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join spleef'
+    - '[player_command] /ts join spleef'
   'splegg':
     material: EGG
     slot: 39
@@ -362,7 +362,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join splegg'
+    - '[player_command] /ts join splegg'
   'tnt_run':
     material: TNT
     slot: 40
@@ -377,7 +377,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join tnt_run'
+    - '[player_command] /ts join tnt_run'
   'tnt_tag':
     material: RED_DYE
     slot: 41
@@ -392,7 +392,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join tnt_tag'
+    - '[player_command] /ts join tnt_tag'
   'traffic_light':
     material: REDSTONE_LAMP
     slot: 42
@@ -407,7 +407,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join traffic_light'
+    - '[player_command] /ts join traffic_light'
   'water_well':
     material: WATER_BUCKET
     slot: 43
@@ -422,7 +422,7 @@ items:
     - '&7Status: &f%ba_status%'
     - ''
     left_click_commands:
-    - '[player_command] /ba join water_well'
+    - '[player_command] /ts join water_well'
 
   # ═══════════════════════════════════════
   # OTHER MODES + SERVERS

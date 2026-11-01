@@ -132,17 +132,17 @@ items:
     material: BOOK
     slot: 16
     amount: 1
-    display_name: '&#4CADD0&lA&#59B7D6&ll&#66C0DC&ll &#7FD3E8&lS&#8CDDED&li&#99E6F3&lt&#A5F0F9&le&#B2F9FF&ls'
+    display_name: '&#4CADD0&lV&#6EC6E0&lo&#90E0EF&lt&#B2F9FF&le &fHub'
     lore:
-      - '&7Get every vote link'
-      - '&7sent to your chat.'
+      - '&7All vote sites in one place:'
+      - '&#B2F9FFevents.theysix.tech/vote'
       - ''
       - '&#4CADD0➥ &#FFEFC5ᴄʟɪᴄᴋ ᴛᴏ ʀᴇᴄᴇɪᴠᴇ'
     left_click_commands:
-      - '[player] vote'
+      - '[message] &bhttps://events.theysix.tech/vote'
       - '[close]'
     right_click_commands:
-      - '[player] vote'
+      - '[message] &bhttps://events.theysix.tech/vote'
       - '[close]'
 
   # ---------------- Close / Filler ----------------

@@ -3,9 +3,9 @@
 # For a full list of formats and fancy examples, see https://docs.adventure.kyori.net/minimessage/format.html
 
 # Messages containing the placeholder "<prefix>" will have it replaced with the following string
-prefix: "<gold> Maintenance <dark_gray>▸ "
+prefix: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> "
 noPermission: "<red>You do not have the permission to execute that command!"
-kickmessage: "<b><u><red>MAINTENANCE!</red></u></b><br><br><white>Thank you for waiting as we try<br><white>to improve the gaming experience.<br><white>Entries will open shortly.<br><br><br><light_purple>For more information:<br><br><dark_gray>▸ <gold>discord.requlogia.com <dark_gray>◂<br><dark_gray>▸ <gold>www.requlogia.com <dark_gray>◂"
+kickmessage: "<aqua><bold>TheySix Events is under maintenance</bold></aqua><br><br><white>We will be back soon.</white><br><gray>Server: play.theysix.tech</gray><br><gray>Updates: https://theysix.tech</gray>"
 maintenanceActivated: "<prefix><red>Maintenance mode is now activated."
 maintenanceDeactivated: "<prefix><green>Maintenance mode is now deactivated."
 alreadyEnabled: "<prefix><red>Maintenance is already enabled!"

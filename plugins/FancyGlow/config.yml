@@ -32,28 +32,28 @@ Notify_Updates: true
 Auto_Tag: false
 Messages:
 # All Fancy Glow Messages translation.
-No_Permission: <red>You don't have permission to do this!
-Reload_Message: <blue>The plugin configuration file has been loaded successfully.
-Enable_Glow: <green>You are now glowing!
-Disable_Glow: <red>You are no longer glowing!
-Enable_Flashing: <green>Flashing mode has been enabled.
-Disable_Flashing: <red>Flashing has been disabled.
-Enable_Rainbow: <green>Rainbow mode has been enabled.
-Disable_Rainbow: <red>Rainbow mode has been disabled.
-Disable_Usage: <red>Incorrect command usage. Use /glow disable <player>.
-Disable_Glow_Others: <red>You have disabled the glow of %player_name%
-Disable_Glow_Everyone: <red>Glow disabled for everyone online!
-Not_Glowing: <red>You are not glowing!
-Not_Valid_Color: '<red>Not a valid color. Use like: <gold>/glow color <color></gold>'
-Color_Command_Usage: <red>Incorrect command usage. Use /glow color <color>.
-Color_Set_Command_Usage: <red>Incorrect command usage! Use /glow set <player> <color>.
-Unknown_Target: <red>The player %player_name% is not online!
-Target_Not_Glowing: <red>The target is not glowing!
-Invalid_Sub_Command: <red>Unknown subcommand "%sub_command%".
-Color_Already_Selected: <red>You have already selected that color.
-Flashing_With_Rainbow: <red>Combined rainbow and flashing disabled.
+No_Permission: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>You don't have permission to do this!"
+Reload_Message: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <blue>The plugin configuration file has been loaded successfully."
+Enable_Glow: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <green>You are now glowing!"
+Disable_Glow: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>You are no longer glowing!"
+Enable_Flashing: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <green>Flashing mode has been enabled."
+Disable_Flashing: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>Flashing has been disabled."
+Enable_Rainbow: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <green>Rainbow mode has been enabled."
+Disable_Rainbow: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>Rainbow mode has been disabled."
+Disable_Usage: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>Incorrect command usage. Use /glow disable <player>."
+Disable_Glow_Others: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>You have disabled the glow of %player_name%"
+Disable_Glow_Everyone: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>Glow disabled for everyone online!"
+Not_Glowing: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>You are not glowing!"
+Not_Valid_Color: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>Not a valid color. Use like: <gold>/glow color <color></gold>"
+Color_Command_Usage: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>Incorrect command usage. Use /glow color <color>."
+Color_Set_Command_Usage: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>Incorrect command usage! Use /glow set <player> <color>."
+Unknown_Target: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>The player %player_name% is not online!"
+Target_Not_Glowing: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>The target is not glowing!"
+Invalid_Sub_Command: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>Unknown subcommand \"%sub_command%\"."
+Color_Already_Selected: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>You have already selected that color."
+Flashing_With_Rainbow: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>Combined rainbow and flashing disabled."
 # Message that player gets when enter on a disabled world
-Disabled_World_Message: <red>Glow is disabled in this world.
+Disabled_World_Message: "<b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray> <red>Glow is disabled in this world."
 # %fancyglow_status% translation, for true or false:
 Glow_Status_False: <red>You are not glowing ❌
 Glow_Status_True: <green>✔ Glowing!</green> <gray>Click here to disable
@@ -61,12 +61,10 @@ Glow_Status_None: NONE
 # Internal usage.
 Message_Not_Found: Message not found a messages enum.
 # List of worlds where players glow will be disabled
-Disabled_Worlds:
-- Example
-- DisabledGlowWorld
+Disabled_Worlds: []
 Inventory:
 # For translate the gui
-Title: <dark_red>Select a glow color!
+Title: <gradient:#4CADD0:#B2F9FF><bold>TheySix Events</bold></gradient> <gray>Glow Colors
 Items:
 Red_Glow_Name: <red>Red</red>
 Gold_Glow_Name: <gold>Gold
@@ -88,7 +86,7 @@ Color_Lore: <color:#737373>Click to choose that color!
 Filler:
 Enabled: true
 Material: BLACK_STAINED_GLASS_PANE
-Name: <rainbow>Click on a color!</rainbow>
+Name: <gradient:#4CADD0:#B2F9FF>Choose a glow color</gradient>
 Status:
 Slot: 41
 Name: <color:#6effa3>• Glow status:</color>

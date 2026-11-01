@@ -50,12 +50,12 @@ items:
 # | |_) | | |_| |  __// ___ \| | | (_| (_| | (_| |  __/
 # |____/|_|\__,_|\___/_/   \_|_|  \___\__,_|\__,_|\___|
 # 
-# [!] Arcade by Blueva | https://blueva.net/store/blue-arcade [!]
+# [!] Arcade by Blueva | https://events.theysix.tech [!]
 
 menuName: "{language:menus.store.categories.java.title}"
 menuSize: 54
 type: CHEST
-openCommand: /ba store
+openCommand: /ts store
 dynamicSlots:
   - 10
   - 11
