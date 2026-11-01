@@ -90,9 +90,6 @@ scoreboard:
         - ' <gradient:#4cadd0:#b2f9ff>%player%</gradient>'
         - ' &#deb887• &fʀᴀɴᴋ &f%luckperms-prefix%'
         - ''
-        - ' ꜱᴜʀᴠɪᴠᴀʟ &a%bungee_survival%'
-        - ' ᴘʀᴀᴄᴛɪᴄᴇ &5%bungee_minigames%'
-        - ' ɢʟᴏʙᴀʟ &b%bungee_total%'
         - ''
         - ' &7ɢᴀᴍᴇs &7ᴘʟᴀʏᴇᴅ: &f%bluearcade_stat_global_games_played%'
         - ' &7ᴡɪɴs: &f%bluearcade_stat_global_wins%'
@@ -119,7 +116,7 @@ scoreboard:
 layout:
   enabled: true
   direction: COLUMNS
-  default-skin: mineskin:383747683
+  default-skin: ''
   enable-remaining-players-text: true
   remaining-players-text: '... and %s more'
   empty-slot-ping-value: 1000
