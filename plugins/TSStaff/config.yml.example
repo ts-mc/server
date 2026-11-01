@@ -48,7 +48,8 @@ antispam:
     min-length: 8
     max-percent: 70
 
-# /update checks every loaded plugin. A missing source is shown for manual review.
+# /update detects installed versions from logs/latest.log, then checks configured sources.
+# A missing source is shown for manual review.
 # It reports versions only; it never downloads or replaces plugin JARs.
 updates:
   minecraft-version: '1.21.11'

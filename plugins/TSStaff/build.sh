@@ -3,7 +3,7 @@ set -euo pipefail
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 server_archive="${1:-$repo_root/server.jar}"
-destination="${2:-/tmp/TSStaff-1.2.0.jar}"
+destination="${2:-/tmp/TSStaff-1.3.0.jar}"
 jdk_path="${TSSTAFF_JDK:-}"
 
 if [[ -z "$jdk_path" ]]; then

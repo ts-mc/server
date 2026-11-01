@@ -1,5 +1,6 @@
 package dev.theysix.tsstaff;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URLEncoder;
@@ -7,13 +8,17 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
@@ -41,7 +46,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class TSStaffUpdates implements CommandExecutor, Listener {
     private static final int PAGE_SIZE = 45;
+    private static final long MAX_STARTUP_LOG_BYTES = 8L * 1024L * 1024L;
     private static final Pattern JSON_STRING = Pattern.compile("\\\"%s\\\"\\s*:\\s*\\\"((?:\\\\.|[^\\\"\\\\])*)\\\"");
+    private static final Pattern PLUGIN_LOAD_VERSION = Pattern.compile(
+            "\\[([^\\]]+)]\\s+(?:Loading|Enabling)\\s+(?:server plugin\\s+)?(.+?)\\s+v([^\\s]+)",
+            Pattern.CASE_INSENSITIVE);
     private final JavaPlugin plugin;
     private final ExecutorService workers = Executors.newFixedThreadPool(4, task -> {
         Thread thread = new Thread(task, "TSStaff-update-check");
@@ -71,13 +80,16 @@ public final class TSStaffUpdates implements CommandExecutor, Listener {
 
         long requestId = System.nanoTime();
         requestIds.put(player.getUniqueId(), requestId);
-        player.sendMessage(message("&7Checking installed plugins against configured trusted sources..."));
+        player.sendMessage(message("&7Checking plugin versions from the startup log and metadata against trusted sources..."));
+        Map<String, String> loggedVersions = readStartupLogVersions();
         List<PluginSnapshot> plugins = new ArrayList<>();
         for (Plugin installed : Bukkit.getPluginManager().getPlugins()) {
             PluginDescriptionFile description = installed.getDescription();
             String name = description.getName();
             String base = "updates.sources." + name + ".";
-            plugins.add(new PluginSnapshot(name, description.getVersion(),
+            String loggedVersion = loggedVersions.get(normalizePluginName(name));
+            String currentVersion = loggedVersion == null ? description.getVersion() : loggedVersion;
+            plugins.add(new PluginSnapshot(name, currentVersion, loggedVersion != null,
                     plugin.getConfig().getString(base + "provider", ""),
                     plugin.getConfig().getString(base + "project", ""),
                     plugin.getConfig().getString(base + "url", "")));
@@ -140,6 +152,7 @@ public final class TSStaffUpdates implements CommandExecutor, Listener {
         meta.setDisplayName(color("&f" + snapshot.name));
         List<String> lore = new ArrayList<>();
         lore.add(color("&7Installed: &f" + snapshot.current));
+        lore.add(color(snapshot.fromStartupLog ? "&7Detected via: &flogs/latest.log" : "&7Detected via: &fplugin metadata"));
         lore.add(color("&7Status: " + color + state));
         if (!snapshot.latest.isEmpty()) lore.add(color("&7Latest stable: &f" + snapshot.latest));
         if (!snapshot.url.isEmpty()) lore.add(color("&7Source: &b" + snapshot.url));
@@ -156,6 +169,38 @@ public final class TSStaffUpdates implements CommandExecutor, Listener {
         meta.setDisplayName(color(title));
         item.setItemMeta(meta);
         return item;
+    }
+
+    private Map<String, String> readStartupLogVersions() {
+        try {
+            Path worldPath = plugin.getServer().getWorldContainer().toPath();
+            Path serverRoot = worldPath.getParent();
+            if (serverRoot == null) {
+                File pluginFolder = plugin.getDataFolder().getParentFile();
+                if (pluginFolder == null || pluginFolder.getParentFile() == null) return Map.of();
+                serverRoot = pluginFolder.getParentFile().toPath();
+            }
+            Path startupLog = serverRoot.resolve("logs").resolve("latest.log");
+            if (!Files.isRegularFile(startupLog) || Files.size(startupLog) > MAX_STARTUP_LOG_BYTES) return Map.of();
+
+            Map<String, String> versions = new HashMap<>();
+            try (var lines = Files.lines(startupLog, StandardCharsets.UTF_8)) {
+                lines.forEach(line -> {
+                    Matcher matcher = PLUGIN_LOAD_VERSION.matcher(line);
+                    if (!matcher.find()) return;
+                    String name = matcher.group(2).trim();
+                    String version = matcher.group(3).replaceAll("[,;]$", "");
+                    if (!name.isBlank() && !version.isBlank()) versions.put(normalizePluginName(name), version);
+                });
+            }
+            return versions;
+        } catch (IOException | SecurityException ignored) {
+            return Map.of();
+        }
+    }
+
+    private static String normalizePluginName(String name) {
+        return name.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9]", "");
     }
 
     private String message(String text) {
@@ -189,7 +234,7 @@ public final class TSStaffUpdates implements CommandExecutor, Listener {
     private String request(String endpoint) throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder(URI.create(endpoint))
                 .timeout(Duration.ofSeconds(7))
-                .header("User-Agent", "TheySix-TSStaff-UpdateCheck/1.2.0")
+                .header("User-Agent", "TheySix-TSStaff-UpdateCheck/1.3.0")
                 .header("Accept", "application/vnd.github+json")
                 .GET().build();
         HttpResponse<String> response = http.send(request, HttpResponse.BodyHandlers.ofString());
@@ -255,15 +300,17 @@ public final class TSStaffUpdates implements CommandExecutor, Listener {
     private final class PluginSnapshot {
         private final String name;
         private final String current;
+        private final boolean fromStartupLog;
         private final String provider;
         private final String project;
         private final String url;
         private volatile String latest = "";
         private volatile Status status = Status.UNKNOWN;
 
-        private PluginSnapshot(String name, String current, String provider, String project, String url) {
+        private PluginSnapshot(String name, String current, boolean fromStartupLog, String provider, String project, String url) {
             this.name = name;
             this.current = current;
+            this.fromStartupLog = fromStartupLog;
             this.provider = provider;
             this.project = project;
             this.url = url;
