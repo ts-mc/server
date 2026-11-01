@@ -1,0 +1,273 @@
+# Fixed populations, halved; stronger equipment and attributes arrive earlier.
+schema-version: 4
+stages:
+  1:
+    target-zombies: 30
+    health: 20
+    damage: 2
+    speed: 0.23
+    armor: NONE
+    weapon: NONE
+    armor-protection: 0
+    weapon-sharpness: 0
+  2:
+    target-zombies: 40
+    health: 26
+    damage: 2.84
+    speed: 0.2414
+    armor: LEATHER
+    weapon: WOODEN_SWORD
+    armor-protection: 0
+    weapon-sharpness: 0
+  3:
+    target-zombies: 50
+    health: 34
+    damage: 3.96
+    speed: 0.2566
+    armor: CHAINMAIL
+    weapon: STONE_SWORD
+    armor-protection: 0
+    weapon-sharpness: 0
+  4:
+    target-zombies: 55
+    health: 42
+    damage: 5.08
+    speed: 0.2718
+    armor: IRON
+    weapon: IRON_SWORD
+    armor-protection: 0
+    weapon-sharpness: 0
+  5:
+    target-zombies: 60
+    health: 50
+    damage: 6.2
+    speed: 0.287
+    armor: DIAMOND
+    weapon: DIAMOND_SWORD
+    armor-protection: 1
+    weapon-sharpness: 0
+  6:
+    target-zombies: 65
+    health: 58
+    damage: 7.32
+    speed: 0.3022
+    armor: DIAMOND
+    weapon: DIAMOND_SWORD
+    armor-protection: 1
+    weapon-sharpness: 1
+  7:
+    target-zombies: 70
+    health: 66
+    damage: 8.44
+    speed: 0.3174
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 2
+    weapon-sharpness: 2
+  8:
+    target-zombies: 75
+    health: 74
+    damage: 9.56
+    speed: 0.3326
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 2
+    weapon-sharpness: 2
+  9:
+    target-zombies: 80
+    health: 76
+    damage: 9.84
+    speed: 0.3364
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 2
+    weapon-sharpness: 2
+  10:
+    target-zombies: 85
+    health: 77
+    damage: 9.99
+    speed: 0.3384
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 2
+    weapon-sharpness: 2
+  11:
+    target-zombies: 90
+    health: 78
+    damage: 10.14
+    speed: 0.3404
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 2
+    weapon-sharpness: 2
+  12:
+    target-zombies: 95
+    health: 79
+    damage: 10.29
+    speed: 0.3424
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 2
+    weapon-sharpness: 2
+  13:
+    target-zombies: 100
+    health: 80
+    damage: 10.44
+    speed: 0.3444
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 2
+    weapon-sharpness: 2
+  14:
+    target-zombies: 105
+    health: 81
+    damage: 10.59
+    speed: 0.3464
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 3
+    weapon-sharpness: 3
+  15:
+    target-zombies: 110
+    health: 82
+    damage: 10.74
+    speed: 0.3484
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 3
+    weapon-sharpness: 3
+  16:
+    target-zombies: 115
+    health: 83
+    damage: 10.89
+    speed: 0.3504
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 3
+    weapon-sharpness: 3
+  17:
+    target-zombies: 120
+    health: 84
+    damage: 11.04
+    speed: 0.3524
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 3
+    weapon-sharpness: 3
+  18:
+    target-zombies: 125
+    health: 85
+    damage: 11.19
+    speed: 0.3544
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 3
+    weapon-sharpness: 3
+  19:
+    target-zombies: 130
+    health: 86
+    damage: 11.34
+    speed: 0.3564
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 3
+    weapon-sharpness: 3
+  20:
+    target-zombies: 135
+    health: 87
+    damage: 11.49
+    speed: 0.3584
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 3
+    weapon-sharpness: 3
+  21:
+    target-zombies: 140
+    health: 88
+    damage: 11.64
+    speed: 0.3604
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 3
+    weapon-sharpness: 3
+  22:
+    target-zombies: 145
+    health: 89
+    damage: 11.79
+    speed: 0.3624
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 4
+    weapon-sharpness: 4
+  23:
+    target-zombies: 150
+    health: 90
+    damage: 11.94
+    speed: 0.3644
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 4
+    weapon-sharpness: 4
+  24:
+    target-zombies: 150
+    health: 91
+    damage: 12.09
+    speed: 0.3664
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 4
+    weapon-sharpness: 4
+  25:
+    target-zombies: 150
+    health: 92
+    damage: 12.24
+    speed: 0.3684
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 4
+    weapon-sharpness: 4
+  26:
+    target-zombies: 150
+    health: 93
+    damage: 12.39
+    speed: 0.3704
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 4
+    weapon-sharpness: 4
+  27:
+    target-zombies: 150
+    health: 94
+    damage: 12.54
+    speed: 0.3724
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 4
+    weapon-sharpness: 4
+  28:
+    target-zombies: 150
+    health: 95
+    damage: 12.69
+    speed: 0.3744
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 4
+    weapon-sharpness: 5
+  29:
+    target-zombies: 150
+    health: 96
+    damage: 12.84
+    speed: 0.3764
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 4
+    weapon-sharpness: 5
+  30:
+    target-zombies: 150
+    health: 97
+    damage: 12.99
+    speed: 0.3784
+    armor: NETHERITE
+    weapon: NETHERITE_SWORD
+    armor-protection: 4
+    weapon-sharpness: 5

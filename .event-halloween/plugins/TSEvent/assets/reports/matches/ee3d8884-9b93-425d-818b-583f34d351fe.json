@@ -1,0 +1,363 @@
+{
+  "match": "ee3d8884-9b93-425d-818b-583f34d351fe",
+  "status": "ABORTED",
+  "reason": "Administrator stopped the match",
+  "ranked": false,
+  "stage": 30,
+  "stageSkips": 16,
+  "elapsedSeconds": 1213,
+  "pressureThrottles": 0,
+  "players": [
+    {
+      "id": "fb1fd142-e125-4d93-83ab-0baea26f4308",
+      "name": "XeroDegreess",
+      "tie": -1751578258123345748,
+      "alive": true,
+      "kills": 26,
+      "place": 0,
+      "survived": 1213,
+      "cause": ""
+    },
+    {
+      "id": "3cef13cf-34cc-44b5-950f-9740357569fb",
+      "name": "Immional",
+      "tie": -1399148118840664092,
+      "alive": true,
+      "kills": 33,
+      "place": 0,
+      "survived": 1213,
+      "cause": ""
+    },
+    {
+      "id": "c752ef61-541c-4bea-90c3-e3733626edea",
+      "name": "REZN0VKA",
+      "tie": 1865912030420714836,
+      "alive": true,
+      "kills": 48,
+      "place": 0,
+      "survived": 1213,
+      "cause": ""
+    },
+    {
+      "id": "03e29803-28ce-49c9-be2f-ede3d2264716",
+      "name": "RedasKG1959",
+      "tie": 4227383690092667333,
+      "alive": true,
+      "kills": 59,
+      "place": 0,
+      "survived": 1213,
+      "cause": ""
+    },
+    {
+      "id": "64c9ff90-9331-4528-be2b-847abbc9b635",
+      "name": "killermachine_13",
+      "tie": 149307008937631213,
+      "alive": false,
+      "kills": 15,
+      "place": 5,
+      "survived": 504,
+      "cause": "DIED:ENTITY_ATTACK"
+    },
+    {
+      "id": "f326c122-9e56-453f-87fc-2be137519899",
+      "name": "Itz_sitian",
+      "tie": -3481394931077131713,
+      "alive": false,
+      "kills": 0,
+      "place": 6,
+      "survived": 339,
+      "cause": "DIED:ENTITY_ATTACK"
+    },
+    {
+      "id": "13ec60ae-2286-4770-ae88-0f771fbaaa5c",
+      "name": "LordRubberDuck",
+      "tie": 3777366901871863463,
+      "alive": false,
+      "kills": 5,
+      "place": 7,
+      "survived": 316,
+      "cause": "DIED:ENTITY_ATTACK"
+    },
+    {
+      "id": "2720db0d-5d01-4716-95de-3d8d20aef4eb",
+      "name": "harmiv",
+      "tie": 1338465556836365424,
+      "alive": false,
+      "kills": 10,
+      "place": 8,
+      "survived": 276,
+      "cause": "DISCONNECTED"
+    },
+    {
+      "id": "00000000-0000-0000-0009-01f5e59d7b17",
+      "name": "_Savitar8823",
+      "tie": 8102186111626269275,
+      "alive": false,
+      "kills": 1,
+      "place": 9,
+      "survived": 240,
+      "cause": "DIED:ENTITY_ATTACK"
+    },
+    {
+      "id": "c4d8b246-d1cc-4284-9f8e-52a17f6c1036",
+      "name": "RedCrafterYT11",
+      "tie": 1519655021652285486,
+      "alive": false,
+      "kills": 4,
+      "place": 10,
+      "survived": 180,
+      "cause": "DIED:ENTITY_ATTACK"
+    },
+    {
+      "id": "e178fd90-6ef5-4538-ab67-f82eefbf2bb1",
+      "name": "robiwolf10",
+      "tie": -5272236856830616625,
+      "alive": false,
+      "kills": 2,
+      "place": 11,
+      "survived": 162,
+      "cause": "DIED:ENTITY_ATTACK"
+    },
+    {
+      "id": "4bfa1a1d-1b93-4572-914b-d13ef683d0f3",
+      "name": "ProAnti",
+      "tie": -6929864114952613674,
+      "alive": false,
+      "kills": 0,
+      "place": 12,
+      "survived": 160,
+      "cause": "DIED:ENTITY_ATTACK"
+    },
+    {
+      "id": "ef75c3f8-24bf-4dab-9410-deb0c94a9d1e",
+      "name": "zamgames_",
+      "tie": 4568937352513055101,
+      "alive": false,
+      "kills": 0,
+      "place": 13,
+      "survived": 140,
+      "cause": "DIED:ENTITY_ATTACK"
+    },
+    {
+      "id": "15e4aa44-2666-4ca0-a3f5-e289f5562e4e",
+      "name": "Catrooper",
+      "tie": 1178034548126262155,
+      "alive": false,
+      "kills": 0,
+      "place": 14,
+      "survived": 33,
+      "cause": "STAFF_OVERRIDE"
+    }
+  ],
+  "perks": {
+    "e178fd90-6ef5-4538-ab67-f82eefbf2bb1": {
+      "points": 117,
+      "levels": [
+        0,
+        0,
+        0
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 0,
+      "hearts": 0,
+      "shield": false,
+      "burst": false,
+      "owned": [],
+      "equipped": []
+    },
+    "4bfa1a1d-1b93-4572-914b-d13ef683d0f3": {
+      "points": 0,
+      "levels": [
+        0,
+        0,
+        0
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 0,
+      "hearts": 0,
+      "shield": false,
+      "burst": false,
+      "owned": [],
+      "equipped": []
+    },
+    "c4d8b246-d1cc-4284-9f8e-52a17f6c1036": {
+      "points": 225,
+      "levels": [
+        0,
+        0,
+        0
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 0,
+      "hearts": 0,
+      "shield": false,
+      "burst": false,
+      "owned": [],
+      "equipped": []
+    },
+    "00000000-0000-0000-0009-01f5e59d7b17": {
+      "points": 45,
+      "levels": [
+        0,
+        0,
+        0
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 0,
+      "hearts": 0,
+      "shield": false,
+      "burst": false,
+      "owned": [],
+      "equipped": []
+    },
+    "3cef13cf-34cc-44b5-950f-9740357569fb": {
+      "points": 10602,
+      "levels": [
+        0,
+        0,
+        0
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 0,
+      "hearts": 0,
+      "shield": false,
+      "burst": false,
+      "owned": [],
+      "equipped": []
+    },
+    "fb1fd142-e125-4d93-83ab-0baea26f4308": {
+      "points": 5772,
+      "levels": [
+        0,
+        0,
+        0
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 0,
+      "hearts": 0,
+      "shield": false,
+      "burst": false,
+      "owned": [],
+      "equipped": []
+    },
+    "c752ef61-541c-4bea-90c3-e3733626edea": {
+      "points": 6051,
+      "levels": [
+        2,
+        2,
+        2
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 1404018810333405,
+      "hearts": 5,
+      "shield": true,
+      "burst": true,
+      "owned": [],
+      "equipped": []
+    },
+    "03e29803-28ce-49c9-be2f-ede3d2264716": {
+      "points": 10818,
+      "levels": [
+        0,
+        0,
+        0
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 0,
+      "hearts": 0,
+      "shield": false,
+      "burst": false,
+      "owned": [],
+      "equipped": []
+    },
+    "2720db0d-5d01-4716-95de-3d8d20aef4eb": {
+      "points": 471,
+      "levels": [
+        0,
+        0,
+        0
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 0,
+      "hearts": 0,
+      "shield": false,
+      "burst": false,
+      "owned": [],
+      "equipped": []
+    },
+    "64c9ff90-9331-4528-be2b-847abbc9b635": {
+      "points": 2111,
+      "levels": [
+        1,
+        0,
+        0
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 1403024168513076,
+      "hearts": 0,
+      "shield": false,
+      "burst": false,
+      "owned": [],
+      "equipped": []
+    },
+    "13ec60ae-2286-4770-ae88-0f771fbaaa5c": {
+      "points": 188,
+      "levels": [
+        1,
+        0,
+        0
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 1403104867235175,
+      "hearts": 0,
+      "shield": false,
+      "burst": false,
+      "owned": [],
+      "equipped": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "match": "0f7746d7-4282-497e-b552-a2015d48bc05",
+  "status": "DRAW",
+  "reason": "Simultaneous final deaths",
+  "ranked": false,
+  "stage": 7,
+  "stageSkips": 0,
+  "elapsedSeconds": 507,
+  "pressureThrottles": 0,
+  "players": [
+    {
+      "id": "322a794a-b604-4023-a461-bd06643a7335",
+      "name": "TheySix",
+      "tie": 7998746884619429612,
+      "alive": false,
+      "kills": 98,
+      "place": 1,
+      "survived": 507,
+      "cause": "DISCONNECTED"
+    }
+  ],
+  "perks": {
+    "322a794a-b604-4023-a461-bd06643a7335": {
+      "points": 2947,
+      "levels": [
+        2,
+        0,
+        0
+      ],
+      "apples": 0,
+      "godApples": 0,
+      "regens": 0,
+      "boughtLife": false,
+      "life": false,
+      "nextBuy": 1339511984994147
+    }
+  }
+}

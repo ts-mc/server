@@ -1,0 +1,23 @@
+{
+  "match": "c07779c5-6ac9-4138-97a4-de01c21e2a76",
+  "status": "DRAW",
+  "reason": "Simultaneous final deaths",
+  "ranked": false,
+  "stage": 4,
+  "stageSkips": 0,
+  "elapsedSeconds": 343,
+  "pressureThrottles": 0,
+  "players": [
+    {
+      "id": "322a794a-b604-4023-a461-bd06643a7335",
+      "name": "TheySix",
+      "tie": -8591190343205921601,
+      "alive": false,
+      "kills": 0,
+      "place": 1,
+      "survived": 343,
+      "cause": "DISCONNECTED"
+    }
+  ],
+  "perks": {}
+}
