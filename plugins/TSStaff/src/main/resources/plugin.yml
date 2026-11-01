@@ -1,0 +1,48 @@
+name: TSStaff
+version: 1.2.0
+main: dev.theysix.tsstaff.TSStaff
+api-version: '1.21'
+author: TheySix
+description: Clear chat, staff moderation, announcements, and a read-only plugin update overview.
+commands:
+  clearchat:
+    description: Clear the chat for everyone.
+    aliases: [cc, chatclear]
+    usage: /clearchat
+  mutechat:
+    description: Freeze the chat so players can't talk.
+    aliases: [freezechat, lockchat]
+    usage: /mutechat
+  unmutechat:
+    description: Unfreeze the chat.
+    aliases: [unfreezechat, unlockchat]
+    usage: /unmutechat
+  freeze:
+    description: Freeze a player in place.
+    usage: /freeze <player>
+  unfreeze:
+    description: Unfreeze a player.
+    usage: /unfreeze <player>
+  announce:
+    description: Broadcast an announcement to everyone.
+    aliases: [bc, broadcast]
+    usage: /announce <message>
+  tsstaff:
+    description: Reload TSStaff config.
+    usage: /tsstaff reload
+  update:
+    description: Open the read-only plugin update overview.
+    usage: /update
+permissions:
+  tsstaff.clearchat: {default: op}
+  tsstaff.clearchat.bypass: {default: false}
+  tsstaff.mutechat: {default: op}
+  tsstaff.mutechat.bypass: {default: op}
+  tsstaff.freeze: {default: op}
+  tsstaff.freeze.exempt: {default: false}
+  tsstaff.freeze.override: {default: op}
+  tsstaff.freeze.notify: {default: op}
+  tsstaff.announce: {default: op}
+  tsstaff.reload: {default: op}
+  tsstaff.update: {default: op}
+  tsstaff.antispam.bypass: {default: op}

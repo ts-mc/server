@@ -1,0 +1,160 @@
+# ==============================================================
+# TSStaff - TheySix Events staff tools
+# Also: chat anti-spam (cooldown, repeats, flood auto-mute, caps)
+# Commands: /clearchat  /mutechat  /unmutechat  /freeze <player>
+#           /unfreeze <player>  /announce <message>  /tsstaff reload  /update
+# Colour codes use &  (e.g. &b pink, &b aqua, &l bold)
+# ==============================================================
+prefix: '&bTSStaff &7| &r'
+
+clearchat:
+  lines: 150 # blank lines sent to clear the chat
+
+freeze:
+  title: '&b&lFROZEN'
+  subtitle: '&fDon''t log out. Staff will speak to you.'
+  reminder-seconds: 5 # how often the title shows again while frozen
+  sound: minecraft:block.glass.break
+  invulnerable: true # frozen players can't take or deal damage
+  allowed-commands: # commands a frozen player can still use
+    - msg
+    - tell
+    - w
+    - r
+    - reply
+    - discord
+  on-logout-commands: []
+
+announce:
+  format:
+  - ' '
+  - '&b&lANNOUNCEMENT &8» &f%message%'
+  - ' '
+  title: '&b&lANNOUNCEMENT' # set to "" for no title
+  message-as-subtitle: true
+  sound: minecraft:block.note_block.pling # set to "" for no sound
+
+antispam:
+  enabled: true # bypass: tsstaff.antispam.bypass (manager + owner)
+  cooldown-seconds: 1.5 # minimum time between two messages
+  block-duplicates: true # block sending the same message again
+  duplicate-seconds: 30
+  burst: # more than max-messages within seconds = auto mute
+    max-messages: 4
+    seconds: 6
+    mute-seconds: 30
+  caps: # long ALL-CAPS messages are turned into lowercase
+    enabled: true
+    min-length: 8
+    max-percent: 70
+
+# /update checks every loaded plugin. A missing source is shown for manual review.
+# It reports versions only; it never downloads or replaces plugin JARs.
+updates:
+  minecraft-version: '1.21.11'
+  sources:
+    ViaVersion:
+      provider: modrinth
+      project: viaversion
+      url: https://modrinth.com/plugin/viaversion
+    ViaBackwards:
+      provider: modrinth
+      project: viabackwards
+      url: https://modrinth.com/plugin/viabackwards
+    LuckPerms:
+      provider: modrinth
+      project: luckperms
+      url: https://modrinth.com/plugin/luckperms
+    Geyser-Spigot:
+      provider: modrinth
+      project: geyser
+      url: https://modrinth.com/plugin/geyser
+    Floodgate:
+      provider: modrinth
+      project: floodgate
+      url: https://modrinth.com/plugin/floodgate
+    PlaceholderAPI:
+      provider: modrinth
+      project: placeholderapi
+      url: https://modrinth.com/plugin/placeholderapi
+    TAB:
+      provider: modrinth
+      project: tab
+      url: https://modrinth.com/plugin/tab
+    DeluxeMenus:
+      provider: modrinth
+      project: deluxemenus
+      url: https://modrinth.com/plugin/deluxemenus
+    WorldGuard:
+      provider: modrinth
+      project: worldguard
+      url: https://modrinth.com/plugin/worldguard
+    FastAsyncWorldEdit:
+      provider: modrinth
+      project: fastasyncworldedit
+      url: https://modrinth.com/plugin/fastasyncworldedit
+    ItemJoin:
+      provider: modrinth
+      project: itemjoin
+      url: https://modrinth.com/plugin/itemjoin
+    FancyNpcs:
+      provider: hangar
+      project: Oliver/FancyNpcs
+      url: https://hangar.papermc.io/Oliver/FancyNpcs
+    FancyHolograms:
+      provider: hangar
+      project: Oliver/FancyHolograms
+      url: https://hangar.papermc.io/Oliver/FancyHolograms
+    AdvancedBanZ:
+      provider: modrinth
+      project: advancedbanz
+      url: https://modrinth.com/plugin/advancedbanz
+    ProtocolLib:
+      provider: modrinth
+      project: protocollib
+      url: https://modrinth.com/plugin/protocollib
+    PacketEvents:
+      provider: modrinth
+      project: packetevents
+      url: https://modrinth.com/plugin/packetevents
+    Essentials:
+      provider: modrinth
+      project: essentialsx
+      url: https://modrinth.com/plugin/essentialsx
+    SkinsRestorer:
+      provider: modrinth
+      project: skinsrestorer
+      url: https://modrinth.com/plugin/skinsrestorer
+    MiniMOTD:
+      provider: modrinth
+      project: minimotd
+      url: https://modrinth.com/plugin/minimotd
+
+messages:
+  no-permission: '&cYou don''t have permission.'
+  chat-cleared: '&fChat was cleared by &b%staff%&f.'
+  chat-muted: '&cChat has been frozen by &b%staff%&c.'
+  chat-unmuted: '&aChat has been unfrozen by &b%staff%&a.'
+  chat-already-muted: '&cChat is already frozen. Use /unmutechat.'
+  chat-not-muted: '&cChat isn''t frozen.'
+  chat-is-muted: '&cChat is frozen right now.'
+  you-frozen: '&bYou have been frozen by staff. Don''t log out!'
+  you-unfrozen: '&aYou have been unfrozen. You can move again.'
+  staff-froze: '&b%staff% &ffroze &b%player%&f.'
+  staff-unfroze: '&b%staff% &funfroze &b%player%&f.'
+  already-frozen: '&c%player% is already frozen.'
+  not-frozen: '&c%player% isn''t frozen.'
+  freeze-exempt: '&cYou can''t freeze that player.'
+  frozen-no-command: '&cYou can''t use commands while frozen.'
+  frozen-logout: '&c&l! &b%player% &clogged out while frozen.'
+  player-not-found: '&cPlayer not online: &f%player%'
+  usage-freeze: '&cUsage: /freeze <player>'
+  usage-unfreeze: '&cUsage: /unfreeze <player>'
+  usage-announce: '&cUsage: /announce <message>'
+  reloaded: '&aTSStaff config reloaded.'
+  done: '&aDone.'
+  spam-slow: '&cSlow down! Wait a moment before chatting again.'
+  spam-duplicate: '&cDon''t repeat the same message.'
+  spam-muted: '&cYou''re muted for spamming. Wait &f%seconds%s&c.'
+  spam-staff: '&e%player% &7was auto-muted for %seconds%s (spam).'
+
