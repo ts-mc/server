@@ -146,15 +146,3 @@ deluxetags:
     tag: ' [Ⅽ]'
     description: '&6Win &f1000 &6minigames'
     permission: deluxetags.tag.winner_1000
-  
-  # Event podium (granted automatically by TSEvent when a ranked event finishes; 1st uses 'winner').
-  place_2:
-    order: 3
-    tag: ' [2ɴᴅ]'
-    description: '&7Second place in the last event'
-    permission: deluxetags.tag.place_2
-  place_3:
-    order: 4
-    tag: ' [3ʀᴅ]'
-    description: '&7Third place in the last event'
-    permission: deluxetags.tag.place_3

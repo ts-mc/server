@@ -82,7 +82,7 @@ scoreboard:
   scoreboards:
     scoreboard-1.20.3+:
       title: '&#4CADD0&lᴛ&#54B3D4&lʜ&#5CB9D7&lᴇ&#64BFDB&lʏ&#6BC4DE&ls&#73CAE2&lɪ&#7BD0E6&lx &#8BDCED&lᴇ&#93E2F1&lᴠ&#9AE7F4&lᴇ&#A2EDF8&lɴ&#AAF3FB&lᴛ&#B2F9FF&ls'
-      display-condition: '%player-version-id%>=765;%bedrock%=false;%world%!=event_lobby;%world%!=event_arena'
+      display-condition: '%player-version-id%>=765;%bedrock%=false'
       lines:
         - '%time%'
         - '&f'
@@ -108,9 +108,7 @@ scoreboard:
         - '&#4CADD0ᴛ&#51B1D2ʜ&#57B5D5ᴇ&#5CB9D7ʏ&#61BDDAs&#67C1DCɪ&#6CC5DFx&#72C9E1.&#77CDE4s&#7CD1E6ᴘ&#82D5E9ᴀ&#87D9EBʀ&#8CDDEEᴋ&#92E1F0ᴇ&#97E5F3ᴅ&#9DE9F5.&#A2EDF8ʜ&#A7F1FAᴏ&#ADF5FDs&#B2F9FFᴛ'
     scoreboard:
       # Bedrock and older Java clients. Plain text only: no custom-font/gradient/math expansions are installed.
-      # Not shown in the event worlds, where the event plugin owns the sidebar.
       title: '&6&lTheySix Events'
-      display-condition: '%world%!=event_lobby;%world%!=event_arena'
       lines:
         - ''
         - '&7Player &f%player%'
