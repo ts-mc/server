@@ -198,15 +198,13 @@ Join one with `/ba join PG-01` (or any `PG-0N`), or use `/ba quickjoin`.
 
 ## Chat tags / glow / cosmetics
 
-**Triggers:** tag, tags, chat tag, deluxetags, glow, glow colour, fancyglow, cosmetic, cosmetics, hat, pet, particle, balloon, gadget
+**Triggers:** cosmetic, cosmetics, hat, pet, particle, balloon, gadget
 
 **Answer:**
 
 ```
 **Cosmetics & flair**
 
-- `/tags` — pick a chat tag (if you have one unlocked)
-- `/glow <colour>` — add a glow outline to your name
 - `/cosmetics` — browse hats, gadgets, pets, particles, balloons and more
 - `/ba store` — the minigames store for event cosmetics and effects
 

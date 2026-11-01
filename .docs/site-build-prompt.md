@@ -88,7 +88,7 @@ older docs, so mention it once as the underlying command.
 | `/ts store` | everyone | Cosmetic store |
 | `/ts party <list\|create\|invite\|join\|…>` | everyone | Party management |
 | `/balance`, `/pay <player> <amount>` | everyone | Credits via EssentialsX |
-| `/tags`, `/glow <colour>`, `/cosmetics` | everyone | Chat tags, glow outline, cosmetics |
+| `/cosmetics` | everyone | Cosmetics |
 | `/vote` | everyone | Server-list voting (see the caveat in §7) |
 | `/tsa …` | staff only | Admin alias for `/baa` |
 

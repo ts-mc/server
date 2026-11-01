@@ -68,7 +68,6 @@ server + the Party Games setup).
 | HubPVP | 3.1.2 |
 | FancyHolograms | 2.10.1-java21 |
 | FancyNpcs | 2.10.1-java21 |
-| FancyGlow | 2.10.2 |
 | DeluxeMenus / DeluxeTags | 1.14.0 / 1.8.3 |
 | DeluxeHub | — |
 | DiscordSRV (+Staff Chat) | 1.30.5 / 1.4.6 |

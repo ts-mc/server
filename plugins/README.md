@@ -23,7 +23,6 @@ This folder contains every plugin on **TheySix Events**
 | [`UltraCosmetics/`](UltraCosmetics/README.md) | Hats, gadgets, pets, particles |
 | [`FancyNpcs/`](FancyNpcs/README.md) | Server-side NPCs |
 | [`FancyHolograms/`](FancyHolograms/README.md) | Floating text holograms |
-| [`FancyGlow/`](FancyGlow/README.md) | Glow-outline colours |
 | [`FancyAnalytics/`](FancyAnalytics/README.md) | Telemetry for the Fancy plugins |
 | [`HeadDB/`](HeadDB/README.md) | Custom head database |
 | [`ItemJoin/`](ItemJoin/README.md) | Join items |

@@ -19,7 +19,6 @@ to other plugins such as TAB, scoreboards and chat. It is installed on
 | `%server_online%` / `%server_max_players%` | built-in | TAB online line |
 | `%luckperms-prefix%` / `%luckperms-suffix%` | LuckPerms expansion | TAB groups and rank line |
 | `%luckperms_prefix%` | LuckPerms expansion | TAB staff scoreboard |
-| `%fancyglow_color%` | FancyGlow expansion | TAB glow line and tag prefix |
 | `%vault_eco_balance_formatted%` | Vault expansion (ExcellentEconomy "money") | TAB money line |
 | `%dankvotes_votes%` / `%dankvotes_total_votes%` | DankVotes | TAB and vote menus |
 | `%dankvotes_streak%` / `%dankvotes_best_streak%` | DankVotes | TAB and vote menus |

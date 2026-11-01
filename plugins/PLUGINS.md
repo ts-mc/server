@@ -24,7 +24,6 @@ Versions below are local unless marked LIVE.
 | DiscordSRV | Discord bridge | 1.30.5 | [GitHub](https://github.com/DiscordSRV/DiscordSRV) | Review | Secret configuration stays local. |
 | EasyCommandBlocker | Command filtering | 1.18.1 | Source unverified — contact administration | Review | Check Paper compatibility. |
 | EssentialsX | Core server commands | 2.22.1-dev+27 (LIVE filename) | [Official downloads](https://essentialsx.net/downloads) | Yes | Main JAR required on LIVE; Spawn and Chat add-ons are separate. |
-| FancyGlow | Glowing effects | 2.10.2 | [Fancy Plugins](https://github.com/FancyMcPlugins) | Review | Verify exact release source. |
 | FancyHolograms | Lobby and vote leaderboard holograms | 2.12.0 | [Hangar](https://hangar.papermc.io/Oliver/FancyHolograms) | Yes | Keep paired with FancyNpcs; nine current definitions. |
 | FancyNpcs | Lobby information and vote leaderboard NPCs | 2.12.0 | [Hangar](https://hangar.papermc.io/Oliver/FancyNpcs) | Yes | Preserve nine definitions, actions, visibility and period switching. |
 | FastAsyncWorldEdit | WorldEdit implementation | 2.15.4 | [Modrinth](https://modrinth.com/plugin/fastasyncworldedit) | Yes | Required by WorldGuard. |

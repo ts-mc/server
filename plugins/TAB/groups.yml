@@ -1,7 +1,7 @@
 # Rank prefix comes from LuckPerms. TAB displays stable rank suffixes.
 _DEFAULT_:
   tabprefix: "%luckperms-prefix%"
-  tagprefix: "%luckperms-prefix%%fancyglow_color%"
+  tagprefix: "%luckperms-prefix%"
   customtabname: "%player%"
   tabsuffix: "&7 [ᴍᴇᴍʙᴇʀ]"
   tagsuffix: "&7 [ᴍᴇᴍʙᴇʀ]"

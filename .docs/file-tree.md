@@ -54,7 +54,6 @@ TheySix Events is a **minigame Minecraft server** running Paper 1.21.11 (Java 21
 │   ├── DiscordsRV-Build-1.30.5.jar  # Discord integration
 │   ├── FancyHolograms-2.12.0.jar # holograms
 │   ├── FancyNpcs-2.12.0.jar      # NPCs
-│   ├── FancyGlow-2.10.2.jar      # glow effect
 │   ├── UltraCosmetics-3.16-RELEASE.jar    # cosmetics
 │   ├── SkinsRestorer.jar         # skin management
 │   ├── Geyser-Spigot.jar         # Bedrock cross-play
