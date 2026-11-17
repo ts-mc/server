@@ -1,0 +1,21 @@
+{
+    "name": "TheySix server",
+    "host": "YOUR_SFTP_HOST",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "YOUR_SFTP_USERNAME",
+    "remotePath": "/",
+    "uploadOnSave": false,
+    "useTempFile": false,
+    "openSsh": false,
+    "ignore": [
+        ".git/**",
+        ".vscode/**",
+        ".backups/**",
+        ".remote-sync/**",
+        "projects/**",
+        "*.md",
+        "*.sh",
+        "*.example"
+    ]
+}

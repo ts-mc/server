@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+project_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+case "${1:-help}" in
+    snapshot)
+        if [[ $# -gt 1 ]]; then
+            echo 'Usage: ./theysix.sh snapshot' >&2
+            exit 2
+        fi
+        exec bash "$project_dir/ts-sync.sh"
+        ;;
+    help|-h|--help)
+        echo 'Usage: ./theysix.sh snapshot'
+        echo 'Download LIVE comparison files into ignored .remote-sync/.'
+        echo 'Configure .vscode/sftp.json and a protected credential file first.'
+        ;;
+    *)
+        echo 'Unknown action. Use: ./theysix.sh snapshot' >&2
+        exit 2
+        ;;
+esac

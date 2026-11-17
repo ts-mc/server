@@ -6,9 +6,11 @@ BASE=REPO/'.backups/paper26-live-deploy';BASE.mkdir(parents=True,exist_ok=True)
 def quote(s):return '"'+str(s).replace('\\','\\\\').replace('"','\\"')+'"'
 def connection():
  c=json.loads((REPO/'.vscode/sftp.json').read_text())
- secret=Path.home()/'.config/ts-server/sftp-password'
+ secret=Path(os.environ.get('TS_SERVER_SFTP_CREDENTIAL',str(Path.home()/'.config/ts-server/sftp-password'))).expanduser()
  if not secret.is_file() or secret.stat().st_uid!=os.getuid() or secret.stat().st_mode & 0o777 != 0o600:raise RuntimeError('Protected SFTP credential is unavailable')
- password=secret.read_text().splitlines()[0]
+ lines=secret.read_text().splitlines()
+ if len(lines)!=1 or not lines[0]:raise RuntimeError('Protected SFTP credential must contain one non-empty line')
+ password=lines[0]
  return c,password
 
 def batch(commands):

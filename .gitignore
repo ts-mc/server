@@ -205,3 +205,10 @@ plugins/FancyHolograms/logs/
 
 # BlueArcade rebuildable block regeneration snapshots (keep authored schematics)
 plugins/BlueArcade3/data/arenas/*/*/regeneration/
+
+# Private SFTP entrypoint/credentials; track only sanitized examples.
+/theysix.sh
+/.sftp.env
+/.env.sftp
+/sftp-password
+/sftp-password.*

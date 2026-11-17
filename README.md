@@ -25,3 +25,26 @@ Verify the host key before connecting; unknown hosts are not accepted automatica
 
 Deployment scripts contain explicit staging/activation operations. Running tests
 or preparing a Git commit does not authorize a deployment.
+
+## SFTP helper
+
+Copy `theysix.sh.example` to ignored `theysix.sh`, and
+`.vscode/sftp.json.example` to ignored `.vscode/sftp.json`. Fill in connection
+fields only; never add a password to these files. Create the external mode-600 credential file using the commands below,
+which prompt without putting the password in shell history. Run `bash ./theysix.sh snapshot` to refresh comparison files.
+The `help` action does not connect. This helper does not upload or deploy.
+
+The external credential is used by the shell and Python tools. Editor SFTP
+extensions have their own authentication setup; enter credentials through the
+extension's prompt or configure SSH authentication rather than saving a password
+in JSON.
+
+```sh
+install -d -m 700 "$HOME/.config/ts-server"
+(umask 077
+ read -r -s -p 'SFTP password: ' secret
+ printf '\n'
+ printf '%s\n' "$secret" > "$HOME/.config/ts-server/sftp-password"
+ unset secret)
+chmod 600 "$HOME/.config/ts-server/sftp-password"
+```
