@@ -16,5 +16,5 @@ Updater checks for and downloads new plugin versions on **TheySix Events**
   host**; prefer a manual, reviewed update flow for a production event server.
 - The minigames core has its own module updater — see the
   `updates.module_updates.enabled` setting notes in
-  [`docs/setup-guide.md`](../../docs/setup-guide.md).
+  [server operations](../../OPERATIONS.md).
 - No player-facing commands or branding apply.

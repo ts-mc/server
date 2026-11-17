@@ -1,0 +1,112 @@
+schema-version: 1
+world: tsxmas_christmas_2026
+# Coordinates intentionally unset. Never fabricate map coordinates or import over an existing world.
+boundary:
+  configured: false
+  min-x: 0
+  min-y: -64
+  min-z: 0
+  max-x: 0
+  max-y: 320
+  max-z: 0
+points:
+  hub: {configured: false}
+  workshop: {configured: false}
+  market: {configured: false}
+  secret: {configured: false}
+  forest-present: {configured: false}
+  candy-cane: {configured: false}
+  snowman: {configured: false}
+  house-one: {configured: false}
+  house-two: {configured: false}
+  house-three: {configured: false}
+  grinch: {configured: false}
+  build: {configured: false}
+  staff: {configured: false}
+plots:
+  plot-one:
+    configured: false
+    min-x: 0
+    min-y: 60
+    min-z: 0
+    max-x: 15
+    max-y: 100
+    max-z: 15
+  plot-two:
+    configured: false
+    min-x: 20
+    min-y: 60
+    min-z: 0
+    max-x: 35
+    max-y: 100
+    max-z: 15
+npcs:
+  santa:
+    configured: false
+    name: Santa
+    command: xmas delivery start
+    dialogue: Welcome to the workshop! Help deliver presents to the village.
+    skin: SantaClaus
+    hide-name: true
+  market:
+    configured: false
+    name: Christmas Merchant
+    command: xmas market
+    dialogue: Trade your Christmas tokens for a seasonal keepsake.
+    skin: MHF_Villager
+    hide-name: true
+holograms:
+  calendar:
+    configured: false
+    lines:
+    - <gradient:#B3000C:#E40010:#D8D8D8:#1FD537:#00B32C><bold>ADVENT CALENDAR</bold></gradient>
+    - <white>25 days • 25 Christmas surprises</white>
+    - <green>/xmas calendar</green>
+    - <gray>December 1–25 • Europe/Bucharest</gray>
+  tokens:
+    configured: false
+    lines:
+    - <gradient:#B3000C:#E40010:#D8D8D8:#1FD537:#00B32C><bold>YOUR CHRISTMAS JOURNEY</bold></gradient>
+    - '<white>Tokens: <green>%tsxmas_tokens%</green></white>'
+    - '<white>Presents found: <green>%tsxmas_hunt_found%</green></white>'
+    - '<gray>View every leaderboard: /xmas top</gray>'
+  leaderboard-calendar:
+    configured: false
+    leaderboard: calendar
+  leaderboard-hunt:
+    configured: false
+    leaderboard: hunt
+  leaderboard-delivery:
+    configured: false
+    leaderboard: delivery
+  leaderboard-build:
+    configured: false
+    leaderboard: build
+  leaderboard-secret:
+    configured: false
+    leaderboard: secret
+  leaderboard-raffle:
+    configured: false
+    leaderboard: raffle
+  leaderboard-market:
+    configured: false
+    leaderboard: market
+  leaderboard-grinch:
+    configured: false
+    leaderboard: grinch
+  santa:
+    npc: santa
+    height: 2.7
+    lines:
+    - <gradient:#B3000C:#E40010:#D8D8D8:#1FD537:#00B32C><bold>SANTA’S DELIVERY</bold></gradient>
+    - <white>Help Santa deliver village presents.</white>
+    - <green>Right-click Santa to start your route</green>
+    - <gray>/xmas delivery progress</gray>
+  market:
+    npc: market
+    height: 2.7
+    lines:
+    - <gradient:#B3000C:#E40010:#D8D8D8:#1FD537:#00B32C><bold>CHRISTMAS MARKET</bold></gradient>
+    - <white>Seasonal gifts • Cosmetics • Keepsakes</white>
+    - <green>Right-click the merchant to browse</green>
+    - '<gray>Currency: Christmas tokens</gray>'

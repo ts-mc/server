@@ -1,0 +1,27 @@
+name: TSXMAS
+version: '${project.version}'
+main: com.theysix.tsxmas.TSXMASPlugin
+api-version: '1.21.11'
+description: Independent TheySix Christmas events
+authors: [TheySix]
+softdepend: [Vault, LuckPerms, PlaceholderAPI, DiscordSRV, FancyNpcs, FancyHolograms, WorldGuard, FastAsyncWorldEdit, HeadDB, HeadDatabase, UltraCosmetics, floodgate, Geyser-Spigot, NoteBlockAPI, Multiverse-Core, WorldServer]
+commands:
+  xmas:
+    description: TheySix Christmas events
+    usage: /xmas help
+  tsxmas:
+    description: Christmas administration
+    usage: /tsxmas help
+permissions:
+  tsxmas.player:
+    default: true
+  tsxmas.staff:
+    default: op
+    children:
+      tsxmas.player: true
+  tsxmas.admin:
+    default: op
+    children:
+      tsxmas.staff: true
+  tsxmas.debug:
+    default: op

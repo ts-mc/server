@@ -1,0 +1,209 @@
+{
+  "started": true,
+  "exit_code": 0,
+  "artifacts": [
+    {
+      "file": "AdvancedBanZ-4.0.1-4.0.1-all.jar",
+      "sha256": "acd407dd92a852970bfec082321961314f49b4fadfab899b170c72407e7196bc"
+    },
+    {
+      "file": "BlockParticles-1.12.jar",
+      "sha256": "f7019a791b3ea3e5b9840130956ea53d7cb7c10be7846e3307b640ac1dbe94b9"
+    },
+    {
+      "file": "BlueArcade-3.4.5-ts.jar",
+      "sha256": "7dcee39cbca4d6a40af50a909ad60eb737382fc93424117e688d538d553e3a9b"
+    },
+    {
+      "file": "DankVotes-1.2.0.jar",
+      "sha256": "b01cedad0dc53b1b0b3d838fa209ef1877b7daf46a51cea6fb67f593b5f0b9f1"
+    },
+    {
+      "file": "DeluxeMenus-1.14.1-Release.jar",
+      "sha256": "ec10a1317152aa57d76eec8cb3e1e7dc7f52e45c7a5d742c0baa1e394496ec20"
+    },
+    {
+      "file": "DiscordSRV-Build-1.30.5.jar",
+      "sha256": "ef2fa1f2eb146c7c77412b7190a7dd33f1fc91282683fe45407739554c8aefef"
+    },
+    {
+      "file": "DiscordSRV-Staff-Chat-1.4.6.jar",
+      "sha256": "cb02d1fb2694b541c1da77a0ef6cddf631abe03432c374c1cee375999d27d78a"
+    },
+    {
+      "file": "EasyCommandBlocker-1.19.1-theysix.1.jar",
+      "sha256": "28b97f5ae1ea14138c23b349ce70ea48b51c525e1909dcd6ed3dfdf05fedf44a"
+    },
+    {
+      "file": "EssentialsX-2.22.1-dev+28-f8724e2.jar",
+      "sha256": "5b8a1feb7c40a45d81e516bd077a7272d833c76cf829098743211999abd95929"
+    },
+    {
+      "file": "FancyHolograms-2.12.0.jar",
+      "sha256": "5b94f76132b16898177cdac47f26b0a0d2070e8b3770891ff6624fc404811f56"
+    },
+    {
+      "file": "FancyNpcs-2.12.1.jar",
+      "sha256": "a3464906d6c797781a29831706ebd5cdfa6d076fa094da2f0e7574b436fb9532"
+    },
+    {
+      "file": "FastAsyncWorldEdit-Paper-2.16.2.jar",
+      "sha256": "a74219fa660c782c9779e6740867cde395a24d1381dcba6c4f8022e4e9c3f87d"
+    },
+    {
+      "file": "Geyser-Spigot.jar",
+      "sha256": "7b4054c4792f76b34ce88c43871555c5e9774898ff8d1c269e4f0b39c758eba2"
+    },
+    {
+      "file": "HeadDB-6.1.1.jar",
+      "sha256": "234f8f72d60c3773385d66f6418973003ed0a73b8f3522b2bb4ce21e9656ef60"
+    },
+    {
+      "file": "ItemJoin.jar",
+      "sha256": "b2c3ac60ea5cbda43f9446a6c22a23c6e370aa4beb85847a65e6564592b4e9d1"
+    },
+    {
+      "file": "LPC-3.6.2.jar",
+      "sha256": "ee53b9ab79aec400c542d5c4fd12b35fcb6ac63774d2966a7c86af7fab325342"
+    },
+    {
+      "file": "LibsDisguises-26.11.10-Github.jar",
+      "sha256": "e08d107b9cf65484d416a12038b3ab7c402ceb3936981985a3ca2433fbf044c7"
+    },
+    {
+      "file": "LogFilter-Paper-3.2.0.jar",
+      "sha256": "778523d801659b82f243498b3d61582e2f543bc0ce3e14bec2368e8e3c5be620"
+    },
+    {
+      "file": "LuckPerms-Bukkit-5.5.85.jar",
+      "sha256": "dc637ce18f48d3b75a7ffd1784b85be16a627359090dfe5adf15dab6d145dc7d"
+    },
+    {
+      "file": "Maintenance-Paper-5.1.1.jar",
+      "sha256": "56dd1df8ac6b807c246f0611e54a04b5efb1c8489390ca4d8aa559a775dbee12"
+    },
+    {
+      "file": "MyCommand.jar",
+      "sha256": "3ee6152f886e057dfe77897e8e59ebb4a8d19a3e5ef77650a882ac86eab20481"
+    },
+    {
+      "file": "NoteBlockAPI-1.7.0.jar",
+      "sha256": "9f83897b4fa465828ab94003aeb2c7ffa3e0503cd091a881f0d3900b39c50f6c"
+    },
+    {
+      "file": "PlaceholderAPI-2.12.3.jar",
+      "sha256": "fde03259f5af6938f3c33eeb4d814000a1adabf1d2304ce14970be81f609a437"
+    },
+    {
+      "file": "ProtocolLib.jar",
+      "sha256": "4eed7f7337a021b8f9d6ab11790ba67c1565b95132d924a7c76eefde1aded379"
+    },
+    {
+      "file": "SkinsRestorer.jar",
+      "sha256": "a85b4a370f988741c9a38f4d0498262edacbf3220314790ac1c127461996359c"
+    },
+    {
+      "file": "SuperBlockCommands.jar",
+      "sha256": "bd130d2ba5d2dbbec8fa49050b5c67130630ddba02593b8b7abc9d37c35e140b"
+    },
+    {
+      "file": "TAB v6.2.1.jar",
+      "sha256": "0b6a21af6fd3b113c05821daaed00ff92234a84ca94b29b3aec0ef1bd313b8a9"
+    },
+    {
+      "file": "TSHide-1.0.1.jar",
+      "sha256": "adc7a30886f8d299065fa927dc578a2f6ec7310a4c972c0c736e201b28a4965a"
+    },
+    {
+      "file": "TSStaff-1.3.1.jar",
+      "sha256": "eb762ad8f7eb0250d61978766c4bd3950f0bb477362e119f737cd1d57533cef8"
+    },
+    {
+      "file": "UltraCosmetics-3.17-DEV-b1.jar",
+      "sha256": "0b722899d58a87dd938f284f32e48d10b73b79d7c5a67560fb1ee924788c59e9"
+    },
+    {
+      "file": "Vault.jar",
+      "sha256": "27a80debcf2ea197cc3d17755d851af23e9bcaf8e7a1f2e56bf773a56c636728"
+    },
+    {
+      "file": "ViaBackwards-5.12.2.jar",
+      "sha256": "e989440e0aad7e12d4685d7a57df854691b67660966a95ec0450e20ce98e87ab"
+    },
+    {
+      "file": "ViaVersion-5.12.2.jar",
+      "sha256": "c0b63badcb0f7d38f4443e06820f2b8142dd4f0d3b0511f9330ff1050430e6b2"
+    },
+    {
+      "file": "VoidGen-2.3.9.jar",
+      "sha256": "44473d0745c67f970c5f4be1efbd79e0d70e73e03a40418cd3fb517f6cc71566"
+    },
+    {
+      "file": "VotifierPlus-1.4.3.jar",
+      "sha256": "42015fc6fc45f9b865d6c3caa669b621902dbcbcaeaa7d98cfeec8a0dee388d0"
+    },
+    {
+      "file": "Warps.jar",
+      "sha256": "5e3be3a6cab7128a42bab662d4fb130a05e3691a9870342d87cde65a1194263b"
+    },
+    {
+      "file": "WorldServer-1.9.4-theysix.1.jar",
+      "sha256": "66ea3e08f4205605c3991a7660bcb9c933a72a3ff80309785f21622d7c86df45"
+    },
+    {
+      "file": "ban-webhook-1.0.0.jar",
+      "sha256": "8c7d2a41b9db48dbb26b54629d143ab161b77d2df9137d6113bd9d614c3d0f2b"
+    },
+    {
+      "file": "floodgate-spigot.jar",
+      "sha256": "21570aff9ce17d6983928e8552777760e1ede5050026b04c686b0ae112e6fd7e"
+    },
+    {
+      "file": "minimotd-paper-2.2.5.jar",
+      "sha256": "a1f5bff3abf4c9c90bd4417ce26612e621c83a1564f3fc7aa39848996cbea6c6"
+    },
+    {
+      "file": "multiverse-core-5.8.2.jar",
+      "sha256": "792252b6bbcf17c94ab8385e595281c830d7a40c946aea1832d8a010702bb630"
+    },
+    {
+      "file": "nightcore-2.16.7.jar",
+      "sha256": "645c643635ef0add0e38fa82cf6609a2350b5ea28e257ab2fc93a017864bc301"
+    },
+    {
+      "file": "packetevents-spigot-2.14.0.jar",
+      "sha256": "060087c58ec268eae7dd0eb1f17ac3bea1eaadda1693414141ff64e506091bd7"
+    },
+    {
+      "file": "playerlogs.jar",
+      "sha256": "7c66baa841bfa7c68d6b99fb84a79ef203698f67634c16b84a87b0af720f8d03"
+    },
+    {
+      "file": "worldguard-bukkit-7.0.20.jar",
+      "sha256": "8768a49bcbecbb7a413ad134ee72d9871cdf967b7d938e6b96bb0ca72bb1467b"
+    }
+  ],
+  "errors": [],
+  "tsxmas_ready": true,
+  "production_configs_tested": false,
+  "players_tested": false,
+  "status_ping": {
+    "ok": true,
+    "version": {
+      "name": "Paper 26.3",
+      "protocol": 777
+    }
+  },
+  "plugin_count": 46,
+  "loaded_bluearcade_modules": 19,
+  "java": "Temurin 25.0.5",
+  "paper_build": "26.3-251",
+  "paper_sha256": "3e7591f1c5b40a379c0ef494bcbeda128a62f5819e32cfc5e6335880bee39c55",
+  "full_live_configurations_tested": false,
+  "world_data_included": false,
+  "notes": [
+    "Expected missing production world folders in isolated Multiverse test",
+    "Optional LibsDisguises hosting network check failed",
+    "Player joins and gameplay not tested"
+  ]
+}

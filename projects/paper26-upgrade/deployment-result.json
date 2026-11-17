@@ -1,0 +1,28 @@
+{
+  "id": "paper26-20261114-210837",
+  "backup": ".deploy-backups/paper26-20261114-210837",
+  "updated_files": 27,
+  "active_plugin_count": 47,
+  "verified_by": "SFTP staged SHA-256 readback followed by server-side rename",
+  "server_started": false,
+  "local_applied": true,
+  "java_last_live_startup": "25",
+  "worlds_databases_configs_keys_uploaded": false,
+  "staging_test": {
+    "started": true,
+    "exit_code": 0,
+    "errors": [],
+    "tsxmas_ready": true,
+    "production_configs_tested": false,
+    "players_tested": false,
+    "status_ping": {
+      "ok": true,
+      "version": {
+        "name": "Paper 26.3",
+        "protocol": 777
+      }
+    }
+  },
+  "owner_reported_full_backup": true,
+  "github_push": false
+}

@@ -1,7 +1,7 @@
 # BlueArcade3 — TheySix Events (Minigames Core)
 
 This is the data folder of the minigames core that powers **TheySix Events**.
-It runs the 19 minigames listed in [`docs/minigames-list.md`](../../docs/minigames-list.md)
+It runs the 19 minigames listed in [games](../../GAMES.md)
 across arena worlds `PG-01` … `PG-06`.
 
 > **Server:** `theySix Events` · **IP:** `play.theysix.tech` ·
@@ -58,7 +58,7 @@ Player commands use the native `/ts` command (also `/tse`). Admin commands use t
 Arenas are **data files, not registrations** — the plugin does not auto-discover
 them. Register each arena once with `/tsa` (set lobby → set name → set min/max
 players → add minigames) and set the main lobby with `/tsa setmainlobby`. Full
-instructions: [`docs/setup-guide.md`](../../docs/setup-guide.md).
+instructions: [server operations](../../OPERATIONS.md).
 
 ## Notes
 

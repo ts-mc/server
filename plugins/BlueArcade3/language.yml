@@ -11,7 +11,7 @@
 # ========================================
 file_version: '4'
 language: English (UK)
-prefix: <b><gradient:#4cadd0:#b2f9ff>ѕᴇʀᴠᴇʀ</gradient></b> <gray>|</gray>
+prefix: "<bold><gradient:#B3000C:#E40010:#D8D8D8:#1FD537:#00B32C>ѕᴇʀᴠᴇʀ</gradient></bold> <gray>|</gray>"
 
 # ========================================
 # PLAYER EXPERIENCE

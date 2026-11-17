@@ -51,6 +51,5 @@ to the staff track (helper → owner) for the count to be accurate.
 | `/lp group <group> setweight <n>` | set a group's weight |
 | `/lp editor` | open the web editor |
 
-See [`docs/luckperms-setup.md`](../../docs/luckperms-setup.md) and
-[`docs/luckperms-commands.md`](../../docs/luckperms-commands.md) for the full
-rebuild and command reference.
+See [server operations](../../OPERATIONS.md) for current permission and integration
+procedures. Historical rebuild instructions are not authoritative.

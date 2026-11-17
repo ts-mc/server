@@ -1,0 +1,144 @@
+# DankVotes Configuration
+# Docs: https://github.com/DankMinecraftServers/DankVotes
+
+polling:
+  enabled: true
+  api-url: "https://dankminecraftservers.com"
+  api-token: 'CHANGE_ME'
+  interval-seconds: 15
+
+votifier:
+  enabled: false
+  host: "0.0.0.0"
+  port: 8192
+  token: 'CHANGE_ME'
+  v1-rsa: true
+
+nuvotifier-hook: true
+duplicate-window-seconds: 120
+
+forwarding:
+  enabled: false
+  mode: all
+  servers:
+    - name: "survival"
+      host: "127.0.0.1"
+      port: 8193
+      token: 'CHANGE_ME'
+
+features:
+  statistics: true
+  rewards: true
+  vote-messages: true
+
+commands:
+  vote: true
+  votes: true
+  votetop: true
+  voteparty: true
+  setvotes: true
+  reset: true
+  party: true
+
+behaviour:
+  offline-votes: true
+  queue-offline-votes: true
+  require-verified: false
+  broadcast:
+    enabled: true
+    message: "&f%player% &7voted for the server and earned a reward! &f/vote"
+  thank-you:
+    enabled: true
+    message: "&7Thanks for voting, %player%! &7(&f%votes% &7total votes, &f%streak%&7-day streak)"
+
+vote-links:
+  - name: "DankMinecraftServers"
+    url: "https://dankminecraftservers.com/server/theysix-events"
+  - name: "MinecraftServers"
+    url: "https://minecraftservers.org/vote/694846"
+  - name: "TopG"
+    url: "https://topg.org/minecraft-servers/server-687301"
+  - name: "MinecraftBuzz"
+    url: "https://minecraft.buzz/vote/theysix-events"
+  - name: "Minecraft-MP"
+    url: "https://minecraft-mp.com/server/365557/vote"
+
+rewards:
+  - "eco give %player% 500"
+
+milestones:
+  - type: EVERY
+    votes: 5
+    commands:
+      - "crate key %player% vote 3"
+      - "broadcast &d%player% &7hit a &d%votes%-vote &7milestone!"
+  - type: AT
+    votes: 100
+    commands:
+      - "lp user %player% parent add vip"
+      - "broadcast &6%player% &7reached &6100 votes &7and earned &6VIP&7!"
+
+streaks:
+  enabled: true
+  broadcast:
+    enabled: false
+    message: "&d%player% &7is on a &d%streak%-day &7voting streak!"
+  rewards:
+    - type: EVERY
+      days: 7
+      commands:
+        - "crate key %player% vote 2"
+        - "broadcast &d%player% &7kept a &d7-day &7vote streak!"
+    - type: AT
+      days: 30
+      commands:
+        - "give %player% netherite_ingot 1"
+
+vote-party:
+  enabled: false
+  goal: 50
+  announce-every: 10
+  progress-message: "&7Vote party: &d%party_progress%&7/&d%party_goal% &7- &d%party_remaining% &7more to go! &d/vote"
+  start-message: "&d&lVOTE PARTY! &7The server reached &d%party_goal% &7votes - rewards for everyone!"
+  rewards:
+    - "crate key %player% party 1"
+    - "eco give %player% 1000"
+    - "broadcast &dEnjoy your party rewards!"
+
+reminders:
+  enabled: true
+  interval-minutes: 30
+  on-join: false
+  on-join-delay-seconds: 10
+  message: "&7You haven't voted today! Support the server with &d/vote &7and earn rewards."
+
+update-check:
+  enabled: true
+  repo: "DankMinecraftServers/DankVotes"
+metrics: true
+debug: false
+
+messages:
+  prefix: "§x§4§C§A§D§D§0§lѕ§x§6§0§B§C§D§9§lᴇ§x§7§5§C§B§E§3§lʀ§x§8§9§D§B§E§C§lᴠ§x§9§E§E§A§F§6§lᴇ§x§B§2§F§9§F§F§lʀ §7| &r"
+  no-permission: "&cYou don't have permission to do that."
+  player-only: "&cThat command can only be used by a player."
+  player-not-found: "&cNo vote data found for &f%player%&c."
+  command-disabled: "&cThat command is turned off on this server."
+  vote-header: "&8&m----------&r &d&lVOTE &8&m----------"
+  vote-line: "&d» &f%name%&7: &b%url%"
+  vote-footer: "&7Vote daily to earn rewards! Your total: &d%votes% &7| Streak: &d%streak% &7days"
+  vote-no-links: "&7No vote links have been configured yet."
+  votes-self: "&7You have voted &d%votes% &7times (&d%streak%&7-day streak, best &d%best_streak%&7)."
+  votes-other: "&d%player% &7has voted &d%votes% &7times (&d%streak%&7-day streak, best &d%best_streak%&7)."
+  votetop-header: "&8&m--------&r &d&lTOP VOTERS &8&m--------"
+  votetop-line: "&7#%rank% &d%player% &8- &f%votes% votes"
+  votetop-empty: "&7Nobody has voted yet. Be the first with &d/vote&7!"
+  voteparty-status: "&7Vote party: &d%party_progress%&7/&d%party_goal% &7votes (&d%party_remaining% &7to go)"
+  voteparty-disabled: "&7Vote parties are not enabled on this server."
+  reloaded: "&aDankVotes configuration reloaded."
+  test-vote: "&aSimulated a vote for &d%player%&a."
+  test-vote-refused: "&cThe test vote for &f%player% &cwas not counted - the console says why."
+  votes-set: "&aSet &d%player%&a's vote count to &d%votes%&a."
+  votes-reset: "&aReset vote data for &d%player%&a."
+  party-forced: "&aForced a vote party."
+  usage: "&7Usage: &f%usage%"

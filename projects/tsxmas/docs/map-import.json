@@ -1,0 +1,68 @@
+{
+  "world": "tsxmas_christmas_2026",
+  "storage": "world/dimensions/minecraft/tsxmas_christmas_2026",
+  "registered": true,
+  "registration_key": "minecraft:tsxmas_christmas_2026",
+  "multiverse_properties": {
+    "gamemode": "adventure",
+    "difficulty": "peaceful",
+    "auto-load": true
+  },
+  "mca_files_read": 11,
+  "mca_hashes_unchanged": 9,
+  "terrain_chunks_parsed": 440,
+  "legacy_folder_exists": false,
+  "world_import_observed": true,
+  "owner_log_clean_shutdown": true,
+  "agent_started_java": false,
+  "agent_changed_remote_files": false,
+  "rendering_tested": false,
+  "restart_autoload_tested": true,
+  "file_checks": [
+    {
+      "file": "region/r.0.1.mca",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "region/r.0.0.mca",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "region/r.-1.1.mca",
+      "sha256_unchanged": false
+    },
+    {
+      "file": "region/r.-1.0.mca",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "poi/r.0.1.mca",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "poi/r.-1.1.mca",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "poi/r.-1.0.mca",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "entities/r.0.1.mca",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "entities/r.0.0.mca",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "entities/r.-1.1.mca",
+      "sha256_unchanged": false
+    },
+    {
+      "file": "entities/r.-1.0.mca",
+      "sha256_unchanged": true
+    }
+  ],
+  "player_entry_observed": true
+}

@@ -22,15 +22,15 @@ header-footer:
       display-condition: '%world%!=disabledworld'
       header:
         - '&f'
-        - '&#4CADD0&lᴛ&#54B3D4&lʜ&#5CB9D7&lᴇ&#64BFDB&lʏ&#6BC4DE&ls&#73CAE2&lɪ&#7BD0E6&lx &#8BDCED&lᴇ&#93E2F1&lᴠ&#9AE7F4&lᴇ&#A2EDF8&lɴ&#AAF3FB&lᴛ&#B2F9FF&ls'
-        - '&#4CADD0play.theysix.tech'
+        - "&#B3000C&lᴛ&#C2000D&lʜ&#D1000E&lᴇ&#E00010&lʏ&#E1323E&ls&#DE747C&lɪ&#DAB7B9&lx&#BCD8BF&l &#83D78E&lᴇ&#4AD65C&lᴠ&#1DD236&lᴇ&#13C833&lɴ&#0ABD2F&lᴛ&#00B32C&ls&r"
+        - "&#B3000Cp&#BF000Dl&#CC000Ea&#D8000Fy&#E40010.&#E13642t&#DE6C74h&#DBA2A6e&#D8D8D8y&#AAD7B0s&#7CD688i&#4DD65Fx&#1FD537.&#17CC34t&#10C432e&#08BC2Fc&#00B32Ch&r"
         - '&r&7Online: &f%online%'
         - ''
       footer:
         - ''
         - '&7You can vote for our server'
-        - '&#4CADD0events.theysix.tech/vote'
-        - '&7Website: &btheysix.tech'
+        - "&#B3000Ce&#BC000Dv&#C4000De&#CD000En&#D5000Ft&#DE000Fs&#E30919.&#E12F3Bt&#DF555Eh&#DD7A81e&#DBA0A4y&#D9C5C7s&#C8D8CAi&#A8D7AEx&#88D792.&#67D676t&#47D65Ae&#27D53Ec&#1BD136h&#16CB34/&#10C532v&#0BBF30o&#05B92Et&#00B32Ce&r"
+        - "&#B3000CW&#BD000De&#C7000Eb&#D0000Es&#DA000Fi&#E40010t&#E22B38e&#DF5660:&#DD8288 &#DAADB0t&#D8D8D8h&#B3D7B8e&#8ED798y&#69D677s&#44D657i&#1FD537x&#19CE35.&#13C733t&#0CC130e&#06BA2Ec&#00B32Ch&r"
         - ''
 tablist-name-formatting:
   enabled: true
@@ -73,7 +73,7 @@ bossbar:
       style: PROGRESS
       color: '%animation:barcolors%'
       progress: '100'
-      text: '&fWebsite: &btheysix.tech'
+      text: "&#B3000CW&#BD000De&#C7000Eb&#D0000Es&#DA000Fi&#E40010t&#E22B38e&#DF5660:&#DD8288 &#DAADB0t&#D8D8D8h&#B3D7B8e&#8ED798y&#69D677s&#44D657i&#1FD537x&#19CE35.&#13C733t&#0CC130e&#06BA2Ec&#00B32Ch&r"
 scoreboard:
   enabled: true
   toggle-command: /sb
@@ -82,12 +82,12 @@ scoreboard:
   delay-on-join-milliseconds: 0
   scoreboards:
     scoreboard-1.20.3+:
-      title: '&#4CADD0&lᴛ&#54B3D4&lʜ&#5CB9D7&lᴇ&#64BFDB&lʏ&#6BC4DE&ls&#73CAE2&lɪ&#7BD0E6&lx &#8BDCED&lᴇ&#93E2F1&lᴠ&#9AE7F4&lᴇ&#A2EDF8&lɴ&#AAF3FB&lᴛ&#B2F9FF&ls'
+      title: "&#B3000C&lᴛ&#C2000D&lʜ&#D1000E&lᴇ&#E00010&lʏ&#E1323E&ls&#DE747C&lɪ&#DAB7B9&lx&#BCD8BF&l &#83D78E&lᴇ&#4AD65C&lᴠ&#1DD236&lᴇ&#13C833&lɴ&#0ABD2F&lᴛ&#00B32C&ls&r"
       display-condition: '%player-version-id%>=765;%bedrock%=false'
       lines:
         - '%time%'
         - '&f'
-        - ' <gradient:#4cadd0:#b2f9ff>%player%</gradient>'
+        - " <gradient:#B3000C:#E40010:#D8D8D8:#1FD537:#00B32C>%player%</gradient>"
         - ' &#deb887• &fʀᴀɴᴋ &f%luckperms-prefix%'
         - ''
         - ''
@@ -101,10 +101,10 @@ scoreboard:
         - ' &7ᴄʀᴇᴅɪᴛs: &f%bluearcade_stat_global_credits%'
         - ' &7sᴛᴀʀs: &f%bluearcade_stat_global_stars%'
         - ''
-        - '&#4CADD0play.theysix.tech'
+        - "&#B3000Cp&#BF000Dl&#CC000Ea&#D8000Fy&#E40010.&#E13642t&#DE6C74h&#DBA2A6e&#D8D8D8y&#AAD7B0s&#7CD688i&#4DD65Fx&#1FD537.&#17CC34t&#10C432e&#08BC2Fc&#00B32Ch&r"
     scoreboard:
       # Bedrock and older Java clients. Plain text only: no custom-font/gradient/math expansions are installed.
-      title: '&6&lTheySix Events'
+      title: "&#B3000C&lT&#C2000D&lh&#D1000E&le&#E00010&ly&#E1323E&lS&#DE747C&li&#DAB7B9&lx&#BCD8BF&l &#83D78E&lE&#4AD65C&lv&#1DD236&le&#13C833&ln&#0ABD2F&lt&#00B32C&ls&r"
       lines:
         - ''
         - '&7Player &f%player%'
@@ -112,7 +112,7 @@ scoreboard:
         - '&7Ping &f%ping%ms'
         - '&7Online &f%online%'
         - ''
-        - '&bplay.theysix.tech'
+        - "&#B3000Cp&#BF000Dl&#CC000Ea&#D8000Fy&#E40010.&#E13642t&#DE6C74h&#DBA2A6e&#D8D8D8y&#AAD7B0s&#7CD688i&#4DD65Fx&#1FD537.&#17CC34t&#10C432e&#08BC2Fc&#00B32Ch&r"
 layout:
   enabled: true
   direction: COLUMNS
@@ -166,8 +166,8 @@ mysql:
   host: 127.0.0.1
   port: 3306
   database: tab
-  username: user
-  password: YOUR_PASSWORD
+  username: 'CHANGE_ME'
+  password: 'CHANGE_ME'
   useSSL: true
 per-world-playerlist:
   enabled: false

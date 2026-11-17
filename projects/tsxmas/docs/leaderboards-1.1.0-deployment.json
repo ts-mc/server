@@ -1,0 +1,25 @@
+{
+  "id": "tsxmas-leaderboards-20261115-121245",
+  "version": "1.1.0",
+  "palette": [
+    "B3000C",
+    "E40010",
+    "D8D8D8",
+    "1FD537",
+    "00B32C"
+  ],
+  "tests_passed": 41,
+  "staged": true,
+  "active": true,
+  "java_server_started": false,
+  "rank_data_changed": false,
+  "world_data_changed": false,
+  "backup": ".deploy-backups/tsxmas-leaderboards-20261115-121245",
+  "active_sha256_verified": true,
+  "changed_files": [
+    "plugins/TSXMAS/config.yml",
+    "plugins/TSXMAS/messages.yml",
+    "plugins/TSXMAS/locations.yml",
+    "plugins/TSXMAS.v1.1.0.jar"
+  ]
+}

@@ -1,0 +1,65 @@
+schema-version: 1
+# Events persist STOPPED/RUNNING/PAUSED in SQLite. No event starts automatically.
+hunt:
+  objectives:
+    forest-present:
+      location: forest-present
+      reward: discovery
+    candy-cane:
+      location: candy-cane
+      reward: discovery
+    snowman:
+      location: snowman
+      reward: discovery
+  completion-reward: hunt-complete
+delivery:
+  time-limit-seconds: 0
+  stops:
+  - house-one
+  - house-two
+  - house-three
+  stop-reward: discovery
+  completion-reward: delivery-complete
+  marker-horizontal-radius: 1.5
+  marker-vertical-radius: 2.5
+build:
+  region: tsxmas-build
+  categories: [cozy, festive, creative]
+  winner-reward: winner
+  participant-reward: participant
+secret:
+  deadline: '2026-12-15T20:00:00+02:00[Europe/Bucharest]'
+  allowed-materials: [DIAMOND, EMERALD, COOKIE, GOLD_INGOT]
+  min-amount: 1
+  max-amount: 64
+  # Optional token escrow charged to givers. Not a market-value appraisal.
+  token-budget: 0
+raffle:
+  ticket-cost: 5
+  max-tickets: 100
+  draw-at: '2026-12-25T20:00:00+02:00[Europe/Bucharest]'
+  winners: 3
+  # Guaranteed ordered prizes; each player may win at most once per draw.
+  prizes: [winner, christmas-eve, daily]
+market:
+  items:
+    festive-cookies:
+      name: Festive Cookies
+      icon: COOKIE
+      currency: TOKENS
+      price: 10
+      stock: 200
+      limit: 5
+      reward: cookies
+    snow-globe:
+      name: Winter Keepsake
+      icon: SNOW_BLOCK
+      currency: TOKENS
+      price: 25
+      stock: 50
+      limit: 1
+      reward: keepsake
+grinch:
+  location: grinch
+  # A non-destructive final challenge: requires a completed hunt and delivery route.
+  reward: winner

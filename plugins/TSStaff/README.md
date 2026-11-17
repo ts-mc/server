@@ -1,17 +1,17 @@
-# TSStaff 1.3.0
+# TSStaff 1.3.1
 
 TSStaff provides chat clearing, moderation tools, announcements, and `/update`.
 `/update` scans loaded plugins and reads installed versions from Paper's
 `logs/latest.log`, falling back to each plugin's metadata when the startup log
 does not contain a version. It opens a read-only paginated GUI and checks
 configured Modrinth and Hangar projects for stable releases compatible with
-Paper 1.21.11. Plugins without a configured source are marked for manual
+the running Paper version by default (`updates.minecraft-version: auto`). Plugins without a configured source are marked for manual
 review. It never downloads or replaces JARs.
 
 The plugin sources are under `src/main/java/`. Build against the Paper API
 embedded in the matching server archive with `./build.sh [server.jar]`; the
-default output is `/tmp/TSStaff-1.3.0.jar`, outside the repository. Set
-`TSSTAFF_JDK` to a Java 21 JDK directory when `javac` is not on `PATH`.
+default output is `/tmp/TSStaff-1.3.1.jar`, outside the repository. Set
+`TSSTAFF_JDK` to a Java 25 JDK directory when `javac` is not on `PATH`.
 
 TSStaff declares these permission nodes:
 
@@ -30,3 +30,7 @@ LuckPerms; do not make the staff commands public.
 
 The runtime `config.yml` contains saved moderation state and stays local/ignored.
 Use `config.yml.example` as the sanitized configuration template.
+
+For Paper 26.3, pass its runtime `libraries/` directory to `build.sh` when the
+Paper launcher does not embed API JARs. Explicit update-version overrides remain
+supported; change an old `1.21.11` override to `auto` when upgrading.

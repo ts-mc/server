@@ -1,0 +1,4 @@
+schema-version: 1
+file: tsxmas.db
+# SQLite WAL, busy timeout 5s and synchronous=FULL are safety invariants.
+# Database filename and season cannot change during reload.

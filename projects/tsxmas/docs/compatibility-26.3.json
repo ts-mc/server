@@ -1,0 +1,189 @@
+{
+  "started": false,
+  "exit_code": 0,
+  "artifacts": [
+    {
+      "file": "AdvancedBanZ-4.0.1-4.0.1-all.jar",
+      "sha256": "610d7ae31457f88ab067e0050145c1d680082f2265484774e24ccdac29552e21"
+    },
+    {
+      "file": "BlockParticles-1.12.jar",
+      "sha256": "f7019a791b3ea3e5b9840130956ea53d7cb7c10be7846e3307b640ac1dbe94b9"
+    },
+    {
+      "file": "BlueArcade-3.4.5-ts.jar",
+      "sha256": "7dcee39cbca4d6a40af50a909ad60eb737382fc93424117e688d538d553e3a9b"
+    },
+    {
+      "file": "DankVotes-1.2.0.jar",
+      "sha256": "b01cedad0dc53b1b0b3d838fa209ef1877b7daf46a51cea6fb67f593b5f0b9f1"
+    },
+    {
+      "file": "DeluxeMenus-1.14.0-Release.jar",
+      "sha256": "268d862b3ad5febea197bb25556895424c5aaf079318ae5f591dc79f5ca66cb1"
+    },
+    {
+      "file": "DiscordSRV-Build-1.30.5.jar",
+      "sha256": "dbf795f0f593f88303d1240e8133a21a9315d27315e309a5ebb011268463c976"
+    },
+    {
+      "file": "DiscordSRV-Staff-Chat-1.4.6.jar",
+      "sha256": "cb02d1fb2694b541c1da77a0ef6cddf631abe03432c374c1cee375999d27d78a"
+    },
+    {
+      "file": "EasyCommandBlocker-1.18.1.jar",
+      "sha256": "a94b28fe2e581628cfb322f3150c052c9d6977a59111a3e42b8bcb5e58191c67"
+    },
+    {
+      "file": "FancyHolograms-2.12.0.jar",
+      "sha256": "5b94f76132b16898177cdac47f26b0a0d2070e8b3770891ff6624fc404811f56"
+    },
+    {
+      "file": "FancyNpcs-2.12.0.jar",
+      "sha256": "716f04fca0e080af2b5623b4d4e3d7755e088bd45d8d887cbe0241a9adae581a"
+    },
+    {
+      "file": "FastAsyncWorldEdit-Paper-2.15.4.jar",
+      "sha256": "bbb1875e823ca01591bd23427e86f490e17cd82fe769dcb7e82a955dd8371acc"
+    },
+    {
+      "file": "Geyser-Spigot.jar",
+      "sha256": "7b4054c4792f76b34ce88c43871555c5e9774898ff8d1c269e4f0b39c758eba2"
+    },
+    {
+      "file": "HeadDB-5.0.0-rc.15.jar",
+      "sha256": "41bbfa89ba45af2a875b4194008e21667ae5706b5e22be903f2598d098fdd6c5"
+    },
+    {
+      "file": "ItemJoin-6.1.7.jar",
+      "sha256": "7250c7108200f00a4b5b38b4fa5150a53828303b275db5166c676a7c54757159"
+    },
+    {
+      "file": "LPC-3.6.2.jar",
+      "sha256": "ee53b9ab79aec400c542d5c4fd12b35fcb6ac63774d2966a7c86af7fab325342"
+    },
+    {
+      "file": "LibsDisguises-26.8.13-Free.jar",
+      "sha256": "22205c324ea9dae87c48d6bcf3b0133d572ea13aba388fe9a69b4039c6e7db41"
+    },
+    {
+      "file": "LogFilter-Paper-3.2.0.jar",
+      "sha256": "778523d801659b82f243498b3d61582e2f543bc0ce3e14bec2368e8e3c5be620"
+    },
+    {
+      "file": "LuckPerms-Bukkit-5.5.85.jar",
+      "sha256": "dc637ce18f48d3b75a7ffd1784b85be16a627359090dfe5adf15dab6d145dc7d"
+    },
+    {
+      "file": "Maintenance-4.0.1.jar",
+      "sha256": "3d5ac44063e353864637016a2dbbb4f0b742d869fef28556f571c4359c4c1fd5"
+    },
+    {
+      "file": "MyCommand.jar",
+      "sha256": "3ee6152f886e057dfe77897e8e59ebb4a8d19a3e5ef77650a882ac86eab20481"
+    },
+    {
+      "file": "NoteBlockAPI-1.6.3.jar",
+      "sha256": "093c9199392909f35f5cd80fc2752e4a35dd64c409568f3308d7c419161b15ad"
+    },
+    {
+      "file": "PlaceholderAPI-2.12.3.jar",
+      "sha256": "774473a888d6f45f04162c67c9104329f94f5cdc6a3f16aca5a7aa0451f25036"
+    },
+    {
+      "file": "ProtocolLib.jar",
+      "sha256": "ee2e7ab9b5386f2d103081c4d108e61b1035df2ca692b53d6e2409fb1f5caccf"
+    },
+    {
+      "file": "SkinsRestorer.jar",
+      "sha256": "a85b4a370f988741c9a38f4d0498262edacbf3220314790ac1c127461996359c"
+    },
+    {
+      "file": "SuperBlockCommands.jar",
+      "sha256": "bd130d2ba5d2dbbec8fa49050b5c67130630ddba02593b8b7abc9d37c35e140b"
+    },
+    {
+      "file": "TAB-v6.1.2.jar",
+      "sha256": "f898e8a6c5c7b450ebaa1e024fd2e1a00017a3fb4a07dc271eee8e3d3454a384"
+    },
+    {
+      "file": "TSHide-1.0.1.jar",
+      "sha256": "adc7a30886f8d299065fa927dc578a2f6ec7310a4c972c0c736e201b28a4965a"
+    },
+    {
+      "file": "UltraCosmetics-3.16-RELEASE.jar",
+      "sha256": "51ab65a5a397a3b8efe143f9e11679d4d90fec745665dda1ef783c43bcf7c15e"
+    },
+    {
+      "file": "Vault.jar",
+      "sha256": "27a80debcf2ea197cc3d17755d851af23e9bcaf8e7a1f2e56bf773a56c636728"
+    },
+    {
+      "file": "ViaBackwards-5.12.2.jar",
+      "sha256": "9a148a80ea22074f4bd1626cdbe254a4cd998bf44e7ceaff4e285a1b6b35da42"
+    },
+    {
+      "file": "ViaVersion-5.12.2.jar",
+      "sha256": "24e4876fefe73e08a4c87cd6c457ee0916e62dd69656631caf41e26f909d504b"
+    },
+    {
+      "file": "VoidGen-2.3.4.jar",
+      "sha256": "559a5ecc5e6a5c377780e42fb11ac932220f1de75498e6910c29fbf98f24ae40"
+    },
+    {
+      "file": "VotifierPlus-1.4.3.jar",
+      "sha256": "42015fc6fc45f9b865d6c3caa669b621902dbcbcaeaa7d98cfeec8a0dee388d0"
+    },
+    {
+      "file": "Warps.jar",
+      "sha256": "5e3be3a6cab7128a42bab662d4fb130a05e3691a9870342d87cde65a1194263b"
+    },
+    {
+      "file": "WorldServer-1.9.4.jar",
+      "sha256": "caf58c7143c05d7298c36359ab51a9cab1c33545a30ed427d6efbc702a05da11"
+    },
+    {
+      "file": "ban-webhook-1.0.0.jar",
+      "sha256": "8c7d2a41b9db48dbb26b54629d143ab161b77d2df9137d6113bd9d614c3d0f2b"
+    },
+    {
+      "file": "floodgate-spigot.jar",
+      "sha256": "21570aff9ce17d6983928e8552777760e1ede5050026b04c686b0ae112e6fd7e"
+    },
+    {
+      "file": "minimotd-paper-2.2.5.jar",
+      "sha256": "a1f5bff3abf4c9c90bd4417ce26612e621c83a1564f3fc7aa39848996cbea6c6"
+    },
+    {
+      "file": "multiverse-core-4.3.14.jar",
+      "sha256": "532fde5eb4bb98c0b214386cfa16b99470a9597ed57ba19463c7cf78340ceb5a"
+    },
+    {
+      "file": "nightcore-2.16.4.jar",
+      "sha256": "0449d8700b41f13a458caedb68f9959db35f89d01ea05ef0d0907812484aa8ab"
+    },
+    {
+      "file": "packetevents-spigot-2.13.0.jar",
+      "sha256": "6d9ece0d87ee727a79a20b7ffbd432021609c6f52bafcb654fc2d3e9b6f064c5"
+    },
+    {
+      "file": "worldguard-bukkit-7.0.17.jar",
+      "sha256": "3f14562509bf01e7680571b6f56932239157ff938f257c3226df3b4088ae54f2"
+    }
+  ],
+  "errors": [
+    "[20:02:45 ERROR]: Error occurred while enabling FastAsyncWorldEdit v2.15.4+d8666b3 (Is it up to date?)",
+    "[20:02:48 ERROR]: Error occurred while enabling nightcore v2.16.4 (Is it up to date?)",
+    "[20:03:01 ERROR]: Error occurred while enabling packetevents v2.13.0 (Is it up to date?)",
+    "[20:03:01 ERROR]: Error occurred while enabling LibsDisguises v26.8.13 (Is it up to date?)",
+    "java.lang.NoClassDefFoundError: com/github/retrooper/packetevents/wrapper/configuration/server/WrapperConfigServerRegistryData",
+    "java.lang.NoClassDefFoundError: com/github/retrooper/packetevents/wrapper/play/server/WrapperPlayServerDestroyEntities",
+    "[20:03:02 ERROR]: Error occurred while enabling FancyNpcs v2.12.0 (Is it up to date?)",
+    "[20:03:02 ERROR]: Error occurred while enabling WorldGuard v7.0.17+2370-e42d8bc (Is it up to date?)",
+    "java.lang.NoClassDefFoundError: com/sk89q/wepif/PermissionsResolverManager",
+    "[20:03:12 ERROR]: Error occurred while enabling WorldServer v1.9.4 (Is it up to date?)"
+  ],
+  "tsxmas_ready": false,
+  "production_configs_tested": false,
+  "players_tested": false
+}

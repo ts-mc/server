@@ -36,6 +36,5 @@ repository), then `/discord reload`.
 
 ## Related guide
 
-See [`docs/discord/README.md`](../../docs/discord/README.md) for the channel
-layout and [`docs/discord/templates.md`](../../docs/discord/templates.md) for
-announcement templates.
+See [server operations](../../OPERATIONS.md) for current permission and integration
+procedures. Historical rebuild instructions are not authoritative.

@@ -1,19 +1,19 @@
 ServerName:
   change-interval: 1000
   texts:
-  - '&b&lTheySix Events'
-  - '&#4CADD0&lTheySix Events'
-  - '&#B2F9FF&lTheySix Events'
+  - "&#B3000C&lT&#C2000D&lh&#D1000E&le&#E00010&ly&#E1323E&lS&#DE747C&li&#DAB7B9&lx&#BCD8BF&l &#83D78E&lE&#4AD65C&lv&#1DD236&le&#13C833&ln&#0ABD2F&lt&#00B32C&ls&r"
+  - "&#B3000C&lT&#C2000D&lh&#D1000E&le&#E00010&ly&#E1323E&lS&#DE747C&li&#DAB7B9&lx&#BCD8BF&l &#83D78E&lE&#4AD65C&lv&#1DD236&le&#13C833&ln&#0ABD2F&lt&#00B32C&ls&r"
+  - "&#B3000C&lT&#C2000D&lh&#D1000E&le&#E00010&ly&#E1323E&lS&#DE747C&li&#DAB7B9&lx&#BCD8BF&l &#83D78E&lE&#4AD65C&lv&#1DD236&le&#13C833&ln&#0ABD2F&lt&#00B32C&ls&r"
 web:
   change-interval: 1000
   texts:
-  - '&btheysix.tech'
-  - '&#B2F9FFtheysix.tech'
+  - "&#B3000Ct&#C5000Dh&#D7000Fe&#E31422y&#DF626Bs&#DAB1B4i&#B6D7BBx&#73D680.&#30D546t&#17CC34e&#0BBF30c&#00B32Ch&r"
+  - "&#B3000Ct&#C5000Dh&#D7000Fe&#E31422y&#DF626Bs&#DAB1B4i&#B6D7BBx&#73D680.&#30D546t&#17CC34e&#0BBF30c&#00B32Ch&r"
 vote:
   change-interval: 1000
   texts:
-  - '&bevents.theysix.tech/vote'
-  - '&#B2F9FFevents.theysix.tech/vote'
+  - "&#B3000Ce&#BC000Dv&#C4000De&#CD000En&#D5000Ft&#DE000Fs&#E30919.&#E12F3Bt&#DF555Eh&#DD7A81e&#DBA0A4y&#D9C5C7s&#C8D8CAi&#A8D7AEx&#88D792.&#67D676t&#47D65Ae&#27D53Ec&#1BD136h&#16CB34/&#10C532v&#0BBF30o&#05B92Et&#00B32Ce&r"
+  - "&#B3000Ce&#BC000Dv&#C4000De&#CD000En&#D5000Ft&#DE000Fs&#E30919.&#E12F3Bt&#DF555Eh&#DD7A81e&#DBA0A4y&#D9C5C7s&#C8D8CAi&#A8D7AEx&#88D792.&#67D676t&#47D65Ae&#27D53Ec&#1BD136h&#16CB34/&#10C532v&#0BBF30o&#05B92Et&#00B32Ce&r"
 Welcome:
   change-interval: 400
   texts:
@@ -38,15 +38,15 @@ Welcome:
 time:
   change-interval: 3000
   texts:
-    - '&7Time &b%time%'
-    - '&7Date &b%date%'
+    - "&7Time &#00B32C%time%"
+    - "&7Date &#00B32C%date%"
 barcolors:
   change-interval: 1000
   texts:
     - RED
-    - BLUE
+    - "WHITE"
     - GREEN
-    - YELLOW
+    - "WHITE"
 killsDeaths:
   change-interval: 5000
   texts:

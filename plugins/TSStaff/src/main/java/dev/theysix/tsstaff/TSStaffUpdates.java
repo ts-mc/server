@@ -211,11 +211,16 @@ public final class TSStaffUpdates implements CommandExecutor, Listener {
         return ChatColor.translateAlternateColorCodes('&', text);
     }
 
+    private String targetMinecraftVersion() {
+        String configured = plugin.getConfig().getString("updates.minecraft-version", "auto");
+        return configured.equalsIgnoreCase("auto") ? Bukkit.getMinecraftVersion() : configured;
+    }
+
     private String getLatest(String provider, String project) throws IOException, InterruptedException {
         String endpoint;
         if (provider.equalsIgnoreCase("modrinth")) {
             String loaders = URLEncoder.encode("[\"paper\",\"spigot\",\"bukkit\"]", StandardCharsets.UTF_8);
-            String minecraftVersion = plugin.getConfig().getString("updates.minecraft-version", "1.21.11");
+            String minecraftVersion = targetMinecraftVersion();
             String versions = URLEncoder.encode("[\"" + minecraftVersion + "\"]", StandardCharsets.UTF_8);
             endpoint = "https://api.modrinth.com/v2/project/" + project + "/version?loaders=" + loaders
                     + "&game_versions=" + versions + "&include_changelog=false";
@@ -234,7 +239,7 @@ public final class TSStaffUpdates implements CommandExecutor, Listener {
     private String request(String endpoint) throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder(URI.create(endpoint))
                 .timeout(Duration.ofSeconds(7))
-                .header("User-Agent", "TheySix-TSStaff-UpdateCheck/1.3.0")
+                .header("User-Agent", "TheySix-TSStaff-UpdateCheck/1.3.1")
                 .header("Accept", "application/vnd.github+json")
                 .GET().build();
         HttpResponse<String> response = http.send(request, HttpResponse.BodyHandlers.ofString());
@@ -252,7 +257,7 @@ public final class TSStaffUpdates implements CommandExecutor, Listener {
     }
 
     private String latestHangar(String json) throws IOException {
-        String minecraftVersion = plugin.getConfig().getString("updates.minecraft-version", "1.21.11");
+        String minecraftVersion = targetMinecraftVersion();
         for (String object : jsonObjects(json)) {
             Matcher channel = Pattern.compile("\\\"channel\\\"\\s*:\\s*\\{[^}]*\\\"name\\\"\\s*:\\s*\\\"([^\\\"]+)\\\"").matcher(object);
             if (!channel.find() || !"Release".equals(channel.group(1))) continue;

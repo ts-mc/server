@@ -1,0 +1,20 @@
+{
+  "id": "tsxmas-event-repair-20261115-173639",
+  "version": "1.1.1",
+  "palette": [],
+  "tests_passed": 46,
+  "staged": true,
+  "active": true,
+  "java_server_started": false,
+  "rank_data_changed": false,
+  "world_data_changed": false,
+  "backup": ".deploy-backups/tsxmas-event-repair-20261115-173639",
+  "active_sha256_verified": true,
+  "changed_files": [
+    "plugins/TSXMAS/locations.yml",
+    "plugins/TSXMAS/events.yml",
+    "plugins/TSXMAS/messages.yml",
+    "plugins/WorldGuard/worlds/tsxmas_christmas_2026/regions.yml",
+    "plugins/TSXMAS.v1.1.1.jar"
+  ]
+}

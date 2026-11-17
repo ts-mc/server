@@ -1,5 +1,5 @@
 name: TSStaff
-version: 1.3.0
+version: 1.3.1
 main: dev.theysix.tsstaff.TSStaff
 api-version: '1.21'
 author: TheySix

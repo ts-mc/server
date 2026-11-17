@@ -163,17 +163,19 @@ plugins/floodgate/key.pem
 .remote-sync/**
 .backups/
 
+# TSXMAS event runtime and locally converted venue worlds
+tsxmas_christmas_*/
+# Owner-supplied map source: preserve locally, never track world/runtime data.
+/WeihnachtsMC-Village/
+plugins/TSXMAS/backups/
+plugins/TSXMAS/music/
+
 # VS Code SFTP credentials!
 .vscode/sftp.json
 .vscode/settings.json
 
 # Local agent guidance is intentionally workspace-specific.
 AGENTS.md
-
-# Generated/trash data preserved under documentation snapshots
-.docs/dot-apollo/
-.docs/dot-cache/
-.docs/dot-trash/
 
 # OS/editor junk
 .DS_Store
@@ -188,3 +190,18 @@ plugins/UltraCosmetics/config.yml
 plugins/Votifier/config.yml
 .event-halloween/
 plugins/TSStaff/config.yml
+
+# Local plugin credentials and generated presentation logs
+plugins/DankVotes/config.yml
+plugins/FancyNpcs/config.yml
+plugins/AdvancedBan/config.yml
+plugins/AdvancedBanZ/config.yml
+plugins/MyCommand/config.yml
+plugins/TAB/config.yml
+plugins/FancyNpcs/logs/
+plugins/FancyHolograms/logs/
+**/__pycache__/
+*.pyc
+
+# BlueArcade rebuildable block regeneration snapshots (keep authored schematics)
+plugins/BlueArcade3/data/arenas/*/*/regeneration/

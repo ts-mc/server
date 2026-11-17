@@ -1,0 +1,56 @@
+schema-version: 1
+rewards:
+  daily:
+    - {type: TOKENS, amount: 10}
+    - {type: XP, amount: 50}
+    - {type: SOUND, sound: block.note_block.chime}
+  cookies:
+    - type: ITEM
+      material: COOKIE
+      amount: 8
+      name: Santa's Cookies
+      lore: ['Baked with Christmas cheer at TheySix Events.']
+      custom-model-data: 1225
+  keepsake:
+    - type: ITEM
+      material: SNOW_BLOCK
+      amount: 1
+      name: Winter Keepsake
+      lore: ['TheySix Christmas 2026']
+  discovery:
+    - {type: TOKENS, amount: 3}
+    - {type: PARTICLE, particle: SNOWFLAKE}
+  hunt-complete:
+    - {type: TOKENS, amount: 40}
+  delivery-complete:
+    - {type: TOKENS, amount: 40}
+    - {type: XP, amount: 100}
+  christmas-eve:
+    - {type: TOKENS, amount: 25}
+    - {type: ITEM, material: DIAMOND, amount: 2, name: Christmas Eve Sparkle}
+  christmas-day:
+    - {type: TOKENS, amount: 50}
+    - type: ITEM
+      material: DIAMOND_PICKAXE
+      amount: 1
+      name: Santa's Workshop Pick
+      enchantments: {efficiency: 3, unbreaking: 2}
+  winner:
+    - {type: TOKENS, amount: 100}
+    - {type: ITEM, material: GOLD_INGOT, amount: 3, name: Christmas Champion}
+  participant:
+    - {type: TOKENS, amount: 15}
+  # Examples only: these definitions are never assigned to default events.
+  vault-example:
+    - {type: MONEY, amount: 100}
+  temporary-permission-example:
+    - {type: LUCKPERMS, permission: ultracosmetics.hats.santa, duration: 7d}
+  headdatabase-example:
+    - {type: HEADDB, id: '123', amount: 1}
+  command-example:
+    - {type: CONSOLE, command: 'say Happy Christmas {player}!'}
+    - {type: PLAYER, command: 'xmas stats'}
+  cosmetics-example:
+    - {type: ULTRACOSMETICS, command: 'uc give key 1 {player}'}
+  discord-example:
+    - {type: DISCORD, message: '{player} received a Christmas prize!'}

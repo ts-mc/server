@@ -1,0 +1,42 @@
+{
+  "source": "WeihnachtsMC-Village",
+  "target": "tsxmas_christmas_2026",
+  "data_version": 5023,
+  "minecraft": "26.3",
+  "spawn": {
+    "pos": [
+      -125,
+      67,
+      543
+    ],
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "dimension": "minecraft:overworld"
+  },
+  "copied_chunks": 440,
+  "copied_mca_files": 11,
+  "source_unchanged": true,
+  "global_worldgen_overrides_included": false,
+  "original_advancements_included": false,
+  "java_started": false,
+  "live_uploaded": true,
+  "runtime_load_tested": false,
+  "pack_conflict_policy": "Seasonal textures take precedence; map namespaces retained; original background-music mute omitted",
+  "merged_pack_sha1": "6f82f431b22c30267c22cb65d09e89f302d74e6f",
+  "live_files_placed": true,
+  "active_sha256_verified": true,
+  "world_imported": true,
+  "original_global_runtime_data_included": false,
+  "verified_active_files": 67,
+  "deployment_id": "tsxmas-map-20261114-222113",
+  "backup": ".deploy-backups/tsxmas-map-20261114-222113",
+  "resource_pack_hosted": true,
+  "resource_pack_enabled": true,
+  "owner_started_server": true,
+  "storage_after_import": "world/dimensions/minecraft/tsxmas_christmas_2026",
+  "map_load_observed": true,
+  "rendering_tested": false,
+  "restart_autoload_tested": true,
+  "required_pack_configured": true,
+  "resource_pack_policy": "Required venue + LIVE BetterModel ZIP in Paper; required official seasonal ZIP added by TSXMAS"
+}

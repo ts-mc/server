@@ -26,4 +26,4 @@ Players should use the friendly aliases `/ts`, `/tse` and `/tsa` — see
 - The shipped jar is `EasyCommandBlocker-1.18.1.jar`.
 - Blocked commands reply with a custom message and/or title, set in `config.yml`.
 - For hide-without-blocking behaviour, see the CommandBlocker recommendation in
-  [`docs/setup-guide.md`](../../docs/setup-guide.md).
+  [server operations](../../OPERATIONS.md).

@@ -1,0 +1,10 @@
+{
+  "started": true,
+  "exit_code": 0,
+  "artifacts": [],
+  "errors": [],
+  "tsxmas_ready": true,
+  "production_configs_tested": false,
+  "players_tested": false,
+  "artifact_sha256": "7deaeb5eae23fee9aa2275715def5c6d4c6c24fd65b7ddc661c7b2da49ddcfa4"
+}

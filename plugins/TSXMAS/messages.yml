@@ -1,0 +1,101 @@
+schema-version: 1
+prefix: "<bold><gradient:#B3000C:#E40010:#D8D8D8:#1FD537:#00B32C>[TheySix Christmas]</gradient></bold> "
+error: 'Could not complete that action: '
+internal-error: 'The action was stopped. Ask staff to inspect the audit and reward queue before retrying.'
+no-permission: 'You do not have permission to use this command.'
+player-only: 'Run this command in game.'
+confirm: 'Confirm this action with'
+saved: 'Saved.'
+reloaded: 'All six configuration files reloaded successfully.'
+location-saved: Location saved. NPCs and attached holograms have been refreshed.
+validation-ok: "Venue checks passed. Use /tsxmas validate <event> to check a specific activity."
+claimed: 'Present claimed! Any undelivered rewards remain in your reward queue.'
+discovery: 'You found a hidden Christmas present!'
+delivered: 'Present delivered. Thank you for helping Santa!'
+delivery-started: Your route is ready! Right-click each village mailbox or its bamboo fence. Check /xmas delivery progress for remaining stops.
+build-joined: 'Your plot is reserved. Use /xmas build status to see its name.'
+build-submitted: 'Build submitted for staff approval. Your plot is now frozen.'
+voted: 'Your vote has been recorded.'
+secret-joined: 'You joined Secret Santa. Check /xmas secret status after matching.'
+secret-matched: 'Secret Santa matches are ready! Check your private status.'
+secret-sent: 'Your anonymous gift is safely queued for the recipient.'
+purchased: 'Purchase recorded. Use /xmas rewards to collect queued items.'
+rewards-pending: 'Pending rewards: '
+daily-calendar: 'A new Advent Calendar present is available! /xmas calendar'
+pack-bedrock: 'All Christmas activities work with normal textures. A Java resource pack cannot be installed by your Bedrock client.'
+offline-restore: 'Stop the server, preserve the current database and WAL files, and follow docs/OPERATIONS.md to restore a reviewed backup. Live database replacement is intentionally refused.'
+shutdown: 'TSXMAS is disabled. Data is retained; restart to enable it again.'
+menu-title: TheySix Christmas
+calendar-title: Advent Calendar
+market-title: Christmas Market
+menu-open: Click to open
+menu-calendar: Advent Calendar
+menu-hunt: Christmas Scavenger Hunt
+menu-delivery: Santa's Delivery Quest
+menu-build: Christmas Build Contest
+menu-secret: Secret Santa
+menu-raffle: Christmas Raffle
+menu-market: Christmas Market
+calendar-future: This present opens on a future day.
+calendar-available: Click to claim your present!
+calendar-claimed: You have already claimed this present.
+calendar-missed: This day has passed. Ask staff about missed-day rules.
+calendar-closed: The Advent Calendar opens December 1–25.
+player-help:
+  - '/xmas menu | calendar | events | stats | rewards'
+  - '/xmas hunt [progress|top|find <objective>]'
+  - '/xmas delivery [start|progress|deliver <stop>]'
+  - '/xmas build [join <category>|submit|vote <player>|winners|status]'
+  - '/xmas secret [join|gift|status]'
+  - '/xmas raffle [buy <amount>|status]'
+  - '/xmas market [buy <item>|stock] | /xmas pack [on|off]'
+  - "/xmas top <event> | /xmas <event> top"
+  - "/xmas grinch — finale checkpoint after the hunt and deliveries"
+staff-help:
+  - '/xmas start|stop|pause|resume <event>'
+  - '/xmas setspawn | setlocation|setnpc|sethologram <name>'
+  - '/xmas calendar unlock <player> <day> | calendar preview'
+  - '/xmas build approve|reject <player> | build end'
+  - '/xmas inspect <player> | reload | broadcast <message>'
+  - 'Admin: give <player> <reward> | tokens add|remove <player> <amount>'
+  - 'Admin: secret match|reveal | raffle draw|cancel|refund'
+  - 'Admin: /tsxmas help'
+menu-leaderboards: Event Leaderboards
+menu-grinch: Grinch Finale
+grinch-info: At the checkpoint, finish the hunt and deliveries, then claim once.
+leaderboards-title: Christmas Leaderboards
+leaderboard-heading: Top {event}
+leaderboard-hologram-heading: <bold><gradient:#B3000C:#E40010:#D8D8D8:#1FD537:#00B32C>Top {event}</gradient></bold>
+leaderboard-metric: '{metric}'
+leaderboard-entry-title: '#{rank} {player}'
+leaderboard-score: 'Score: {score}'
+leaderboard-row: '{rank}. {player} — {score}'
+leaderboard-empty: No ranked results yet.
+leaderboard-private: Secret Santa rankings appear after the public reveal.
+leaderboard-empty-entry: '-'
+leaderboard-back: Back
+leaderboard-refresh: Rankings update about every {seconds} seconds.
+leaderboard-titles:
+  calendar: Advent Calendar
+  hunt: Scavenger Hunt
+  delivery: Santa Delivery
+  build: Build Contest
+  secret: Secret Santa
+  raffle: Christmas Raffle
+  market: Christmas Market
+  grinch: Grinch Finale
+leaderboard-metrics:
+  calendar: Calendar doors claimed
+  hunt: Hidden objects found
+  delivery: Presents delivered
+  build: Votes received — current contest
+  secret: Gifts submitted — after reveal
+  raffle: Tickets held — current raffle
+  market: Paid purchases
+  grinch: Finale completions — one per player
+activity-state-info: Staff must start an activity before players can take part.
+delivery-start-button: Start Santa’s Delivery
+delivery-start-hint: Visit Santa and click to begin your route.
+activity-complete: Completed!
+activity-visit: Visit this location, then interact with the marker.
+hunt-search-hint: Search the village and forest for this Christmas object.

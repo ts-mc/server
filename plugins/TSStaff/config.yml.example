@@ -5,7 +5,7 @@
 #           /unfreeze <player>  /announce <message>  /tsstaff reload  /update
 # Colour codes use &  (e.g. &b pink, &b aqua, &l bold)
 # ==============================================================
-prefix: '&bTSStaff &7| &r'
+prefix: "&x&B&3&0&0&0&C&lT&x&C&C&0&0&0&E&lS&x&E&4&0&0&1&0&lS&x&D&E&6&C&7&4&lt&x&D&8&D&8&D&8&la&x&7&C&D&6&8&8&lf&x&1&F&D&5&3&7&lf&x&1&0&C&4&3&2&l &x&0&0&B&3&2&C&l|&r "
 
 clearchat:
   lines: 150 # blank lines sent to clear the chat
@@ -52,7 +52,7 @@ antispam:
 # A missing source is shown for manual review.
 # It reports versions only; it never downloads or replaces plugin JARs.
 updates:
-  minecraft-version: '1.21.11'
+  minecraft-version: 'auto'
   sources:
     ViaVersion:
       provider: modrinth

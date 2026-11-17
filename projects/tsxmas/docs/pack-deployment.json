@@ -1,0 +1,16 @@
+{
+  "id": "tsxmas-pack-20261115-101102",
+  "venue_url": "https://files.catbox.moe/0xupdx.zip",
+  "venue_sha1": "dd85146b2795270bdbf6bb4cdf50704d0ceb6733",
+  "hosted_sha256_verified": true,
+  "staged": true,
+  "active": true,
+  "events_enabled": false,
+  "java_started": false,
+  "backup": ".deploy-backups/tsxmas-pack-20261115-101102",
+  "active_sha256_verified": true,
+  "changed_files": [
+    "server.properties",
+    "plugins/TSXMAS/config.yml"
+  ]
+}

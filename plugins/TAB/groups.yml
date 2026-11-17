@@ -3,35 +3,35 @@ _DEFAULT_:
   tabprefix: "%luckperms-prefix%"
   tagprefix: "%luckperms-prefix%"
   customtabname: "%player%"
-  tabsuffix: "&7 [ᴍᴇᴍʙᴇʀ]"
-  tagsuffix: "&7 [ᴍᴇᴍʙᴇʀ]"
+  tabsuffix: "&#B3000C &#CC000E[&#E40010ᴍ&#DE6C74ᴇ&#D8D8D8ᴍ&#7CD688ʙ&#1FD537ᴇ&#10C432ʀ&#00B32C]&r"
+  tagsuffix: "&#B3000C &#CC000E[&#E40010ᴍ&#DE6C74ᴇ&#D8D8D8ᴍ&#7CD688ʙ&#1FD537ᴇ&#10C432ʀ&#00B32C]&r"
 owner:
-  tabsuffix: "&#D78C39 [ᴛʜᴇʏsɪx]"
-  tagsuffix: "&#D78C39 [ᴛʜᴇʏsɪx]"
+  tabsuffix: "&#B3000C &#C9000E[&#DF0010ᴛ&#E04853ʜ&#DBA8ACᴇ&#AFD7B4ʏ&#5DD66Ds&#1CD136ɪ&#0EC231x&#00B32C]&r"
+  tagsuffix: "&#B3000C &#C9000E[&#DF0010ᴛ&#E04853ʜ&#DBA8ACᴇ&#AFD7B4ʏ&#5DD66Ds&#1CD136ɪ&#0EC231x&#00B32C]&r"
 manager:
-  tabsuffix: "&#F858AD [ᴍᴀɴᴀɢᴇʀ]"
-  tagsuffix: "&#F858AD [ᴍᴀɴᴀɢᴇʀ]"
+  tabsuffix: "&#B3000C &#C9000E[&#DF0010ᴍ&#E04853ᴀ&#DBA8ACɴ&#AFD7B4ᴀ&#5DD66Dɢ&#1CD136ᴇ&#0EC231ʀ&#00B32C]&r"
+  tagsuffix: "&#B3000C &#C9000E[&#DF0010ᴍ&#E04853ᴀ&#DBA8ACɴ&#AFD7B4ᴀ&#5DD66Dɢ&#1CD136ᴇ&#0EC231ʀ&#00B32C]&r"
 admin:
-  tabsuffix: "&#FF0000 [ᴀᴅᴍɪɴ]"
-  tagsuffix: "&#FF0000 [ᴀᴅᴍɪɴ]"
+  tabsuffix: "&#B3000C &#CF000E[&#E21F2Dᴀ&#DB9A9Fᴅ&#A3D7AAᴍ&#39D54Eɪ&#12C632ɴ&#00B32C]&r"
+  tagsuffix: "&#B3000C &#CF000E[&#E21F2Dᴀ&#DB9A9Fᴅ&#A3D7AAᴍ&#39D54Eɪ&#12C632ɴ&#00B32C]&r"
 headmoderator:
-  tabsuffix: "&#7F3AFF [ʜᴇᴀᴅ ᴍᴏᴅᴇʀᴀᴛᴏʀ]"
-  tagsuffix: "&#7F3AFF [ʜᴇᴀᴅ ᴍᴏᴅᴇʀᴀᴛᴏʀ]"
+  tabsuffix: "&#B3000C &#BF000D[&#CC000Eʜ&#D8000Fᴇ&#E40010ᴀ&#E13642ᴅ&#DE6C74 &#DBA2A6ᴍ&#D8D8D8ᴏ&#AAD7B0ᴅ&#7CD688ᴇ&#4DD65Fʀ&#1FD537ᴀ&#17CC34ᴛ&#10C432ᴏ&#08BC2Fʀ&#00B32C]&r"
+  tagsuffix: "&#B3000C &#BF000D[&#CC000Eʜ&#D8000Fᴇ&#E40010ᴀ&#E13642ᴅ&#DE6C74 &#DBA2A6ᴍ&#D8D8D8ᴏ&#AAD7B0ᴅ&#7CD688ᴇ&#4DD65Fʀ&#1FD537ᴀ&#17CC34ᴛ&#10C432ᴏ&#08BC2Fʀ&#00B32C]&r"
 moderator:
-  tabsuffix: "&#6186EB [ᴍᴏᴅᴇʀᴀᴛᴏʀ]"
-  tagsuffix: "&#6186EB [ᴍᴏᴅᴇʀᴀᴛᴏʀ]"
+  tabsuffix: "&#B3000C &#C5000D[&#D7000Fᴍ&#E31422ᴏ&#DF626Bᴅ&#DAB1B4ᴇ&#B6D7BBʀ&#73D680ᴀ&#30D546ᴛ&#17CC34ᴏ&#0BBF30ʀ&#00B32C]&r"
+  tagsuffix: "&#B3000C &#C5000D[&#D7000Fᴍ&#E31422ᴏ&#DF626Bᴅ&#DAB1B4ᴇ&#B6D7BBʀ&#73D680ᴀ&#30D546ᴛ&#17CC34ᴏ&#0BBF30ʀ&#00B32C]&r"
 helper:
-  tabsuffix: "&#4CADD0 [ʜᴇʟᴘᴇʀ]"
-  tagsuffix: "&#4CADD0 [ʜᴇʟᴘᴇʀ]"
+  tabsuffix: "&#B3000C &#CC000E[&#E40010ʜ&#DE6C74ᴇ&#D8D8D8ʟ&#7CD688ᴘ&#1FD537ᴇ&#10C432ʀ&#00B32C]&r"
+  tagsuffix: "&#B3000C &#CC000E[&#E40010ʜ&#DE6C74ᴇ&#D8D8D8ʟ&#7CD688ᴘ&#1FD537ᴇ&#10C432ʀ&#00B32C]&r"
 staffteam:
-  tabsuffix: "&#FFFFFF [sᴛᴀғғ ᴛᴇᴀᴍ]"
-  tagsuffix: "&#FFFFFF [sᴛᴀғғ ᴛᴇᴀᴍ]"
+  tabsuffix: "&#B3000C &#C3000D[&#D4000Fs&#E40010ᴛ&#E04853ᴀ&#DC9095ғ&#D8D8D8ғ&#9AD7A2 &#5DD66Dᴛ&#1FD537ᴇ&#15CA33ᴀ&#0ABE30ᴍ&#00B32C]&r"
+  tagsuffix: "&#B3000C &#C3000D[&#D4000Fs&#E40010ᴛ&#E04853ᴀ&#DC9095ғ&#D8D8D8ғ&#9AD7A2 &#5DD66Dᴛ&#1FD537ᴇ&#15CA33ᴀ&#0ABE30ᴍ&#00B32C]&r"
 vip:
-  tabsuffix: "&#F47FFF [ᴠɪᴘ]"
-  tagsuffix: "&#F47FFF [ᴠɪᴘ]"
+  tabsuffix: "&#B3000C &#DA000F[&#DD8288ᴠ&#8ED798ɪ&#19CE35ᴘ&#00B32C]&r"
+  tagsuffix: "&#B3000C &#DA000F[&#DD8288ᴠ&#8ED798ɪ&#19CE35ᴘ&#00B32C]&r"
 voter:
-  tabsuffix: "&#98E0A3 [ᴠᴏᴛᴇʀ]"
-  tagsuffix: "&#98E0A3 [ᴠᴏᴛᴇʀ]"
+  tabsuffix: "&#B3000C &#CF000E[&#E21F2Dᴠ&#DB9A9Fᴏ&#A3D7AAᴛ&#39D54Eᴇ&#12C632ʀ&#00B32C]&r"
+  tagsuffix: "&#B3000C &#CF000E[&#E21F2Dᴠ&#DB9A9Fᴏ&#A3D7AAᴛ&#39D54Eᴇ&#12C632ʀ&#00B32C]&r"
 trusted:
-  tabsuffix: "&#AAAAAA [ᴍᴇᴍʙᴇʀ]"
-  tagsuffix: "&#AAAAAA [ᴍᴇᴍʙᴇʀ]"
+  tabsuffix: "&#B3000C &#CC000E[&#E40010ᴍ&#DE6C74ᴇ&#D8D8D8ᴍ&#7CD688ʙ&#1FD537ᴇ&#10C432ʀ&#00B32C]&r"
+  tagsuffix: "&#B3000C &#CC000E[&#E40010ᴍ&#DE6C74ᴇ&#D8D8D8ᴍ&#7CD688ʙ&#1FD537ᴇ&#10C432ʀ&#00B32C]&r"

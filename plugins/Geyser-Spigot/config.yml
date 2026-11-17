@@ -51,7 +51,7 @@ bedrock:
     # You can list an address this machine does not have, such as your public IP, if your router forwards that port
     # to this machine. You need to set up the port forwarding yourself.
     # Leave empty to use this machine's own addresses, plus the public address found with "stun-discovery".
-    advertise-addresses: ["212.192.28.194:25832"]
+    advertise-addresses: ["bedrock.theysix.tech:25832"]
 
     # Finds this server's public address through the signaling service's STUN servers when it has none of its own.
     # Not used when "advertise-addresses" is set.

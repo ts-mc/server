@@ -29,4 +29,4 @@ work.
 - Players without permission see the TheySix Events branding and
   `play.theysix.tech` address configured in these files.
 - Advertise scheduled maintenance in Discord — see
-  [`docs/discord/announcements.md`](../../docs/discord/announcements.md).
+  [server operations](../../OPERATIONS.md).
